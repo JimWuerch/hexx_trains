@@ -1,3 +1,7 @@
+// Copyright 2018-2020 Jim Wuerch. All rights reserved.
+// Use of this source code is governed by the MIT license that can be found
+// in the LICENSE file.  See the README file for additional requests.
+
 import 'dart:math';
 import 'package:flutter/material.dart';
 
