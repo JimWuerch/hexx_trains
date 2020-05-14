@@ -23,7 +23,7 @@ class _Orientation {
 
 class HexLayout {
   final HexOrientation orientation;
-  final Point<double> size;
+  final int size;
   final Point<double> origin;
   final _Orientation _ourOrientation;
 
@@ -46,7 +46,7 @@ class HexLayout {
   HexLayout._(this.orientation, this.size, this.origin, this._ourOrientation);
 
   factory HexLayout(
-      HexOrientation orientation, Point<double> size, Point<double> origin) {
+      HexOrientation orientation, int size, Point<double> origin) {
     return HexLayout._(orientation, size, origin,
         orientation == HexOrientation.Flat ? _flat : _pointy);
 //    Matrix3 m;
@@ -79,8 +79,8 @@ class HexLayout {
 //    matrix.transform2(v);
 //    return Point(v.x, v.y);
     _Orientation M = _ourOrientation;
-    double x = (M.f0 * h.q + M.f1 * h.r) * size.x;
-    double y = (M.f2 * h.q + M.f3 * h.r) * size.y;
+    double x = (M.f0 * h.q + M.f1 * h.r) * size;
+    double y = (M.f2 * h.q + M.f3 * h.r) * size;
     return Point<double>(x + origin.x, y + origin.y);
   }
 
@@ -91,7 +91,7 @@ class HexLayout {
 //    return new FractionalHex(v.x, v.y, -v.x - v.y);
     _Orientation M = _ourOrientation;
     Point pt =
-        Point<double>((p.x - origin.x) / size.x, (p.y - origin.y) / size.y);
+        Point<double>((p.x - origin.x) / size, (p.y - origin.y) / size);
     double q = M.b0 * pt.x + M.b1 * pt.y;
     double r = M.b2 * pt.x + M.b3 * pt.y;
     return FractionalHex(q, r, -q - r);
@@ -104,7 +104,7 @@ class HexLayout {
   Point<double> hexCornerOffset(int corner, [double divisor = 1.0]) {
     double angle = -2.0 * pi * (_ourOrientation.startAngle - corner + 1) / 6.0;
     return Point<double>(
-        size.x * divisor * cos(angle), size.y * divisor * sin(angle));
+        size * divisor * cos(angle), size * divisor * sin(angle));
   }
 
   List<Point<double>> polygonCorners(Hex h, [double divisor = 1.0]) {
@@ -120,7 +120,7 @@ class HexLayout {
   Point<double> hexSideOffset(int side, [double divisor = 1.0]) {
     double angle = -2.0 * pi * (_ourOrientation.startAngle - side + .5) / 6.0;
     double len = sqrt(3) / 2.0 * divisor;
-    return Point<double>(size.x * len * cos(angle), size.y * len * sin(angle));
+    return Point<double>(size * len * cos(angle), size * len * sin(angle));
   }
 
   List<Point<double>> polygonSides(Hex h, [double divisor = 1.0]) {

@@ -1,24 +1,19 @@
+import 'dart:math' as math;
+import 'dart:ui' as ui;
+
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:hexxtrains/hex/hex_layout.dart';
-import 'package:hexxtrains/hex/offset_coord.dart';
-import 'package:hexxtrains/tile_library/tile_designer_loader.dart' as tdl;
-import 'package:hexxtrains/tile_library/tile_dictionary.dart' as td;
-import 'package:hexxtrains/tile_library/tile_dictionary_source.dart' as tds;
-import 'package:hexxtrains/tile_render/drawing_settings.dart';
-import 'package:hexxtrains/tile_render/hex_points.dart';
-import 'package:hexxtrains/tile_render/canvas_extensions.dart';
-import 'dart:ui' as ui;
-import 'dart:math' as math;
-import 'package:vector_math/vector_math_64.dart' as m64;
-
+import 'package:hexxtrains/hex/hex.dart';
+import 'package:hexxtrains/tile_library/tile_library.dart' as tilelib;
+import 'package:hexxtrains/tile_render/tile_render.dart';
 import 'package:hexxtrains/tile_render/tile_renderer.dart' as TileRenderer;
+import 'package:vector_math/vector_math_64.dart' as m64;
 
 import 'hex_tile.dart';
 
 class _MapContext {
   TileRenderer.TileRenderer renderer;
-  td.TileDictionary tileDictionary;
+  tilelib.TileDictionary tileDictionary;
   HexLayout hexLayout;
   DrawingSettings drawingSettings;
   m64.Matrix3 viewMatrix = m64.Matrix3.identity();
@@ -96,11 +91,11 @@ class _MapWidgetState extends State<MapWidget> {
   _MapWidgetState() {
     _mapContext = _MapContext();
 
-    tdl.TileDesignerLoader loader = tdl.TileDesignerLoader();
+    tilelib.TileDesignerLoader loader = tilelib.TileDesignerLoader();
     _mapContext.tileDictionary =
-        loader.loadTileDictionary(tds.TileDictionarySource().src);
+        loader.loadTileDictionary(tilelib.TileDictionarySource().src);
     _mapContext.hexLayout = HexLayout(HexOrientation.Pointy,
-        math.Point<double>(200, 200), math.Point<double>(200, 200));
+        200, math.Point<double>(200, 200));
     _mapContext.drawingSettings = DrawingSettings();
     HexPoints.init(_mapContext.hexLayout);
     _mapContext.renderer =

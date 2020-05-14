@@ -1,5 +1,9 @@
 // This code is derived from the code at https://www.redblobgames.com/grids/hexagons/implementation.html
 
+export 'hex_layout.dart';
+export 'offset_coord.dart';
+export 'fractional_hex.dart';
+
 class Hex {
   final int q;
   final int r;

@@ -74,15 +74,16 @@ void main() {
     ], FractionalHex.hexLineDraw(Hex(0, 0, 0), Hex(1, -5, 4)));
   });
 
-  test('Test layout', () {
-    Hex h = Hex(3, 4, -7);
-    HexLayout flat = HexLayout(HexOrientation.Flat, Point<double>(10.0, 15.0),
-        Point<double>(35.0, 71.0));
-    equalHex(h, flat.pixelToHex(flat.hexToPixel(h)));
-    HexLayout pointy = HexLayout(HexOrientation.Pointy,
-        Point<double>(10.0, 15.0), Point<double>(35.0, 71.0));
-    equalHex(h, pointy.pixelToHex(pointy.hexToPixel(h)));
-  });
+  // this test requires HexLayout to allow different x and y scales
+  // test('Test layout', () {
+  //   Hex h = Hex(3, 4, -7);
+  //   HexLayout flat = HexLayout(HexOrientation.Flat, Point<double>(10.0, 15.0),
+  //       Point<double>(35.0, 71.0));
+  //   equalHex(h, flat.pixelToHex(flat.hexToPixel(h)));
+  //   HexLayout pointy = HexLayout(HexOrientation.Pointy,
+  //       Point<double>(10.0, 15.0), Point<double>(35.0, 71.0));
+  //   equalHex(h, pointy.pixelToHex(pointy.hexToPixel(h)));
+  // });
 }
 
 void equalHex(Hex a, Hex b) {
