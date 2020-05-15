@@ -7,5 +7,4 @@ export 'text_adornment.dart';
 export 'tile_colors.dart';
 export 'tile_definition.dart';
 export 'tile_designer_loader.dart';
-export 'tile_dictionary_source.dart';
 export 'tile_dictionary.dart';

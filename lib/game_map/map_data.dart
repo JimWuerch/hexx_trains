@@ -60,7 +60,7 @@ class MapData {
         orientation: orientation);
   }
 
-  math.Point<int> locationToCoords(String loc) {
+  static math.Point<int> locationToCoords(String loc, bool aRowOdd, bool lettersVertical) {
     const String letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
     int x = 0;
     int y = 0;

@@ -15,14 +15,15 @@ export 'doodad.dart';
 export 'hex_tile.dart';
 export 'map_data.dart';
 export 'map_text.dart';
+export 'map_tile.dart';
 export 'revenue.dart';
 export 'terrain.dart';
 
 class GameMap {
   List<List<HexTile>> _mapCells;
 
-  GameMap._(
-      {this.mapSize,
+  GameMap._({List<List<HexTile>> mapCells,
+           this.mapSize,
       this.barriers,
       this.mapText,
       this.terrains,
@@ -32,7 +33,9 @@ class GameMap {
       this.margin,
       this.layout,
       this.offset,
-      this.orientation});
+      this.orientation}) {
+        _mapCells = mapCells;
+      }
 
   final int scale;
 
@@ -73,7 +76,7 @@ class GameMap {
     else
       orientation = HexOrientation.Pointy;
 
-    var mapCells = new List<List<HexTile>>();
+    var mapCells = List<List<HexTile>>();
 
     if (orientation == HexOrientation.Flat) {
       offset = math.Point<double>(
@@ -132,6 +135,7 @@ class GameMap {
     var terrains = List<Terrain>.from(mapData.terrains);
 
     return GameMap._(
+        mapCells: mapCells,
         mapSize: mapSize,
         barriers: barriers,
         mapText: mapText,
@@ -238,7 +242,7 @@ class GameMap {
       int columns}) {
     if (orientation == HexOrientation.Flat) {
       for (int q = 0; q < columns; q++) {
-        mapCells.add(List<HexTile>(columns));
+        mapCells.add(List<HexTile>());
         int qOffset = (q / 2.0).floor(); // or q>>1
         for (int r = -qOffset; r < rows - qOffset; r++) {
           //_mapCells[q].Add(new MapCell(q, r, this, null));
@@ -248,7 +252,7 @@ class GameMap {
     } else {
       // pointy
       for (int r = 0; r < rows; r++) {
-        mapCells.add(List<HexTile>(columns));
+        mapCells.add(List<HexTile>());
         int rOffset = (r / 2.0).floor(); // or r>>1
         for (int q = -rOffset; q < columns - rOffset; q++) {
           mapCells[r].add(null);

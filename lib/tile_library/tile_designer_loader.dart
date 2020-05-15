@@ -164,9 +164,9 @@ class TileDesignerLoader {
     }
   }
 
-  bool _isDigit(String s, int idx) => (s.codeUnitAt(idx) ^ 0x30) <= 9;
+  static bool _isDigit(String s, int idx) => (s.codeUnitAt(idx) ^ 0x30) <= 9;
 
-  Position parsePosition(String pos) {
+  static Position parsePosition(String pos) {
     pos = pos.toLowerCase();
     // first strip off the "tp"
     if (pos.startsWith('tp')) pos = pos.substring(2);

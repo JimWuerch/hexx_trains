@@ -3,63 +3,68 @@ import 'dart:ui' as ui;
 
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+import 'package:hexxtrains/game_data/game_data.dart';
+import 'package:hexxtrains/game_map/game_map.dart';
 import 'package:hexxtrains/hex/hex.dart';
 import 'package:hexxtrains/tile_library/tile_library.dart' as tilelib;
-import 'package:hexxtrains/tile_render/tile_render.dart';
-import 'package:hexxtrains/tile_render/tile_renderer.dart' as TileRenderer;
+import 'package:hexxtrains/tile_render/tile_render.dart' as tileRender;
+import 'package:hexxtrains/game_data/game_data.dart' as gameData;
+
 import 'package:vector_math/vector_math_64.dart' as m64;
 
 import 'hex_tile.dart';
+import 'map_loader.dart';
 
 class _MapContext {
-  TileRenderer.TileRenderer renderer;
+  tileRender.TileRenderer renderer;
   tilelib.TileDictionary tileDictionary;
-  HexLayout hexLayout;
-  DrawingSettings drawingSettings;
+  //HexLayout hexLayout;
+  tileRender.DrawingSettings drawingSettings;
   m64.Matrix3 viewMatrix = m64.Matrix3.identity();
-  List<HexTile> tiles;
+  //List<HexTile> tiles;
+  GameMap gameMap;
 
   _MapContext();
 
-  void loadTiles() {
-    tiles = [
-      HexTile(tileDictionary.getTile(8), 0, 0, hexLayout),
-      HexTile(tileDictionary.getTile(9), 1, 0, hexLayout),
-      HexTile(tileDictionary.getTile(6), 0, 1, hexLayout),
-      HexTile(tileDictionary.getTile(200), 1, 1, hexLayout),
-    ];
-  }
+  // void loadTiles() {
+  //   tiles = [
+  //     HexTile(tileDictionary.getTile(8), 0, 0, hexLayout),
+  //     HexTile(tileDictionary.getTile(9), 1, 0, hexLayout),
+  //     HexTile(tileDictionary.getTile(6), 0, 1, hexLayout),
+  //     HexTile(tileDictionary.getTile(200), 1, 1, hexLayout),
+  //   ];
+  // }
 
-  Offset calcMapSize() {
-    double maxX = 0;
-    double maxY = 0;
-    for (var tile in tiles) {
-      if (tile != null) {
-        for (var p in hexLayout.polygonCorners(tile.hex)) {
-          maxX = math.max(p.x, maxX);
-          maxY = math.max(p.y, maxY);
-        }
-      }
-    }
-    return Offset(maxX, maxY);
-  }
+  // Offset calcMapSize() {
+  //   double maxX = 0;
+  //   double maxY = 0;
+  //   for (var tile in tiles) {
+  //     if (tile != null) {
+  //       for (var p in hexLayout.polygonCorners(tile.hex)) {
+  //         maxX = math.max(p.x, maxX);
+  //         maxY = math.max(p.y, maxY);
+  //       }
+  //     }
+  //   }
+  //   return Offset(maxX, maxY);
+  // }
 
-  void addLotsOfHexes() {
-    tiles = [];
+  // void addLotsOfHexes() {
+  //   tiles = [];
 
-    int q = 0;
-    int r = 0;
-    for (var tile in tileDictionary.tiles.values) {
-      var hex = OffsetCoord.rOffsetToCube(0, new OffsetCoord(q, r));
-      tiles.add(HexTile(tile, hex.q, hex.r, hexLayout));
+  //   int q = 0;
+  //   int r = 0;
+  //   for (var tile in tileDictionary.tiles.values) {
+  //     var hex = OffsetCoord.rOffsetToCube(0, new OffsetCoord(q, r));
+  //     tiles.add(HexTile(tile, hex.q, hex.r, hexLayout));
 
-      q++;
-      if (q > 10) {
-        q = 0;
-        r++;
-      }
-    }
-  }
+  //     q++;
+  //     if (q > 10) {
+  //       q = 0;
+  //       r++;
+  //     }
+  //   }
+  // }
 }
 
 class _Indicies {
@@ -93,17 +98,20 @@ class _MapWidgetState extends State<MapWidget> {
 
     tilelib.TileDesignerLoader loader = tilelib.TileDesignerLoader();
     _mapContext.tileDictionary =
-        loader.loadTileDictionary(tilelib.TileDictionarySource().src);
-    _mapContext.hexLayout = HexLayout(HexOrientation.Pointy,
-        200, math.Point<double>(200, 200));
-    _mapContext.drawingSettings = DrawingSettings();
-    HexPoints.init(_mapContext.hexLayout);
-    _mapContext.renderer =
-        TileRenderer.TileRenderer(_mapContext.drawingSettings);
+        loader.loadTileDictionary(gameData.TileDictionarySource.src);
+    // _mapContext.hexLayout = HexLayout(HexOrientation.Pointy,
+    //     200, math.Point<double>(200, 200));
+    var mapData = MapLoader.load(GameList.games[0].map);
+    _mapContext.gameMap =
+        GameMap.createMap(mapData, 200, 50, _mapContext.tileDictionary);
+
+    _mapContext.drawingSettings = tileRender.DrawingSettings();
+    tileRender.HexPoints.init(_mapContext.gameMap.layout);
+    _mapContext.renderer = tileRender.TileRenderer(_mapContext.drawingSettings);
     valueNotifier = ValueNotifier<int>(0);
     valueNotifier.value = 0;
     //_mapContext.loadTiles();
-    _mapContext.addLotsOfHexes();
+    //_mapContext.addLotsOfHexes();
     drawTilePics(_mapContext);
   }
 
@@ -190,19 +198,23 @@ class _MapWidgetState extends State<MapWidget> {
 }
 
 void drawTilePics(_MapContext mapContext) {
-  mapContext.tiles[0].rotation = 2;
-  mapContext.tiles[1].rotation = 1;
-  mapContext.tiles[3].rotation = 0;
+  // mapContext.tiles[0].rotation = 2;
+  // mapContext.tiles[1].rotation = 1;
+  // mapContext.tiles[3].rotation = 0;
 
   //renderer.debug = true;
-  for (var tile in mapContext.tiles) {
-    var r = ui.PictureRecorder();
-    var canvas = ui.Canvas(r);
+  for (var row in mapContext.gameMap.map) {
+    for (var tile in row) {
+      if (tile != null) {
+        var r = ui.PictureRecorder();
+        var canvas = ui.Canvas(r);
 
-    double deg = 60.0 * tile.rotation;
-    canvas.rotateDegrees(deg);
-    mapContext.renderer.renderTile(canvas, tile);
-    tile.picture = r.endRecording();
+        double deg = 60.0 * tile.rotation;
+        canvas.rotateDegrees(deg);
+        mapContext.renderer.renderTile(canvas, tile);
+        tile.picture = r.endRecording();
+      }
+    }
   }
 }
 
@@ -220,9 +232,9 @@ class _MapPainter extends CustomPainter {
     canvas.clear(Colors.blue.shade400);
 
     if (isFirstPaint) {
-      var offset = _mapContext.calcMapSize();
-      var x = size.width / offset.dx;
-      var y = size.height / offset.dy;
+      var offset = _mapContext.gameMap.mapSize;
+      var x = size.width / offset.x;
+      var y = size.height / offset.y;
 
       double scale = math.min(x, y);
       _mapContext.viewMatrix[_Indicies.scaleX] = scale;
@@ -240,22 +252,38 @@ class _MapPainter extends CustomPainter {
     bool usePictures = false;
 
     if (!usePictures) {
-      for (var tile in _mapContext.tiles) {
-        // renderer.debug = true;
-        canvas.save();
-        double deg = 60.0 * tile.rotation;
-        canvas.rotateDegreesOnPoint(deg, tile.center);
-        canvas.translate(tile.center.x, tile.center.y);
-        _mapContext.renderer.renderTile(canvas, tile);
-        canvas.restore();
+      for (var row in _mapContext.gameMap.map) {
+        for (var tile in row) {
+          if (tile != null) {
+            // renderer.debug = true;
+            canvas.save();
+            double deg = 60.0 * tile.rotation;
+            canvas.rotateDegreesOnPoint(deg, tile.center);
+            canvas.translate(tile.center.x, tile.center.y);
+            _mapContext.renderer.renderTile(canvas, tile);
+            canvas.restore();
+          }
+        }
       }
     } else {
-      for (var tile in _mapContext.tiles) {
-        canvas.save();
-        canvas.translate(tile.center.x, tile.center.y);
-        canvas.drawPicture(tile.picture);
-        canvas.restore();
+      for (var row in _mapContext.gameMap.map) {
+        for (var tile in row) {
+          canvas.save();
+          canvas.translate(tile.center.x, tile.center.y);
+          canvas.drawPicture(tile.picture);
+          canvas.restore();
+        }
       }
+    }
+
+    for (var text in _mapContext.gameMap.mapText) {
+      canvas.save();
+      var hex = _mapContext.gameMap.tileAt(text.location.x, text.location.y);
+      canvas.translate(hex.center.x, hex.center.y);
+      tileRender.TileRenderer.drawMapText(canvas, hex, text.text, text.position,
+          text.size, _mapContext.drawingSettings);
+      //canvas.DrawPicture((SKPicture)text.Picture);
+      canvas.restore();
     }
 
     canvas.restore();

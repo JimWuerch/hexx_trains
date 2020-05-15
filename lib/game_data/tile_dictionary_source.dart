@@ -1,5 +1,5 @@
 class TileDictionarySource {
-  String src = '''<?xml version="1.0"?>
+  static const String src = '''<?xml version="1.0"?>
 <tiles>
   <tile>
     <ID>-909</ID>

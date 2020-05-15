@@ -6,7 +6,7 @@ class RevenueAmount {
 }
 
 class Revenue {
-  final math.Point<double> location;
+  final math.Point<int> location;
   final List<RevenueAmount> amounts;
 
   Revenue({this.location, this.amounts});
