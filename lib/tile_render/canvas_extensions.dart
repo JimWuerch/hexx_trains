@@ -1,7 +1,7 @@
-import 'dart:ui' as ui;
+import 'package:flutter/painting.dart' as painting;
 import 'dart:math' as math;
 
-extension CanvasExtensions on ui.Canvas {
+extension CanvasExtensions on painting.Canvas {
   void rotateDegrees(double degrees) {
     this.rotate(degrees * math.pi / 180.0);
   }
@@ -18,7 +18,7 @@ extension CanvasExtensions on ui.Canvas {
     this.translate(-p.x, -p.y);
   }
 
-  void clear(ui.Color color) {
-    this.drawColor(color, ui.BlendMode.src);
+  void clear(painting.Color color) {
+    this.drawColor(color, painting.BlendMode.src);
   }
 }

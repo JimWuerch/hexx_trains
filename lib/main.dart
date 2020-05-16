@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hexxtrains/game_map/map_widget.dart';
+import 'package:hexxtrains/stock_market/stock_market_widget.dart';
 
 void main() {
   runApp(MyApp());
@@ -69,7 +70,17 @@ class _MyHomePageState extends State<MyHomePage> {
         // the App.build method, and use it to set our appbar title.
         title: Text(widget.title),
       ),
-      body: MapWidget(),
+      endDrawer: Drawer(),
+      body: Column(
+        children: [
+          Expanded(
+            child: MapWidget(),
+          ),
+          Expanded(
+            child: StockMarketWidget(),
+          ),
+        ],
+      ),
     );
   }
 }

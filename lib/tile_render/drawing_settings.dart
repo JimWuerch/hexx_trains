@@ -25,6 +25,7 @@ class DrawingSettings {
   Color offMap = Color.fromARGB(0xFF, 0xDC, 0x14, 0x3c);
   Color ground = Color.fromARGB(255, 192, 220, 192);
   Color barrier = Color.fromARGB(0xFF, 0x00, 0x00, 0x80);
+  Color orange = Colors.orange;
 
 // The following sizes are % of the distance from center to side
 // Center to side distance is TileSize * sqrt(3) / 2;
@@ -40,7 +41,7 @@ class DrawingSettings {
   double barrierSize = 7.5;
 
   double contrastScale = 1.2;
-  String fontFamily = "Verdana"; //TODO: fix this font name
+  String fontFamily = 'RobotoSlab';
 
   double convertSize(double size, [double scale = 1.0]) {
     return size / 100.0 * tileSize * SQRT3 / 2.0 * scale;

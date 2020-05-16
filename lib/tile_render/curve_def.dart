@@ -95,7 +95,7 @@ class CurveDef {
   }
 
   @override
-  bool operator ==(other) {
+  bool operator ==(dynamic other) {
     if (other is! CurveDef) return false;
     if (start == other.start &&
         cp1 == other.cp1 &&

@@ -95,7 +95,7 @@ class Position {
   }
 
   @override
-  bool operator ==(other) {
+  bool operator ==(dynamic other) {
     if (!(other is Position)) return false;
     if (location == Locations.Center && other.location == Locations.Center)
       return true;

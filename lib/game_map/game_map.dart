@@ -115,6 +115,9 @@ class GameMap {
     }
 
     var mapSize = _calcMapSize(mapCells, layout);
+    // the layout has the left and top margins, so we need
+    // to add the bottom and left margins
+    mapSize = math.Point<double>(mapSize.x + margin, mapSize.y + margin);
 
     var barriers = List<Barrier>();
     for (var barrier in mapData.barriers) {

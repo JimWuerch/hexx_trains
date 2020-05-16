@@ -70,11 +70,13 @@ class TileRenderer {
     }
   }
 
-  TileRenderer(DrawingSettings drawingSettings) {
+  TileRenderer(DrawingSettings drawingSettings, HexLayout layout) {
     _paintDict = Map<_RenderElement, Paint>();
     _textStyleDict = Map<_RenderElement, TextStyle>();
     _drawingSettings = drawingSettings;
     _debug = false;
+
+    HexPoints.init(layout);
 
     _initPaintDict();
   }
@@ -170,6 +172,7 @@ class TileRenderer {
       ..isAntiAlias = true;
     _textStyleDict[_RenderElement.TileNumberText] = TextStyle(
         color: Colors.black,
+        fontFamily: 'RobotoSlab',
         fontWeight: FontWeight.bold,
         fontSize:
             _drawingSettings.convertSize(_drawingSettings.tileNumberSize));
@@ -182,6 +185,7 @@ class TileRenderer {
       ..isAntiAlias = true;
     _textStyleDict[_RenderElement.JunctionRevenueText] = TextStyle(
         color: Colors.black,
+        fontFamily: 'RobotoSlab',
         fontSize: _drawingSettings.convertSize(_drawingSettings.revenueSize),
         fontWeight: FontWeight.bold);
 
@@ -196,6 +200,7 @@ class TileRenderer {
       ..isAntiAlias = true;
     _textStyleDict[_RenderElement.AdornmentText] = TextStyle(
         color: Colors.black,
+        fontFamily: 'RobotoSlab',
         fontSize: _drawingSettings.convertSize(_drawingSettings.textSize),
         fontWeight: FontWeight.bold);
   }
@@ -1011,7 +1016,7 @@ class TileRenderer {
     _canvas.drawCircle(Offset(p.x, p.y), radius, outline);
     _canvas.save();
     //int deg = _hex.layout.orientation == HexOrientation.Pointy ? 30 : 0;
-    double deg = 60.0 * _hex.rotation;
+    double deg = -60.0 * _hex.rotation;
     _canvas.rotateDegreesOnPoint(deg, p);
     _drawText(amount, Point<double>(p.x, p.y), textStyle);
     //_canvas.DrawText(amount, p.X - textBounds.MidX, p.Y - textBounds.MidY, textPaint);
@@ -1327,6 +1332,7 @@ class TileRenderer {
     TextStyle textStyle = TextStyle(
         fontSize: drawingSettings.convertSize(drawingSettings.textSize) * size,
         color: Colors.black,
+        fontFamily: 'RobotoSlab',
         fontWeight: FontWeight.bold);
 
     var textPainter = TextPainter(textDirection: TextDirection.ltr);
@@ -1412,6 +1418,7 @@ class TileRenderer {
         color: fill
             ? companyInfo.isLightOnDark ? Colors.white : Colors.black
             : companyInfo.color,
+        fontFamily: 'RobotoSlab',
         fontSize: _drawingSettings.convertSize(_drawingSettings.textSize));
 
 //  Paint textPaint = new SKPaint()
