@@ -981,7 +981,7 @@ class TileRenderer {
   }
 
   void _drawTileNumber() {
-    if (_hex.tileDef.tileId <= 0) return;
+    //if (_hex.tileDef.tileId <= 0) return;
 
     var hp = HexPoints.instance;
     TextStyle textStyle = _textStyleDict[_RenderElement.TileNumberText];

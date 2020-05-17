@@ -5,7 +5,11 @@ import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:hexxtrains/game_data/game_data.dart';
 import 'package:hexxtrains/game_map/game_map.dart';
+import 'package:hexxtrains/game_map/tile_manifest.dart';
+import 'package:hexxtrains/game_map/tile_manifest_loader.dart';
+import 'package:hexxtrains/game_map/tile_selector.dart';
 import 'package:hexxtrains/hex/hex.dart';
+import 'package:hexxtrains/main.dart';
 import 'package:hexxtrains/tile_library/tile_library.dart' as tilelib;
 import 'package:hexxtrains/tile_render/tile_render.dart' as tileRender;
 import 'package:hexxtrains/game_data/game_data.dart' as gameData;
@@ -15,6 +19,7 @@ import 'package:vector_math/vector_math_64.dart' as m64;
 
 import 'hex_tile.dart';
 import 'map_loader.dart';
+import 'hex_tile_widget.dart';
 
 // ignore: unused_element
 class _DebugMap {
@@ -33,10 +38,10 @@ class _DebugMap {
 
   void loadTiles() {
     tiles = [
-      HexTile(tileDictionary.getTile(8), 0, 0, hexLayout),
-      HexTile(tileDictionary.getTile(9), 1, 0, hexLayout),
-      HexTile(tileDictionary.getTile(6), 0, 1, hexLayout),
-      HexTile(tileDictionary.getTile(200), 1, 1, hexLayout),
+      HexTile(tileDictionary.getTile(8), 0, 0, hexLayout, null),
+      HexTile(tileDictionary.getTile(9), 1, 0, hexLayout, null),
+      HexTile(tileDictionary.getTile(6), 0, 1, hexLayout, null),
+      HexTile(tileDictionary.getTile(200), 1, 1, hexLayout, null),
     ];
   }
 
@@ -61,7 +66,7 @@ class _DebugMap {
     int r = 0;
     for (var tile in tileDictionary.tiles.values) {
       var hex = OffsetCoord.rOffsetToCube(0, new OffsetCoord(q, r));
-      tiles.add(HexTile(tile, hex.q, hex.r, hexLayout));
+      tiles.add(HexTile(tile, hex.q, hex.r, hexLayout, null));
 
       q++;
       if (q > 10) {
@@ -124,13 +129,15 @@ class _MapWidgetState extends State<MapWidget> {
   Offset startOffset;
   m64.Matrix3 startMatrix;
   _MapContext mapContext;
+  OverlayEntry _tileSelectionOverlay;
 
   _MapWidgetState() {
     mapContext = _MapContext();
     tilelib.TileDesignerLoader loader = tilelib.TileDesignerLoader();
     tilelib.TileDictionary tileDictionary = loader.loadTileDictionary(gameData.TileDictionarySource.src);
+    TileManifest manifest = TileManifestLoader.load(GameList.games[0].tileManifest);
     var mapData = MapLoader.load(GameList.games[0].map);
-    mapContext.gameMap = GameMap.createMap(mapData, 200, 50, tileDictionary);
+    mapContext.gameMap = GameMap.createMap(mapData, 200, 0, tileDictionary, manifest);
     mapContext.drawingSettings = tileRender.DrawingSettings();
     //mapContext.viewMatrix = m64.Matrix3.identity();
     mapContext.renderer = tileRender.TileRenderer(mapContext.drawingSettings, mapContext.gameMap.layout);
@@ -150,7 +157,7 @@ class _MapWidgetState extends State<MapWidget> {
       },
       child: PositionedTapDetector(
         //controller: _controller,
-        onTap: (position) => _onTap(position),
+        onTap: (position) => _onTap(position, context),
         child: GestureDetector(
           child: CustomPaint(
             painter: _MapPainter(repaint: valueNotifier, mapContext: mapContext),
@@ -166,14 +173,60 @@ class _MapWidgetState extends State<MapWidget> {
     );
   }
 
-  void _onTap(TapPosition position) {
+  void _onTap(TapPosition position, BuildContext context) {
     m64.Vector2 v = m64.Vector2(position.relative.dx, position.relative.dy);
     v = mapContext.viewMatrix.transform2(v);
     var p = math.Point<double>(position.relative.dx - mapContext.viewMatrix[_Indicies.transX],
         position.relative.dy - mapContext.viewMatrix[_Indicies.transY]);
     p *= 1 / mapContext.viewMatrix[_Indicies.scaleX];
     var hex = mapContext.gameMap.layout.pixelToHex(p);
-    print('${v.x},${v.y} ${hex.q},${hex.r}');
+    //print('${v.x},${v.y} ${hex.q},${hex.r}');
+    if (_tileSelectionOverlay == null) {
+      List<HexTileWidget> list = [];
+
+      var srcTile = mapContext.gameMap.tileAt(hex.q, hex.r);
+      if (srcTile == null) {
+        return;
+      }
+
+      if (srcTile.manifestItem != null) {
+        for (var upgrade in srcTile.manifestItem.upgrades) {
+          int id = int.tryParse(upgrade.id);
+          if (id != null) {
+            var tile = mapContext.gameMap.tileDictionary.getTile(id);
+            if (tile != null) {
+              list.add(HexTileWidget(
+                  tile: HexTile(tile, 0, 0, mapContext.gameMap.layout, upgrade),
+                  size: Size(50, 50),
+                  renderer: mapContext.renderer));
+            }
+          }
+        }
+      }
+
+      var tileSelector = TileSelector(
+        hex: hex,
+        list: list,
+        itemExtent: 400 * mapContext.viewMatrix[_Indicies.scaleX],
+        onSelected: _hexSelected,
+      );
+      _showTileList(
+          context,
+          Rect.fromLTWH(position.relative.dx + 50, position.relative.dy, 400 * mapContext.viewMatrix[_Indicies.scaleX],
+              3 * 400 * mapContext.viewMatrix[_Indicies.scaleY]),
+          tileSelector);
+    } else {
+      _tileSelectionOverlay.remove();
+      _tileSelectionOverlay = null;
+    }
+  }
+
+  void _hexSelected(Hex hex, HexTile tile) {
+    print('replacing ${hex.q},${hex.r} with tile ${tile.tileDef.name}');
+    _tileSelectionOverlay.remove();
+    _tileSelectionOverlay = null;
+    mapContext.gameMap.replaceTile(tile, hex.q, hex.r);
+    valueNotifier.value++;
   }
 
   void _onScaleStart(ScaleStartDetails details) {
@@ -240,6 +293,26 @@ class _MapWidgetState extends State<MapWidget> {
       }
     }
   }
+
+  void _showTileList(BuildContext context, Rect rect, Widget child) {
+    OverlayState overlayState = Overlay.of(context);
+    _tileSelectionOverlay = OverlayEntry(
+      builder: (context) => Positioned(
+        top: rect.top,
+        left: rect.left,
+        width: rect.width,
+        height: rect.height,
+        child: Material(
+          elevation: 4.0,
+          child: child,
+        ),
+      ),
+    );
+
+    overlayState.insert(_tileSelectionOverlay);
+
+    //overlayEntry.remove();
+  }
 }
 
 class _MapPainter extends CustomPainter {
@@ -288,10 +361,12 @@ class _MapPainter extends CustomPainter {
     for (var text in _mapContext.gameMap.mapText) {
       canvas.save();
       var hex = _mapContext.gameMap.tileAt(text.location.x, text.location.y);
-      canvas.translate(hex.center.x, hex.center.y);
-      tileRender.TileRenderer.drawMapText(
-          canvas, hex, text.text, text.position, text.size, _mapContext.drawingSettings);
-      //canvas.DrawPicture((SKPicture)text.Picture);
+      if (hex.tileDef.tileId < 1) {
+        canvas.translate(hex.center.x, hex.center.y);
+        tileRender.TileRenderer.drawMapText(
+            canvas, hex, text.text, text.position, text.size, _mapContext.drawingSettings);
+        //canvas.DrawPicture((SKPicture)text.Picture);
+      }
       canvas.restore();
     }
 

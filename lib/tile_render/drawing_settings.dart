@@ -37,7 +37,7 @@ class DrawingSettings {
   double textIdSize = 10;
   double textSize = 20;
   double revenueSize = 20;
-  double tileNumberSize = 10;
+  double tileNumberSize = 30;
   double barrierSize = 7.5;
 
   double contrastScale = 1.2;

@@ -1,5 +1,6 @@
 import 'dart:math' as math;
 
+import 'package:hexxtrains/game_map/tile_manifest.dart';
 import 'package:hexxtrains/hex/hex.dart';
 import 'package:hexxtrains/hex/hex_layout.dart';
 import 'package:hexxtrains/tile_library/tile_dictionary.dart';
@@ -33,7 +34,9 @@ class GameMap {
       this.margin,
       this.layout,
       this.offset,
-      this.orientation}) {
+      this.orientation,
+      this.tileDictionary,
+      this.tileManifest}) {
         _mapCells = mapCells;
       }
 
@@ -51,6 +54,10 @@ class GameMap {
 
   final HexOrientation orientation;
 
+  final TileDictionary tileDictionary;
+
+  final TileManifest tileManifest;
+
   HexTile selectedTile;
 
   List<List<HexTile>> get map {
@@ -64,7 +71,7 @@ class GameMap {
   final List<Terrain> terrains;
 
   factory GameMap.createMap(
-      MapData mapData, int size, int margin, TileDictionary tileDictionary) {
+      MapData mapData, int size, int margin, TileDictionary tileDictionary, TileManifest tileManifest) {
     int scale = size;
     int rows = mapData.height;
     int cols = mapData.width;
@@ -101,7 +108,11 @@ class GameMap {
       int r = qr.y;
       //var index = _getIndicies(q, r, rows, cols, orientation);
       //Debug.WriteLine($"Got QR {q},{r} xy:{x},{y} loc:{(int)t.Location.X},{(int)t.Location.Y}");
-      var tile = HexTile(tileDictionary.getTile(t.id), q, r, layout)
+      TileManifestItem manifestItem;
+      if (tileManifest.manifest.containsKey(t.id.toString())) {
+        manifestItem = tileManifest.getTile(t.id.toString());
+      }
+      var tile = HexTile(tileDictionary.getTile(t.id), q, r, layout, manifestItem)
         ..rotation = t.rotation
         ..cost = t.cost
         ..costPosition = t.costPosition;
@@ -149,7 +160,9 @@ class GameMap {
         margin: margin,
         layout: layout,
         offset: offset,
-        orientation: orientation);
+        orientation: orientation,
+        tileDictionary: tileDictionary,
+        tileManifest: tileManifest);
   }
 
   HexTile tileFromPixel(math.Point<double> p) {

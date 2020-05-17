@@ -12,7 +12,9 @@ Join the discord server at:  https://discord.gg/5YBDtjb
 
 ## Getting Started
 
-Note: To run this on a chrome device, use --dart-define=FLUTTER_WEB_USE_SKIA=true 
+Note: To run this on a chrome device, use --dart-define=FLUTTER_WEB_USE_SKIA=true
+
+If you aren't using VSCode, please set your line size to 120 for dartfmt.  80 is stupid and archaic.
 
 
 While this project is MIT-licensed, I request that code from it isn't used in projects that have a restrictive license, such as the GPL.

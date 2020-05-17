@@ -12,6 +12,7 @@ abstract class GameData {
   String get companies;
   String get map;
   String get stockMarket;
+  String get tileManifest;
 }
 
 class GameList {
