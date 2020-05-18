@@ -1,6 +1,5 @@
-import 'package:hexxtrains/tile_library/position.dart';
-
 import 'adornment.dart';
+import 'position.dart';
 
 class TextAdornment extends Adornment {
   final String text;

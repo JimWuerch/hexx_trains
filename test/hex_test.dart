@@ -1,8 +1,4 @@
-import 'dart:math';
-import 'package:hexxtrains/hex/fractional_hex.dart';
-import 'package:hexxtrains/hex/hex.dart';
-import 'package:hexxtrains/hex/hex_layout.dart';
-import 'package:hexxtrains/hex/offset_coord.dart';
+import 'package:hexxtrains/components/hex/hex.dart';
 import 'package:test/test.dart';
 
 void main() {

@@ -3,30 +3,26 @@ import 'dart:ui' as ui;
 
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+import 'package:hexxtrains/components/game_map/game_map.dart';
+import 'package:hexxtrains/components/game_map/map_loader.dart';
+import 'package:hexxtrains/components/game_map/tile_manifest_loader.dart';
+import 'package:hexxtrains/components/hex/hex.dart';
+import 'package:hexxtrains/components/render/render.dart';
+import 'package:hexxtrains/components/tile_library/tile_library.dart' as tilelib;
+import 'package:hexxtrains/components/widgets/tile_selector.dart';
 import 'package:hexxtrains/game_data/game_data.dart';
-import 'package:hexxtrains/game_map/game_map.dart';
-import 'package:hexxtrains/game_map/tile_manifest.dart';
-import 'package:hexxtrains/game_map/tile_manifest_loader.dart';
-import 'package:hexxtrains/game_map/tile_selector.dart';
-import 'package:hexxtrains/hex/hex.dart';
-import 'package:hexxtrains/main.dart';
-import 'package:hexxtrains/tile_library/tile_library.dart' as tilelib;
-import 'package:hexxtrains/tile_render/tile_render.dart' as tileRender;
 import 'package:hexxtrains/game_data/game_data.dart' as gameData;
 import 'package:positioned_tap_detector/positioned_tap_detector.dart';
-
 import 'package:vector_math/vector_math_64.dart' as m64;
 
-import 'hex_tile.dart';
-import 'map_loader.dart';
 import 'hex_tile_widget.dart';
 
 // ignore: unused_element
 class _DebugMap {
-  tileRender.TileRenderer renderer;
+  TileRenderer renderer;
   tilelib.TileDictionary tileDictionary;
   HexLayout hexLayout;
-  tileRender.DrawingSettings drawingSettings;
+  DrawingSettings drawingSettings;
   m64.Matrix3 viewMatrix = m64.Matrix3.identity();
   List<HexTile> tiles;
 
@@ -77,25 +73,11 @@ class _DebugMap {
   }
 }
 
-class _Indicies {
-  static const int scaleX = 0;
-  static const int skewX = 1;
-  static const int transX = 2;
-  static const int skewY = 3;
-  static const int scaleY = 4;
-  static const int transY = 5;
-  static const int persp0 = 6;
-  static const int persp1 = 7;
-  static const int persp2 = 8;
-
-  static const int Count = 9;
-}
-
 class _MapContext {
-  tileRender.TileRenderer renderer;
+  TileRenderer renderer;
   m64.Matrix3 viewMatrix;
   GameMap gameMap;
-  tileRender.DrawingSettings drawingSettings;
+  DrawingSettings drawingSettings;
 
   void resetMatrix(ui.Size size) {
     var offset = gameMap.mapSize;
@@ -104,16 +86,16 @@ class _MapContext {
     double scale = math.min(x, y);
 
     viewMatrix = m64.Matrix3.identity();
-    viewMatrix[_Indicies.scaleX] = scale;
-    viewMatrix[_Indicies.scaleY] = scale;
+    viewMatrix[Indicies.scaleX] = scale;
+    viewMatrix[Indicies.scaleY] = scale;
 
     // center it in the view
     if (x < y) {
       // constrained in width, center vertically
-      viewMatrix[_Indicies.transY] = (size.height - (gameMap.mapSize.y * scale)) / 2;
+      viewMatrix[Indicies.transY] = (size.height - (gameMap.mapSize.y * scale)) / 2;
     } else {
       // center horizontally
-      viewMatrix[_Indicies.transX] = (size.width - (gameMap.mapSize.x * scale)) / 2;
+      viewMatrix[Indicies.transX] = (size.width - (gameMap.mapSize.x * scale)) / 2;
     }
   }
 }
@@ -138,9 +120,9 @@ class _MapWidgetState extends State<MapWidget> {
     TileManifest manifest = TileManifestLoader.load(GameList.games[0].tileManifest);
     var mapData = MapLoader.load(GameList.games[0].map);
     mapContext.gameMap = GameMap.createMap(mapData, 200, 0, tileDictionary, manifest);
-    mapContext.drawingSettings = tileRender.DrawingSettings();
+    mapContext.drawingSettings = DrawingSettings();
     //mapContext.viewMatrix = m64.Matrix3.identity();
-    mapContext.renderer = tileRender.TileRenderer(mapContext.drawingSettings, mapContext.gameMap.layout);
+    mapContext.renderer = TileRenderer(mapContext.drawingSettings, mapContext.gameMap.layout);
     valueNotifier = ValueNotifier<int>(0);
     valueNotifier.value = 0;
 
@@ -176,9 +158,9 @@ class _MapWidgetState extends State<MapWidget> {
   void _onTap(TapPosition position, BuildContext context) {
     m64.Vector2 v = m64.Vector2(position.relative.dx, position.relative.dy);
     v = mapContext.viewMatrix.transform2(v);
-    var p = math.Point<double>(position.relative.dx - mapContext.viewMatrix[_Indicies.transX],
-        position.relative.dy - mapContext.viewMatrix[_Indicies.transY]);
-    p *= 1 / mapContext.viewMatrix[_Indicies.scaleX];
+    var p = math.Point<double>(position.relative.dx - mapContext.viewMatrix[Indicies.transX],
+        position.relative.dy - mapContext.viewMatrix[Indicies.transY]);
+    p *= 1 / mapContext.viewMatrix[Indicies.scaleX];
     var hex = mapContext.gameMap.layout.pixelToHex(p);
     //print('${v.x},${v.y} ${hex.q},${hex.r}');
     if (_tileSelectionOverlay == null) {
@@ -207,13 +189,13 @@ class _MapWidgetState extends State<MapWidget> {
       var tileSelector = TileSelector(
         hex: hex,
         list: list,
-        itemExtent: 400 * mapContext.viewMatrix[_Indicies.scaleX],
+        itemExtent: 400 * mapContext.viewMatrix[Indicies.scaleX],
         onSelected: _hexSelected,
       );
       _showTileList(
           context,
-          Rect.fromLTWH(position.relative.dx + 50, position.relative.dy, 400 * mapContext.viewMatrix[_Indicies.scaleX],
-              3 * 400 * mapContext.viewMatrix[_Indicies.scaleY]),
+          Rect.fromLTWH(position.relative.dx + 50, position.relative.dy, 400 * mapContext.viewMatrix[Indicies.scaleX],
+              3 * 400 * mapContext.viewMatrix[Indicies.scaleY]),
           tileSelector);
     } else {
       _tileSelectionOverlay.remove();
@@ -241,19 +223,19 @@ class _MapWidgetState extends State<MapWidget> {
       double tx = details.localFocalPoint.dx - details.scale * details.localFocalPoint.dx;
       double ty = details.localFocalPoint.dy - details.scale * details.localFocalPoint.dy;
       var scaleMatrix = m64.Matrix3.identity();
-      scaleMatrix[_Indicies.scaleX] = details.scale;
-      scaleMatrix[_Indicies.scaleY] = details.scale;
-      scaleMatrix[_Indicies.transX] = tx;
-      scaleMatrix[_Indicies.transY] = ty;
-      scaleMatrix[_Indicies.persp2] = 1;
+      scaleMatrix[Indicies.scaleX] = details.scale;
+      scaleMatrix[Indicies.scaleY] = details.scale;
+      scaleMatrix[Indicies.transX] = tx;
+      scaleMatrix[Indicies.transY] = ty;
+      scaleMatrix[Indicies.persp2] = 1;
 
       mapContext.viewMatrix = (startMatrix * scaleMatrix) as m64.Matrix3;
     } else if (details.localFocalPoint != startOffset) {
       // translate
-      mapContext.viewMatrix[_Indicies.transX] =
-          details.localFocalPoint.dx - startOffset.dx + startMatrix[_Indicies.transX];
-      mapContext.viewMatrix[_Indicies.transY] =
-          details.localFocalPoint.dy - startOffset.dy + startMatrix[_Indicies.transY];
+      mapContext.viewMatrix[Indicies.transX] =
+          details.localFocalPoint.dx - startOffset.dx + startMatrix[Indicies.transX];
+      mapContext.viewMatrix[Indicies.transY] =
+          details.localFocalPoint.dy - startOffset.dy + startMatrix[Indicies.transY];
     }
     valueNotifier.value++;
   }
@@ -264,11 +246,11 @@ class _MapWidgetState extends State<MapWidget> {
     double tx = details.localPosition.dx - scale * details.localPosition.dx;
     double ty = details.localPosition.dy - scale * details.localPosition.dy;
     var scaleMatrix = m64.Matrix3.identity();
-    scaleMatrix[_Indicies.scaleX] = scale;
-    scaleMatrix[_Indicies.scaleY] = scale;
-    scaleMatrix[_Indicies.transX] = tx;
-    scaleMatrix[_Indicies.transY] = ty;
-    scaleMatrix[_Indicies.persp2] = 1;
+    scaleMatrix[Indicies.scaleX] = scale;
+    scaleMatrix[Indicies.scaleY] = scale;
+    scaleMatrix[Indicies.transX] = tx;
+    scaleMatrix[Indicies.transY] = ty;
+    scaleMatrix[Indicies.persp2] = 1;
 
     mapContext.viewMatrix = (mapContext.viewMatrix * scaleMatrix) as m64.Matrix3;
 
@@ -333,8 +315,8 @@ class _MapPainter extends CustomPainter {
     }
 
     canvas.save();
-    canvas.translate(_mapContext.viewMatrix[_Indicies.transX], _mapContext.viewMatrix[_Indicies.transY]);
-    canvas.scale(_mapContext.viewMatrix[_Indicies.scaleX], _mapContext.viewMatrix[_Indicies.scaleY]);
+    canvas.translate(_mapContext.viewMatrix[Indicies.transX], _mapContext.viewMatrix[Indicies.transY]);
+    canvas.scale(_mapContext.viewMatrix[Indicies.scaleX], _mapContext.viewMatrix[Indicies.scaleY]);
     //print('${viewMatrix[Indicies.transX]},${viewMatrix[Indicies.transY]}:${viewMatrix[Indicies.scaleX]}');
 
     for (var row in _mapContext.gameMap.map) {
@@ -342,7 +324,7 @@ class _MapPainter extends CustomPainter {
         if (tile != null) {
           canvas.save();
           if (tile.picture == null) {
-            // renderer.debug = true;
+            //_mapContext.renderer.debug = true;
             double deg = 60.0 * tile.rotation;
             canvas.rotateDegreesOnPoint(deg, tile.center);
             canvas.translate(tile.center.x, tile.center.y);
@@ -363,7 +345,7 @@ class _MapPainter extends CustomPainter {
       var hex = _mapContext.gameMap.tileAt(text.location.x, text.location.y);
       if (hex.tileDef.tileId < 1) {
         canvas.translate(hex.center.x, hex.center.y);
-        tileRender.TileRenderer.drawMapText(
+        TileRenderer.drawMapText(
             canvas, hex, text.text, text.position, text.size, _mapContext.drawingSettings);
         //canvas.DrawPicture((SKPicture)text.Picture);
       }

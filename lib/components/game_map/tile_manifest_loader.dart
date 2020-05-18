@@ -7,7 +7,6 @@ class TileManifestLoader {
     Map<String, dynamic> data = jsonDecode(src) as Map<String, dynamic>;
 
     List<dynamic> jsonItems = data['tiles'] as List;
-    List<TileManifestItem> items = [];
     Map<String, TileManifestItem> tmp = {};
 
     // first pass, create the base list

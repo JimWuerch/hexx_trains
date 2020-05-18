@@ -1,17 +1,17 @@
 import 'dart:math' as math;
 
-import 'package:hexxtrains/game_map/tile_manifest.dart';
-import 'package:hexxtrains/hex/hex.dart';
-import 'package:hexxtrains/hex/hex_layout.dart';
-import 'package:hexxtrains/tile_library/tile_dictionary.dart';
+import 'package:hexxtrains/components/hex/hex.dart';
+import 'package:hexxtrains/components/tile_library/tile_library.dart';
 
 import 'barrier.dart';
 import 'hex_tile.dart';
 import 'map_data.dart';
 import 'map_text.dart';
 import 'terrain.dart';
+import 'tile_manifest.dart';
 
 export 'barrier.dart';
+export 'company_render_info.dart'; //TODO: move this when it's actually implemented
 export 'doodad.dart';
 export 'hex_tile.dart';
 export 'map_data.dart';
@@ -19,6 +19,7 @@ export 'map_text.dart';
 export 'map_tile.dart';
 export 'revenue.dart';
 export 'terrain.dart';
+export 'tile_manifest.dart';
 
 class GameMap {
   List<List<HexTile>> _mapCells;

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:hexxtrains/game_map/map_widget.dart';
-import 'package:hexxtrains/stock_market/stock_market_widget.dart';
+import 'package:hexxtrains/components/widgets/map_widget.dart';
+import 'package:hexxtrains/components/widgets/stock_market_widget.dart';
 
 void main() {
   runApp(MyApp());

@@ -1,4 +1,4 @@
-import 'package:hexxtrains/tile_library/tile_designer_loader.dart';
+import 'package:hexxtrains/components/tile_library/tile_designer_loader.dart';
 import 'package:hexxtrains/game_data/game_data.dart';
 import 'package:test/test.dart';
 

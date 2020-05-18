@@ -1,4 +1,4 @@
-import 'package:hexxtrains/tile_library/position.dart';
+import 'position.dart';
 
 class Revenue {
   final Position position;

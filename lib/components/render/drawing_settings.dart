@@ -2,10 +2,10 @@
 // Use of this source code is governed by the MIT license that can be found
 // in the LICENSE file.  See the README file for additional requests.
 
-import 'package:flutter/material.dart';
 import 'dart:ui';
 
-import 'package:hexxtrains/tile_library/tile_colors.dart';
+import 'package:flutter/material.dart';
+import 'package:hexxtrains/components/tile_library/tile_colors.dart';
 
 class DrawingSettings {
   static const double SQRT3 = 1.73205;
@@ -37,7 +37,7 @@ class DrawingSettings {
   double textIdSize = 10;
   double textSize = 20;
   double revenueSize = 20;
-  double tileNumberSize = 30;
+  double tileNumberSize = 10;
   double barrierSize = 7.5;
 
   double contrastScale = 1.2;

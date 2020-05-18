@@ -132,4 +132,14 @@ class HexLayout {
     }
     return sides;
   }
+
+  // the size of a box the hex will fit in.  doesn't include the
+  // offset from the origin.
+  Point<double> extents() {
+    if (orientation == HexOrientation.Pointy) {
+      return Point<double>(size * sqrt(3), size * 2.0);
+    } else {
+      return Point<double>(size * 2.0, size * sqrt(3));
+    }
+  }
 }

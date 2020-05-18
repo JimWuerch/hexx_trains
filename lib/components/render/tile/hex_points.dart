@@ -5,9 +5,9 @@
 import 'dart:math';
 import 'dart:ui' as ui;
 
-import 'package:hexxtrains/game_map/hex_tile.dart';
-import 'package:hexxtrains/hex/hex_layout.dart';
-import 'package:hexxtrains/tile_library/tile_definition.dart';
+import 'package:hexxtrains/components/game_map/hex_tile.dart';
+import 'package:hexxtrains/components/hex/hex_layout.dart';
+import 'package:hexxtrains/components/tile_library/tile_definition.dart';
 
 import 'curve_def.dart';
 import 'curve_point.dart';

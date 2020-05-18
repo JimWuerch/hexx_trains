@@ -1,38 +1,22 @@
 import 'dart:math' as math;
+
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:hexxtrains/game_data/game_data.dart';
-import 'package:hexxtrains/stock_market/stock_market_data.dart';
-import 'package:hexxtrains/stock_market/stock_market_loader.dart';
-import 'package:hexxtrains/stock_market/stock_market_renderer.dart';
-import 'package:hexxtrains/tile_render/drawing_settings.dart' as ds;
 import 'package:flutter/painting.dart' as painting;
+import 'package:hexxtrains/components/render/render.dart';
+import 'package:hexxtrains/components/stock_market/stock_market_data.dart';
+import 'package:hexxtrains/components/stock_market/stock_market_loader.dart';
+import 'package:hexxtrains/game_data/game_data.dart';
 import 'package:vector_math/vector_math_64.dart' as m64;
-import 'package:hexxtrains/tile_render/canvas_extensions.dart';
 
-import 'stock_market_data.dart';
 
 class _DrawContext {
   StockMarketRenderer renderer;
-  ds.DrawingSettings drawingSettings;
+  DrawingSettings drawingSettings;
   m64.Matrix3 viewMatrix = m64.Matrix3.identity();
   StockMarketData marketData;
 
   _DrawContext();
-}
-
-class _Indicies {
-  static const int scaleX = 0;
-  static const int skewX = 1;
-  static const int transX = 2;
-  static const int skewY = 3;
-  static const int scaleY = 4;
-  static const int transY = 5;
-  static const int persp0 = 6;
-  static const int persp1 = 7;
-  static const int persp2 = 8;
-
-  static const int Count = 9;
 }
 
 class StockMarketWidget extends StatefulWidget {
@@ -53,7 +37,7 @@ class _StockMarketWidgetState extends State<StockMarketWidget> {
     _drawContext.marketData =
         StockMarketLoader.load(GameList.games[0].stockMarket);
 
-    _drawContext.drawingSettings = ds.DrawingSettings();
+    _drawContext.drawingSettings = DrawingSettings();
     _drawContext.renderer = StockMarketRenderer(
         _drawContext.marketData, _drawContext.drawingSettings);
     valueNotifier = ValueNotifier<int>(0);
@@ -105,21 +89,21 @@ class _StockMarketWidgetState extends State<StockMarketWidget> {
       double ty = details.localFocalPoint.dy -
           details.scale * details.localFocalPoint.dy;
       var scaleMatrix = m64.Matrix3.identity();
-      scaleMatrix[_Indicies.scaleX] = details.scale;
-      scaleMatrix[_Indicies.scaleY] = details.scale;
-      scaleMatrix[_Indicies.transX] = tx;
-      scaleMatrix[_Indicies.transY] = ty;
-      scaleMatrix[_Indicies.persp2] = 1;
+      scaleMatrix[Indicies.scaleX] = details.scale;
+      scaleMatrix[Indicies.scaleY] = details.scale;
+      scaleMatrix[Indicies.transX] = tx;
+      scaleMatrix[Indicies.transY] = ty;
+      scaleMatrix[Indicies.persp2] = 1;
 
       _drawContext.viewMatrix = (startMatrix * scaleMatrix) as m64.Matrix3;
     } else if (details.localFocalPoint != startOffset) {
       // translate
-      _drawContext.viewMatrix[_Indicies.transX] = details.localFocalPoint.dx -
+      _drawContext.viewMatrix[Indicies.transX] = details.localFocalPoint.dx -
           startOffset.dx +
-          startMatrix[_Indicies.transX];
-      _drawContext.viewMatrix[_Indicies.transY] = details.localFocalPoint.dy -
+          startMatrix[Indicies.transX];
+      _drawContext.viewMatrix[Indicies.transY] = details.localFocalPoint.dy -
           startOffset.dy +
-          startMatrix[_Indicies.transY];
+          startMatrix[Indicies.transY];
     }
     valueNotifier.value++;
   }
@@ -130,11 +114,11 @@ class _StockMarketWidgetState extends State<StockMarketWidget> {
     double tx = details.localPosition.dx - scale * details.localPosition.dx;
     double ty = details.localPosition.dy - scale * details.localPosition.dy;
     var scaleMatrix = m64.Matrix3.identity();
-    scaleMatrix[_Indicies.scaleX] = scale;
-    scaleMatrix[_Indicies.scaleY] = scale;
-    scaleMatrix[_Indicies.transX] = tx;
-    scaleMatrix[_Indicies.transY] = ty;
-    scaleMatrix[_Indicies.persp2] = 1;
+    scaleMatrix[Indicies.scaleX] = scale;
+    scaleMatrix[Indicies.scaleY] = scale;
+    scaleMatrix[Indicies.transX] = tx;
+    scaleMatrix[Indicies.transY] = ty;
+    scaleMatrix[Indicies.persp2] = 1;
 
     _drawContext.viewMatrix = (_drawContext.viewMatrix * scaleMatrix) as m64.Matrix3;
 
@@ -163,16 +147,16 @@ class _StockMarketPainter extends CustomPainter {
       var y = size.height / offset.height;
 
       double scale = math.min(x, y);
-      _drawContext.viewMatrix[_Indicies.scaleX] = scale;
-      _drawContext.viewMatrix[_Indicies.scaleY] = scale;
+      _drawContext.viewMatrix[Indicies.scaleX] = scale;
+      _drawContext.viewMatrix[Indicies.scaleY] = scale;
       isFirstPaint = false;
     }
 
     canvas.save();
-    canvas.translate(_drawContext.viewMatrix[_Indicies.transX],
-        _drawContext.viewMatrix[_Indicies.transY]);
-    canvas.scale(_drawContext.viewMatrix[_Indicies.scaleX],
-        _drawContext.viewMatrix[_Indicies.scaleY]);
+    canvas.translate(_drawContext.viewMatrix[Indicies.transX],
+        _drawContext.viewMatrix[Indicies.transY]);
+    canvas.scale(_drawContext.viewMatrix[Indicies.scaleX],
+        _drawContext.viewMatrix[Indicies.scaleY]);
     _drawContext.renderer.renderMarket(canvas);
     canvas.restore();
   }

@@ -1,6 +1,6 @@
 import 'dart:math' as math;
 
-import 'package:hexxtrains/tile_library/position.dart';
+import 'package:hexxtrains/components/tile_library/position.dart';
 
 class MapText {
   final math.Point<int> location; // x,y on load. converted to q,r by GameMap

@@ -1,6 +1,6 @@
 import 'dart:math' as math;
 
-import 'package:hexxtrains/tile_library/position.dart';
+import 'package:hexxtrains/components/tile_library/position.dart';
 
 enum TerrainTypes { moutain, river }
 

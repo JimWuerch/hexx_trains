@@ -1,5 +1,6 @@
 import 'dart:math' as math;
-import 'package:hexxtrains/tile_library/position.dart';
+
+import 'package:hexxtrains/components/tile_library/tile_library.dart';
 
 class MapTile {
   final math.Point<int> location;

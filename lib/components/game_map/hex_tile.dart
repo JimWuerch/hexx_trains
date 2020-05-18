@@ -1,10 +1,10 @@
 import 'dart:math' as math;
 import 'dart:ui' as ui;
-import 'package:hexxtrains/game_map/tile_manifest.dart';
-import 'package:hexxtrains/hex/hex.dart';
-import 'package:hexxtrains/hex/hex_layout.dart';
-import 'package:hexxtrains/tile_library/position.dart';
-import 'package:hexxtrains/tile_library/tile_definition.dart';
+
+import 'package:hexxtrains/components/hex/hex.dart';
+import 'package:hexxtrains/components/tile_library/tile_library.dart';
+
+import 'tile_manifest.dart';
 
 class HexTile {
   TileDefinition tileDef;

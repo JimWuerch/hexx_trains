@@ -1,6 +1,7 @@
 import 'dart:math' as math;
-import 'package:hexxtrains/tile_library/position.dart';
-import 'package:hexxtrains/tile_library/tile_designer_loader.dart' as tdl;
+
+import 'package:hexxtrains/components/tile_library/tile_designer_loader.dart' as tdl;
+import 'package:hexxtrains/components/tile_library/tile_library.dart' as tl;
 import 'package:xml/xml.dart' as xml;
 
 import 'game_map.dart';
@@ -88,7 +89,7 @@ class MapLoader {
         List<int> arrows = [];
         int rotation = 0;
         int cost = 0;
-        Position costPosition =
+        tl.Position costPosition =
             tdl.TileDesignerLoader.parsePosition('tp3CornerD');
 
         if (element.name.local != 'tile') {
@@ -171,8 +172,8 @@ class MapLoader {
         xml.XmlElement element = node as xml.XmlElement;
         math.Point<int> location;
         String text = '';
-        Position position =
-            Position(index: 0, level: 0, location: Locations.Center);
+        tl.Position position =
+            tl.Position(index: 0, level: 0, location: tl.Locations.Center);
         double size = 1.0;
 
         if (element.name.local != 'text') {
@@ -209,8 +210,8 @@ class MapLoader {
         xml.XmlElement element = node as xml.XmlElement;
         math.Point<int> location;
         TerrainTypes terrainType;
-        Position position =
-            Position(index: 0, level: 0, location: Locations.Center);
+        tl.Position position =
+            tl.Position(index: 0, level: 0, location: tl.Locations.Center);
 
         if (element.name.local != 'terrain') {
           throw ArgumentError(

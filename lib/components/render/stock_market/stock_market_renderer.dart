@@ -1,10 +1,9 @@
 import 'dart:math' as math;
-import 'package:flutter/painting.dart' as painting;
 
 import 'package:flutter/material.dart';
-import 'package:hexxtrains/tile_render/drawing_settings.dart';
-
-import 'stock_market_data.dart';
+import 'package:flutter/painting.dart' as painting;
+import 'package:hexxtrains/components/render/drawing_settings.dart';
+import 'package:hexxtrains/components/stock_market/stock_market_data.dart';
 
 enum _RenderElement { white, yellow, brown, orange, outline, line }
 

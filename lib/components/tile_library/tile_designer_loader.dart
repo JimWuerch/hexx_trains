@@ -1,15 +1,7 @@
-import 'package:hexxtrains/error/invalid_operation_error.dart';
-import 'package:hexxtrains/tile_library/position.dart';
-import 'package:hexxtrains/tile_library/tile_definition.dart';
+import 'package:hexxtrains/components/error/error.dart';
 import 'package:xml/xml.dart' as xml;
 
-import 'adornment.dart';
-import 'connection.dart';
-import 'junction.dart';
-import 'revenue.dart';
-import 'text_adornment.dart';
-import 'tile_colors.dart';
-import 'tile_dictionary.dart';
+import 'tile_library.dart';
 
 // This class will load a .18t file created by 18xx Tile Designer by Marco Rocci
 // http://www.rails18xx.it/index.html

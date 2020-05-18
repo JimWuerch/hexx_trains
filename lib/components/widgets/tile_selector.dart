@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:hexxtrains/game_map/hex_tile_widget.dart';
-import 'package:hexxtrains/hex/hex.dart';
+import 'package:hexxtrains/components/game_map/hex_tile.dart';
+import 'package:hexxtrains/components/hex/hex.dart';
 
-import 'hex_tile.dart';
+import 'hex_tile_widget.dart';
+
 
 typedef HexSelectedCallback = Function(Hex, HexTile);
 
