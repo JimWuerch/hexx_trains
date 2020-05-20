@@ -51,10 +51,27 @@ class MyHomePage extends StatefulWidget {
   _MyHomePageState createState() => _MyHomePageState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
+class _MyHomePageState extends State<MyHomePage> with SingleTickerProviderStateMixin {
   ValueNotifier<int> valueNotifier;
+  final List<Tab> myTabs = <Tab>[
+    Tab(text: 'Map'),
+    Tab(text: 'Market'),
+  ];
+  TabController _tabController;
 
   _MyHomePageState();
+
+  @override
+  void initState() {
+    super.initState();
+    _tabController = TabController(vsync: this, length: myTabs.length);
+  }
+
+  @override
+  void dispose() {
+    _tabController.dispose();
+    super.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -69,14 +86,29 @@ class _MyHomePageState extends State<MyHomePage> {
         // Here we take the value from the MyHomePage object that was created by
         // the App.build method, and use it to set our appbar title.
         title: Text(widget.title),
+        bottom: TabBar(
+          controller: _tabController,
+          tabs: myTabs,
+        ),
       ),
-      body: Column(
+      body: TabBarView(
+        controller: _tabController,
+        physics: NeverScrollableScrollPhysics(),
+        //Column(
         children: [
-          Expanded(
-            child: MapWidget(),
+          Column(
+            children: [
+              Expanded(
+                child: MapWidget(),
+              ),
+            ],
           ),
-          Expanded(
-            child: StockMarketWidget(),
+          Column(
+            children: [
+              Expanded(
+                child: StockMarketWidget(),
+              ),
+            ],
           ),
         ],
       ),

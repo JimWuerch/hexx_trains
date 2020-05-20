@@ -24,7 +24,7 @@ class StockMarketWidget extends StatefulWidget {
   _StockMarketWidgetState createState() => _StockMarketWidgetState();
 }
 
-class _StockMarketWidgetState extends State<StockMarketWidget> {
+class _StockMarketWidgetState extends State<StockMarketWidget> with AutomaticKeepAliveClientMixin {
   ValueNotifier<int> valueNotifier;
   double startScale;
   Offset startOffset;
@@ -45,7 +45,11 @@ class _StockMarketWidgetState extends State<StockMarketWidget> {
   }
 
   @override
+  bool get wantKeepAlive => true;
+
+  @override
   Widget build(BuildContext context) {
+    super.build(context);
     // return Column(
     //   children: <Widget>[
     //     Expanded(

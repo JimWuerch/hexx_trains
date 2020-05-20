@@ -229,6 +229,12 @@ class GameMap {
 
     HexTile ret = _mapCells[p.x][p.y];
     tile.setLocation(q, r);
+    if (tile.manifestItem != null) {
+      tile.manifestItem.quantity--;
+    }
+    if (_mapCells[p.x][p.y].manifestItem != null) {
+      _mapCells[p.x][p.y].manifestItem.quantity++;
+    }
     _mapCells[p.x][p.y] = tile;
 
     return ret;

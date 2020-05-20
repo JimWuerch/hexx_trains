@@ -1,6 +1,6 @@
 class TileManifestItem {
   final String id;
-  final int quantity;
+  int quantity;
   final List<TileManifestItem> upgrades;
 
   TileManifestItem({this.id, this.quantity, this.upgrades});

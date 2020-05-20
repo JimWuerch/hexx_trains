@@ -32,4 +32,12 @@ class HexTile {
     hex = Hex.fromQR(q, r);
     center = layout.hexToPixel(hex);
   }
+
+  void rotateLeft() {
+    rotation = (rotation + 5) % 6;
+  }
+
+  void rotateRight() {
+    rotation = (rotation + 1) % 6;
+  }
 }

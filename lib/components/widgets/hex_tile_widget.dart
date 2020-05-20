@@ -1,31 +1,39 @@
 import 'dart:math' as math;
 
 import 'package:flutter/material.dart';
-import 'package:hexxtrains/components/game_map/game_map.dart';
 import 'package:hexxtrains/components/render/render.dart' as tileRender;
+import 'package:hexxtrains/components/tile_library/tile_definition.dart';
 import 'package:vector_math/vector_math_64.dart' as m64;
 
 class HexTileWidget extends StatelessWidget {
-  final HexTile tile;
-  final Size size;
+  final TileDefinition tileDef;
   final tileRender.TileRenderer renderer;
-  final Color background;
+  final bool isSelected;
 
-  HexTileWidget({@required this.tile, @required this.size, @required this.renderer, this.background});
+  HexTileWidget(
+      {@required this.tileDef,
+      @required this.renderer, 
+      bool this.isSelected = false}) {
+    // if ((tile.q != 0) || (tile.r != 0)) {
+    //   throw ArgumentError('tile should have q and r equal 0');
+    //}
+  }
 
   @override
   Widget build(BuildContext context) {
+    Color background = isSelected ? Theme.of(context).accentColor : Colors.white;
+
     return CustomPaint(
-      size: size,
-      painter: _HexPainter(tile, renderer, background),
+      painter: _HexPainter(this, background),
     );
   }
 }
 
 class _HexPainter extends CustomPainter {
-   HexTile tile;
+  HexTileWidget context;
+  //HexTile tile;
   m64.Matrix3 viewMatrix;
-  tileRender.TileRenderer renderer;
+  //tileRender.TileRenderer renderer;
   Color background;
 
   // matrix positions
@@ -34,22 +42,15 @@ class _HexPainter extends CustomPainter {
   static const int _scaleY = 4;
   static const int _transY = 5;
 
-  _HexPainter(this.tile, this.renderer, this.background) {
-    if (this.background == null) {
-      this.background = Colors.white;
-    }
-    if ((tile.q != 0) || (tile.r != 0)) {
-      throw ArgumentError('tile should have q and r equal 0');
-    }
-  }
+  _HexPainter(this.context, this.background);
 
   @override
   void paint(Canvas canvas, Size size) {
     double padding = 5;
-    
-    var extents = tile.layout.extents();
-    var x = (size.width - padding*2) / extents.x;
-    var y = (size.height - padding*2) / extents.y;
+
+    var extents = context.renderer.layout.extents();
+    var x = (size.width - padding * 2) / extents.x;
+    var y = (size.height - padding * 2) / extents.y;
     double scale = math.min(x, y);
 
     viewMatrix = m64.Matrix3.identity();
@@ -58,27 +59,24 @@ class _HexPainter extends CustomPainter {
     // center it in the view
     if (x < y) {
       // constrained in width, center vertically
-      viewMatrix[_transY] = ((size.height - padding*2) - (extents.y * scale)) / 2;
+      viewMatrix[_transY] = ((size.height - padding * 2) - (extents.y * scale)) / 2;
     } else {
       // center horizontally
-      viewMatrix[_transX] = ((size.width - padding*2) - (extents.x * scale)) / 2;
+      viewMatrix[_transX] = ((size.width - padding * 2) - (extents.x * scale)) / 2;
     }
 
     canvas.clipRect(Rect.fromLTWH(0, 0, size.width, size.height));
     canvas.clear(background);
     canvas.save();
-    canvas.translate(viewMatrix[_transX]+padding, viewMatrix[_transY]+padding);
+    canvas.translate(viewMatrix[_transX] + padding, viewMatrix[_transY] + padding);
     canvas.scale(viewMatrix[_scaleX], viewMatrix[_scaleY]);
-    if (tile.picture == null) {
-      // renderer.debug = true;
-      // double deg = 60.0 * tile.rotation;
-      // canvas.rotateDegreesOnPoint(deg, tile.center);
-      canvas.translate(tile.center.x, tile.center.y);
-      renderer.renderTile(canvas, tile);
-    } else {
-      canvas.translate(tile.center.x, tile.center.y);
-      canvas.drawPicture(tile.picture);
-    }
+//    if (context.tile.picture == null) {
+      canvas.translate(context.renderer.layout.origin.x, context.renderer.layout.origin.y);
+      context.renderer.renderTile(canvas, context.tileDef);
+    // } else {
+    //   canvas.translate(context.tile.center.x, context.tile.center.y);
+    //   canvas.drawPicture(context.tile.picture);
+    // }
     canvas.restore();
   }
 

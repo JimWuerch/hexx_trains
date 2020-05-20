@@ -15,8 +15,6 @@ import 'package:hexxtrains/game_data/game_data.dart' as gameData;
 import 'package:positioned_tap_detector/positioned_tap_detector.dart';
 import 'package:vector_math/vector_math_64.dart' as m64;
 
-import 'hex_tile_widget.dart';
-
 // ignore: unused_element
 class _DebugMap {
   TileRenderer renderer;
@@ -105,13 +103,16 @@ class MapWidget extends StatefulWidget {
   _MapWidgetState createState() => _MapWidgetState();
 }
 
-class _MapWidgetState extends State<MapWidget> {
+class _MapWidgetState extends State<MapWidget> with AutomaticKeepAliveClientMixin {
   ValueNotifier<int> valueNotifier;
   double startScale;
   Offset startOffset;
   m64.Matrix3 startMatrix;
   _MapContext mapContext;
   OverlayEntry _tileSelectionOverlay;
+  Hex _replacementTarget;
+  HexTile _curReplacementCandidate;
+  HexTile _originalTile;
 
   _MapWidgetState() {
     mapContext = _MapContext();
@@ -130,7 +131,11 @@ class _MapWidgetState extends State<MapWidget> {
   }
 
   @override
+  bool get wantKeepAlive => true;
+
+  @override
   Widget build(BuildContext context) {
+    super.build(context);
     return Listener(
       onPointerSignal: (pointerSignal) {
         if (pointerSignal is PointerScrollEvent) {
@@ -164,7 +169,7 @@ class _MapWidgetState extends State<MapWidget> {
     var hex = mapContext.gameMap.layout.pixelToHex(p);
     //print('${v.x},${v.y} ${hex.q},${hex.r}');
     if (_tileSelectionOverlay == null) {
-      List<HexTileWidget> list = [];
+      List<tilelib.TileDefinition> list = [];
 
       var srcTile = mapContext.gameMap.tileAt(hex.q, hex.r);
       if (srcTile == null) {
@@ -173,25 +178,36 @@ class _MapWidgetState extends State<MapWidget> {
 
       if (srcTile.manifestItem != null) {
         for (var upgrade in srcTile.manifestItem.upgrades) {
+          if (upgrade.quantity < 1) {
+            continue;
+          }
           int id = int.tryParse(upgrade.id);
           if (id != null) {
             var tile = mapContext.gameMap.tileDictionary.getTile(id);
             if (tile != null) {
-              list.add(HexTileWidget(
-                  tile: HexTile(tile, 0, 0, mapContext.gameMap.layout, upgrade),
-                  size: Size(50, 50),
-                  renderer: mapContext.renderer));
+              //list.add(HexTile(tile, 0, 0, mapContext.gameMap.layout, upgrade));
+              list.add(tile);
             }
           }
         }
       }
 
+      if (list.length < 1) {
+        // no upgrades left for this tile
+        return;
+      }
+
       var tileSelector = TileSelector(
         hex: hex,
         list: list,
+        renderer: mapContext.renderer,
         itemExtent: 400 * mapContext.viewMatrix[Indicies.scaleX],
         onSelected: _hexSelected,
+        onRotateLeft: _onRotateLeft,
+        onRotateRight: _onRotateRight,
+        onConfirm: _onTileConfirmed,
       );
+      _replacementTarget = hex;
       _showTileList(
           context,
           Rect.fromLTWH(position.relative.dx + 50, position.relative.dy, 400 * mapContext.viewMatrix[Indicies.scaleX],
@@ -200,14 +216,43 @@ class _MapWidgetState extends State<MapWidget> {
     } else {
       _tileSelectionOverlay.remove();
       _tileSelectionOverlay = null;
+      if (_curReplacementCandidate != null) {
+        mapContext.gameMap.replaceTile(_originalTile, _replacementTarget.q, _replacementTarget.r);
+        _curReplacementCandidate = null;
+        _originalTile = null;
+        valueNotifier.value++;
+      }
     }
   }
 
-  void _hexSelected(Hex hex, HexTile tile) {
-    print('replacing ${hex.q},${hex.r} with tile ${tile.tileDef.name}');
+  void _hexSelected(tilelib.TileDefinition tileDef) {
+    _curReplacementCandidate = HexTile(
+        tileDef, 0, 0, mapContext.gameMap.layout, mapContext.gameMap.tileManifest.getTile(tileDef.tileId.toString()));
+    print('selecting ${_replacementTarget.q},${_replacementTarget.r} with tile ${tileDef.name}');
+    if (_originalTile == null) {
+      _originalTile = mapContext.gameMap.tileAt(_replacementTarget.q, _replacementTarget.r);
+    }
+    mapContext.gameMap.replaceTile(_curReplacementCandidate, _replacementTarget.q, _replacementTarget.r);
+    valueNotifier.value++;
+  }
+
+  void _onRotateLeft() {
+    _curReplacementCandidate.rotateLeft();
+    valueNotifier.value++;
+  }
+
+  void _onRotateRight() {
+    _curReplacementCandidate.rotateRight();
+    valueNotifier.value++;
+  }
+
+  void _onTileConfirmed() {
+    print(
+        'replacing ${_replacementTarget.q},${_replacementTarget.r} with tile ${_curReplacementCandidate.tileDef.name}');
     _tileSelectionOverlay.remove();
     _tileSelectionOverlay = null;
-    mapContext.gameMap.replaceTile(tile, hex.q, hex.r);
+    //mapContext.gameMap.replaceTile(_curReplacementCandidate, _replacementTarget.q, _replacementTarget.r);
+    _curReplacementCandidate = null;
     valueNotifier.value++;
   }
 
@@ -269,7 +314,7 @@ class _MapWidgetState extends State<MapWidget> {
 
           double deg = 60.0 * tile.rotation;
           canvas.rotateDegrees(deg);
-          mapContext.renderer.renderTile(canvas, tile);
+          mapContext.renderer.renderTile(canvas, tile.tileDef, tile.rotation, tile.cost, tile.costPosition);
           tile.picture = r.endRecording();
         }
       }
@@ -328,7 +373,7 @@ class _MapPainter extends CustomPainter {
             double deg = 60.0 * tile.rotation;
             canvas.rotateDegreesOnPoint(deg, tile.center);
             canvas.translate(tile.center.x, tile.center.y);
-            _mapContext.renderer.renderTile(canvas, tile);
+            _mapContext.renderer.renderTile(canvas, tile.tileDef, tile.rotation, tile.cost, tile.costPosition);
           } else {
             canvas.translate(tile.center.x, tile.center.y);
             canvas.drawPicture(tile.picture);
@@ -346,7 +391,11 @@ class _MapPainter extends CustomPainter {
       if (hex.tileDef.tileId < 1) {
         canvas.translate(hex.center.x, hex.center.y);
         TileRenderer.drawMapText(
-            canvas, hex, text.text, text.position, text.size, _mapContext.drawingSettings);
+            canvas: canvas,
+            text: text.text,
+            position: text.position,
+            sizeMultiplier: text.size,
+            drawingSettings: _mapContext.drawingSettings);
         //canvas.DrawPicture((SKPicture)text.Picture);
       }
       canvas.restore();

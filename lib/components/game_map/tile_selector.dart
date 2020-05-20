@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:hexxtrains/components/tile_library/tile_definition.dart';
 import 'package:hexxtrains/components/widgets/hex_tile_widget.dart';
 import 'package:hexxtrains/components/hex/hex.dart';
 
-import 'hex_tile.dart';
-
-typedef HexSelectedCallback = Function(Hex, HexTile);
+typedef HexSelectedCallback = Function(Hex, TileDefinition);
 
 class TileSelector extends StatelessWidget {
   final double itemExtent;
@@ -32,7 +31,7 @@ class TileSelector extends StatelessWidget {
                   ? GestureDetector(
                       child: list[index],
                       onTap: () {
-                        onSelected(hex, list[index].tile);
+                        onSelected(hex, list[index].tileDef);
                       },
                     )
                   : null;

@@ -39,15 +39,35 @@ enum _RenderElement {
 
 enum _TextPos { center, topLeft, topRight, bottomLeft, bottomRight, centerLeft, centerRight, centerBottom, centerTop }
 
+class _RenderHex {
+  final TileDefinition tileDef;
+  final int rotation;
+  final int cost;
+  final Position costPosition;
+
+  _RenderHex(this.tileDef, this.rotation, this.cost, this.costPosition);
+}
+
+/// Handles all the skia rendering for a tile and text
 class TileRenderer {
   static const double SQRT3 = 1.73205;
   Map<_RenderElement, Paint> _paintDict;
   Map<_RenderElement, TextStyle> _textStyleDict;
-  DrawingSettings _drawingSettings;
+  final DrawingSettings drawingSettings;
   Canvas _canvas;
-  HexTile _hex;
+  _RenderHex _hex;
+  final HexLayout layout;
 
   bool _debug;
+
+  /// Debug mode draws wireframes for some components
+  ///
+  /// Renders debug lines showing all the levels in a tile, and
+  /// shows the side and corner number info.
+  /// Curve points are displayed.
+  /// Connections are drawn as a line with control points added for curves.
+  /// Text is wrapped with a bounding box and a circle showing the requested
+  /// text position
   bool get debug => _debug;
   set debug(bool value) {
     if (value != _debug) {
@@ -61,14 +81,13 @@ class TileRenderer {
       _paintDict[_RenderElement.NormalRail].strokeWidth = 1;
     } else {
       _paintDict[_RenderElement.NormalRail].strokeWidth =
-          _drawingSettings.convertSize(_drawingSettings.railWidth).toDouble();
+          drawingSettings.convertSize(drawingSettings.railWidth).toDouble();
     }
   }
 
-  TileRenderer(DrawingSettings drawingSettings, HexLayout layout) {
+  TileRenderer(this.drawingSettings, this.layout) {
     _paintDict = Map<_RenderElement, Paint>();
     _textStyleDict = Map<_RenderElement, TextStyle>();
-    _drawingSettings = drawingSettings;
     _debug = false;
 
     HexPoints.init(layout);
@@ -90,20 +109,20 @@ class TileRenderer {
     _paintDict[_RenderElement.Outline] = Paint()
       ..style = PaintingStyle.stroke
       ..color = Colors.black
-      ..strokeWidth = _drawingSettings.convertSize(_drawingSettings.lineSize)
+      ..strokeWidth = drawingSettings.convertSize(drawingSettings.lineSize)
       ..isAntiAlias = true;
 
     // NormalRail
     _paintDict[_RenderElement.NormalRail] = Paint()
       ..style = PaintingStyle.stroke
-      ..color = _drawingSettings.normalRail
-      ..strokeWidth = _drawingSettings.convertSize(_drawingSettings.railWidth)
+      ..color = drawingSettings.normalRail
+      ..strokeWidth = drawingSettings.convertSize(drawingSettings.railWidth)
       ..isAntiAlias = true;
 
     // NormalRail contrast
     _paintDict[_RenderElement.NormalRailContrast] = Paint()
       ..style = PaintingStyle.stroke
-      ..color = _drawingSettings.contrast
+      ..color = drawingSettings.contrast
       ..strokeWidth =
           _paintDict[_RenderElement.NormalRail].strokeWidth + 2 * _paintDict[_RenderElement.Outline].strokeWidth
       ..isAntiAlias = true;
@@ -111,49 +130,49 @@ class TileRenderer {
     // WhistleStop
     _paintDict[_RenderElement.WhistleStop] = Paint()
       ..style = PaintingStyle.stroke
-      ..color = _drawingSettings.normalRail
-      ..strokeWidth = _drawingSettings.convertSize(_drawingSettings.barDitSize)
+      ..color = drawingSettings.normalRail
+      ..strokeWidth = drawingSettings.convertSize(drawingSettings.barDitSize)
       ..isAntiAlias = true
       ..strokeCap = StrokeCap.square;
 
     // WhistleStop contrast
     _paintDict[_RenderElement.WhistleStopContrast] = Paint()
       ..style = PaintingStyle.stroke
-      ..color = _drawingSettings.contrast
-      ..strokeWidth = _drawingSettings.convertSize(_drawingSettings.barDitSize, 1.2)
+      ..color = drawingSettings.contrast
+      ..strokeWidth = drawingSettings.convertSize(drawingSettings.barDitSize, 1.2)
       ..isAntiAlias = true
       ..strokeCap = StrokeCap.square;
 
     // Yellow background
     _paintDict[_RenderElement.YellowBackGround] = Paint()
       ..style = PaintingStyle.fill
-      ..color = _drawingSettings.yellow
+      ..color = drawingSettings.yellow
       ..strokeWidth = 1
       ..isAntiAlias = false;
 
     _paintDict[_RenderElement.RoundWhistleStop] = Paint()
       ..style = PaintingStyle.fill
-      ..color = _drawingSettings.normalRail
+      ..color = drawingSettings.normalRail
       ..strokeWidth = 1
       ..isAntiAlias = true;
 
     _paintDict[_RenderElement.RoundWhistleStopContrast] = Paint()
       ..style = PaintingStyle.fill
-      ..color = _drawingSettings.contrast
+      ..color = drawingSettings.contrast
       ..strokeWidth = 1
       ..isAntiAlias = true;
 
     _paintDict[_RenderElement.City] = Paint()
       ..style = PaintingStyle.fill
-      ..color = _drawingSettings.contrast
+      ..color = drawingSettings.contrast
       ..strokeWidth = 1
       ..isAntiAlias = true;
 
     // barrier
     _paintDict[_RenderElement.Barrier] = Paint()
       ..style = PaintingStyle.stroke
-      ..color = _drawingSettings.barrier
-      ..strokeWidth = _drawingSettings.convertSize(_drawingSettings.barrierSize)
+      ..color = drawingSettings.barrier
+      ..strokeWidth = drawingSettings.convertSize(drawingSettings.barrierSize)
       ..strokeCap = StrokeCap.round
       ..isAntiAlias = true;
 
@@ -166,7 +185,7 @@ class TileRenderer {
         color: Colors.black,
         fontFamily: 'RobotoSlab',
         fontWeight: FontWeight.bold,
-        fontSize: _drawingSettings.convertSize(_drawingSettings.tileNumberSize));
+        fontSize: drawingSettings.convertSize(drawingSettings.tileNumberSize));
 
     _paintDict[_RenderElement.JunctionRevenueText] = Paint()
       //TextSize = drawingSettings.ConvertSize(drawingSettings.RevenueSize),
@@ -177,7 +196,7 @@ class TileRenderer {
     _textStyleDict[_RenderElement.JunctionRevenueText] = TextStyle(
         color: Colors.black,
         fontFamily: 'RobotoSlab',
-        fontSize: _drawingSettings.convertSize(_drawingSettings.revenueSize),
+        fontSize: drawingSettings.convertSize(drawingSettings.revenueSize),
         fontWeight: FontWeight.bold);
 
     _paintDict[_RenderElement.JunctionRevenueContrast] = Paint()
@@ -192,16 +211,22 @@ class TileRenderer {
     _textStyleDict[_RenderElement.AdornmentText] = TextStyle(
         color: Colors.black,
         fontFamily: 'RobotoSlab',
-        fontSize: _drawingSettings.convertSize(_drawingSettings.textSize),
+        fontSize: drawingSettings.convertSize(drawingSettings.textSize),
         fontWeight: FontWeight.bold);
   }
 
-  void renderTile(Canvas canvas, HexTile hexTile) {
+  /// Render a single [hexTile] to [canvas]
+  ///
+  /// Rendering expects to render the center of the tile at 0,0.  Scale and translate the canvas
+  /// before calling.
+  void renderTile(Canvas canvas, TileDefinition tileDefinition,
+      [int rotation = 0, int cost = 0, Position costPosition]) {
     if (canvas == null) throw ArgumentError('canvas is null');
-    if (hexTile == null) throw ArgumentError('hexTile is null');
+    if (tileDefinition == null) throw ArgumentError('tileDefinition is null');
+    //if (hexLayout == null) throw ArgumentError('hexLayout is null');
 
     _canvas = canvas;
-    _hex = hexTile;
+    _hex = _RenderHex(tileDefinition, rotation, cost, costPosition);
 
     canvas.save();
     _drawBackground();
@@ -297,6 +322,7 @@ class TileRenderer {
     throw new ArgumentError('Invalid position code');
   }
 
+  /// Simple straight line from [connection.position1] to [connection.position2]
   void _drawStraightConnection(Connection connection, Paint paint) {
     var p1 = _getPoint(connection.position1);
     var p2 = _getPoint(connection.position2);
@@ -308,24 +334,25 @@ class TileRenderer {
     _disposePath(path);
   }
 
-//  These values are for connections to Level 1 corners
-//
-//  The control points for a gentle curve are scaled by 1.25 from the L1
-//  side matching the starting or ending point.
-//  So, for a gentle curve going from L4I0 to L4I2:
-//  cp1 = L1I0;
-//  cp2 = L1I2;
-//  Then scale the points
-//  cp1 = ScalePoint(cp1, 1.25f, hex);
-//  cp2 = ScalePoint(cp2, 1.25f, hex);
-//
-//  This will draw a 2/3rds line to p2. p1 and p2 describe a gentle curve
-//  The line will end at a L1 corner
-//  CurveDef cd = CalcPartialCurve(p1, cp1, cp2, p2, 0, .585f);
-//
-//  This is the line to the other side, from the L1 corner to the p2 side
-//  CurveDef cd2 = CalcPartialCurve(p2, cp2, cp1, p1, 0, 1f-.585f);
-
+  /// Simple curve from [connection.position1] to [connection.position2]
+  ///
+  ///  These values are for connections to Level 1 corners
+  ///
+  ///  The control points for a gentle curve are scaled by 1.25 from the L1
+  ///  side matching the starting or ending point.
+  ///  So, for a gentle curve going from L4I0 to L4I2:
+  ///  cp1 = L1I0;
+  ///  cp2 = L1I2;
+  ///  Then scale the points
+  ///  cp1 = ScalePoint(cp1, 1.25f, hex);
+  ///  cp2 = ScalePoint(cp2, 1.25f, hex);
+  ///
+  ///  This will draw a 2/3rds line to p2. p1 and p2 describe a gentle curve
+  ///  The line will end at a L1 corner
+  ///  CurveDef cd = CalcPartialCurve(p1, cp1, cp2, p2, 0, .585f);
+  ///
+  ///  This is the line to the other side, from the L1 corner to the p2 side
+  ///  CurveDef cd2 = CalcPartialCurve(p2, cp2, cp1, p1, 0, 1f-.585f);
   void _drawSimpleCurve(Connection connection, Paint paint) {
     Point<double> p1 = _getPoint(connection.position1);
     Point<double> p2 = _getPoint(connection.position2);
@@ -447,8 +474,8 @@ class TileRenderer {
     }
     // size to half the width, because we will reflect the vector for the other half
     Point<double> ditPoint = Point<double>(
-        ditPointPre.x * _drawingSettings.convertSize(_drawingSettings.barDitSize) / 2.0,
-        ditPointPre.y * _drawingSettings.convertSize(_drawingSettings.barDitSize) / 2.0);
+        ditPointPre.x * drawingSettings.convertSize(drawingSettings.barDitSize) / 2.0,
+        ditPointPre.y * drawingSettings.convertSize(drawingSettings.barDitSize) / 2.0);
 
     Path path = Path();
     Point<double> p1 = ditCenter + ditPoint;
@@ -465,16 +492,17 @@ class TileRenderer {
     double radius;
     Paint paint;
     if (isContrast) {
-      radius = _drawingSettings.convertSize(_drawingSettings.roundDitSize, _drawingSettings.contrastScale);
+      radius = drawingSettings.convertSize(drawingSettings.roundDitSize, drawingSettings.contrastScale);
       paint = _paintDict[_RenderElement.RoundWhistleStopContrast];
     } else {
-      radius = _drawingSettings.convertSize(_drawingSettings.roundDitSize);
+      radius = drawingSettings.convertSize(drawingSettings.roundDitSize);
       paint = _paintDict[_RenderElement.RoundWhistleStop];
     }
     var center = _getPoint(position);
     _canvas.drawCircle(Offset(center.x, center.y), radius, paint);
   }
 
+  /// Draw [text] at [p] where [textPos] specifies where on the bounding box [p] resides.
   void _drawText(String text, Point<double> p, TextStyle textStyle, [_TextPos textPos = _TextPos.center]) {
     var textPainter = TextPainter(textDirection: TextDirection.ltr);
     textPainter.text = TextSpan(text: text, style: textStyle);
@@ -523,9 +551,9 @@ class TileRenderer {
     textPainter.paint(_canvas, Offset(p.x - xOffset, p.y - yOffset));
 
     if (debug && textPainter.width > 10 && textPainter.height > 10) {
-    _canvas.drawRect(Rect.fromLTWH(p.x - xOffset, p.y - yOffset, textPainter.width, textPainter.height),
-        _paintDict[_RenderElement.Line]);
-    _canvas.drawCircle(Offset(p.x, p.y), 5, _paintDict[_RenderElement.Line]);
+      _canvas.drawRect(Rect.fromLTWH(p.x - xOffset, p.y - yOffset, textPainter.width, textPainter.height),
+          _paintDict[_RenderElement.Line]);
+      _canvas.drawCircle(Offset(p.x, p.y), 5, _paintDict[_RenderElement.Line]);
     }
   }
 
@@ -619,7 +647,7 @@ class TileRenderer {
 
   // See Rob Spencer's article for description of this function
   // http://scaledinnovation.com/analytics/splines/aboutSplines.html
-  List<Point<double>> _getControlPoints(
+  List<Point<double>> _getControlPoints( //ignore: unused_element
       //ignore: unused_element
       Point<double> p0,
       Point<double> p1,
@@ -639,6 +667,7 @@ class TileRenderer {
     return ret;
   }
 
+  /// Draw [connection]. [isContrast] specifies if this is painting the background or foreground.
   void _drawConnection(Connection connection, bool isContrast) {
     var level1 = connection.position1.level;
     var index1 = connection.position1.index;
@@ -958,7 +987,7 @@ class TileRenderer {
     var p = Point<double>(hp.corners[3][3].x, hp.corners[3][3].y - (hp.corners[3][3].y - hp.corners[4][3].y) / 2.0);
 
     _canvas.save();
-    double deg = _hex.layout.orientation == HexOrientation.Pointy ? 30.0 : 0.0;
+    double deg = layout.orientation == HexOrientation.Pointy ? 30.0 : 0.0;
     _canvas.rotateDegreesOnPoint(deg, p);
     _drawText(_hex.tileDef.tileId.toString(), p, textStyle, _TextPos.centerRight);
     _canvas.restore();
@@ -976,7 +1005,7 @@ class TileRenderer {
     String amount = junction.revenue.amount.toString();
     var p = _getPoint(junction.revenue.position);
 
-    double radius = _drawingSettings.convertSize(_drawingSettings.revenueSize);
+    double radius = drawingSettings.convertSize(drawingSettings.revenueSize);
     if (junction.revenue.amount < 100) {
       radius *= .8;
     }
@@ -1013,14 +1042,14 @@ class TileRenderer {
     }
     var paint = _paintDict[_RenderElement.YellowBackGround];
     var oldColor = paint.color;
-    paint.color = _drawingSettings.getColor(_hex.tileDef.color);
+    paint.color = drawingSettings.getColor(_hex.tileDef.color);
     _canvas.drawPath(path, paint);
     paint.color = oldColor;
     _disposePath(path);
   }
 
   void _drawCity(Junction junction) {
-    double radius = _drawingSettings.convertSize(_drawingSettings.cityRadius);
+    double radius = drawingSettings.convertSize(drawingSettings.cityRadius);
     int cityCircles = 0;
 
     var path = new Path();
@@ -1116,7 +1145,7 @@ class TileRenderer {
   }
 
   Offset _cityOffset(int cityCount, int cityNum) {
-    double radius = _drawingSettings.convertSize(_drawingSettings.cityRadius);
+    double radius = drawingSettings.convertSize(drawingSettings.cityRadius);
 
     switch (cityCount) {
       case 1:
@@ -1164,7 +1193,7 @@ class TileRenderer {
   }
 
   void _drawCityContrast(Junction junction) {
-    double radius = _drawingSettings.convertSize(_drawingSettings.cityRadius);
+    double radius = drawingSettings.convertSize(drawingSettings.cityRadius);
 
     var path = Path();
 
@@ -1259,16 +1288,18 @@ class TileRenderer {
     }
   }
 
+  /// Draw [text] at [position]. [sizeMultiplier] is used to scale the text based on [drawingSettings.textSize]
   static void drawMapText(
-      Canvas canvas, HexTile hexTile, String text, Position position, double size, DrawingSettings drawingSettings) {
+      {@required Canvas canvas,
+      @required String text,
+      @required Position position,
+      @required double sizeMultiplier,
+      @required DrawingSettings drawingSettings}) {
     if (position == null) {
       throw new ArgumentError('position is null');
     }
     if (canvas == null) {
       throw new ArgumentError('canvas is null');
-    }
-    if (hexTile == null) {
-      throw new ArgumentError('hexTile is null');
     }
     if (drawingSettings == null) {
       throw new ArgumentError('drawingSettings is null');
@@ -1277,7 +1308,7 @@ class TileRenderer {
     var point = _getPoint(position);
 
     TextStyle textStyle = TextStyle(
-        fontSize: drawingSettings.convertSize(drawingSettings.textSize) * size,
+        fontSize: drawingSettings.convertSize(drawingSettings.textSize) * sizeMultiplier,
         color: Colors.black,
         fontFamily: 'RobotoSlab',
         fontWeight: FontWeight.bold);
@@ -1304,8 +1335,12 @@ class TileRenderer {
     if (_hex.cost > 0) {
       _canvas.save();
       _canvas.rotateDegrees(-60.0 * _hex.rotation);
-      drawMapText(_canvas, _hex, '\$' + _hex.cost.toString(), _hex.costPosition, 1,
-          _drawingSettings); //gameService.DrawingSettings);
+      drawMapText(
+          canvas: _canvas,
+          text: '\$' + _hex.cost.toString(),
+          position: _hex.costPosition,
+          sizeMultiplier: 1,
+          drawingSettings: drawingSettings); //gameService.DrawingSettings);
       _canvas.restore();
     }
   }
@@ -1320,10 +1355,11 @@ class TileRenderer {
     canvas.drawLine(Offset(p0.x, p0.y), Offset(p1.x, p1.y), _paintDict[_RenderElement.Barrier]);
   }
 
-  void drawToken(HexTile hexTile, Junction junction, int cityNum, bool fill, CompanyRenderInfo companyInfo) {
-    if (hexTile == null) {
-      throw new ArgumentError('hexTile is null');
-    }
+  void drawToken(
+      {@required Junction junction,
+      @required int cityNum,
+      @required bool fill,
+      @required CompanyRenderInfo companyInfo}) {
     if (junction == null) {
       throw new ArgumentError('junction is null');
     }
@@ -1331,7 +1367,7 @@ class TileRenderer {
       throw new ArgumentError('companyInfo is null');
     }
 
-    double radius = _drawingSettings.convertSize(_drawingSettings.cityRadius);
+    double radius = drawingSettings.convertSize(drawingSettings.cityRadius);
     _canvas.save();
     _setCityMatrix(junction);
     var point = _cityOffset(junction.numberOfCities(), cityNum);
@@ -1358,7 +1394,7 @@ class TileRenderer {
     TextStyle textStyle = TextStyle(
         color: fill ? companyInfo.isLightOnDark ? Colors.white : Colors.black : companyInfo.color,
         fontFamily: 'RobotoSlab',
-        fontSize: _drawingSettings.convertSize(_drawingSettings.textSize));
+        fontSize: drawingSettings.convertSize(drawingSettings.textSize));
 
 //  Paint textPaint = new SKPaint()
 //  {
