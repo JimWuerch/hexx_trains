@@ -7,8 +7,7 @@ class Position {
   final int level;
   final int index;
 
-  bool get isCurve =>
-      location == Locations.CurveLeft || location == Locations.CurveRight;
+  bool get isCurve => location == Locations.CurveLeft || location == Locations.CurveRight;
 
   Position._({this.location, this.level, this.index});
 
@@ -16,11 +15,9 @@ class Position {
   factory Position({Locations location, int level, int index}) {
     if (location == Locations.Side || location == Locations.Corner) {
       if (level > 4 || level < 1) {
-        throw new ArgumentError(
-            'Level must be between 1 and 4 for corners and sides');
+        throw new ArgumentError('Level must be between 1 and 4 for corners and sides');
       }
-    } else if (location == Locations.CurveLeft ||
-        location == Locations.CurveRight) {
+    } else if (location == Locations.CurveLeft || location == Locations.CurveRight) {
       if (level != 0 && level != 1) {
         throw new ArgumentError('Level must be 0 and 1 for curves');
       }
@@ -96,14 +93,19 @@ class Position {
 
   @override
   bool operator ==(dynamic other) {
+    if (identical(this, other)) return true;
     if (!(other is Position)) return false;
-    if (location == Locations.Center && other.location == Locations.Center)
-      return true;
-    return (location == other.location &&
-        level == other.level &&
-        index == other.index);
+    if (location == Locations.Center && other.location == Locations.Center) return true;
+    return (location == other.location && level == other.level && index == other.index);
   }
 
   @override
   int get hashCode => location.index * 100 + level * 10 + index;
+
+  Position.fromJson(Map<String, dynamic> json)
+      : location = Locations.values.firstWhere((e) => e.toString() == (json['location'] as String)),
+        level = json['level'] as int,
+        index = json['index'] as int;
+
+  Map<String, dynamic> toJson() => <String, dynamic>{'location': location.toString(), 'level': level, 'index': index};
 }

@@ -1,3 +1,5 @@
+import 'dart:convert';
+
 import 'tile_definition.dart';
 
 class TileDictionary {
@@ -6,10 +8,9 @@ class TileDictionary {
 
   TileDictionary();
 
-  void add(TileDefinition tile) {
+   void add(TileDefinition tile) {
     if (_tiles.containsKey(tile.tileId)) {
-      throw new ArgumentError(
-          'Tile ${tile.tileId} already exists in dictionary');
+      throw new ArgumentError('Tile ${tile.tileId} already exists in dictionary');
     }
 
     _tiles[tile.tileId] = tile;
@@ -32,6 +33,17 @@ class TileDictionary {
   void clearClipList() {
     for (var tile in tiles.values) {
       tile.clipTile = false;
+    }
+  }
+
+   // Serialize as a list, re-create the map on deserialize
+  Map<String, dynamic> toJson() => <String, dynamic>{'tiles': _tiles.values.toList()};
+
+  TileDictionary.fromJson(Map<String, dynamic> json) {
+    var list = json['tiles'] as List<dynamic>;
+    for (var tile in list) {
+      var tileDef = TileDefinition.fromJson(tile as Map<String, dynamic>);
+      _tiles[tileDef.tileId] = tileDef;
     }
   }
 }
