@@ -1,6 +1,4 @@
-import 'dart:convert';
-
-//import 'package:hexxtrains/components/game_map/game_map.dart';
+import 'package:hexxtrains/components/common/common.dart';
 
 import 'adornment.dart';
 import 'connection.dart';
@@ -39,7 +37,7 @@ class TileDefinition {
   factory TileDefinition.fromJson(Map<String, dynamic> json) {
     var tileId = json['tileId'] as int;
     var name = json['name'] as String;
-    var color = TileColors.values.firstWhere((e) => e.toString() == (json['color'] as String));
+    var color = TileColors.values.firstWhere((e) => e.toString() == 'TileColors.' + (json['color'] as String));
     var item = json['junctions'] as List<dynamic>;
     var junctions = item.map<Junction>((dynamic json) => Junction.fromJson(json as Map<String, dynamic>)).toList();
     item = json['connections'] as List<dynamic>;
@@ -68,7 +66,7 @@ class TileDefinition {
       Map<String, dynamic> ret = <String, dynamic>{
         'tileId': tileId,
         'name': name,
-        'color': color.toString(),
+        'color': color.toString().stripClassName(),
         'junctions': junctions.map<Map<String, dynamic>>((e) => e.toJson()).toList(),
         'connections': connections.map<Map<String, dynamic>>((e) => e.toJson()).toList(),
         'adornments': adornments.map<Map<String, dynamic>>((e) => e.toJson()).toList(),

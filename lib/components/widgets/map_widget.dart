@@ -13,6 +13,7 @@ import 'package:hexxtrains/components/widgets/tile_selector.dart';
 import 'package:hexxtrains/game_data/game_data.dart';
 import 'package:hexxtrains/game_data/game_data.dart' as gameData;
 import 'package:positioned_tap_detector/positioned_tap_detector.dart';
+import 'package:provider/provider.dart';
 import 'package:vector_math/vector_math_64.dart' as m64;
 
 // ignore: unused_element
@@ -115,15 +116,6 @@ class _MapWidgetState extends State<MapWidget> with AutomaticKeepAliveClientMixi
   HexTile _originalTile;
 
   _MapWidgetState() {
-    mapContext = _MapContext();
-    tilelib.TileDesignerLoader loader = tilelib.TileDesignerLoader();
-    tilelib.TileDictionary tileDictionary = loader.loadTileDictionary(gameData.TileDictionarySource.src);
-    TileManifest manifest = TileManifestLoader.load(GameList.games[0].tileManifest);
-    var mapData = MapLoader.load(GameList.games[0].map);
-    mapContext.gameMap = GameMap.createMap(mapData, 200, 0, tileDictionary, manifest);
-    mapContext.drawingSettings = DrawingSettings();
-    //mapContext.viewMatrix = m64.Matrix3.identity();
-    mapContext.renderer = TileRenderer(mapContext.drawingSettings, mapContext.gameMap.layout);
     valueNotifier = ValueNotifier<int>(0);
     valueNotifier.value = 0;
 
@@ -136,6 +128,14 @@ class _MapWidgetState extends State<MapWidget> with AutomaticKeepAliveClientMixi
   @override
   Widget build(BuildContext context) {
     super.build(context);
+    mapContext = _MapContext();
+    TileManifest manifest = TileManifestLoader.load(GameList.games[0].tileManifest);
+    var mapData = MapLoader.load(GameList.games[0].map);
+    mapContext.gameMap =
+        GameMap.createMap(mapData, 200, 0, Provider.of<tilelib.TileDictionary>(context, listen: false), manifest);
+    mapContext.drawingSettings = DrawingSettings();
+    mapContext.renderer = TileRenderer(mapContext.drawingSettings, mapContext.gameMap.layout);
+
     return Listener(
       onPointerSignal: (pointerSignal) {
         if (pointerSignal is PointerScrollEvent) {

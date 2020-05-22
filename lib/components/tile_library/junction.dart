@@ -1,3 +1,5 @@
+import 'package:hexxtrains/components/common/common.dart';
+
 import 'position.dart';
 import 'revenue.dart';
 
@@ -56,7 +58,7 @@ class Junction {
   factory Junction.fromJson(Map<String, dynamic> json) {
     var position = Position.fromJson(json['position'] as Map<String, dynamic>);
     var junctionType =
-        JunctionTypes.values.firstWhere((e) => e.toString() == (json['junctionType'] as String));
+        JunctionTypes.values.firstWhere((e) => e.toString() == 'JunctionTypes.' + (json['junctionType'] as String));
     Revenue revenue;
     if (json['revenue'] != null) {
       revenue = Revenue.fromJson(json['revenue'] as Map<String, dynamic>);
@@ -68,7 +70,7 @@ class Junction {
   Map<String, dynamic> toJson() {
     Map<String, dynamic> ret = <String, dynamic>{
       'position': position.toJson(),
-      'junctionType': junctionType.toString(),
+      'junctionType': junctionType.toString().stripClassName(),
     };
 
     if (revenue != null) {

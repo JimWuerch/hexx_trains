@@ -1,8 +1,26 @@
 import 'package:flutter/material.dart';
+import 'package:hexxtrains/components/tile_library/tile_library.dart';
+import 'package:provider/provider.dart';
+
+import 'game_data/game_data.dart';
 import 'home.dart';
 
-class GameApp extends StatelessWidget {
+class GameApp extends StatefulWidget {
   // This widget is the root of your application.
+  @override
+  _GameAppState createState() => _GameAppState();
+}
+
+class _GameAppState extends State<GameApp> {
+  TileDictionary tileDictionary;
+
+  @override
+  void initState() {
+    super.initState();
+
+    tileDictionary = TileDictionary.fromJsonString(TileDictionarySource.src);
+  }
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -23,8 +41,12 @@ class GameApp extends StatelessWidget {
         // closer together (more dense) than on mobile platforms.
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: HomePage(title: 'HeXX Trains'),
+      home: MultiProvider(
+        providers: [
+          Provider.value(value: this.tileDictionary),
+        ],
+        child: HomePage(title: 'HeXX Trains'),
+      ),
     );
   }
 }
-

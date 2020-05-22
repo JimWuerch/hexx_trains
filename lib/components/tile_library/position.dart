@@ -1,5 +1,7 @@
 import 'dart:math';
 
+import 'package:hexxtrains/components/common/common.dart';
+
 enum Locations { Side, Corner, CurveRight, CurveLeft, Center }
 
 class Position {
@@ -103,9 +105,9 @@ class Position {
   int get hashCode => location.index * 100 + level * 10 + index;
 
   Position.fromJson(Map<String, dynamic> json)
-      : location = Locations.values.firstWhere((e) => e.toString() == (json['location'] as String)),
+      : location = Locations.values.firstWhere((e) => e.toString() == 'Locations.' + (json['location'] as String)),
         level = json['level'] as int,
         index = json['index'] as int;
 
-  Map<String, dynamic> toJson() => <String, dynamic>{'location': location.toString(), 'level': level, 'index': index};
+  Map<String, dynamic> toJson() => <String, dynamic>{'location': location.toString().stripClassName(), 'level': level, 'index': index};
 }

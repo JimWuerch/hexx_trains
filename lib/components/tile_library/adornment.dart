@@ -1,3 +1,5 @@
+import 'package:hexxtrains/components/common/common.dart';
+
 import 'position.dart';
 
 enum AdornmentTypes { Base, Text }
@@ -14,10 +16,10 @@ class Adornment {
 
   Map<String, dynamic> toJson() => <String, dynamic> {
     'position': position.toJson(),
-    'adornmentType': adornmentType.toString()
+    'adornmentType': adornmentType.toString().stripClassName()
   };
 
   Adornment.fromJson(Map<String, dynamic> json) :
     position = Position.fromJson(json['position'] as Map<String, dynamic>),
-    adornmentType = AdornmentTypes.values.firstWhere((e) => e.toString() == (json['adornmentType'] as String));
+    adornmentType = AdornmentTypes.values.firstWhere((e) => e.toString() == 'AdornmentTypes.' + (json['adornmentType'] as String));
 }

@@ -8,7 +8,12 @@ class TileDictionary {
 
   TileDictionary();
 
-   void add(TileDefinition tile) {
+  factory TileDictionary.fromJsonString(String data) {
+    var json = jsonDecode(data) as Map<String, dynamic>;
+    return TileDictionary.fromJson(json);
+  }
+
+  void add(TileDefinition tile) {
     if (_tiles.containsKey(tile.tileId)) {
       throw new ArgumentError('Tile ${tile.tileId} already exists in dictionary');
     }
@@ -36,7 +41,7 @@ class TileDictionary {
     }
   }
 
-   // Serialize as a list, re-create the map on deserialize
+  // Serialize as a list, re-create the map on deserialize
   Map<String, dynamic> toJson() => <String, dynamic>{'tiles': _tiles.values.toList()};
 
   TileDictionary.fromJson(Map<String, dynamic> json) {

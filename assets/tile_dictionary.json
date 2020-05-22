@@ -1,5 +1,4 @@
-class TileDictionarySource {
-  static const String src = r'''{
+{
  "tiles": [
   {
    "tileId": -909,
@@ -52640,5 +52639,4 @@ class TileDictionarySource {
    "clipTile": false
   }
  ]
-}'''; 
 }

@@ -1,3 +1,5 @@
+import 'package:hexxtrains/components/common/common.dart';
+
 import 'position.dart';
 
 enum ConnectionTypes { None, Normal, Small, Universal, Mountain, Tunnel }
@@ -35,7 +37,7 @@ class Connection {
   Map<String, dynamic> toJson() => <String, dynamic>{
         'position1': position1.toJson(),
         'position2': position2.toJson(),
-        'connectionType': connectionType.toString(),
+        'connectionType': connectionType.toString().stripClassName(),
         'layer': layer
       };
 
@@ -43,6 +45,6 @@ class Connection {
       : position1 = Position.fromJson(json['position1'] as Map<String, dynamic>),
         position2 = Position.fromJson(json['position2'] as Map<String, dynamic>),
         connectionType = ConnectionTypes.values
-            .firstWhere((e) => e.toString() == (json['connectionType'] as String)),
+            .firstWhere((e) => e.toString() == 'ConnectionTypes.' + (json['connectionType'] as String)),
         layer = json['layer'] as int;
 }
