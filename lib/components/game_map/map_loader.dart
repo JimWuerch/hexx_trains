@@ -127,7 +127,7 @@ class MapLoader {
             id: id,
             arrows: arrows,
             cost: cost,
-            costPosition: costPosition,
+            costPosition: cost > 0 ? costPosition : null,
             rotation: rotation));
       }
     }

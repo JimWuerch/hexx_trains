@@ -1,5 +1,7 @@
 import 'dart:math' as math;
 
+import 'package:hexxtrains/components/common/common.dart';
+
 import 'barrier.dart';
 import 'doodad.dart';
 import 'map_text.dart';
@@ -21,6 +23,54 @@ class MapData {
   final List<Revenue> offmapRevenue;
   final int width;
   final int height;
+
+  Map<String, dynamic> toJson() => <String, dynamic>{
+        'orientation': orientation.toString().stripClassName(),
+        'aRowOdd': aRowOdd,
+        'lettersVertical': lettersVertical,
+        'mapTiles': mapTiles.map<Map<String, dynamic>>((e) => e.toJson()).toList(),
+        'barriers': barriers.map<Map<String, dynamic>>((e) => e.toJson()).toList(),
+        'mapText': mapText.map<Map<String, dynamic>>((e) => e.toJson()).toList(),
+        'terrains': terrains.map<Map<String, dynamic>>((e) => e.toJson()).toList(),
+        'doodads': doodads.map<Map<String, dynamic>>((e) => e.toJson()).toList(),
+        'offmapRevenue': offmapRevenue.map<Map<String, dynamic>>((e) => e.toJson()).toList(),
+        'width': width,
+        'height': height,
+      };
+
+  factory MapData.fromJson(Map<String, dynamic> json) {
+    var orientation =
+        MapOrientation.values.firstWhere((e) => e.toString() == 'MapOrientation.' + (json['orientation'] as String));
+    var aRowOdd = json['aRowOdd'] as bool;
+    var lettersVertical = json['lettersVertical'] as bool;
+    var item = json['mapTiles'] as List<dynamic>;
+    var mapTiles = item.map<MapTile>((dynamic json) => MapTile.fromJson(json as Map<String, dynamic>)).toList();
+    item = json['barriers'] as List<dynamic>;
+    var barriers = item.map<Barrier>((dynamic json) => Barrier.fromJson(json as Map<String, dynamic>)).toList();
+    item = json['mapText'] as List<dynamic>;
+    var mapText = item.map<MapText>((dynamic json) => MapText.fromJson(json as Map<String, dynamic>)).toList();
+    item = json['terrains'] as List<dynamic>;
+    var terrains = item.map<Terrain>((dynamic json) => Terrain.fromJson(json as Map<String, dynamic>)).toList();
+    item = json['doodads'] as List<dynamic>;
+    var doodads = item.map<Doodad>((dynamic json) => Doodad.fromJson(json as Map<String, dynamic>)).toList();
+    item = json['offmapRevenue'] as List<dynamic>;
+    var offmapRevenue = item.map<Revenue>((dynamic json) => Revenue.fromJson(json as Map<String, dynamic>)).toList();
+    var width = json['width'] as int;
+    var height = json['height'] as int;
+
+    return MapData._(
+        orientation: orientation,
+        aRowOdd: aRowOdd,
+        lettersVertical: lettersVertical,
+        mapTiles: mapTiles,
+        barriers: barriers,
+        mapText: mapText,
+        terrains: terrains,
+        doodads: doodads,
+        offmapRevenue: offmapRevenue,
+        width: width,
+        height: height);
+  }
 
   MapData._(
       {this.mapTiles,

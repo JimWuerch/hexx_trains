@@ -1,5 +1,7 @@
 import 'dart:math' as math;
 
+import 'package:hexxtrains/components/common/common.dart';
+
 enum DoodadTypes { private_rr }
 
 class Doodad {
@@ -15,4 +17,14 @@ class Doodad {
       throw ArgumentError('unknown DoodadType $d');
     }
   }
+
+  Map<String, dynamic> toJson() => <String, dynamic>{
+        'location': location.toCoordString(),
+        'doodadType': doodadType.toString().stripClassName(),
+      };
+
+  Doodad.fromJson(Map<String, dynamic> json)
+      : location = PointExtensions.fromCoordStringDouble(json['location'] as String),
+        doodadType =
+            DoodadTypes.values.firstWhere((e) => e.toString() == 'DoodadTypes.' + (json['doodadType'] as String));
 }
