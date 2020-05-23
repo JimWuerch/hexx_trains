@@ -25,13 +25,13 @@ class Terrain {
   Map<String, dynamic> toJson() => <String, dynamic>{
         'location': location.toCoordString(),
         'terrainType': terrainType.toString().stripClassName(),
-        'position': position.toJson()
+        'position': position.toTDPosition()
       };
 
   factory Terrain.fromJson(Map<String, dynamic> json) {
     var location = PointExtensions.fromCoordStringInt(json['location'] as String);
     var terrainType = TerrainTypes.values.firstWhere((e) => e.toString() == 'TerrainTypes.' + (json['terrainType'] as String));
-    var position = Position.fromJson(json['position'] as Map<String, dynamic>);
+    var position = Position.fromTDPosition(json['position'] as String);
 
     return Terrain(location: location, terrainType: terrainType, position: position);
   }

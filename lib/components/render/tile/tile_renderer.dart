@@ -977,7 +977,8 @@ class TileRenderer {
   }
 
   void _drawTileNumber() {
-    if (_hex.tileDef.tileId <= 0) return;
+    //if (_hex.tileDef.tileId <= 0) return;
+    if (_hex.tileDef.isBase) return;
 
     var hp = HexPoints.instance;
     TextStyle textStyle = _textStyleDict[_RenderElement.TileNumberText];
@@ -1374,7 +1375,7 @@ class TileRenderer {
 
     Paint fillPaint = Paint()
       ..style = PaintingStyle.fill
-      ..color = companyInfo.color
+      ..color = Color(companyInfo.color)
       ..isAntiAlias = true;
 
     // create a rectangle bounded by the city circle
@@ -1392,7 +1393,7 @@ class TileRenderer {
 
     // if we aren't filling in the background, just draw the text in company color
     TextStyle textStyle = TextStyle(
-        color: fill ? companyInfo.isLightOnDark ? Colors.white : Colors.black : companyInfo.color,
+        color: fill ? companyInfo.isLightOnDark ? Colors.white : Colors.black : Color(companyInfo.color),
         fontFamily: 'RobotoSlab',
         fontSize: drawingSettings.convertSize(drawingSettings.textSize));
 

@@ -35,15 +35,15 @@ class Connection {
   }
 
   Map<String, dynamic> toJson() => <String, dynamic>{
-        'position1': position1.toJson(),
-        'position2': position2.toJson(),
+        'position1': position1.toTDPosition(),
+        'position2': position2.toTDPosition(),
         'connectionType': connectionType.toString().stripClassName(),
         'layer': layer
       };
 
   Connection.fromJson(Map<String, dynamic> json)
-      : position1 = Position.fromJson(json['position1'] as Map<String, dynamic>),
-        position2 = Position.fromJson(json['position2'] as Map<String, dynamic>),
+      : position1 = Position.fromTDPosition(json['position1'] as String),
+        position2 = Position.fromTDPosition(json['position2'] as String),
         connectionType = ConnectionTypes.values
             .firstWhere((e) => e.toString() == 'ConnectionTypes.' + (json['connectionType'] as String)),
         layer = json['layer'] as int;

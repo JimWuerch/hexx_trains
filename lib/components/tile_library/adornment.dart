@@ -15,11 +15,11 @@ class Adornment {
   }
 
   Map<String, dynamic> toJson() => <String, dynamic> {
-    'position': position.toJson(),
+    'position': position.toTDPosition(),
     'adornmentType': adornmentType.toString().stripClassName()
   };
 
   Adornment.fromJson(Map<String, dynamic> json) :
-    position = Position.fromJson(json['position'] as Map<String, dynamic>),
+    position = Position.fromTDPosition(json['position'] as String),
     adornmentType = AdornmentTypes.values.firstWhere((e) => e.toString() == 'AdornmentTypes.' + (json['adornmentType'] as String));
 }

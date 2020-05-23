@@ -1,4 +1,3 @@
-import 'dart:convert';
 import 'dart:math' as math;
 import 'dart:ui' as ui;
 
@@ -34,10 +33,10 @@ class _DebugMap {
 
   void loadTiles() {
     tiles = [
-      HexTile(tileDictionary.getTile(8), 0, 0, hexLayout, null),
-      HexTile(tileDictionary.getTile(9), 1, 0, hexLayout, null),
-      HexTile(tileDictionary.getTile(6), 0, 1, hexLayout, null),
-      HexTile(tileDictionary.getTile(200), 1, 1, hexLayout, null),
+      HexTile(tileDictionary.getTile('8'), 0, 0, hexLayout, null),
+      HexTile(tileDictionary.getTile('9'), 1, 0, hexLayout, null),
+      HexTile(tileDictionary.getTile('6'), 0, 1, hexLayout, null),
+      HexTile(tileDictionary.getTile('200'), 1, 1, hexLayout, null),
     ];
   }
 
@@ -101,6 +100,10 @@ class _MapContext {
 }
 
 class MapWidget extends StatefulWidget {
+  final GameMap gameMap;
+
+  const MapWidget({Key key, this.gameMap}) : super(key: key);
+
   @override
   _MapWidgetState createState() => _MapWidgetState();
 }
@@ -131,14 +134,11 @@ class _MapWidgetState extends State<MapWidget> with AutomaticKeepAliveClientMixi
     super.build(context);
     mapContext = _MapContext();
     TileManifest manifest = TileManifestLoader.load(GameList.games[0].tileManifest);
-    var mapData = MapLoader.load(GameList.games[0].map);
-
-    var jsonText = JsonEncoder.withIndent(' ').convert(mapData);
-    var data = jsonDecode(jsonText) as Map<String, dynamic>;
-    var data2 = MapData.fromJson(data);
+    //var mapData = MapLoader.load(GameList.games[0].map);
+    var mapData = MapData.fromJsonString(GameList.games[0].map);
 
     mapContext.gameMap =
-        GameMap.createMap(data2, 200, 0, Provider.of<tilelib.TileDictionary>(context, listen: false), manifest);
+        GameMap.createMap(mapData, 200, 0, Provider.of<tilelib.TileDictionary>(context, listen: false), manifest);
     mapContext.drawingSettings = DrawingSettings();
     mapContext.renderer = TileRenderer(mapContext.drawingSettings, mapContext.gameMap.layout);
 
@@ -187,13 +187,11 @@ class _MapWidgetState extends State<MapWidget> with AutomaticKeepAliveClientMixi
           if (upgrade.quantity < 1) {
             continue;
           }
-          int id = int.tryParse(upgrade.id);
-          if (id != null) {
-            var tile = mapContext.gameMap.tileDictionary.getTile(id);
-            if (tile != null) {
-              //list.add(HexTile(tile, 0, 0, mapContext.gameMap.layout, upgrade));
-              list.add(tile);
-            }
+          //int id = int.tryParse(upgrade.id);
+          var tile = mapContext.gameMap.tileDictionary.getTile(upgrade.id);
+          if (tile != null) {
+            //list.add(HexTile(tile, 0, 0, mapContext.gameMap.layout, upgrade));
+            list.add(tile);
           }
         }
       }
@@ -394,7 +392,7 @@ class _MapPainter extends CustomPainter {
     for (var text in _mapContext.gameMap.mapText) {
       canvas.save();
       var hex = _mapContext.gameMap.tileAt(text.location.x, text.location.y);
-      if (hex.tileDef.tileId < 1) {
+      if (hex.tileDef.isBase) {
         canvas.translate(hex.center.x, hex.center.y);
         TileRenderer.drawMapText(
             canvas: canvas,

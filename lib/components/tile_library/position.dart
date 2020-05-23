@@ -1,6 +1,7 @@
 import 'dart:math';
 
 import 'package:hexxtrains/components/common/common.dart';
+import 'package:hexxtrains/components/error/error.dart';
 
 enum Locations { Side, Corner, CurveRight, CurveLeft, Center }
 
@@ -43,6 +44,76 @@ class Position {
 
   factory Position.clone(Position p) {
     return Position._(location: p.location, level: p.level, index: p.index);
+  }
+
+  /// Parses Tile Designer format locations, like tp3Center
+  factory Position.fromTDPosition(String pos) {
+    pos = pos.toLowerCase();
+    // first strip off the "tp"
+    if (pos.startsWith('tp')) pos = pos.substring(2);
+
+    if (pos.startsWith('center')) return Position(location: Locations.Center, level: 0, index: 0);
+
+    // "1CornerA"
+    if (pos.isDigit(0)) {
+      int level = int.parse(pos.substring(0, 1));
+      Locations location; // = Position.Locations.Center;
+      pos = pos.substring(1);
+      if (pos.startsWith('corner')) {
+        location = Locations.Corner;
+      } else if (pos.startsWith('side')) {
+        location = Locations.Side;
+      } else {
+        throw new ArgumentError("Unknown position $pos");
+      }
+      int index = pos[pos.length - 1].codeUnitAt(0) - 'a'.codeUnitAt(0);
+      return Position(location: location, level: level, index: index);
+    }
+    // "Curve2LeftA
+    else if (pos.startsWith('curve')) {
+      pos = pos.substring(5);
+      if (!pos.isDigit(0)) {
+        throw new ArgumentError('Unknown position $pos');
+      }
+      int level = int.parse(pos.substring(0, 1)) - 1;
+      pos = pos.substring(1);
+      bool isLeft;
+      if (pos.startsWith('left')) {
+        isLeft = true;
+      } else if (pos.startsWith('right')) {
+        isLeft = false;
+      } else {
+        throw new ArgumentError('Unknown position $pos');
+      }
+      int index = pos[pos.length - 1].codeUnitAt(0) - 'a'.codeUnitAt(0);
+      return Position(location: isLeft ? Locations.CurveLeft : Locations.CurveRight, level: level, index: index);
+    }
+
+    // if we get here something is hosed
+    throw ArgumentError('Unknown position $pos');
+  }
+
+  String toTDPosition() {
+    String point = 'ABCDEF';
+    switch (location) {
+      case Locations.Center:
+        return 'tpCenter';
+        break;
+      case Locations.Side:
+        return 'tp${level}Side${point[index]}';
+        break;
+      case Locations.Corner:
+        return 'tp${level}Corner${point[index]}';
+        break;
+      case Locations.CurveRight:
+        return 'tpCurve${level+1}Right${point[index]}';
+        break;
+      case Locations.CurveLeft:
+        return 'tpCurve${level+1}Left${point[index]}';
+        break;
+      default:
+        throw InvalidOperationError('Missing handler for Locations enum');
+    }
   }
 
   // compare indexes
@@ -104,10 +175,10 @@ class Position {
   @override
   int get hashCode => location.index * 100 + level * 10 + index;
 
-  Position.fromJson(Map<String, dynamic> json)
-      : location = Locations.values.firstWhere((e) => e.toString() == 'Locations.' + (json['location'] as String)),
-        level = json['level'] as int,
-        index = json['index'] as int;
+  // Position.fromJson(Map<String, dynamic> json)
+  //     : location = Locations.values.firstWhere((e) => e.toString() == 'Locations.' + (json['location'] as String)),
+  //       level = json['level'] as int,
+  //       index = json['index'] as int;
 
-  Map<String, dynamic> toJson() => <String, dynamic>{'location': location.toString().stripClassName(), 'level': level, 'index': index};
+  // Map<String, dynamic> toJson() => <String, dynamic>{'location': location.toString().stripClassName(), 'level': level, 'index': index};
 }

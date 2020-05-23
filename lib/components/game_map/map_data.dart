@@ -1,3 +1,4 @@
+import 'dart:convert';
 import 'dart:math' as math;
 
 import 'package:hexxtrains/components/common/common.dart';
@@ -8,6 +9,7 @@ import 'map_text.dart';
 import 'map_tile.dart';
 import 'revenue.dart';
 import 'terrain.dart';
+import 'tile_rename.dart';
 
 enum MapOrientation { pointy, flat }
 
@@ -21,6 +23,7 @@ class MapData {
   final List<Terrain> terrains;
   final List<Doodad> doodads;
   final List<Revenue> offmapRevenue;
+  final List<TileRename> tileRenames;
   final int width;
   final int height;
 
@@ -34,6 +37,7 @@ class MapData {
         'terrains': terrains.map<Map<String, dynamic>>((e) => e.toJson()).toList(),
         'doodads': doodads.map<Map<String, dynamic>>((e) => e.toJson()).toList(),
         'offmapRevenue': offmapRevenue.map<Map<String, dynamic>>((e) => e.toJson()).toList(),
+        'tileRenames': tileRenames.map<Map<String, dynamic>>((e) => e.toJson()).toList(),
         'width': width,
         'height': height,
       };
@@ -43,6 +47,8 @@ class MapData {
         MapOrientation.values.firstWhere((e) => e.toString() == 'MapOrientation.' + (json['orientation'] as String));
     var aRowOdd = json['aRowOdd'] as bool;
     var lettersVertical = json['lettersVertical'] as bool;
+    var width = json['width'] as int;
+    var height = json['height'] as int;
     var item = json['mapTiles'] as List<dynamic>;
     var mapTiles = item.map<MapTile>((dynamic json) => MapTile.fromJson(json as Map<String, dynamic>)).toList();
     item = json['barriers'] as List<dynamic>;
@@ -55,8 +61,9 @@ class MapData {
     var doodads = item.map<Doodad>((dynamic json) => Doodad.fromJson(json as Map<String, dynamic>)).toList();
     item = json['offmapRevenue'] as List<dynamic>;
     var offmapRevenue = item.map<Revenue>((dynamic json) => Revenue.fromJson(json as Map<String, dynamic>)).toList();
-    var width = json['width'] as int;
-    var height = json['height'] as int;
+    item = json['tileRenames'] as List<dynamic>;
+    var tileRenames =
+        item.map<TileRename>((dynamic json) => TileRename.fromJson(json as Map<String, dynamic>)).toList();
 
     return MapData._(
         orientation: orientation,
@@ -68,8 +75,14 @@ class MapData {
         terrains: terrains,
         doodads: doodads,
         offmapRevenue: offmapRevenue,
+        tileRenames: tileRenames,
         width: width,
         height: height);
+  }
+
+  factory MapData.fromJsonString(String data) {
+    var json = jsonDecode(data) as Map<String, dynamic>;
+    return MapData.fromJson(json);
   }
 
   MapData._(
@@ -79,6 +92,7 @@ class MapData {
       this.terrains,
       this.doodads,
       this.offmapRevenue,
+      this.tileRenames,
       this.width,
       this.height,
       this.aRowOdd,
@@ -94,7 +108,8 @@ class MapData {
       List<MapText> mapText,
       List<Terrain> terrains,
       List<Doodad> doodads,
-      List<Revenue> offmapRevenue}) {
+      List<Revenue> offmapRevenue,
+      List<TileRename> tileRenames}) {
     var size = _calcMapSize(mapTiles);
     return MapData._(
         mapTiles: mapTiles,
@@ -103,6 +118,7 @@ class MapData {
         terrains: terrains,
         doodads: doodads,
         offmapRevenue: offmapRevenue,
+        tileRenames: tileRenames,
         width: size.x,
         height: size.y,
         aRowOdd: aRowOdd,

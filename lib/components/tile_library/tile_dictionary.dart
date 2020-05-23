@@ -3,8 +3,8 @@ import 'dart:convert';
 import 'tile_definition.dart';
 
 class TileDictionary {
-  final Map<int, TileDefinition> _tiles = Map<int, TileDefinition>();
-  Map<int, TileDefinition> get tiles => Map.unmodifiable(_tiles);
+  final Map<String, TileDefinition> _tiles = Map<String, TileDefinition>();
+  Map<String, TileDefinition> get tiles => Map.unmodifiable(_tiles);
 
   TileDictionary();
 
@@ -21,11 +21,11 @@ class TileDictionary {
     _tiles[tile.tileId] = tile;
   }
 
-  void remove(int tileId) {
+  void remove(String tileId) {
     tiles.remove(tileId);
   }
 
-  TileDefinition getTile(int id) {
+  TileDefinition getTile(String id) {
     return tiles[id];
   }
 

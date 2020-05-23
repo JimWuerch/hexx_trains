@@ -15,13 +15,13 @@ class MapText {
   Map<String, dynamic> toJson() => <String, dynamic>{
         'location': location.toCoordString(),
         'text': text,
-        'position': position.toJson(),
+        'position': position.toTDPosition(),
         'size': size
       };
 
   MapText.fromJson(Map<String, dynamic> json)
       : location = PointExtensions.fromCoordStringInt(json['location'] as String),
         text = json['text'] as String,
-        position = Position.fromJson(json['position'] as Map<String, dynamic>),
+        position = Position.fromTDPosition(json['position'] as String),
         size = json['size'] as double;
 }

@@ -3,4 +3,6 @@ extension StringExtensions on String {
   String stripClassName() {
       return this.substring(this.indexOf('.') + 1);
   }
+
+  bool isDigit(int idx) => (this.codeUnitAt(idx) ^ 0x30) <= 9;
 }

@@ -11,11 +11,11 @@ class Revenue {
   }
 
   Revenue.fromJson(Map<String, dynamic> json)
-      : position = Position.fromJson(json['position'] as Map<String, dynamic>),
+      : position = Position.fromTDPosition(json['position'] as String),
         amount = json['amount'] as int;
 
   Map<String, dynamic> toJson() => <String, dynamic> {
-    'position': position.toJson(),
+    'position': position.toTDPosition(),
     'amount': amount
   };
 }

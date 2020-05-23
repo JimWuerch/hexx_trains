@@ -40,12 +40,13 @@ class TileDesignerLoader {
 
   // handle <tile> elements
   TileDefinition parseTile(xml.XmlElement tile) {
-    int tileId = 0;
+    String tileId = '0';
     String name = '';
     TileColors color = TileColors.None;
     List<Junction> junctions = [];
     List<Connection> connections = [];
     List<Adornment> adornments = [];
+    bool isBase = true;
 
     for (var node in tile.children) {
       if (node.nodeType == xml.XmlNodeType.ELEMENT) {
@@ -57,10 +58,12 @@ class TileDesignerLoader {
         } else if (element.name.local == 'connections') {
           parseConnections(element, connections);
         } else if (element.name.local == 'ID') {
-          tileId = int.tryParse(element.text);
+          tileId = element.text;
           if (tileId == null) {
             throw InvalidOperationError('Invalid value ${element.text} for ID');
           }
+          var tmp = int.tryParse(tileId);
+          isBase = tmp != null && tmp < 1;
         } else if (element.name.local == 'shape') {
           // we are skipping shape
         } else if (element.name.local == 'level') {
@@ -80,7 +83,8 @@ class TileDesignerLoader {
         color: color,
         junctions: junctions,
         connections: connections,
-        adornments: adornments);
+        adornments: adornments,
+        isBase: isBase);
   }
 
   void parseAdornment(xml.XmlElement category, List<Adornment> adornments) {
@@ -103,7 +107,7 @@ class TileDesignerLoader {
     }
 
     adornments
-        .add(TextAdornment(position: parsePosition(positionName), text: value));
+        .add(TextAdornment(position: Position.fromTDPosition(positionName), text: value));
   }
 
   void parseJunctions(xml.XmlElement e, List<Junction> junctions) {
@@ -156,58 +160,6 @@ class TileDesignerLoader {
     }
   }
 
-  static bool _isDigit(String s, int idx) => (s.codeUnitAt(idx) ^ 0x30) <= 9;
-
-  static Position parsePosition(String pos) {
-    pos = pos.toLowerCase();
-    // first strip off the "tp"
-    if (pos.startsWith('tp')) pos = pos.substring(2);
-
-    if (pos.startsWith('center'))
-      return Position(location: Locations.Center, level: 0, index: 0);
-
-    // "1CornerA"
-    if (_isDigit(pos, 0)) {
-      int level = int.parse(pos.substring(0, 1));
-      Locations location; // = Position.Locations.Center;
-      pos = pos.substring(1);
-      if (pos.startsWith('corner')) {
-        location = Locations.Corner;
-      } else if (pos.startsWith('side')) {
-        location = Locations.Side;
-      } else {
-        throw new ArgumentError("Unknown position $pos");
-      }
-      int index = pos[pos.length - 1].codeUnitAt(0) - 'a'.codeUnitAt(0);
-      return Position(location: location, level: level, index: index);
-    }
-    // "Curve2LeftA
-    else if (pos.startsWith('curve')) {
-      pos = pos.substring(5);
-      if (!_isDigit(pos, 0)) {
-        throw new ArgumentError('Unknown position $pos');
-      }
-      int level = int.parse(pos.substring(0, 1)) - 1;
-      pos = pos.substring(1);
-      bool isLeft;
-      if (pos.startsWith('left')) {
-        isLeft = true;
-      } else if (pos.startsWith('right')) {
-        isLeft = false;
-      } else {
-        throw new ArgumentError('Unknown position $pos');
-      }
-      int index = pos[pos.length - 1].codeUnitAt(0) - 'a'.codeUnitAt(0);
-      return Position(
-          location: isLeft ? Locations.CurveLeft : Locations.CurveRight,
-          level: level,
-          index: index);
-    }
-
-    // if we get here something is hosed
-    throw ArgumentError('Unknown position $pos');
-  }
-
   Junction parseJunction(xml.XmlElement e) {
     String type;
     String position;
@@ -235,7 +187,7 @@ class TileDesignerLoader {
     }
 
     return Junction(
-        position: parsePosition(position),
+        position: Position.fromTDPosition(position),
         junctionType: parseJunctionType(type),
         revenue: revenue);
   }
@@ -256,9 +208,9 @@ class TileDesignerLoader {
         if (element.name.local == 'conType') {
           conType = parseConnectionType(element.text);
         } else if (element.name.local == 'position1') {
-          pos1 = parsePosition(element.text);
+          pos1 = Position.fromTDPosition(element.text);
         } else if (element.name.local == 'position2') {
-          pos2 = parsePosition(element.text);
+          pos2 = Position.fromTDPosition(element.text);
         } else if (element.name.local == 'layer') {
           layer = int.parse(element.text);
         } else {
@@ -299,7 +251,7 @@ class TileDesignerLoader {
       throw ArgumentError('Revenue node missing position');
     }
 
-    return Revenue(position: parsePosition(position), amount: value);
+    return Revenue(position: Position.fromTDPosition(position), amount: value);
   }
 
   JunctionTypes parseJunctionType(String type) {

@@ -9,7 +9,7 @@ class TileDefinition {
   static const int NumLevels = 4;
   static const double LevelMult = 1.0 / NumLevels;
 
-  final int tileId;
+  final String tileId;
   final String name;
   final TileColors color;
   final List<Junction> junctions;
@@ -35,7 +35,7 @@ class TileDefinition {
   }
 
   factory TileDefinition.fromJson(Map<String, dynamic> json) {
-    var tileId = json['tileId'] as int;
+    var tileId = json['tileId'] as String;
     var name = json['name'] as String;
     var color = TileColors.values.firstWhere((e) => e.toString() == 'TileColors.' + (json['color'] as String));
     var item = json['junctions'] as List<dynamic>;

@@ -56,7 +56,7 @@ class Junction {
   }
 
   factory Junction.fromJson(Map<String, dynamic> json) {
-    var position = Position.fromJson(json['position'] as Map<String, dynamic>);
+    var position = Position.fromTDPosition(json['position'] as String);
     var junctionType =
         JunctionTypes.values.firstWhere((e) => e.toString() == 'JunctionTypes.' + (json['junctionType'] as String));
     Revenue revenue;
@@ -69,7 +69,7 @@ class Junction {
 
   Map<String, dynamic> toJson() {
     Map<String, dynamic> ret = <String, dynamic>{
-      'position': position.toJson(),
+      'position': position.toTDPosition(),
       'junctionType': junctionType.toString().stripClassName(),
     };
 

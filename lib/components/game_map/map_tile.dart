@@ -1,11 +1,11 @@
 import 'dart:math' as math;
 
 import 'package:hexxtrains/components/common/common.dart';
-import 'package:hexxtrains/components/tile_library/tile_library.dart';
+import 'package:hexxtrains/components/tile_library/position.dart';
 
 class MapTile {
   final math.Point<int> location;
-  final int id;
+  final String id;
   final int rotation;
   final List<int> arrows;
   final int cost;
@@ -14,7 +14,7 @@ class MapTile {
   MapTile._({this.location, this.id, this.arrows, this.cost, this.costPosition, this.rotation = 0});
 
   factory MapTile.fromData(
-      {math.Point<int> location, int id, List<int> arrows, int cost, Position costPosition, int rotation = 0}) {
+      {math.Point<int> location, String id, List<int> arrows, int cost, Position costPosition, int rotation = 0}) {
     return MapTile._(
         location: location,
         id: id,
@@ -34,7 +34,7 @@ class MapTile {
 
     if (cost > 0) {
       ret['cost'] = cost;
-      ret['costPosition'] = costPosition.toJson();
+      ret['costPosition'] = costPosition.toTDPosition();
     }
 
     return ret;
@@ -42,7 +42,7 @@ class MapTile {
 
   factory MapTile.fromJson(Map<String, dynamic> json) {
     var location = PointExtensions.fromCoordStringInt(json['location'] as String);
-    var id = json['id'] as int;
+    var id = json['id'] as String;
     var rotation = json['rotation'] as int;
     var item = json['arrows'] as List<dynamic>;
     var arrows = item.map<int>((dynamic json) => json as int).toList();
@@ -52,7 +52,7 @@ class MapTile {
     }
     Position costPosition;
     if (json['costPosition'] != null) {
-      costPosition = Position.fromJson(json['costPosition'] as Map<String, dynamic>);
+      costPosition = Position.fromTDPosition(json['costPosition'] as String);
     }
 
     return MapTile._(

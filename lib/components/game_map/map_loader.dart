@@ -1,10 +1,16 @@
 import 'dart:math' as math;
 
-import 'package:hexxtrains/components/tile_library/tile_designer_loader.dart' as tdl;
-import 'package:hexxtrains/components/tile_library/tile_library.dart' as tl;
+import 'package:hexxtrains/components/game_map/tile_rename.dart';
+import 'package:hexxtrains/components/tile_library/position.dart';
 import 'package:xml/xml.dart' as xml;
 
-import 'game_map.dart';
+import 'barrier.dart';
+import 'doodad.dart';
+import 'map_data.dart';
+import 'map_text.dart';
+import 'map_tile.dart';
+import 'revenue.dart';
+import 'terrain.dart';
 
 class MapLoader {
   MapLoader._();
@@ -74,7 +80,8 @@ class MapLoader {
         mapText: mapText,
         terrains: terrains,
         doodads: doodads,
-        offmapRevenue: offmapRevenue);
+        offmapRevenue: offmapRevenue,
+        tileRenames: <TileRename>[]);
   }
 
   static List<MapTile> _parseTiles(
@@ -85,12 +92,12 @@ class MapLoader {
       if (node.nodeType == xml.XmlNodeType.ELEMENT) {
         xml.XmlElement element = node as xml.XmlElement;
         math.Point<int> location;
-        int id;
+        String id;
         List<int> arrows = [];
         int rotation = 0;
         int cost = 0;
-        tl.Position costPosition =
-            tdl.TileDesignerLoader.parsePosition('tp3CornerD');
+        Position costPosition =
+            Position.fromTDPosition('tp3CornerD');
 
         if (element.name.local != 'tile') {
           throw ArgumentError(
@@ -101,7 +108,7 @@ class MapLoader {
             location =
                 MapData.locationToCoords(attr.value, aRowOdd, lettersVertical);
           } else if (attr.name.local == 'id') {
-            id = int.parse(attr.value);
+            id = attr.value;
           } else if (attr.name.local == 'rotation') {
             rotation = int.parse(attr.value);
           } else if (attr.name.local == 'arrows') {
@@ -116,7 +123,7 @@ class MapLoader {
           } else if (attr.name.local == 'cost') {
             cost = int.parse(attr.value);
           } else if (attr.name.local == 'cost_position') {
-            costPosition = tdl.TileDesignerLoader.parsePosition(attr.value);
+            costPosition = Position.fromTDPosition(attr.value);
           } else {
             throw ArgumentError(
                 'Unknown attribute ${attr.name.local} in tile.');
@@ -172,8 +179,8 @@ class MapLoader {
         xml.XmlElement element = node as xml.XmlElement;
         math.Point<int> location;
         String text = '';
-        tl.Position position =
-            tl.Position(index: 0, level: 0, location: tl.Locations.Center);
+        Position position =
+            Position(index: 0, level: 0, location: Locations.Center);
         double size = 1.0;
 
         if (element.name.local != 'text') {
@@ -187,7 +194,7 @@ class MapLoader {
           } else if (attr.name.local == 'text') {
             text = attr.value;
           } else if (attr.name.local == 'position') {
-            position = tdl.TileDesignerLoader.parsePosition(attr.value);
+            position = Position.fromTDPosition(attr.value);
           } else if (attr.name.local == 'size') {
             size = double.parse(attr.value);
           } else {
@@ -210,8 +217,8 @@ class MapLoader {
         xml.XmlElement element = node as xml.XmlElement;
         math.Point<int> location;
         TerrainTypes terrainType;
-        tl.Position position =
-            tl.Position(index: 0, level: 0, location: tl.Locations.Center);
+        Position position =
+            Position(index: 0, level: 0, location: Locations.Center);
 
         if (element.name.local != 'terrain') {
           throw ArgumentError(
@@ -224,7 +231,7 @@ class MapLoader {
           } else if (attr.name.local == 'type') {
             terrainType = Terrain.toTerrainType(attr.value);
           } else if (attr.name.local == 'position') {
-            position = tdl.TileDesignerLoader.parsePosition(attr.value);
+            position = Position.fromTDPosition(attr.value);
           } else {
             throw ArgumentError(
                 'Unknown attribute ${attr.name.local} in terrain.');
