@@ -15,7 +15,11 @@ class TileManifestLoader {
       if (tmp.containsKey(id)) {
         throw ArgumentError('duplicate id ${id} loading tile manifest.');
       }
-      tmp[id] = TileManifestItem(id: id, quantity: jsonItem['qty'] as int, upgrades: List<TileManifestItem>());
+      tmp[id] = TileManifestItem(
+          id: id,
+          replacesId: jsonItem['replacesId'] as String,
+          quantity: jsonItem['qty'] as int,
+          upgrades: List<TileManifestItem>());
     }
 
     // now go through and add the upgrades

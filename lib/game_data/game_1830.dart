@@ -2662,6 +2662,11 @@ static const String _tileManifest = '''{"tiles":[
 "upgrades":["X3","X4","X5"]
 },
 {
+"id":"-9712",
+"qty":0,
+"upgrades":["X1"]
+},
+{
 "id":"1",
 "qty":1,
 "upgrades":[]
@@ -2723,6 +2728,7 @@ static const String _tileManifest = '''{"tiles":[
 },
 {
 "id":"X1",
+"replacesId": "9713",
 "qty":1,
 "upgrades":["X2"]
 },
@@ -2788,21 +2794,25 @@ static const String _tileManifest = '''{"tiles":[
 },
 {
 "id":"X2",
+"replacesId": "9704",
 "qty":1,
 "upgrades":["X6"]
 },
 {
 "id":"X3",
+"replacesId": "9705",
 "qty":1,
 "upgrades":["X7"]
 },
 {
 "id":"X4",
+"replacesId": "9706",
 "qty":1,
 "upgrades":["X7"]
 },
 {
 "id":"X5",
+"replacesId": "9707",
 "qty":1,
 "upgrades":["X7"]
 },
@@ -2863,11 +2873,13 @@ static const String _tileManifest = '''{"tiles":[
 },
 {
 "id":"X6",
+"replacesId": "9708",
 "qty":1,
 "upgrades":["X8"]
 },
 {
 "id":"X7",
+"replacesId": "9709",
 "qty":2,
 "upgrades":["X9"]
 },
@@ -2878,11 +2890,13 @@ static const String _tileManifest = '''{"tiles":[
 },
 {
 "id":"X8",
+"replacesId": "9710",
 "qty":1,
 "upgrades":[]
 },
 {
 "id":"X9",
+"replacesId": "9711",
 "qty":1,
 "upgrades":[]
 }

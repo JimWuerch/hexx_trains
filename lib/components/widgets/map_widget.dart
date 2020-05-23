@@ -132,6 +132,7 @@ class _MapWidgetState extends State<MapWidget> with AutomaticKeepAliveClientMixi
   @override
   Widget build(BuildContext context) {
     super.build(context);
+    //TODO: broken for now, because we need context for Provider.  Will need different solution
     mapContext = _MapContext();
     TileManifest manifest = TileManifestLoader.load(GameList.games[0].tileManifest);
     //var mapData = MapLoader.load(GameList.games[0].map);
@@ -251,8 +252,6 @@ class _MapWidgetState extends State<MapWidget> with AutomaticKeepAliveClientMixi
   }
 
   void _onTileConfirmed() {
-    print(
-        'replacing ${_replacementTarget.q},${_replacementTarget.r} with tile ${_curReplacementCandidate.tileDef.name}');
     _tileSelectionOverlay.remove();
     _tileSelectionOverlay = null;
     //mapContext.gameMap.replaceTile(_curReplacementCandidate, _replacementTarget.q, _replacementTarget.r);
@@ -402,6 +401,14 @@ class _MapPainter extends CustomPainter {
             drawingSettings: _mapContext.drawingSettings);
         //canvas.DrawPicture((SKPicture)text.Picture);
       }
+      canvas.restore();
+    }
+
+    for (var barrier in _mapContext.gameMap.barriers) {
+      canvas.save();
+      var hex = _mapContext.gameMap.tileAt(barrier.location.x, barrier.location.y);
+      canvas.translate(hex.center.x, hex.center.y);
+      _mapContext.renderer.drawBarrier(canvas, barrier.side);
       canvas.restore();
     }
 

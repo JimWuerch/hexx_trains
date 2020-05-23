@@ -647,7 +647,8 @@ class TileRenderer {
 
   // See Rob Spencer's article for description of this function
   // http://scaledinnovation.com/analytics/splines/aboutSplines.html
-  List<Point<double>> _getControlPoints( //ignore: unused_element
+  List<Point<double>> _getControlPoints(
+      //ignore: unused_element
       //ignore: unused_element
       Point<double> p0,
       Point<double> p1,
@@ -1118,7 +1119,13 @@ class TileRenderer {
   }
 
   void _setCityMatrix(Junction junction) {
-    if (junction.position.location == Locations.Center) return;
+    if (junction.position.location == Locations.Center) {
+      if (layout.orientation == HexOrientation.Pointy) {
+        //TODO: test this
+        _canvas.rotateDegrees(30);
+      }
+    }
+    ;
 
     Point<double> p = _getPoint(junction.position);
     int deg = junction.position.index * 60;
@@ -1277,8 +1284,19 @@ class TileRenderer {
           {
             var a = adornment as TextAdornment;
             if (a.text?.isEmpty ?? true) continue;
-            var textStyle = _textStyleDict[_RenderElement.AdornmentText];
+            TextStyle textStyle;
+            if (a.text.length > 2) {
+              textStyle = _textStyleDict[_RenderElement.AdornmentText];
+            } else {
+              var srcTextStyle = _textStyleDict[_RenderElement.AdornmentText];
+              textStyle = TextStyle(
+                  color: srcTextStyle.color,
+                  fontFamily: srcTextStyle.fontFamily,
+                  fontSize: srcTextStyle.fontSize * 1.5,
+                  fontWeight: srcTextStyle.fontWeight);
+            }
             var p = _getPoint(a.position);
+            
             _drawText(a.text, Point<double>(p.x, p.y), textStyle);
           }
           break;

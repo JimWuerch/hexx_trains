@@ -32,7 +32,12 @@ class TileDesignerLoader {
       if (tileNode.nodeType == xml.XmlNodeType.ELEMENT) {
         xml.XmlElement tile = tileNode as xml.XmlElement;
         if (tile.name.local == 'tile') {
-          _tileDictionary.add(parseTile(tile));
+          var tileDef = parseTile(tile);
+          if (_tileDictionary.tiles.containsKey(tileDef.tileId)) {
+            print('Skipping tile ${tileDef.tileId}, already in the TileDictionary.');
+          } else {
+            _tileDictionary.add(parseTile(tile));
+          }
         }
       }
     }

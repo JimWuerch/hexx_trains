@@ -34,17 +34,27 @@ class Connection {
     return Position.indexDistance(position1, position2);
   }
 
-  Map<String, dynamic> toJson() => <String, dynamic>{
-        'position1': position1.toTDPosition(),
-        'position2': position2.toTDPosition(),
-        'connectionType': connectionType.toString().stripClassName(),
-        'layer': layer
-      };
+  Map<String, dynamic> toJson() {
+    var ret = <String, dynamic>{
+      'position1': position1.toTDPosition(),
+      'position2': position2.toTDPosition(),
+      'connectionType': connectionType.toString().stripClassName(),
+    };
 
-  Connection.fromJson(Map<String, dynamic> json)
-      : position1 = Position.fromTDPosition(json['position1'] as String),
-        position2 = Position.fromTDPosition(json['position2'] as String),
-        connectionType = ConnectionTypes.values
-            .firstWhere((e) => e.toString() == 'ConnectionTypes.' + (json['connectionType'] as String)),
-        layer = json['layer'] as int;
+    if (layer != 0) {
+      ret['layer'] = layer;
+    }
+
+    return ret;
+  }
+
+  factory Connection.fromJson(Map<String, dynamic> json) {
+    var position1 = Position.fromTDPosition(json['position1'] as String);
+    var position2 = Position.fromTDPosition(json['position2'] as String);
+    var connectionType = ConnectionTypes.values
+        .firstWhere((e) => e.toString() == 'ConnectionTypes.' + (json['connectionType'] as String));
+    var layer = json['layer'] as int ?? 0;
+
+    return Connection(position1: position1, position2: position2, connectionType: connectionType, layer: layer);
+  }
 }

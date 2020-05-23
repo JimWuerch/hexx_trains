@@ -23,6 +23,20 @@ class TileDefinition {
     _updateJunctions();
   }
 
+  /// Create a new TileDefinition that is a shallow copy of the old one with [newId] as the tileId.
+  factory TileDefinition.newId(TileDefinition src, String newId) {
+    var ret = TileDefinition(
+        tileId: newId,
+        name: src.name,
+        color: src.color,
+        junctions: src.junctions,
+        connections: src.connections,
+        adornments: src.adornments,
+        isBase: src.isBase);
+    ret.clipTile = src.clipTile;
+    return ret;
+  }
+
   void _updateJunctions() {
     for (var junction in junctions) {
       for (var connection in connections) {
@@ -41,14 +55,14 @@ class TileDefinition {
     var item = json['junctions'] as List<dynamic>;
     var junctions = item.map<Junction>((dynamic json) => Junction.fromJson(json as Map<String, dynamic>)).toList();
     item = json['connections'] as List<dynamic>;
-    var connections = item.map<Connection>((dynamic json) => Connection.fromJson(json as Map<String, dynamic>)).toList();
+    var connections =
+        item.map<Connection>((dynamic json) => Connection.fromJson(json as Map<String, dynamic>)).toList();
     item = json['adornments'] as List<dynamic>;
-    var adornments = item.map<Adornment>((dynamic json) => Adornment.fromJson(json as Map<String, dynamic>)).toList();
-    var isBase = json['isBase'] as bool;
-    var clipTile = false;
-    if (json.containsKey('clipTile')) {
-      clipTile = json['clipTile'] as bool;
-    }
+    var adornments = item != null
+        ? item.map<Adornment>((dynamic json) => Adornment.fromJson(json as Map<String, dynamic>)).toList()
+        : <Adornment>[];
+    var isBase = json['isBase'] as bool ?? false;
+    var clipTile = json.containsKey('clipTile') ?? false;
 
     var ret = TileDefinition(
         tileId: tileId,
@@ -63,16 +77,25 @@ class TileDefinition {
   }
 
   Map<String, dynamic> toJson() {
-      Map<String, dynamic> ret = <String, dynamic>{
-        'tileId': tileId,
-        'name': name,
-        'color': color.toString().stripClassName(),
-        'junctions': junctions.map<Map<String, dynamic>>((e) => e.toJson()).toList(),
-        'connections': connections.map<Map<String, dynamic>>((e) => e.toJson()).toList(),
-        'adornments': adornments.map<Map<String, dynamic>>((e) => e.toJson()).toList(),
-        'isBase': isBase,
-        'clipTile': clipTile
-      };
-      return ret;
+    Map<String, dynamic> ret = <String, dynamic>{
+      'tileId': tileId,
+      'name': name,
+      'color': color.toString().stripClassName(),
+      'junctions': junctions.map<Map<String, dynamic>>((e) => e.toJson()).toList(),
+      'connections': connections.map<Map<String, dynamic>>((e) => e.toJson()).toList(),
+    };
+
+    if (adornments.length > 0) {
+      ret['adornments'] = adornments.map<Map<String, dynamic>>((e) => e.toJson()).toList();
+    }
+
+    if (isBase) {
+      ret['isBase'] = isBase;
+    }
+    if (clipTile) {
+      ret['clipTile'] = clipTile;
+    }
+
+    return ret;
   }
 }

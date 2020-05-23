@@ -1,9 +1,12 @@
+import 'package:hexxtrains/components/tile_library/tile_dictionary.dart';
+
 class TileManifestItem {
   final String id;
+  final String replacesId; // if this exists, replace replacesId with id in the TileDictionary
   int quantity;
   final List<TileManifestItem> upgrades;
 
-  TileManifestItem({this.id, this.quantity, this.upgrades});
+  TileManifestItem({this.id, this.replacesId, this.quantity, this.upgrades});
 }
 
 class TileManifest {
@@ -40,5 +43,16 @@ class TileManifest {
       }
     }
     return ret;
+  }
+
+  /// Replace all TileDefinitions in [tileDictionary] using replacesId
+  void replaceTileDefs(TileDictionary tileDictionary) {
+    for (var item in manifest.values) {
+      if (item.replacesId != null) {
+        if (tileDictionary.getTile(item.replacesId) != null) {
+          tileDictionary.replace(item.replacesId, item.id);
+        }
+      }
+    }
   }
 }

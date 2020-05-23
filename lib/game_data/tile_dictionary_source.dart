@@ -10,13 +10,10 @@ class TileDictionarySource {
     {
      "position1": "tp4SideC",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
-   "adornments": [],
-   "isBase": true,
-   "clipTile": false
+   "isBase": true
   },
   {
    "tileId": "-908",
@@ -27,13 +24,10 @@ class TileDictionarySource {
     {
      "position1": "tp4SideA",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
-   "adornments": [],
-   "isBase": true,
-   "clipTile": false
+   "isBase": true
   },
   {
    "tileId": "-907",
@@ -44,13 +38,10 @@ class TileDictionarySource {
     {
      "position1": "tp4SideB",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
-   "adornments": [],
-   "isBase": true,
-   "clipTile": false
+   "isBase": true
   },
   {
    "tileId": "-903",
@@ -70,25 +61,20 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
-   "adornments": [],
-   "isBase": true,
-   "clipTile": false
+   "isBase": true
   },
   {
    "tileId": "-902",
@@ -108,19 +94,15 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
-   "adornments": [],
-   "isBase": true,
-   "clipTile": false
+   "isBase": true
   },
   {
    "tileId": "-901",
@@ -140,13 +122,10 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
-   "adornments": [],
-   "isBase": true,
-   "clipTile": false
+   "isBase": true
   },
   {
    "tileId": "-102",
@@ -166,25 +145,20 @@ class TileDictionarySource {
     {
      "position1": "tp1CornerD",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp1CornerD",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp1CornerD",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
-   "adornments": [],
-   "isBase": true,
-   "clipTile": false
+   "isBase": true
   },
   {
    "tileId": "-101",
@@ -204,31 +178,25 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2CornerD",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2CornerD",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
-   "adornments": [],
-   "isBase": true,
-   "clipTile": false
+   "isBase": true
   },
   {
    "tileId": "-21",
@@ -256,19 +224,15 @@ class TileDictionarySource {
     {
      "position1": "tp2SideC",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2SideF",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
-   "adornments": [],
-   "isBase": true,
-   "clipTile": false
+   "isBase": true
   },
   {
    "tileId": "-20",
@@ -285,9 +249,7 @@ class TileDictionarySource {
     }
    ],
    "connections": [],
-   "adornments": [],
-   "isBase": true,
-   "clipTile": false
+   "isBase": true
   },
   {
    "tileId": "-11",
@@ -307,19 +269,15 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
-   "adornments": [],
-   "isBase": true,
-   "clipTile": false
+   "isBase": true
   },
   {
    "tileId": "-10",
@@ -332,9 +290,7 @@ class TileDictionarySource {
     }
    ],
    "connections": [],
-   "adornments": [],
-   "isBase": true,
-   "clipTile": false
+   "isBase": true
   },
   {
    "tileId": "-2",
@@ -351,9 +307,7 @@ class TileDictionarySource {
     }
    ],
    "connections": [],
-   "adornments": [],
-   "isBase": true,
-   "clipTile": false
+   "isBase": true
   },
   {
    "tileId": "-1",
@@ -366,9 +320,7 @@ class TileDictionarySource {
     }
    ],
    "connections": [],
-   "adornments": [],
-   "isBase": true,
-   "clipTile": false
+   "isBase": true
   },
   {
    "tileId": "0",
@@ -376,9 +328,7 @@ class TileDictionarySource {
    "color": "Ground",
    "junctions": [],
    "connections": [],
-   "adornments": [],
-   "isBase": true,
-   "clipTile": false
+   "isBase": true
   },
   {
    "tileId": "1",
@@ -406,31 +356,24 @@ class TileDictionarySource {
     {
      "position1": "tpCurve2LeftE",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCurve2LeftE",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCurve2LeftB",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCurve2LeftB",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "2",
@@ -458,31 +401,24 @@ class TileDictionarySource {
     {
      "position1": "tp2SideD",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2SideD",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCurve1LeftB",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCurve1LeftB",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "3",
@@ -502,19 +438,14 @@ class TileDictionarySource {
     {
      "position1": "tp2CornerE",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2CornerE",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "4",
@@ -534,19 +465,14 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "5",
@@ -566,19 +492,14 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "1005",
@@ -598,14 +519,12 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -614,9 +533,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "Lille"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "6",
@@ -636,19 +553,14 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "1006",
@@ -668,14 +580,12 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -684,9 +594,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "Lyon"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "7",
@@ -697,13 +605,9 @@ class TileDictionarySource {
     {
      "position1": "tp4SideD",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "8",
@@ -714,13 +618,9 @@ class TileDictionarySource {
     {
      "position1": "tp4SideD",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "9",
@@ -731,13 +631,9 @@ class TileDictionarySource {
     {
      "position1": "tp4SideD",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "10",
@@ -765,19 +661,14 @@ class TileDictionarySource {
     {
      "position1": "tp2CornerA",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2CornerD",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "11",
@@ -797,31 +688,24 @@ class TileDictionarySource {
     {
      "position1": "tp4SideA",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideC",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp1SideF",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp1SideF",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "12",
@@ -841,25 +725,58 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
+    }
+   ]
+  },
+  {
+   "tileId": "1012",
+   "name": "12/1830nl",
+   "color": "Green",
+   "junctions": [
+    {
+     "position": "tpCenter",
+     "junctionType": "DoubleCity",
+     "revenue": {
+      "position": "tp3CornerA",
+      "amount": 50
+     }
     }
    ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   "connections": [
+    {
+     "position1": "tpCenter",
+     "position2": "tp4SideB",
+     "connectionType": "Normal"
+    },
+    {
+     "position1": "tpCenter",
+     "position2": "tp4SideC",
+     "connectionType": "Normal"
+    },
+    {
+     "position1": "tpCenter",
+     "position2": "tp4SideD",
+     "connectionType": "Normal"
+    }
+   ],
+   "adornments": [
+    {
+     "position": "tp3CornerF",
+     "adornmentType": "Text",
+     "text": "X"
+    }
+   ]
   },
   {
    "tileId": "2012",
@@ -879,20 +796,17 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -901,9 +815,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "C"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "13",
@@ -923,25 +835,58 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
+    }
+   ]
+  },
+  {
+   "tileId": "1013",
+   "name": "13/1830nl",
+   "color": "Green",
+   "junctions": [
+    {
+     "position": "tpCenter",
+     "junctionType": "DoubleCity",
+     "revenue": {
+      "position": "tp3CornerA",
+      "amount": 50
+     }
     }
    ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   "connections": [
+    {
+     "position1": "tpCenter",
+     "position2": "tp4SideA",
+     "connectionType": "Normal"
+    },
+    {
+     "position1": "tpCenter",
+     "position2": "tp4SideC",
+     "connectionType": "Normal"
+    },
+    {
+     "position1": "tpCenter",
+     "position2": "tp4SideE",
+     "connectionType": "Normal"
+    }
+   ],
+   "adornments": [
+    {
+     "position": "tp3CornerF",
+     "adornmentType": "Text",
+     "text": "X"
+    }
+   ]
   },
   {
    "tileId": "14",
@@ -961,31 +906,24 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "15",
@@ -1005,31 +943,24 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "16",
@@ -1040,8 +971,7 @@ class TileDictionarySource {
     {
      "position1": "tp4SideD",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideE",
@@ -1049,10 +979,7 @@ class TileDictionarySource {
      "connectionType": "Normal",
      "layer": 2
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "17",
@@ -1063,19 +990,14 @@ class TileDictionarySource {
     {
      "position1": "tp4SideA",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideD",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "18",
@@ -1086,19 +1008,14 @@ class TileDictionarySource {
     {
      "position1": "tp4SideD",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideE",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "19",
@@ -1109,8 +1026,7 @@ class TileDictionarySource {
     {
      "position1": "tp4SideF",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideA",
@@ -1118,10 +1034,7 @@ class TileDictionarySource {
      "connectionType": "Normal",
      "layer": 2
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "20",
@@ -1132,8 +1045,7 @@ class TileDictionarySource {
     {
      "position1": "tp4SideB",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideD",
@@ -1141,10 +1053,7 @@ class TileDictionarySource {
      "connectionType": "Normal",
      "layer": 2
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "21",
@@ -1155,19 +1064,14 @@ class TileDictionarySource {
     {
      "position1": "tp4SideA",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideC",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "22",
@@ -1178,19 +1082,14 @@ class TileDictionarySource {
     {
      "position1": "tp4SideA",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideE",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "23",
@@ -1201,19 +1100,14 @@ class TileDictionarySource {
     {
      "position1": "tp4SideE",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideA",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "24",
@@ -1224,19 +1118,14 @@ class TileDictionarySource {
     {
      "position1": "tp4SideD",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideD",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "25",
@@ -1247,19 +1136,14 @@ class TileDictionarySource {
     {
      "position1": "tp4SideB",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideD",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "26",
@@ -1270,19 +1154,14 @@ class TileDictionarySource {
     {
      "position1": "tp4SideF",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideA",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "27",
@@ -1293,19 +1172,14 @@ class TileDictionarySource {
     {
      "position1": "tp4SideD",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideD",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "28",
@@ -1316,19 +1190,14 @@ class TileDictionarySource {
     {
      "position1": "tp4SideD",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideE",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "29",
@@ -1339,19 +1208,14 @@ class TileDictionarySource {
     {
      "position1": "tp4SideD",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideD",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "30",
@@ -1362,19 +1226,14 @@ class TileDictionarySource {
     {
      "position1": "tp4SideA",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideC",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "31",
@@ -1385,19 +1244,14 @@ class TileDictionarySource {
     {
      "position1": "tp4SideB",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideC",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "32",
@@ -1457,38 +1311,32 @@ class TileDictionarySource {
     {
      "position1": "tp3SideC",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp3SideB",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp3SideA",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp3SideF",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp3SideE",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp3SideD",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -1497,9 +1345,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "LND"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "33",
@@ -1535,20 +1381,17 @@ class TileDictionarySource {
     {
      "position1": "tp2SideB",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2SideD",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2SideF",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -1557,9 +1400,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "L"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "34",
@@ -1595,26 +1436,22 @@ class TileDictionarySource {
     {
      "position1": "tp2CornerB",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2CornerE",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2SideF",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2SideF",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -1623,9 +1460,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "BGM"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "35",
@@ -1653,20 +1488,17 @@ class TileDictionarySource {
     {
      "position1": "tpCurve2LeftA",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCurve2LeftA",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCurve2RightD",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCurve2RightD",
@@ -1674,10 +1506,7 @@ class TileDictionarySource {
      "connectionType": "Normal",
      "layer": 2
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "36",
@@ -1705,31 +1534,24 @@ class TileDictionarySource {
     {
      "position1": "tpCurve2LeftA",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCurve2LeftA",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCurve2LeftD",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCurve2LeftD",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "37",
@@ -1757,25 +1579,19 @@ class TileDictionarySource {
     {
      "position1": "tp2CornerB",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2CornerE",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideC",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "38",
@@ -1795,31 +1611,68 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
+    }
+   ]
+  },
+  {
+   "tileId": "1038",
+   "name": "38/1830nl",
+   "color": "Brown",
+   "junctions": [
+    {
+     "position": "tpCenter",
+     "junctionType": "DoubleCity",
+     "revenue": {
+      "position": "tp3CornerA",
+      "amount": 70
+     }
     }
    ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   "connections": [
+    {
+     "position1": "tpCenter",
+     "position2": "tp4SideF",
+     "connectionType": "Normal"
+    },
+    {
+     "position1": "tpCenter",
+     "position2": "tp4SideA",
+     "connectionType": "Normal"
+    },
+    {
+     "position1": "tpCenter",
+     "position2": "tp4SideC",
+     "connectionType": "Normal"
+    },
+    {
+     "position1": "tpCenter",
+     "position2": "tp4SideE",
+     "connectionType": "Normal"
+    }
+   ],
+   "adornments": [
+    {
+     "position": "tp3CornerF",
+     "adornmentType": "Text",
+     "text": "X"
+    }
+   ]
   },
   {
    "tileId": "39",
@@ -1830,25 +1683,19 @@ class TileDictionarySource {
     {
      "position1": "tp4SideD",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideD",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideE",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "40",
@@ -1859,25 +1706,19 @@ class TileDictionarySource {
     {
      "position1": "tp4SideB",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideB",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideD",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "41",
@@ -1888,25 +1729,19 @@ class TileDictionarySource {
     {
      "position1": "tp4SideE",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideE",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideA",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "42",
@@ -1917,25 +1752,19 @@ class TileDictionarySource {
     {
      "position1": "tp4SideD",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideD",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideF",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "43",
@@ -1946,8 +1775,7 @@ class TileDictionarySource {
     {
      "position1": "tp4SideD",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideD",
@@ -1967,10 +1795,7 @@ class TileDictionarySource {
      "connectionType": "Normal",
      "layer": 2
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "44",
@@ -1981,8 +1806,7 @@ class TileDictionarySource {
     {
      "position1": "tp4SideD",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideB",
@@ -2002,10 +1826,7 @@ class TileDictionarySource {
      "connectionType": "Normal",
      "layer": 2
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "45",
@@ -2016,8 +1837,7 @@ class TileDictionarySource {
     {
      "position1": "tp4SideB",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideB",
@@ -2037,10 +1857,7 @@ class TileDictionarySource {
      "connectionType": "Normal",
      "layer": 2
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "46",
@@ -2051,8 +1868,7 @@ class TileDictionarySource {
     {
      "position1": "tp4SideB",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideB",
@@ -2072,10 +1888,7 @@ class TileDictionarySource {
      "connectionType": "Normal",
      "layer": 2
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "47",
@@ -2086,8 +1899,7 @@ class TileDictionarySource {
     {
      "position1": "tp4SideD",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideD",
@@ -2107,10 +1919,7 @@ class TileDictionarySource {
      "connectionType": "Normal",
      "layer": 2
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "48",
@@ -2170,38 +1979,32 @@ class TileDictionarySource {
     {
      "position1": "tp3SideD",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp3SideE",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp3SideF",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp3SideA",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp3SideB",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp3SideC",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -2210,9 +2013,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "LND"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "49",
@@ -2232,20 +2033,17 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -2254,9 +2052,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "L"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "50",
@@ -2292,38 +2088,32 @@ class TileDictionarySource {
     {
      "position1": "tp2SideF",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2SideF",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2CornerB",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2CornerB",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2CornerE",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2CornerE",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -2332,9 +2122,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "BGM"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "1050",
@@ -2354,20 +2142,17 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -2376,9 +2161,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "CC"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "51",
@@ -2398,37 +2181,29 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "1051",
@@ -2448,26 +2223,22 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -2476,9 +2247,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "A"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "52",
@@ -2498,31 +2267,24 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "1052",
@@ -2550,19 +2312,14 @@ class TileDictionarySource {
     {
      "position1": "tp2CornerC",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2CornerF",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "53",
@@ -2582,20 +2339,17 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -2604,9 +2358,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "B"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "1053",
@@ -2626,20 +2378,17 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -2648,9 +2397,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "A"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "54",
@@ -2678,26 +2425,22 @@ class TileDictionarySource {
     {
      "position1": "tp2CornerE",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2CornerE",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2CornerA",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2CornerA",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -2706,9 +2449,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "NY"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "55",
@@ -2736,14 +2477,12 @@ class TileDictionarySource {
     {
      "position1": "tp2SideC",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2SideC",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2SideD",
@@ -2757,10 +2496,7 @@ class TileDictionarySource {
      "connectionType": "Normal",
      "layer": 2
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "56",
@@ -2788,14 +2524,12 @@ class TileDictionarySource {
     {
      "position1": "tpCurve2LeftB",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCurve2LeftB",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCurve2RightE",
@@ -2809,10 +2543,7 @@ class TileDictionarySource {
      "connectionType": "Normal",
      "layer": 2
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "57",
@@ -2832,19 +2563,14 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "58",
@@ -2864,19 +2590,14 @@ class TileDictionarySource {
     {
      "position1": "tp1SideE",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp1SideE",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "59",
@@ -2904,14 +2625,12 @@ class TileDictionarySource {
     {
      "position1": "tp2CornerB",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2CornerE",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -2920,9 +2639,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "OO"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "1059",
@@ -2942,13 +2659,9 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "60",
@@ -2959,43 +2672,34 @@ class TileDictionarySource {
     {
      "position1": "tp4SideC",
      "position2": "tpCenter",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "61",
@@ -3015,26 +2719,22 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -3043,9 +2743,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "B"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "62",
@@ -3073,26 +2771,22 @@ class TileDictionarySource {
     {
      "position1": "tp2SideD",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2SideD",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2SideA",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2SideA",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -3101,9 +2795,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "NY"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "63",
@@ -3123,43 +2815,34 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "1063",
@@ -3179,38 +2862,32 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -3219,9 +2896,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "A"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "2063",
@@ -3241,38 +2916,32 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -3281,9 +2950,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "A"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "64",
@@ -3311,26 +2978,22 @@ class TileDictionarySource {
     {
      "position1": "tp1SideE",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp1SideE",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2CornerB",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2CornerB",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -3339,9 +3002,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "OO"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "65",
@@ -3369,26 +3030,22 @@ class TileDictionarySource {
     {
      "position1": "tp1SideF",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp1SideF",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2CornerD",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2CornerD",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -3397,9 +3054,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "OO"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "66",
@@ -3427,26 +3082,22 @@ class TileDictionarySource {
     {
      "position1": "tp2SideA",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2SideA",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2CornerF",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2CornerF",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -3455,9 +3106,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "OO"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "67",
@@ -3485,20 +3134,17 @@ class TileDictionarySource {
     {
      "position1": "tpCurve2RightD",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCurve2RightD",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2SideF",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2SideF",
@@ -3513,9 +3159,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "OO"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "1067",
@@ -3535,37 +3179,29 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "68",
@@ -3593,20 +3229,17 @@ class TileDictionarySource {
     {
      "position1": "tp2SideD",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2SideF",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2SideF",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2SideD",
@@ -3621,9 +3254,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "OO"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "69",
@@ -3651,14 +3282,12 @@ class TileDictionarySource {
     {
      "position1": "tpCurve2RightE",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCurve2RightE",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2SideA",
@@ -3672,10 +3301,7 @@ class TileDictionarySource {
      "connectionType": "Normal",
      "layer": 2
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "1069",
@@ -3695,13 +3321,9 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "70",
@@ -3712,8 +3334,7 @@ class TileDictionarySource {
     {
      "position1": "tp4SideD",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideD",
@@ -3733,10 +3354,7 @@ class TileDictionarySource {
      "connectionType": "Normal",
      "layer": 2
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "71",
@@ -3764,25 +3382,19 @@ class TileDictionarySource {
     {
      "position1": "tpCurve2LeftC",
      "position2": "tpCurve2RightE",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     },
     {
      "position1": "tpCurve2LeftC",
      "position2": "tp4SideC",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     },
     {
      "position1": "tpCurve2RightE",
      "position2": "tp4SideE",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "2071",
@@ -3793,8 +3405,7 @@ class TileDictionarySource {
     {
      "position1": "tp4SideE",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideE",
@@ -3820,10 +3431,7 @@ class TileDictionarySource {
      "connectionType": "Normal",
      "layer": 2
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "72",
@@ -3843,19 +3451,14 @@ class TileDictionarySource {
     {
      "position1": "tp2CornerD",
      "position2": "tp4SideC",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     },
     {
      "position1": "tp2CornerD",
      "position2": "tp4SideD",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "1072",
@@ -3875,26 +3478,22 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -3903,9 +3502,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "CC"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "2072",
@@ -3916,8 +3513,7 @@ class TileDictionarySource {
     {
      "position1": "tp4SideE",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideE",
@@ -3943,10 +3539,7 @@ class TileDictionarySource {
      "connectionType": "Normal",
      "layer": 2
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "73",
@@ -3966,19 +3559,14 @@ class TileDictionarySource {
     {
      "position1": "tp1SideD",
      "position2": "tp4SideC",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     },
     {
      "position1": "tp1SideD",
      "position2": "tp4SideE",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "2073",
@@ -3989,25 +3577,19 @@ class TileDictionarySource {
     {
      "position1": "tp4SideC",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideC",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideC",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "74",
@@ -4027,19 +3609,14 @@ class TileDictionarySource {
     {
      "position1": "tp2SideF",
      "position2": "tp4SideC",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     },
     {
      "position1": "tp2SideF",
      "position2": "tp4SideF",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "2074",
@@ -4050,25 +3627,19 @@ class TileDictionarySource {
     {
      "position1": "tp4SideC",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideC",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideC",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "75",
@@ -4088,19 +3659,14 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "2075",
@@ -4111,25 +3677,19 @@ class TileDictionarySource {
     {
      "position1": "tp4SideC",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideC",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideC",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "76",
@@ -4149,19 +3709,14 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "2076",
@@ -4172,37 +3727,29 @@ class TileDictionarySource {
     {
      "position1": "tp4SideC",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideC",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideC",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideF",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideF",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "77",
@@ -4213,13 +3760,9 @@ class TileDictionarySource {
     {
      "position1": "tp4SideB",
      "position2": "tp4SideC",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "2077",
@@ -4230,37 +3773,29 @@ class TileDictionarySource {
     {
      "position1": "tp4SideF",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideF",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideC",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideC",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideE",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "78",
@@ -4271,13 +3806,9 @@ class TileDictionarySource {
     {
      "position1": "tp4SideA",
      "position2": "tp4SideC",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "2078",
@@ -4288,25 +3819,19 @@ class TileDictionarySource {
     {
      "position1": "tp4SideD",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideF",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideC",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "79",
@@ -4317,13 +3842,9 @@ class TileDictionarySource {
     {
      "position1": "tp4SideC",
      "position2": "tp4SideF",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "2079",
@@ -4334,25 +3855,19 @@ class TileDictionarySource {
     {
      "position1": "tp4SideC",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideC",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideF",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "80",
@@ -4363,25 +3878,19 @@ class TileDictionarySource {
     {
      "position1": "tp4SideB",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideB",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideC",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "2080",
@@ -4401,20 +3910,17 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -4423,9 +3929,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "S"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "81",
@@ -4436,25 +3940,19 @@ class TileDictionarySource {
     {
      "position1": "tp4SideA",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideA",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideC",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "2081",
@@ -4474,26 +3972,22 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -4502,9 +3996,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "PL"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "82",
@@ -4515,25 +4007,19 @@ class TileDictionarySource {
     {
      "position1": "tp4SideA",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideA",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideC",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "2082",
@@ -4553,20 +4039,17 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -4575,9 +4058,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "Ch"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "83",
@@ -4588,25 +4069,19 @@ class TileDictionarySource {
     {
      "position1": "tp4SideC",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideC",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideE",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "2083",
@@ -4626,14 +4101,12 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -4642,9 +4115,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "MTL"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "84",
@@ -4655,25 +4126,19 @@ class TileDictionarySource {
     {
      "position1": "tp4SideB",
      "position2": "tp4SideC",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     },
     {
      "position1": "tp4SideB",
      "position2": "tp4SideD",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     },
     {
      "position1": "tp4SideC",
      "position2": "tp4SideD",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "2084",
@@ -4693,14 +4158,12 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -4709,9 +4172,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "NO"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "85",
@@ -4722,25 +4183,19 @@ class TileDictionarySource {
     {
      "position1": "tp4SideC",
      "position2": "tp4SideE",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     },
     {
      "position1": "tp4SideC",
      "position2": "tp4SideF",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     },
     {
      "position1": "tp4SideE",
      "position2": "tp4SideF",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "2085",
@@ -4760,31 +4215,24 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "86",
@@ -4795,25 +4243,19 @@ class TileDictionarySource {
     {
      "position1": "tp4SideA",
      "position2": "tp4SideC",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     },
     {
      "position1": "tp4SideA",
      "position2": "tp4SideF",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     },
     {
      "position1": "tp4SideC",
      "position2": "tp4SideF",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "2086",
@@ -4833,37 +4275,29 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "87",
@@ -4883,31 +4317,24 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "2087",
@@ -4927,43 +4354,34 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "88",
@@ -4983,31 +4401,24 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "89",
@@ -5027,31 +4438,24 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "90",
@@ -5071,43 +4475,34 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "2090",
@@ -5127,20 +4522,17 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -5149,9 +4541,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "PSL"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "91",
@@ -5171,43 +4561,73 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
+    }
+   ]
+  },
+  {
+   "tileId": "1091",
+   "name": "91/1830nl",
+   "color": "Green",
+   "junctions": [
+    {
+     "position": "tpCenter",
+     "junctionType": "DoubleCity",
+     "revenue": {
+      "position": "tp3CornerA",
+      "amount": 50
+     }
     }
    ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   "connections": [
+    {
+     "position1": "tpCenter",
+     "position2": "tp4SideF",
+     "connectionType": "Normal"
+    },
+    {
+     "position1": "tpCenter",
+     "position2": "tp4SideC",
+     "connectionType": "Normal"
+    },
+    {
+     "position1": "tpCenter",
+     "position2": "tp4SideD",
+     "connectionType": "Normal"
+    }
+   ],
+   "adornments": [
+    {
+     "position": "tp3CornerF",
+     "adornmentType": "Text",
+     "text": "X"
+    }
+   ]
   },
   {
    "tileId": "2091",
@@ -5227,25 +4647,19 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "92",
@@ -5265,43 +4679,73 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
+    }
+   ]
+  },
+  {
+   "tileId": "1092",
+   "name": "92/1830nl",
+   "color": "Green",
+   "junctions": [
+    {
+     "position": "tpCenter",
+     "junctionType": "DoubleCity",
+     "revenue": {
+      "position": "tp3CornerA",
+      "amount": 50
+     }
     }
    ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   "connections": [
+    {
+     "position1": "tpCenter",
+     "position2": "tp4SideF",
+     "connectionType": "Normal"
+    },
+    {
+     "position1": "tpCenter",
+     "position2": "tp4SideC",
+     "connectionType": "Normal"
+    },
+    {
+     "position1": "tpCenter",
+     "position2": "tp4SideE",
+     "connectionType": "Normal"
+    }
+   ],
+   "adornments": [
+    {
+     "position": "tp3CornerF",
+     "adornmentType": "Text",
+     "text": "X"
+    }
+   ]
   },
   {
    "tileId": "2092",
@@ -5321,25 +4765,19 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "93",
@@ -5359,43 +4797,68 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
+    }
+   ]
+  },
+  {
+   "tileId": "1093",
+   "name": "93/1830nl",
+   "color": "Brown",
+   "junctions": [
+    {
+     "position": "tpCenter",
+     "junctionType": "City",
+     "revenue": {
+      "position": "tp3CornerA",
+      "amount": 70
+     }
     }
    ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   "connections": [
+    {
+     "position1": "tpCenter",
+     "position2": "tp4SideB",
+     "connectionType": "Normal"
+    },
+    {
+     "position1": "tpCenter",
+     "position2": "tp4SideD",
+     "connectionType": "Normal"
+    }
+   ],
+   "adornments": [
+    {
+     "position": "tp3CornerF",
+     "adornmentType": "Text",
+     "text": "Z"
+    }
+   ]
   },
   {
    "tileId": "2093",
@@ -5415,19 +4878,14 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "94",
@@ -5447,31 +4905,24 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "95",
@@ -5491,31 +4942,24 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "96",
@@ -5535,31 +4979,24 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "97",
@@ -5579,31 +5016,24 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "98",
@@ -5623,31 +5053,24 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "99",
@@ -5667,31 +5090,24 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "100",
@@ -5711,25 +5127,19 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "101",
@@ -5749,25 +5159,19 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "2101",
@@ -5787,20 +5191,17 @@ class TileDictionarySource {
     {
      "position1": "tp4SideC",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideC",
      "position2": "tpCurve2LeftA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCurve2LeftA",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -5809,9 +5210,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "A"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "102",
@@ -5831,43 +5230,34 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Universal",
-     "layer": 0
+     "connectionType": "Universal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Universal",
-     "layer": 0
+     "connectionType": "Universal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Universal",
-     "layer": 0
+     "connectionType": "Universal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Universal",
-     "layer": 0
+     "connectionType": "Universal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Universal",
-     "layer": 0
+     "connectionType": "Universal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Universal",
-     "layer": 0
+     "connectionType": "Universal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "2102",
@@ -5887,20 +5277,17 @@ class TileDictionarySource {
     {
      "position1": "tp2SideF",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2SideF",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideC",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -5909,9 +5296,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "B"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "103",
@@ -5931,31 +5316,24 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Universal",
-     "layer": 0
+     "connectionType": "Universal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Universal",
-     "layer": 0
+     "connectionType": "Universal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Universal",
-     "layer": 0
+     "connectionType": "Universal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Universal",
-     "layer": 0
+     "connectionType": "Universal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "2103",
@@ -5975,20 +5353,17 @@ class TileDictionarySource {
     {
      "position1": "tp4SideC",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideC",
      "position2": "tpCurve2RightE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCurve2RightE",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -5997,9 +5372,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "C"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "104",
@@ -6059,38 +5432,32 @@ class TileDictionarySource {
     {
      "position1": "tp3SideA",
      "position2": "tp4SideA",
-     "connectionType": "Universal",
-     "layer": 0
+     "connectionType": "Universal"
     },
     {
      "position1": "tp3SideB",
      "position2": "tp4SideB",
-     "connectionType": "Universal",
-     "layer": 0
+     "connectionType": "Universal"
     },
     {
      "position1": "tp3SideC",
      "position2": "tp4SideC",
-     "connectionType": "Universal",
-     "layer": 0
+     "connectionType": "Universal"
     },
     {
      "position1": "tp3SideD",
      "position2": "tp4SideD",
-     "connectionType": "Universal",
-     "layer": 0
+     "connectionType": "Universal"
     },
     {
      "position1": "tp3SideE",
      "position2": "tp4SideE",
-     "connectionType": "Universal",
-     "layer": 0
+     "connectionType": "Universal"
     },
     {
      "position1": "tp3SideF",
      "position2": "tp4SideF",
-     "connectionType": "Universal",
-     "layer": 0
+     "connectionType": "Universal"
     }
    ],
    "adornments": [
@@ -6099,9 +5466,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "CD"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "2104",
@@ -6121,20 +5486,17 @@ class TileDictionarySource {
     {
      "position1": "tp4SideE",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideC",
      "position2": "tp2SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2SideF",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -6143,9 +5505,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "D"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "105",
@@ -6165,20 +5525,17 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Universal",
-     "layer": 0
+     "connectionType": "Universal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Universal",
-     "layer": 0
+     "connectionType": "Universal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Universal",
-     "layer": 0
+     "connectionType": "Universal"
     }
    ],
    "adornments": [
@@ -6187,9 +5544,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "BM"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "2105",
@@ -6209,20 +5564,17 @@ class TileDictionarySource {
     {
      "position1": "tpCurve2LeftA",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCurve2LeftA",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideC",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -6231,9 +5583,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "E"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "106",
@@ -6244,31 +5594,24 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Universal",
-     "layer": 0
+     "connectionType": "Universal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Universal",
-     "layer": 0
+     "connectionType": "Universal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Universal",
-     "layer": 0
+     "connectionType": "Universal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Universal",
-     "layer": 0
+     "connectionType": "Universal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "2106",
@@ -6288,20 +5631,17 @@ class TileDictionarySource {
     {
      "position1": "tpCurve2RightE",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCurve2RightE",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideC",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -6310,9 +5650,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "F"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "107",
@@ -6323,31 +5661,24 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Universal",
-     "layer": 0
+     "connectionType": "Universal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Universal",
-     "layer": 0
+     "connectionType": "Universal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Universal",
-     "layer": 0
+     "connectionType": "Universal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Universal",
-     "layer": 0
+     "connectionType": "Universal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "2107",
@@ -6367,14 +5698,12 @@ class TileDictionarySource {
     {
      "position1": "tp4SideF",
      "position2": "tp2SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2SideC",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideD",
@@ -6389,9 +5718,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "G"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "108",
@@ -6402,31 +5729,24 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Universal",
-     "layer": 0
+     "connectionType": "Universal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Universal",
-     "layer": 0
+     "connectionType": "Universal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Universal",
-     "layer": 0
+     "connectionType": "Universal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Universal",
-     "layer": 0
+     "connectionType": "Universal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "2108",
@@ -6446,20 +5766,17 @@ class TileDictionarySource {
     {
      "position1": "tp1SideD",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp1SideD",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideF",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -6468,9 +5785,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "H"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "109",
@@ -6490,37 +5805,29 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Universal",
-     "layer": 0
+     "connectionType": "Universal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Universal",
-     "layer": 0
+     "connectionType": "Universal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Universal",
-     "layer": 0
+     "connectionType": "Universal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Universal",
-     "layer": 0
+     "connectionType": "Universal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Universal",
-     "layer": 0
+     "connectionType": "Universal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "2109",
@@ -6540,14 +5847,12 @@ class TileDictionarySource {
     {
      "position1": "tpCurve2LeftB",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCurve2LeftB",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideC",
@@ -6562,9 +5867,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "I"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "110",
@@ -6624,38 +5927,32 @@ class TileDictionarySource {
     {
      "position1": "tp3SideA",
      "position2": "tp4SideA",
-     "connectionType": "Universal",
-     "layer": 0
+     "connectionType": "Universal"
     },
     {
      "position1": "tp3SideB",
      "position2": "tp4SideB",
-     "connectionType": "Universal",
-     "layer": 0
+     "connectionType": "Universal"
     },
     {
      "position1": "tp3SideC",
      "position2": "tp4SideC",
-     "connectionType": "Universal",
-     "layer": 0
+     "connectionType": "Universal"
     },
     {
      "position1": "tp3SideD",
      "position2": "tp4SideD",
-     "connectionType": "Universal",
-     "layer": 0
+     "connectionType": "Universal"
     },
     {
      "position1": "tp3SideE",
      "position2": "tp4SideE",
-     "connectionType": "Universal",
-     "layer": 0
+     "connectionType": "Universal"
     },
     {
      "position1": "tp3SideF",
      "position2": "tp4SideF",
-     "connectionType": "Universal",
-     "layer": 0
+     "connectionType": "Universal"
     }
    ],
    "adornments": [
@@ -6664,9 +5961,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "CD"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "2110",
@@ -6686,8 +5981,7 @@ class TileDictionarySource {
     {
      "position1": "tp4SideD",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2SideF",
@@ -6708,9 +6002,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "J"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "111",
@@ -6730,20 +6022,17 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Universal",
-     "layer": 0
+     "connectionType": "Universal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Universal",
-     "layer": 0
+     "connectionType": "Universal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Universal",
-     "layer": 0
+     "connectionType": "Universal"
     }
    ],
    "adornments": [
@@ -6752,9 +6041,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "BM"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "2111",
@@ -6774,20 +6061,17 @@ class TileDictionarySource {
     {
      "position1": "tpCurve2LeftA",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCurve2LeftA",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideC",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -6796,9 +6080,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "K"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "112",
@@ -6809,37 +6091,29 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Universal",
-     "layer": 0
+     "connectionType": "Universal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Universal",
-     "layer": 0
+     "connectionType": "Universal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Universal",
-     "layer": 0
+     "connectionType": "Universal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Universal",
-     "layer": 0
+     "connectionType": "Universal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Universal",
-     "layer": 0
+     "connectionType": "Universal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "1112",
@@ -6859,26 +6133,22 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -6887,9 +6157,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "C"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "2112",
@@ -6909,20 +6177,17 @@ class TileDictionarySource {
     {
      "position1": "tp4SideC",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCurve1LeftB",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCurve1LeftB",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -6931,9 +6196,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "L"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "113",
@@ -6953,13 +6216,9 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "2113",
@@ -6979,20 +6238,17 @@ class TileDictionarySource {
     {
      "position1": "tpCurve2RightE",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCurve2RightE",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideC",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -7001,9 +6257,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "M"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "2114",
@@ -7023,20 +6277,17 @@ class TileDictionarySource {
     {
      "position1": "tpCurve1RightD",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCurve1RightD",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideC",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -7045,9 +6296,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "N"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "2115",
@@ -7067,20 +6316,17 @@ class TileDictionarySource {
     {
      "position1": "tp4SideE",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2SideC",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2SideC",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -7089,9 +6335,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "O"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "2116",
@@ -7111,20 +6355,17 @@ class TileDictionarySource {
     {
      "position1": "tp4SideF",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2CornerE",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2CornerE",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -7133,9 +6374,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "P"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "2117",
@@ -7155,20 +6394,17 @@ class TileDictionarySource {
     {
      "position1": "tp2SideF",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2SideF",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideC",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -7177,9 +6413,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "Q"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "2118",
@@ -7199,20 +6433,17 @@ class TileDictionarySource {
     {
      "position1": "tpCurve1RightD",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCurve1RightD",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideC",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -7221,9 +6452,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "R"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "2119",
@@ -7243,20 +6472,17 @@ class TileDictionarySource {
     {
      "position1": "tpCurve1LeftB",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCurve1LeftB",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideC",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -7265,9 +6491,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "S"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "120",
@@ -7295,26 +6519,22 @@ class TileDictionarySource {
     {
      "position1": "tp2CornerB",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2CornerB",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2CornerD",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2CornerD",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -7323,9 +6543,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "Tor"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "2120",
@@ -7345,20 +6563,17 @@ class TileDictionarySource {
     {
      "position1": "tp2SideF",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2SideF",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideC",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -7367,9 +6582,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "T"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "121",
@@ -7389,20 +6602,17 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -7411,9 +6621,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "Lon/Bar"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "122",
@@ -7441,26 +6649,22 @@ class TileDictionarySource {
     {
      "position1": "tp2SideA",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2SideA",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2SideD",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2SideD",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -7469,9 +6673,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "Tor"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "123",
@@ -7491,32 +6693,27 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -7525,9 +6722,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "Ham"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "124",
@@ -7547,26 +6742,22 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -7575,9 +6766,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "Tor"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "125",
@@ -7597,32 +6786,27 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -7631,9 +6815,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "L"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "126",
@@ -7653,38 +6835,32 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -7693,9 +6869,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "Lon"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "127",
@@ -7715,32 +6889,27 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -7749,9 +6918,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "Bar"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "128",
@@ -7779,14 +6946,12 @@ class TileDictionarySource {
     {
      "position1": "tp2CornerC",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2CornerF",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -7795,9 +6960,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "C"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "129",
@@ -7825,26 +6988,22 @@ class TileDictionarySource {
     {
      "position1": "tp2SideA",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2SideA",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2CornerD",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2CornerD",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -7853,9 +7012,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "C"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "130",
@@ -7875,26 +7032,22 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -7903,9 +7056,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "C"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "131",
@@ -7925,32 +7076,27 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -7959,9 +7105,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "C"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "132",
@@ -7981,20 +7125,17 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -8003,9 +7144,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "M"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "133",
@@ -8025,20 +7164,17 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -8047,9 +7183,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "M"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "134",
@@ -8069,20 +7203,17 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -8091,9 +7222,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "M"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "135",
@@ -8113,32 +7242,27 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -8147,9 +7271,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "KC,MSP,StL"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "138",
@@ -8169,38 +7291,32 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -8209,9 +7325,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "KC,MSP,StL"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "140",
@@ -8231,26 +7345,22 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -8259,9 +7369,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "X"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "141",
@@ -8281,25 +7389,19 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "142",
@@ -8319,25 +7421,19 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "143",
@@ -8357,25 +7453,19 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "144",
@@ -8395,25 +7485,19 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "145",
@@ -8433,31 +7517,24 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "146",
@@ -8477,31 +7554,24 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "147",
@@ -8521,31 +7591,24 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "161",
@@ -8565,26 +7628,22 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -8593,9 +7652,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "A"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "167",
@@ -8629,49 +7686,39 @@ class TileDictionarySource {
     {
      "position1": "tp1CornerB",
      "position2": "tp2SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2SideB",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2SideB",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2SideE",
      "position2": "tp1CornerF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2SideE",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2SideE",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp1CornerF",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "168",
@@ -8691,31 +7738,24 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "170",
@@ -8735,32 +7775,27 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -8769,9 +7804,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "P"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "171",
@@ -8791,38 +7824,32 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -8831,9 +7858,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "P"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "172",
@@ -8853,38 +7878,32 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -8893,9 +7912,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "P"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "190",
@@ -8931,14 +7948,12 @@ class TileDictionarySource {
     {
      "position1": "tp2SideC",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2SideC",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2SideA",
@@ -8971,9 +7986,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "A"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "191",
@@ -8993,38 +8006,32 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -9033,9 +8040,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "A"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "192",
@@ -9055,32 +8060,27 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -9089,9 +8089,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "J/C"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "193",
@@ -9111,26 +8109,22 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -9139,9 +8133,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "S"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "201",
@@ -9161,14 +8153,12 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -9177,9 +8167,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "Y"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "202",
@@ -9199,14 +8187,12 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -9215,9 +8201,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "Y"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "1202",
@@ -9237,14 +8221,12 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -9253,9 +8235,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "A"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "203",
@@ -9275,25 +8255,19 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "204",
@@ -9313,31 +8287,24 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "205",
@@ -9357,25 +8324,19 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "206",
@@ -9395,25 +8356,19 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "1206",
@@ -9433,20 +8388,17 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -9455,9 +8407,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "L"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "207",
@@ -9477,26 +8427,22 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -9505,9 +8451,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "Y"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "208",
@@ -9527,26 +8471,22 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -9555,9 +8495,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "Y"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "209",
@@ -9577,32 +8515,27 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -9611,9 +8544,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "B"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "210",
@@ -9641,26 +8572,22 @@ class TileDictionarySource {
     {
      "position1": "tp2SideF",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2SideF",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2CornerB",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2CornerB",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -9669,9 +8596,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "XX"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "211",
@@ -9699,26 +8624,22 @@ class TileDictionarySource {
     {
      "position1": "tp2CornerD",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2CornerD",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2CornerF",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2CornerF",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -9727,9 +8648,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "XX"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "212",
@@ -9757,26 +8676,22 @@ class TileDictionarySource {
     {
      "position1": "tp2CornerC",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2CornerC",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2CornerF",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2CornerF",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -9785,9 +8700,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "XX"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "213",
@@ -9815,26 +8728,22 @@ class TileDictionarySource {
     {
      "position1": "tp1CornerC",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp1CornerC",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2CornerF",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2CornerF",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -9843,9 +8752,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "XX"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "214",
@@ -9873,26 +8780,22 @@ class TileDictionarySource {
     {
      "position1": "tp1CornerD",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp1CornerD",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2CornerA",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2CornerA",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -9901,9 +8804,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "XX"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "215",
@@ -9931,26 +8832,22 @@ class TileDictionarySource {
     {
      "position1": "tpCurve2RightC",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCurve2RightC",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCurve2RightF",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCurve2RightF",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -9959,9 +8856,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "XX"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "216",
@@ -9981,32 +8876,27 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -10015,9 +8905,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "Y"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "217",
@@ -10037,26 +8925,22 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -10065,9 +8949,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "X"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "1217",
@@ -10087,26 +8969,22 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -10115,9 +8993,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "BLM"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "218",
@@ -10137,26 +9013,22 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -10165,9 +9037,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "X"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "1218",
@@ -10187,26 +9057,22 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -10215,9 +9081,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "Lille"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "219",
@@ -10237,26 +9101,22 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -10265,9 +9125,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "X"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "220",
@@ -10287,38 +9145,32 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -10327,9 +9179,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "B"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "1220",
@@ -10349,38 +9199,32 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -10389,9 +9233,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "Lyon"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "221",
@@ -10411,38 +9253,32 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -10451,9 +9287,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "H"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "1221",
@@ -10489,32 +9323,27 @@ class TileDictionarySource {
     {
      "position1": "tp2CornerB",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2CornerB",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2CornerF",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2CornerF",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2SideC",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -10523,9 +9352,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "P"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "262",
@@ -10561,32 +9388,27 @@ class TileDictionarySource {
     {
      "position1": "tp2CornerA",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2CornerA",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2CornerC",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2CornerC",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2CornerE",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -10595,9 +9417,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "P"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "301",
@@ -10633,26 +9453,22 @@ class TileDictionarySource {
     {
      "position1": "tp2CornerB",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2CornerD",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2CornerF",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2CornerF",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -10661,9 +9477,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "HH"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "302",
@@ -10699,26 +9513,22 @@ class TileDictionarySource {
     {
      "position1": "tp2CornerA",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2CornerA",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2CornerC",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2CornerE",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -10727,9 +9537,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "HH"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "311",
@@ -10757,26 +9565,22 @@ class TileDictionarySource {
     {
      "position1": "tp2CornerB",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp1CornerE",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp1CornerE",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp1CornerE",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -10785,9 +9589,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "HH"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "312",
@@ -10815,26 +9617,22 @@ class TileDictionarySource {
     {
      "position1": "tp1CornerB",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp1CornerB",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp1CornerB",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2CornerE",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -10843,9 +9641,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "HH"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "313",
@@ -10873,26 +9669,22 @@ class TileDictionarySource {
     {
      "position1": "tp1SideC",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp1SideC",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp1SideC",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2SideF",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -10901,9 +9693,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "HH"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "315",
@@ -10923,31 +9713,24 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "316",
@@ -10967,20 +9750,17 @@ class TileDictionarySource {
     {
      "position1": "tp1SideC",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp1SideC",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp1SideC",
      "position2": "tp4SideF",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     }
    ],
    "adornments": [
@@ -10989,9 +9769,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "H"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "321",
@@ -11011,32 +9789,27 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -11045,9 +9818,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "HH"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "326",
@@ -11067,26 +9838,22 @@ class TileDictionarySource {
     {
      "position1": "tp1SideC",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp1SideC",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp1SideC",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp1SideC",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -11095,9 +9862,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "H"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "351",
@@ -11117,31 +9882,24 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "352",
@@ -11161,31 +9919,24 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "353",
@@ -11205,31 +9956,24 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "354",
@@ -11249,31 +9993,24 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "355",
@@ -11293,31 +10030,24 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "356",
@@ -11337,31 +10067,24 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "357",
@@ -11381,31 +10104,24 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "358",
@@ -11425,31 +10141,24 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "359",
@@ -11469,31 +10178,24 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "360",
@@ -11513,32 +10215,27 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -11547,9 +10244,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "S"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "361",
@@ -11569,32 +10264,27 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -11603,9 +10293,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "LA"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "362",
@@ -11633,20 +10321,17 @@ class TileDictionarySource {
     {
      "position1": "tp1CornerC",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp1CornerC",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2CornerF",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -11655,9 +10340,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "SF"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "363",
@@ -11677,31 +10360,24 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "364",
@@ -11721,31 +10397,24 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "365",
@@ -11765,31 +10434,24 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "366",
@@ -11809,43 +10471,34 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "367",
@@ -11865,32 +10518,27 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -11899,9 +10547,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "Y"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "368",
@@ -11921,32 +10567,27 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -11955,9 +10596,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "S"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "369",
@@ -11977,32 +10616,27 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -12011,9 +10645,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "LA"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "370",
@@ -12033,20 +10665,17 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -12055,9 +10684,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "SF"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "1451",
@@ -12093,20 +10720,17 @@ class TileDictionarySource {
     {
      "position1": "tp2SideB",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2SideD",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2SideF",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -12115,9 +10739,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "Atlanta"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "1454",
@@ -12137,20 +10759,17 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -12159,9 +10778,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "Savannah"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "1453",
@@ -12181,26 +10798,22 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -12209,9 +10822,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "Augusta"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "1452",
@@ -12247,14 +10858,12 @@ class TileDictionarySource {
     {
      "position1": "tp2SideB",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2SideB",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2SideF",
@@ -12287,9 +10896,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "Atla   nta"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "1457",
@@ -12309,32 +10916,27 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -12343,9 +10945,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "Brunswick"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "1456",
@@ -12365,26 +10965,22 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -12393,9 +10989,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "Augusta"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "1459",
@@ -12415,20 +11009,17 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -12437,9 +11028,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "Savannah"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "1455",
@@ -12475,14 +11064,12 @@ class TileDictionarySource {
     {
      "position1": "tp2SideB",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2SideB",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2SideF",
@@ -12515,9 +11102,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "Atla   nta"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "401",
@@ -12537,14 +11122,12 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -12553,9 +11136,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "T"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "402",
@@ -12575,14 +11156,12 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -12591,9 +11170,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "X"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "404",
@@ -12621,31 +11198,24 @@ class TileDictionarySource {
     {
      "position1": "tpCurve2LeftC",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCurve2LeftC",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCurve2LeftF",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCurve2LeftF",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "405",
@@ -12665,20 +11235,17 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -12687,9 +11254,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "T"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "406",
@@ -12709,26 +11274,22 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -12737,9 +11298,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "X"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "408",
@@ -12767,43 +11326,34 @@ class TileDictionarySource {
     {
      "position1": "tp1SideB",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp1SideB",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp1SideB",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp1SideE",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp1SideE",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp1SideE",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "410",
@@ -12823,25 +11373,19 @@ class TileDictionarySource {
     {
      "position1": "tp2SideF",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2SideF",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideC",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "411",
@@ -12861,25 +11405,19 @@ class TileDictionarySource {
     {
      "position1": "tp2SideF",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2SideF",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideA",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "412",
@@ -12899,25 +11437,19 @@ class TileDictionarySource {
     {
      "position1": "tpCurve2RightE",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCurve2RightE",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideC",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "413",
@@ -12937,25 +11469,19 @@ class TileDictionarySource {
     {
      "position1": "tpCurve2LeftA",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCurve2LeftA",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideC",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "414",
@@ -12975,25 +11501,19 @@ class TileDictionarySource {
     {
      "position1": "tp2SideF",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2SideF",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideC",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "415",
@@ -13013,25 +11533,19 @@ class TileDictionarySource {
     {
      "position1": "tp2SideF",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2SideF",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideB",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "416",
@@ -13051,25 +11565,19 @@ class TileDictionarySource {
     {
      "position1": "tpCurve1RightD",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCurve1RightD",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideC",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "417",
@@ -13089,25 +11597,19 @@ class TileDictionarySource {
     {
      "position1": "tpCurve1LeftB",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCurve1LeftB",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideC",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "418",
@@ -13127,25 +11629,19 @@ class TileDictionarySource {
     {
      "position1": "tpCurve2RightE",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCurve2RightE",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideA",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "419",
@@ -13165,25 +11661,19 @@ class TileDictionarySource {
     {
      "position1": "tpCurve2LeftA",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCurve2LeftA",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideC",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "420",
@@ -13203,25 +11693,19 @@ class TileDictionarySource {
     {
      "position1": "tpCurve2LeftA",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCurve2LeftA",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideB",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "421",
@@ -13241,25 +11725,19 @@ class TileDictionarySource {
     {
      "position1": "tpCurve2RightE",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCurve2RightE",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideC",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "422",
@@ -13279,25 +11757,19 @@ class TileDictionarySource {
     {
      "position1": "tpCurve1LeftB",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCurve1LeftB",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideA",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "423",
@@ -13317,25 +11789,19 @@ class TileDictionarySource {
     {
      "position1": "tpCurve1RightD",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCurve1RightD",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideC",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "424",
@@ -13355,25 +11821,19 @@ class TileDictionarySource {
     {
      "position1": "tpCurve2LeftA",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCurve2LeftA",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideD",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "425",
@@ -13401,44 +11861,37 @@ class TileDictionarySource {
     {
      "position1": "tp1SideB",
      "position2": "tp1SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp1SideB",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp1SideB",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp1SideB",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp1SideE",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp1SideE",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp1SideE",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -13447,9 +11900,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "Bu"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "426",
@@ -13469,14 +11920,12 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -13485,9 +11934,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "Bo"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "427",
@@ -13547,38 +11994,32 @@ class TileDictionarySource {
     {
      "position1": "tp3SideD",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp3SideE",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp3SideF",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp3SideA",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp3SideB",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp3SideC",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -13587,9 +12028,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "W"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "429",
@@ -13609,26 +12048,22 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -13637,9 +12072,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "X"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "430",
@@ -13659,38 +12092,32 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -13699,9 +12126,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "X"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "431",
@@ -13721,20 +12146,17 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -13743,9 +12165,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "T"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "432",
@@ -13773,49 +12193,39 @@ class TileDictionarySource {
     {
      "position1": "tp1SideB",
      "position2": "tp1SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp1SideB",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp1SideB",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp1SideB",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp1SideE",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp1SideE",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp1SideE",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "434",
@@ -13835,14 +12245,12 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -13851,9 +12259,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "B"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "435",
@@ -13873,38 +12279,32 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -13913,9 +12313,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "Bu"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "436",
@@ -13959,38 +12357,32 @@ class TileDictionarySource {
     {
      "position1": "tp1SideF",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp1SideF",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp1SideF",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp3SideD",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp3SideC",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp3SideB",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -13999,9 +12391,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "W"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "511",
@@ -14021,20 +12411,17 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -14043,9 +12430,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "Y"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "512",
@@ -14065,38 +12450,32 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -14105,9 +12484,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "Y"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "513",
@@ -14127,43 +12504,34 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "514",
@@ -14223,43 +12591,34 @@ class TileDictionarySource {
     {
      "position1": "tp3SideF",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp3SideA",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp3SideB",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp3SideC",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp3SideD",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp3SideE",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "515",
@@ -14319,43 +12678,34 @@ class TileDictionarySource {
     {
      "position1": "tp3SideF",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp3SideA",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp3SideB",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp3SideC",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp3SideD",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp3SideE",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "516",
@@ -14415,43 +12765,34 @@ class TileDictionarySource {
     {
      "position1": "tp3SideF",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp3SideA",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp3SideB",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp3SideC",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp3SideD",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp3SideE",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "571",
@@ -14471,14 +12812,12 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -14487,9 +12826,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "A"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "601",
@@ -14517,20 +12854,17 @@ class TileDictionarySource {
     {
      "position1": "tp2SideB",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp1SideE",
      "position2": "tp2SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp1SideE",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -14539,9 +12873,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "V"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "602",
@@ -14569,32 +12901,27 @@ class TileDictionarySource {
     {
      "position1": "tp2SideB",
      "position2": "tp1SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2SideB",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp1SideE",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp1SideE",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp1SideE",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -14603,9 +12930,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "V"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "603",
@@ -14633,44 +12958,37 @@ class TileDictionarySource {
     {
      "position1": "tp2SideB",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp1SideE",
      "position2": "tp2SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp1SideE",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp1SideE",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp1SideE",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp1SideE",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp1SideE",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -14679,9 +12997,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "V"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "604",
@@ -14701,26 +13017,22 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -14729,9 +13041,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "M"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "605",
@@ -14751,38 +13061,32 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -14791,9 +13095,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "M"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "606",
@@ -14813,26 +13115,22 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -14841,9 +13139,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "T"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "607",
@@ -14863,38 +13159,32 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -14903,9 +13193,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "T"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "608",
@@ -14925,14 +13213,12 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -14941,9 +13227,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "G"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "609",
@@ -14963,32 +13247,27 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -14997,9 +13276,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "G"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "610",
@@ -15015,19 +13292,14 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Tunnel",
-     "layer": 0
+     "connectionType": "Tunnel"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Tunnel",
-     "layer": 0
+     "connectionType": "Tunnel"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "611",
@@ -15047,37 +13319,29 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "613",
@@ -15093,19 +13357,14 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Mountain",
-     "layer": 0
+     "connectionType": "Mountain"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Mountain",
-     "layer": 0
+     "connectionType": "Mountain"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "614",
@@ -15121,19 +13380,14 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Mountain",
-     "layer": 0
+     "connectionType": "Mountain"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Mountain",
-     "layer": 0
+     "connectionType": "Mountain"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "615",
@@ -15149,19 +13403,14 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Mountain",
-     "layer": 0
+     "connectionType": "Mountain"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Mountain",
-     "layer": 0
+     "connectionType": "Mountain"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "616",
@@ -15177,31 +13426,24 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Mountain",
-     "layer": 0
+     "connectionType": "Mountain"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Mountain",
-     "layer": 0
+     "connectionType": "Mountain"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Mountain",
-     "layer": 0
+     "connectionType": "Mountain"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Mountain",
-     "layer": 0
+     "connectionType": "Mountain"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "617",
@@ -15217,31 +13459,24 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Mountain",
-     "layer": 0
+     "connectionType": "Mountain"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Mountain",
-     "layer": 0
+     "connectionType": "Mountain"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Mountain",
-     "layer": 0
+     "connectionType": "Mountain"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Mountain",
-     "layer": 0
+     "connectionType": "Mountain"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "618",
@@ -15257,31 +13492,24 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Mountain",
-     "layer": 0
+     "connectionType": "Mountain"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Mountain",
-     "layer": 0
+     "connectionType": "Mountain"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Mountain",
-     "layer": 0
+     "connectionType": "Mountain"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Mountain",
-     "layer": 0
+     "connectionType": "Mountain"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "619",
@@ -15301,31 +13529,24 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "621",
@@ -15345,14 +13566,12 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -15361,9 +13580,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "Y"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "622",
@@ -15383,26 +13600,22 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -15411,9 +13624,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "Y"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "623",
@@ -15433,38 +13644,32 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -15473,9 +13678,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "Y"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "624",
@@ -15486,19 +13689,14 @@ class TileDictionarySource {
     {
      "position1": "tp4SideC",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideD",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "625",
@@ -15509,19 +13707,14 @@ class TileDictionarySource {
     {
      "position1": "tp4SideC",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideD",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "626",
@@ -15532,19 +13725,14 @@ class TileDictionarySource {
     {
      "position1": "tp4SideA",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideD",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "627",
@@ -15555,31 +13743,24 @@ class TileDictionarySource {
     {
      "position1": "tp4SideC",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideC",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideD",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideE",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "628",
@@ -15590,31 +13771,24 @@ class TileDictionarySource {
     {
      "position1": "tp4SideB",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideB",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideC",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideE",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "629",
@@ -15625,31 +13799,24 @@ class TileDictionarySource {
     {
      "position1": "tp4SideB",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideB",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideC",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideD",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "630",
@@ -15677,31 +13844,24 @@ class TileDictionarySource {
     {
      "position1": "tp1SideB",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp1SideB",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2CornerF",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2CornerF",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "631",
@@ -15729,31 +13889,24 @@ class TileDictionarySource {
     {
      "position1": "tp1SideD",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp1SideD",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2CornerA",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2CornerA",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "632",
@@ -15781,31 +13934,24 @@ class TileDictionarySource {
     {
      "position1": "tp2CornerC",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2CornerC",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2CornerE",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2CornerE",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "633",
@@ -15833,31 +13979,24 @@ class TileDictionarySource {
     {
      "position1": "tp2CornerB",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2CornerB",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2CornerE",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2CornerE",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "644",
@@ -15877,19 +14016,14 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "645",
@@ -15909,19 +14043,14 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "646",
@@ -15932,25 +14061,19 @@ class TileDictionarySource {
     {
      "position1": "tp4SideA",
      "position2": "tp4SideC",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     },
     {
      "position1": "tp4SideA",
      "position2": "tp4SideE",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     },
     {
      "position1": "tp4SideC",
      "position2": "tp4SideE",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "647",
@@ -15961,25 +14084,19 @@ class TileDictionarySource {
     {
      "position1": "tp4SideC",
      "position2": "tp4SideD",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     },
     {
      "position1": "tp4SideC",
      "position2": "tp4SideE",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     },
     {
      "position1": "tp4SideD",
      "position2": "tp4SideE",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "648",
@@ -15990,25 +14107,19 @@ class TileDictionarySource {
     {
      "position1": "tp4SideA",
      "position2": "tp4SideC",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     },
     {
      "position1": "tp4SideA",
      "position2": "tp4SideF",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     },
     {
      "position1": "tp4SideC",
      "position2": "tp4SideF",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "649",
@@ -16019,25 +14130,19 @@ class TileDictionarySource {
     {
      "position1": "tp4SideC",
      "position2": "tp4SideE",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     },
     {
      "position1": "tp4SideC",
      "position2": "tp4SideF",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     },
     {
      "position1": "tp4SideE",
      "position2": "tp4SideF",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "650",
@@ -16048,19 +14153,14 @@ class TileDictionarySource {
     {
      "position1": "tp4SideC",
      "position2": "tp4SideD",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     },
     {
      "position1": "tp4SideD",
      "position2": "tp4SideE",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "651",
@@ -16080,32 +14180,27 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     }
    ],
    "adornments": [
@@ -16114,9 +14209,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "PA"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "652",
@@ -16136,32 +14229,27 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Universal",
-     "layer": 0
+     "connectionType": "Universal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Universal",
-     "layer": 0
+     "connectionType": "Universal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Universal",
-     "layer": 0
+     "connectionType": "Universal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Universal",
-     "layer": 0
+     "connectionType": "Universal"
     }
    ],
    "adornments": [
@@ -16170,9 +14258,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "PA"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "653",
@@ -16192,20 +14278,17 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     }
    ],
    "adornments": [
@@ -16214,9 +14297,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "CT"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "654",
@@ -16236,26 +14317,22 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Universal",
-     "layer": 0
+     "connectionType": "Universal"
     }
    ],
    "adornments": [
@@ -16264,9 +14341,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "CT"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "655",
@@ -16286,20 +14361,17 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     }
    ],
    "adornments": [
@@ -16308,9 +14380,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "ME"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "656",
@@ -16330,26 +14400,22 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     }
    ],
    "adornments": [
@@ -16358,9 +14424,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "ME"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "657",
@@ -16380,19 +14444,14 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "658",
@@ -16412,19 +14471,14 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "659",
@@ -16444,19 +14498,14 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "660",
@@ -16476,31 +14525,24 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "661",
@@ -16520,31 +14562,24 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "662",
@@ -16564,31 +14599,24 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "663",
@@ -16608,31 +14636,24 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "664",
@@ -16652,31 +14673,24 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "665",
@@ -16696,31 +14710,24 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "666",
@@ -16740,31 +14747,24 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "667",
@@ -16784,31 +14784,24 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "668",
@@ -16828,31 +14821,24 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "669",
@@ -16872,31 +14858,24 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "670",
@@ -16916,31 +14895,24 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "671",
@@ -16960,31 +14932,24 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "672",
@@ -17004,31 +14969,24 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Universal",
-     "layer": 0
+     "connectionType": "Universal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Universal",
-     "layer": 0
+     "connectionType": "Universal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Universal",
-     "layer": 0
+     "connectionType": "Universal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Universal",
-     "layer": 0
+     "connectionType": "Universal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "673",
@@ -17048,31 +15006,24 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Universal",
-     "layer": 0
+     "connectionType": "Universal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Universal",
-     "layer": 0
+     "connectionType": "Universal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Universal",
-     "layer": 0
+     "connectionType": "Universal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Universal",
-     "layer": 0
+     "connectionType": "Universal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "674",
@@ -17092,31 +15043,24 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Universal",
-     "layer": 0
+     "connectionType": "Universal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Universal",
-     "layer": 0
+     "connectionType": "Universal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Universal",
-     "layer": 0
+     "connectionType": "Universal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Universal",
-     "layer": 0
+     "connectionType": "Universal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "675",
@@ -17136,20 +15080,17 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     }
    ],
    "adornments": [
@@ -17158,9 +15099,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "SR"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "676",
@@ -17180,20 +15119,17 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Universal",
-     "layer": 0
+     "connectionType": "Universal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Universal",
-     "layer": 0
+     "connectionType": "Universal"
     }
    ],
    "adornments": [
@@ -17202,9 +15138,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "SR"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "677",
@@ -17215,19 +15149,14 @@ class TileDictionarySource {
     {
      "position1": "tp4SideC",
      "position2": "tp4SideF",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     },
     {
      "position1": "tp4SideC",
      "position2": "tp4SideA",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "678",
@@ -17238,19 +15167,14 @@ class TileDictionarySource {
     {
      "position1": "tp4SideC",
      "position2": "tp4SideF",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     },
     {
      "position1": "tp4SideC",
      "position2": "tp4SideE",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "680",
@@ -17270,31 +15194,24 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "681",
@@ -17314,31 +15231,24 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "682",
@@ -17358,31 +15268,24 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "683",
@@ -17402,31 +15305,24 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "684",
@@ -17446,31 +15342,24 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "685",
@@ -17490,31 +15379,24 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "686",
@@ -17534,31 +15416,24 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "687",
@@ -17578,31 +15453,24 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "688",
@@ -17622,31 +15490,24 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "689",
@@ -17666,31 +15527,24 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "690",
@@ -17710,31 +15564,24 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "691",
@@ -17754,31 +15601,24 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "692",
@@ -17789,19 +15629,14 @@ class TileDictionarySource {
     {
      "position1": "tp4SideC",
      "position2": "tp4SideF",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     },
     {
      "position1": "tp4SideC",
      "position2": "tp4SideB",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "693",
@@ -17812,19 +15647,14 @@ class TileDictionarySource {
     {
      "position1": "tp4SideC",
      "position2": "tp4SideF",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     },
     {
      "position1": "tp4SideC",
      "position2": "tp4SideD",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "694",
@@ -17835,19 +15665,14 @@ class TileDictionarySource {
     {
      "position1": "tp4SideC",
      "position2": "tp4SideA",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     },
     {
      "position1": "tp4SideC",
      "position2": "tp4SideB",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "695",
@@ -17858,19 +15683,14 @@ class TileDictionarySource {
     {
      "position1": "tp4SideC",
      "position2": "tp4SideE",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     },
     {
      "position1": "tp4SideC",
      "position2": "tp4SideD",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "696",
@@ -17890,31 +15710,24 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Universal",
-     "layer": 0
+     "connectionType": "Universal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Universal",
-     "layer": 0
+     "connectionType": "Universal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Universal",
-     "layer": 0
+     "connectionType": "Universal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Universal",
-     "layer": 0
+     "connectionType": "Universal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "697",
@@ -17934,31 +15747,24 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Universal",
-     "layer": 0
+     "connectionType": "Universal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Universal",
-     "layer": 0
+     "connectionType": "Universal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Universal",
-     "layer": 0
+     "connectionType": "Universal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Universal",
-     "layer": 0
+     "connectionType": "Universal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "698",
@@ -17978,31 +15784,24 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Universal",
-     "layer": 0
+     "connectionType": "Universal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Universal",
-     "layer": 0
+     "connectionType": "Universal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Universal",
-     "layer": 0
+     "connectionType": "Universal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Universal",
-     "layer": 0
+     "connectionType": "Universal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "699",
@@ -18013,19 +15812,14 @@ class TileDictionarySource {
     {
      "position1": "tp4SideC",
      "position2": "tp4SideA",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     },
     {
      "position1": "tp4SideC",
      "position2": "tp4SideE",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "700",
@@ -18045,31 +15839,24 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "701",
@@ -18089,31 +15876,24 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "702",
@@ -18133,31 +15913,24 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "703",
@@ -18177,31 +15950,24 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "704",
@@ -18221,31 +15987,24 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "705",
@@ -18265,31 +16024,24 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "706",
@@ -18309,31 +16061,24 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "707",
@@ -18353,31 +16098,24 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "708",
@@ -18388,19 +16126,14 @@ class TileDictionarySource {
     {
      "position1": "tp4SideC",
      "position2": "tp4SideA",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     },
     {
      "position1": "tp4SideC",
      "position2": "tp4SideD",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "709",
@@ -18411,19 +16144,14 @@ class TileDictionarySource {
     {
      "position1": "tp4SideC",
      "position2": "tp4SideE",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     },
     {
      "position1": "tp4SideC",
      "position2": "tp4SideB",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "710",
@@ -18434,8 +16162,7 @@ class TileDictionarySource {
     {
      "position1": "tp4SideC",
      "position2": "tp4SideA",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     },
     {
      "position1": "tp4SideB",
@@ -18443,10 +16170,7 @@ class TileDictionarySource {
      "connectionType": "Normal",
      "layer": 2
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "711",
@@ -18457,8 +16181,7 @@ class TileDictionarySource {
     {
      "position1": "tp4SideB",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideC",
@@ -18466,10 +16189,7 @@ class TileDictionarySource {
      "connectionType": "Small",
      "layer": 2
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "712",
@@ -18480,8 +16200,7 @@ class TileDictionarySource {
     {
      "position1": "tp4SideC",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideB",
@@ -18489,10 +16208,7 @@ class TileDictionarySource {
      "connectionType": "Small",
      "layer": 2
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "713",
@@ -18503,8 +16219,7 @@ class TileDictionarySource {
     {
      "position1": "tp4SideB",
      "position2": "tp4SideD",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     },
     {
      "position1": "tp4SideC",
@@ -18512,10 +16227,7 @@ class TileDictionarySource {
      "connectionType": "Normal",
      "layer": 2
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "714",
@@ -18526,8 +16238,7 @@ class TileDictionarySource {
     {
      "position1": "tp4SideC",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideD",
@@ -18535,10 +16246,7 @@ class TileDictionarySource {
      "connectionType": "Small",
      "layer": 2
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "715",
@@ -18549,8 +16257,7 @@ class TileDictionarySource {
     {
      "position1": "tp4SideF",
      "position2": "tp4SideC",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     },
     {
      "position1": "tp4SideD",
@@ -18558,10 +16265,7 @@ class TileDictionarySource {
      "connectionType": "Normal",
      "layer": 2
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "981",
@@ -18589,31 +16293,24 @@ class TileDictionarySource {
     {
      "position1": "tp2SideF",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2SideF",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCurve2RightE",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCurve2RightE",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "982",
@@ -18633,20 +16330,17 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -18655,9 +16349,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "T"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "983",
@@ -18677,20 +16369,17 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -18699,9 +16388,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "T"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "984",
@@ -18729,26 +16416,22 @@ class TileDictionarySource {
     {
      "position1": "tp2CornerD",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2CornerD",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2CornerF",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2CornerF",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -18757,9 +16440,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "OO"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "991",
@@ -18787,31 +16468,24 @@ class TileDictionarySource {
     {
      "position1": "tp2SideF",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2SideF",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCurve2LeftA",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCurve2LeftA",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "992",
@@ -18831,26 +16505,22 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -18859,9 +16529,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "A"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "993",
@@ -18881,20 +16549,17 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -18903,9 +16568,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "B"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "994",
@@ -18941,20 +16604,17 @@ class TileDictionarySource {
     {
      "position1": "tp2SideA",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2SideC",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2SideE",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -18963,9 +16623,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "P"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "995",
@@ -18985,20 +16643,17 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -19007,9 +16662,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "X"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "996",
@@ -19029,32 +16682,27 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -19063,9 +16711,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "A"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "997",
@@ -19085,26 +16731,22 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -19113,9 +16755,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "B"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "998",
@@ -19175,38 +16815,32 @@ class TileDictionarySource {
     {
      "position1": "tp3SideD",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp3SideE",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp3SideF",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp3SideA",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp3SideB",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp3SideC",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -19215,9 +16849,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "P"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "999",
@@ -19237,26 +16869,22 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -19265,9 +16893,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "X"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "-3",
@@ -19287,19 +16913,15 @@ class TileDictionarySource {
     {
      "position1": "tp2CornerD",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2CornerD",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
-   "adornments": [],
-   "isBase": true,
-   "clipTile": false
+   "isBase": true
   },
   {
    "tileId": "-4",
@@ -19319,19 +16941,15 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
-   "adornments": [],
-   "isBase": true,
-   "clipTile": false
+   "isBase": true
   },
   {
    "tileId": "-58",
@@ -19351,19 +16969,15 @@ class TileDictionarySource {
     {
      "position1": "tp1SideD",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp1SideD",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
-   "adornments": [],
-   "isBase": true,
-   "clipTile": false
+   "isBase": true
   },
   {
    "tileId": "-7",
@@ -19374,13 +16988,10 @@ class TileDictionarySource {
     {
      "position1": "tp4SideC",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
-   "adornments": [],
-   "isBase": true,
-   "clipTile": false
+   "isBase": true
   },
   {
    "tileId": "-8",
@@ -19391,13 +17002,10 @@ class TileDictionarySource {
     {
      "position1": "tp4SideC",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
-   "adornments": [],
-   "isBase": true,
-   "clipTile": false
+   "isBase": true
   },
   {
    "tileId": "-9",
@@ -19408,13 +17016,10 @@ class TileDictionarySource {
     {
      "position1": "tp4SideC",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
-   "adornments": [],
-   "isBase": true,
-   "clipTile": false
+   "isBase": true
   },
   {
    "tileId": "-5",
@@ -19434,19 +17039,15 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
-   "adornments": [],
-   "isBase": true,
-   "clipTile": false
+   "isBase": true
   },
   {
    "tileId": "-6",
@@ -19466,19 +17067,15 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
-   "adornments": [],
-   "isBase": true,
-   "clipTile": false
+   "isBase": true
   },
   {
    "tileId": "-57",
@@ -19498,19 +17095,15 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
-   "adornments": [],
-   "isBase": true,
-   "clipTile": false
+   "isBase": true
   },
   {
    "tileId": "-103",
@@ -19530,19 +17123,15 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
-   "adornments": [],
-   "isBase": true,
-   "clipTile": false
+   "isBase": true
   },
   {
    "tileId": "-104",
@@ -19562,13 +17151,10 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
-   "adornments": [],
-   "isBase": true,
-   "clipTile": false
+   "isBase": true
   },
   {
    "tileId": "-105",
@@ -19588,19 +17174,15 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
-   "adornments": [],
-   "isBase": true,
-   "clipTile": false
+   "isBase": true
   },
   {
    "tileId": "-9999",
@@ -19608,9 +17190,7 @@ class TileDictionarySource {
    "color": "Fixed",
    "junctions": [],
    "connections": [],
-   "adornments": [],
-   "isBase": true,
-   "clipTile": false
+   "isBase": true
   },
   {
    "tileId": "-939",
@@ -19621,25 +17201,20 @@ class TileDictionarySource {
     {
      "position1": "tp4SideD",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideD",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideC",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
-   "adornments": [],
-   "isBase": true,
-   "clipTile": false
+   "isBase": true
   },
   {
    "tileId": "-912",
@@ -19655,19 +17230,15 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
-   "adornments": [],
-   "isBase": true,
-   "clipTile": false
+   "isBase": true
   },
   {
    "tileId": "-913",
@@ -19683,25 +17254,20 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
-   "adornments": [],
-   "isBase": true,
-   "clipTile": false
+   "isBase": true
   },
   {
    "tileId": "-112",
@@ -19721,25 +17287,20 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
-   "adornments": [],
-   "isBase": true,
-   "clipTile": false
+   "isBase": true
   },
   {
    "tileId": "-113",
@@ -19759,25 +17320,20 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
-   "adornments": [],
-   "isBase": true,
-   "clipTile": false
+   "isBase": true
   },
   {
    "tileId": "-111",
@@ -19793,25 +17349,20 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
-   "adornments": [],
-   "isBase": true,
-   "clipTile": false
+   "isBase": true
   },
   {
    "tileId": "9121",
@@ -19831,20 +17382,17 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -19853,9 +17401,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "B+"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "-22",
@@ -19883,14 +17429,12 @@ class TileDictionarySource {
     {
      "position1": "tp2SideF",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2SideD",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -19900,8 +17444,7 @@ class TileDictionarySource {
      "text": "NY"
     }
    ],
-   "isBase": true,
-   "clipTile": false
+   "isBase": true
   },
   {
    "tileId": "9997",
@@ -19921,32 +17464,27 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -19955,9 +17493,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "B+"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "9220",
@@ -19977,38 +17513,32 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -20017,9 +17547,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "U"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "-800",
@@ -20039,13 +17567,10 @@ class TileDictionarySource {
     {
      "position1": "tp2SideD",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
-   "adornments": [],
-   "isBase": true,
-   "clipTile": false
+   "isBase": true
   },
   {
    "tileId": "-801",
@@ -20073,25 +17598,20 @@ class TileDictionarySource {
     {
      "position1": "tp2CornerE",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2CornerE",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2SideC",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
-   "adornments": [],
-   "isBase": true,
-   "clipTile": false
+   "isBase": true
   },
   {
    "tileId": "-802",
@@ -20111,25 +17631,20 @@ class TileDictionarySource {
     {
      "position1": "tp1SideB",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp1SideB",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideD",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
-   "adornments": [],
-   "isBase": true,
-   "clipTile": false
+   "isBase": true
   },
   {
    "tileId": "-803",
@@ -20165,26 +17680,22 @@ class TileDictionarySource {
     {
      "position1": "tp2SideF",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2CornerB",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2CornerB",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2SideD",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -20194,8 +17705,7 @@ class TileDictionarySource {
      "text": "HH"
     }
    ],
-   "isBase": true,
-   "clipTile": false
+   "isBase": true
   },
   {
    "tileId": "-804",
@@ -20215,31 +17725,25 @@ class TileDictionarySource {
     {
      "position1": "tp4SideE",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp1SideA",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp1SideA",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp1SideA",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
-   "adornments": [],
-   "isBase": true,
-   "clipTile": false
+   "isBase": true
   },
   {
    "tileId": "-805",
@@ -20259,31 +17763,25 @@ class TileDictionarySource {
     {
      "position1": "tp1CornerB",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp1CornerB",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp1CornerB",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp1CornerB",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
-   "adornments": [],
-   "isBase": true,
-   "clipTile": false
+   "isBase": true
   },
   {
    "tileId": "-806",
@@ -20311,14 +17809,12 @@ class TileDictionarySource {
     {
      "position1": "tp2SideE",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp1SideA",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -20328,8 +17824,7 @@ class TileDictionarySource {
      "text": "B"
     }
    ],
-   "isBase": true,
-   "clipTile": false
+   "isBase": true
   },
   {
    "tileId": "-143",
@@ -20349,25 +17844,20 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
-   "adornments": [],
-   "isBase": true,
-   "clipTile": false
+   "isBase": true
   },
   {
    "tileId": "-114",
@@ -20387,25 +17877,20 @@ class TileDictionarySource {
     {
      "position1": "tp1SideF",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp1SideF",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp1SideF",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
-   "adornments": [],
-   "isBase": true,
-   "clipTile": false
+   "isBase": true
   },
   {
    "tileId": "-807",
@@ -20429,8 +17914,7 @@ class TileDictionarySource {
      "text": "XX"
     }
    ],
-   "isBase": true,
-   "clipTile": false
+   "isBase": true
   },
   {
    "tileId": "-39",
@@ -20441,25 +17925,20 @@ class TileDictionarySource {
     {
      "position1": "tp4SideD",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideB",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideC",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
-   "adornments": [],
-   "isBase": true,
-   "clipTile": false
+   "isBase": true
   },
   {
    "tileId": "-808",
@@ -20479,25 +17958,20 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideB",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
-   "adornments": [],
-   "isBase": true,
-   "clipTile": false
+   "isBase": true
   },
   {
    "tileId": "-809",
@@ -20517,26 +17991,22 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -20546,8 +18016,7 @@ class TileDictionarySource {
      "text": "Y"
     }
    ],
-   "isBase": true,
-   "clipTile": false
+   "isBase": true
   },
   {
    "tileId": "-41",
@@ -20558,25 +18027,20 @@ class TileDictionarySource {
     {
      "position1": "tp4SideA",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideE",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideE",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
-   "adornments": [],
-   "isBase": true,
-   "clipTile": false
+   "isBase": true
   },
   {
    "tileId": "-810",
@@ -20604,26 +18068,22 @@ class TileDictionarySource {
     {
      "position1": "tp2CornerA",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2CornerA",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2CornerD",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2CornerD",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -20633,8 +18093,7 @@ class TileDictionarySource {
      "text": "XX"
     }
    ],
-   "isBase": true,
-   "clipTile": false
+   "isBase": true
   },
   {
    "tileId": "1441",
@@ -20654,8 +18113,7 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -20664,9 +18122,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "Elyton/B'ham"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "1442",
@@ -20686,26 +18142,22 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -20714,9 +18166,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "Birmingham"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "1443",
@@ -20736,32 +18186,27 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -20770,9 +18215,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "Montgomery"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "1444",
@@ -20792,32 +18235,27 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -20826,9 +18264,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "B'ham/Montg."
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "445",
@@ -20848,14 +18284,12 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -20864,9 +18298,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "Lumber Term."
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "446",
@@ -20886,38 +18318,32 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -20926,9 +18352,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "B'ham"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "-23",
@@ -20956,14 +18380,12 @@ class TileDictionarySource {
     {
      "position1": "tp4SideD",
      "position2": "tp2SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2SideD",
      "position2": "tp2SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -20973,8 +18395,7 @@ class TileDictionarySource {
      "text": "Louisville"
     }
    ],
-   "isBase": true,
-   "clipTile": false
+   "isBase": true
   },
   {
    "tileId": "-3005",
@@ -21002,14 +18423,12 @@ class TileDictionarySource {
     {
      "position1": "tp4SideD",
      "position2": "tp2SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideA",
      "position2": "tp2SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -21019,8 +18438,7 @@ class TileDictionarySource {
      "text": "B-V"
     }
    ],
-   "isBase": true,
-   "clipTile": false
+   "isBase": true
   },
   {
    "tileId": "-3006",
@@ -21048,14 +18466,12 @@ class TileDictionarySource {
     {
      "position1": "tp2SideA",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2SideD",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -21065,8 +18481,7 @@ class TileDictionarySource {
      "text": "P"
     }
    ],
-   "isBase": true,
-   "clipTile": false
+   "isBase": true
   },
   {
    "tileId": "-3007",
@@ -21086,8 +18501,7 @@ class TileDictionarySource {
      "text": "Y"
     }
    ],
-   "isBase": true,
-   "clipTile": false
+   "isBase": true
   },
   {
    "tileId": "-3008",
@@ -21100,9 +18514,7 @@ class TileDictionarySource {
     }
    ],
    "connections": [],
-   "adornments": [],
-   "isBase": true,
-   "clipTile": false
+   "isBase": true
   },
   {
    "tileId": "-3009",
@@ -21115,9 +18527,7 @@ class TileDictionarySource {
     }
    ],
    "connections": [],
-   "adornments": [],
-   "isBase": true,
-   "clipTile": false
+   "isBase": true
   },
   {
    "tileId": "-3010",
@@ -21132,8 +18542,7 @@ class TileDictionarySource {
      "text": "M"
     }
    ],
-   "isBase": true,
-   "clipTile": false
+   "isBase": true
   },
   {
    "tileId": "-3011",
@@ -21148,8 +18557,7 @@ class TileDictionarySource {
      "text": "m"
     }
    ],
-   "isBase": true,
-   "clipTile": false
+   "isBase": true
   },
   {
    "tileId": "576",
@@ -21169,20 +18577,17 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -21191,9 +18596,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "Y"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "577",
@@ -21213,20 +18616,17 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -21235,9 +18635,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "Y"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "578",
@@ -21257,20 +18655,17 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -21279,9 +18674,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "Y"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "579",
@@ -21301,20 +18694,17 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -21323,9 +18713,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "Y"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "580",
@@ -21353,26 +18741,22 @@ class TileDictionarySource {
     {
      "position1": "tp2CornerB",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2CornerB",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2CornerD",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2CornerD",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -21381,9 +18765,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "P"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "581",
@@ -21419,38 +18801,32 @@ class TileDictionarySource {
     {
      "position1": "tp2CornerA",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2CornerA",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2CornerC",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2CornerC",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2CornerE",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2CornerE",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -21459,9 +18835,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "B-V"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "582",
@@ -21481,26 +18855,22 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -21509,9 +18879,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "Y"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "583",
@@ -21539,26 +18907,22 @@ class TileDictionarySource {
     {
      "position1": "tp2SideA",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2SideA",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2SideD",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2SideD",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -21567,9 +18931,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "P"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "584",
@@ -21589,38 +18951,32 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -21629,9 +18985,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "B-V"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "544",
@@ -21642,43 +18996,34 @@ class TileDictionarySource {
     {
      "position1": "tp4SideB",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideB",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideA",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideA",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideE",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideA",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "545",
@@ -21689,43 +19034,34 @@ class TileDictionarySource {
     {
      "position1": "tp4SideA",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideA",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideE",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideA",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideF",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideF",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "546",
@@ -21736,43 +19072,34 @@ class TileDictionarySource {
     {
      "position1": "tp4SideA",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideB",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideF",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideF",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideB",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideA",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "-1143",
@@ -21788,25 +19115,20 @@ class TileDictionarySource {
     {
      "position1": "tp4SideF",
      "position2": "tpCenter",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
-   "adornments": [],
-   "isBase": true,
-   "clipTile": false
+   "isBase": true
   },
   {
    "tileId": "-89030",
@@ -21826,14 +19148,12 @@ class TileDictionarySource {
     {
      "position1": "tp2CornerD",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2CornerD",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -21843,8 +19163,7 @@ class TileDictionarySource {
      "text": "Yawatahama"
     }
    ],
-   "isBase": true,
-   "clipTile": false
+   "isBase": true
   },
   {
    "tileId": "-89511",
@@ -21864,20 +19183,17 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -21887,8 +19203,7 @@ class TileDictionarySource {
      "text": "Uwajima"
     }
    ],
-   "isBase": true,
-   "clipTile": false
+   "isBase": true
   },
   {
    "tileId": "-89015",
@@ -21908,26 +19223,22 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -21937,8 +19248,7 @@ class TileDictionarySource {
      "text": "Kouchi"
     }
    ],
-   "isBase": true,
-   "clipTile": false
+   "isBase": true
   },
   {
    "tileId": "-89031",
@@ -21958,14 +19268,12 @@ class TileDictionarySource {
     {
      "position1": "tp2CornerB",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2CornerB",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -21975,8 +19283,7 @@ class TileDictionarySource {
      "text": "Muroto"
     }
    ],
-   "isBase": true,
-   "clipTile": false
+   "isBase": true
   },
   {
    "tileId": "-89010",
@@ -21996,8 +19303,7 @@ class TileDictionarySource {
      "text": "Kotohira"
     }
    ],
-   "isBase": true,
-   "clipTile": false
+   "isBase": true
   },
   {
    "tileId": "-89012",
@@ -22017,20 +19323,17 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -22040,8 +19343,7 @@ class TileDictionarySource {
      "text": "Takamatsu"
     }
    ],
-   "isBase": true,
-   "clipTile": false
+   "isBase": true
   },
   {
    "tileId": "-89115",
@@ -22061,8 +19363,7 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -22072,8 +19373,7 @@ class TileDictionarySource {
      "text": "Ohzu"
     }
    ],
-   "isBase": true,
-   "clipTile": false
+   "isBase": true
   },
   {
    "tileId": "437",
@@ -22093,14 +19393,12 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -22109,9 +19407,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "Port"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "438",
@@ -22131,14 +19427,12 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -22147,9 +19441,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "Kotohira"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "439",
@@ -22169,20 +19461,17 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -22191,9 +19480,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "Kotohira"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "440",
@@ -22213,20 +19500,17 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -22235,9 +19519,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "Takamatsu"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "448",
@@ -22257,31 +19539,24 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "465",
@@ -22301,26 +19576,22 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -22329,9 +19600,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "Kouchi"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "466",
@@ -22351,20 +19620,17 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -22373,9 +19639,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "Takamatsu"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "492",
@@ -22395,38 +19659,32 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -22435,9 +19693,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "Kotohira"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "-56001",
@@ -22465,14 +19721,12 @@ class TileDictionarySource {
     {
      "position1": "tp2SideE",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2SideB",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -22482,8 +19736,7 @@ class TileDictionarySource {
      "text": "Toronto"
     }
    ],
-   "isBase": true,
-   "clipTile": false
+   "isBase": true
   },
   {
    "tileId": "-25001",
@@ -22543,38 +19796,32 @@ class TileDictionarySource {
     {
      "position1": "tp4SideF",
      "position2": "tp3SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideE",
      "position2": "tp3SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideD",
      "position2": "tp3SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideC",
      "position2": "tp3SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideB",
      "position2": "tp3SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideA",
      "position2": "tp3SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -22584,8 +19831,7 @@ class TileDictionarySource {
      "text": "London"
     }
    ],
-   "isBase": true,
-   "clipTile": false
+   "isBase": true
   },
   {
    "tileId": "-25002",
@@ -22621,20 +19867,17 @@ class TileDictionarySource {
     {
      "position1": "tp2SideE",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2SideC",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideA",
      "position2": "tp2SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -22644,8 +19887,7 @@ class TileDictionarySource {
      "text": " "
     }
    ],
-   "isBase": true,
-   "clipTile": false
+   "isBase": true
   },
   {
    "tileId": "-25003",
@@ -22665,14 +19907,12 @@ class TileDictionarySource {
     {
      "position1": "tp4SideD",
      "position2": "tpCenter",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -22682,8 +19922,7 @@ class TileDictionarySource {
      "text": "Bristol"
     }
    ],
-   "isBase": true,
-   "clipTile": false
+   "isBase": true
   },
   {
    "tileId": "-25004",
@@ -22703,31 +19942,25 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
-   "adornments": [],
-   "isBase": true,
-   "clipTile": false
+   "isBase": true
   },
   {
    "tileId": "-25005",
@@ -22747,31 +19980,25 @@ class TileDictionarySource {
     {
      "position1": "tp4SideE",
      "position2": "tpCenter",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideF",
      "position2": "tpCenter",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
-   "adornments": [],
-   "isBase": true,
-   "clipTile": false
+   "isBase": true
   },
   {
    "tileId": "-25006",
@@ -22791,25 +20018,20 @@ class TileDictionarySource {
     {
      "position1": "tp4SideE",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideE",
      "position2": "tp2SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideD",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
-   "adornments": [],
-   "isBase": true,
-   "clipTile": false
+   "isBase": true
   },
   {
    "tileId": "-25007",
@@ -22837,25 +20059,20 @@ class TileDictionarySource {
     {
      "position1": "tp4SideE",
      "position2": "tpCenter",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideF",
      "position2": "tpCenter",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideA",
      "position2": "tpCenter",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
-   "adornments": [],
-   "isBase": true,
-   "clipTile": false
+   "isBase": true
   },
   {
    "tileId": "-25008",
@@ -22883,31 +20100,25 @@ class TileDictionarySource {
     {
      "position1": "tp4SideF",
      "position2": "tp2CornerA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2CornerA",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2CornerC",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2CornerC",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
-   "adornments": [],
-   "isBase": true,
-   "clipTile": false
+   "isBase": true
   },
   {
    "tileId": "-25009",
@@ -22935,19 +20146,15 @@ class TileDictionarySource {
     {
      "position1": "tp2SideA",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2SideC",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
-   "adornments": [],
-   "isBase": true,
-   "clipTile": false
+   "isBase": true
   },
   {
    "tileId": "-25010",
@@ -22975,43 +20182,35 @@ class TileDictionarySource {
     {
      "position1": "tp1CornerE",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp1CornerE",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp1CornerE",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp1CornerB",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp1CornerB",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp1CornerB",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
-   "adornments": [],
-   "isBase": true,
-   "clipTile": false
+   "isBase": true
   },
   {
    "tileId": "-25011",
@@ -23031,13 +20230,10 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
-   "adornments": [],
-   "isBase": true,
-   "clipTile": false
+   "isBase": true
   },
   {
    "tileId": "-25012",
@@ -23065,19 +20261,15 @@ class TileDictionarySource {
     {
      "position1": "tp2SideB",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2SideC",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
-   "adornments": [],
-   "isBase": true,
-   "clipTile": false
+   "isBase": true
   },
   {
    "tileId": "-25013",
@@ -23097,19 +20289,15 @@ class TileDictionarySource {
     {
      "position1": "tp4SideC",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2SideF",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
-   "adornments": [],
-   "isBase": true,
-   "clipTile": false
+   "isBase": true
   },
   {
    "tileId": "-25014",
@@ -23129,25 +20317,20 @@ class TileDictionarySource {
     {
      "position1": "tp1CornerB",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp1CornerB",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp1CornerB",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
-   "adornments": [],
-   "isBase": true,
-   "clipTile": false
+   "isBase": true
   },
   {
    "tileId": "-25015",
@@ -23167,19 +20350,15 @@ class TileDictionarySource {
     {
      "position1": "tp2CornerB",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2CornerB",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
-   "adornments": [],
-   "isBase": true,
-   "clipTile": false
+   "isBase": true
   },
   {
    "tileId": "-25016",
@@ -23199,31 +20378,25 @@ class TileDictionarySource {
     {
      "position1": "tp4SideA",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp1CornerC",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp1CornerC",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp1CornerC",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
-   "adornments": [],
-   "isBase": true,
-   "clipTile": false
+   "isBase": true
   },
   {
    "tileId": "119",
@@ -23243,31 +20416,24 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "166",
@@ -23287,37 +20453,29 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "200",
@@ -23337,37 +20495,29 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "3080",
@@ -23378,25 +20528,19 @@ class TileDictionarySource {
     {
      "position1": "tp4SideD",
      "position2": "tpCenter",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "3081",
@@ -23407,25 +20551,19 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "3082",
@@ -23436,25 +20574,19 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideA",
      "position2": "tpCenter",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideF",
      "position2": "tpCenter",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "3083",
@@ -23465,25 +20597,19 @@ class TileDictionarySource {
     {
      "position1": "tp4SideF",
      "position2": "tpCenter",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideE",
      "position2": "tpCenter",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideC",
      "position2": "tpCenter",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "3544",
@@ -23494,19 +20620,14 @@ class TileDictionarySource {
     {
      "position1": "tp4SideA",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideB",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "3545",
@@ -23517,25 +20638,19 @@ class TileDictionarySource {
     {
      "position1": "tp4SideA",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideF",
      "position2": "tpCenter",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideE",
      "position2": "tpCenter",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "3546",
@@ -23546,25 +20661,19 @@ class TileDictionarySource {
     {
      "position1": "tp4SideA",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideB",
      "position2": "tpCenter",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideF",
      "position2": "tpCenter",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "-30001",
@@ -23575,19 +20684,15 @@ class TileDictionarySource {
     {
      "position1": "tp4SideD",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideD",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
-   "adornments": [],
-   "isBase": true,
-   "clipTile": false
+   "isBase": true
   },
   {
    "tileId": "-30002",
@@ -23607,25 +20712,20 @@ class TileDictionarySource {
     {
      "position1": "tp4SideE",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideE",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideC",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
-   "adornments": [],
-   "isBase": true,
-   "clipTile": false
+   "isBase": true
   },
   {
    "tileId": "-30003",
@@ -23645,43 +20745,35 @@ class TileDictionarySource {
     {
      "position1": "tp4SideE",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideE",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideB",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideE",
      "position2": "tp2CornerA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2CornerA",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2CornerA",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
-   "adornments": [],
-   "isBase": true,
-   "clipTile": false
+   "isBase": true
   },
   {
    "tileId": "-30004",
@@ -23697,32 +20789,27 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -23732,8 +20819,7 @@ class TileDictionarySource {
      "text": "Coalfields"
     }
    ],
-   "isBase": true,
-   "clipTile": false
+   "isBase": true
   },
   {
    "tileId": "-30005",
@@ -23749,19 +20835,15 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
-   "adornments": [],
-   "isBase": true,
-   "clipTile": false
+   "isBase": true
   },
   {
    "tileId": "1062",
@@ -23781,26 +20863,22 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -23809,9 +20887,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "NY"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "2053",
@@ -23831,20 +20907,17 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -23853,9 +20926,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "B"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "1061",
@@ -23875,26 +20946,22 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -23903,9 +20970,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "B"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "2061",
@@ -23925,32 +20990,27 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -23959,9 +21019,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "B"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "1717",
@@ -23981,37 +21039,29 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "-911",
@@ -24027,13 +21077,10 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
-   "adornments": [],
-   "isBase": true,
-   "clipTile": false
+   "isBase": true
   },
   {
    "tileId": "-1911",
@@ -24049,13 +21096,10 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
-   "adornments": [],
-   "isBase": true,
-   "clipTile": false
+   "isBase": true
   },
   {
    "tileId": "-1912",
@@ -24071,19 +21115,15 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
-   "adornments": [],
-   "isBase": true,
-   "clipTile": false
+   "isBase": true
   },
   {
    "tileId": "-1913",
@@ -24099,25 +21139,20 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
-   "adornments": [],
-   "isBase": true,
-   "clipTile": false
+   "isBase": true
   },
   {
    "tileId": "-1921",
@@ -24133,13 +21168,10 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
-   "adornments": [],
-   "isBase": true,
-   "clipTile": false
+   "isBase": true
   },
   {
    "tileId": "-1922",
@@ -24155,19 +21187,15 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
-   "adornments": [],
-   "isBase": true,
-   "clipTile": false
+   "isBase": true
   },
   {
    "tileId": "-1923",
@@ -24183,25 +21211,20 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
-   "adornments": [],
-   "isBase": true,
-   "clipTile": false
+   "isBase": true
   },
   {
    "tileId": "-4001",
@@ -24217,13 +21240,10 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
-   "adornments": [],
-   "isBase": true,
-   "clipTile": false
+   "isBase": true
   },
   {
    "tileId": "-4002",
@@ -24239,19 +21259,15 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
-   "adornments": [],
-   "isBase": true,
-   "clipTile": false
+   "isBase": true
   },
   {
    "tileId": "-4003",
@@ -24267,25 +21283,20 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
-   "adornments": [],
-   "isBase": true,
-   "clipTile": false
+   "isBase": true
   },
   {
    "tileId": "1458",
@@ -24305,32 +21316,27 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -24339,9 +21345,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "Macon"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "-5015",
@@ -24357,31 +21361,25 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
-   "adornments": [],
-   "isBase": true,
-   "clipTile": false
+   "isBase": true
   },
   {
    "tileId": "598",
@@ -24401,20 +21399,17 @@ class TileDictionarySource {
     {
      "position1": "tp4SideB",
      "position2": "tpCenter",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -24423,9 +21418,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "Cha"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "599",
@@ -24445,32 +21438,27 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -24479,9 +21467,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "Nsh"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "600",
@@ -24501,38 +21487,32 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -24541,9 +21521,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "P"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "-30",
@@ -24564,9 +21542,7 @@ class TileDictionarySource {
     }
    ],
    "connections": [],
-   "adornments": [],
-   "isBase": true,
-   "clipTile": false
+   "isBase": true
   },
   {
    "tileId": "-10001",
@@ -24586,25 +21562,20 @@ class TileDictionarySource {
     {
      "position1": "tp4SideB",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp1SideF",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp1SideF",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
-   "adornments": [],
-   "isBase": true,
-   "clipTile": false
+   "isBase": true
   },
   {
    "tileId": "235",
@@ -24632,8 +21603,7 @@ class TileDictionarySource {
     {
      "position1": "tp2SideF",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -24642,9 +21612,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "OO"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "8858",
@@ -24670,33 +21638,26 @@ class TileDictionarySource {
    ],
    "connections": [
     {
+     "position1": "tp4SideE",
+     "position2": "tp1SideF",
+     "connectionType": "Normal"
+    },
+    {
+     "position1": "tp4SideE",
+     "position2": "tp4SideA",
+     "connectionType": "Normal"
+    },
+    {
      "position1": "tp4SideD",
      "position2": "tp1SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
-     "position1": "tp1SideF",
-     "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
-    },
-    {
-     "position1": "tp1SideF",
-     "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
-    },
-    {
-     "position1": "tp1SideC",
+     "position1": "tp4SideD",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "8854",
@@ -24722,33 +21683,26 @@ class TileDictionarySource {
    ],
    "connections": [
     {
-     "position1": "tp4SideA",
-     "position2": "tpCenter",
-     "connectionType": "Normal",
-     "layer": 0
+     "position1": "tp4SideC",
+     "position2": "tp2CornerC",
+     "connectionType": "Normal"
+    },
+    {
+     "position1": "tp4SideC",
+     "position2": "tp4SideB",
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideD",
      "position2": "tpCenter",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
-     "position1": "tp4SideB",
-     "position2": "tp2CornerC",
-     "connectionType": "Normal",
-     "layer": 0
-    },
-    {
-     "position1": "tp2CornerC",
-     "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "position1": "tp4SideD",
+     "position2": "tp4SideA",
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "8855",
@@ -24776,31 +21730,24 @@ class TileDictionarySource {
     {
      "position1": "tp4SideD",
      "position2": "tp3SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
+    },
+    {
+     "position1": "tp4SideD",
+     "position2": "tp4SideA",
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideB",
      "position2": "tp3SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
-     "position1": "tp3SideD",
-     "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
-    },
-    {
-     "position1": "tp3SideB",
+     "position1": "tp4SideB",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "8856",
@@ -24828,31 +21775,24 @@ class TileDictionarySource {
     {
      "position1": "tp4SideD",
      "position2": "tpCurve2RightD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideA",
      "position2": "tpCurve2LeftA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideB",
      "position2": "tpCurve2RightD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCurve2LeftA",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "8857",
@@ -24880,31 +21820,24 @@ class TileDictionarySource {
     {
      "position1": "tp4SideD",
      "position2": "tp3SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideF",
      "position2": "tpCurve2RightB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideB",
      "position2": "tpCurve2RightB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideA",
      "position2": "tp3SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "8877",
@@ -24916,7 +21849,7 @@ class TileDictionarySource {
      "junctionType": "City",
      "revenue": {
       "position": "tp3CornerA",
-      "amount": 30
+      "amount": 20
      }
     }
    ],
@@ -24924,14 +21857,12 @@ class TileDictionarySource {
     {
      "position1": "tp4SideD",
      "position2": "tpCenter",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -24940,111 +21871,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "S"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
-  },
-  {
-   "tileId": "8886",
-   "name": "8886",
-   "color": "Green",
-   "junctions": [
-    {
-     "position": "tp3SideD",
-     "junctionType": "City",
-     "revenue": {
-      "position": "tpCenter",
-      "amount": 40
-     }
-    },
-    {
-     "position": "tp3SideC",
-     "junctionType": "City",
-     "revenue": {
-      "position": "tpCenter",
-      "amount": 40
-     }
-    },
-    {
-     "position": "tp3SideB",
-     "junctionType": "City",
-     "revenue": {
-      "position": "tpCenter",
-      "amount": 40
-     }
-    },
-    {
-     "position": "tp3SideF",
-     "junctionType": "City",
-     "revenue": {
-      "position": "tpCenter",
-      "amount": 40
-     }
-    },
-    {
-     "position": "tp3SideA",
-     "junctionType": "City",
-     "revenue": {
-      "position": "tpCenter",
-      "amount": 40
-     }
-    },
-    {
-     "position": "tp3SideE",
-     "junctionType": "City",
-     "revenue": {
-      "position": "tpCenter",
-      "amount": 40
-     }
-    }
-   ],
-   "connections": [
-    {
-     "position1": "tp3SideE",
-     "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
-    },
-    {
-     "position1": "tp3SideD",
-     "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
-    },
-    {
-     "position1": "tp3SideC",
-     "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
-    },
-    {
-     "position1": "tp3SideB",
-     "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
-    },
-    {
-     "position1": "tp3SideA",
-     "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
-    },
-    {
-     "position1": "tp3SideF",
-     "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
-    }
-   ],
-   "adornments": [
-    {
-     "position": "tp1SideA",
-     "adornmentType": "Text",
-     "text": "B"
-    }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "8878",
@@ -25064,26 +21891,22 @@ class TileDictionarySource {
     {
      "position1": "tp4SideD",
      "position2": "tpCenter",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideA",
      "position2": "tpCenter",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideF",
      "position2": "tpCenter",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideC",
      "position2": "tpCenter",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -25092,9 +21915,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "S"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "8860",
@@ -25122,26 +21943,22 @@ class TileDictionarySource {
     {
      "position1": "tp4SideD",
      "position2": "tpCurve2LeftD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideF",
      "position2": "tpCurve2LeftD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideA",
      "position2": "tpCurve2LeftA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideC",
      "position2": "tpCurve2LeftA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -25150,9 +21967,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "OO"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "8861",
@@ -25180,26 +21995,22 @@ class TileDictionarySource {
     {
      "position1": "tp4SideE",
      "position2": "tp2CornerE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideD",
      "position2": "tp2CornerE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideA",
      "position2": "tp2CornerB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideB",
      "position2": "tp2CornerB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -25208,9 +22019,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "OO"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "8862",
@@ -25238,26 +22047,22 @@ class TileDictionarySource {
     {
      "position1": "tp4SideA",
      "position2": "tp2CornerA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideF",
      "position2": "tp2CornerA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideE",
      "position2": "tp2CornerE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideD",
      "position2": "tp2CornerE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -25266,9 +22071,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "OO"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "8863",
@@ -25296,26 +22099,22 @@ class TileDictionarySource {
     {
      "position1": "tp4SideA",
      "position2": "tpCenter",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideD",
      "position2": "tpCenter",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideE",
      "position2": "tp2CornerF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2CornerF",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -25324,9 +22123,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "OO"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "8864",
@@ -25354,26 +22151,22 @@ class TileDictionarySource {
     {
      "position1": "tp4SideA",
      "position2": "tp2CornerB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2CornerB",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideD",
      "position2": "tpCurve2LeftD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCurve2LeftD",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -25382,9 +22175,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "OO"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "8865",
@@ -25412,26 +22203,22 @@ class TileDictionarySource {
     {
      "position1": "tp4SideB",
      "position2": "tp2CornerC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideF",
      "position2": "tp1CornerF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp1CornerF",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2CornerC",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -25440,9 +22227,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "OO"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "8866",
@@ -25462,31 +22247,24 @@ class TileDictionarySource {
     {
      "position1": "tp4SideD",
      "position2": "tpCenter",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "887",
@@ -25506,31 +22284,24 @@ class TileDictionarySource {
     {
      "position1": "tp4SideA",
      "position2": "tpCenter",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "888",
@@ -25550,31 +22321,24 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "8879",
@@ -25594,32 +22358,27 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideE",
      "position2": "tpCenter",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -25628,9 +22387,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "S"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "8871",
@@ -25650,43 +22407,34 @@ class TileDictionarySource {
     {
      "position1": "tp4SideE",
      "position2": "tpCenter",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "8872",
@@ -25706,26 +22454,22 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -25734,9 +22478,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "OO"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "8873",
@@ -25756,26 +22498,22 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -25784,9 +22522,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "OO"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "8874",
@@ -25806,26 +22542,22 @@ class TileDictionarySource {
     {
      "position1": "tp4SideA",
      "position2": "tpCenter",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -25834,9 +22566,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "OO"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "8887",
@@ -25896,38 +22626,32 @@ class TileDictionarySource {
     {
      "position1": "tp3SideF",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp3SideE",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp3SideD",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp3SideC",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp3SideB",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp3SideA",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -25936,9 +22660,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "B"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "895",
@@ -25958,47 +22680,38 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "455",
-   "name": "455",
+   "name": "495",
    "color": "Gray",
    "junctions": [
     {
@@ -26014,43 +22727,34 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "8875",
@@ -26070,38 +22774,32 @@ class TileDictionarySource {
     {
      "position1": "tp4SideA",
      "position2": "tpCenter",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -26110,9 +22808,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "OO"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "8880",
@@ -26132,32 +22828,32 @@ class TileDictionarySource {
     {
      "position1": "tp4SideA",
      "position2": "tpCenter",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
-     "position1": "tpCenter",
+     "position1": "tp4SideA",
+     "position2": "tpCenter",
+     "connectionType": "Normal"
+    },
+    {
+     "position1": "tp4SideA",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -26166,9 +22862,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "S"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "8850",
@@ -26188,19 +22882,14 @@ class TileDictionarySource {
     {
      "position1": "tp4SideD",
      "position2": "tp2CornerD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2CornerD",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "8852",
@@ -26220,19 +22909,14 @@ class TileDictionarySource {
     {
      "position1": "tp4SideD",
      "position2": "tpCenter",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "8851",
@@ -26252,19 +22936,14 @@ class TileDictionarySource {
     {
      "position1": "tp4SideD",
      "position2": "tpCurve2RightD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCurve2RightD",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "-80020",
@@ -26281,9 +22960,7 @@ class TileDictionarySource {
     }
    ],
    "connections": [],
-   "adornments": [],
-   "isBase": true,
-   "clipTile": false
+   "isBase": true
   },
   {
    "tileId": "-80004",
@@ -26327,26 +23004,22 @@ class TileDictionarySource {
     {
      "position1": "tp3SideE",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp3SideC",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp3SideB",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp3SideF",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -26356,8 +23029,7 @@ class TileDictionarySource {
      "text": "Beijing"
     }
    ],
-   "isBase": true,
-   "clipTile": false
+   "isBase": true
   },
   {
    "tileId": "-80003",
@@ -26377,8 +23049,7 @@ class TileDictionarySource {
      "text": "S"
     }
    ],
-   "isBase": true,
-   "clipTile": false
+   "isBase": true
   },
   {
    "tileId": "-80002",
@@ -26395,9 +23066,7 @@ class TileDictionarySource {
     }
    ],
    "connections": [],
-   "adornments": [],
-   "isBase": true,
-   "clipTile": false
+   "isBase": true
   },
   {
    "tileId": "-80001",
@@ -26410,9 +23079,7 @@ class TileDictionarySource {
     }
    ],
    "connections": [],
-   "adornments": [],
-   "isBase": true,
-   "clipTile": false
+   "isBase": true
   },
   {
    "tileId": "8888",
@@ -26472,224 +23139,187 @@ class TileDictionarySource {
     {
      "position1": "tp3SideC",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp3SideB",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp3SideA",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp3SideF",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp3SideE",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp3SideD",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp3SideD",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp3SideD",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp3SideD",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp3SideD",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp3SideD",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp3SideC",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp3SideC",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp3SideC",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp3SideC",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp3SideC",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp3SideC",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp3SideB",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp3SideB",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp3SideB",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp3SideB",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp3SideB",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp3SideA",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp3SideA",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp3SideA",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp3SideA",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp3SideA",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp3SideF",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp3SideF",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp3SideF",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp3SideF",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp3SideF",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp3SideE",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp3SideE",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp3SideE",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp3SideE",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp3SideE",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -26698,9 +23328,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "B"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "-503",
@@ -26716,19 +23344,15 @@ class TileDictionarySource {
     {
      "position1": "tp4SideD",
      "position2": "tp2CornerE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2CornerE",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
-   "adornments": [],
-   "isBase": true,
-   "clipTile": false
+   "isBase": true
   },
   {
    "tileId": "-557",
@@ -26744,19 +23368,15 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
-   "adornments": [],
-   "isBase": true,
-   "clipTile": false
+   "isBase": true
   },
   {
    "tileId": "-558",
@@ -26776,19 +23396,15 @@ class TileDictionarySource {
     {
      "position1": "tp4SideA",
      "position2": "tp1SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp1SideF",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
-   "adornments": [],
-   "isBase": true,
-   "clipTile": false
+   "isBase": true
   },
   {
    "tileId": "1481",
@@ -26808,25 +23424,19 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
-   ],
-   "adornments": [],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "1482",
@@ -26846,38 +23456,32 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -26886,9 +23490,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "S"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "1483",
@@ -26908,26 +23510,22 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -26936,9 +23534,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "B"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "1484",
@@ -26958,32 +23554,27 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -26992,9 +23583,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "B"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "-10002",
@@ -27014,20 +23603,17 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -27037,8 +23623,7 @@ class TileDictionarySource {
      "text": "B"
     }
    ],
-   "isBase": true,
-   "clipTile": false
+   "isBase": true
   },
   {
    "tileId": "-10003",
@@ -27058,26 +23643,22 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -27087,8 +23668,7 @@ class TileDictionarySource {
      "text": "S"
     }
    ],
-   "isBase": true,
-   "clipTile": false
+   "isBase": true
   },
   {
    "tileId": "-30006",
@@ -27108,31 +23688,25 @@ class TileDictionarySource {
     {
      "position1": "tp4SideE",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideE",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideB",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideD",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
-   "adornments": [],
-   "isBase": true,
-   "clipTile": false
+   "isBase": true
   },
   {
    "tileId": "-30007",
@@ -27152,55 +23726,45 @@ class TileDictionarySource {
     {
      "position1": "tp4SideE",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideE",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideB",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideD",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideE",
      "position2": "tp2CornerA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideD",
      "position2": "tp2CornerA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideB",
      "position2": "tp2CornerA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideC",
      "position2": "tp2CornerA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
-   "adornments": [],
-   "isBase": true,
-   "clipTile": false
+   "isBase": true
   },
   {
    "tileId": "-10004",
@@ -27228,14 +23792,12 @@ class TileDictionarySource {
     {
      "position1": "tp2CornerA",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp2CornerE",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -27245,8 +23807,7 @@ class TileDictionarySource {
      "text": "Y"
     }
    ],
-   "isBase": true,
-   "clipTile": false
+   "isBase": true
   },
   {
    "tileId": "403",
@@ -27274,14 +23835,12 @@ class TileDictionarySource {
     {
      "position1": "tp1SideA",
      "position2": "tp3SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp3SideD",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -27290,9 +23849,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "COP"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "1121",
@@ -27312,20 +23869,17 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -27334,9 +23888,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "COP"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "1584",
@@ -27356,38 +23908,32 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
@@ -27396,9 +23942,7 @@ class TileDictionarySource {
      "adornmentType": "Text",
      "text": "COP"
     }
-   ],
-   "isBase": false,
-   "clipTile": false
+   ]
   },
   {
    "tileId": "-4007",
@@ -27409,13 +23953,10 @@ class TileDictionarySource {
     {
      "position1": "tp4SideD",
      "position2": "tp4SideE",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     }
    ],
-   "adornments": [],
-   "isBase": true,
-   "clipTile": false
+   "isBase": true
   },
   {
    "tileId": "-4008",
@@ -27426,13 +23967,10 @@ class TileDictionarySource {
     {
      "position1": "tp4SideD",
      "position2": "tp4SideF",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     }
    ],
-   "adornments": [],
-   "isBase": true,
-   "clipTile": false
+   "isBase": true
   },
   {
    "tileId": "-4009",
@@ -27443,13 +23981,10 @@ class TileDictionarySource {
     {
      "position1": "tp4SideD",
      "position2": "tp4SideA",
-     "connectionType": "Small",
-     "layer": 0
+     "connectionType": "Small"
     }
    ],
-   "adornments": [],
-   "isBase": true,
-   "clipTile": false
+   "isBase": true
   },
   {
    "tileId": "-26001",
@@ -27509,43 +24044,35 @@ class TileDictionarySource {
     {
      "position1": "tp3SideA",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp3SideB",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp3SideC",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp3SideD",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp3SideE",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tp3SideF",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
-   "adornments": [],
-   "isBase": true,
-   "clipTile": false
+   "isBase": true
   },
   {
    "tileId": "-26002",
@@ -27565,25 +24092,20 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
-   "adornments": [],
-   "isBase": true,
-   "clipTile": false
+   "isBase": true
   },
   {
    "tileId": "-26003",
@@ -27603,128 +24125,54 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
     }
    ],
-   "adornments": [],
-   "isBase": true,
-   "clipTile": false
+   "isBase": true
   },
   {
-   "tileId": "-1059",
-   "name": "NL E6",
-   "color": "Yellow",
-   "junctions": [
-    {
-     "position": "tp2CornerE",
-     "junctionType": "City",
-     "revenue": {
-      "position": "tp2SideF",
-      "amount": 40
-     }
-    },
-    {
-     "position": "tp2CornerB",
-     "junctionType": "City",
-     "revenue": {
-      "position": "tp2SideF",
-      "amount": 40
-     }
-    }
-   ],
-   "connections": [
-    {
-     "position1": "tp2CornerE",
-     "position2": "tp4SideD",
-     "connectionType": "Normal",
-     "layer": 0
-    },
-    {
-     "position1": "tp2CornerB",
-     "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
-    }
-   ],
-   "adornments": [
-    {
-     "position": "tp3SideC",
-     "adornmentType": "Text",
-     "text": "X"
-    }
-   ],
-   "isBase": true,
-   "clipTile": false
-  },
-  {
-   "tileId": "-2059",
-   "name": "NL H3",
-   "color": "Yellow",
-   "junctions": [
-    {
-     "position": "tp2CornerE",
-     "junctionType": "City",
-     "revenue": {
-      "position": "tp2SideF",
-      "amount": 30
-     }
-    },
-    {
-     "position": "tp2CornerB",
-     "junctionType": "City",
-     "revenue": {
-      "position": "tp2SideF",
-      "amount": 30
-     }
-    }
-   ],
-   "connections": [
-    {
-     "position1": "tp4SideD",
-     "position2": "tp2CornerE",
-     "connectionType": "Normal",
-     "layer": 0
-    },
-    {
-     "position1": "tp4SideB",
-     "position2": "tp2CornerB",
-     "connectionType": "Normal",
-     "layer": 0
-    }
-   ],
-   "adornments": [
-    {
-     "position": "tp3SideC",
-     "adornmentType": "Text",
-     "text": "X"
-    }
-   ],
-   "isBase": true,
-   "clipTile": false
-  },
-  {
-   "tileId": "-1759",
-   "name": "NL B15",
-   "color": "Green",
+   "tileId": "-37001",
+   "name": "RGTE",
+   "color": "Fixed",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "City",
+     "junctionType": "WhistleStop"
+    }
+   ],
+   "connections": [
+    {
+     "position1": "tpCenter",
+     "position2": "tp4SideA",
+     "connectionType": "Normal"
+    }
+   ],
+   "isBase": true
+  },
+  {
+   "tileId": "-37002",
+   "name": "ZKB",
+   "color": "Fixed",
+   "junctions": [
+    {
+     "position": "tpCenter",
+     "junctionType": "WhistleStop"
+    },
+    {
+     "position": "tpCurve1LeftE",
+     "junctionType": "WhistleStop",
      "revenue": {
-      "position": "tp3SideA",
+      "position": "tp3CornerE",
       "amount": 10
      }
     }
@@ -27732,25 +24180,94 @@ class TileDictionarySource {
    "connections": [
     {
      "position1": "tpCenter",
-     "position2": "tp4SideE",
-     "connectionType": "Normal",
-     "layer": 0
-    }
-   ],
-   "adornments": [
+     "position2": "tp4SideA",
+     "connectionType": "Normal"
+    },
     {
-     "position": "tp3SideD",
-     "adornmentType": "Text",
-     "text": "Z"
+     "position1": "tpCurve1LeftE",
+     "position2": "tp4SideE",
+     "connectionType": "Normal"
+    },
+    {
+     "position1": "tpCurve1LeftE",
+     "position2": "tp4SideF",
+     "connectionType": "Normal"
     }
    ],
-   "isBase": true,
-   "clipTile": false
+   "isBase": true
   },
   {
-   "tileId": "-1101",
-   "name": "NL F13",
+   "tileId": "-37003",
+   "name": "EHS",
    "color": "Fixed",
+   "junctions": [
+    {
+     "position": "tpCenter",
+     "junctionType": "WhistleStop"
+    }
+   ],
+   "connections": [
+    {
+     "position1": "tpCenter",
+     "position2": "tp4SideA",
+     "connectionType": "Normal"
+    },
+    {
+     "position1": "tp4SideF",
+     "position2": "tp4SideE",
+     "connectionType": "Normal"
+    }
+   ],
+   "isBase": true
+  },
+  {
+   "tileId": "-37007",
+   "name": "T",
+   "color": "Ground",
+   "junctions": [
+    {
+     "position": "tpCenter",
+     "junctionType": "City"
+    },
+    {
+     "position": "tp1CornerC",
+     "junctionType": "None"
+    }
+   ],
+   "connections": [],
+   "adornments": [
+    {
+     "position": "tp3CornerF",
+     "adornmentType": "Text",
+     "text": "T"
+    }
+   ],
+   "isBase": true
+  },
+  {
+   "tileId": "-37008",
+   "name": "X",
+   "color": "Ground",
+   "junctions": [
+    {
+     "position": "tpCenter",
+     "junctionType": "City"
+    }
+   ],
+   "connections": [],
+   "adornments": [
+    {
+     "position": "tp3CornerF",
+     "adornmentType": "Text",
+     "text": "X"
+    }
+   ],
+   "isBase": true
+  },
+  {
+   "tileId": "-37009",
+   "name": "Bregenz",
+   "color": "Green",
    "junctions": [
     {
      "position": "tpCenter",
@@ -27763,393 +24280,1054 @@ class TileDictionarySource {
    ],
    "connections": [
     {
+     "position1": "tpCenter",
+     "position2": "tp4SideB",
+     "connectionType": "Normal"
+    }
+   ],
+   "isBase": true
+  },
+  {
+   "tileId": "-37010",
+   "name": "BudaPest",
+   "color": "Yellow",
+   "junctions": [
+    {
+     "position": "tp1SideF",
+     "junctionType": "City",
+     "revenue": {
+      "position": "tp2SideB",
+      "amount": 40
+     }
+    },
+    {
+     "position": "tp2CornerD",
+     "junctionType": "City",
+     "revenue": {
+      "position": "tp2SideB",
+      "amount": 40
+     }
+    }
+   ],
+   "connections": [
+    {
+     "position1": "tp2CornerD",
+     "position2": "tp4SideD",
+     "connectionType": "Normal"
+    },
+    {
+     "position1": "tp2CornerD",
+     "position2": "tp4SideC",
+     "connectionType": "Normal"
+    },
+    {
+     "position1": "tp1SideF",
+     "position2": "tp4SideE",
+     "connectionType": "Normal"
+    },
+    {
+     "position1": "tp1SideF",
+     "position2": "tp4SideA",
+     "connectionType": "Normal"
+    }
+   ],
+   "isBase": true
+  },
+  {
+   "tileId": "-37011",
+   "name": "Marburg",
+   "color": "Yellow",
+   "junctions": [
+    {
+     "position": "tpCenter",
+     "junctionType": "City",
+     "revenue": {
+      "position": "tp3CornerA",
+      "amount": 30
+     }
+    }
+   ],
+   "connections": [
+    {
+     "position1": "tpCenter",
+     "position2": "tp4SideE",
+     "connectionType": "Normal"
+    }
+   ],
+   "adornments": [
+    {
+     "position": "tp3CornerC",
+     "adornmentType": "Text",
+     "text": "X"
+    }
+   ],
+   "isBase": true
+  },
+  {
+   "tileId": "-37012",
+   "name": "Wien",
+   "color": "Yellow",
+   "junctions": [
+    {
+     "position": "tp2CornerB",
+     "junctionType": "City",
+     "revenue": {
+      "position": "tpCenter",
+      "amount": 40
+     }
+    },
+    {
+     "position": "tpCurve2LeftF",
+     "junctionType": "City",
+     "revenue": {
+      "position": "tpCenter",
+      "amount": 40
+     }
+    },
+    {
+     "position": "tpCurve2RightE",
+     "junctionType": "City",
+     "revenue": {
+      "position": "tpCenter",
+      "amount": 40
+     }
+    },
+    {
+     "position": "tp2CornerD",
+     "junctionType": "City",
+     "revenue": {
+      "position": "tpCenter",
+      "amount": 40
+     }
+    }
+   ],
+   "connections": [
+    {
+     "position1": "tp2CornerB",
+     "position2": "tp4SideA",
+     "connectionType": "Normal"
+    },
+    {
+     "position1": "tpCurve2LeftF",
+     "position2": "tp4SideF",
+     "connectionType": "Normal"
+    },
+    {
+     "position1": "tpCurve2RightE",
+     "position2": "tp4SideE",
+     "connectionType": "Normal"
+    },
+    {
+     "position1": "tp2CornerD",
+     "position2": "tp4SideD",
+     "connectionType": "Normal"
+    }
+   ],
+   "adornments": [
+    {
+     "position": "tp2CornerC",
+     "adornmentType": "Text",
+     "text": "Wien"
+    }
+   ],
+   "isBase": true
+  },
+  {
+   "tileId": "-37156",
+   "name": "-37156",
+   "color": "Yellow",
+   "junctions": [
+    {
+     "position": "tpCurve2RightF",
+     "junctionType": "WhistleStop",
+     "revenue": {
+      "position": "tp3CornerA",
+      "amount": 10
+     }
+    },
+    {
+     "position": "tpCurve2LeftC",
+     "junctionType": "WhistleStop",
+     "revenue": {
+      "position": "tp3CornerC",
+      "amount": 10
+     }
+    }
+   ],
+   "connections": [
+    {
+     "position1": "tpCurve2RightF",
+     "position2": "tp4SideF",
+     "connectionType": "Normal"
+    },
+    {
+     "position1": "tpCurve2RightF",
+     "position2": "tp4SideD",
+     "connectionType": "Normal"
+    },
+    {
+     "position1": "tpCurve2LeftC",
+     "position2": "tp4SideC",
+     "connectionType": "Normal"
+    },
+    {
+     "position1": "tpCurve2LeftC",
+     "position2": "tp4SideE",
+     "connectionType": "Normal"
+    }
+   ],
+   "isBase": true
+  },
+  {
+   "tileId": "-37103",
+   "name": "-37103",
+   "color": "Yellow",
+   "junctions": [
+    {
+     "position": "tp2CornerA",
+     "junctionType": "WhistleStop",
+     "revenue": {
+      "position": "tp3CornerF",
+      "amount": 10
+     }
+    }
+   ],
+   "connections": [
+    {
+     "position1": "tp2CornerA",
+     "position2": "tp4SideA",
+     "connectionType": "Normal"
+    },
+    {
+     "position1": "tp2CornerA",
+     "position2": "tp4SideF",
+     "connectionType": "Normal"
+    }
+   ],
+   "isBase": true
+  },
+  {
+   "tileId": "-37109",
+   "name": "-37109",
+   "color": "Yellow",
+   "junctions": [],
+   "connections": [
+    {
      "position1": "tp4SideE",
-     "position2": "tpCenter",
-     "connectionType": "Normal",
-     "layer": 0
+     "position2": "tp4SideB",
+     "connectionType": "Normal"
+    }
+   ],
+   "isBase": true
+  },
+  {
+   "tileId": "-37123",
+   "name": "-37123",
+   "color": "Green",
+   "junctions": [],
+   "connections": [
+    {
+     "position1": "tp4SideA",
+     "position2": "tp4SideD",
+     "connectionType": "Normal"
+    },
+    {
+     "position1": "tp4SideA",
+     "position2": "tp4SideE",
+     "connectionType": "Normal"
+    }
+   ],
+   "isBase": true
+  },
+  {
+   "tileId": "-37158",
+   "name": "-37158",
+   "color": "Yellow",
+   "junctions": [
+    {
+     "position": "tp1SideA",
+     "junctionType": "WhistleStop",
+     "revenue": {
+      "position": "tp1CornerE",
+      "amount": 10
+     }
+    }
+   ],
+   "connections": [
+    {
+     "position1": "tp1SideA",
+     "position2": "tp4SideB",
+     "connectionType": "Normal"
+    },
+    {
+     "position1": "tp1SideA",
+     "position2": "tp4SideF",
+     "connectionType": "Normal"
+    }
+   ],
+   "isBase": true
+  },
+  {
+   "tileId": "-37206",
+   "name": "Fuenfkirchen",
+   "color": "Green",
+   "junctions": [
+    {
+     "position": "tpCenter",
+     "junctionType": "City",
+     "revenue": {
+      "position": "tp3CornerA",
+      "amount": 30
+     }
+    }
+   ],
+   "connections": [
+    {
+     "position1": "tpCenter",
+     "position2": "tp4SideE",
+     "connectionType": "Normal"
+    },
+    {
+     "position1": "tpCenter",
+     "position2": "tp4SideF",
+     "connectionType": "Normal"
+    },
+    {
+     "position1": "tpCenter",
+     "position2": "tp4SideC",
+     "connectionType": "Normal"
+    }
+   ],
+   "isBase": true
+  },
+  {
+   "tileId": "-37402",
+   "name": "Prag",
+   "color": "Yellow",
+   "junctions": [
+    {
+     "position": "tpCenter",
+     "junctionType": "City",
+     "revenue": {
+      "position": "tp3CornerA",
+      "amount": 20
+     }
+    }
+   ],
+   "connections": [
+    {
+     "position1": "tpCenter",
+     "position2": "tp4SideF",
+     "connectionType": "Normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "connectionType": "Normal"
+    }
+   ],
+   "adornments": [
+    {
+     "position": "tp3CornerF",
+     "adornmentType": "Text",
+     "text": "X"
+    }
+   ],
+   "isBase": true
+  },
+  {
+   "tileId": "-42",
+   "name": "-42",
+   "color": "Fixed",
+   "junctions": [],
+   "connections": [
+    {
+     "position1": "tp4SideD",
+     "position2": "tp4SideA",
+     "connectionType": "Normal"
+    },
+    {
+     "position1": "tp4SideD",
+     "position2": "tp4SideF",
+     "connectionType": "Normal"
+    },
+    {
+     "position1": "tp4SideA",
+     "position2": "tp4SideF",
+     "connectionType": "Normal"
+    }
+   ],
+   "isBase": true
+  },
+  {
+   "tileId": "-28",
+   "name": "-28",
+   "color": "Fixed",
+   "junctions": [],
+   "connections": [
+    {
+     "position1": "tp4SideD",
+     "position2": "tp4SideF",
+     "connectionType": "Normal"
     },
     {
      "position1": "tp4SideE",
-     "position2": "tp2CornerD",
-     "connectionType": "Normal",
-     "layer": 0
-    },
-    {
-     "position1": "tp2CornerD",
-     "position2": "tp4SideB",
-     "connectionType": "Normal",
-     "layer": 0
+     "position2": "tp4SideF",
+     "connectionType": "Normal"
     }
    ],
-   "adornments": [],
-   "isBase": true,
-   "clipTile": false
+   "isBase": true
   },
   {
-   "tileId": "1012",
-   "name": "NL X green",
-   "color": "Green",
+   "tileId": "-9700",
+   "name": "CH-K1",
+   "color": "Fixed",
    "junctions": [
     {
-     "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "position": "tp2CornerE",
+     "junctionType": "WhistleStop",
      "revenue": {
-      "position": "tp3SideD",
-      "amount": 50
-     }
-    }
-   ],
-   "connections": [
-    {
-     "position1": "tp4SideF",
-     "position2": "tpCenter",
-     "connectionType": "Normal",
-     "layer": 0
-    },
-    {
-     "position1": "tp4SideA",
-     "position2": "tpCenter",
-     "connectionType": "Normal",
-     "layer": 0
-    },
-    {
-     "position1": "tp4SideB",
-     "position2": "tpCenter",
-     "connectionType": "Normal",
-     "layer": 0
-    }
-   ],
-   "adornments": [
-    {
-     "position": "tp3SideC",
-     "adornmentType": "Text",
-     "text": "X"
-    }
-   ],
-   "isBase": false,
-   "clipTile": false
-  },
-  {
-   "tileId": "1013",
-   "name": "NL X green",
-   "color": "Green",
-   "junctions": [
-    {
-     "position": "tpCenter",
-     "junctionType": "DoubleCity",
-     "revenue": {
-      "position": "tp3SideA",
-      "amount": 50
-     }
-    }
-   ],
-   "connections": [
-    {
-     "position1": "tp4SideF",
-     "position2": "tpCenter",
-     "connectionType": "Normal",
-     "layer": 0
-    },
-    {
-     "position1": "tp4SideB",
-     "position2": "tpCenter",
-     "connectionType": "Normal",
-     "layer": 0
-    },
-    {
-     "position1": "tp4SideD",
-     "position2": "tpCenter",
-     "connectionType": "Normal",
-     "layer": 0
-    }
-   ],
-   "adornments": [
-    {
-     "position": "tp3SideC",
-     "adornmentType": "Text",
-     "text": "X"
-    }
-   ],
-   "isBase": false,
-   "clipTile": false
-  },
-  {
-   "tileId": "1205",
-   "name": "NL X green",
-   "color": "Green",
-   "junctions": [
-    {
-     "position": "tpCenter",
-     "junctionType": "DoubleCity",
-     "revenue": {
-      "position": "tp3SideE",
-      "amount": 50
-     }
-    }
-   ],
-   "connections": [
-    {
-     "position1": "tp4SideA",
-     "position2": "tpCenter",
-     "connectionType": "Normal",
-     "layer": 0
-    },
-    {
-     "position1": "tp4SideB",
-     "position2": "tpCenter",
-     "connectionType": "Normal",
-     "layer": 0
-    },
-    {
-     "position1": "tp4SideD",
-     "position2": "tpCenter",
-     "connectionType": "Normal",
-     "layer": 0
-    }
-   ],
-   "adornments": [
-    {
-     "position": "tp3SideC",
-     "adornmentType": "Text",
-     "text": "X"
-    }
-   ],
-   "isBase": false,
-   "clipTile": false
-  },
-  {
-   "tileId": "2206",
-   "name": "NL X green",
-   "color": "Green",
-   "junctions": [
-    {
-     "position": "tpCenter",
-     "junctionType": "DoubleCity",
-     "revenue": {
-      "position": "tp3SideE",
-      "amount": 50
-     }
-    }
-   ],
-   "connections": [
-    {
-     "position1": "tp4SideA",
-     "position2": "tpCenter",
-     "connectionType": "Normal",
-     "layer": 0
-    },
-    {
-     "position1": "tp4SideF",
-     "position2": "tpCenter",
-     "connectionType": "Normal",
-     "layer": 0
-    },
-    {
-     "position1": "tp4SideD",
-     "position2": "tpCenter",
-     "connectionType": "Normal",
-     "layer": 0
-    }
-   ],
-   "adornments": [
-    {
-     "position": "tp3SideC",
-     "adornmentType": "Text",
-     "text": "X"
-    }
-   ],
-   "isBase": false,
-   "clipTile": false
-  },
-  {
-   "tileId": "2218",
-   "name": "NL X brown",
-   "color": "Brown",
-   "junctions": [
-    {
-     "position": "tpCenter",
-     "junctionType": "DoubleCity",
-     "revenue": {
-      "position": "tp3SideF",
-      "amount": 70
-     }
-    }
-   ],
-   "connections": [
-    {
-     "position1": "tp4SideA",
-     "position2": "tpCenter",
-     "connectionType": "Normal",
-     "layer": 0
-    },
-    {
-     "position1": "tp4SideB",
-     "position2": "tpCenter",
-     "connectionType": "Normal",
-     "layer": 0
-    },
-    {
-     "position1": "tp4SideE",
-     "position2": "tpCenter",
-     "connectionType": "Normal",
-     "layer": 0
-    },
-    {
-     "position1": "tp4SideD",
-     "position2": "tpCenter",
-     "connectionType": "Normal",
-     "layer": 0
-    }
-   ],
-   "adornments": [
-    {
-     "position": "tp3SideC",
-     "adornmentType": "Text",
-     "text": "X"
-    }
-   ],
-   "isBase": false,
-   "clipTile": false
-  },
-  {
-   "tileId": "1219",
-   "name": "NL X brown",
-   "color": "Brown",
-   "junctions": [
-    {
-     "position": "tpCenter",
-     "junctionType": "DoubleCity",
-     "revenue": {
-      "position": "tp3SideE",
-      "amount": 70
-     }
-    }
-   ],
-   "connections": [
-    {
-     "position1": "tp4SideD",
-     "position2": "tpCenter",
-     "connectionType": "Normal",
-     "layer": 0
-    },
-    {
-     "position1": "tp4SideF",
-     "position2": "tpCenter",
-     "connectionType": "Normal",
-     "layer": 0
-    },
-    {
-     "position1": "tp4SideA",
-     "position2": "tpCenter",
-     "connectionType": "Normal",
-     "layer": 0
-    },
-    {
-     "position1": "tp4SideB",
-     "position2": "tpCenter",
-     "connectionType": "Normal",
-     "layer": 0
-    }
-   ],
-   "adornments": [
-    {
-     "position": "tp3SideC",
-     "adornmentType": "Text",
-     "text": "X"
-    }
-   ],
-   "isBase": false,
-   "clipTile": false
-  },
-  {
-   "tileId": "1336",
-   "name": "NL Z brown",
-   "color": "Brown",
-   "junctions": [
-    {
-     "position": "tpCenter",
-     "junctionType": "City",
-     "revenue": {
-      "position": "tp3SideA",
-      "amount": 70
-     }
-    }
-   ],
-   "connections": [
-    {
-     "position1": "tp4SideE",
-     "position2": "tpCenter",
-     "connectionType": "Normal",
-     "layer": 0
-    },
-    {
-     "position1": "tp4SideC",
-     "position2": "tpCenter",
-     "connectionType": "Normal",
-     "layer": 0
-    }
-   ],
-   "adornments": [
-    {
-     "position": "tp3SideD",
-     "adornmentType": "Text",
-     "text": "Z"
-    }
-   ],
-   "isBase": false,
-   "clipTile": false
-  },
-  {
-   "tileId": "-3059",
-   "name": "NL G2",
-   "color": "Yellow",
-   "junctions": [
-    {
-     "position": "tp2SideD",
-     "junctionType": "City",
-     "revenue": {
-      "position": "tp2CornerF",
+      "position": "tpCenter",
       "amount": 30
      }
+    }
+   ],
+   "connections": [
+    {
+     "position1": "tp2CornerE",
+     "position2": "tp4SideE",
+     "connectionType": "Normal"
     },
+    {
+     "position1": "tp2CornerE",
+     "position2": "tp4SideD",
+     "connectionType": "Normal"
+    }
+   ],
+   "isBase": true
+  },
+  {
+   "tileId": "-9701",
+   "name": "CH-I9",
+   "color": "Fixed",
+   "junctions": [
+    {
+     "position": "tp1SideB",
+     "junctionType": "WhistleStop",
+     "revenue": {
+      "position": "tp3CornerB",
+      "amount": 30
+     }
+    }
+   ],
+   "connections": [
+    {
+     "position1": "tp1SideB",
+     "position2": "tp4SideA",
+     "connectionType": "Normal"
+    },
+    {
+     "position1": "tp1SideB",
+     "position2": "tp4SideC",
+     "connectionType": "Normal"
+    }
+   ],
+   "isBase": true
+  },
+  {
+   "tileId": "-9702",
+   "name": "CH-Philly",
+   "color": "Yellow",
+   "junctions": [
     {
      "position": "tp2SideA",
      "junctionType": "City",
      "revenue": {
-      "position": "tp2CornerF",
+      "position": "tp3CornerA",
+      "amount": 30
+     }
+    },
+    {
+     "position": "tp2SideD",
+     "junctionType": "City",
+     "revenue": {
+      "position": "tp3SideC",
       "amount": 30
      }
     }
    ],
    "connections": [
     {
-     "position1": "tp4SideF",
-     "position2": "tp2SideA",
-     "connectionType": "Normal",
-     "layer": 0
+     "position1": "tp2SideD",
+     "position2": "tp4SideD",
+     "connectionType": "Normal"
     },
     {
-     "position1": "tp4SideE",
-     "position2": "tp2SideD",
-     "connectionType": "Normal",
-     "layer": 0
+     "position1": "tp2SideA",
+     "position2": "tp4SideA",
+     "connectionType": "Normal"
     }
    ],
    "adornments": [
     {
-     "position": "tp3SideC",
+     "position": "tp3SideB",
      "adornmentType": "Text",
-     "text": "X"
+     "text": "OO"
     }
    ],
-   "isBase": true,
-   "clipTile": false
+   "isBase": true
+  },
+  {
+   "tileId": "-9703",
+   "name": "CH-Baltimore",
+   "color": "Yellow",
+   "junctions": [
+    {
+     "position": "tp2SideB",
+     "junctionType": "City",
+     "revenue": {
+      "position": "tp3SideA",
+      "amount": 30
+     }
+    },
+    {
+     "position": "tp2SideE",
+     "junctionType": "City",
+     "revenue": {
+      "position": "tp3SideD",
+      "amount": 30
+     }
+    }
+   ],
+   "connections": [
+    {
+     "position1": "tp2SideE",
+     "position2": "tp4SideE",
+     "connectionType": "Normal"
+    },
+    {
+     "position1": "tp2SideB",
+     "position2": "tp4SideB",
+     "connectionType": "Normal"
+    }
+   ],
+   "adornments": [
+    {
+     "position": "tp3CornerA",
+     "adornmentType": "Text",
+     "text": "OO"
+    }
+   ],
+   "isBase": true
+  },
+  {
+   "tileId": "9704",
+   "name": "CH-X2",
+   "color": "Green",
+   "junctions": [
+    {
+     "position": "tpCenter",
+     "junctionType": "DoubleCity",
+     "revenue": {
+      "position": "tp3CornerE",
+      "amount": 40
+     }
+    }
+   ],
+   "connections": [
+    {
+     "position1": "tpCenter",
+     "position2": "tp4SideF",
+     "connectionType": "Normal"
+    },
+    {
+     "position1": "tpCenter",
+     "position2": "tp4SideE",
+     "connectionType": "Normal"
+    },
+    {
+     "position1": "tpCenter",
+     "position2": "tp4SideD",
+     "connectionType": "Normal"
+    },
+    {
+     "position1": "tpCenter",
+     "position2": "tp4SideC",
+     "connectionType": "Normal"
+    },
+    {
+     "position1": "tpCenter",
+     "position2": "tp4SideB",
+     "connectionType": "Normal"
+    }
+   ],
+   "adornments": [
+    {
+     "position": "tp3SideA",
+     "adornmentType": "Text",
+     "text": "DC"
+    }
+   ]
+  },
+  {
+   "tileId": "9705",
+   "name": "CH-X3",
+   "color": "Green",
+   "junctions": [
+    {
+     "position": "tpCurve2LeftA",
+     "junctionType": "City",
+     "revenue": {
+      "position": "tp3CornerA",
+      "amount": 40
+     }
+    },
+    {
+     "position": "tpCurve2LeftD",
+     "junctionType": "City",
+     "revenue": {
+      "position": "tp3SideE",
+      "amount": 40
+     }
+    }
+   ],
+   "connections": [
+    {
+     "position1": "tpCurve2LeftA",
+     "position2": "tp4SideA",
+     "connectionType": "Normal"
+    },
+    {
+     "position1": "tpCurve2LeftA",
+     "position2": "tp4SideC",
+     "connectionType": "Normal"
+    },
+    {
+     "position1": "tpCurve2LeftD",
+     "position2": "tp4SideF",
+     "connectionType": "Normal"
+    },
+    {
+     "position1": "tpCurve2LeftD",
+     "position2": "tp4SideD",
+     "connectionType": "Normal"
+    }
+   ],
+   "adornments": [
+    {
+     "position": "tp3CornerF",
+     "adornmentType": "Text",
+     "text": "OO"
+    }
+   ]
+  },
+  {
+   "tileId": "9706",
+   "name": "CH-X4",
+   "color": "Green",
+   "junctions": [
+    {
+     "position": "tp2CornerE",
+     "junctionType": "City",
+     "revenue": {
+      "position": "tp3CornerD",
+      "amount": 20
+     }
+    },
+    {
+     "position": "tp2CornerA",
+     "junctionType": "City",
+     "revenue": {
+      "position": "tp3CornerB",
+      "amount": 20
+     }
+    }
+   ],
+   "connections": [
+    {
+     "position1": "tpCurve1RightA",
+     "position2": "tp4SideA",
+     "connectionType": "Normal"
+    },
+    {
+     "position1": "tpCurve1RightA",
+     "position2": "tp4SideF",
+     "connectionType": "Normal"
+    },
+    {
+     "position1": "tpCurve1LeftD",
+     "position2": "tp4SideD",
+     "connectionType": "Normal"
+    },
+    {
+     "position1": "tpCurve1LeftD",
+     "position2": "tp4SideE",
+     "connectionType": "Normal"
+    }
+   ],
+   "adornments": [
+    {
+     "position": "tp2CornerC",
+     "adornmentType": "Text",
+     "text": "OO"
+    }
+   ]
+  },
+  {
+   "tileId": "9707",
+   "name": "CH-X5",
+   "color": "Green",
+   "junctions": [
+    {
+     "position": "tpCurve2RightD",
+     "junctionType": "City",
+     "revenue": {
+      "position": "tp3CornerE",
+      "amount": 40
+     }
+    },
+    {
+     "position": "tpCurve2LeftA",
+     "junctionType": "City",
+     "revenue": {
+      "position": "tp3CornerA",
+      "amount": 40
+     }
+    }
+   ],
+   "connections": [
+    {
+     "position1": "tpCurve2LeftA",
+     "position2": "tp4SideA",
+     "connectionType": "Normal"
+    },
+    {
+     "position1": "tpCurve2LeftA",
+     "position2": "tp4SideC",
+     "connectionType": "Normal"
+    },
+    {
+     "position1": "tpCurve2RightD",
+     "position2": "tp4SideD",
+     "connectionType": "Normal",
+     "layer": 2
+    },
+    {
+     "position1": "tpCurve2RightD",
+     "position2": "tp4SideB",
+     "connectionType": "Normal",
+     "layer": 2
+    }
+   ],
+   "adornments": [
+    {
+     "position": "tp3CornerF",
+     "adornmentType": "Text",
+     "text": "OO"
+    }
+   ]
+  },
+  {
+   "tileId": "9708",
+   "name": "CH-X6",
+   "color": "Brown",
+   "junctions": [
+    {
+     "position": "tpCenter",
+     "junctionType": "TripleCity",
+     "revenue": {
+      "position": "tp3CornerB",
+      "amount": 70
+     }
+    }
+   ],
+   "connections": [
+    {
+     "position1": "tpCenter",
+     "position2": "tp4SideA",
+     "connectionType": "Normal"
+    },
+    {
+     "position1": "tpCenter",
+     "position2": "tp4SideB",
+     "connectionType": "Normal"
+    },
+    {
+     "position1": "tpCenter",
+     "position2": "tp4SideC",
+     "connectionType": "Normal"
+    },
+    {
+     "position1": "tpCenter",
+     "position2": "tp4SideD",
+     "connectionType": "Normal"
+    },
+    {
+     "position1": "tpCenter",
+     "position2": "tp4SideE",
+     "connectionType": "Normal"
+    },
+    {
+     "position1": "tpCenter",
+     "position2": "tp4SideF",
+     "connectionType": "Normal"
+    }
+   ],
+   "adornments": [
+    {
+     "position": "tp3CornerA",
+     "adornmentType": "Text",
+     "text": "DC"
+    }
+   ]
+  },
+  {
+   "tileId": "9709",
+   "name": "CH-X7",
+   "color": "Brown",
+   "junctions": [
+    {
+     "position": "tpCenter",
+     "junctionType": "DoubleCity",
+     "revenue": {
+      "position": "tp3CornerE",
+      "amount": 50
+     }
+    }
+   ],
+   "connections": [
+    {
+     "position1": "tpCenter",
+     "position2": "tp4SideF",
+     "connectionType": "Normal"
+    },
+    {
+     "position1": "tpCenter",
+     "position2": "tp4SideE",
+     "connectionType": "Normal"
+    },
+    {
+     "position1": "tpCenter",
+     "position2": "tp4SideD",
+     "connectionType": "Normal"
+    },
+    {
+     "position1": "tpCenter",
+     "position2": "tp4SideC",
+     "connectionType": "Normal"
+    },
+    {
+     "position1": "tpCenter",
+     "position2": "tp4SideB",
+     "connectionType": "Normal"
+    }
+   ],
+   "adornments": [
+    {
+     "position": "tp3SideA",
+     "adornmentType": "Text",
+     "text": "OO"
+    }
+   ]
+  },
+  {
+   "tileId": "9710",
+   "name": "CH-X8",
+   "color": "Gray",
+   "junctions": [
+    {
+     "position": "tpCenter",
+     "junctionType": "QuadCity",
+     "revenue": {
+      "position": "tp3CornerF",
+      "amount": 100
+     }
+    }
+   ],
+   "connections": [
+    {
+     "position1": "tpCenter",
+     "position2": "tp4SideA",
+     "connectionType": "Normal"
+    },
+    {
+     "position1": "tpCenter",
+     "position2": "tp4SideB",
+     "connectionType": "Normal"
+    },
+    {
+     "position1": "tpCenter",
+     "position2": "tp4SideC",
+     "connectionType": "Normal"
+    },
+    {
+     "position1": "tpCenter",
+     "position2": "tp4SideD",
+     "connectionType": "Normal"
+    },
+    {
+     "position1": "tpCenter",
+     "position2": "tp4SideE",
+     "connectionType": "Normal"
+    },
+    {
+     "position1": "tpCenter",
+     "position2": "tp4SideF",
+     "connectionType": "Normal"
+    }
+   ],
+   "adornments": [
+    {
+     "position": "tp3CornerA",
+     "adornmentType": "Text",
+     "text": "DC"
+    }
+   ]
+  },
+  {
+   "tileId": "9711",
+   "name": "CH-X9",
+   "color": "Gray",
+   "junctions": [
+    {
+     "position": "tpCenter",
+     "junctionType": "TripleCity",
+     "revenue": {
+      "position": "tp3CornerF",
+      "amount": 70
+     }
+    }
+   ],
+   "connections": [
+    {
+     "position1": "tpCenter",
+     "position2": "tp4SideB",
+     "connectionType": "Normal"
+    },
+    {
+     "position1": "tpCenter",
+     "position2": "tp4SideC",
+     "connectionType": "Normal"
+    },
+    {
+     "position1": "tpCenter",
+     "position2": "tp4SideD",
+     "connectionType": "Normal"
+    },
+    {
+     "position1": "tpCenter",
+     "position2": "tp4SideE",
+     "connectionType": "Normal"
+    },
+    {
+     "position1": "tpCenter",
+     "position2": "tp4SideF",
+     "connectionType": "Normal"
+    }
+   ],
+   "adornments": [
+    {
+     "position": "tp3SideA",
+     "adornmentType": "Text",
+     "text": "OO"
+    }
+   ]
+  },
+  {
+   "tileId": "915",
+   "name": "915",
+   "color": "Gray",
+   "junctions": [
+    {
+     "position": "tpCenter",
+     "junctionType": "TripleCity",
+     "revenue": {
+      "position": "tp3SideA",
+      "amount": 50
+     }
+    }
+   ],
+   "connections": [
+    {
+     "position1": "tpCenter",
+     "position2": "tp4SideB",
+     "connectionType": "Normal"
+    },
+    {
+     "position1": "tpCenter",
+     "position2": "tp4SideC",
+     "connectionType": "Normal"
+    },
+    {
+     "position1": "tpCenter",
+     "position2": "tp4SideD",
+     "connectionType": "Normal"
+    },
+    {
+     "position1": "tpCenter",
+     "position2": "tp4SideE",
+     "connectionType": "Normal"
+    },
+    {
+     "position1": "tpCenter",
+     "position2": "tp4SideF",
+     "connectionType": "Normal"
+    }
+   ]
+  },
+  {
+   "tileId": "-9712",
+   "name": "CH-DC",
+   "color": "Ground",
+   "junctions": [
+    {
+     "position": "tp2CornerC",
+     "junctionType": "City"
+    }
+   ],
+   "connections": [],
+   "adornments": [
+    {
+     "position": "tp2SideE",
+     "adornmentType": "Text",
+     "text": "DC"
+    }
+   ],
+   "isBase": true
+  },
+  {
+   "tileId": "9713",
+   "name": "CH-X1",
+   "color": "Yellow",
+   "junctions": [
+    {
+     "position": "tpCenter",
+     "junctionType": "City",
+     "revenue": {
+      "position": "tp3CornerA",
+      "amount": 30
+     }
+    }
+   ],
+   "connections": [
+    {
+     "position1": "tpCenter",
+     "position2": "tp4SideB",
+     "connectionType": "Normal"
+    },
+    {
+     "position1": "tpCenter",
+     "position2": "tp4SideD",
+     "connectionType": "Normal"
+    }
+   ],
+   "adornments": [
+    {
+     "position": "tp3CornerF",
+     "adornmentType": "Text",
+     "text": "DC"
+    }
+   ]
   }
  ]
 }'''; 

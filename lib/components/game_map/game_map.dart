@@ -109,6 +109,9 @@ class GameMap {
       int r = qr.y;
       //var index = _getIndicies(q, r, rows, cols, orientation);
       //Debug.WriteLine($"Got QR {q},{r} xy:{x},{y} loc:{(int)t.Location.X},{(int)t.Location.Y}");
+      
+      // fix up the TileDictionary with anything from the TileManifest
+      tileManifest.replaceTileDefs(tileDictionary);
       TileManifestItem manifestItem;
       if (tileManifest.manifest.containsKey(t.id.toString())) {
         manifestItem = tileManifest.getTile(t.id.toString());

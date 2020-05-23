@@ -29,6 +29,20 @@ class TileDictionary {
     return tiles[id];
   }
 
+  /// changes the id of a tile in the dictionary
+  void replace(String oldId, String newId) {
+    var tileDef = getTile(oldId);
+    if (tileDef == null) {
+      throw ArgumentError('TileDef $oldId not found in the TileDictionary');
+    }
+    if (_tiles.containsKey(newId)) {
+      throw ArgumentError('Can\'t replace existing tile ${newId} in the TileDictionary');
+    }
+
+    _tiles.remove(oldId);
+    _tiles[newId] = TileDefinition.newId(tileDef, newId);
+  }
+
   void applyClipList(Iterable<int> list) {
     for (var item in list) {
       tiles[item].clipTile = true;

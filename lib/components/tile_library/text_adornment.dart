@@ -14,5 +14,5 @@ class TextAdornment extends Adornment {
 
   TextAdornment.fromJson(Map<String, dynamic> json)
       : text = json['text'] as String,
-        super.fromJson(json);
+        super.jsonFinish(json);
 }
