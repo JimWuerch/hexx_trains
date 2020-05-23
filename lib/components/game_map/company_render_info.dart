@@ -14,7 +14,7 @@ class CompanyRenderInfo {
         'color': color,
         'isLightOnDark': isLightOnDark,
       };
-
+  
   CompanyRenderInfo.fromJson(Map<String, dynamic> json)
       : name = json['name'] as String,
         shortName = json['shortName'] as String,

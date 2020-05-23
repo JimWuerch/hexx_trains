@@ -49,18 +49,18 @@ class MapLoader {
             if (node.nodeType == xml.XmlNodeType.ELEMENT) {
               xml.XmlElement element = node as xml.XmlElement;
               if (element.name.local == 'tiles') {
-                mapTiles = _parseTiles(element, aRowOdd, lettersVertical);
+                mapTiles = _parseTiles(element, aRowOdd, lettersVertical, orientation == MapOrientation.pointy);
               } else if (element.name.local == 'barriers') {
-                barriers = _parseBarriers(element, aRowOdd, lettersVertical);
+                barriers = _parseBarriers(element, aRowOdd, lettersVertical, orientation == MapOrientation.pointy);
               } else if (element.name.local == 'maptext') {
-                mapText = _parseMapText(element, aRowOdd, lettersVertical);
+                mapText = _parseMapText(element, aRowOdd, lettersVertical, orientation == MapOrientation.pointy);
               } else if (element.name.local == 'terrains') {
-                terrains = _parseTerrains(element, aRowOdd, lettersVertical);
+                terrains = _parseTerrains(element, aRowOdd, lettersVertical, orientation == MapOrientation.pointy);
               } else if (element.name.local == 'doodads') {
-                doodads = _parseDoodads(element, aRowOdd, lettersVertical);
+                doodads = _parseDoodads(element, aRowOdd, lettersVertical, orientation == MapOrientation.pointy);
               } else if (element.name.local == 'offmap_revenue') {
                 offmapRevenue =
-                    _parseOffmapRevenue(element, aRowOdd, lettersVertical);
+                    _parseOffmapRevenue(element, aRowOdd, lettersVertical, orientation == MapOrientation.pointy);
               } else {
                 throw ArgumentError(
                     'Unknown node ${element.name.local} in map');
@@ -85,7 +85,7 @@ class MapLoader {
   }
 
   static List<MapTile> _parseTiles(
-      xml.XmlElement tilesElement, bool aRowOdd, bool lettersVertical) {
+      xml.XmlElement tilesElement, bool aRowOdd, bool lettersVertical, bool isPointy) {
     List<MapTile> mapTiles = [];
 
     for (var node in tilesElement.children) {
@@ -106,7 +106,7 @@ class MapLoader {
         for (var attr in element.attributes) {
           if (attr.name.local == 'location') {
             location =
-                MapData.locationToCoords(attr.value, aRowOdd, lettersVertical);
+                MapData.locationToCoords(attr.value, aRowOdd, lettersVertical, isPointy);
           } else if (attr.name.local == 'id') {
             id = attr.value;
           } else if (attr.name.local == 'rotation') {
@@ -142,7 +142,7 @@ class MapLoader {
   }
 
   static List<Barrier> _parseBarriers(
-      xml.XmlElement barriersElement, bool aRowOdd, bool lettersVertical) {
+      xml.XmlElement barriersElement, bool aRowOdd, bool lettersVertical, bool isPointy) {
     List<Barrier> barriers = [];
     for (var node in barriersElement.children) {
       if (node.nodeType == xml.XmlNodeType.ELEMENT) {
@@ -157,7 +157,7 @@ class MapLoader {
         for (var attr in element.attributes) {
           if (attr.name.local == 'location') {
             location =
-                MapData.locationToCoords(attr.value, aRowOdd, lettersVertical);
+                MapData.locationToCoords(attr.value, aRowOdd, lettersVertical, isPointy);
           } else if (attr.name.local == 'side') {
             side = int.parse(attr.value);
           } else {
@@ -172,7 +172,7 @@ class MapLoader {
   }
 
   static List<MapText> _parseMapText(
-      xml.XmlElement mapTextElement, bool aRowOdd, bool lettersVertical) {
+      xml.XmlElement mapTextElement, bool aRowOdd, bool lettersVertical, bool isPointy) {
     List<MapText> mapText = [];
     for (var node in mapTextElement.children) {
       if (node.nodeType == xml.XmlNodeType.ELEMENT) {
@@ -190,7 +190,7 @@ class MapLoader {
         for (var attr in element.attributes) {
           if (attr.name.local == 'location') {
             location =
-                MapData.locationToCoords(attr.value, aRowOdd, lettersVertical);
+                MapData.locationToCoords(attr.value, aRowOdd, lettersVertical, isPointy);
           } else if (attr.name.local == 'text') {
             text = attr.value;
           } else if (attr.name.local == 'position') {
@@ -210,7 +210,7 @@ class MapLoader {
   }
 
   static List<Terrain> _parseTerrains(
-      xml.XmlElement terrainsElement, bool aRowOdd, bool lettersVertical) {
+      xml.XmlElement terrainsElement, bool aRowOdd, bool lettersVertical, bool isPointy) {
     List<Terrain> terrains = [];
     for (var node in terrainsElement.children) {
       if (node.nodeType == xml.XmlNodeType.ELEMENT) {
@@ -227,7 +227,7 @@ class MapLoader {
         for (var attr in element.attributes) {
           if (attr.name.local == 'location') {
             location =
-                MapData.locationToCoords(attr.value, aRowOdd, lettersVertical);
+                MapData.locationToCoords(attr.value, aRowOdd, lettersVertical, isPointy);
           } else if (attr.name.local == 'type') {
             terrainType = Terrain.toTerrainType(attr.value);
           } else if (attr.name.local == 'position') {
@@ -245,7 +245,7 @@ class MapLoader {
   }
 
   static List<Doodad> _parseDoodads(
-      xml.XmlElement doodadsElement, bool aRowOdd, bool lettersVertical) {
+      xml.XmlElement doodadsElement, bool aRowOdd, bool lettersVertical, bool isPointy) {
     List<Doodad> doodads = [];
     for (var node in doodadsElement.children) {
       if (node.nodeType == xml.XmlNodeType.ELEMENT) {
@@ -260,7 +260,7 @@ class MapLoader {
         for (var attr in element.attributes) {
           if (attr.name.local == 'location') {
             location =
-                MapData.locationToCoords(attr.value, aRowOdd, lettersVertical);
+                MapData.locationToCoords(attr.value, aRowOdd, lettersVertical, isPointy);
           } else if (attr.name.local == 'type') {
             doodadType = Doodad.toDoodadType(attr.value);
           } else {
@@ -270,15 +270,15 @@ class MapLoader {
         }
         doodads.add(Doodad(
             doodadType: doodadType,
-            location: math.Point<double>(
-                location.x.toDouble(), location.y.toDouble())));
+            location: math.Point<int>(
+                location.x, location.y)));
       }
     }
     return doodads;
   }
 
   static List<Revenue> _parseOffmapRevenue(
-      xml.XmlElement revenueElement, bool aRowOdd, bool lettersVertical) {
+      xml.XmlElement revenueElement, bool aRowOdd, bool lettersVertical, bool isPointy) {
     List<Revenue> revenue = [];
     for (var node in revenueElement.children) {
       if (node.nodeType == xml.XmlNodeType.ELEMENT) {
@@ -293,7 +293,7 @@ class MapLoader {
         for (var attr in element.attributes) {
           if (attr.name.local == 'location') {
             location =
-                MapData.locationToCoords(attr.value, aRowOdd, lettersVertical);
+                MapData.locationToCoords(attr.value, aRowOdd, lettersVertical, isPointy);
           } else {
             throw ArgumentError(
                 'Unknown attribute ${attr.name.local} in revenue.');

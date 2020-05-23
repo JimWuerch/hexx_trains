@@ -1,7 +1,9 @@
 import 'dart:math' as math;
 
-import 'package:hexxtrains/components/tile_library/position.dart';
 import 'package:hexxtrains/components/common/common.dart';
+import 'package:hexxtrains/components/tile_library/position.dart';
+
+import 'map_data.dart';
 
 enum TerrainTypes { moutain, river }
 
@@ -23,14 +25,15 @@ class Terrain {
   }
 
   Map<String, dynamic> toJson() => <String, dynamic>{
-        'location': location.toCoordString(),
+        'location': MapData.jsonCoordsToLocation(location),
         'terrainType': terrainType.toString().stripClassName(),
         'position': position.toTDPosition()
       };
 
   factory Terrain.fromJson(Map<String, dynamic> json) {
-    var location = PointExtensions.fromCoordStringInt(json['location'] as String);
-    var terrainType = TerrainTypes.values.firstWhere((e) => e.toString() == 'TerrainTypes.' + (json['terrainType'] as String));
+    var location = MapData.jsonLocationToCoords(json['location'] as String);
+    var terrainType =
+        TerrainTypes.values.firstWhere((e) => e.toString() == 'TerrainTypes.' + (json['terrainType'] as String));
     var position = Position.fromTDPosition(json['position'] as String);
 
     return Terrain(location: location, terrainType: terrainType, position: position);

@@ -2,6 +2,7 @@ import 'dart:convert';
 import 'dart:math' as math;
 
 import 'package:hexxtrains/components/common/common.dart';
+import 'package:hexxtrains/components/error/error.dart';
 
 import 'barrier.dart';
 import 'doodad.dart';
@@ -27,26 +28,47 @@ class MapData {
   final int width;
   final int height;
 
-  Map<String, dynamic> toJson() => <String, dynamic>{
-        'orientation': orientation.toString().stripClassName(),
-        'aRowOdd': aRowOdd,
-        'lettersVertical': lettersVertical,
-        'mapTiles': mapTiles.map<Map<String, dynamic>>((e) => e.toJson()).toList(),
-        'barriers': barriers.map<Map<String, dynamic>>((e) => e.toJson()).toList(),
-        'mapText': mapText.map<Map<String, dynamic>>((e) => e.toJson()).toList(),
-        'terrains': terrains.map<Map<String, dynamic>>((e) => e.toJson()).toList(),
-        'doodads': doodads.map<Map<String, dynamic>>((e) => e.toJson()).toList(),
-        'offmapRevenue': offmapRevenue.map<Map<String, dynamic>>((e) => e.toJson()).toList(),
-        'tileRenames': tileRenames.map<Map<String, dynamic>>((e) => e.toJson()).toList(),
-        'width': width,
-        'height': height,
-      };
+  // these are only used during json serialization
+  static bool _convertARowOdd;
+  static bool _convertLettersVertical;
+  static bool _convertIsPointy;
+
+  Map<String, dynamic> toJson() {
+    _convertARowOdd = aRowOdd;
+    _convertLettersVertical = lettersVertical;
+    _convertIsPointy = orientation == MapOrientation.pointy;
+    var ret = <String, dynamic>{
+      'orientation': orientation.toString().stripClassName(),
+      'aRowOdd': aRowOdd,
+      'lettersVertical': lettersVertical,
+      'width': width,
+      'height': height,
+      'mapTiles': mapTiles.map<Map<String, dynamic>>((e) => e.toJson()).toList(),
+      'barriers': barriers.map<Map<String, dynamic>>((e) => e.toJson()).toList(),
+      'mapText': mapText.map<Map<String, dynamic>>((e) => e.toJson()).toList(),
+      'terrains': terrains.map<Map<String, dynamic>>((e) => e.toJson()).toList(),
+      'doodads': doodads.map<Map<String, dynamic>>((e) => e.toJson()).toList(),
+      'offmapRevenue': offmapRevenue.map<Map<String, dynamic>>((e) => e.toJson()).toList(),
+      'tileRenames': tileRenames.map<Map<String, dynamic>>((e) => e.toJson()).toList(),
+    };
+
+    _convertARowOdd = null;
+    _convertLettersVertical = null;
+    _convertIsPointy = null;
+
+    return ret;
+  }
 
   factory MapData.fromJson(Map<String, dynamic> json) {
     var orientation =
         MapOrientation.values.firstWhere((e) => e.toString() == 'MapOrientation.' + (json['orientation'] as String));
     var aRowOdd = json['aRowOdd'] as bool;
     var lettersVertical = json['lettersVertical'] as bool;
+
+    _convertARowOdd = aRowOdd;
+    _convertLettersVertical = lettersVertical;
+    _convertIsPointy = orientation == MapOrientation.pointy;
+
     var width = json['width'] as int;
     var height = json['height'] as int;
     var item = json['mapTiles'] as List<dynamic>;
@@ -64,6 +86,10 @@ class MapData {
     item = json['tileRenames'] as List<dynamic>;
     var tileRenames =
         item.map<TileRename>((dynamic json) => TileRename.fromJson(json as Map<String, dynamic>)).toList();
+
+    _convertARowOdd = null;
+    _convertLettersVertical = null;
+    _convertIsPointy = null;
 
     return MapData._(
         orientation: orientation,
@@ -126,7 +152,7 @@ class MapData {
         orientation: orientation);
   }
 
-  static math.Point<int> locationToCoords(String loc, bool aRowOdd, bool lettersVertical) {
+  static math.Point<int> locationToCoords(String loc, bool aRowOdd, bool lettersVertical, bool isPointy) {
     const String letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
     int x = 0;
     int y = 0;
@@ -163,11 +189,55 @@ class MapData {
     //    B2 B4 B6 B8
     //   C1 C3 C5 C7
     //    D2 D4 D6 D8
-    if (aRowOdd) {
-      x = (x - 1) ~/ 2;
+    int offset = aRowOdd ? 1 : 0;
+    if (isPointy) {
+      x = (x - offset) ~/ 2;
+    } else {
+      y = (y - offset) ~/ 2;
     }
 
     return math.Point<int>(x, y);
+  }
+
+  static math.Point<int> jsonLocationToCoords(String location) {
+    if (_convertARowOdd == null || _convertLettersVertical == null || _convertIsPointy == null) {
+      throw InvalidOperationError('Only call coordsToLocation during json serialization');
+    }
+    return MapData.locationToCoords(location, _convertARowOdd, _convertLettersVertical, _convertIsPointy);
+  }
+
+  static String jsonCoordsToLocation(math.Point<int> coords) {
+    const String letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    if (_convertARowOdd == null || _convertLettersVertical == null || _convertIsPointy == null) {
+      throw InvalidOperationError('Only call coordsToLocation during json serialization');
+    }
+
+    int x;
+    int y;
+
+    if (_convertIsPointy) {
+      x = (coords.x + 1) * 2;
+      y = coords.y;
+      if (_convertARowOdd) {
+        if ((y % 2) == 0) {
+          x -= 1;
+        }
+      }
+    } else {
+      x = coords.x;
+      y = (coords.y + 1) * 2;
+      if (_convertARowOdd) {
+        if ((x % 2) == 0) {
+          y -= 1;
+        }
+      }
+    }
+
+    if (_convertLettersVertical) {
+      return '${letters[y]}${x}';
+    } else {
+      return '${letters[x]}${y}';
+    }
   }
 
   static math.Point<int> _calcMapSize(List<MapTile> mapTiles) {

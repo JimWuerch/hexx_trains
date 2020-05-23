@@ -19,946 +19,779 @@ class Game1830 extends GameData {
  "orientation": "pointy",
  "aRowOdd": true,
  "lettersVertical": true,
+ "width": 12,
+ "height": 11,
  "mapTiles": [
   {
-   "location": "4,0",
+   "location": "A9",
    "id": "-901",
-   "rotation": 0,
-   "arrows": [
-    2
-   ]
+   "arrows": "2"
   },
   {
-   "location": "5,0",
+   "location": "A11",
    "id": "-901",
    "rotation": 1,
-   "arrows": [
-    3,
-    4
-   ]
+   "arrows": "34"
   },
   {
-   "location": "8,0",
+   "location": "A17",
    "id": "-7",
-   "rotation": 1,
-   "arrows": []
+   "rotation": 1
   },
   {
-   "location": "9,0",
-   "id": "-103",
-   "rotation": 0,
-   "arrows": []
+   "location": "A19",
+   "id": "-103"
   },
   {
-   "location": "4,1",
-   "id": "-10",
-   "rotation": 0,
-   "arrows": []
+   "location": "B10",
+   "id": "-10"
   },
   {
-   "location": "5,1",
+   "location": "B12",
+   "id": "0"
+  },
+  {
+   "location": "B14",
+   "id": "0"
+  },
+  {
+   "location": "B16",
+   "id": "-10"
+  },
+  {
+   "location": "B18",
    "id": "0",
-   "rotation": 0,
-   "arrows": []
-  },
-  {
-   "location": "6,1",
-   "id": "0",
-   "rotation": 0,
-   "arrows": []
-  },
-  {
-   "location": "7,1",
-   "id": "-10",
-   "rotation": 0,
-   "arrows": []
-  },
-  {
-   "location": "8,1",
-   "id": "0",
-   "rotation": 0,
-   "arrows": [],
    "cost": 80,
    "costPosition": "tp3CornerD"
   },
   {
-   "location": "9,1",
+   "location": "B20",
    "id": "-1",
-   "rotation": 5,
-   "arrows": []
+   "rotation": 5
   },
   {
-   "location": "10,1",
-   "id": "0",
-   "rotation": 0,
-   "arrows": []
+   "location": "B22",
+   "id": "0"
   },
   {
-   "location": "11,1",
+   "location": "B24",
    "id": "-902",
-   "rotation": 2,
-   "arrows": []
+   "rotation": 2
   },
   {
-   "location": "3,2",
-   "id": "0",
-   "rotation": 0,
-   "arrows": []
+   "location": "C7",
+   "id": "0"
   },
   {
-   "location": "4,2",
-   "id": "0",
-   "rotation": 0,
-   "arrows": []
+   "location": "C9",
+   "id": "0"
   },
   {
-   "location": "5,2",
-   "id": "0",
-   "rotation": 0,
-   "arrows": []
+   "location": "C11",
+   "id": "0"
   },
   {
-   "location": "6,2",
-   "id": "0",
-   "rotation": 0,
-   "arrows": []
+   "location": "C13",
+   "id": "0"
   },
   {
-   "location": "7,2",
+   "location": "C15",
    "id": "-58",
-   "rotation": 2,
-   "arrows": []
+   "rotation": 2
   },
   {
-   "location": "8,2",
+   "location": "C17",
    "id": "0",
-   "rotation": 0,
-   "arrows": [],
    "cost": 120,
    "costPosition": "tp3CornerD"
   },
   {
-   "location": "9,2",
+   "location": "C19",
    "id": "0",
-   "rotation": 0,
-   "arrows": [],
    "cost": 80,
    "costPosition": "tp3CornerD"
   },
   {
-   "location": "10,2",
+   "location": "C21",
    "id": "0",
-   "rotation": 0,
-   "arrows": [],
    "cost": 120,
    "costPosition": "tp3CornerD"
   },
   {
-   "location": "11,2",
-   "id": "0",
-   "rotation": 0,
-   "arrows": []
+   "location": "C23",
+   "id": "0"
   },
   {
-   "location": "0,3",
-   "id": "-5",
-   "rotation": 0,
-   "arrows": []
+   "location": "D2",
+   "id": "-5"
   },
   {
-   "location": "1,3",
+   "location": "D4",
    "id": "-1",
-   "rotation": 3,
-   "arrows": []
+   "rotation": 3
   },
   {
-   "location": "2,3",
+   "location": "D6",
    "id": "0",
-   "rotation": 0,
-   "arrows": [],
    "cost": 80,
    "costPosition": "tp3CornerD"
   },
   {
-   "location": "3,3",
-   "id": "0",
-   "rotation": 0,
-   "arrows": []
+   "location": "D8",
+   "id": "0"
   },
   {
-   "location": "4,3",
+   "location": "D10",
    "id": "-20",
-   "rotation": 0,
-   "arrows": [],
    "cost": 80,
    "costPosition": "tp3CornerC"
   },
   {
-   "location": "5,3",
-   "id": "0",
-   "rotation": 0,
-   "arrows": []
+   "location": "D12",
+   "id": "0"
   },
   {
-   "location": "6,3",
-   "id": "-102",
-   "rotation": 0,
-   "arrows": []
+   "location": "D14",
+   "id": "-102"
   },
   {
-   "location": "7,3",
-   "id": "0",
-   "rotation": 0,
-   "arrows": []
+   "location": "D16",
+   "id": "0"
   },
   {
-   "location": "8,3",
-   "id": "0",
-   "rotation": 0,
-   "arrows": []
+   "location": "D18",
+   "id": "0"
   },
   {
-   "location": "9,3",
-   "id": "0",
-   "rotation": 0,
-   "arrows": []
+   "location": "D20",
+   "id": "0"
   },
   {
-   "location": "10,3",
+   "location": "D22",
    "id": "0",
-   "rotation": 0,
-   "arrows": [],
    "cost": 120,
    "costPosition": "tp3CornerD"
   },
   {
-   "location": "11,3",
+   "location": "D24",
    "id": "-7",
-   "rotation": 2,
-   "arrows": []
+   "rotation": 2
   },
   {
-   "location": "1,4",
-   "id": "0",
-   "rotation": 0,
-   "arrows": []
+   "location": "E3",
+   "id": "0"
   },
   {
-   "location": "2,4",
+   "location": "E5",
    "id": "-20",
    "rotation": 1,
-   "arrows": [],
    "cost": 80,
    "costPosition": "tp3CornerD"
   },
   {
-   "location": "3,4",
-   "id": "-1",
-   "rotation": 0,
-   "arrows": []
+   "location": "E7",
+   "id": "-1"
   },
   {
-   "location": "4,4",
+   "location": "E9",
    "id": "-7",
-   "rotation": 4,
-   "arrows": []
+   "rotation": 4
   },
   {
-   "location": "5,4",
-   "id": "-20",
-   "rotation": 0,
-   "arrows": []
+   "location": "E11",
+   "id": "-20"
   },
   {
-   "location": "6,4",
+   "location": "E13",
+   "id": "0"
+  },
+  {
+   "location": "E15",
+   "id": "0"
+  },
+  {
+   "location": "E17",
    "id": "0",
-   "rotation": 0,
-   "arrows": []
-  },
-  {
-   "location": "7,4",
-   "id": "0",
-   "rotation": 0,
-   "arrows": []
-  },
-  {
-   "location": "8,4",
-   "id": "0",
-   "rotation": 0,
-   "arrows": [],
    "cost": 120,
    "costPosition": "tp3CornerD"
   },
   {
-   "location": "9,4",
-   "id": "-10",
-   "rotation": 0,
-   "arrows": []
+   "location": "E19",
+   "id": "-10"
   },
   {
-   "location": "10,4",
+   "location": "E21",
    "id": "0",
-   "rotation": 0,
-   "arrows": [],
    "cost": 120,
    "costPosition": "tp3CornerD"
   },
   {
-   "location": "11,4",
+   "location": "E23",
    "id": "-11",
-   "rotation": 5,
-   "arrows": []
+   "rotation": 5
   },
   {
-   "location": "0,5",
+   "location": "F2",
    "id": "-903",
-   "rotation": 5,
-   "arrows": []
+   "rotation": 5
   },
   {
-   "location": "1,5",
+   "location": "F4",
    "id": "-10",
-   "rotation": 0,
-   "arrows": [],
    "cost": 80,
    "costPosition": "tp3CornerD"
   },
   {
-   "location": "2,5",
-   "id": "-105",
-   "rotation": 0,
-   "arrows": []
+   "location": "F6",
+   "id": "-105"
   },
   {
-   "location": "3,5",
-   "id": "0",
-   "rotation": 0,
-   "arrows": []
+   "location": "F8",
+   "id": "0"
   },
   {
-   "location": "4,5",
+   "location": "F10",
    "id": "-1",
-   "rotation": 5,
-   "arrows": []
+   "rotation": 5
   },
   {
-   "location": "5,5",
-   "id": "0",
-   "rotation": 0,
-   "arrows": []
+   "location": "F12",
+   "id": "0"
   },
   {
-   "location": "6,5",
-   "id": "0",
-   "rotation": 0,
-   "arrows": []
+   "location": "F14",
+   "id": "0"
   },
   {
-   "location": "7,5",
+   "location": "F16",
    "id": "-10",
-   "rotation": 0,
-   "arrows": [],
    "cost": 120,
    "costPosition": "tp3CornerD"
   },
   {
-   "location": "8,5",
-   "id": "0",
-   "rotation": 0,
-   "arrows": []
+   "location": "F18",
+   "id": "0"
   },
   {
-   "location": "9,5",
-   "id": "-2",
-   "rotation": 0,
-   "arrows": []
+   "location": "F20",
+   "id": "-2"
   },
   {
-   "location": "10,5",
+   "location": "F22",
    "id": "-10",
-   "rotation": 0,
-   "arrows": [],
    "cost": 80,
    "costPosition": "tp3CornerD"
   },
   {
-   "location": "11,5",
+   "location": "F24",
    "id": "-3",
-   "rotation": 2,
-   "arrows": []
+   "rotation": 2
   },
   {
-   "location": "1,6",
-   "id": "0",
-   "rotation": 0,
-   "arrows": []
+   "location": "G3",
+   "id": "0"
   },
   {
-   "location": "2,6",
-   "id": "0",
-   "rotation": 0,
-   "arrows": []
+   "location": "G5",
+   "id": "0"
   },
   {
-   "location": "3,6",
+   "location": "G7",
    "id": "-2",
-   "rotation": 5,
-   "arrows": []
+   "rotation": 5
   },
   {
-   "location": "4,6",
-   "id": "0",
-   "rotation": 0,
-   "arrows": []
+   "location": "G9",
+   "id": "0"
   },
   {
-   "location": "5,6",
-   "id": "0",
-   "rotation": 0,
-   "arrows": []
+   "location": "G11",
+   "id": "0"
   },
   {
-   "location": "6,6",
+   "location": "G13",
    "id": "0",
-   "rotation": 0,
-   "arrows": [],
    "cost": 120,
    "costPosition": "tp3CornerD"
   },
   {
-   "location": "7,6",
+   "location": "G15",
    "id": "0",
-   "rotation": 0,
-   "arrows": [],
    "cost": 120,
    "costPosition": "tp3CornerD"
   },
   {
-   "location": "8,6",
-   "id": "-2",
-   "rotation": 0,
-   "arrows": []
+   "location": "G17",
+   "id": "-2"
   },
   {
-   "location": "9,6",
+   "location": "G19",
    "id": "-21",
    "rotation": 1,
-   "arrows": [],
    "cost": 80,
    "costPosition": "tp3CornerD"
   },
   {
-   "location": "0,7",
-   "id": "0",
-   "rotation": 0,
-   "arrows": []
+   "location": "H2",
+   "id": "0"
   },
   {
-   "location": "1,7",
-   "id": "-10",
-   "rotation": 0,
-   "arrows": []
+   "location": "H4",
+   "id": "-10"
   },
   {
-   "location": "2,7",
-   "id": "0",
-   "rotation": 0,
-   "arrows": []
+   "location": "H6",
+   "id": "0"
   },
   {
-   "location": "3,7",
-   "id": "0",
-   "rotation": 0,
-   "arrows": []
+   "location": "H8",
+   "id": "0"
   },
   {
-   "location": "4,7",
-   "id": "-10",
-   "rotation": 0,
-   "arrows": []
+   "location": "H10",
+   "id": "-10"
   },
   {
-   "location": "5,7",
-   "id": "-101",
-   "rotation": 0,
-   "arrows": []
+   "location": "H12",
+   "id": "-101"
   },
   {
-   "location": "6,7",
-   "id": "0",
-   "rotation": 0,
-   "arrows": []
+   "location": "H14",
+   "id": "0"
   },
   {
-   "location": "7,7",
-   "id": "-10",
-   "rotation": 0,
-   "arrows": []
+   "location": "H16",
+   "id": "-10"
   },
   {
-   "location": "8,7",
-   "id": "-20",
-   "rotation": 0,
-   "arrows": []
+   "location": "H18",
+   "id": "-20"
   },
   {
-   "location": "0,8",
+   "location": "I1",
    "id": "-901",
-   "rotation": 5,
-   "arrows": []
+   "rotation": 5
   },
   {
-   "location": "1,8",
-   "id": "0",
-   "rotation": 0,
-   "arrows": []
+   "location": "I3",
+   "id": "0"
   },
   {
-   "location": "2,8",
-   "id": "0",
-   "rotation": 0,
-   "arrows": []
+   "location": "I5",
+   "id": "0"
   },
   {
-   "location": "3,8",
-   "id": "0",
-   "rotation": 0,
-   "arrows": []
+   "location": "I7",
+   "id": "0"
   },
   {
-   "location": "4,8",
-   "id": "0",
-   "rotation": 0,
-   "arrows": []
+   "location": "I9",
+   "id": "0"
   },
   {
-   "location": "5,8",
+   "location": "I11",
    "id": "0",
-   "rotation": 0,
-   "arrows": [],
    "cost": 120,
    "costPosition": "tp3CornerD"
   },
   {
-   "location": "6,8",
-   "id": "0",
-   "rotation": 0,
-   "arrows": []
+   "location": "I13",
+   "id": "0"
   },
   {
-   "location": "7,8",
-   "id": "-11",
-   "rotation": 0,
-   "arrows": []
+   "location": "I15",
+   "id": "-11"
   },
   {
-   "location": "8,8",
+   "location": "I17",
    "id": "0",
-   "rotation": 0,
-   "arrows": [],
    "cost": 80,
    "costPosition": "tp3CornerD"
   },
   {
-   "location": "9,8",
+   "location": "I19",
    "id": "-3",
-   "rotation": 2,
-   "arrows": []
+   "rotation": 2
   },
   {
-   "location": "0,9",
+   "location": "J2",
    "id": "-902",
-   "rotation": 5,
-   "arrows": []
+   "rotation": 5
   },
   {
-   "location": "1,9",
-   "id": "0",
-   "rotation": 0,
-   "arrows": []
+   "location": "J4",
+   "id": "0"
   },
   {
-   "location": "2,9",
-   "id": "0",
-   "rotation": 0,
-   "arrows": []
+   "location": "J6",
+   "id": "0"
   },
   {
-   "location": "3,9",
-   "id": "0",
-   "rotation": 0,
-   "arrows": []
+   "location": "J8",
+   "id": "0"
   },
   {
-   "location": "4,9",
+   "location": "J10",
    "id": "0",
-   "rotation": 0,
-   "arrows": [],
    "cost": 120,
    "costPosition": "tp3CornerD"
   },
   {
-   "location": "5,9",
+   "location": "J12",
    "id": "0",
-   "rotation": 0,
-   "arrows": [],
    "cost": 120,
    "costPosition": "tp3CornerD"
   },
   {
-   "location": "6,9",
+   "location": "J14",
    "id": "-10",
-   "rotation": 0,
-   "arrows": [],
    "cost": 80,
    "costPosition": "tp3CornerD"
   },
   {
-   "location": "6,10",
+   "location": "K13",
    "id": "-902",
-   "rotation": 4,
-   "arrows": []
+   "rotation": 4
   },
   {
-   "location": "7,10",
+   "location": "K15",
    "id": "-104",
-   "rotation": 3,
-   "arrows": []
+   "rotation": 3
   }
  ],
  "barriers": [
   {
-   "location": "8,2",
+   "location": "C17",
    "side": 5
   },
   {
-   "location": "5,3",
+   "location": "D12",
    "side": 0
   },
   {
-   "location": "5,3",
+   "location": "D12",
    "side": 5
   },
   {
-   "location": "3,4",
+   "location": "E7",
    "side": 2
   }
  ],
  "mapText": [
   {
-   "location": "9,0",
+   "location": "A19",
    "text": "Montreal",
    "position": "tp2CornerA",
    "size": 1.0
   },
   {
-   "location": "4,0",
+   "location": "A9",
    "text": "Canadian West",
    "position": "tp1CornerA",
    "size": 1.0
   },
   {
-   "location": "4,1",
+   "location": "B10",
    "text": "Barrie",
    "position": "tpCenter",
    "size": 1.0
   },
   {
-   "location": "7,1",
+   "location": "B16",
    "text": "Ottawa",
    "position": "tpCenter",
    "size": 1.0
   },
   {
-   "location": "9,1",
+   "location": "B20",
    "text": "Burlington",
    "position": "tp1SideA",
    "size": 1.0
   },
   {
-   "location": "11,1",
+   "location": "B24",
    "text": "Maritime Provinces",
    "position": "tp1CornerA",
    "size": 1.0
   },
   {
-   "location": "7,2",
+   "location": "C15",
    "text": "Kingston",
    "position": "tp1CornerD",
    "size": 1.0
   },
   {
-   "location": "0,3",
+   "location": "D2",
    "text": "Lansing",
    "position": "tp2CornerA",
    "size": 1.0
   },
   {
-   "location": "1,3",
+   "location": "D4",
    "text": "Flint",
    "position": "tp1SideD",
    "size": 1.0
   },
   {
-   "location": "4,3",
+   "location": "D10",
    "text": "Hamilton",
    "position": "tp3CornerD",
    "size": 1.0
   },
   {
-   "location": "4,3",
+   "location": "D10",
    "text": "Toronto",
    "position": "tp3CornerA",
    "size": 1.0
   },
   {
-   "location": "4,3",
+   "location": "D10",
    "text": "OO",
    "position": "tp3SideE",
    "size": 1.5
   },
   {
-   "location": "6,3",
+   "location": "D14",
    "text": "Rochester",
    "position": "tp1CornerA",
    "size": 1.0
   },
   {
-   "location": "2,4",
+   "location": "E5",
    "text": "Detroit",
    "position": "tp2SideF",
    "size": 1.0
   },
   {
-   "location": "2,4",
+   "location": "E5",
    "text": "Windsor",
    "position": "tp2SideC",
    "size": 1.0
   },
   {
-   "location": "2,4",
+   "location": "E5",
    "text": "OO",
    "position": "tp3CornerA",
    "size": 1.5
   },
   {
-   "location": "3,4",
+   "location": "E7",
    "text": "London",
    "position": "tp1SideA",
    "size": 1.0
   },
   {
-   "location": "5,4",
+   "location": "E11",
    "text": "Dunkirk",
    "position": "tp3SideC",
    "size": 1.0
   },
   {
-   "location": "5,4",
+   "location": "E11",
    "text": "Buffalo",
    "position": "tp3SideF",
    "size": 1.0
   },
   {
-   "location": "5,4",
+   "location": "E11",
    "text": "OO",
    "position": "tp3SideB",
    "size": 1.5
   },
   {
-   "location": "9,4",
+   "location": "E19",
    "text": "Albany",
    "position": "tpCenter",
    "size": 1.0
   },
   {
-   "location": "11,4",
+   "location": "E23",
    "text": "Boston",
    "position": "tp2SideD",
    "size": 1.0
   },
   {
-   "location": "11,4",
+   "location": "E23",
    "text": "B",
    "position": "tp3SideE",
    "size": 1.5
   },
   {
-   "location": "0,5",
+   "location": "F2",
    "text": "Chicago",
    "position": "tp2CornerF",
    "size": 1.0
   },
   {
-   "location": "1,5",
+   "location": "F4",
    "text": "Toledo",
    "position": "tpCenter",
    "size": 1.0
   },
   {
-   "location": "2,5",
+   "location": "F6",
    "text": "Cleveland",
    "position": "tp2CornerA",
    "size": 1.0
   },
   {
-   "location": "4,5",
+   "location": "F10",
    "text": "Erie",
    "position": "tp1SideF",
    "size": 1.0
   },
   {
-   "location": "7,5",
+   "location": "F16",
    "text": "Scranton",
    "position": "tpCenter",
    "size": 1.0
   },
   {
-   "location": "9,5",
+   "location": "F20",
    "text": "Hartford",
    "position": "tp2SideA",
    "size": 1.0
   },
   {
-   "location": "9,5",
+   "location": "F20",
    "text": "New Haven",
    "position": "tp2SideE",
    "size": 1.0
   },
   {
-   "location": "10,5",
+   "location": "F22",
    "text": "Providence",
    "position": "tpCenter",
    "size": 1.0
   },
   {
-   "location": "11,5",
+   "location": "F24",
    "text": "Fall River",
    "position": "tpCenter",
    "size": 1.0
   },
   {
-   "location": "3,6",
+   "location": "G7",
    "text": "Akron",
    "position": "tp2SideF",
    "size": 1.0
   },
   {
-   "location": "3,6",
+   "location": "G7",
    "text": "Canton",
    "position": "tp2SideD",
    "size": 1.0
   },
   {
-   "location": "8,6",
+   "location": "G17",
    "text": "Allentown",
    "position": "tp1SideA",
    "size": 1.0
   },
   {
-   "location": "8,6",
+   "location": "G17",
    "text": "Reading",
    "position": "tp2SideC",
    "size": 1.0
   },
   {
-   "location": "9,6",
+   "location": "G19",
    "text": "Newark",
    "position": "tp2SideE",
    "size": 0.8
   },
   {
-   "location": "9,6",
+   "location": "G19",
    "text": "New York",
    "position": "tp2SideB",
    "size": 0.8
   },
   {
-   "location": "9,6",
+   "location": "G19",
    "text": "NY",
    "position": "tp3CornerF",
    "size": 1.5
   },
   {
-   "location": "1,7",
+   "location": "H4",
    "text": "Columbus",
    "position": "tpCenter",
    "size": 1.0
   },
   {
-   "location": "4,7",
+   "location": "H10",
    "text": "Pittsburgh",
    "position": "tpCenter",
    "size": 1.0
   },
   {
-   "location": "5,7",
+   "location": "H12",
    "text": "Altoona",
    "position": "tp2CornerA",
    "size": 1.0
   },
   {
-   "location": "7,7",
+   "location": "H16",
    "text": "Lancaster",
    "position": "tpCenter",
    "size": 1.0
   },
   {
-   "location": "8,7",
+   "location": "H18",
    "text": "Trenton",
    "position": "tp3SideF",
    "size": 1.0
   },
   {
-   "location": "8,7",
+   "location": "H18",
    "text": "Philadelphia",
    "position": "tp1SideE",
    "size": 1.0
   },
   {
-   "location": "8,7",
+   "location": "H18",
    "text": "OO",
    "position": "tp3SideB",
    "size": 1.5
   },
   {
-   "location": "7,8",
+   "location": "I15",
    "text": "Baltimore",
    "position": "tp2CornerA",
    "size": 1.0
   },
   {
-   "location": "7,8",
+   "location": "I15",
    "text": "B",
    "position": "tp3SideE",
    "size": 1.5
   },
   {
-   "location": "9,8",
+   "location": "I19",
    "text": "Atlantic City",
    "position": "tpCenter",
    "size": 1.0
   },
   {
-   "location": "0,9",
+   "location": "J2",
    "text": "Gulf",
    "position": "tp3SideF",
    "size": 1.0
   },
   {
-   "location": "6,9",
+   "location": "J14",
    "text": "Washington",
    "position": "tpCenter",
    "size": 1.0
   },
   {
-   "location": "6,10",
+   "location": "K13",
    "text": "Deep South",
    "position": "tp1CornerD",
    "size": 1.0
   },
   {
-   "location": "7,10",
+   "location": "K15",
    "text": "Richmond",
    "position": "tp2CornerD",
    "size": 1.0
@@ -966,7 +799,7 @@ class Game1830 extends GameData {
  ],
  "terrains": [
   {
-   "location": "8,1",
+   "location": "B18",
    "terrainType": "river",
    "position": "tp3SideD"
   }
@@ -974,7 +807,7 @@ class Game1830 extends GameData {
  "doodads": [],
  "offmapRevenue": [
   {
-   "location": "4,0",
+   "location": "A9",
    "amounts": [
     {
      "phase": 0,
@@ -987,9 +820,7 @@ class Game1830 extends GameData {
    ]
   }
  ],
- "tileRenames": [],
- "width": 12,
- "height": 11
+ "tileRenames": []
 }
 ''';
 

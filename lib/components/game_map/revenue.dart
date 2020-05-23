@@ -1,6 +1,6 @@
 import 'dart:math' as math;
 
-import 'package:hexxtrains/components/common/common.dart';
+import 'map_data.dart';
 
 class RevenueAmount {
   int phase = 0;
@@ -22,12 +22,12 @@ class Revenue {
   Revenue({this.location, this.amounts});
 
   Map<String, dynamic> toJson() => <String, dynamic>{
-        'location': location.toCoordString(),
+        'location': MapData.jsonCoordsToLocation(location),
         'amounts': amounts.map<Map<String, dynamic>>((e) => e.toJson()).toList(),
       };
 
   factory Revenue.fromJson(Map<String, dynamic> json) {
-    var location = PointExtensions.fromCoordStringInt(json['location'] as String);
+    var location = MapData.jsonLocationToCoords(json['location'] as String);
     var item = json['amounts'] as List<dynamic>;
     var amounts =
         item.map<RevenueAmount>((dynamic json) => RevenueAmount.fromJson(json as Map<String, dynamic>)).toList();

@@ -1,7 +1,8 @@
 import 'dart:math' as math;
 
-import 'package:hexxtrains/components/common/common.dart';
 import 'package:hexxtrains/components/tile_library/position.dart';
+
+import 'map_data.dart';
 
 class MapTile {
   final math.Point<int> location;
@@ -26,11 +27,17 @@ class MapTile {
 
   Map<String, dynamic> toJson() {
     var ret = <String, dynamic>{
-      'location': location.toCoordString(),
+      'location': MapData.jsonCoordsToLocation(location),
       'id': id,
-      'rotation': rotation,
-      'arrows': arrows,
     };
+
+    if (rotation != 0) {
+      ret['rotation'] = rotation;
+    }
+
+    if (arrows.length > 0) {
+      ret['arrows'] = MapTile.arrowsToString(arrows);
+    }
 
     if (cost > 0) {
       ret['cost'] = cost;
@@ -41,11 +48,11 @@ class MapTile {
   }
 
   factory MapTile.fromJson(Map<String, dynamic> json) {
-    var location = PointExtensions.fromCoordStringInt(json['location'] as String);
+    var location = MapData.jsonLocationToCoords(json['location'] as String);
     var id = json['id'] as String;
-    var rotation = json['rotation'] as int;
-    var item = json['arrows'] as List<dynamic>;
-    var arrows = item.map<int>((dynamic json) => json as int).toList();
+    var rotation = json['rotation'] != null ? json['rotation'] as int : 0;
+    var item = json['arrows'] as String;
+    var arrows = item != null ? MapTile.stringToArrows(item) : <int>[];
     var cost = json['cost'] as int;
     if (cost == null) {
       cost = 0;
@@ -57,5 +64,22 @@ class MapTile {
 
     return MapTile._(
         location: location, id: id, rotation: rotation, arrows: arrows, cost: cost, costPosition: costPosition);
+  }
+
+  static String arrowsToString(List<int> arrows) {
+    StringBuffer stringBuffer = StringBuffer();
+    for (var i in arrows) {
+      stringBuffer.write(i.toString());
+    }
+    return stringBuffer.toString();
+  }
+
+  static List<int> stringToArrows(String src) {
+    var ret = <int>[];
+    for (int index = 0; index < src.length; ++index) {
+      ret.add(int.parse(src[index]));
+    }
+
+    return ret;
   }
 }

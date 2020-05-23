@@ -2,10 +2,12 @@ import 'dart:math' as math;
 
 import 'package:hexxtrains/components/common/common.dart';
 
+import 'map_data.dart';
+
 enum DoodadTypes { private_rr }
 
 class Doodad {
-  final math.Point<double> location;
+  final math.Point<int> location;
   final DoodadTypes doodadType;
 
   Doodad({this.location, this.doodadType});
@@ -19,12 +21,12 @@ class Doodad {
   }
 
   Map<String, dynamic> toJson() => <String, dynamic>{
-        'location': location.toCoordString(),
+        'location': MapData.jsonCoordsToLocation(location),
         'doodadType': doodadType.toString().stripClassName(),
       };
 
   Doodad.fromJson(Map<String, dynamic> json)
-      : location = PointExtensions.fromCoordStringDouble(json['location'] as String),
+      : location = MapData.jsonLocationToCoords(json['location'] as String),
         doodadType =
             DoodadTypes.values.firstWhere((e) => e.toString() == 'DoodadTypes.' + (json['doodadType'] as String));
 }
