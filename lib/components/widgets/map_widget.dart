@@ -411,6 +411,21 @@ class _MapPainter extends CustomPainter {
       canvas.restore();
     }
 
+    for (var company in _mapContext.gameMap.companies) {
+      canvas.save();
+      var hex = _mapContext.gameMap.tileAt(company.home.x, company.home.y);
+      var deg = 60.0 * hex.rotation;
+      canvas.rotateDegreesOnPoint(deg, hex.center);
+      canvas.translate(hex.center.x, hex.center.y);
+      _mapContext.renderer.drawToken(tile: hex, 
+          junction: company.junction,
+          cityNum: company.homeCity,
+          //fill: false,
+          companyInfo: company,
+          home: true);
+      canvas.restore();
+    }
+
     canvas.restore();
   }
 

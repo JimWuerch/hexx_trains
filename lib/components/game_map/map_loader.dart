@@ -1,10 +1,10 @@
 import 'dart:math' as math;
 
-import 'package:hexxtrains/components/game_map/tile_rename.dart';
 import 'package:hexxtrains/components/tile_library/position.dart';
 import 'package:xml/xml.dart' as xml;
 
 import 'barrier.dart';
+import 'company_data.dart';
 import 'doodad.dart';
 import 'map_data.dart';
 import 'map_text.dart';
@@ -78,7 +78,7 @@ class MapLoader {
         terrains: terrains,
         doodads: doodads,
         offmapRevenue: offmapRevenue,
-        tileRenames: <TileRename>[]);
+        companies: <CompanyData>[]);
   }
 
   static List<MapTile> _parseTiles(xml.XmlElement tilesElement, bool aRowOdd, bool lettersVertical, bool isPointy) {

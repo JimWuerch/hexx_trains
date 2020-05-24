@@ -1369,10 +1369,12 @@ class TileRenderer {
   }
 
   void drawToken(
-      {@required Junction junction,
+      {@required HexTile tile,
+      @required int junction,
       @required int cityNum,
-      @required bool fill,
-      @required CompanyRenderInfo companyInfo}) {
+      //@required bool fill,
+      @required CompanyData companyInfo,
+      bool home = false}) {
     if (junction == null) {
       throw ArgumentError('junction is null');
     }
@@ -1380,14 +1382,20 @@ class TileRenderer {
       throw ArgumentError('companyInfo is null');
     }
 
+    var fill = !home;
     var radius = drawingSettings.convertSize(drawingSettings.cityRadius);
     _canvas.save();
-    _setCityMatrix(junction);
-    var point = _cityOffset(junction.numberOfCities(), cityNum);
+    //_setCityMatrix(junction);
+    var p = _getPoint(tile.tileDef.junctions[junction].position);
+    _canvas.translate(p.x, p.y);
+    var point = _cityOffset(tile.tileDef.junctions[junction].numberOfCities(), cityNum);
+
+    var alpha = 0xFF << 24;
+    //if (home) alpha = 0x7F << 24;
 
     var fillPaint = Paint()
       ..style = PaintingStyle.fill
-      ..color = Color(companyInfo.color)
+      ..color = home ? Colors.grey.shade300 : Color(alpha | companyInfo.color)
       ..isAntiAlias = true;
 
     // create a rectangle bounded by the city circle
@@ -1399,15 +1407,35 @@ class TileRenderer {
     var roundRectPath = Path();
     Path.combine(PathOperation.union, roundRectPath, circlePath);
     Path.combine(PathOperation.intersect, roundRectPath, rectPath);
+    //if (fill) {
+    _canvas.drawCircle(point, radius, fillPaint);
+    //}
+
+    var textColor = Color(0xFF000000 | companyInfo.color);
     if (fill) {
-      _canvas.drawCircle(point, radius, fillPaint);
+      textColor = Colors.white;
     }
 
+    // if (fill) {
+    //   if (home) {
+    //     textColor = Colors.grey.shade300;
+    //   } else {
+    //     if (companyInfo.isLightOnDark) {
+    //       Colors.white;
+    //     } else {
+    //       Colors.black;
+    //     }
+    //   }
+    // }
     // if we aren't filling in the background, just draw the text in company color
+
+    var fontSizeMult = (companyInfo.id.length > 4) ? .75 : 1.0;
     var textStyle = TextStyle(
-        color: fill ? companyInfo.isLightOnDark ? Colors.white : Colors.black : Color(companyInfo.color),
-        fontFamily: 'RobotoSlab',
-        fontSize: drawingSettings.convertSize(drawingSettings.textSize));
+      color: textColor,
+      fontFamily: 'RobotoSlab',
+      fontWeight: FontWeight.bold,
+      fontSize: drawingSettings.convertSize(drawingSettings.textSize) * fontSizeMult,
+    );
 
 //  Paint textPaint = new SKPaint()
 //  {
@@ -1424,7 +1452,8 @@ class TileRenderer {
 //    int deg = hexTile.layout.orientation == HexOrientation.Pointy ? 30 : 0;
 //    _canvas.translate(point.dx, point.dy);
 //    _canvas.rotate(-deg * pi / 180.0);
-    _drawText(companyInfo.shortName, Point(point.dx, point.dy), textStyle);
+    _canvas.rotateDegrees(-60.0 * tile.rotation);
+    _drawText(companyInfo.id, Point(point.dx, point.dy), textStyle);
 //    skCanvas.DrawText(companyInfo.ShortName, point.X - textBounds.MidX, point.Y - textBounds.MidY, textPaint);
 
     _disposePath(circlePath);

@@ -3,6 +3,7 @@ import 'dart:math' as math;
 
 import 'package:hexxtrains/components/common/common.dart';
 import 'package:hexxtrains/components/error/error.dart';
+import 'package:hexxtrains/components/game_map/company_data.dart';
 
 import 'barrier.dart';
 import 'doodad.dart';
@@ -10,11 +11,12 @@ import 'map_text.dart';
 import 'map_tile.dart';
 import 'revenue.dart';
 import 'terrain.dart';
-import 'tile_rename.dart';
 
 enum MapOrientation { pointy, flat }
 
 class MapData {
+  final int width;
+  final int height;
   final MapOrientation orientation;
   final bool aRowOdd;
   final bool lettersVertical;
@@ -24,9 +26,7 @@ class MapData {
   final List<Terrain> terrains;
   final List<Doodad> doodads;
   final List<Revenue> offmapRevenue;
-  final List<TileRename> tileRenames;
-  final int width;
-  final int height;
+  final List<CompanyData> companies;
 
   // these are only used during json serialization
   static bool _convertARowOdd;
@@ -49,7 +49,7 @@ class MapData {
       'terrains': terrains.map<Map<String, dynamic>>((e) => e.toJson()).toList(),
       'doodads': doodads.map<Map<String, dynamic>>((e) => e.toJson()).toList(),
       'offmapRevenue': offmapRevenue.map<Map<String, dynamic>>((e) => e.toJson()).toList(),
-      'tileRenames': tileRenames.map<Map<String, dynamic>>((e) => e.toJson()).toList(),
+      'companies': companies.map<Map<String, dynamic>>((e) => e.toJson()).toList(),
     };
 
     _convertARowOdd = null;
@@ -83,9 +83,9 @@ class MapData {
     var doodads = item.map<Doodad>((dynamic json) => Doodad.fromJson(json as Map<String, dynamic>)).toList();
     item = json['offmapRevenue'] as List<dynamic>;
     var offmapRevenue = item.map<Revenue>((dynamic json) => Revenue.fromJson(json as Map<String, dynamic>)).toList();
-    item = json['tileRenames'] as List<dynamic>;
-    var tileRenames =
-        item.map<TileRename>((dynamic json) => TileRename.fromJson(json as Map<String, dynamic>)).toList();
+    item = json['companies'] as List<dynamic>;
+    var companies =
+        item.map<CompanyData>((dynamic json) => CompanyData.fromJson(json as Map<String, dynamic>)).toList();
 
     _convertARowOdd = null;
     _convertLettersVertical = null;
@@ -101,9 +101,9 @@ class MapData {
         terrains: terrains,
         doodads: doodads,
         offmapRevenue: offmapRevenue,
-        tileRenames: tileRenames,
         width: width,
-        height: height);
+        height: height,
+        companies: companies);
   }
 
   factory MapData.fromJsonString(String data) {
@@ -118,12 +118,12 @@ class MapData {
       this.terrains,
       this.doodads,
       this.offmapRevenue,
-      this.tileRenames,
       this.width,
       this.height,
       this.aRowOdd,
       this.lettersVertical,
-      this.orientation});
+      this.orientation,
+      this.companies});
 
   factory MapData.fromData(
       {MapOrientation orientation,
@@ -135,7 +135,7 @@ class MapData {
       List<Terrain> terrains,
       List<Doodad> doodads,
       List<Revenue> offmapRevenue,
-      List<TileRename> tileRenames}) {
+      List<CompanyData> companies}) {
     var size = _calcMapSize(mapTiles);
     return MapData._(
         mapTiles: mapTiles,
@@ -144,12 +144,12 @@ class MapData {
         terrains: terrains,
         doodads: doodads,
         offmapRevenue: offmapRevenue,
-        tileRenames: tileRenames,
         width: size.x,
         height: size.y,
         aRowOdd: aRowOdd,
         lettersVertical: lettersVertical,
-        orientation: orientation);
+        orientation: orientation,
+        companies: companies);
   }
 
   static math.Point<int> locationToCoords({String location, bool aRowOdd, bool lettersVertical, bool isPointy}) {
@@ -203,7 +203,11 @@ class MapData {
     if (_convertARowOdd == null || _convertLettersVertical == null || _convertIsPointy == null) {
       throw InvalidOperationError('Only call coordsToLocation during json serialization');
     }
-    return MapData.locationToCoords(location: location, aRowOdd: _convertARowOdd, lettersVertical: _convertLettersVertical, isPointy: _convertIsPointy);
+    return MapData.locationToCoords(
+        location: location,
+        aRowOdd: _convertARowOdd,
+        lettersVertical: _convertLettersVertical,
+        isPointy: _convertIsPointy);
   }
 
   static String jsonCoordsToLocation(math.Point<int> coords) {

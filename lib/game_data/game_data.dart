@@ -9,7 +9,6 @@ export 'tile_dictionary_source.dart';
 
 abstract class GameData {
   String get name;
-  String get companies;
   String get map;
   String get stockMarket;
   String get tileManifest;

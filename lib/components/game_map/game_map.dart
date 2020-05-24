@@ -4,6 +4,7 @@ import 'package:hexxtrains/components/hex/hex.dart';
 import 'package:hexxtrains/components/tile_library/tile_library.dart';
 
 import 'barrier.dart';
+import 'company_data.dart';
 import 'hex_tile.dart';
 import 'map_data.dart';
 import 'map_text.dart';
@@ -11,7 +12,7 @@ import 'terrain.dart';
 import 'tile_manifest.dart';
 
 export 'barrier.dart';
-export 'company_render_info.dart'; //TODO: move this when it's actually implemented
+export 'company_data.dart'; //TODO: move this when it's actually implemented
 export 'doodad.dart';
 export 'hex_tile.dart';
 export 'map_data.dart';
@@ -24,8 +25,9 @@ export 'tile_manifest.dart';
 class GameMap {
   List<List<HexTile>> _mapCells;
 
-  GameMap._({List<List<HexTile>> mapCells,
-           this.mapSize,
+  GameMap._(
+      {List<List<HexTile>> mapCells,
+      this.mapSize,
       this.barriers,
       this.mapText,
       this.terrains,
@@ -37,9 +39,10 @@ class GameMap {
       this.offset,
       this.orientation,
       this.tileDictionary,
-      this.tileManifest}) {
-        _mapCells = mapCells;
-      }
+      this.tileManifest,
+      this.companies}) {
+    _mapCells = mapCells;
+  }
 
   final int scale;
 
@@ -70,6 +73,7 @@ class GameMap {
   final List<Barrier> barriers;
   final List<MapText> mapText;
   final List<Terrain> terrains;
+  final List<CompanyData> companies;
 
   factory GameMap.createMap(
       MapData mapData, int size, int margin, TileDictionary tileDictionary, TileManifest tileManifest) {
@@ -88,29 +92,22 @@ class GameMap {
     var mapCells = <List<HexTile>>[];
 
     if (orientation == HexOrientation.flat) {
-      offset = math.Point<double>(
-          (scale + margin).toDouble(), math.sqrt(3) * scale / 2.0 + margin);
+      offset = math.Point<double>((scale + margin).toDouble(), math.sqrt(3) * scale / 2.0 + margin);
       layout = HexLayout(HexOrientation.flat, scale, offset);
     } else {
-      offset = math.Point<double>(
-          math.sqrt(3) * scale / 2.0 + margin, (scale + margin).toDouble());
+      offset = math.Point<double>(math.sqrt(3) * scale / 2.0 + margin, (scale + margin).toDouble());
       layout = HexLayout(HexOrientation.pointy, scale, offset);
     }
 
-    _generateMap(
-        mapCells: mapCells,
-        orientation: orientation,
-        rows: rows,
-        columns: cols);
+    _generateMap(mapCells: mapCells, orientation: orientation, rows: rows, columns: cols);
     // fill in the cells with the map data
     for (var t in mapData.mapTiles) {
-      var qr = _getQR(
-          t.location.x, t.location.y, orientation); //, out int q, out int r);
+      var qr = getQR(t.location.x, t.location.y, orientation); //, out int q, out int r);
       var q = qr.x;
       var r = qr.y;
       //var index = _getIndicies(q, r, rows, cols, orientation);
       //Debug.WriteLine($"Got QR {q},{r} xy:{x},{y} loc:{(int)t.Location.X},{(int)t.Location.Y}");
-      
+
       // fix up the TileDictionary with anything from the TileManifest
       tileManifest.replaceTileDefs(tileDictionary);
       TileManifestItem manifestItem;
@@ -137,21 +134,47 @@ class GameMap {
 
     var barriers = <Barrier>[];
     for (var barrier in mapData.barriers) {
-      var qr = _getQR(barrier.location.x, barrier.location.y, orientation);
-      barriers.add(Barrier(location: qr, side: barrier.side));
+      var qr = getQR(barrier.location.x, barrier.location.y, orientation);
+      barriers.add(Barrier(
+        location: qr,
+        side: barrier.side,
+      ));
     }
 
     var mapText = <MapText>[];
     for (var text in mapData.mapText) {
-      var qr = _getQR(text.location.x, text.location.y, orientation);
+      var qr = getQR(text.location.x, text.location.y, orientation);
       mapText.add(MapText(
-          location: qr,
-          text: text.text,
-          position: text.position,
-          size: text.size));
+        location: qr,
+        text: text.text,
+        position: text.position,
+        size: text.size,
+      ));
     }
 
-    var terrains = List<Terrain>.from(mapData.terrains);
+    var terrains = <Terrain>[];
+    for (var terrain in mapData.terrains) {
+      var qr = getQR(terrain.location.x, terrain.location.y, orientation);
+      terrains.add(Terrain(
+        location: qr,
+        terrainType: terrain.terrainType,
+        position: terrain.position,
+      ));
+    }
+
+    var companies = <CompanyData>[];
+    for (var company in mapData.companies) {
+      var qr = getQR(company.home.x, company.home.y, orientation);
+      companies.add(CompanyData(
+          id: company.id,
+          name: company.name,
+          color: company.color,
+          background: company.background,
+          isLightOnDark: company.isLightOnDark,
+          home: qr,
+          junction: company.junction,
+          homeCity: company.homeCity));
+    }
 
     return GameMap._(
         mapCells: mapCells,
@@ -167,7 +190,8 @@ class GameMap {
         offset: offset,
         orientation: orientation,
         tileDictionary: tileDictionary,
-        tileManifest: tileManifest);
+        tileManifest: tileManifest,
+        companies: companies);
   }
 
   HexTile tileFromPixel(math.Point<double> p) {
@@ -199,8 +223,7 @@ class GameMap {
     }
   }
 
-  static math.Point<int> _getQR(
-      int col, int row, HexOrientation orientation) //, out int q, out int r)
+  static math.Point<int> getQR(int col, int row, HexOrientation orientation) //, out int q, out int r)
   {
     int q;
     int r;
@@ -244,8 +267,7 @@ class GameMap {
     return ret;
   }
 
-  static math.Point<double> _calcMapSize(
-      List<List<HexTile>> mapCells, HexLayout layout) {
+  static math.Point<double> _calcMapSize(List<List<HexTile>> mapCells, HexLayout layout) {
     var maxX = 0.0;
     var maxY = 0.0;
     for (var row in mapCells) {
@@ -262,11 +284,7 @@ class GameMap {
     return math.Point<double>(maxX, maxY);
   }
 
-  static void _generateMap(
-      {List<List<HexTile>> mapCells,
-      HexOrientation orientation,
-      int rows,
-      int columns}) {
+  static void _generateMap({List<List<HexTile>> mapCells, HexOrientation orientation, int rows, int columns}) {
     if (orientation == HexOrientation.flat) {
       for (var q = 0; q < columns; q++) {
         mapCells.add(<HexTile>[]);
@@ -288,20 +306,16 @@ class GameMap {
     }
   }
 
-  List<HexTile> tilesInRegion(
-      double x, double y, double rwidth, double rheight) {
+  List<HexTile> tilesInRegion(double x, double y, double rwidth, double rheight) {
     //region = new Rect(0, 0, MapSize.X, MapSize.Y);
     var left = ((x / layout.size) - 1).toInt() * layout.size;
     var top = ((y / layout.size) - 1).toInt() * layout.size;
     var right = (((x + rwidth) / layout.size) + 1).toInt() * layout.size;
     var bottom = (((y + rheight) / layout.size) + 1).toInt() * layout.size;
 
-    var topLeft =
-        layout.pixelToHex(math.Point(left.toDouble(), top.toDouble()));
-    var topRight =
-        layout.pixelToHex(math.Point(right.toDouble(), top.toDouble()));
-    var bottomLeft =
-        layout.pixelToHex(math.Point(left.toDouble(), bottom.toDouble()));
+    var topLeft = layout.pixelToHex(math.Point(left.toDouble(), top.toDouble()));
+    var topRight = layout.pixelToHex(math.Point(right.toDouble(), top.toDouble()));
+    var bottomLeft = layout.pixelToHex(math.Point(left.toDouble(), bottom.toDouble()));
 
     var width = topRight.q - topLeft.q + 1;
     var height = bottomLeft.r - topLeft.r + 1;

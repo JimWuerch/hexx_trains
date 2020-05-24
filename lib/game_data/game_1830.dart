@@ -5,9 +5,6 @@ class Game1830 extends GameData {
   String get name => '1830';
 
   @override
-  String get companies => _companies;
-
-  @override
   String get map => _map1830;
 
   @override
@@ -821,13 +818,147 @@ class Game1830 extends GameData {
    ]
   }
  ],
- "tileRenames": []
+ "companies": [
+  {
+    "id": "B&O",
+    "name": "Baltimore & Ohio",
+    "color": 255,
+    "background": 0,
+    "lightOnDark": true,
+    "home": "I15"
+  },
+  {
+    "id": "C&O",
+    "name": "Chesapeake & Ohio",
+    "color": 9489145,
+    "background": 0,
+    "lightOnDark": true,
+    "home": "F6"
+  },
+  {
+    "id": "Erie",
+    "name": "Erie",
+    "color": 16772696,
+    "background": 0,
+    "lightOnDark": true,
+    "home": "E11",
+    "junction": 1
+  },
+  {
+    "id": "CP",
+    "name": "Canadian Pacific",
+    "color": 12000284,
+    "background": 0,
+    "lightOnDark": true,
+    "home": "A19"
+  },
+  {
+    "id": "B&M",
+    "name": "Boston & Maine",
+    "color": 10275941,
+    "background": 0,
+    "lightOnDark": true,
+    "home": "E23"
+  },
+  {
+    "id": "NYC",
+    "name": "New York Central",
+    "color": 0,
+    "background": 0,
+    "lightOnDark": true,
+    "home": "E19"
+  },
+  {
+    "id": "NY&NH",
+    "name": "New York & New Haven",
+    "color": 16750592,
+    "background": 0,
+    "lightOnDark": true,
+    "home": "G19",
+    "junction": 1
+  },
+  {
+    "id": "PA",
+    "name": "Pennsylvania",
+    "color": 3046706,
+    "background": 0,
+    "lightOnDark": true,
+    "home": "H12"
+  }
+]
 }
 ''';
 
-  static final String _companies = '''<companies>
-  <company name="Baltimore & Ohio" shortname="B&O" color="0000FF" lightondark="true" />
-</companies>''';
+static final String _companiesxxx = '''{
+"companies": [
+  {
+    "id": "B&O",
+    "name": "Baltimore & Ohio",
+    "color": 255,
+    "background": 0,
+    "lightOnDark": true,
+    "home": "J14"
+  },
+  {
+    "id": "C&O",
+    "name": "Chesapeake & Ohio",
+    "color": 9489145,
+    "background": 0,
+    "lightOnDark": true,
+    "home": "F6"
+  },
+  {
+    "id": "Erie",
+    "name": "Erie",
+    "color": 16772696,
+    "background": 0,
+    "lightOnDark": true,
+    "home": "E11",
+    "junction": 1
+  },
+  {
+    "id": "CP",
+    "name": "Canadian Pacific",
+    "color": 12000284,
+    "background": 0,
+    "lightOnDark": true,
+    "home": "A19"
+  },
+  {
+    "id": "B&M",
+    "name": "Boston & Maine",
+    "color": 10275941,
+    "background": 0,
+    "lightOnDark": true,
+    "home": "E23"
+  },
+  {
+    "id": "NYC",
+    "name": "New York Central",
+    "color": 0,
+    "background": 0,
+    "lightOnDark": true,
+    "home": "E19"
+  },
+  {
+    "id": "NY&NH",
+    "name": "New York & New Haven",
+    "color": 16750592,
+    "background": 0,
+    "lightOnDark": true,
+    "home": "F20",
+    "junction": 0
+  },
+  {
+    "id": "PA",
+    "name": "Pennsylvania",
+    "color": 3046706,
+    "background": 0,
+    "lightOnDark": 0,
+    "home": "H12"
+  }
+]
+}''';
 
   static final String _stockMarket = '''{
   "Cells": [
