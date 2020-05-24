@@ -11,11 +11,11 @@ class CurvePoint {
   CurvePoint._({this.left, this.right});
 
   factory CurvePoint(CurveDef l1, CurveDef l2, CurveDef r1, CurveDef r2) {
-    List<CurveDef> l = [];
+    var l = <CurveDef>[];
     l.add(l1);
     l.add(l2);
 
-    List<CurveDef> r = [];
+    var r = <CurveDef>[];
     r.add(r1);
     r.add(r2);
 

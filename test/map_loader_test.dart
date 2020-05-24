@@ -2,10 +2,10 @@ import 'package:hexxtrains/components/game_map/game_map.dart';
 import 'package:hexxtrains/game_data/game_data.dart';
 import 'package:hexxtrains/components/game_map/map_loader.dart';
 import 'package:hexxtrains/components/tile_library/tile_library.dart';
-import 'package:test/test.dart';
+//import 'package:test/test.dart';
 
 void main() {
-  TileDesignerLoader loader = TileDesignerLoader();
+  var loader = TileDesignerLoader();
 
   var tileDictionary = loader.loadTileDictionary(TileDictionarySource.src);
 
@@ -15,7 +15,7 @@ void main() {
     print(tile.id);
   }
 
-  GameMap map = GameMap.createMap(mapData, 200, 50, tileDictionary, null);
+  var map = GameMap.createMap(mapData, 200, 50, tileDictionary, null);
   for (var row in map.map) {
     for (var tile in row) {
       if (tile != null) {

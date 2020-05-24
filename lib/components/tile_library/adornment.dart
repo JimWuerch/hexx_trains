@@ -1,10 +1,10 @@
 import 'package:hexxtrains/components/common/common.dart';
 import 'package:hexxtrains/components/error/error.dart';
-import 'package:hexxtrains/components/tile_library/text_adornment.dart';
 
 import 'position.dart';
+import 'text_adornment.dart';
 
-enum AdornmentTypes { Base, Text }
+enum AdornmentTypes { base, text }
 
 class Adornment {
   final Position position;
@@ -13,7 +13,7 @@ class Adornment {
   Adornment({this.position, this.adornmentType});
 
   factory Adornment.from(Position position) {
-    return Adornment(position: position, adornmentType: AdornmentTypes.Base);
+    return Adornment(position: position, adornmentType: AdornmentTypes.base);
   }
 
   Map<String, dynamic> toJson() => <String, dynamic>{
@@ -25,17 +25,17 @@ class Adornment {
   Adornment.jsonFinish(Map<String, dynamic> json)
       : position = Position.fromTDPosition(json['position'] as String),
         adornmentType = AdornmentTypes.values
-            .firstWhere((e) => e.toString() == 'AdornmentTypes.' + (json['adornmentType'] as String));
+            .firstWhere((e) => e.toString() == 'AdornmentTypes.${json['adornmentType'] as String}');
 
   factory Adornment.fromJson(Map<String, dynamic> json) {
     Adornment ret;
     var adornmentType =
-        AdornmentTypes.values.firstWhere((e) => e.toString() == 'AdornmentTypes.' + (json['adornmentType'] as String));
+        AdornmentTypes.values.firstWhere((e) => e.toString() == 'AdornmentTypes.${json['adornmentType'] as String}');
 
     switch (adornmentType) {
-      case AdornmentTypes.Base:
+      case AdornmentTypes.base:
         throw InvalidOperationError('Base Adornment shouldn\'t be created.');
-      case AdornmentTypes.Text:
+      case AdornmentTypes.text:
         ret = TextAdornment.fromJson(json);
         break;
     }

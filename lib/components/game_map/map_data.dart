@@ -61,7 +61,7 @@ class MapData {
 
   factory MapData.fromJson(Map<String, dynamic> json) {
     var orientation =
-        MapOrientation.values.firstWhere((e) => e.toString() == 'MapOrientation.' + (json['orientation'] as String));
+        MapOrientation.values.firstWhere((e) => e.toString() == 'MapOrientation.${json['orientation'] as String}');
     var aRowOdd = json['aRowOdd'] as bool;
     var lettersVertical = json['lettersVertical'] as bool;
 
@@ -152,31 +152,31 @@ class MapData {
         orientation: orientation);
   }
 
-  static math.Point<int> locationToCoords(String loc, bool aRowOdd, bool lettersVertical, bool isPointy) {
-    const String letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-    int x = 0;
-    int y = 0;
+  static math.Point<int> locationToCoords({String location, bool aRowOdd, bool lettersVertical, bool isPointy}) {
+    const letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    var x = 0;
+    var y = 0;
 
-    loc = loc.toUpperCase();
-    if (loc.length < 2) {
-      throw new ArgumentError('Location $loc invalid');
+    location = location.toUpperCase();
+    if (location.length < 2) {
+      throw ArgumentError('Location $location invalid');
     }
 
-    int index = 0;
-    while (letters.contains(loc[index])) {
+    var index = 0;
+    while (letters.contains(location[index])) {
       y *= 26;
-      y = loc.codeUnitAt(index) - letters.codeUnitAt(0); // loc[index] - 'A'
+      y = location.codeUnitAt(index) - letters.codeUnitAt(0); // loc[index] - 'A'
       index++;
-      if (loc.length <= index) throw new ArgumentError('Location $loc invalid');
+      if (location.length <= index) throw ArgumentError('Location $location invalid');
     }
 
-    x = int.tryParse(loc.substring(index));
+    x = int.tryParse(location.substring(index));
     if (x == null) {
-      throw new ArgumentError('Location $loc invalid');
+      throw ArgumentError('Location $location invalid');
     }
 
     if (!lettersVertical) {
-      int temp = x;
+      var temp = x;
       x = y;
       y = temp;
     }
@@ -189,7 +189,7 @@ class MapData {
     //    B2 B4 B6 B8
     //   C1 C3 C5 C7
     //    D2 D4 D6 D8
-    int offset = aRowOdd ? 1 : 0;
+    var offset = aRowOdd ? 1 : 0;
     if (isPointy) {
       x = (x - offset) ~/ 2;
     } else {
@@ -203,11 +203,11 @@ class MapData {
     if (_convertARowOdd == null || _convertLettersVertical == null || _convertIsPointy == null) {
       throw InvalidOperationError('Only call coordsToLocation during json serialization');
     }
-    return MapData.locationToCoords(location, _convertARowOdd, _convertLettersVertical, _convertIsPointy);
+    return MapData.locationToCoords(location: location, aRowOdd: _convertARowOdd, lettersVertical: _convertLettersVertical, isPointy: _convertIsPointy);
   }
 
   static String jsonCoordsToLocation(math.Point<int> coords) {
-    const String letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    const letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
     if (_convertARowOdd == null || _convertLettersVertical == null || _convertIsPointy == null) {
       throw InvalidOperationError('Only call coordsToLocation during json serialization');
     }
@@ -234,27 +234,27 @@ class MapData {
     }
 
     if (_convertLettersVertical) {
-      return '${letters[y]}${x}';
+      return '${letters[y]}$x';
     } else {
-      return '${letters[x]}${y}';
+      return '${letters[x]}$y';
     }
   }
 
   static math.Point<int> _calcMapSize(List<MapTile> mapTiles) {
     // dart doesn't have constants for int.MAX and int.MIN, so
     // we are going to just use number much bigger than any real map
-    int minX = 65535;
-    int minY = 65535;
-    int maxX = -65536;
-    int maxY = -65536;
+    var minX = 65535;
+    var minY = 65535;
+    var maxX = -65536;
+    var maxY = -65536;
     for (var tile in mapTiles) {
       minX = math.min(minX, tile.location.x);
       minY = math.min(minY, tile.location.y);
       maxX = math.max(maxX, tile.location.x);
       maxY = math.max(maxY, tile.location.y);
     }
-    int width = maxX + 1;
-    int height = maxY + 1;
+    var width = maxX + 1;
+    var height = maxY + 1;
 
     return math.Point(width, height);
   }

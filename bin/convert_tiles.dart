@@ -3,21 +3,20 @@ import 'dart:io';
 
 import 'package:args/args.dart';
 import 'package:hexxtrains/components/tile_library/tile_designer_loader.dart';
-import 'package:hexxtrains/components/tile_library/tile_dictionary.dart';
 
 Future<void> main(List<String> args) async {
   var parser = ArgParser();
   parser.addOption('input', abbr: 'i', help: 'Input xml file from Tile Designer');
   parser.addOption('output', abbr: 'o', help: 'Output json file');
   parser.addFlag('help', negatable: false, help: 'Display usage');
-  ArgResults results = parser.parse(args);
+  var results = parser.parse(args);
 
   if (results['help'] as bool) {
     _printUsage(parser);
     return;
   }
-  String input = results['input'] as String;
-  String output = results['output'] as String;
+  var input = results['input'] as String;
+  var output = results['output'] as String;
 
   if (input == null) {
     print('Input file is required.');
@@ -33,10 +32,10 @@ Future<void> main(List<String> args) async {
   print('Converting $input to $output');
 
   var tdFile = File(input);
-  String contents = await tdFile.readAsString();
+  var contents = await tdFile.readAsString();
 
-  TileDesignerLoader loader = TileDesignerLoader();
-  TileDictionary tileDictionary = loader.loadTileDictionary(contents);
+  var loader = TileDesignerLoader();
+  var tileDictionary = loader.loadTileDictionary(contents);
 
   var jsonText = JsonEncoder.withIndent(' ').convert(tileDictionary);
 

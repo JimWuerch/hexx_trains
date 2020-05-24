@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:hexxtrains/components/widgets/map_widget.dart';
-import 'package:hexxtrains/components/widgets/stock_market_widget.dart';
+
+import 'components/widgets/map_widget.dart';
+import 'components/widgets/stock_market_widget.dart';
 
 class HomePage extends StatefulWidget {
   HomePage({Key key, this.title}) : super(key: key);

@@ -16,7 +16,7 @@ class TileDesignerLoader {
     var document = xml.parse(src);
     for (var tilesNode in document.children) {
       if (tilesNode.nodeType == xml.XmlNodeType.ELEMENT) {
-        xml.XmlElement tilesElement = tilesNode as xml.XmlElement;
+        var tilesElement = tilesNode as xml.XmlElement;
         if (tilesElement.name.local == 'tiles') {
           parseTiles(tilesElement);
         }
@@ -30,7 +30,7 @@ class TileDesignerLoader {
   void parseTiles(xml.XmlElement tiles) {
     for (var tileNode in tiles.children) {
       if (tileNode.nodeType == xml.XmlNodeType.ELEMENT) {
-        xml.XmlElement tile = tileNode as xml.XmlElement;
+        var tile = tileNode as xml.XmlElement;
         if (tile.name.local == 'tile') {
           var tileDef = parseTile(tile);
           if (_tileDictionary.tiles.containsKey(tileDef.tileId)) {
@@ -45,17 +45,17 @@ class TileDesignerLoader {
 
   // handle <tile> elements
   TileDefinition parseTile(xml.XmlElement tile) {
-    String tileId = '0';
-    String name = '';
-    TileColors color = TileColors.None;
-    List<Junction> junctions = [];
-    List<Connection> connections = [];
-    List<Adornment> adornments = [];
-    bool isBase = true;
+    var tileId = '0';
+    var name = '';
+    var color = TileColors.none;
+    var junctions = <Junction>[];
+    var connections = <Connection>[];
+    var adornments = <Adornment>[];
+    var isBase = true;
 
     for (var node in tile.children) {
       if (node.nodeType == xml.XmlNodeType.ELEMENT) {
-        xml.XmlElement element = node as xml.XmlElement;
+        var element = node as xml.XmlElement;
         if (element.name.local == 'category') {
           parseAdornment(element, adornments);
         } else if (element.name.local == 'junctions') {
@@ -93,8 +93,8 @@ class TileDesignerLoader {
   }
 
   void parseAdornment(xml.XmlElement category, List<Adornment> adornments) {
-    String value = '';
-    String positionName = '';
+    var value = '';
+    var positionName = '';
 
     if (category.name.local != 'category') {
       throw ArgumentError('Invalid node');
@@ -102,7 +102,7 @@ class TileDesignerLoader {
 
     for (var node in category.children) {
       if (node.nodeType == xml.XmlNodeType.ELEMENT) {
-        xml.XmlElement element = node as xml.XmlElement;
+        var element = node as xml.XmlElement;
         if (element.name.local == 'value') {
           value = element.text;
         } else if (element.name.local == 'position') {
@@ -122,7 +122,7 @@ class TileDesignerLoader {
 
     for (var node in e.children) {
       if (node.nodeType == xml.XmlNodeType.ELEMENT) {
-        xml.XmlElement element = node as xml.XmlElement;
+        var element = node as xml.XmlElement;
         if (element.name.local == 'junction') {
           junctions.add(parseJunction(element));
         }
@@ -137,7 +137,7 @@ class TileDesignerLoader {
 
     for (var node in e.children) {
       if (node.nodeType == xml.XmlNodeType.ELEMENT) {
-        xml.XmlElement element = node as xml.XmlElement;
+        var element = node as xml.XmlElement;
         if (element.name.local == 'connection') {
           connections.add(parseConnection(element));
         }
@@ -147,19 +147,19 @@ class TileDesignerLoader {
 
   TileColors parseColor(String text) {
     if (text == 'tlMapUpgradableToYellow') {
-      return TileColors.Ground;
+      return TileColors.ground;
     } else if (text == 'tlYellow' || text == 'tlMapUpgradableToGreen') {
-      return TileColors.Yellow;
+      return TileColors.yellow;
     } else if (text == 'tlGreen' || text == 'tlMapUpgradableToBrown') {
-      return TileColors.Green;
+      return TileColors.green;
     } else if (text == 'tlBrown' || text == 'tlMapUpgradableToGray') {
-      return TileColors.Brown;
+      return TileColors.brown;
     } else if (text == 'tlGray') {
-      return TileColors.Gray;
+      return TileColors.gray;
     } else if (text == 'tlMapFixed') {
-      return TileColors.Fixed;
+      return TileColors.fixed;
     } else if (text == 'tlOffMap') {
-      return TileColors.OffMap;
+      return TileColors.offMap;
     } else {
       throw ArgumentError('Unknown color $text');
     }
@@ -176,7 +176,7 @@ class TileDesignerLoader {
 
     for (var node in e.children) {
       if (node.nodeType == xml.XmlNodeType.ELEMENT) {
-        xml.XmlElement element = node as xml.XmlElement;
+        var element = node as xml.XmlElement;
         if (element.name.local == 'junType') {
           type = element.text;
         } else if (element.name.local == 'position') {
@@ -200,8 +200,8 @@ class TileDesignerLoader {
   Connection parseConnection(xml.XmlElement e) {
     Position pos1;
     Position pos2;
-    ConnectionTypes conType = ConnectionTypes.None;
-    int layer = 0;
+    var conType = ConnectionTypes.none;
+    var layer = 0;
 
     if (e.name.local != 'connection') {
       throw ArgumentError('Invalid node');
@@ -209,7 +209,7 @@ class TileDesignerLoader {
 
     for (var node in e.children) {
       if (node.nodeType == xml.XmlNodeType.ELEMENT) {
-        xml.XmlElement element = node as xml.XmlElement;
+        var element = node as xml.XmlElement;
         if (element.name.local == 'conType') {
           conType = parseConnectionType(element.text);
         } else if (element.name.local == 'position1') {
@@ -232,7 +232,7 @@ class TileDesignerLoader {
   }
 
   Revenue parseRevenue(xml.XmlElement e) {
-    int value = 0;
+    var value = 0;
     String position;
 
     if (e.name.local != 'revenue') {
@@ -241,7 +241,7 @@ class TileDesignerLoader {
 
     for (var node in e.children) {
       if (node.nodeType == xml.XmlNodeType.ELEMENT) {
-        xml.XmlElement element = node as xml.XmlElement;
+        var element = node as xml.XmlElement;
         if (element.name.local == 'value') {
           value = int.parse(element.text);
         } else if (element.name.local == 'position') {
@@ -261,17 +261,17 @@ class TileDesignerLoader {
 
   JunctionTypes parseJunctionType(String type) {
     if (type == 'jtNone') {
-      return JunctionTypes.None;
+      return JunctionTypes.none;
     } else if (type == 'jtWhistlestop') {
-      return JunctionTypes.WhistleStop;
+      return JunctionTypes.whistleStop;
     } else if (type == 'jtCity') {
-      return JunctionTypes.City;
+      return JunctionTypes.city;
     } else if (type == 'jtDoubleCity') {
-      return JunctionTypes.DoubleCity;
+      return JunctionTypes.doubleCity;
     } else if (type == 'jtTripleCity') {
-      return JunctionTypes.TripleCity;
+      return JunctionTypes.tripleCity;
     } else if (type == 'jtQuadrupleCity') {
-      return JunctionTypes.QuadCity;
+      return JunctionTypes.quadCity;
     } else {
       throw ArgumentError('Unknown JunctionType $type');
     }
@@ -279,17 +279,17 @@ class TileDesignerLoader {
 
   ConnectionTypes parseConnectionType(String type) {
     if (type == 'ctNone') {
-      return ConnectionTypes.None;
+      return ConnectionTypes.none;
     } else if (type == 'ctNormal') {
-      return ConnectionTypes.Normal;
+      return ConnectionTypes.normal;
     } else if (type == 'ctSmall') {
-      return ConnectionTypes.Small;
+      return ConnectionTypes.small;
     } else if (type == 'ctUniversal') {
-      return ConnectionTypes.Universal;
+      return ConnectionTypes.universal;
     } else if (type == 'ctMountain') {
-      return ConnectionTypes.Mountain;
+      return ConnectionTypes.mountain;
     } else if (type == 'ctTunnel') {
-      return ConnectionTypes.Tunnel;
+      return ConnectionTypes.tunnel;
     } else {
       throw ArgumentError('Unknown ConnectionType $type');
     }

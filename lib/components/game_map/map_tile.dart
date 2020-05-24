@@ -19,7 +19,7 @@ class MapTile {
     return MapTile._(
         location: location,
         id: id,
-        arrows: arrows ?? List<int>(),
+        arrows: arrows ?? <int>[],
         cost: cost,
         costPosition: costPosition,
         rotation: rotation);
@@ -67,7 +67,7 @@ class MapTile {
   }
 
   static String arrowsToString(List<int> arrows) {
-    StringBuffer stringBuffer = StringBuffer();
+    var stringBuffer = StringBuffer();
     for (var i in arrows) {
       stringBuffer.write(i.toString());
     }
@@ -76,7 +76,7 @@ class MapTile {
 
   static List<int> stringToArrows(String src) {
     var ret = <int>[];
-    for (int index = 0; index < src.length; ++index) {
+    for (var index = 0; index < src.length; ++index) {
       ret.add(int.parse(src[index]));
     }
 

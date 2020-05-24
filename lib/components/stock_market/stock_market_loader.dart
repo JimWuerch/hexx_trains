@@ -4,10 +4,10 @@ import 'stock_market_data.dart';
 
 class StockMarketLoader {
   static StockMarketData load(String src) {
-    Map<String, dynamic> data = jsonDecode(src) as Map<String, dynamic>;
+    var data = jsonDecode(src) as Map<String, dynamic>;
 
-    List<dynamic> jsonCells = data['Cells'] as List;
-    List<StockMarketCell> cells = [];
+    var jsonCells = data['Cells'] as List;
+    var cells = <StockMarketCell>[];
 
     for (var jsonCell in jsonCells) {
       cells.add(StockMarketCell(

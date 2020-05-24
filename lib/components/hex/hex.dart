@@ -1,8 +1,8 @@
 // This code is derived from the code at https://www.redblobgames.com/grids/hexagons/implementation.html
 
+export 'fractional_hex.dart';
 export 'hex_layout.dart';
 export 'offset_coord.dart';
-export 'fractional_hex.dart';
 
 class Hex {
   final int q;
@@ -10,8 +10,9 @@ class Hex {
   final int s;
 
   Hex(this.q, this.r, this.s) {
-    if (q + r + s != 0)
-      throw new ArgumentError('Hex Coords must add to 0. q:$q r:$r s:$s');
+    if (q + r + s != 0) {
+      throw ArgumentError('Hex Coords must add to 0. q:$q r:$r s:$s');
+    }
   }
 
   Hex.fromQR(int q, int r) : this(q, r, -q - r);
@@ -19,7 +20,7 @@ class Hex {
   Hex.fromList(List<int> a) : this(a[0], a[1], a[2]);
 
   List<int> coords() {
-    List<int> ret = [q, r, s];
+    var ret = <int>[q, r, s];
     return ret;
   }
 

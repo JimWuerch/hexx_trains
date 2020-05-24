@@ -1,4 +1,4 @@
-import 'package:hexxtrains/game_data/game_data.dart';
+import 'game_data.dart';
 
 class Game1830 extends GameData {
   @override
@@ -13,7 +13,8 @@ class Game1830 extends GameData {
   @override
   String get stockMarket => _stockMarket;
 
-  @override get tileManifest => _tileManifest;
+  @override 
+  String get tileManifest => _tileManifest;
 
   static const String _map1830 = '''{
  "orientation": "pointy",
@@ -824,11 +825,11 @@ class Game1830 extends GameData {
 }
 ''';
 
-  static String _companies = '''<companies>
+  static final String _companies = '''<companies>
   <company name="Baltimore & Ohio" shortname="B&O" color="0000FF" lightondark="true" />
 </companies>''';
 
-  static String _stockMarket = '''{
+  static final String _stockMarket = '''{
   "Cells": [
     {
       "Row": 0,

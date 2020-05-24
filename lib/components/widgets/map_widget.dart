@@ -4,14 +4,13 @@ import 'dart:ui' as ui;
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:hexxtrains/components/game_map/game_map.dart';
-import 'package:hexxtrains/components/game_map/map_loader.dart';
 import 'package:hexxtrains/components/game_map/tile_manifest_loader.dart';
 import 'package:hexxtrains/components/hex/hex.dart';
 import 'package:hexxtrains/components/render/render.dart';
 import 'package:hexxtrains/components/tile_library/tile_library.dart' as tilelib;
 import 'package:hexxtrains/components/widgets/tile_selector.dart';
 import 'package:hexxtrains/game_data/game_data.dart';
-import 'package:hexxtrains/game_data/game_data.dart' as gameData;
+import 'package:hexxtrains/game_data/game_data.dart' as game_data;
 import 'package:positioned_tap_detector/positioned_tap_detector.dart';
 import 'package:provider/provider.dart';
 import 'package:vector_math/vector_math_64.dart' as m64;
@@ -26,9 +25,9 @@ class _DebugMap {
   List<HexTile> tiles;
 
   _DebugMap() {
-    tilelib.TileDesignerLoader loader = tilelib.TileDesignerLoader();
-    tileDictionary = loader.loadTileDictionary(gameData.TileDictionarySource.src);
-    hexLayout = HexLayout(HexOrientation.Pointy, 200, math.Point<double>(200, 200));
+    var loader = tilelib.TileDesignerLoader();
+    tileDictionary = loader.loadTileDictionary(game_data.TileDictionarySource.src);
+    hexLayout = HexLayout(HexOrientation.pointy, 200, math.Point<double>(200, 200));
   }
 
   void loadTiles() {
@@ -41,8 +40,8 @@ class _DebugMap {
   }
 
   Offset calcMapSize() {
-    double maxX = 0;
-    double maxY = 0;
+    var maxX = 0.0;
+    var maxY = 0.0;
     for (var tile in tiles) {
       if (tile != null) {
         for (var p in hexLayout.polygonCorners(tile.hex)) {
@@ -57,10 +56,10 @@ class _DebugMap {
   void addLotsOfHexes() {
     tiles = [];
 
-    int q = 0;
-    int r = 0;
+    var q = 0;
+    var r = 0;
     for (var tile in tileDictionary.tiles.values) {
-      var hex = OffsetCoord.rOffsetToCube(0, new OffsetCoord(q, r));
+      var hex = OffsetCoord.rOffsetToCube(0, OffsetCoord(q, r));
       tiles.add(HexTile(tile, hex.q, hex.r, hexLayout, null));
 
       q++;
@@ -82,7 +81,7 @@ class _MapContext {
     var offset = gameMap.mapSize;
     var x = size.width / offset.x;
     var y = size.height / offset.y;
-    double scale = math.min(x, y);
+    var scale = math.min(x, y);
 
     viewMatrix = m64.Matrix3.identity();
     viewMatrix[Indicies.scaleX] = scale;
@@ -134,7 +133,7 @@ class _MapWidgetState extends State<MapWidget> with AutomaticKeepAliveClientMixi
     super.build(context);
     //TODO: broken for now, because we need context for Provider.  Will need different solution
     mapContext = _MapContext();
-    TileManifest manifest = TileManifestLoader.load(GameList.games[0].tileManifest);
+    var manifest = TileManifestLoader.load(GameList.games[0].tileManifest);
     //var mapData = MapLoader.load(GameList.games[0].map);
     var mapData = MapData.fromJsonString(GameList.games[0].map);
 
@@ -158,8 +157,8 @@ class _MapWidgetState extends State<MapWidget> with AutomaticKeepAliveClientMixi
             child: Container(),
           ),
           //onTap: () => valueNotifier.value++,
-          onScaleStart: (details) => _onScaleStart(details),
-          onScaleUpdate: (details) => _onScaleUpdate(details),
+          onScaleStart: _onScaleStart,
+          onScaleUpdate: _onScaleUpdate,
           onScaleEnd: (details) => _onScaleEnd(),
           //dragStartBehavior: DragStartBehavior.down,
         ),
@@ -168,7 +167,7 @@ class _MapWidgetState extends State<MapWidget> with AutomaticKeepAliveClientMixi
   }
 
   void _onTap(TapPosition position, BuildContext context) {
-    m64.Vector2 v = m64.Vector2(position.relative.dx, position.relative.dy);
+    var v = m64.Vector2(position.relative.dx, position.relative.dy);
     v = mapContext.viewMatrix.transform2(v);
     var p = math.Point<double>(position.relative.dx - mapContext.viewMatrix[Indicies.transX],
         position.relative.dy - mapContext.viewMatrix[Indicies.transY]);
@@ -176,7 +175,7 @@ class _MapWidgetState extends State<MapWidget> with AutomaticKeepAliveClientMixi
     var hex = mapContext.gameMap.layout.pixelToHex(p);
     //print('${v.x},${v.y} ${hex.q},${hex.r}');
     if (_tileSelectionOverlay == null) {
-      List<tilelib.TileDefinition> list = [];
+      var list = <tilelib.TileDefinition>[];
 
       var srcTile = mapContext.gameMap.tileAt(hex.q, hex.r);
       if (srcTile == null) {
@@ -268,8 +267,8 @@ class _MapWidgetState extends State<MapWidget> with AutomaticKeepAliveClientMixi
     if (startOffset == null) return;
     if (details.scale != 1.0) {
       // scale about point
-      double tx = details.localFocalPoint.dx - details.scale * details.localFocalPoint.dx;
-      double ty = details.localFocalPoint.dy - details.scale * details.localFocalPoint.dy;
+      var tx = details.localFocalPoint.dx - details.scale * details.localFocalPoint.dx;
+      var ty = details.localFocalPoint.dy - details.scale * details.localFocalPoint.dy;
       var scaleMatrix = m64.Matrix3.identity();
       scaleMatrix[Indicies.scaleX] = details.scale;
       scaleMatrix[Indicies.scaleY] = details.scale;
@@ -289,10 +288,10 @@ class _MapWidgetState extends State<MapWidget> with AutomaticKeepAliveClientMixi
   }
 
   void _onMouseWheelScroll(PointerScrollEvent details) {
-    double scale = 1 - details.scrollDelta.dy / 300.0;
+    var scale = 1 - details.scrollDelta.dy / 300.0;
 
-    double tx = details.localPosition.dx - scale * details.localPosition.dx;
-    double ty = details.localPosition.dy - scale * details.localPosition.dy;
+    var tx = details.localPosition.dx - scale * details.localPosition.dx;
+    var ty = details.localPosition.dy - scale * details.localPosition.dy;
     var scaleMatrix = m64.Matrix3.identity();
     scaleMatrix[Indicies.scaleX] = scale;
     scaleMatrix[Indicies.scaleY] = scale;
@@ -315,7 +314,7 @@ class _MapWidgetState extends State<MapWidget> with AutomaticKeepAliveClientMixi
           var r = ui.PictureRecorder();
           var canvas = ui.Canvas(r);
 
-          double deg = 60.0 * tile.rotation;
+          var deg = 60.0 * tile.rotation;
           canvas.rotateDegrees(deg);
           mapContext.renderer.renderTile(canvas, tile.tileDef, tile.rotation, tile.cost, tile.costPosition);
           tile.picture = r.endRecording();
@@ -325,7 +324,7 @@ class _MapWidgetState extends State<MapWidget> with AutomaticKeepAliveClientMixi
   }
 
   void _showTileList(BuildContext context, Rect rect, Widget child) {
-    OverlayState overlayState = Overlay.of(context);
+    var overlayState = Overlay.of(context);
     _tileSelectionOverlay = OverlayEntry(
       builder: (context) => Positioned(
         top: rect.top,
@@ -373,7 +372,7 @@ class _MapPainter extends CustomPainter {
           canvas.save();
           if (tile.picture == null) {
             //_mapContext.renderer.debug = true;
-            double deg = 60.0 * tile.rotation;
+            var deg = 60.0 * tile.rotation;
             canvas.rotateDegreesOnPoint(deg, tile.center);
             canvas.translate(tile.center.x, tile.center.y);
             _mapContext.renderer.renderTile(canvas, tile.tileDef, tile.rotation, tile.cost, tile.costPosition);

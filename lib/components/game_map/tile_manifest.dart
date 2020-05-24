@@ -30,11 +30,11 @@ class TileManifest {
 
   List<TileManifestItem> upgradesFor(String id) {
     var tile = getTile(id);
-    return tile?.upgrades ?? List<TileManifestItem>();
+    return tile?.upgrades ?? <TileManifestItem>[];
   }
 
   List<TileManifestItem> upgradesRemaining(List<TileManifestItem> upgrades) {
-    List<TileManifestItem> ret = [];
+    var ret = <TileManifestItem>[];
     for (var tile in upgrades) {
       if (tile != null) {
         if (tile.quantity > 0) {

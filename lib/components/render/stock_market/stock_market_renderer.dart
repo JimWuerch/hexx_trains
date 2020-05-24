@@ -8,15 +8,13 @@ import 'package:hexxtrains/components/stock_market/stock_market_data.dart';
 enum _RenderElement { white, yellow, brown, orange, outline, line }
 
 class StockMarketRenderer {
-  Map<_RenderElement, painting.Paint> _paintDict = {};
-  painting.Size _cellSize = painting.Size(120, 100);
-  DrawingSettings
-      _drawingSettings; //TODO: DrawingSettings is shared, so probably need to reorg things
+  final Map<_RenderElement, painting.Paint> _paintDict = <_RenderElement, painting.Paint>{};
+  final painting.Size _cellSize = painting.Size(120, 100);
+  DrawingSettings _drawingSettings; //TODO: DrawingSettings is shared, so probably need to reorg things
   StockMarketData _stockMarketData;
   painting.TextStyle _numberStyle;
 
-  StockMarketRenderer(
-      StockMarketData stockMarketData, DrawingSettings drawingSettings) {
+  StockMarketRenderer(StockMarketData stockMarketData, DrawingSettings drawingSettings) {
     _stockMarketData = stockMarketData;
     _drawingSettings = drawingSettings;
 
@@ -76,8 +74,8 @@ class StockMarketRenderer {
 
     canvas.save();
 
-    for (int row = 0; row < _stockMarketData.rows; ++row) {
-      for (int col = 0; col < _stockMarketData.columns; ++col) {
+    for (var row = 0; row < _stockMarketData.rows; ++row) {
+      for (var col = 0; col < _stockMarketData.columns; ++col) {
         var cell = _stockMarketData.getAt(col, row);
         if (cell != null) {
           _renderCell(canvas, cell);
@@ -94,10 +92,8 @@ class StockMarketRenderer {
   }
 
   math.Point<double> _getPos(StockMarketCell cell) {
-    return math.Point<double>(
-        cell.column * _cellSize.width,
-        (_stockMarketData.rows - cell.row - 1) *
-            _cellSize.height // the -1 is so there isn't a 1 row gap at the top
+    return math.Point<double>(cell.column * _cellSize.width,
+        (_stockMarketData.rows - cell.row - 1) * _cellSize.height // the -1 is so there isn't a 1 row gap at the top
         );
   }
 
@@ -118,16 +114,13 @@ class StockMarketRenderer {
 
   void _drawBackground(painting.Canvas canvas, StockMarketCell cell) {
     var p = _getPos(cell);
-    canvas.drawRect(Rect.fromLTWH(p.x, p.y, _cellSize.width, _cellSize.height),
-        _getPaintColor(cell));
-    canvas.drawRect(Rect.fromLTWH(p.x, p.y, _cellSize.width, _cellSize.height),
-        _paintDict[_RenderElement.outline]);
+    canvas.drawRect(Rect.fromLTWH(p.x, p.y, _cellSize.width, _cellSize.height), _getPaintColor(cell));
+    canvas.drawRect(Rect.fromLTWH(p.x, p.y, _cellSize.width, _cellSize.height), _paintDict[_RenderElement.outline]);
   }
 
   void _drawValue(painting.Canvas canvas, StockMarketCell cell) {
     var pos = _getPos(cell);
-    pos = math.Point<double>(
-        pos.x + _cellSize.width / 2, pos.y + _cellSize.height / 2);
+    pos = math.Point<double>(pos.x + _cellSize.width / 2, pos.y + _cellSize.height / 2);
 
     var textPainter = TextPainter(textDirection: TextDirection.ltr)
       ..text = TextSpan(text: cell.value.toString(), style: _numberStyle)
@@ -136,8 +129,8 @@ class StockMarketRenderer {
         maxWidth: double.maxFinite,
       );
 
-    double xOffset = textPainter.width / 2.0;
-    double yOffset = textPainter.height / 2.0;
+    var xOffset = textPainter.width / 2.0;
+    var yOffset = textPainter.height / 2.0;
 
     textPainter.paint(canvas, Offset(pos.x - xOffset, pos.y - yOffset));
   }

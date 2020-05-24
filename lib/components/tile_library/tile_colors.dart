@@ -1,1 +1,10 @@
-enum TileColors { None, Ground, Fixed, OffMap, Yellow, Green, Brown, Gray }
+enum TileColors {
+  none,
+  ground,
+  fixed,
+  offMap,
+  yellow,
+  green,
+  brown,
+  gray,
+}

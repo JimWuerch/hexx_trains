@@ -13,9 +13,9 @@ class StockMarketData {
       {this.cells, this.market2D, this.starting, this.rows, this.columns});
 
   factory StockMarketData.fromCells(List<StockMarketCell> cells) {
-    int rows = 0;
-    int columns = 0;
-    List<StockMarketCell> starting = [];
+    var rows = 0;
+    var columns = 0;
+    var starting = <StockMarketCell>[];
 
     // first get the size
     for (var cell in cells) {
@@ -29,8 +29,8 @@ class StockMarketData {
 
     // Create all the empty cells
     var market2D = List<List<StockMarketCell>>(rows);
-    for (int row = 0; row < rows; ++row) {
-      List<StockMarketCell> cur = List<StockMarketCell>(columns);
+    for (var row = 0; row < rows; ++row) {
+      var cur = List<StockMarketCell>(columns);
       market2D[row] = cur;
       // Market2D.Add(cur);
       // for (int col = 0; col < Columns; ++col)

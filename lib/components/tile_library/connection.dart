@@ -2,7 +2,7 @@ import 'package:hexxtrains/components/common/common.dart';
 
 import 'position.dart';
 
-enum ConnectionTypes { None, Normal, Small, Universal, Mountain, Tunnel }
+enum ConnectionTypes { none, normal, small, universal, mountain, tunnel }
 
 class Connection {
   final Position position1;
@@ -51,8 +51,8 @@ class Connection {
   factory Connection.fromJson(Map<String, dynamic> json) {
     var position1 = Position.fromTDPosition(json['position1'] as String);
     var position2 = Position.fromTDPosition(json['position2'] as String);
-    var connectionType = ConnectionTypes.values
-        .firstWhere((e) => e.toString() == 'ConnectionTypes.' + (json['connectionType'] as String));
+    var connectionType =
+        ConnectionTypes.values.firstWhere((e) => e.toString() == 'ConnectionTypes.${json['connectionType'] as String}');
     var layer = json['layer'] as int ?? 0;
 
     return Connection(position1: position1, position2: position2, connectionType: connectionType, layer: layer);

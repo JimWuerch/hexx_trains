@@ -4,13 +4,13 @@ class TileDictionarySource {
   {
    "tileId": "-909",
    "name": "OM straight",
-   "color": "OffMap",
+   "color": "offMap",
    "junctions": [],
    "connections": [
     {
      "position1": "tp4SideC",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "isBase": true
@@ -18,13 +18,13 @@ class TileDictionarySource {
   {
    "tileId": "-908",
    "name": "OM wide curve",
-   "color": "OffMap",
+   "color": "offMap",
    "junctions": [],
    "connections": [
     {
      "position1": "tp4SideA",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "isBase": true
@@ -32,13 +32,13 @@ class TileDictionarySource {
   {
    "tileId": "-907",
    "name": "OM tight curve",
-   "color": "OffMap",
+   "color": "offMap",
    "junctions": [],
    "connections": [
     {
      "position1": "tp4SideB",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "isBase": true
@@ -46,11 +46,11 @@ class TileDictionarySource {
   {
    "tileId": "-903",
    "name": "OM 3 way",
-   "color": "OffMap",
+   "color": "offMap",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerA",
       "amount": -1
@@ -61,17 +61,17 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "isBase": true
@@ -79,11 +79,11 @@ class TileDictionarySource {
   {
    "tileId": "-902",
    "name": "OM 2 way",
-   "color": "OffMap",
+   "color": "offMap",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerA",
       "amount": -1
@@ -94,12 +94,12 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "isBase": true
@@ -107,11 +107,11 @@ class TileDictionarySource {
   {
    "tileId": "-901",
    "name": "OM 1 way",
-   "color": "OffMap",
+   "color": "offMap",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerA",
       "amount": -1
@@ -122,7 +122,7 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "isBase": true
@@ -130,11 +130,11 @@ class TileDictionarySource {
   {
    "tileId": "-102",
    "name": "-102",
-   "color": "Fixed",
+   "color": "fixed",
    "junctions": [
     {
      "position": "tp1CornerD",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 20
@@ -145,17 +145,17 @@ class TileDictionarySource {
     {
      "position1": "tp1CornerD",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp1CornerD",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp1CornerD",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "isBase": true
@@ -163,11 +163,11 @@ class TileDictionarySource {
   {
    "tileId": "-101",
    "name": "Philadelphia",
-   "color": "Fixed",
+   "color": "fixed",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 10
@@ -178,22 +178,22 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2CornerD",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2CornerD",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "isBase": true
@@ -201,11 +201,11 @@ class TileDictionarySource {
   {
    "tileId": "-21",
    "name": "NY",
-   "color": "Yellow",
+   "color": "yellow",
    "junctions": [
     {
      "position": "tp2SideC",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3SideE",
       "amount": 40
@@ -213,7 +213,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp2SideF",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3SideB",
       "amount": 40
@@ -224,12 +224,12 @@ class TileDictionarySource {
     {
      "position1": "tp2SideC",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2SideF",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "isBase": true
@@ -237,15 +237,15 @@ class TileDictionarySource {
   {
    "tileId": "-20",
    "name": "2 cities",
-   "color": "Yellow",
+   "color": "yellow",
    "junctions": [
     {
      "position": "tp2SideA",
-     "junctionType": "City"
+     "junctionType": "city"
     },
     {
      "position": "tp2SideD",
-     "junctionType": "City"
+     "junctionType": "city"
     }
    ],
    "connections": [],
@@ -254,11 +254,11 @@ class TileDictionarySource {
   {
    "tileId": "-11",
    "name": "B",
-   "color": "Yellow",
+   "color": "yellow",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 30
@@ -269,12 +269,12 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "isBase": true
@@ -282,11 +282,11 @@ class TileDictionarySource {
   {
    "tileId": "-10",
    "name": "1 city",
-   "color": "Ground",
+   "color": "ground",
    "junctions": [
     {
      "position": "tp2SideD",
-     "junctionType": "City"
+     "junctionType": "city"
     }
    ],
    "connections": [],
@@ -295,15 +295,15 @@ class TileDictionarySource {
   {
    "tileId": "-2",
    "name": "2 villages",
-   "color": "Ground",
+   "color": "ground",
    "junctions": [
     {
      "position": "tp2SideB",
-     "junctionType": "WhistleStop"
+     "junctionType": "whistleStop"
     },
     {
      "position": "tp2SideD",
-     "junctionType": "WhistleStop"
+     "junctionType": "whistleStop"
     }
    ],
    "connections": [],
@@ -312,11 +312,11 @@ class TileDictionarySource {
   {
    "tileId": "-1",
    "name": "1 village",
-   "color": "Ground",
+   "color": "ground",
    "junctions": [
     {
      "position": "tp2SideA",
-     "junctionType": "WhistleStop"
+     "junctionType": "whistleStop"
     }
    ],
    "connections": [],
@@ -325,7 +325,7 @@ class TileDictionarySource {
   {
    "tileId": "0",
    "name": "empty",
-   "color": "Ground",
+   "color": "ground",
    "junctions": [],
    "connections": [],
    "isBase": true
@@ -333,11 +333,11 @@ class TileDictionarySource {
   {
    "tileId": "1",
    "name": "1",
-   "color": "Yellow",
+   "color": "yellow",
    "junctions": [
     {
      "position": "tpCurve2LeftE",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerE",
       "amount": 10
@@ -345,7 +345,7 @@ class TileDictionarySource {
     },
     {
      "position": "tpCurve2LeftB",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerB",
       "amount": 10
@@ -356,33 +356,33 @@ class TileDictionarySource {
     {
      "position1": "tpCurve2LeftE",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCurve2LeftE",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCurve2LeftB",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCurve2LeftB",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "2",
    "name": "2",
-   "color": "Yellow",
+   "color": "yellow",
    "junctions": [
     {
      "position": "tp2SideD",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerE",
       "amount": 10
@@ -390,7 +390,7 @@ class TileDictionarySource {
     },
     {
      "position": "tpCurve1LeftB",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerB",
       "amount": 10
@@ -401,33 +401,33 @@ class TileDictionarySource {
     {
      "position1": "tp2SideD",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2SideD",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCurve1LeftB",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCurve1LeftB",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "3",
    "name": "3",
-   "color": "Yellow",
+   "color": "yellow",
    "junctions": [
     {
      "position": "tp2CornerE",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerB",
       "amount": 10
@@ -438,23 +438,23 @@ class TileDictionarySource {
     {
      "position1": "tp2CornerE",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2CornerE",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "4",
    "name": "4",
-   "color": "Yellow",
+   "color": "yellow",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 10
@@ -465,23 +465,23 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "5",
    "name": "5",
-   "color": "Yellow",
+   "color": "yellow",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 20
@@ -492,23 +492,23 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "1005",
    "name": "5/1832",
-   "color": "Yellow",
+   "color": "yellow",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 30
@@ -519,18 +519,18 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3SideC",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "Lille"
     }
    ]
@@ -538,11 +538,11 @@ class TileDictionarySource {
   {
    "tileId": "6",
    "name": "6",
-   "color": "Yellow",
+   "color": "yellow",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 20
@@ -553,23 +553,23 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "1006",
    "name": "6/1832",
-   "color": "Yellow",
+   "color": "yellow",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerC",
       "amount": 30
@@ -580,18 +580,18 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3SideF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "Lyon"
     }
    ]
@@ -599,50 +599,50 @@ class TileDictionarySource {
   {
    "tileId": "7",
    "name": "7",
-   "color": "Yellow",
+   "color": "yellow",
    "junctions": [],
    "connections": [
     {
      "position1": "tp4SideD",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "8",
    "name": "8",
-   "color": "Yellow",
+   "color": "yellow",
    "junctions": [],
    "connections": [
     {
      "position1": "tp4SideD",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "9",
    "name": "9",
-   "color": "Yellow",
+   "color": "yellow",
    "junctions": [],
    "connections": [
     {
      "position1": "tp4SideD",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "10",
    "name": "10",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tp2CornerA",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerF",
       "amount": 30
@@ -650,7 +650,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp2CornerD",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerC",
       "amount": 30
@@ -661,23 +661,23 @@ class TileDictionarySource {
     {
      "position1": "tp2CornerA",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2CornerD",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "11",
    "name": "11",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tp1SideF",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 10
@@ -688,33 +688,33 @@ class TileDictionarySource {
     {
      "position1": "tp4SideA",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideC",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp1SideF",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp1SideF",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "12",
    "name": "12",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 30
@@ -725,28 +725,28 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "1012",
    "name": "12/1830nl",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 50
@@ -757,23 +757,23 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "X"
     }
    ]
@@ -781,11 +781,11 @@ class TileDictionarySource {
   {
    "tileId": "2012",
    "name": "12/1831",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 40
@@ -796,23 +796,23 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "C"
     }
    ]
@@ -820,11 +820,11 @@ class TileDictionarySource {
   {
    "tileId": "13",
    "name": "13",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 30
@@ -835,28 +835,28 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "1013",
    "name": "13/1830nl",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 50
@@ -867,23 +867,23 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "X"
     }
    ]
@@ -891,11 +891,11 @@ class TileDictionarySource {
   {
    "tileId": "14",
    "name": "14",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerB",
       "amount": 30
@@ -906,33 +906,33 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "15",
    "name": "15",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerB",
       "amount": 30
@@ -943,40 +943,40 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "16",
    "name": "16",
-   "color": "Green",
+   "color": "green",
    "junctions": [],
    "connections": [
     {
      "position1": "tp4SideD",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideE",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
+     "connectionType": "normal",
      "layer": 2
     }
    ]
@@ -984,54 +984,54 @@ class TileDictionarySource {
   {
    "tileId": "17",
    "name": "17",
-   "color": "Green",
+   "color": "green",
    "junctions": [],
    "connections": [
     {
      "position1": "tp4SideA",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideD",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "18",
    "name": "18",
-   "color": "Green",
+   "color": "green",
    "junctions": [],
    "connections": [
     {
      "position1": "tp4SideD",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideE",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "19",
    "name": "19",
-   "color": "Green",
+   "color": "green",
    "junctions": [],
    "connections": [
     {
      "position1": "tp4SideF",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideA",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
+     "connectionType": "normal",
      "layer": 2
     }
    ]
@@ -1039,18 +1039,18 @@ class TileDictionarySource {
   {
    "tileId": "20",
    "name": "20",
-   "color": "Green",
+   "color": "green",
    "junctions": [],
    "connections": [
     {
      "position1": "tp4SideB",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideD",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
+     "connectionType": "normal",
      "layer": 2
     }
    ]
@@ -1058,209 +1058,209 @@ class TileDictionarySource {
   {
    "tileId": "21",
    "name": "21",
-   "color": "Green",
+   "color": "green",
    "junctions": [],
    "connections": [
     {
      "position1": "tp4SideA",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideC",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "22",
    "name": "22",
-   "color": "Green",
+   "color": "green",
    "junctions": [],
    "connections": [
     {
      "position1": "tp4SideA",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideE",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "23",
    "name": "23",
-   "color": "Green",
+   "color": "green",
    "junctions": [],
    "connections": [
     {
      "position1": "tp4SideE",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideA",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "24",
    "name": "24",
-   "color": "Green",
+   "color": "green",
    "junctions": [],
    "connections": [
     {
      "position1": "tp4SideD",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideD",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "25",
    "name": "25",
-   "color": "Green",
+   "color": "green",
    "junctions": [],
    "connections": [
     {
      "position1": "tp4SideB",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideD",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "26",
    "name": "26",
-   "color": "Green",
+   "color": "green",
    "junctions": [],
    "connections": [
     {
      "position1": "tp4SideF",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideA",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "27",
    "name": "27",
-   "color": "Green",
+   "color": "green",
    "junctions": [],
    "connections": [
     {
      "position1": "tp4SideD",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideD",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "28",
    "name": "28",
-   "color": "Green",
+   "color": "green",
    "junctions": [],
    "connections": [
     {
      "position1": "tp4SideD",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideE",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "29",
    "name": "29",
-   "color": "Green",
+   "color": "green",
    "junctions": [],
    "connections": [
     {
      "position1": "tp4SideD",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideD",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "30",
    "name": "30",
-   "color": "Green",
+   "color": "green",
    "junctions": [],
    "connections": [
     {
      "position1": "tp4SideA",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideC",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "31",
    "name": "31",
-   "color": "Green",
+   "color": "green",
    "junctions": [],
    "connections": [
     {
      "position1": "tp4SideB",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideC",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "32",
    "name": "32",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [
     {
      "position": "tp3SideD",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tpCenter",
       "amount": 70
@@ -1268,7 +1268,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp3SideE",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tpCenter",
       "amount": 70
@@ -1276,7 +1276,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp3SideF",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tpCenter",
       "amount": 70
@@ -1284,7 +1284,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp3SideA",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tpCenter",
       "amount": 70
@@ -1292,7 +1292,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp3SideB",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tpCenter",
       "amount": 70
@@ -1300,7 +1300,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp3SideC",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tpCenter",
       "amount": 70
@@ -1311,38 +1311,38 @@ class TileDictionarySource {
     {
      "position1": "tp3SideC",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp3SideB",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp3SideA",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp3SideF",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp3SideE",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp3SideD",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp1SideC",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "LND"
     }
    ]
@@ -1350,11 +1350,11 @@ class TileDictionarySource {
   {
    "tileId": "33",
    "name": "33",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [
     {
      "position": "tp2SideB",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3SideA",
       "amount": 50
@@ -1362,7 +1362,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp2SideD",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3SideA",
       "amount": 50
@@ -1370,7 +1370,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp2SideF",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3SideA",
       "amount": 50
@@ -1381,23 +1381,23 @@ class TileDictionarySource {
     {
      "position1": "tp2SideB",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2SideD",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2SideF",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "L"
     }
    ]
@@ -1405,11 +1405,11 @@ class TileDictionarySource {
   {
    "tileId": "34",
    "name": "34",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [
     {
      "position": "tp2CornerE",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerC",
       "amount": 50
@@ -1417,7 +1417,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp2CornerB",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerC",
       "amount": 50
@@ -1425,7 +1425,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp2SideF",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerC",
       "amount": 50
@@ -1436,28 +1436,28 @@ class TileDictionarySource {
     {
      "position1": "tp2CornerB",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2CornerE",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2SideF",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2SideF",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "BGM"
     }
    ]
@@ -1465,11 +1465,11 @@ class TileDictionarySource {
   {
    "tileId": "35",
    "name": "35",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [
     {
      "position": "tpCurve2LeftA",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3SideF",
       "amount": 40
@@ -1477,7 +1477,7 @@ class TileDictionarySource {
     },
     {
      "position": "tpCurve2RightD",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3SideE",
       "amount": 40
@@ -1488,22 +1488,22 @@ class TileDictionarySource {
     {
      "position1": "tpCurve2LeftA",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCurve2LeftA",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCurve2RightD",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCurve2RightD",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
+     "connectionType": "normal",
      "layer": 2
     }
    ]
@@ -1511,11 +1511,11 @@ class TileDictionarySource {
   {
    "tileId": "36",
    "name": "36",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [
     {
      "position": "tpCurve2LeftA",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerC",
       "amount": 40
@@ -1523,7 +1523,7 @@ class TileDictionarySource {
     },
     {
      "position": "tpCurve2LeftD",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerF",
       "amount": 40
@@ -1534,33 +1534,33 @@ class TileDictionarySource {
     {
      "position1": "tpCurve2LeftA",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCurve2LeftA",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCurve2LeftD",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCurve2LeftD",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "37",
    "name": "37",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [
     {
      "position": "tp2CornerB",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerC",
       "amount": 40
@@ -1568,7 +1568,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp2CornerE",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerF",
       "amount": 40
@@ -1579,28 +1579,28 @@ class TileDictionarySource {
     {
      "position1": "tp2CornerB",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2CornerE",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideC",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "38",
    "name": "38",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 40
@@ -1611,33 +1611,33 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "1038",
    "name": "38/1830nl",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 70
@@ -1648,28 +1648,28 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "X"
     }
    ]
@@ -1677,122 +1677,122 @@ class TileDictionarySource {
   {
    "tileId": "39",
    "name": "39",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [],
    "connections": [
     {
      "position1": "tp4SideD",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideD",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideE",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "40",
    "name": "40",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [],
    "connections": [
     {
      "position1": "tp4SideB",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideB",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideD",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "41",
    "name": "41",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [],
    "connections": [
     {
      "position1": "tp4SideE",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideE",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideA",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "42",
    "name": "42",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [],
    "connections": [
     {
      "position1": "tp4SideD",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideD",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideF",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "43",
    "name": "43",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [],
    "connections": [
     {
      "position1": "tp4SideD",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideD",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
+     "connectionType": "normal",
      "layer": 1
     },
     {
      "position1": "tp4SideE",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
+     "connectionType": "normal",
      "layer": 1
     },
     {
      "position1": "tp4SideE",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
+     "connectionType": "normal",
      "layer": 2
     }
    ]
@@ -1800,30 +1800,30 @@ class TileDictionarySource {
   {
    "tileId": "44",
    "name": "44",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [],
    "connections": [
     {
      "position1": "tp4SideD",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideB",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
+     "connectionType": "normal",
      "layer": 1
     },
     {
      "position1": "tp4SideD",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
+     "connectionType": "normal",
      "layer": 1
     },
     {
      "position1": "tp4SideB",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
+     "connectionType": "normal",
      "layer": 2
     }
    ]
@@ -1831,30 +1831,30 @@ class TileDictionarySource {
   {
    "tileId": "45",
    "name": "45",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [],
    "connections": [
     {
      "position1": "tp4SideB",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideB",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
+     "connectionType": "normal",
      "layer": 1
     },
     {
      "position1": "tp4SideF",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
+     "connectionType": "normal",
      "layer": 1
     },
     {
      "position1": "tp4SideD",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
+     "connectionType": "normal",
      "layer": 2
     }
    ]
@@ -1862,30 +1862,30 @@ class TileDictionarySource {
   {
    "tileId": "46",
    "name": "46",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [],
    "connections": [
     {
      "position1": "tp4SideB",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideB",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
+     "connectionType": "normal",
      "layer": 1
     },
     {
      "position1": "tp4SideD",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
+     "connectionType": "normal",
      "layer": 1
     },
     {
      "position1": "tp4SideD",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
+     "connectionType": "normal",
      "layer": 2
     }
    ]
@@ -1893,30 +1893,30 @@ class TileDictionarySource {
   {
    "tileId": "47",
    "name": "47",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [],
    "connections": [
     {
      "position1": "tp4SideD",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideD",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
+     "connectionType": "normal",
      "layer": 1
     },
     {
      "position1": "tp4SideE",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
+     "connectionType": "normal",
      "layer": 1
     },
     {
      "position1": "tp4SideE",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
+     "connectionType": "normal",
      "layer": 2
     }
    ]
@@ -1924,11 +1924,11 @@ class TileDictionarySource {
   {
    "tileId": "48",
    "name": "48",
-   "color": "Gray",
+   "color": "gray",
    "junctions": [
     {
      "position": "tp3SideD",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tpCenter",
       "amount": 100
@@ -1936,7 +1936,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp3SideE",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tpCenter",
       "amount": 100
@@ -1944,7 +1944,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp3SideF",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tpCenter",
       "amount": 100
@@ -1952,7 +1952,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp3SideA",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tpCenter",
       "amount": 100
@@ -1960,7 +1960,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp3SideB",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tpCenter",
       "amount": 100
@@ -1968,7 +1968,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp3SideC",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tpCenter",
       "amount": 100
@@ -1979,38 +1979,38 @@ class TileDictionarySource {
     {
      "position1": "tp3SideD",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp3SideE",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp3SideF",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp3SideA",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp3SideB",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp3SideC",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp1SideC",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "LND"
     }
    ]
@@ -2018,11 +2018,11 @@ class TileDictionarySource {
   {
    "tileId": "49",
    "name": "49",
-   "color": "Gray",
+   "color": "gray",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "TripleCity",
+     "junctionType": "tripleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 70
@@ -2033,23 +2033,23 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "L"
     }
    ]
@@ -2057,11 +2057,11 @@ class TileDictionarySource {
   {
    "tileId": "50",
    "name": "50",
-   "color": "Gray",
+   "color": "gray",
    "junctions": [
     {
      "position": "tp2SideF",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerC",
       "amount": 70
@@ -2069,7 +2069,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp2CornerB",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerC",
       "amount": 70
@@ -2077,7 +2077,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp2CornerE",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerC",
       "amount": 70
@@ -2088,38 +2088,38 @@ class TileDictionarySource {
     {
      "position1": "tp2SideF",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2SideF",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2CornerB",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2CornerB",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2CornerE",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2CornerE",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "BGM"
     }
    ]
@@ -2127,11 +2127,11 @@ class TileDictionarySource {
   {
    "tileId": "1050",
    "name": "50/1831",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 50
@@ -2142,23 +2142,23 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "CC"
     }
    ]
@@ -2166,11 +2166,11 @@ class TileDictionarySource {
   {
    "tileId": "51",
    "name": "51",
-   "color": "Gray",
+   "color": "gray",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 50
@@ -2181,38 +2181,38 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "1051",
    "name": "51/1831",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 40
@@ -2223,28 +2223,28 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "A"
     }
    ]
@@ -2252,11 +2252,11 @@ class TileDictionarySource {
   {
    "tileId": "52",
    "name": "52",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 30
@@ -2267,33 +2267,33 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "1052",
    "name": "52/1825",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tp2CornerC",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerB",
       "amount": 40
@@ -2301,7 +2301,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp2CornerF",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 40
@@ -2312,23 +2312,23 @@ class TileDictionarySource {
     {
      "position1": "tp2CornerC",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2CornerF",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "53",
    "name": "53",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerB",
       "amount": 50
@@ -2339,23 +2339,23 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerC",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "B"
     }
    ]
@@ -2363,11 +2363,11 @@ class TileDictionarySource {
   {
    "tileId": "1053",
    "name": "53/1876",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 50
@@ -2378,23 +2378,23 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerB",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "A"
     }
    ]
@@ -2402,11 +2402,11 @@ class TileDictionarySource {
   {
    "tileId": "54",
    "name": "54",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tp2CornerE",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3SideC",
       "amount": 60
@@ -2414,7 +2414,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp2CornerA",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3SideB",
       "amount": 60
@@ -2425,28 +2425,28 @@ class TileDictionarySource {
     {
      "position1": "tp2CornerE",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2CornerE",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2CornerA",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2CornerA",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerC",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "NY"
     }
    ]
@@ -2454,11 +2454,11 @@ class TileDictionarySource {
   {
    "tileId": "55",
    "name": "55",
-   "color": "Yellow",
+   "color": "yellow",
    "junctions": [
     {
      "position": "tp2SideC",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerB",
       "amount": 10
@@ -2466,7 +2466,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp2SideD",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerE",
       "amount": 10
@@ -2477,23 +2477,23 @@ class TileDictionarySource {
     {
      "position1": "tp2SideC",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2SideC",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2SideD",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
+     "connectionType": "normal",
      "layer": 2
     },
     {
      "position1": "tp2SideD",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
+     "connectionType": "normal",
      "layer": 2
     }
    ]
@@ -2501,11 +2501,11 @@ class TileDictionarySource {
   {
    "tileId": "56",
    "name": "56",
-   "color": "Yellow",
+   "color": "yellow",
    "junctions": [
     {
      "position": "tpCurve2RightE",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerE",
       "amount": 10
@@ -2513,7 +2513,7 @@ class TileDictionarySource {
     },
     {
      "position": "tpCurve2LeftB",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerB",
       "amount": 10
@@ -2524,23 +2524,23 @@ class TileDictionarySource {
     {
      "position1": "tpCurve2LeftB",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCurve2LeftB",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCurve2RightE",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
+     "connectionType": "normal",
      "layer": 2
     },
     {
      "position1": "tpCurve2RightE",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
+     "connectionType": "normal",
      "layer": 2
     }
    ]
@@ -2548,11 +2548,11 @@ class TileDictionarySource {
   {
    "tileId": "57",
    "name": "57",
-   "color": "Yellow",
+   "color": "yellow",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerB",
       "amount": 20
@@ -2563,23 +2563,23 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "58",
    "name": "58",
-   "color": "Yellow",
+   "color": "yellow",
    "junctions": [
     {
      "position": "tp1SideE",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerB",
       "amount": 10
@@ -2590,23 +2590,23 @@ class TileDictionarySource {
     {
      "position1": "tp1SideE",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp1SideE",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "59",
    "name": "59",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tp2CornerB",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 40
@@ -2614,7 +2614,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp2CornerE",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerF",
       "amount": 40
@@ -2625,18 +2625,18 @@ class TileDictionarySource {
     {
      "position1": "tp2CornerB",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2CornerE",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerC",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "OO"
     }
    ]
@@ -2644,11 +2644,11 @@ class TileDictionarySource {
   {
    "tileId": "1059",
    "name": "59/1829",
-   "color": "Yellow",
+   "color": "yellow",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 20
@@ -2659,56 +2659,56 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "60",
    "name": "60",
-   "color": "Gray",
+   "color": "gray",
    "junctions": [],
    "connections": [
     {
      "position1": "tp4SideC",
      "position2": "tpCenter",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "61",
    "name": "61",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerB",
       "amount": 60
@@ -2719,28 +2719,28 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerC",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "B"
     }
    ]
@@ -2748,11 +2748,11 @@ class TileDictionarySource {
   {
    "tileId": "62",
    "name": "62",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [
     {
      "position": "tp2SideD",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerF",
       "amount": 80
@@ -2760,7 +2760,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp2SideA",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerF",
       "amount": 80
@@ -2771,28 +2771,28 @@ class TileDictionarySource {
     {
      "position1": "tp2SideD",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2SideD",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2SideA",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2SideA",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerC",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "NY"
     }
    ]
@@ -2800,11 +2800,11 @@ class TileDictionarySource {
   {
    "tileId": "63",
    "name": "63",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 40
@@ -2815,43 +2815,43 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "1063",
    "name": "63/1876",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 40
@@ -2862,38 +2862,38 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerB",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "A"
     }
    ]
@@ -2901,11 +2901,11 @@ class TileDictionarySource {
   {
    "tileId": "2063",
    "name": "62/1876bis",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 60
@@ -2916,38 +2916,38 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerB",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "A"
     }
    ]
@@ -2955,11 +2955,11 @@ class TileDictionarySource {
   {
    "tileId": "64",
    "name": "64",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [
     {
      "position": "tp1SideE",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerF",
       "amount": 50
@@ -2967,7 +2967,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp2CornerB",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 50
@@ -2978,28 +2978,28 @@ class TileDictionarySource {
     {
      "position1": "tp1SideE",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp1SideE",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2CornerB",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2CornerB",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerC",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "OO"
     }
    ]
@@ -3007,11 +3007,11 @@ class TileDictionarySource {
   {
    "tileId": "65",
    "name": "65",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [
     {
      "position": "tp1SideF",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 50
@@ -3019,7 +3019,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp2CornerD",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerC",
       "amount": 50
@@ -3030,28 +3030,28 @@ class TileDictionarySource {
     {
      "position1": "tp1SideF",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp1SideF",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2CornerD",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2CornerD",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerB",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "OO"
     }
    ]
@@ -3059,11 +3059,11 @@ class TileDictionarySource {
   {
    "tileId": "66",
    "name": "66",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [
     {
      "position": "tp2SideA",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 50
@@ -3071,7 +3071,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp2CornerF",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerE",
       "amount": 50
@@ -3082,28 +3082,28 @@ class TileDictionarySource {
     {
      "position1": "tp2SideA",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2SideA",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2CornerF",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2CornerF",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerC",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "OO"
     }
    ]
@@ -3111,11 +3111,11 @@ class TileDictionarySource {
   {
    "tileId": "67",
    "name": "67",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [
     {
      "position": "tpCurve2RightD",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerE",
       "amount": 50
@@ -3123,7 +3123,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp2SideF",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerF",
       "amount": 50
@@ -3134,29 +3134,29 @@ class TileDictionarySource {
     {
      "position1": "tpCurve2RightD",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCurve2RightD",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2SideF",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2SideF",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
+     "connectionType": "normal",
      "layer": 2
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerB",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "OO"
     }
    ]
@@ -3164,11 +3164,11 @@ class TileDictionarySource {
   {
    "tileId": "1067",
    "name": "67/1825u1",
-   "color": "OffMap",
+   "color": "offMap",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 40
@@ -3179,38 +3179,38 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "68",
    "name": "68",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [
     {
      "position": "tp2SideD",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerE",
       "amount": 50
@@ -3218,7 +3218,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp2SideF",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 50
@@ -3229,29 +3229,29 @@ class TileDictionarySource {
     {
      "position1": "tp2SideD",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2SideF",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2SideF",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2SideD",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
+     "connectionType": "normal",
      "layer": 2
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerC",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "OO"
     }
    ]
@@ -3259,11 +3259,11 @@ class TileDictionarySource {
   {
    "tileId": "69",
    "name": "69",
-   "color": "Yellow",
+   "color": "yellow",
    "junctions": [
     {
      "position": "tpCurve2RightE",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerE",
       "amount": 10
@@ -3271,7 +3271,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp2SideA",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerB",
       "amount": 10
@@ -3282,23 +3282,23 @@ class TileDictionarySource {
     {
      "position1": "tpCurve2RightE",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCurve2RightE",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2SideA",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
+     "connectionType": "normal",
      "layer": 2
     },
     {
      "position1": "tp2SideA",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
+     "connectionType": "normal",
      "layer": 2
     }
    ]
@@ -3306,11 +3306,11 @@ class TileDictionarySource {
   {
    "tileId": "1069",
    "name": "69/1853",
-   "color": "Yellow",
+   "color": "yellow",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 20
@@ -3321,37 +3321,37 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "70",
    "name": "70",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [],
    "connections": [
     {
      "position1": "tp4SideD",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideD",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
+     "connectionType": "normal",
      "layer": 1
     },
     {
      "position1": "tp4SideF",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
+     "connectionType": "normal",
      "layer": 1
     },
     {
      "position1": "tp4SideE",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
+     "connectionType": "normal",
      "layer": 2
     }
    ]
@@ -3359,11 +3359,11 @@ class TileDictionarySource {
   {
    "tileId": "71",
    "name": "71",
-   "color": "Yellow",
+   "color": "yellow",
    "junctions": [
     {
      "position": "tpCurve2LeftC",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerC",
       "amount": 10
@@ -3371,7 +3371,7 @@ class TileDictionarySource {
     },
     {
      "position": "tpCurve2RightE",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerF",
       "amount": 10
@@ -3382,53 +3382,53 @@ class TileDictionarySource {
     {
      "position1": "tpCurve2LeftC",
      "position2": "tpCurve2RightE",
-     "connectionType": "Small"
+     "connectionType": "small"
     },
     {
      "position1": "tpCurve2LeftC",
      "position2": "tp4SideC",
-     "connectionType": "Small"
+     "connectionType": "small"
     },
     {
      "position1": "tpCurve2RightE",
      "position2": "tp4SideE",
-     "connectionType": "Small"
+     "connectionType": "small"
     }
    ]
   },
   {
    "tileId": "2071",
    "name": "71/1869AM",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [],
    "connections": [
     {
      "position1": "tp4SideE",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideE",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
+     "connectionType": "normal",
      "layer": 1
     },
     {
      "position1": "tp4SideD",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
+     "connectionType": "normal",
      "layer": 1
     },
     {
      "position1": "tp4SideC",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
+     "connectionType": "normal",
      "layer": 1
     },
     {
      "position1": "tp4SideF",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
+     "connectionType": "normal",
      "layer": 2
     }
    ]
@@ -3436,11 +3436,11 @@ class TileDictionarySource {
   {
    "tileId": "72",
    "name": "72",
-   "color": "Yellow",
+   "color": "yellow",
    "junctions": [
     {
      "position": "tp2CornerD",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerC",
       "amount": 10
@@ -3451,23 +3451,23 @@ class TileDictionarySource {
     {
      "position1": "tp2CornerD",
      "position2": "tp4SideC",
-     "connectionType": "Small"
+     "connectionType": "small"
     },
     {
      "position1": "tp2CornerD",
      "position2": "tp4SideD",
-     "connectionType": "Small"
+     "connectionType": "small"
     }
    ]
   },
   {
    "tileId": "1072",
    "name": "72/1831",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "TripleCity",
+     "junctionType": "tripleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 80
@@ -3478,28 +3478,28 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "CC"
     }
    ]
@@ -3507,36 +3507,36 @@ class TileDictionarySource {
   {
    "tileId": "2072",
    "name": "72/1869AM",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [],
    "connections": [
     {
      "position1": "tp4SideE",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideE",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
+     "connectionType": "normal",
      "layer": 1
     },
     {
      "position1": "tp4SideE",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
+     "connectionType": "normal",
      "layer": 1
     },
     {
      "position1": "tp4SideF",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
+     "connectionType": "normal",
      "layer": 1
     },
     {
      "position1": "tp4SideF",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
+     "connectionType": "normal",
      "layer": 2
     }
    ]
@@ -3544,11 +3544,11 @@ class TileDictionarySource {
   {
    "tileId": "73",
    "name": "73",
-   "color": "Yellow",
+   "color": "yellow",
    "junctions": [
     {
      "position": "tp1SideD",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerF",
       "amount": 10
@@ -3559,46 +3559,46 @@ class TileDictionarySource {
     {
      "position1": "tp1SideD",
      "position2": "tp4SideC",
-     "connectionType": "Small"
+     "connectionType": "small"
     },
     {
      "position1": "tp1SideD",
      "position2": "tp4SideE",
-     "connectionType": "Small"
+     "connectionType": "small"
     }
    ]
   },
   {
    "tileId": "2073",
    "name": "73/1869AM",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [],
    "connections": [
     {
      "position1": "tp4SideC",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideC",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideC",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "74",
    "name": "74",
-   "color": "Yellow",
+   "color": "yellow",
    "junctions": [
     {
      "position": "tp2SideF",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerF",
       "amount": 10
@@ -3609,46 +3609,46 @@ class TileDictionarySource {
     {
      "position1": "tp2SideF",
      "position2": "tp4SideC",
-     "connectionType": "Small"
+     "connectionType": "small"
     },
     {
      "position1": "tp2SideF",
      "position2": "tp4SideF",
-     "connectionType": "Small"
+     "connectionType": "small"
     }
    ]
   },
   {
    "tileId": "2074",
    "name": "74/1869AM",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [],
    "connections": [
     {
      "position1": "tp4SideC",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideC",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideC",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "75",
    "name": "75",
-   "color": "Yellow",
+   "color": "yellow",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerF",
       "amount": 20
@@ -3659,46 +3659,46 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Small"
+     "connectionType": "small"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Small"
+     "connectionType": "small"
     }
    ]
   },
   {
    "tileId": "2075",
    "name": "75/1869AM",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [],
    "connections": [
     {
      "position1": "tp4SideC",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideC",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideC",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "76",
    "name": "76",
-   "color": "Yellow",
+   "color": "yellow",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerF",
       "amount": 20
@@ -3709,197 +3709,197 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Small"
+     "connectionType": "small"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Small"
+     "connectionType": "small"
     }
    ]
   },
   {
    "tileId": "2076",
    "name": "76/1869AM",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [],
    "connections": [
     {
      "position1": "tp4SideC",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideC",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideC",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideF",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideF",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "77",
    "name": "77",
-   "color": "Yellow",
+   "color": "yellow",
    "junctions": [],
    "connections": [
     {
      "position1": "tp4SideB",
      "position2": "tp4SideC",
-     "connectionType": "Small"
+     "connectionType": "small"
     }
    ]
   },
   {
    "tileId": "2077",
    "name": "77/1869AM",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [],
    "connections": [
     {
      "position1": "tp4SideF",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideF",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideC",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideC",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideE",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "78",
    "name": "78",
-   "color": "Yellow",
+   "color": "yellow",
    "junctions": [],
    "connections": [
     {
      "position1": "tp4SideA",
      "position2": "tp4SideC",
-     "connectionType": "Small"
+     "connectionType": "small"
     }
    ]
   },
   {
    "tileId": "2078",
    "name": "78/1869AM",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [],
    "connections": [
     {
      "position1": "tp4SideD",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideF",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideC",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "79",
    "name": "79",
-   "color": "Yellow",
+   "color": "yellow",
    "junctions": [],
    "connections": [
     {
      "position1": "tp4SideC",
      "position2": "tp4SideF",
-     "connectionType": "Small"
+     "connectionType": "small"
     }
    ]
   },
   {
    "tileId": "2079",
    "name": "79/1869AM",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [],
    "connections": [
     {
      "position1": "tp4SideC",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideC",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideF",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "80",
    "name": "80",
-   "color": "Green",
+   "color": "green",
    "junctions": [],
    "connections": [
     {
      "position1": "tp4SideB",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideB",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideC",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "2080",
    "name": "80/1869AM",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 50
@@ -3910,23 +3910,23 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "S"
     }
    ]
@@ -3934,34 +3934,34 @@ class TileDictionarySource {
   {
    "tileId": "81",
    "name": "81",
-   "color": "Green",
+   "color": "green",
    "junctions": [],
    "connections": [
     {
      "position1": "tp4SideA",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideA",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideC",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "2081",
    "name": "81/1869AM",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 50
@@ -3972,28 +3972,28 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "PL"
     }
    ]
@@ -4001,34 +4001,34 @@ class TileDictionarySource {
   {
    "tileId": "82",
    "name": "82",
-   "color": "Green",
+   "color": "green",
    "junctions": [],
    "connections": [
     {
      "position1": "tp4SideA",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideA",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideC",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "2082",
    "name": "82/1869AM",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "TripleCity",
+     "junctionType": "tripleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 80
@@ -4039,23 +4039,23 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "Ch"
     }
    ]
@@ -4063,34 +4063,34 @@ class TileDictionarySource {
   {
    "tileId": "83",
    "name": "83",
-   "color": "Green",
+   "color": "green",
    "junctions": [],
    "connections": [
     {
      "position1": "tp4SideC",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideC",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideE",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "2083",
    "name": "83/1869AM",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerC",
       "amount": 70
@@ -4101,18 +4101,18 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3SideF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "MTL"
     }
    ]
@@ -4120,34 +4120,34 @@ class TileDictionarySource {
   {
    "tileId": "84",
    "name": "84",
-   "color": "Green",
+   "color": "green",
    "junctions": [],
    "connections": [
     {
      "position1": "tp4SideB",
      "position2": "tp4SideC",
-     "connectionType": "Small"
+     "connectionType": "small"
     },
     {
      "position1": "tp4SideB",
      "position2": "tp4SideD",
-     "connectionType": "Small"
+     "connectionType": "small"
     },
     {
      "position1": "tp4SideC",
      "position2": "tp4SideD",
-     "connectionType": "Small"
+     "connectionType": "small"
     }
    ]
   },
   {
    "tileId": "2084",
    "name": "84/1869AM",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 60
@@ -4158,18 +4158,18 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "NO"
     }
    ]
@@ -4177,34 +4177,34 @@ class TileDictionarySource {
   {
    "tileId": "85",
    "name": "85",
-   "color": "Green",
+   "color": "green",
    "junctions": [],
    "connections": [
     {
      "position1": "tp4SideC",
      "position2": "tp4SideE",
-     "connectionType": "Small"
+     "connectionType": "small"
     },
     {
      "position1": "tp4SideC",
      "position2": "tp4SideF",
-     "connectionType": "Small"
+     "connectionType": "small"
     },
     {
      "position1": "tp4SideE",
      "position2": "tp4SideF",
-     "connectionType": "Small"
+     "connectionType": "small"
     }
    ]
   },
   {
    "tileId": "2085",
    "name": "85/1869AM",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 40
@@ -4215,56 +4215,56 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "86",
    "name": "86",
-   "color": "Green",
+   "color": "green",
    "junctions": [],
    "connections": [
     {
      "position1": "tp4SideA",
      "position2": "tp4SideC",
-     "connectionType": "Small"
+     "connectionType": "small"
     },
     {
      "position1": "tp4SideA",
      "position2": "tp4SideF",
-     "connectionType": "Small"
+     "connectionType": "small"
     },
     {
      "position1": "tp4SideC",
      "position2": "tp4SideF",
-     "connectionType": "Small"
+     "connectionType": "small"
     }
    ]
   },
   {
    "tileId": "2086",
    "name": "86/1869AM",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 40
@@ -4275,38 +4275,38 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "87",
    "name": "87",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 10
@@ -4317,33 +4317,33 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "2087",
    "name": "87/1869AM",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 50
@@ -4354,43 +4354,43 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "88",
    "name": "88",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 10
@@ -4401,33 +4401,33 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "89",
    "name": "89",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 10
@@ -4438,33 +4438,33 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Small"
+     "connectionType": "small"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Small"
+     "connectionType": "small"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Small"
+     "connectionType": "small"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Small"
+     "connectionType": "small"
     }
    ]
   },
   {
    "tileId": "90",
    "name": "90",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 20
@@ -4475,43 +4475,43 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Small"
+     "connectionType": "small"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Small"
+     "connectionType": "small"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "2090",
    "name": "90/1869AM",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 40
@@ -4522,23 +4522,23 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "PSL"
     }
    ]
@@ -4546,11 +4546,11 @@ class TileDictionarySource {
   {
    "tileId": "91",
    "name": "91",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 20
@@ -4561,43 +4561,43 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Small"
+     "connectionType": "small"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Small"
+     "connectionType": "small"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Small"
+     "connectionType": "small"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Small"
+     "connectionType": "small"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "1091",
    "name": "91/1830nl",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 50
@@ -4608,23 +4608,23 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "X"
     }
    ]
@@ -4632,11 +4632,11 @@ class TileDictionarySource {
   {
    "tileId": "2091",
    "name": "91/1869AM",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 30
@@ -4647,28 +4647,28 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "92",
    "name": "92",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 20
@@ -4679,43 +4679,43 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Small"
+     "connectionType": "small"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Small"
+     "connectionType": "small"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Small"
+     "connectionType": "small"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Small"
+     "connectionType": "small"
     }
    ]
   },
   {
    "tileId": "1092",
    "name": "92/1830nl",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 50
@@ -4726,23 +4726,23 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "X"
     }
    ]
@@ -4750,11 +4750,11 @@ class TileDictionarySource {
   {
    "tileId": "2092",
    "name": "92/1869AM",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 30
@@ -4765,28 +4765,28 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "93",
    "name": "93",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 20
@@ -4797,43 +4797,43 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Small"
+     "connectionType": "small"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Small"
+     "connectionType": "small"
     }
    ]
   },
   {
    "tileId": "1093",
    "name": "93/1830nl",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 70
@@ -4844,18 +4844,18 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "Z"
     }
    ]
@@ -4863,11 +4863,11 @@ class TileDictionarySource {
   {
    "tileId": "2093",
    "name": "93/1869AM",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 30
@@ -4878,23 +4878,23 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "94",
    "name": "94",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 20
@@ -4905,33 +4905,33 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Small"
+     "connectionType": "small"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Small"
+     "connectionType": "small"
     }
    ]
   },
   {
    "tileId": "95",
    "name": "95",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 20
@@ -4942,33 +4942,33 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Small"
+     "connectionType": "small"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Small"
+     "connectionType": "small"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "96",
    "name": "96",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 20
@@ -4979,33 +4979,33 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Small"
+     "connectionType": "small"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Small"
+     "connectionType": "small"
     }
    ]
   },
   {
    "tileId": "97",
    "name": "97",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 20
@@ -5016,33 +5016,33 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Small"
+     "connectionType": "small"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Small"
+     "connectionType": "small"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "98",
    "name": "98",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 30
@@ -5053,33 +5053,33 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Small"
+     "connectionType": "small"
     }
    ]
   },
   {
    "tileId": "99",
    "name": "99",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 30
@@ -5090,33 +5090,33 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Small"
+     "connectionType": "small"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "100",
    "name": "100",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 30
@@ -5127,28 +5127,28 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Small"
+     "connectionType": "small"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Small"
+     "connectionType": "small"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Small"
+     "connectionType": "small"
     }
    ]
   },
   {
    "tileId": "101",
    "name": "101",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 30
@@ -5159,28 +5159,28 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Small"
+     "connectionType": "small"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Small"
+     "connectionType": "small"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Small"
+     "connectionType": "small"
     }
    ]
   },
   {
    "tileId": "2101",
    "name": "101/1869AM",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCurve2LeftA",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 20
@@ -5191,23 +5191,23 @@ class TileDictionarySource {
     {
      "position1": "tp4SideC",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideC",
      "position2": "tpCurve2LeftA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCurve2LeftA",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "A"
     }
    ]
@@ -5215,11 +5215,11 @@ class TileDictionarySource {
   {
    "tileId": "102",
    "name": "102",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 30
@@ -5230,43 +5230,43 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Universal"
+     "connectionType": "universal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Universal"
+     "connectionType": "universal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Universal"
+     "connectionType": "universal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Universal"
+     "connectionType": "universal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Universal"
+     "connectionType": "universal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Universal"
+     "connectionType": "universal"
     }
    ]
   },
   {
    "tileId": "2102",
    "name": "102/1869AM",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tp2SideF",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 20
@@ -5277,23 +5277,23 @@ class TileDictionarySource {
     {
      "position1": "tp2SideF",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2SideF",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideC",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "B"
     }
    ]
@@ -5301,11 +5301,11 @@ class TileDictionarySource {
   {
    "tileId": "103",
    "name": "103",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 40
@@ -5316,33 +5316,33 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Universal"
+     "connectionType": "universal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Universal"
+     "connectionType": "universal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Universal"
+     "connectionType": "universal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Universal"
+     "connectionType": "universal"
     }
    ]
   },
   {
    "tileId": "2103",
    "name": "103/1869AM",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCurve2RightE",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 20
@@ -5353,23 +5353,23 @@ class TileDictionarySource {
     {
      "position1": "tp4SideC",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideC",
      "position2": "tpCurve2RightE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCurve2RightE",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "C"
     }
    ]
@@ -5377,11 +5377,11 @@ class TileDictionarySource {
   {
    "tileId": "104",
    "name": "104",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [
     {
      "position": "tp3SideA",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp1SideC",
       "amount": 70
@@ -5389,7 +5389,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp3SideB",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp1SideC",
       "amount": 70
@@ -5397,7 +5397,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp3SideC",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp1SideC",
       "amount": 70
@@ -5405,7 +5405,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp3SideD",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp1SideC",
       "amount": 70
@@ -5413,7 +5413,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp3SideE",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp1SideC",
       "amount": 70
@@ -5421,7 +5421,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp3SideF",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp1SideC",
       "amount": 70
@@ -5432,38 +5432,38 @@ class TileDictionarySource {
     {
      "position1": "tp3SideA",
      "position2": "tp4SideA",
-     "connectionType": "Universal"
+     "connectionType": "universal"
     },
     {
      "position1": "tp3SideB",
      "position2": "tp4SideB",
-     "connectionType": "Universal"
+     "connectionType": "universal"
     },
     {
      "position1": "tp3SideC",
      "position2": "tp4SideC",
-     "connectionType": "Universal"
+     "connectionType": "universal"
     },
     {
      "position1": "tp3SideD",
      "position2": "tp4SideD",
-     "connectionType": "Universal"
+     "connectionType": "universal"
     },
     {
      "position1": "tp3SideE",
      "position2": "tp4SideE",
-     "connectionType": "Universal"
+     "connectionType": "universal"
     },
     {
      "position1": "tp3SideF",
      "position2": "tp4SideF",
-     "connectionType": "Universal"
+     "connectionType": "universal"
     }
    ],
    "adornments": [
     {
      "position": "tp1SideF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "CD"
     }
    ]
@@ -5471,11 +5471,11 @@ class TileDictionarySource {
   {
    "tileId": "2104",
    "name": "104/1869AM",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tp2SideF",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 20
@@ -5486,23 +5486,23 @@ class TileDictionarySource {
     {
      "position1": "tp4SideE",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideC",
      "position2": "tp2SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2SideF",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "D"
     }
    ]
@@ -5510,11 +5510,11 @@ class TileDictionarySource {
   {
    "tileId": "105",
    "name": "105",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "TripleCity",
+     "junctionType": "tripleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 50
@@ -5525,23 +5525,23 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Universal"
+     "connectionType": "universal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Universal"
+     "connectionType": "universal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Universal"
+     "connectionType": "universal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerD",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "BM"
     }
    ]
@@ -5549,11 +5549,11 @@ class TileDictionarySource {
   {
    "tileId": "2105",
    "name": "105/1869AM",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCurve2LeftA",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 20
@@ -5564,23 +5564,23 @@ class TileDictionarySource {
     {
      "position1": "tpCurve2LeftA",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCurve2LeftA",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideC",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "E"
     }
    ]
@@ -5588,39 +5588,39 @@ class TileDictionarySource {
   {
    "tileId": "106",
    "name": "106",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [],
    "connections": [
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Universal"
+     "connectionType": "universal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Universal"
+     "connectionType": "universal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Universal"
+     "connectionType": "universal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Universal"
+     "connectionType": "universal"
     }
    ]
   },
   {
    "tileId": "2106",
    "name": "106/1869AM",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCurve2RightE",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 20
@@ -5631,23 +5631,23 @@ class TileDictionarySource {
     {
      "position1": "tpCurve2RightE",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCurve2RightE",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideC",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "F"
     }
    ]
@@ -5655,39 +5655,39 @@ class TileDictionarySource {
   {
    "tileId": "107",
    "name": "107",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [],
    "connections": [
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Universal"
+     "connectionType": "universal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Universal"
+     "connectionType": "universal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Universal"
+     "connectionType": "universal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Universal"
+     "connectionType": "universal"
     }
    ]
   },
   {
    "tileId": "2107",
    "name": "107/1869AM",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tp2SideC",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 20
@@ -5698,24 +5698,24 @@ class TileDictionarySource {
     {
      "position1": "tp4SideF",
      "position2": "tp2SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2SideC",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideD",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
+     "connectionType": "normal",
      "layer": 2
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "G"
     }
    ]
@@ -5723,39 +5723,39 @@ class TileDictionarySource {
   {
    "tileId": "108",
    "name": "108",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [],
    "connections": [
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Universal"
+     "connectionType": "universal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Universal"
+     "connectionType": "universal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Universal"
+     "connectionType": "universal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Universal"
+     "connectionType": "universal"
     }
    ]
   },
   {
    "tileId": "2108",
    "name": "108/1869AM",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tp1SideD",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 20
@@ -5766,23 +5766,23 @@ class TileDictionarySource {
     {
      "position1": "tp1SideD",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp1SideD",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideF",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "H"
     }
    ]
@@ -5790,11 +5790,11 @@ class TileDictionarySource {
   {
    "tileId": "109",
    "name": "109",
-   "color": "Gray",
+   "color": "gray",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 50
@@ -5805,38 +5805,38 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Universal"
+     "connectionType": "universal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Universal"
+     "connectionType": "universal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Universal"
+     "connectionType": "universal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Universal"
+     "connectionType": "universal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Universal"
+     "connectionType": "universal"
     }
    ]
   },
   {
    "tileId": "2109",
    "name": "109/1869AM",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCurve2LeftB",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 20
@@ -5847,24 +5847,24 @@ class TileDictionarySource {
     {
      "position1": "tpCurve2LeftB",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCurve2LeftB",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideC",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
+     "connectionType": "normal",
      "layer": 2
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "I"
     }
    ]
@@ -5872,11 +5872,11 @@ class TileDictionarySource {
   {
    "tileId": "110",
    "name": "110",
-   "color": "Gray",
+   "color": "gray",
    "junctions": [
     {
      "position": "tp3SideA",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp1SideC",
       "amount": 100
@@ -5884,7 +5884,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp3SideB",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp1SideC",
       "amount": 100
@@ -5892,7 +5892,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp3SideC",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp1SideC",
       "amount": 100
@@ -5900,7 +5900,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp3SideD",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp1SideC",
       "amount": 100
@@ -5908,7 +5908,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp3SideE",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp1SideC",
       "amount": 100
@@ -5916,7 +5916,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp3SideF",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp1SideC",
       "amount": 100
@@ -5927,38 +5927,38 @@ class TileDictionarySource {
     {
      "position1": "tp3SideA",
      "position2": "tp4SideA",
-     "connectionType": "Universal"
+     "connectionType": "universal"
     },
     {
      "position1": "tp3SideB",
      "position2": "tp4SideB",
-     "connectionType": "Universal"
+     "connectionType": "universal"
     },
     {
      "position1": "tp3SideC",
      "position2": "tp4SideC",
-     "connectionType": "Universal"
+     "connectionType": "universal"
     },
     {
      "position1": "tp3SideD",
      "position2": "tp4SideD",
-     "connectionType": "Universal"
+     "connectionType": "universal"
     },
     {
      "position1": "tp3SideE",
      "position2": "tp4SideE",
-     "connectionType": "Universal"
+     "connectionType": "universal"
     },
     {
      "position1": "tp3SideF",
      "position2": "tp4SideF",
-     "connectionType": "Universal"
+     "connectionType": "universal"
     }
    ],
    "adornments": [
     {
      "position": "tp1SideF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "CD"
     }
    ]
@@ -5966,11 +5966,11 @@ class TileDictionarySource {
   {
    "tileId": "2110",
    "name": "110/1869AM",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tp2SideF",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 20
@@ -5981,25 +5981,25 @@ class TileDictionarySource {
     {
      "position1": "tp4SideD",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2SideF",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
+     "connectionType": "normal",
      "layer": 2
     },
     {
      "position1": "tp2SideF",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
+     "connectionType": "normal",
      "layer": 2
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "J"
     }
    ]
@@ -6007,11 +6007,11 @@ class TileDictionarySource {
   {
    "tileId": "111",
    "name": "111",
-   "color": "Gray",
+   "color": "gray",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "TripleCity",
+     "junctionType": "tripleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 70
@@ -6022,23 +6022,23 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Universal"
+     "connectionType": "universal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Universal"
+     "connectionType": "universal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Universal"
+     "connectionType": "universal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerD",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "BM"
     }
    ]
@@ -6046,11 +6046,11 @@ class TileDictionarySource {
   {
    "tileId": "2111",
    "name": "111/1869AM",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCurve2LeftA",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 20
@@ -6061,23 +6061,23 @@ class TileDictionarySource {
     {
      "position1": "tpCurve2LeftA",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCurve2LeftA",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideC",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "K"
     }
    ]
@@ -6085,44 +6085,44 @@ class TileDictionarySource {
   {
    "tileId": "112",
    "name": "112",
-   "color": "Gray",
+   "color": "gray",
    "junctions": [],
    "connections": [
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Universal"
+     "connectionType": "universal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Universal"
+     "connectionType": "universal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Universal"
+     "connectionType": "universal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Universal"
+     "connectionType": "universal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Universal"
+     "connectionType": "universal"
     }
    ]
   },
   {
    "tileId": "1112",
    "name": "112/1831",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 50
@@ -6133,28 +6133,28 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "C"
     }
    ]
@@ -6162,11 +6162,11 @@ class TileDictionarySource {
   {
    "tileId": "2112",
    "name": "112/1869AM",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCurve1LeftB",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 20
@@ -6177,23 +6177,23 @@ class TileDictionarySource {
     {
      "position1": "tp4SideC",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCurve1LeftB",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCurve1LeftB",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "L"
     }
    ]
@@ -6201,11 +6201,11 @@ class TileDictionarySource {
   {
    "tileId": "113",
    "name": "113",
-   "color": "Yellow",
+   "color": "yellow",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 20
@@ -6216,18 +6216,18 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Small"
+     "connectionType": "small"
     }
    ]
   },
   {
    "tileId": "2113",
    "name": "113/1869AM",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCurve2RightE",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 20
@@ -6238,23 +6238,23 @@ class TileDictionarySource {
     {
      "position1": "tpCurve2RightE",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCurve2RightE",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideC",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "M"
     }
    ]
@@ -6262,11 +6262,11 @@ class TileDictionarySource {
   {
    "tileId": "2114",
    "name": "114/1869AM",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCurve1RightD",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 20
@@ -6277,23 +6277,23 @@ class TileDictionarySource {
     {
      "position1": "tpCurve1RightD",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCurve1RightD",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideC",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "N"
     }
    ]
@@ -6301,11 +6301,11 @@ class TileDictionarySource {
   {
    "tileId": "2115",
    "name": "115/1869AM",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tp2SideC",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 20
@@ -6316,23 +6316,23 @@ class TileDictionarySource {
     {
      "position1": "tp4SideE",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2SideC",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2SideC",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "O"
     }
    ]
@@ -6340,11 +6340,11 @@ class TileDictionarySource {
   {
    "tileId": "2116",
    "name": "116/1869AM",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tp2CornerE",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 20
@@ -6355,23 +6355,23 @@ class TileDictionarySource {
     {
      "position1": "tp4SideF",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2CornerE",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2CornerE",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "P"
     }
    ]
@@ -6379,11 +6379,11 @@ class TileDictionarySource {
   {
    "tileId": "2117",
    "name": "117/1869AM",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tp2SideF",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 20
@@ -6394,23 +6394,23 @@ class TileDictionarySource {
     {
      "position1": "tp2SideF",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2SideF",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideC",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "Q"
     }
    ]
@@ -6418,11 +6418,11 @@ class TileDictionarySource {
   {
    "tileId": "2118",
    "name": "118/1869AM",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCurve1RightD",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 20
@@ -6433,23 +6433,23 @@ class TileDictionarySource {
     {
      "position1": "tpCurve1RightD",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCurve1RightD",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideC",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "R"
     }
    ]
@@ -6457,11 +6457,11 @@ class TileDictionarySource {
   {
    "tileId": "2119",
    "name": "119/1869AM",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCurve1LeftB",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 20
@@ -6472,23 +6472,23 @@ class TileDictionarySource {
     {
      "position1": "tpCurve1LeftB",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCurve1LeftB",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideC",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "S"
     }
    ]
@@ -6496,11 +6496,11 @@ class TileDictionarySource {
   {
    "tileId": "120",
    "name": "120",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tp2CornerB",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 60
@@ -6508,7 +6508,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp2CornerD",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerE",
       "amount": 60
@@ -6519,28 +6519,28 @@ class TileDictionarySource {
     {
      "position1": "tp2CornerB",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2CornerB",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2CornerD",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2CornerD",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "Tor"
     }
    ]
@@ -6548,11 +6548,11 @@ class TileDictionarySource {
   {
    "tileId": "2120",
    "name": "120/1869AM",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tp2SideF",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 20
@@ -6563,23 +6563,23 @@ class TileDictionarySource {
     {
      "position1": "tp2SideF",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2SideF",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideC",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "T"
     }
    ]
@@ -6587,11 +6587,11 @@ class TileDictionarySource {
   {
    "tileId": "121",
    "name": "121",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 50
@@ -6602,23 +6602,23 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp2SideD",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "Lon/Bar"
     }
    ]
@@ -6626,11 +6626,11 @@ class TileDictionarySource {
   {
    "tileId": "122",
    "name": "122",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [
     {
      "position": "tp2SideA",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerC",
       "amount": 80
@@ -6638,7 +6638,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp2SideD",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerC",
       "amount": 80
@@ -6649,28 +6649,28 @@ class TileDictionarySource {
     {
      "position1": "tp2SideA",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2SideA",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2SideD",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2SideD",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "Tor"
     }
    ]
@@ -6678,11 +6678,11 @@ class TileDictionarySource {
   {
    "tileId": "123",
    "name": "123",
-   "color": "Gray",
+   "color": "gray",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "TripleCity",
+     "junctionType": "tripleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 60
@@ -6693,33 +6693,33 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerE",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "Ham"
     }
    ]
@@ -6727,11 +6727,11 @@ class TileDictionarySource {
   {
    "tileId": "124",
    "name": "124",
-   "color": "Gray",
+   "color": "gray",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "QuadCity",
+     "junctionType": "quadCity",
      "revenue": {
       "position": "tp3CornerB",
       "amount": 100
@@ -6742,28 +6742,28 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "Tor"
     }
    ]
@@ -6771,11 +6771,11 @@ class TileDictionarySource {
   {
    "tileId": "125",
    "name": "125",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 40
@@ -6786,33 +6786,33 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "L"
     }
    ]
@@ -6820,11 +6820,11 @@ class TileDictionarySource {
   {
    "tileId": "126",
    "name": "126",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 60
@@ -6835,38 +6835,38 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "Lon"
     }
    ]
@@ -6874,11 +6874,11 @@ class TileDictionarySource {
   {
    "tileId": "127",
    "name": "127",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 60
@@ -6889,33 +6889,33 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "Bar"
     }
    ]
@@ -6923,11 +6923,11 @@ class TileDictionarySource {
   {
    "tileId": "128",
    "name": "128",
-   "color": "Yellow",
+   "color": "yellow",
    "junctions": [
     {
      "position": "tp2CornerC",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerD",
       "amount": 30
@@ -6935,7 +6935,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp2CornerF",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 30
@@ -6946,18 +6946,18 @@ class TileDictionarySource {
     {
      "position1": "tp2CornerC",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2CornerF",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerE",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "C"
     }
    ]
@@ -6965,11 +6965,11 @@ class TileDictionarySource {
   {
    "tileId": "129",
    "name": "129",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tp2SideA",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerC",
       "amount": 50
@@ -6977,7 +6977,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp2CornerD",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerC",
       "amount": 50
@@ -6988,28 +6988,28 @@ class TileDictionarySource {
     {
      "position1": "tp2SideA",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2SideA",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2CornerD",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2CornerD",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerE",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "C"
     }
    ]
@@ -7017,11 +7017,11 @@ class TileDictionarySource {
   {
    "tileId": "130",
    "name": "130",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "QuadCity",
+     "junctionType": "quadCity",
      "revenue": {
       "position": "tp3CornerB",
       "amount": 70
@@ -7032,28 +7032,28 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerE",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "C"
     }
    ]
@@ -7061,11 +7061,11 @@ class TileDictionarySource {
   {
    "tileId": "131",
    "name": "131",
-   "color": "Gray",
+   "color": "gray",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "QuadCity",
+     "junctionType": "quadCity",
      "revenue": {
       "position": "tp3CornerB",
       "amount": 100
@@ -7076,33 +7076,33 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerE",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "C"
     }
    ]
@@ -7110,11 +7110,11 @@ class TileDictionarySource {
   {
    "tileId": "132",
    "name": "132",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 30
@@ -7125,23 +7125,23 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "M"
     }
    ]
@@ -7149,11 +7149,11 @@ class TileDictionarySource {
   {
    "tileId": "133",
    "name": "133",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 50
@@ -7164,23 +7164,23 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "M"
     }
    ]
@@ -7188,11 +7188,11 @@ class TileDictionarySource {
   {
    "tileId": "134",
    "name": "134",
-   "color": "Gray",
+   "color": "gray",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "TripleCity",
+     "junctionType": "tripleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 60
@@ -7203,23 +7203,23 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "M"
     }
    ]
@@ -7227,11 +7227,11 @@ class TileDictionarySource {
   {
    "tileId": "135",
    "name": "135",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 50
@@ -7242,33 +7242,33 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "KC,MSP,StL"
     }
    ]
@@ -7276,11 +7276,11 @@ class TileDictionarySource {
   {
    "tileId": "138",
    "name": "138",
-   "color": "Gray",
+   "color": "gray",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 60
@@ -7291,38 +7291,38 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "KC,MSP,StL"
     }
    ]
@@ -7330,11 +7330,11 @@ class TileDictionarySource {
   {
    "tileId": "140",
    "name": "140",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 70
@@ -7345,28 +7345,28 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "X"
     }
    ]
@@ -7374,11 +7374,11 @@ class TileDictionarySource {
   {
    "tileId": "141",
    "name": "141",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 10
@@ -7389,28 +7389,28 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "142",
    "name": "142",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 10
@@ -7421,28 +7421,28 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "143",
    "name": "143",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 10
@@ -7453,28 +7453,28 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "144",
    "name": "144",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 10
@@ -7485,28 +7485,28 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "145",
    "name": "145",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 20
@@ -7517,33 +7517,33 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "146",
    "name": "146",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 20
@@ -7554,33 +7554,33 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "147",
    "name": "147",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 20
@@ -7591,33 +7591,33 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "161",
    "name": "161",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 60
@@ -7628,28 +7628,28 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "A"
     }
    ]
@@ -7657,11 +7657,11 @@ class TileDictionarySource {
   {
    "tileId": "167",
    "name": "167",
-   "color": "Gray",
+   "color": "gray",
    "junctions": [
     {
      "position": "tp2SideB",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerD",
       "amount": 70
@@ -7669,7 +7669,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp2SideE",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 70
@@ -7680,54 +7680,54 @@ class TileDictionarySource {
     {
      "position1": "tp4SideF",
      "position2": "tp1CornerB",
-     "connectionType": "Normal",
+     "connectionType": "normal",
      "layer": 2
     },
     {
      "position1": "tp1CornerB",
      "position2": "tp2SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2SideB",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2SideB",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2SideE",
      "position2": "tp1CornerF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2SideE",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2SideE",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp1CornerF",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "168",
    "name": "168",
-   "color": "Gray",
+   "color": "gray",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "TripleCity",
+     "junctionType": "tripleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 70
@@ -7738,33 +7738,33 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "170",
    "name": "170",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 50
@@ -7775,33 +7775,33 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "P"
     }
    ]
@@ -7809,11 +7809,11 @@ class TileDictionarySource {
   {
    "tileId": "171",
    "name": "171",
-   "color": "Gray",
+   "color": "gray",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "TripleCity",
+     "junctionType": "tripleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 60
@@ -7824,38 +7824,38 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "P"
     }
    ]
@@ -7863,11 +7863,11 @@ class TileDictionarySource {
   {
    "tileId": "172",
    "name": "172",
-   "color": "Gray",
+   "color": "gray",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 60
@@ -7878,38 +7878,38 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "P"
     }
    ]
@@ -7917,11 +7917,11 @@ class TileDictionarySource {
   {
    "tileId": "190",
    "name": "190",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tp2SideA",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 40
@@ -7929,7 +7929,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp2SideC",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 40
@@ -7937,7 +7937,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp2SideE",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 40
@@ -7948,42 +7948,42 @@ class TileDictionarySource {
     {
      "position1": "tp2SideC",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2SideC",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2SideA",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
+     "connectionType": "normal",
      "layer": 2
     },
     {
      "position1": "tp2SideA",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
+     "connectionType": "normal",
      "layer": 2
     },
     {
      "position1": "tp2SideE",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
+     "connectionType": "normal",
      "layer": 4
     },
     {
      "position1": "tp2SideE",
      "position2": "tp4SideE",
-     "connectionType": "Normal",
+     "connectionType": "normal",
      "layer": 4
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerE",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "A"
     }
    ]
@@ -7991,11 +7991,11 @@ class TileDictionarySource {
   {
    "tileId": "191",
    "name": "191",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "QuadCity",
+     "junctionType": "quadCity",
      "revenue": {
       "position": "tp3CornerB",
       "amount": 60
@@ -8006,38 +8006,38 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerE",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "A"
     }
    ]
@@ -8045,11 +8045,11 @@ class TileDictionarySource {
   {
    "tileId": "192",
    "name": "192",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 50
@@ -8060,33 +8060,33 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "J/C"
     }
    ]
@@ -8094,11 +8094,11 @@ class TileDictionarySource {
   {
    "tileId": "193",
    "name": "193",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 40
@@ -8109,28 +8109,28 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "S"
     }
    ]
@@ -8138,11 +8138,11 @@ class TileDictionarySource {
   {
    "tileId": "201",
    "name": "201",
-   "color": "Yellow",
+   "color": "yellow",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 30
@@ -8153,18 +8153,18 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "Y"
     }
    ]
@@ -8172,11 +8172,11 @@ class TileDictionarySource {
   {
    "tileId": "202",
    "name": "202",
-   "color": "Yellow",
+   "color": "yellow",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 30
@@ -8187,18 +8187,18 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "Y"
     }
    ]
@@ -8206,11 +8206,11 @@ class TileDictionarySource {
   {
    "tileId": "1202",
    "name": "202/1876",
-   "color": "Yellow",
+   "color": "yellow",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 30
@@ -8221,18 +8221,18 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerB",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "A"
     }
    ]
@@ -8240,11 +8240,11 @@ class TileDictionarySource {
   {
    "tileId": "203",
    "name": "203",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 10
@@ -8255,28 +8255,28 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "204",
    "name": "204",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 10
@@ -8287,33 +8287,33 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "205",
    "name": "205",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 30
@@ -8324,28 +8324,28 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "206",
    "name": "206",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 30
@@ -8356,28 +8356,28 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "1206",
    "name": "206/1832",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 50
@@ -8388,23 +8388,23 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "L"
     }
    ]
@@ -8412,11 +8412,11 @@ class TileDictionarySource {
   {
    "tileId": "207",
    "name": "207",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 40
@@ -8427,28 +8427,28 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "Y"
     }
    ]
@@ -8456,11 +8456,11 @@ class TileDictionarySource {
   {
    "tileId": "208",
    "name": "208",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 40
@@ -8471,28 +8471,28 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "Y"
     }
    ]
@@ -8500,11 +8500,11 @@ class TileDictionarySource {
   {
    "tileId": "209",
    "name": "209",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "TripleCity",
+     "junctionType": "tripleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 40
@@ -8515,33 +8515,33 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "B"
     }
    ]
@@ -8549,11 +8549,11 @@ class TileDictionarySource {
   {
    "tileId": "210",
    "name": "210",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tp2SideF",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 30
@@ -8561,7 +8561,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp2CornerB",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerC",
       "amount": 30
@@ -8572,28 +8572,28 @@ class TileDictionarySource {
     {
      "position1": "tp2SideF",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2SideF",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2CornerB",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2CornerB",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerE",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "XX"
     }
    ]
@@ -8601,11 +8601,11 @@ class TileDictionarySource {
   {
    "tileId": "211",
    "name": "211",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tp2CornerD",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerE",
       "amount": 30
@@ -8613,7 +8613,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp2CornerF",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 30
@@ -8624,28 +8624,28 @@ class TileDictionarySource {
     {
      "position1": "tp2CornerD",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2CornerD",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2CornerF",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2CornerF",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerB",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "XX"
     }
    ]
@@ -8653,11 +8653,11 @@ class TileDictionarySource {
   {
    "tileId": "212",
    "name": "212",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tp2CornerC",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerB",
       "amount": 30
@@ -8665,7 +8665,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp2CornerF",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 30
@@ -8676,28 +8676,28 @@ class TileDictionarySource {
     {
      "position1": "tp2CornerC",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2CornerC",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2CornerF",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2CornerF",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerE",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "XX"
     }
    ]
@@ -8705,11 +8705,11 @@ class TileDictionarySource {
   {
    "tileId": "213",
    "name": "213",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tp1CornerC",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerB",
       "amount": 30
@@ -8717,7 +8717,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp2CornerF",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 30
@@ -8728,28 +8728,28 @@ class TileDictionarySource {
     {
      "position1": "tp1CornerC",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp1CornerC",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2CornerF",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2CornerF",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerE",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "XX"
     }
    ]
@@ -8757,11 +8757,11 @@ class TileDictionarySource {
   {
    "tileId": "214",
    "name": "214",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tp1CornerD",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerC",
       "amount": 30
@@ -8769,7 +8769,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp2CornerA",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerF",
       "amount": 30
@@ -8780,28 +8780,28 @@ class TileDictionarySource {
     {
      "position1": "tp1CornerD",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp1CornerD",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2CornerA",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2CornerA",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerB",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "XX"
     }
    ]
@@ -8809,11 +8809,11 @@ class TileDictionarySource {
   {
    "tileId": "215",
    "name": "215",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCurve2RightF",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 30
@@ -8821,7 +8821,7 @@ class TileDictionarySource {
     },
     {
      "position": "tpCurve2RightC",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3SideB",
       "amount": 30
@@ -8832,28 +8832,28 @@ class TileDictionarySource {
     {
      "position1": "tpCurve2RightC",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCurve2RightC",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCurve2RightF",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCurve2RightF",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerE",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "XX"
     }
    ]
@@ -8861,11 +8861,11 @@ class TileDictionarySource {
   {
    "tileId": "216",
    "name": "216",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 50
@@ -8876,33 +8876,33 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "Y"
     }
    ]
@@ -8910,11 +8910,11 @@ class TileDictionarySource {
   {
    "tileId": "217",
    "name": "217",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 40
@@ -8925,28 +8925,28 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "X"
     }
    ]
@@ -8954,11 +8954,11 @@ class TileDictionarySource {
   {
    "tileId": "1217",
    "name": "217/1832",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 50
@@ -8969,28 +8969,28 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "BLM"
     }
    ]
@@ -8998,11 +8998,11 @@ class TileDictionarySource {
   {
    "tileId": "218",
    "name": "218",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 40
@@ -9013,28 +9013,28 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "X"
     }
    ]
@@ -9042,11 +9042,11 @@ class TileDictionarySource {
   {
    "tileId": "1218",
    "name": "218/1832",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 60
@@ -9057,28 +9057,28 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tpCurve2RightD",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "Lille"
     }
    ]
@@ -9086,11 +9086,11 @@ class TileDictionarySource {
   {
    "tileId": "219",
    "name": "219",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 40
@@ -9101,28 +9101,28 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "X"
     }
    ]
@@ -9130,11 +9130,11 @@ class TileDictionarySource {
   {
    "tileId": "220",
    "name": "220",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "TripleCity",
+     "junctionType": "tripleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 60
@@ -9145,38 +9145,38 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "B"
     }
    ]
@@ -9184,11 +9184,11 @@ class TileDictionarySource {
   {
    "tileId": "1220",
    "name": "220/1832",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "TripleCity",
+     "junctionType": "tripleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 60
@@ -9199,38 +9199,38 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "Lyon"
     }
    ]
@@ -9238,11 +9238,11 @@ class TileDictionarySource {
   {
    "tileId": "221",
    "name": "221",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "TripleCity",
+     "junctionType": "tripleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 60
@@ -9253,38 +9253,38 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerB",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "H"
     }
    ]
@@ -9292,11 +9292,11 @@ class TileDictionarySource {
   {
    "tileId": "1221",
    "name": "221/1832",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tp2SideC",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerE",
       "amount": 60
@@ -9304,7 +9304,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp2CornerB",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerE",
       "amount": 60
@@ -9312,7 +9312,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp2CornerF",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerE",
       "amount": 60
@@ -9323,33 +9323,33 @@ class TileDictionarySource {
     {
      "position1": "tp2CornerB",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2CornerB",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2CornerF",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2CornerF",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2SideC",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerA",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "P"
     }
    ]
@@ -9357,11 +9357,11 @@ class TileDictionarySource {
   {
    "tileId": "262",
    "name": "262",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [
     {
      "position": "tp2CornerA",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tpCenter",
       "amount": 80
@@ -9369,7 +9369,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp2CornerC",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tpCenter",
       "amount": 80
@@ -9377,7 +9377,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp2CornerE",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tpCenter",
       "amount": 80
@@ -9388,33 +9388,33 @@ class TileDictionarySource {
     {
      "position1": "tp2CornerA",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2CornerA",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2CornerC",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2CornerC",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2CornerE",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "P"
     }
    ]
@@ -9422,11 +9422,11 @@ class TileDictionarySource {
   {
    "tileId": "301",
    "name": "301",
-   "color": "Yellow",
+   "color": "yellow",
    "junctions": [
     {
      "position": "tp2CornerB",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 50
@@ -9434,7 +9434,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp2CornerD",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 50
@@ -9442,7 +9442,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp2CornerF",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 50
@@ -9453,28 +9453,28 @@ class TileDictionarySource {
     {
      "position1": "tp2CornerB",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2CornerD",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2CornerF",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2CornerF",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerC",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "HH"
     }
    ]
@@ -9482,11 +9482,11 @@ class TileDictionarySource {
   {
    "tileId": "302",
    "name": "302",
-   "color": "Yellow",
+   "color": "yellow",
    "junctions": [
     {
      "position": "tp2CornerA",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerF",
       "amount": 50
@@ -9494,7 +9494,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp2CornerC",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerF",
       "amount": 50
@@ -9502,7 +9502,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp2CornerE",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerF",
       "amount": 50
@@ -9513,28 +9513,28 @@ class TileDictionarySource {
     {
      "position1": "tp2CornerA",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2CornerA",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2CornerC",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2CornerE",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerD",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "HH"
     }
    ]
@@ -9542,11 +9542,11 @@ class TileDictionarySource {
   {
    "tileId": "311",
    "name": "311",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tp2CornerB",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 60
@@ -9554,7 +9554,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp1CornerE",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 60
@@ -9565,28 +9565,28 @@ class TileDictionarySource {
     {
      "position1": "tp2CornerB",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp1CornerE",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp1CornerE",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp1CornerE",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerC",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "HH"
     }
    ]
@@ -9594,11 +9594,11 @@ class TileDictionarySource {
   {
    "tileId": "312",
    "name": "312",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tp1CornerB",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerF",
       "amount": 60
@@ -9606,7 +9606,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp2CornerE",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerF",
       "amount": 60
@@ -9617,28 +9617,28 @@ class TileDictionarySource {
     {
      "position1": "tp1CornerB",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp1CornerB",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp1CornerB",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2CornerE",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerD",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "HH"
     }
    ]
@@ -9646,11 +9646,11 @@ class TileDictionarySource {
   {
    "tileId": "313",
    "name": "313",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tp1SideC",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerB",
       "amount": 60
@@ -9658,7 +9658,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp2SideF",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerB",
       "amount": 60
@@ -9669,28 +9669,28 @@ class TileDictionarySource {
     {
      "position1": "tp1SideC",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp1SideC",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp1SideC",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2SideF",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerE",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "HH"
     }
    ]
@@ -9698,11 +9698,11 @@ class TileDictionarySource {
   {
    "tileId": "315",
    "name": "315",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 30
@@ -9713,33 +9713,33 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "316",
    "name": "316",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tp1SideC",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerB",
       "amount": 20
@@ -9750,23 +9750,23 @@ class TileDictionarySource {
     {
      "position1": "tp1SideC",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp1SideC",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp1SideC",
      "position2": "tp4SideF",
-     "connectionType": "Small"
+     "connectionType": "small"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerE",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "H"
     }
    ]
@@ -9774,11 +9774,11 @@ class TileDictionarySource {
   {
    "tileId": "321",
    "name": "321",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "TripleCity",
+     "junctionType": "tripleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 80
@@ -9789,33 +9789,33 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "HH"
     }
    ]
@@ -9823,11 +9823,11 @@ class TileDictionarySource {
   {
    "tileId": "326",
    "name": "326",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [
     {
      "position": "tp1SideC",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerB",
       "amount": 30
@@ -9838,28 +9838,28 @@ class TileDictionarySource {
     {
      "position1": "tp1SideC",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp1SideC",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp1SideC",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp1SideC",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerE",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "H"
     }
    ]
@@ -9867,11 +9867,11 @@ class TileDictionarySource {
   {
    "tileId": "351",
    "name": "351",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 20
@@ -9882,33 +9882,33 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "352",
    "name": "352",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 20
@@ -9919,33 +9919,33 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "353",
    "name": "353",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 20
@@ -9956,33 +9956,33 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "354",
    "name": "354",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 30
@@ -9993,33 +9993,33 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "355",
    "name": "355",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 30
@@ -10030,33 +10030,33 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "356",
    "name": "356",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 30
@@ -10067,33 +10067,33 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "357",
    "name": "357",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 20
@@ -10104,33 +10104,33 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "358",
    "name": "358",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 20
@@ -10141,33 +10141,33 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "359",
    "name": "359",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 20
@@ -10178,33 +10178,33 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "360",
    "name": "360",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 60
@@ -10215,33 +10215,33 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "S"
     }
    ]
@@ -10249,11 +10249,11 @@ class TileDictionarySource {
   {
    "tileId": "361",
    "name": "361",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "TripleCity",
+     "junctionType": "tripleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 50
@@ -10264,33 +10264,33 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "LA"
     }
    ]
@@ -10298,11 +10298,11 @@ class TileDictionarySource {
   {
    "tileId": "362",
    "name": "362",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [
     {
      "position": "tp1CornerC",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 70
@@ -10310,7 +10310,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp2CornerF",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 70
@@ -10321,23 +10321,23 @@ class TileDictionarySource {
     {
      "position1": "tp1CornerC",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp1CornerC",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2CornerF",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerE",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "SF"
     }
    ]
@@ -10345,11 +10345,11 @@ class TileDictionarySource {
   {
    "tileId": "363",
    "name": "363",
-   "color": "Gray",
+   "color": "gray",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 20
@@ -10360,33 +10360,33 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "364",
    "name": "364",
-   "color": "Gray",
+   "color": "gray",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 20
@@ -10397,33 +10397,33 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "365",
    "name": "365",
-   "color": "Gray",
+   "color": "gray",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 20
@@ -10434,33 +10434,33 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "366",
    "name": "366",
-   "color": "Gray",
+   "color": "gray",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "TripleCity",
+     "junctionType": "tripleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 50
@@ -10471,43 +10471,43 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "367",
    "name": "367",
-   "color": "Gray",
+   "color": "gray",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "TripleCity",
+     "junctionType": "tripleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 60
@@ -10518,33 +10518,33 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "Y"
     }
    ]
@@ -10552,11 +10552,11 @@ class TileDictionarySource {
   {
    "tileId": "368",
    "name": "368",
-   "color": "Gray",
+   "color": "gray",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 70
@@ -10567,33 +10567,33 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "S"
     }
    ]
@@ -10601,11 +10601,11 @@ class TileDictionarySource {
   {
    "tileId": "369",
    "name": "369",
-   "color": "Gray",
+   "color": "gray",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "TripleCity",
+     "junctionType": "tripleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 70
@@ -10616,33 +10616,33 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "LA"
     }
    ]
@@ -10650,11 +10650,11 @@ class TileDictionarySource {
   {
    "tileId": "370",
    "name": "370",
-   "color": "Gray",
+   "color": "gray",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "TripleCity",
+     "junctionType": "tripleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 100
@@ -10665,23 +10665,23 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "SF"
     }
    ]
@@ -10689,11 +10689,11 @@ class TileDictionarySource {
   {
    "tileId": "1451",
    "name": "GA451",
-   "color": "Yellow",
+   "color": "yellow",
    "junctions": [
     {
      "position": "tp2SideB",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3SideE",
       "amount": 30
@@ -10701,7 +10701,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp2SideD",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3SideE",
       "amount": 30
@@ -10709,7 +10709,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp2SideF",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3SideE",
       "amount": 30
@@ -10720,23 +10720,23 @@ class TileDictionarySource {
     {
      "position1": "tp2SideB",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2SideD",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2SideF",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3SideA",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "Atlanta"
     }
    ]
@@ -10744,11 +10744,11 @@ class TileDictionarySource {
   {
    "tileId": "1454",
    "name": "GA454",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerE",
       "amount": 30
@@ -10759,23 +10759,23 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3SideA",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "Savannah"
     }
    ]
@@ -10783,11 +10783,11 @@ class TileDictionarySource {
   {
    "tileId": "1453",
    "name": "GA453",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerE",
       "amount": 40
@@ -10798,28 +10798,28 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3SideA",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "Augusta"
     }
    ]
@@ -10827,11 +10827,11 @@ class TileDictionarySource {
   {
    "tileId": "1452",
    "name": "GA452",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tp2SideF",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerE",
       "amount": 20
@@ -10839,7 +10839,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp2SideB",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerE",
       "amount": 20
@@ -10847,7 +10847,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp2SideD",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerE",
       "amount": 20
@@ -10858,42 +10858,42 @@ class TileDictionarySource {
     {
      "position1": "tp2SideB",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2SideB",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2SideF",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
+     "connectionType": "normal",
      "layer": 2
     },
     {
      "position1": "tp2SideF",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
+     "connectionType": "normal",
      "layer": 2
     },
     {
      "position1": "tp2SideD",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
+     "connectionType": "normal",
      "layer": 4
     },
     {
      "position1": "tp2SideD",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
+     "connectionType": "normal",
      "layer": 4
     }
    ],
    "adornments": [
     {
      "position": "tpCurve1RightA",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "Atla   nta"
     }
    ]
@@ -10901,11 +10901,11 @@ class TileDictionarySource {
   {
    "tileId": "1457",
    "name": "GA457",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerE",
       "amount": 40
@@ -10916,33 +10916,33 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3SideA",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "Brunswick"
     }
    ]
@@ -10950,11 +10950,11 @@ class TileDictionarySource {
   {
    "tileId": "1456",
    "name": "GA456",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerE",
       "amount": 50
@@ -10965,28 +10965,28 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3SideA",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "Augusta"
     }
    ]
@@ -10994,11 +10994,11 @@ class TileDictionarySource {
   {
    "tileId": "1459",
    "name": "GA459",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerE",
       "amount": 60
@@ -11009,23 +11009,23 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3SideA",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "Savannah"
     }
    ]
@@ -11033,11 +11033,11 @@ class TileDictionarySource {
   {
    "tileId": "1455",
    "name": "GA455",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [
     {
      "position": "tp2SideF",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerE",
       "amount": 70
@@ -11045,7 +11045,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp2SideB",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerE",
       "amount": 70
@@ -11053,7 +11053,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp2SideD",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerE",
       "amount": 70
@@ -11064,42 +11064,42 @@ class TileDictionarySource {
     {
      "position1": "tp2SideB",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2SideB",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2SideF",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
+     "connectionType": "normal",
      "layer": 2
     },
     {
      "position1": "tp2SideF",
      "position2": "tp4SideC",
-     "connectionType": "Normal",
+     "connectionType": "normal",
      "layer": 2
     },
     {
      "position1": "tp2SideD",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
+     "connectionType": "normal",
      "layer": 4
     },
     {
      "position1": "tp2SideD",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
+     "connectionType": "normal",
      "layer": 4
     }
    ],
    "adornments": [
     {
      "position": "tpCurve1RightA",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "Atla   nta"
     }
    ]
@@ -11107,11 +11107,11 @@ class TileDictionarySource {
   {
    "tileId": "401",
    "name": "401",
-   "color": "Yellow",
+   "color": "yellow",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 30
@@ -11122,18 +11122,18 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "T"
     }
    ]
@@ -11141,11 +11141,11 @@ class TileDictionarySource {
   {
    "tileId": "402",
    "name": "402",
-   "color": "Yellow",
+   "color": "yellow",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 20
@@ -11156,18 +11156,18 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "X"
     }
    ]
@@ -11175,11 +11175,11 @@ class TileDictionarySource {
   {
    "tileId": "404",
    "name": "404",
-   "color": "Yellow",
+   "color": "yellow",
    "junctions": [
     {
      "position": "tpCurve2LeftC",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerE",
       "amount": 20
@@ -11187,7 +11187,7 @@ class TileDictionarySource {
     },
     {
      "position": "tpCurve2LeftF",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerB",
       "amount": 20
@@ -11198,33 +11198,33 @@ class TileDictionarySource {
     {
      "position1": "tpCurve2LeftC",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCurve2LeftC",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCurve2LeftF",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCurve2LeftF",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "405",
    "name": "405",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 40
@@ -11235,23 +11235,23 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "T"
     }
    ]
@@ -11259,11 +11259,11 @@ class TileDictionarySource {
   {
    "tileId": "406",
    "name": "406",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 40
@@ -11274,28 +11274,28 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "X"
     }
    ]
@@ -11303,11 +11303,11 @@ class TileDictionarySource {
   {
    "tileId": "408",
    "name": "408",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tp1SideB",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 30
@@ -11315,7 +11315,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp1SideE",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 30
@@ -11326,43 +11326,43 @@ class TileDictionarySource {
     {
      "position1": "tp1SideB",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp1SideB",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp1SideB",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp1SideE",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp1SideE",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp1SideE",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "410",
    "name": "410",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tp2SideF",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 10
@@ -11373,28 +11373,28 @@ class TileDictionarySource {
     {
      "position1": "tp2SideF",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2SideF",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideC",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "411",
    "name": "411",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tp2SideF",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 10
@@ -11405,28 +11405,28 @@ class TileDictionarySource {
     {
      "position1": "tp2SideF",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2SideF",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideA",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "412",
    "name": "412",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCurve2RightE",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 10
@@ -11437,28 +11437,28 @@ class TileDictionarySource {
     {
      "position1": "tpCurve2RightE",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCurve2RightE",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideC",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "413",
    "name": "413",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCurve2LeftA",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 10
@@ -11469,28 +11469,28 @@ class TileDictionarySource {
     {
      "position1": "tpCurve2LeftA",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCurve2LeftA",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideC",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "414",
    "name": "414",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tp2SideF",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 10
@@ -11501,28 +11501,28 @@ class TileDictionarySource {
     {
      "position1": "tp2SideF",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2SideF",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideC",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "415",
    "name": "415",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tp2SideF",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 10
@@ -11533,28 +11533,28 @@ class TileDictionarySource {
     {
      "position1": "tp2SideF",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2SideF",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideB",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "416",
    "name": "416",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCurve1RightD",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerE",
       "amount": 10
@@ -11565,28 +11565,28 @@ class TileDictionarySource {
     {
      "position1": "tpCurve1RightD",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCurve1RightD",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideC",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "417",
    "name": "417",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCurve1LeftB",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerB",
       "amount": 10
@@ -11597,28 +11597,28 @@ class TileDictionarySource {
     {
      "position1": "tpCurve1LeftB",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCurve1LeftB",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideC",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "418",
    "name": "418",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCurve2RightE",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerF",
       "amount": 10
@@ -11629,28 +11629,28 @@ class TileDictionarySource {
     {
      "position1": "tpCurve2RightE",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCurve2RightE",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideA",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "419",
    "name": "419",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCurve2LeftA",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 10
@@ -11661,28 +11661,28 @@ class TileDictionarySource {
     {
      "position1": "tpCurve2LeftA",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCurve2LeftA",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideC",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "420",
    "name": "420",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCurve2LeftA",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 10
@@ -11693,28 +11693,28 @@ class TileDictionarySource {
     {
      "position1": "tpCurve2LeftA",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCurve2LeftA",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideB",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "421",
    "name": "421",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCurve2RightE",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerF",
       "amount": 10
@@ -11725,28 +11725,28 @@ class TileDictionarySource {
     {
      "position1": "tpCurve2RightE",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCurve2RightE",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideC",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "422",
    "name": "422",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCurve1LeftB",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerB",
       "amount": 10
@@ -11757,28 +11757,28 @@ class TileDictionarySource {
     {
      "position1": "tpCurve1LeftB",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCurve1LeftB",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideA",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "423",
    "name": "423",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCurve1RightD",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerE",
       "amount": 10
@@ -11789,28 +11789,28 @@ class TileDictionarySource {
     {
      "position1": "tpCurve1RightD",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCurve1RightD",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideC",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "424",
    "name": "424",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCurve2LeftA",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 10
@@ -11821,28 +11821,28 @@ class TileDictionarySource {
     {
      "position1": "tpCurve2LeftA",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCurve2LeftA",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideD",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "425",
    "name": "425",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tp1SideB",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 50
@@ -11850,7 +11850,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp1SideE",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 50
@@ -11861,43 +11861,43 @@ class TileDictionarySource {
     {
      "position1": "tp1SideB",
      "position2": "tp1SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp1SideB",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp1SideB",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp1SideB",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp1SideE",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp1SideE",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp1SideE",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerD",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "Bu"
     }
    ]
@@ -11905,11 +11905,11 @@ class TileDictionarySource {
   {
    "tileId": "426",
    "name": "426",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 30
@@ -11920,18 +11920,18 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "Bo"
     }
    ]
@@ -11939,11 +11939,11 @@ class TileDictionarySource {
   {
    "tileId": "427",
    "name": "427",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tp3SideD",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp1SideC",
       "amount": 60
@@ -11951,7 +11951,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp3SideE",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp1SideC",
       "amount": 60
@@ -11959,7 +11959,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp3SideF",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp1SideC",
       "amount": 60
@@ -11967,7 +11967,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp3SideA",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp1SideC",
       "amount": 60
@@ -11975,7 +11975,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp3SideB",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp1SideC",
       "amount": 60
@@ -11983,7 +11983,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp3SideC",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp1SideC",
       "amount": 60
@@ -11994,38 +11994,38 @@ class TileDictionarySource {
     {
      "position1": "tp3SideD",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp3SideE",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp3SideF",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp3SideA",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp3SideB",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp3SideC",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp1SideF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "W"
     }
    ]
@@ -12033,11 +12033,11 @@ class TileDictionarySource {
   {
    "tileId": "429",
    "name": "429",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 40
@@ -12048,28 +12048,28 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "X"
     }
    ]
@@ -12077,11 +12077,11 @@ class TileDictionarySource {
   {
    "tileId": "430",
    "name": "430",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 50
@@ -12092,38 +12092,38 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "X"
     }
    ]
@@ -12131,11 +12131,11 @@ class TileDictionarySource {
   {
    "tileId": "431",
    "name": "431",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 60
@@ -12146,23 +12146,23 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "T"
     }
    ]
@@ -12170,11 +12170,11 @@ class TileDictionarySource {
   {
    "tileId": "432",
    "name": "432",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [
     {
      "position": "tp1SideB",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 40
@@ -12182,7 +12182,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp1SideE",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 40
@@ -12193,48 +12193,48 @@ class TileDictionarySource {
     {
      "position1": "tp1SideB",
      "position2": "tp1SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp1SideB",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp1SideB",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp1SideB",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp1SideE",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp1SideE",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp1SideE",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "434",
    "name": "434",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 40
@@ -12245,18 +12245,18 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "B"
     }
    ]
@@ -12264,11 +12264,11 @@ class TileDictionarySource {
   {
    "tileId": "435",
    "name": "435",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "TripleCity",
+     "junctionType": "tripleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 70
@@ -12279,38 +12279,38 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "Bu"
     }
    ]
@@ -12318,11 +12318,11 @@ class TileDictionarySource {
   {
    "tileId": "436",
    "name": "436",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [
     {
      "position": "tp1SideF",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp1SideC",
       "amount": 80
@@ -12330,7 +12330,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp3SideD",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp1SideC",
       "amount": 80
@@ -12338,7 +12338,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp3SideC",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp1SideC",
       "amount": 80
@@ -12346,7 +12346,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp3SideB",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp1SideC",
       "amount": 80
@@ -12357,38 +12357,38 @@ class TileDictionarySource {
     {
      "position1": "tp1SideF",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp1SideF",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp1SideF",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp3SideD",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp3SideC",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp3SideB",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "W"
     }
    ]
@@ -12396,11 +12396,11 @@ class TileDictionarySource {
   {
    "tileId": "511",
    "name": "511",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 40
@@ -12411,23 +12411,23 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "Y"
     }
    ]
@@ -12435,11 +12435,11 @@ class TileDictionarySource {
   {
    "tileId": "512",
    "name": "512",
-   "color": "Gray",
+   "color": "gray",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "TripleCity",
+     "junctionType": "tripleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 60
@@ -12450,38 +12450,38 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "Y"
     }
    ]
@@ -12489,11 +12489,11 @@ class TileDictionarySource {
   {
    "tileId": "513",
    "name": "513",
-   "color": "Gray",
+   "color": "gray",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "TripleCity",
+     "junctionType": "tripleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 60
@@ -12504,43 +12504,43 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "514",
    "name": "514",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tp3SideF",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tpCenter",
       "amount": 70
@@ -12548,7 +12548,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp3SideA",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tpCenter",
       "amount": 70
@@ -12556,7 +12556,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp3SideB",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tpCenter",
       "amount": 70
@@ -12564,7 +12564,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp3SideC",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tpCenter",
       "amount": 70
@@ -12572,7 +12572,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp3SideD",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tpCenter",
       "amount": 70
@@ -12580,7 +12580,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp3SideE",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tpCenter",
       "amount": 70
@@ -12591,43 +12591,43 @@ class TileDictionarySource {
     {
      "position1": "tp3SideF",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp3SideA",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp3SideB",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp3SideC",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp3SideD",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp3SideE",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "515",
    "name": "515",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [
     {
      "position": "tp3SideF",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tpCenter",
       "amount": 90
@@ -12635,7 +12635,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp3SideA",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tpCenter",
       "amount": 90
@@ -12643,7 +12643,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp3SideB",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tpCenter",
       "amount": 90
@@ -12651,7 +12651,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp3SideC",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tpCenter",
       "amount": 90
@@ -12659,7 +12659,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp3SideD",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tpCenter",
       "amount": 90
@@ -12667,7 +12667,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp3SideE",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tpCenter",
       "amount": 90
@@ -12678,43 +12678,43 @@ class TileDictionarySource {
     {
      "position1": "tp3SideF",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp3SideA",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp3SideB",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp3SideC",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp3SideD",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp3SideE",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "516",
    "name": "516",
-   "color": "Gray",
+   "color": "gray",
    "junctions": [
     {
      "position": "tp3SideF",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tpCenter",
       "amount": 120
@@ -12722,7 +12722,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp3SideA",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tpCenter",
       "amount": 120
@@ -12730,7 +12730,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp3SideB",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tpCenter",
       "amount": 120
@@ -12738,7 +12738,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp3SideC",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tpCenter",
       "amount": 120
@@ -12746,7 +12746,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp3SideD",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tpCenter",
       "amount": 120
@@ -12754,7 +12754,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp3SideE",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tpCenter",
       "amount": 120
@@ -12765,43 +12765,43 @@ class TileDictionarySource {
     {
      "position1": "tp3SideF",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp3SideA",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp3SideB",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp3SideC",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp3SideD",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp3SideE",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "571",
    "name": "571",
-   "color": "Yellow",
+   "color": "yellow",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 20
@@ -12812,18 +12812,18 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "A"
     }
    ]
@@ -12831,11 +12831,11 @@ class TileDictionarySource {
   {
    "tileId": "601",
    "name": "601",
-   "color": "Yellow",
+   "color": "yellow",
    "junctions": [
     {
      "position": "tp2SideB",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerB",
       "amount": 20
@@ -12843,7 +12843,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp1SideE",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerE",
       "amount": 10
@@ -12854,23 +12854,23 @@ class TileDictionarySource {
     {
      "position1": "tp2SideB",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp1SideE",
      "position2": "tp2SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp1SideE",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerA",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "V"
     }
    ]
@@ -12878,11 +12878,11 @@ class TileDictionarySource {
   {
    "tileId": "602",
    "name": "602",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tp2SideB",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerB",
       "amount": 30
@@ -12890,7 +12890,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp1SideE",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerE",
       "amount": 10
@@ -12901,33 +12901,33 @@ class TileDictionarySource {
     {
      "position1": "tp2SideB",
      "position2": "tp1SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2SideB",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp1SideE",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp1SideE",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp1SideE",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerA",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "V"
     }
    ]
@@ -12935,11 +12935,11 @@ class TileDictionarySource {
   {
    "tileId": "603",
    "name": "603",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [
     {
      "position": "tp2SideB",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerB",
       "amount": 30
@@ -12947,7 +12947,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp1SideE",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerE",
       "amount": 20
@@ -12958,43 +12958,43 @@ class TileDictionarySource {
     {
      "position1": "tp2SideB",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp1SideE",
      "position2": "tp2SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp1SideE",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp1SideE",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp1SideE",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp1SideE",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp1SideE",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerA",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "V"
     }
    ]
@@ -13002,11 +13002,11 @@ class TileDictionarySource {
   {
    "tileId": "604",
    "name": "604",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 100
@@ -13017,28 +13017,28 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "M"
     }
    ]
@@ -13046,11 +13046,11 @@ class TileDictionarySource {
   {
    "tileId": "605",
    "name": "605",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "TripleCity",
+     "junctionType": "tripleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 150
@@ -13061,38 +13061,38 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "M"
     }
    ]
@@ -13100,11 +13100,11 @@ class TileDictionarySource {
   {
    "tileId": "606",
    "name": "606",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 60
@@ -13115,28 +13115,28 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "T"
     }
    ]
@@ -13144,11 +13144,11 @@ class TileDictionarySource {
   {
    "tileId": "607",
    "name": "607",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 90
@@ -13159,38 +13159,38 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "T"
     }
    ]
@@ -13198,11 +13198,11 @@ class TileDictionarySource {
   {
    "tileId": "608",
    "name": "608",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 40
@@ -13213,18 +13213,18 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "G"
     }
    ]
@@ -13232,11 +13232,11 @@ class TileDictionarySource {
   {
    "tileId": "609",
    "name": "609",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 60
@@ -13247,33 +13247,33 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "G"
     }
    ]
@@ -13281,34 +13281,34 @@ class TileDictionarySource {
   {
    "tileId": "610",
    "name": "610",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "City"
+     "junctionType": "city"
     }
    ],
    "connections": [
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Tunnel"
+     "connectionType": "tunnel"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Tunnel"
+     "connectionType": "tunnel"
     }
    ]
   },
   {
    "tileId": "611",
    "name": "611",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 40
@@ -13319,206 +13319,206 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "613",
    "name": "613",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "City"
+     "junctionType": "city"
     }
    ],
    "connections": [
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Mountain"
+     "connectionType": "mountain"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Mountain"
+     "connectionType": "mountain"
     }
    ]
   },
   {
    "tileId": "614",
    "name": "614",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "City"
+     "junctionType": "city"
     }
    ],
    "connections": [
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Mountain"
+     "connectionType": "mountain"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Mountain"
+     "connectionType": "mountain"
     }
    ]
   },
   {
    "tileId": "615",
    "name": "615",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "City"
+     "junctionType": "city"
     }
    ],
    "connections": [
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Mountain"
+     "connectionType": "mountain"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Mountain"
+     "connectionType": "mountain"
     }
    ]
   },
   {
    "tileId": "616",
    "name": "616",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity"
+     "junctionType": "doubleCity"
     }
    ],
    "connections": [
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Mountain"
+     "connectionType": "mountain"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Mountain"
+     "connectionType": "mountain"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Mountain"
+     "connectionType": "mountain"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Mountain"
+     "connectionType": "mountain"
     }
    ]
   },
   {
    "tileId": "617",
    "name": "617",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity"
+     "junctionType": "doubleCity"
     }
    ],
    "connections": [
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Mountain"
+     "connectionType": "mountain"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Mountain"
+     "connectionType": "mountain"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Mountain"
+     "connectionType": "mountain"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Mountain"
+     "connectionType": "mountain"
     }
    ]
   },
   {
    "tileId": "618",
    "name": "618",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity"
+     "junctionType": "doubleCity"
     }
    ],
    "connections": [
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Mountain"
+     "connectionType": "mountain"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Mountain"
+     "connectionType": "mountain"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Mountain"
+     "connectionType": "mountain"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Mountain"
+     "connectionType": "mountain"
     }
    ]
   },
   {
    "tileId": "619",
    "name": "619",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 30
@@ -13529,33 +13529,33 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "621",
    "name": "621",
-   "color": "Yellow",
+   "color": "yellow",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 30
@@ -13566,18 +13566,18 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "Y"
     }
    ]
@@ -13585,11 +13585,11 @@ class TileDictionarySource {
   {
    "tileId": "622",
    "name": "622",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 40
@@ -13600,28 +13600,28 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "Y"
     }
    ]
@@ -13629,11 +13629,11 @@ class TileDictionarySource {
   {
    "tileId": "623",
    "name": "623",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 50
@@ -13644,38 +13644,38 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "Y"
     }
    ]
@@ -13683,149 +13683,149 @@ class TileDictionarySource {
   {
    "tileId": "624",
    "name": "624",
-   "color": "Green",
+   "color": "green",
    "junctions": [],
    "connections": [
     {
      "position1": "tp4SideC",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideD",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "625",
    "name": "625",
-   "color": "Green",
+   "color": "green",
    "junctions": [],
    "connections": [
     {
      "position1": "tp4SideC",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideD",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "626",
    "name": "626",
-   "color": "Green",
+   "color": "green",
    "junctions": [],
    "connections": [
     {
      "position1": "tp4SideA",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideD",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "627",
    "name": "627",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [],
    "connections": [
     {
      "position1": "tp4SideC",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideC",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideD",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideE",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "628",
    "name": "628",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [],
    "connections": [
     {
      "position1": "tp4SideB",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideB",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideC",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideE",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "629",
    "name": "629",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [],
    "connections": [
     {
      "position1": "tp4SideB",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideB",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideC",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideD",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "630",
    "name": "630",
-   "color": "Yellow",
+   "color": "yellow",
    "junctions": [
     {
      "position": "tp1SideB",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerC",
       "amount": 10
@@ -13833,7 +13833,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp2CornerF",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 10
@@ -13844,33 +13844,33 @@ class TileDictionarySource {
     {
      "position1": "tp1SideB",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp1SideB",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2CornerF",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2CornerF",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "631",
    "name": "631",
-   "color": "Yellow",
+   "color": "yellow",
    "junctions": [
     {
      "position": "tp1SideD",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerC",
       "amount": 10
@@ -13878,7 +13878,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp2CornerA",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerB",
       "amount": 10
@@ -13889,33 +13889,33 @@ class TileDictionarySource {
     {
      "position1": "tp1SideD",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp1SideD",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2CornerA",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2CornerA",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "632",
    "name": "632",
-   "color": "Yellow",
+   "color": "yellow",
    "junctions": [
     {
      "position": "tp2CornerC",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerB",
       "amount": 10
@@ -13923,7 +13923,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp2CornerE",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerF",
       "amount": 10
@@ -13934,33 +13934,33 @@ class TileDictionarySource {
     {
      "position1": "tp2CornerC",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2CornerC",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2CornerE",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2CornerE",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "633",
    "name": "633",
-   "color": "Yellow",
+   "color": "yellow",
    "junctions": [
     {
      "position": "tp2CornerB",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 10
@@ -13968,7 +13968,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp2CornerE",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerF",
       "amount": 10
@@ -13979,33 +13979,33 @@ class TileDictionarySource {
     {
      "position1": "tp2CornerB",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2CornerB",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2CornerE",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2CornerE",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "644",
    "name": "644",
-   "color": "Yellow",
+   "color": "yellow",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 20
@@ -14016,23 +14016,23 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Small"
+     "connectionType": "small"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "645",
    "name": "645",
-   "color": "Yellow",
+   "color": "yellow",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 20
@@ -14043,133 +14043,133 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Small"
+     "connectionType": "small"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "646",
    "name": "646",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [],
    "connections": [
     {
      "position1": "tp4SideA",
      "position2": "tp4SideC",
-     "connectionType": "Small"
+     "connectionType": "small"
     },
     {
      "position1": "tp4SideA",
      "position2": "tp4SideE",
-     "connectionType": "Small"
+     "connectionType": "small"
     },
     {
      "position1": "tp4SideC",
      "position2": "tp4SideE",
-     "connectionType": "Small"
+     "connectionType": "small"
     }
    ]
   },
   {
    "tileId": "647",
    "name": "647",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [],
    "connections": [
     {
      "position1": "tp4SideC",
      "position2": "tp4SideD",
-     "connectionType": "Small"
+     "connectionType": "small"
     },
     {
      "position1": "tp4SideC",
      "position2": "tp4SideE",
-     "connectionType": "Small"
+     "connectionType": "small"
     },
     {
      "position1": "tp4SideD",
      "position2": "tp4SideE",
-     "connectionType": "Small"
+     "connectionType": "small"
     }
    ]
   },
   {
    "tileId": "648",
    "name": "648",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [],
    "connections": [
     {
      "position1": "tp4SideA",
      "position2": "tp4SideC",
-     "connectionType": "Small"
+     "connectionType": "small"
     },
     {
      "position1": "tp4SideA",
      "position2": "tp4SideF",
-     "connectionType": "Small"
+     "connectionType": "small"
     },
     {
      "position1": "tp4SideC",
      "position2": "tp4SideF",
-     "connectionType": "Small"
+     "connectionType": "small"
     }
    ]
   },
   {
    "tileId": "649",
    "name": "649",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [],
    "connections": [
     {
      "position1": "tp4SideC",
      "position2": "tp4SideE",
-     "connectionType": "Small"
+     "connectionType": "small"
     },
     {
      "position1": "tp4SideC",
      "position2": "tp4SideF",
-     "connectionType": "Small"
+     "connectionType": "small"
     },
     {
      "position1": "tp4SideE",
      "position2": "tp4SideF",
-     "connectionType": "Small"
+     "connectionType": "small"
     }
    ]
   },
   {
    "tileId": "650",
    "name": "650",
-   "color": "Green",
+   "color": "green",
    "junctions": [],
    "connections": [
     {
      "position1": "tp4SideC",
      "position2": "tp4SideD",
-     "connectionType": "Small"
+     "connectionType": "small"
     },
     {
      "position1": "tp4SideD",
      "position2": "tp4SideE",
-     "connectionType": "Small"
+     "connectionType": "small"
     }
    ]
   },
   {
    "tileId": "651",
    "name": "651",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 90
@@ -14180,33 +14180,33 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Small"
+     "connectionType": "small"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Small"
+     "connectionType": "small"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "PA"
     }
    ]
@@ -14214,11 +14214,11 @@ class TileDictionarySource {
   {
    "tileId": "652",
    "name": "652",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 130
@@ -14229,33 +14229,33 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Universal"
+     "connectionType": "universal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Universal"
+     "connectionType": "universal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Universal"
+     "connectionType": "universal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Universal"
+     "connectionType": "universal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "PA"
     }
    ]
@@ -14263,11 +14263,11 @@ class TileDictionarySource {
   {
    "tileId": "653",
    "name": "653",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 60
@@ -14278,23 +14278,23 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Small"
+     "connectionType": "small"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "CT"
     }
    ]
@@ -14302,11 +14302,11 @@ class TileDictionarySource {
   {
    "tileId": "654",
    "name": "654",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 90
@@ -14317,28 +14317,28 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Universal"
+     "connectionType": "universal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "CT"
     }
    ]
@@ -14346,11 +14346,11 @@ class TileDictionarySource {
   {
    "tileId": "655",
    "name": "655",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 50
@@ -14361,23 +14361,23 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Small"
+     "connectionType": "small"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "ME"
     }
    ]
@@ -14385,11 +14385,11 @@ class TileDictionarySource {
   {
    "tileId": "656",
    "name": "656",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 80
@@ -14400,28 +14400,28 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Small"
+     "connectionType": "small"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "ME"
     }
    ]
@@ -14429,11 +14429,11 @@ class TileDictionarySource {
   {
    "tileId": "657",
    "name": "657",
-   "color": "Yellow",
+   "color": "yellow",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 20
@@ -14444,23 +14444,23 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Small"
+     "connectionType": "small"
     }
    ]
   },
   {
    "tileId": "658",
    "name": "658",
-   "color": "Yellow",
+   "color": "yellow",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 20
@@ -14471,23 +14471,23 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Small"
+     "connectionType": "small"
     }
    ]
   },
   {
    "tileId": "659",
    "name": "659",
-   "color": "Yellow",
+   "color": "yellow",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 20
@@ -14498,23 +14498,23 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Small"
+     "connectionType": "small"
     }
    ]
   },
   {
    "tileId": "660",
    "name": "660",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 30
@@ -14525,33 +14525,33 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Small"
+     "connectionType": "small"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Small"
+     "connectionType": "small"
     }
    ]
   },
   {
    "tileId": "661",
    "name": "661",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 30
@@ -14562,33 +14562,33 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Small"
+     "connectionType": "small"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Small"
+     "connectionType": "small"
     }
    ]
   },
   {
    "tileId": "662",
    "name": "662",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 30
@@ -14599,33 +14599,33 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Small"
+     "connectionType": "small"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Small"
+     "connectionType": "small"
     }
    ]
   },
   {
    "tileId": "663",
    "name": "663",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 30
@@ -14636,33 +14636,33 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Small"
+     "connectionType": "small"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Small"
+     "connectionType": "small"
     }
    ]
   },
   {
    "tileId": "664",
    "name": "664",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 30
@@ -14673,33 +14673,33 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Small"
+     "connectionType": "small"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Small"
+     "connectionType": "small"
     }
    ]
   },
   {
    "tileId": "665",
    "name": "665",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 30
@@ -14710,33 +14710,33 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Small"
+     "connectionType": "small"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Small"
+     "connectionType": "small"
     }
    ]
   },
   {
    "tileId": "666",
    "name": "666",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 30
@@ -14747,33 +14747,33 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Small"
+     "connectionType": "small"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Small"
+     "connectionType": "small"
     }
    ]
   },
   {
    "tileId": "667",
    "name": "667",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 30
@@ -14784,33 +14784,33 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Small"
+     "connectionType": "small"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Small"
+     "connectionType": "small"
     }
    ]
   },
   {
    "tileId": "668",
    "name": "668",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 30
@@ -14821,33 +14821,33 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Small"
+     "connectionType": "small"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Small"
+     "connectionType": "small"
     }
    ]
   },
   {
    "tileId": "669",
    "name": "669",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 30
@@ -14858,33 +14858,33 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Small"
+     "connectionType": "small"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Small"
+     "connectionType": "small"
     }
    ]
   },
   {
    "tileId": "670",
    "name": "670",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 30
@@ -14895,33 +14895,33 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Small"
+     "connectionType": "small"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Small"
+     "connectionType": "small"
     }
    ]
   },
   {
    "tileId": "671",
    "name": "671",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 30
@@ -14932,33 +14932,33 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Small"
+     "connectionType": "small"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Small"
+     "connectionType": "small"
     }
    ]
   },
   {
    "tileId": "672",
    "name": "672",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 40
@@ -14969,33 +14969,33 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Universal"
+     "connectionType": "universal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Universal"
+     "connectionType": "universal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Universal"
+     "connectionType": "universal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Universal"
+     "connectionType": "universal"
     }
    ]
   },
   {
    "tileId": "673",
    "name": "673",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 40
@@ -15006,33 +15006,33 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Universal"
+     "connectionType": "universal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Universal"
+     "connectionType": "universal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Universal"
+     "connectionType": "universal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Universal"
+     "connectionType": "universal"
     }
    ]
   },
   {
    "tileId": "674",
    "name": "674",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 40
@@ -15043,33 +15043,33 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Universal"
+     "connectionType": "universal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Universal"
+     "connectionType": "universal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Universal"
+     "connectionType": "universal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Universal"
+     "connectionType": "universal"
     }
    ]
   },
   {
    "tileId": "675",
    "name": "675",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 20
@@ -15080,23 +15080,23 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Small"
+     "connectionType": "small"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "SR"
     }
    ]
@@ -15104,11 +15104,11 @@ class TileDictionarySource {
   {
    "tileId": "676",
    "name": "676",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 30
@@ -15119,23 +15119,23 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Universal"
+     "connectionType": "universal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Universal"
+     "connectionType": "universal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "SR"
     }
    ]
@@ -15143,47 +15143,47 @@ class TileDictionarySource {
   {
    "tileId": "677",
    "name": "677",
-   "color": "Green",
+   "color": "green",
    "junctions": [],
    "connections": [
     {
      "position1": "tp4SideC",
      "position2": "tp4SideF",
-     "connectionType": "Small"
+     "connectionType": "small"
     },
     {
      "position1": "tp4SideC",
      "position2": "tp4SideA",
-     "connectionType": "Small"
+     "connectionType": "small"
     }
    ]
   },
   {
    "tileId": "678",
    "name": "678",
-   "color": "Green",
+   "color": "green",
    "junctions": [],
    "connections": [
     {
      "position1": "tp4SideC",
      "position2": "tp4SideF",
-     "connectionType": "Small"
+     "connectionType": "small"
     },
     {
      "position1": "tp4SideC",
      "position2": "tp4SideE",
-     "connectionType": "Small"
+     "connectionType": "small"
     }
    ]
   },
   {
    "tileId": "680",
    "name": "680",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 10
@@ -15194,33 +15194,33 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Small"
+     "connectionType": "small"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Small"
+     "connectionType": "small"
     }
    ]
   },
   {
    "tileId": "681",
    "name": "681",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 10
@@ -15231,33 +15231,33 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Small"
+     "connectionType": "small"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Small"
+     "connectionType": "small"
     }
    ]
   },
   {
    "tileId": "682",
    "name": "682",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 10
@@ -15268,33 +15268,33 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Small"
+     "connectionType": "small"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Small"
+     "connectionType": "small"
     }
    ]
   },
   {
    "tileId": "683",
    "name": "683",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 10
@@ -15305,33 +15305,33 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Small"
+     "connectionType": "small"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Small"
+     "connectionType": "small"
     }
    ]
   },
   {
    "tileId": "684",
    "name": "684",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 10
@@ -15342,33 +15342,33 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Small"
+     "connectionType": "small"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Small"
+     "connectionType": "small"
     }
    ]
   },
   {
    "tileId": "685",
    "name": "685",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 10
@@ -15379,33 +15379,33 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Small"
+     "connectionType": "small"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Small"
+     "connectionType": "small"
     }
    ]
   },
   {
    "tileId": "686",
    "name": "686",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 10
@@ -15416,33 +15416,33 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Small"
+     "connectionType": "small"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Small"
+     "connectionType": "small"
     }
    ]
   },
   {
    "tileId": "687",
    "name": "687",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 10
@@ -15453,33 +15453,33 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Small"
+     "connectionType": "small"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Small"
+     "connectionType": "small"
     }
    ]
   },
   {
    "tileId": "688",
    "name": "688",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 10
@@ -15490,33 +15490,33 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Small"
+     "connectionType": "small"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Small"
+     "connectionType": "small"
     }
    ]
   },
   {
    "tileId": "689",
    "name": "689",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 10
@@ -15527,33 +15527,33 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Small"
+     "connectionType": "small"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Small"
+     "connectionType": "small"
     }
    ]
   },
   {
    "tileId": "690",
    "name": "690",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 10
@@ -15564,33 +15564,33 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Small"
+     "connectionType": "small"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Small"
+     "connectionType": "small"
     }
    ]
   },
   {
    "tileId": "691",
    "name": "691",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 10
@@ -15601,105 +15601,105 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Small"
+     "connectionType": "small"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Small"
+     "connectionType": "small"
     }
    ]
   },
   {
    "tileId": "692",
    "name": "692",
-   "color": "Green",
+   "color": "green",
    "junctions": [],
    "connections": [
     {
      "position1": "tp4SideC",
      "position2": "tp4SideF",
-     "connectionType": "Small"
+     "connectionType": "small"
     },
     {
      "position1": "tp4SideC",
      "position2": "tp4SideB",
-     "connectionType": "Small"
+     "connectionType": "small"
     }
    ]
   },
   {
    "tileId": "693",
    "name": "693",
-   "color": "Green",
+   "color": "green",
    "junctions": [],
    "connections": [
     {
      "position1": "tp4SideC",
      "position2": "tp4SideF",
-     "connectionType": "Small"
+     "connectionType": "small"
     },
     {
      "position1": "tp4SideC",
      "position2": "tp4SideD",
-     "connectionType": "Small"
+     "connectionType": "small"
     }
    ]
   },
   {
    "tileId": "694",
    "name": "694",
-   "color": "Green",
+   "color": "green",
    "junctions": [],
    "connections": [
     {
      "position1": "tp4SideC",
      "position2": "tp4SideA",
-     "connectionType": "Small"
+     "connectionType": "small"
     },
     {
      "position1": "tp4SideC",
      "position2": "tp4SideB",
-     "connectionType": "Small"
+     "connectionType": "small"
     }
    ]
   },
   {
    "tileId": "695",
    "name": "695",
-   "color": "Green",
+   "color": "green",
    "junctions": [],
    "connections": [
     {
      "position1": "tp4SideC",
      "position2": "tp4SideE",
-     "connectionType": "Small"
+     "connectionType": "small"
     },
     {
      "position1": "tp4SideC",
      "position2": "tp4SideD",
-     "connectionType": "Small"
+     "connectionType": "small"
     }
    ]
   },
   {
    "tileId": "696",
    "name": "696",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 20
@@ -15710,33 +15710,33 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Universal"
+     "connectionType": "universal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Universal"
+     "connectionType": "universal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Universal"
+     "connectionType": "universal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Universal"
+     "connectionType": "universal"
     }
    ]
   },
   {
    "tileId": "697",
    "name": "697",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 20
@@ -15747,33 +15747,33 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Universal"
+     "connectionType": "universal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Universal"
+     "connectionType": "universal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Universal"
+     "connectionType": "universal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Universal"
+     "connectionType": "universal"
     }
    ]
   },
   {
    "tileId": "698",
    "name": "698",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 20
@@ -15784,51 +15784,51 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Universal"
+     "connectionType": "universal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Universal"
+     "connectionType": "universal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Universal"
+     "connectionType": "universal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Universal"
+     "connectionType": "universal"
     }
    ]
   },
   {
    "tileId": "699",
    "name": "699",
-   "color": "Green",
+   "color": "green",
    "junctions": [],
    "connections": [
     {
      "position1": "tp4SideC",
      "position2": "tp4SideA",
-     "connectionType": "Small"
+     "connectionType": "small"
     },
     {
      "position1": "tp4SideC",
      "position2": "tp4SideE",
-     "connectionType": "Small"
+     "connectionType": "small"
     }
    ]
   },
   {
    "tileId": "700",
    "name": "700",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 10
@@ -15839,33 +15839,33 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Small"
+     "connectionType": "small"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Small"
+     "connectionType": "small"
     }
    ]
   },
   {
    "tileId": "701",
    "name": "701",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 10
@@ -15876,33 +15876,33 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Small"
+     "connectionType": "small"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Small"
+     "connectionType": "small"
     }
    ]
   },
   {
    "tileId": "702",
    "name": "702",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 10
@@ -15913,33 +15913,33 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Small"
+     "connectionType": "small"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Small"
+     "connectionType": "small"
     }
    ]
   },
   {
    "tileId": "703",
    "name": "703",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 10
@@ -15950,33 +15950,33 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Small"
+     "connectionType": "small"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Small"
+     "connectionType": "small"
     }
    ]
   },
   {
    "tileId": "704",
    "name": "704",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 30
@@ -15987,33 +15987,33 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Small"
+     "connectionType": "small"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Small"
+     "connectionType": "small"
     }
    ]
   },
   {
    "tileId": "705",
    "name": "705",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 30
@@ -16024,33 +16024,33 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Small"
+     "connectionType": "small"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Small"
+     "connectionType": "small"
     }
    ]
   },
   {
    "tileId": "706",
    "name": "706",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 30
@@ -16061,33 +16061,33 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Small"
+     "connectionType": "small"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Small"
+     "connectionType": "small"
     }
    ]
   },
   {
    "tileId": "707",
    "name": "707",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 30
@@ -16098,76 +16098,76 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Small"
+     "connectionType": "small"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Small"
+     "connectionType": "small"
     }
    ]
   },
   {
    "tileId": "708",
    "name": "708",
-   "color": "Green",
+   "color": "green",
    "junctions": [],
    "connections": [
     {
      "position1": "tp4SideC",
      "position2": "tp4SideA",
-     "connectionType": "Small"
+     "connectionType": "small"
     },
     {
      "position1": "tp4SideC",
      "position2": "tp4SideD",
-     "connectionType": "Small"
+     "connectionType": "small"
     }
    ]
   },
   {
    "tileId": "709",
    "name": "709",
-   "color": "Green",
+   "color": "green",
    "junctions": [],
    "connections": [
     {
      "position1": "tp4SideC",
      "position2": "tp4SideE",
-     "connectionType": "Small"
+     "connectionType": "small"
     },
     {
      "position1": "tp4SideC",
      "position2": "tp4SideB",
-     "connectionType": "Small"
+     "connectionType": "small"
     }
    ]
   },
   {
    "tileId": "710",
    "name": "710",
-   "color": "Green",
+   "color": "green",
    "junctions": [],
    "connections": [
     {
      "position1": "tp4SideC",
      "position2": "tp4SideA",
-     "connectionType": "Small"
+     "connectionType": "small"
     },
     {
      "position1": "tp4SideB",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
+     "connectionType": "normal",
      "layer": 2
     }
    ]
@@ -16175,18 +16175,18 @@ class TileDictionarySource {
   {
    "tileId": "711",
    "name": "711",
-   "color": "Green",
+   "color": "green",
    "junctions": [],
    "connections": [
     {
      "position1": "tp4SideB",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideC",
      "position2": "tp4SideF",
-     "connectionType": "Small",
+     "connectionType": "small",
      "layer": 2
     }
    ]
@@ -16194,18 +16194,18 @@ class TileDictionarySource {
   {
    "tileId": "712",
    "name": "712",
-   "color": "Green",
+   "color": "green",
    "junctions": [],
    "connections": [
     {
      "position1": "tp4SideC",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideB",
      "position2": "tp4SideD",
-     "connectionType": "Small",
+     "connectionType": "small",
      "layer": 2
     }
    ]
@@ -16213,18 +16213,18 @@ class TileDictionarySource {
   {
    "tileId": "713",
    "name": "713",
-   "color": "Green",
+   "color": "green",
    "junctions": [],
    "connections": [
     {
      "position1": "tp4SideB",
      "position2": "tp4SideD",
-     "connectionType": "Small"
+     "connectionType": "small"
     },
     {
      "position1": "tp4SideC",
      "position2": "tp4SideF",
-     "connectionType": "Normal",
+     "connectionType": "normal",
      "layer": 2
     }
    ]
@@ -16232,18 +16232,18 @@ class TileDictionarySource {
   {
    "tileId": "714",
    "name": "714",
-   "color": "Green",
+   "color": "green",
    "junctions": [],
    "connections": [
     {
      "position1": "tp4SideC",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideD",
      "position2": "tp4SideA",
-     "connectionType": "Small",
+     "connectionType": "small",
      "layer": 2
     }
    ]
@@ -16251,18 +16251,18 @@ class TileDictionarySource {
   {
    "tileId": "715",
    "name": "715",
-   "color": "Green",
+   "color": "green",
    "junctions": [],
    "connections": [
     {
      "position1": "tp4SideF",
      "position2": "tp4SideC",
-     "connectionType": "Small"
+     "connectionType": "small"
     },
     {
      "position1": "tp4SideD",
      "position2": "tp4SideA",
-     "connectionType": "Normal",
+     "connectionType": "normal",
      "layer": 2
     }
    ]
@@ -16270,11 +16270,11 @@ class TileDictionarySource {
   {
    "tileId": "981",
    "name": "981",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tp2SideF",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 10
@@ -16282,7 +16282,7 @@ class TileDictionarySource {
     },
     {
      "position": "tpCurve2RightE",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 10
@@ -16293,33 +16293,33 @@ class TileDictionarySource {
     {
      "position1": "tp2SideF",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2SideF",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCurve2RightE",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCurve2RightE",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "982",
    "name": "982",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 30
@@ -16330,23 +16330,23 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "T"
     }
    ]
@@ -16354,11 +16354,11 @@ class TileDictionarySource {
   {
    "tileId": "983",
    "name": "983",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 40
@@ -16369,23 +16369,23 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "T"
     }
    ]
@@ -16393,11 +16393,11 @@ class TileDictionarySource {
   {
    "tileId": "984",
    "name": "984",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [
     {
      "position": "tp2CornerD",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerC",
       "amount": 50
@@ -16405,7 +16405,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp2CornerF",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 50
@@ -16416,28 +16416,28 @@ class TileDictionarySource {
     {
      "position1": "tp2CornerD",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2CornerD",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2CornerF",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2CornerF",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerB",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "OO"
     }
    ]
@@ -16445,11 +16445,11 @@ class TileDictionarySource {
   {
    "tileId": "991",
    "name": "91",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tp2SideF",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 10
@@ -16457,7 +16457,7 @@ class TileDictionarySource {
     },
     {
      "position": "tpCurve2LeftA",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 10
@@ -16468,33 +16468,33 @@ class TileDictionarySource {
     {
      "position1": "tp2SideF",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2SideF",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCurve2LeftA",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCurve2LeftA",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "992",
    "name": "92",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 30
@@ -16505,28 +16505,28 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "A"
     }
    ]
@@ -16534,11 +16534,11 @@ class TileDictionarySource {
   {
    "tileId": "993",
    "name": "93",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 40
@@ -16549,23 +16549,23 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "B"
     }
    ]
@@ -16573,11 +16573,11 @@ class TileDictionarySource {
   {
    "tileId": "994",
    "name": "94",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tp2SideA",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3SideF",
       "amount": 70
@@ -16585,7 +16585,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp2SideC",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3SideF",
       "amount": 70
@@ -16593,7 +16593,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp2SideE",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3SideF",
       "amount": 70
@@ -16604,23 +16604,23 @@ class TileDictionarySource {
     {
      "position1": "tp2SideA",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2SideC",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2SideE",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3SideB",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "P"
     }
    ]
@@ -16628,11 +16628,11 @@ class TileDictionarySource {
   {
    "tileId": "995",
    "name": "95",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 30
@@ -16643,23 +16643,23 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "X"
     }
    ]
@@ -16667,11 +16667,11 @@ class TileDictionarySource {
   {
    "tileId": "996",
    "name": "96",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 40
@@ -16682,33 +16682,33 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "A"
     }
    ]
@@ -16716,11 +16716,11 @@ class TileDictionarySource {
   {
    "tileId": "997",
    "name": "97",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 60
@@ -16731,28 +16731,28 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "B"
     }
    ]
@@ -16760,11 +16760,11 @@ class TileDictionarySource {
   {
    "tileId": "998",
    "name": "98",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [
     {
      "position": "tp3SideD",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tpCenter",
       "amount": 100
@@ -16772,7 +16772,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp3SideE",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tpCenter",
       "amount": 100
@@ -16780,7 +16780,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp3SideF",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tpCenter",
       "amount": 100
@@ -16788,7 +16788,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp3SideA",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tpCenter",
       "amount": 100
@@ -16796,7 +16796,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp3SideB",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tpCenter",
       "amount": 100
@@ -16804,7 +16804,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp3SideC",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tpCenter",
       "amount": 100
@@ -16815,38 +16815,38 @@ class TileDictionarySource {
     {
      "position1": "tp3SideD",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp3SideE",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp3SideF",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp3SideA",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp3SideB",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp3SideC",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp1SideF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "P"
     }
    ]
@@ -16854,11 +16854,11 @@ class TileDictionarySource {
   {
    "tileId": "999",
    "name": "99",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 40
@@ -16869,28 +16869,28 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "X"
     }
    ]
@@ -16898,11 +16898,11 @@ class TileDictionarySource {
   {
    "tileId": "-3",
    "name": "MF 3",
-   "color": "Fixed",
+   "color": "fixed",
    "junctions": [
     {
      "position": "tp2CornerD",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 10
@@ -16913,12 +16913,12 @@ class TileDictionarySource {
     {
      "position1": "tp2CornerD",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2CornerD",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "isBase": true
@@ -16926,11 +16926,11 @@ class TileDictionarySource {
   {
    "tileId": "-4",
    "name": "MF 4",
-   "color": "Fixed",
+   "color": "fixed",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 10
@@ -16941,12 +16941,12 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "isBase": true
@@ -16954,11 +16954,11 @@ class TileDictionarySource {
   {
    "tileId": "-58",
    "name": "MF 58",
-   "color": "Fixed",
+   "color": "fixed",
    "junctions": [
     {
      "position": "tp1SideD",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 10
@@ -16969,12 +16969,12 @@ class TileDictionarySource {
     {
      "position1": "tp1SideD",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp1SideD",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "isBase": true
@@ -16982,13 +16982,13 @@ class TileDictionarySource {
   {
    "tileId": "-7",
    "name": "MF 7",
-   "color": "Fixed",
+   "color": "fixed",
    "junctions": [],
    "connections": [
     {
      "position1": "tp4SideC",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "isBase": true
@@ -16996,13 +16996,13 @@ class TileDictionarySource {
   {
    "tileId": "-8",
    "name": "MF 8",
-   "color": "Fixed",
+   "color": "fixed",
    "junctions": [],
    "connections": [
     {
      "position1": "tp4SideC",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "isBase": true
@@ -17010,13 +17010,13 @@ class TileDictionarySource {
   {
    "tileId": "-9",
    "name": "MF 9",
-   "color": "Fixed",
+   "color": "fixed",
    "junctions": [],
    "connections": [
     {
      "position1": "tp4SideC",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "isBase": true
@@ -17024,11 +17024,11 @@ class TileDictionarySource {
   {
    "tileId": "-5",
    "name": "MF 5",
-   "color": "Fixed",
+   "color": "fixed",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 20
@@ -17039,12 +17039,12 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "isBase": true
@@ -17052,11 +17052,11 @@ class TileDictionarySource {
   {
    "tileId": "-6",
    "name": "MF 6",
-   "color": "Fixed",
+   "color": "fixed",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 20
@@ -17067,12 +17067,12 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "isBase": true
@@ -17080,11 +17080,11 @@ class TileDictionarySource {
   {
    "tileId": "-57",
    "name": "MF 57",
-   "color": "Fixed",
+   "color": "fixed",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 20
@@ -17095,12 +17095,12 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "isBase": true
@@ -17108,11 +17108,11 @@ class TileDictionarySource {
   {
    "tileId": "-103",
    "name": "MF 103",
-   "color": "Fixed",
+   "color": "fixed",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 40
@@ -17123,12 +17123,12 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "isBase": true
@@ -17136,11 +17136,11 @@ class TileDictionarySource {
   {
    "tileId": "-104",
    "name": "MF 104",
-   "color": "Fixed",
+   "color": "fixed",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 20
@@ -17151,7 +17151,7 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "isBase": true
@@ -17159,11 +17159,11 @@ class TileDictionarySource {
   {
    "tileId": "-105",
    "name": "MF 105",
-   "color": "Fixed",
+   "color": "fixed",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 30
@@ -17174,12 +17174,12 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "isBase": true
@@ -17187,7 +17187,7 @@ class TileDictionarySource {
   {
    "tileId": "-9999",
    "name": "MF empty",
-   "color": "Fixed",
+   "color": "fixed",
    "junctions": [],
    "connections": [],
    "isBase": true
@@ -17195,23 +17195,23 @@ class TileDictionarySource {
   {
    "tileId": "-939",
    "name": "Goderich",
-   "color": "OffMap",
+   "color": "offMap",
    "junctions": [],
    "connections": [
     {
      "position1": "tp4SideD",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideD",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideC",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "isBase": true
@@ -17219,23 +17219,23 @@ class TileDictionarySource {
   {
    "tileId": "-912",
    "name": "OMCity-2",
-   "color": "OffMap",
+   "color": "offMap",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "City"
+     "junctionType": "city"
     }
    ],
    "connections": [
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "isBase": true
@@ -17243,28 +17243,28 @@ class TileDictionarySource {
   {
    "tileId": "-913",
    "name": "OMCity-3",
-   "color": "OffMap",
+   "color": "offMap",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "City"
+     "junctionType": "city"
     }
    ],
    "connections": [
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "isBase": true
@@ -17272,11 +17272,11 @@ class TileDictionarySource {
   {
    "tileId": "-112",
    "name": "Tupelo",
-   "color": "Fixed",
+   "color": "fixed",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 30
@@ -17287,17 +17287,17 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "isBase": true
@@ -17305,11 +17305,11 @@ class TileDictionarySource {
   {
    "tileId": "-113",
    "name": "Oxmoor",
-   "color": "Fixed",
+   "color": "fixed",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 30
@@ -17320,17 +17320,17 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "isBase": true
@@ -17338,28 +17338,28 @@ class TileDictionarySource {
   {
    "tileId": "-111",
    "name": "Meridian",
-   "color": "Fixed",
+   "color": "fixed",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity"
+     "junctionType": "doubleCity"
     }
    ],
    "connections": [
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "isBase": true
@@ -17367,11 +17367,11 @@ class TileDictionarySource {
   {
    "tileId": "9121",
    "name": "9121",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 50
@@ -17382,23 +17382,23 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "B+"
     }
    ]
@@ -17406,11 +17406,11 @@ class TileDictionarySource {
   {
    "tileId": "-22",
    "name": "Alt-NY",
-   "color": "Yellow",
+   "color": "yellow",
    "junctions": [
     {
      "position": "tp2SideF",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 40
@@ -17418,7 +17418,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp2SideD",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 40
@@ -17429,18 +17429,18 @@ class TileDictionarySource {
     {
      "position1": "tp2SideF",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2SideD",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "NY"
     }
    ],
@@ -17449,11 +17449,11 @@ class TileDictionarySource {
   {
    "tileId": "9997",
    "name": "9997",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 60
@@ -17464,33 +17464,33 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "B+"
     }
    ]
@@ -17498,11 +17498,11 @@ class TileDictionarySource {
   {
    "tileId": "9220",
    "name": "9220",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "TripleCity",
+     "junctionType": "tripleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 50
@@ -17513,38 +17513,38 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "U"
     }
    ]
@@ -17552,11 +17552,11 @@ class TileDictionarySource {
   {
    "tileId": "-800",
    "name": "Rostock",
-   "color": "Fixed",
+   "color": "fixed",
    "junctions": [
     {
      "position": "tp2SideD",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 10
@@ -17567,7 +17567,7 @@ class TileDictionarySource {
     {
      "position1": "tp2SideD",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "isBase": true
@@ -17575,11 +17575,11 @@ class TileDictionarySource {
   {
    "tileId": "-801",
    "name": "Emden",
-   "color": "Fixed",
+   "color": "fixed",
    "junctions": [
     {
      "position": "tp2CornerE",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerF",
       "amount": 10
@@ -17587,7 +17587,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp2SideC",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerC",
       "amount": 10
@@ -17598,17 +17598,17 @@ class TileDictionarySource {
     {
      "position1": "tp2CornerE",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2CornerE",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2SideC",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "isBase": true
@@ -17616,11 +17616,11 @@ class TileDictionarySource {
   {
    "tileId": "-802",
    "name": "Bremerhaven",
-   "color": "Fixed",
+   "color": "fixed",
    "junctions": [
     {
      "position": "tp1SideB",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3SideB",
       "amount": 10
@@ -17631,17 +17631,17 @@ class TileDictionarySource {
     {
      "position1": "tp1SideB",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp1SideB",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideD",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "isBase": true
@@ -17649,11 +17649,11 @@ class TileDictionarySource {
   {
    "tileId": "-803",
    "name": "Hamburg",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tp2SideF",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tpCenter",
       "amount": 40
@@ -17661,7 +17661,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp2CornerB",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tpCenter",
       "amount": 40
@@ -17669,7 +17669,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp2SideD",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tpCenter",
       "amount": 40
@@ -17680,28 +17680,28 @@ class TileDictionarySource {
     {
      "position1": "tp2SideF",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2CornerB",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2CornerB",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2SideD",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerE",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "HH"
     }
    ],
@@ -17710,11 +17710,11 @@ class TileDictionarySource {
   {
    "tileId": "-804",
    "name": "Schwerin",
-   "color": "Fixed",
+   "color": "fixed",
    "junctions": [
     {
      "position": "tp1SideA",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 10
@@ -17725,22 +17725,22 @@ class TileDictionarySource {
     {
      "position1": "tp4SideE",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp1SideA",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp1SideA",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp1SideA",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "isBase": true
@@ -17748,11 +17748,11 @@ class TileDictionarySource {
   {
    "tileId": "-805",
    "name": "Oldenburg",
-   "color": "Fixed",
+   "color": "fixed",
    "junctions": [
     {
      "position": "tp1CornerB",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 10
@@ -17763,22 +17763,22 @@ class TileDictionarySource {
     {
      "position1": "tp1CornerB",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp1CornerB",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp1CornerB",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp1CornerB",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "isBase": true
@@ -17786,11 +17786,11 @@ class TileDictionarySource {
   {
    "tileId": "-806",
    "name": "Berlin",
-   "color": "Yellow",
+   "color": "yellow",
    "junctions": [
     {
      "position": "tp2SideE",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp1SideC",
       "amount": 30
@@ -17798,7 +17798,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp1SideA",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp1SideC",
       "amount": 30
@@ -17809,18 +17809,18 @@ class TileDictionarySource {
     {
      "position1": "tp2SideE",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp1SideA",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "B"
     }
    ],
@@ -17829,11 +17829,11 @@ class TileDictionarySource {
   {
    "tileId": "-143",
    "name": "-143",
-   "color": "Fixed",
+   "color": "fixed",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 10
@@ -17844,17 +17844,17 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "isBase": true
@@ -17862,11 +17862,11 @@ class TileDictionarySource {
   {
    "tileId": "-114",
    "name": "Braunschweig",
-   "color": "Fixed",
+   "color": "fixed",
    "junctions": [
     {
      "position": "tp1SideF",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 20
@@ -17877,17 +17877,17 @@ class TileDictionarySource {
     {
      "position1": "tp1SideF",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp1SideF",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp1SideF",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "isBase": true
@@ -17895,22 +17895,22 @@ class TileDictionarySource {
   {
    "tileId": "-807",
    "name": "XX",
-   "color": "Yellow",
+   "color": "yellow",
    "junctions": [
     {
      "position": "tp2SideB",
-     "junctionType": "City"
+     "junctionType": "city"
     },
     {
      "position": "tp2SideD",
-     "junctionType": "City"
+     "junctionType": "city"
     }
    ],
    "connections": [],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "XX"
     }
    ],
@@ -17919,23 +17919,23 @@ class TileDictionarySource {
   {
    "tileId": "-39",
    "name": "-39",
-   "color": "Fixed",
+   "color": "fixed",
    "junctions": [],
    "connections": [
     {
      "position1": "tp4SideD",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideB",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideC",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "isBase": true
@@ -17943,11 +17943,11 @@ class TileDictionarySource {
   {
    "tileId": "-808",
    "name": "Koblenz",
-   "color": "Fixed",
+   "color": "fixed",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 10
@@ -17958,17 +17958,17 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideB",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "isBase": true
@@ -17976,11 +17976,11 @@ class TileDictionarySource {
   {
    "tileId": "-809",
    "name": "Frankfurt",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 40
@@ -17991,28 +17991,28 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "Y"
     }
    ],
@@ -18021,23 +18021,23 @@ class TileDictionarySource {
   {
    "tileId": "-41",
    "name": "-41",
-   "color": "Fixed",
+   "color": "fixed",
    "junctions": [],
    "connections": [
     {
      "position1": "tp4SideA",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideE",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideE",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "isBase": true
@@ -18045,11 +18045,11 @@ class TileDictionarySource {
   {
    "tileId": "-810",
    "name": "Nurnberg",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tp2CornerA",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerB",
       "amount": 30
@@ -18057,7 +18057,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp2CornerD",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerE",
       "amount": 30
@@ -18068,28 +18068,28 @@ class TileDictionarySource {
     {
      "position1": "tp2CornerA",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2CornerA",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2CornerD",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2CornerD",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "XX"
     }
    ],
@@ -18098,11 +18098,11 @@ class TileDictionarySource {
   {
    "tileId": "1441",
    "name": "441",
-   "color": "Yellow",
+   "color": "yellow",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 10
@@ -18113,13 +18113,13 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp2SideA",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "Elyton/B'ham"
     }
    ]
@@ -18127,11 +18127,11 @@ class TileDictionarySource {
   {
    "tileId": "1442",
    "name": "442",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 30
@@ -18142,28 +18142,28 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp2SideA",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "Birmingham"
     }
    ]
@@ -18171,11 +18171,11 @@ class TileDictionarySource {
   {
    "tileId": "1443",
    "name": "443",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 40
@@ -18186,33 +18186,33 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp2SideA",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "Montgomery"
     }
    ]
@@ -18220,11 +18220,11 @@ class TileDictionarySource {
   {
    "tileId": "1444",
    "name": "444",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 50
@@ -18235,33 +18235,33 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp2SideA",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "B'ham/Montg."
     }
    ]
@@ -18269,11 +18269,11 @@ class TileDictionarySource {
   {
    "tileId": "445",
    "name": "445",
-   "color": "Yellow",
+   "color": "yellow",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 20
@@ -18284,18 +18284,18 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp2CornerB",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "Lumber Term."
     }
    ]
@@ -18303,11 +18303,11 @@ class TileDictionarySource {
   {
    "tileId": "446",
    "name": "446",
-   "color": "Gray",
+   "color": "gray",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "TripleCity",
+     "junctionType": "tripleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 70
@@ -18318,38 +18318,38 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "B'ham"
     }
    ]
@@ -18357,11 +18357,11 @@ class TileDictionarySource {
   {
    "tileId": "-23",
    "name": "Louisville",
-   "color": "Yellow",
+   "color": "yellow",
    "junctions": [
     {
      "position": "tp2SideA",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 20
@@ -18369,7 +18369,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp2SideD",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerE",
       "amount": 20
@@ -18380,18 +18380,18 @@ class TileDictionarySource {
     {
      "position1": "tp4SideD",
      "position2": "tp2SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2SideD",
      "position2": "tp2SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp2CornerC",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "Louisville"
     }
    ],
@@ -18400,11 +18400,11 @@ class TileDictionarySource {
   {
    "tileId": "-3005",
    "name": "B/V",
-   "color": "Yellow",
+   "color": "yellow",
    "junctions": [
     {
      "position": "tp2SideB",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3SideF",
       "amount": 30
@@ -18412,7 +18412,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp2SideE",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3SideF",
       "amount": 30
@@ -18423,18 +18423,18 @@ class TileDictionarySource {
     {
      "position1": "tp4SideD",
      "position2": "tp2SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideA",
      "position2": "tp2SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3SideC",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "B-V"
     }
    ],
@@ -18443,11 +18443,11 @@ class TileDictionarySource {
   {
    "tileId": "-3006",
    "name": "Paris",
-   "color": "Yellow",
+   "color": "yellow",
    "junctions": [
     {
      "position": "tp2SideA",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerF",
       "amount": 40
@@ -18455,7 +18455,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp2SideD",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerF",
       "amount": 40
@@ -18466,18 +18466,18 @@ class TileDictionarySource {
     {
      "position1": "tp2SideA",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2SideD",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerC",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "P"
     }
    ],
@@ -18486,18 +18486,18 @@ class TileDictionarySource {
   {
    "tileId": "-3007",
    "name": "Y city (cent)",
-   "color": "Ground",
+   "color": "ground",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "City"
+     "junctionType": "city"
     }
    ],
    "connections": [],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "Y"
     }
    ],
@@ -18506,11 +18506,11 @@ class TileDictionarySource {
   {
    "tileId": "-3008",
    "name": "city (cent.)",
-   "color": "Ground",
+   "color": "ground",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "City"
+     "junctionType": "city"
     }
    ],
    "connections": [],
@@ -18519,11 +18519,11 @@ class TileDictionarySource {
   {
    "tileId": "-3009",
    "name": "town (cent.)",
-   "color": "Ground",
+   "color": "ground",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "WhistleStop"
+     "junctionType": "whistleStop"
     }
    ],
    "connections": [],
@@ -18532,13 +18532,13 @@ class TileDictionarySource {
   {
    "tileId": "-3010",
    "name": "Mountain",
-   "color": "Ground",
+   "color": "ground",
    "junctions": [],
    "connections": [],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "M"
     }
    ],
@@ -18547,13 +18547,13 @@ class TileDictionarySource {
   {
    "tileId": "-3011",
    "name": "mountain",
-   "color": "Ground",
+   "color": "ground",
    "junctions": [],
    "connections": [],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "m"
     }
    ],
@@ -18562,11 +18562,11 @@ class TileDictionarySource {
   {
    "tileId": "576",
    "name": "576",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 40
@@ -18577,23 +18577,23 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "Y"
     }
    ]
@@ -18601,11 +18601,11 @@ class TileDictionarySource {
   {
    "tileId": "577",
    "name": "577",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 40
@@ -18616,23 +18616,23 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "Y"
     }
    ]
@@ -18640,11 +18640,11 @@ class TileDictionarySource {
   {
    "tileId": "578",
    "name": "578",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 40
@@ -18655,23 +18655,23 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "Y"
     }
    ]
@@ -18679,11 +18679,11 @@ class TileDictionarySource {
   {
    "tileId": "579",
    "name": "579",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 40
@@ -18694,23 +18694,23 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "Y"
     }
    ]
@@ -18718,11 +18718,11 @@ class TileDictionarySource {
   {
    "tileId": "580",
    "name": "580",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tp2CornerB",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 60
@@ -18730,7 +18730,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp2CornerD",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 60
@@ -18741,28 +18741,28 @@ class TileDictionarySource {
     {
      "position1": "tp2CornerB",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2CornerB",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2CornerD",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2CornerD",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "P"
     }
    ]
@@ -18770,11 +18770,11 @@ class TileDictionarySource {
   {
    "tileId": "581",
    "name": "581",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tp2CornerC",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerB",
       "amount": 50
@@ -18782,7 +18782,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp2CornerE",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerB",
       "amount": 50
@@ -18790,7 +18790,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp2CornerA",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerB",
       "amount": 50
@@ -18801,38 +18801,38 @@ class TileDictionarySource {
     {
      "position1": "tp2CornerA",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2CornerA",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2CornerC",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2CornerC",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2CornerE",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2CornerE",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "B-V"
     }
    ]
@@ -18840,11 +18840,11 @@ class TileDictionarySource {
   {
    "tileId": "582",
    "name": "582",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 50
@@ -18855,28 +18855,28 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerB",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "Y"
     }
    ]
@@ -18884,11 +18884,11 @@ class TileDictionarySource {
   {
    "tileId": "583",
    "name": "583",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [
     {
      "position": "tp2SideA",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerC",
       "amount": 80
@@ -18896,7 +18896,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp2SideD",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerC",
       "amount": 80
@@ -18907,28 +18907,28 @@ class TileDictionarySource {
     {
      "position1": "tp2SideA",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2SideA",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2SideD",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2SideD",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "P"
     }
    ]
@@ -18936,11 +18936,11 @@ class TileDictionarySource {
   {
    "tileId": "584",
    "name": "584",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "TripleCity",
+     "junctionType": "tripleCity",
      "revenue": {
       "position": "tp3CornerB",
       "amount": 60
@@ -18951,38 +18951,38 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerA",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "B-V"
     }
    ]
@@ -18990,142 +18990,142 @@ class TileDictionarySource {
   {
    "tileId": "544",
    "name": "544",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [],
    "connections": [
     {
      "position1": "tp4SideB",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideB",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideA",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideA",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideE",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideA",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "545",
    "name": "545",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [],
    "connections": [
     {
      "position1": "tp4SideA",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideA",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideE",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideA",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideF",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideF",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "546",
    "name": "546",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [],
    "connections": [
     {
      "position1": "tp4SideA",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideB",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideF",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideF",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideB",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideA",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "-1143",
    "name": "Bham1851",
-   "color": "Fixed",
+   "color": "fixed",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "WhistleStop"
+     "junctionType": "whistleStop"
     }
    ],
    "connections": [
     {
      "position1": "tp4SideF",
      "position2": "tpCenter",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "isBase": true
@@ -19133,11 +19133,11 @@ class TileDictionarySource {
   {
    "tileId": "-89030",
    "name": "1889 B3",
-   "color": "Fixed",
+   "color": "fixed",
    "junctions": [
     {
      "position": "tp2CornerD",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerE",
       "amount": 20
@@ -19148,18 +19148,18 @@ class TileDictionarySource {
     {
      "position1": "tp2CornerD",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2CornerD",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp1CornerC",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "Yawatahama"
     }
    ],
@@ -19168,11 +19168,11 @@ class TileDictionarySource {
   {
    "tileId": "-89511",
    "name": "1889 Uwajima B7",
-   "color": "Fixed",
+   "color": "fixed",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 40
@@ -19183,23 +19183,23 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tpCurve2LeftD",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "Uwajima"
     }
    ],
@@ -19208,11 +19208,11 @@ class TileDictionarySource {
   {
    "tileId": "-89015",
    "name": "1889 Kouchi  F9",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerB",
       "amount": 30
@@ -19223,28 +19223,28 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tpCurve2LeftD",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "Kouchi"
     }
    ],
@@ -19253,11 +19253,11 @@ class TileDictionarySource {
   {
    "tileId": "-89031",
    "name": "1889 G14",
-   "color": "Fixed",
+   "color": "fixed",
    "junctions": [
     {
      "position": "tp2CornerB",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 20
@@ -19268,18 +19268,18 @@ class TileDictionarySource {
     {
      "position1": "tp2CornerB",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2CornerB",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp1SideB",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "Muroto"
     }
    ],
@@ -19288,18 +19288,18 @@ class TileDictionarySource {
   {
    "tileId": "-89010",
    "name": "1889 Kotohira I4",
-   "color": "Ground",
+   "color": "ground",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "City"
+     "junctionType": "city"
     }
    ],
    "connections": [],
    "adornments": [
     {
      "position": "tp3SideA",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "Kotohira"
     }
    ],
@@ -19308,11 +19308,11 @@ class TileDictionarySource {
   {
    "tileId": "-89012",
    "name": "1889 Takamatsu K5",
-   "color": "Yellow",
+   "color": "yellow",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerE",
       "amount": 30
@@ -19323,23 +19323,23 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tpCurve2LeftA",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "Takamatsu"
     }
    ],
@@ -19348,11 +19348,11 @@ class TileDictionarySource {
   {
    "tileId": "-89115",
    "name": "1889 Ohzu C4",
-   "color": "Yellow",
+   "color": "yellow",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3SideA",
       "amount": 20
@@ -19363,13 +19363,13 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp2SideD",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "Ohzu"
     }
    ],
@@ -19378,11 +19378,11 @@ class TileDictionarySource {
   {
    "tileId": "437",
    "name": "1889 Port",
-   "color": "Yellow",
+   "color": "yellow",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 30
@@ -19393,18 +19393,18 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp2CornerB",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "Port"
     }
    ]
@@ -19412,11 +19412,11 @@ class TileDictionarySource {
   {
    "tileId": "438",
    "name": "1889 Kotohira yellow",
-   "color": "Yellow",
+   "color": "yellow",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerF",
       "amount": 40
@@ -19427,18 +19427,18 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3SideA",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "Kotohira"
     }
    ]
@@ -19446,11 +19446,11 @@ class TileDictionarySource {
   {
    "tileId": "439",
    "name": "1889 Kotohira green",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerF",
       "amount": 50
@@ -19461,23 +19461,23 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3SideA",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "Kotohira"
     }
    ]
@@ -19485,11 +19485,11 @@ class TileDictionarySource {
   {
    "tileId": "440",
    "name": "1889 Takamatsu green",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerE",
       "amount": 40
@@ -19500,23 +19500,23 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3SideA",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "Takamatsu"
     }
    ]
@@ -19524,11 +19524,11 @@ class TileDictionarySource {
   {
    "tileId": "448",
    "name": "1889 dc K brown",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 40
@@ -19539,33 +19539,33 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "465",
    "name": "1889 Kouchi brown ",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "TripleCity",
+     "junctionType": "tripleCity",
      "revenue": {
       "position": "tp3CornerF",
       "amount": 60
@@ -19576,28 +19576,28 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3SideA",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "Kouchi"
     }
    ]
@@ -19605,11 +19605,11 @@ class TileDictionarySource {
   {
    "tileId": "466",
    "name": "1889 Takamatsu brown",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerE",
       "amount": 60
@@ -19620,23 +19620,23 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tpCurve2LeftA",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "Takamatsu"
     }
    ]
@@ -19644,11 +19644,11 @@ class TileDictionarySource {
   {
    "tileId": "492",
    "name": "1889 Kotohira brown",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "TripleCity",
+     "junctionType": "tripleCity",
      "revenue": {
       "position": "tp3CornerF",
       "amount": 80
@@ -19659,38 +19659,38 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3SideA",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "Kotohira"
     }
    ]
@@ -19698,11 +19698,11 @@ class TileDictionarySource {
   {
    "tileId": "-56001",
    "name": "Toronto",
-   "color": "Yellow",
+   "color": "yellow",
    "junctions": [
     {
      "position": "tp2SideB",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3SideF",
       "amount": 30
@@ -19710,7 +19710,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp2SideE",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3SideC",
       "amount": 30
@@ -19721,18 +19721,18 @@ class TileDictionarySource {
     {
      "position1": "tp2SideE",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2SideB",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3SideA",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "Toronto"
     }
    ],
@@ -19741,11 +19741,11 @@ class TileDictionarySource {
   {
    "tileId": "-25001",
    "name": "London",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tp3SideE",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tpCenter",
       "amount": 50
@@ -19753,7 +19753,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp3SideF",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tpCenter",
       "amount": 50
@@ -19761,7 +19761,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp3SideA",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tpCenter",
       "amount": 50
@@ -19769,7 +19769,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp3SideB",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tpCenter",
       "amount": 50
@@ -19777,7 +19777,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp3SideC",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tpCenter",
       "amount": 50
@@ -19785,7 +19785,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp3SideD",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tpCenter",
       "amount": 50
@@ -19796,38 +19796,38 @@ class TileDictionarySource {
     {
      "position1": "tp4SideF",
      "position2": "tp3SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideE",
      "position2": "tp3SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideD",
      "position2": "tp3SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideC",
      "position2": "tp3SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideB",
      "position2": "tp3SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideA",
      "position2": "tp3SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp1SideA",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "London"
     }
    ],
@@ -19836,11 +19836,11 @@ class TileDictionarySource {
   {
    "tileId": "-25002",
    "name": "B/M/G",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tp2SideE",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3SideB",
       "amount": 40
@@ -19848,7 +19848,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp2SideA",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3SideB",
       "amount": 40
@@ -19856,7 +19856,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp2SideC",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3SideB",
       "amount": 40
@@ -19867,23 +19867,23 @@ class TileDictionarySource {
     {
      "position1": "tp2SideE",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2SideC",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideA",
      "position2": "tp2SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp1SideF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": " "
     }
    ],
@@ -19892,11 +19892,11 @@ class TileDictionarySource {
   {
    "tileId": "-25003",
    "name": "Bristol",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3SideC",
       "amount": 30
@@ -19907,18 +19907,18 @@ class TileDictionarySource {
     {
      "position1": "tp4SideD",
      "position2": "tpCenter",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp2CornerA",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "Bristol"
     }
    ],
@@ -19927,11 +19927,11 @@ class TileDictionarySource {
   {
    "tileId": "-25004",
    "name": "Wolverton",
-   "color": "Fixed",
+   "color": "fixed",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 10
@@ -19942,22 +19942,22 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "isBase": true
@@ -19965,11 +19965,11 @@ class TileDictionarySource {
   {
    "tileId": "-25005",
    "name": "Swindon",
-   "color": "Fixed",
+   "color": "fixed",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 10
@@ -19980,22 +19980,22 @@ class TileDictionarySource {
     {
      "position1": "tp4SideE",
      "position2": "tpCenter",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideF",
      "position2": "tpCenter",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "isBase": true
@@ -20003,11 +20003,11 @@ class TileDictionarySource {
   {
    "tileId": "-25006",
    "name": "Southend",
-   "color": "Fixed",
+   "color": "fixed",
    "junctions": [
     {
      "position": "tp2SideB",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 20
@@ -20018,17 +20018,17 @@ class TileDictionarySource {
     {
      "position1": "tp4SideE",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideE",
      "position2": "tp2SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideD",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "isBase": true
@@ -20036,11 +20036,11 @@ class TileDictionarySource {
   {
    "tileId": "-25007",
    "name": "Bournemouth",
-   "color": "Fixed",
+   "color": "fixed",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 20
@@ -20048,7 +20048,7 @@ class TileDictionarySource {
     },
     {
      "position": "tpCenter",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 20
@@ -20059,17 +20059,17 @@ class TileDictionarySource {
     {
      "position1": "tp4SideE",
      "position2": "tpCenter",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideF",
      "position2": "tpCenter",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideA",
      "position2": "tpCenter",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "isBase": true
@@ -20077,11 +20077,11 @@ class TileDictionarySource {
   {
    "tileId": "-25008",
    "name": "Barrow",
-   "color": "Fixed",
+   "color": "fixed",
    "junctions": [
     {
      "position": "tp2CornerA",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp2CornerF",
       "amount": 10
@@ -20089,7 +20089,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp2CornerC",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp2CornerD",
       "amount": 10
@@ -20100,22 +20100,22 @@ class TileDictionarySource {
     {
      "position1": "tp4SideF",
      "position2": "tp2CornerA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2CornerA",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2CornerC",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2CornerC",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "isBase": true
@@ -20123,11 +20123,11 @@ class TileDictionarySource {
   {
    "tileId": "-25009",
    "name": "Liverpool",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tp2SideA",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp2CornerF",
       "amount": 40
@@ -20135,7 +20135,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp2SideC",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp2CornerF",
       "amount": 40
@@ -20146,12 +20146,12 @@ class TileDictionarySource {
     {
      "position1": "tp2SideA",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2SideC",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "isBase": true
@@ -20159,11 +20159,11 @@ class TileDictionarySource {
   {
    "tileId": "-25010",
    "name": "Doncaster",
-   "color": "Fixed",
+   "color": "fixed",
    "junctions": [
     {
      "position": "tp1CornerE",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 20
@@ -20171,7 +20171,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp1CornerB",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerD",
       "amount": 20
@@ -20182,32 +20182,32 @@ class TileDictionarySource {
     {
      "position1": "tp1CornerE",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp1CornerE",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp1CornerE",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp1CornerB",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp1CornerB",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp1CornerB",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "isBase": true
@@ -20215,11 +20215,11 @@ class TileDictionarySource {
   {
    "tileId": "-25011",
    "name": "Aberdeen",
-   "color": "Fixed",
+   "color": "fixed",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerC",
       "amount": 30
@@ -20230,7 +20230,7 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "isBase": true
@@ -20238,11 +20238,11 @@ class TileDictionarySource {
   {
    "tileId": "-25012",
    "name": "Helensburgh",
-   "color": "Fixed",
+   "color": "fixed",
    "junctions": [
     {
      "position": "tp2SideC",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerB",
       "amount": 10
@@ -20250,7 +20250,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp2SideB",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerD",
       "amount": 10
@@ -20261,12 +20261,12 @@ class TileDictionarySource {
     {
      "position1": "tp2SideB",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2SideC",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "isBase": true
@@ -20274,11 +20274,11 @@ class TileDictionarySource {
   {
    "tileId": "-25013",
    "name": "Anstruther",
-   "color": "Fixed",
+   "color": "fixed",
    "junctions": [
     {
      "position": "tp2SideF",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 10
@@ -20289,12 +20289,12 @@ class TileDictionarySource {
     {
      "position1": "tp4SideC",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2SideF",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "isBase": true
@@ -20302,11 +20302,11 @@ class TileDictionarySource {
   {
    "tileId": "-25014",
    "name": "Maryport",
-   "color": "Fixed",
+   "color": "fixed",
    "junctions": [
     {
      "position": "tp1CornerB",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 10
@@ -20317,17 +20317,17 @@ class TileDictionarySource {
     {
      "position1": "tp1CornerB",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp1CornerB",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp1CornerB",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "isBase": true
@@ -20335,11 +20335,11 @@ class TileDictionarySource {
   {
    "tileId": "-25015",
    "name": "Milford H.",
-   "color": "Fixed",
+   "color": "fixed",
    "junctions": [
     {
      "position": "tp2CornerB",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 10
@@ -20350,12 +20350,12 @@ class TileDictionarySource {
     {
      "position1": "tp2CornerB",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2CornerB",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "isBase": true
@@ -20363,11 +20363,11 @@ class TileDictionarySource {
   {
    "tileId": "-25016",
    "name": "Highbridge",
-   "color": "Fixed",
+   "color": "fixed",
    "junctions": [
     {
      "position": "tp1CornerC",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerB",
       "amount": 10
@@ -20378,22 +20378,22 @@ class TileDictionarySource {
     {
      "position1": "tp4SideA",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp1CornerC",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp1CornerC",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp1CornerC",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "isBase": true
@@ -20401,11 +20401,11 @@ class TileDictionarySource {
   {
    "tileId": "119",
    "name": "119",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 30
@@ -20416,33 +20416,33 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "166",
    "name": "166",
-   "color": "Gray",
+   "color": "gray",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 40
@@ -20453,38 +20453,38 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "200",
    "name": "200",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 10
@@ -20495,201 +20495,201 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "3080",
    "name": "80/18EU",
-   "color": "Green",
+   "color": "green",
    "junctions": [],
    "connections": [
     {
      "position1": "tp4SideD",
      "position2": "tpCenter",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "3081",
    "name": "81/18EU",
-   "color": "Green",
+   "color": "green",
    "junctions": [],
    "connections": [
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "3082",
    "name": "82/18EU",
-   "color": "Green",
+   "color": "green",
    "junctions": [],
    "connections": [
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideA",
      "position2": "tpCenter",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideF",
      "position2": "tpCenter",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "3083",
    "name": "83/18EU",
-   "color": "Green",
+   "color": "green",
    "junctions": [],
    "connections": [
     {
      "position1": "tp4SideF",
      "position2": "tpCenter",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideE",
      "position2": "tpCenter",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideC",
      "position2": "tpCenter",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "3544",
    "name": "544",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [],
    "connections": [
     {
      "position1": "tp4SideA",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideB",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "3545",
    "name": "545",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [],
    "connections": [
     {
      "position1": "tp4SideA",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideF",
      "position2": "tpCenter",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideE",
      "position2": "tpCenter",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "3546",
    "name": "546",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [],
    "connections": [
     {
      "position1": "tp4SideA",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideB",
      "position2": "tpCenter",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideF",
      "position2": "tpCenter",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "-30001",
    "name": "N of Boston",
-   "color": "Fixed",
+   "color": "fixed",
    "junctions": [],
    "connections": [
     {
      "position1": "tp4SideD",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideD",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "isBase": true
@@ -20697,11 +20697,11 @@ class TileDictionarySource {
   {
    "tileId": "-30002",
    "name": "Altoona",
-   "color": "Fixed",
+   "color": "fixed",
    "junctions": [
     {
      "position": "tp2CornerA",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerE",
       "amount": 10
@@ -20712,17 +20712,17 @@ class TileDictionarySource {
     {
      "position1": "tp4SideE",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideE",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideC",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "isBase": true
@@ -20730,11 +20730,11 @@ class TileDictionarySource {
   {
    "tileId": "-30003",
    "name": "Altoon intern",
-   "color": "Fixed",
+   "color": "fixed",
    "junctions": [
     {
      "position": "tp2CornerA",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerE",
       "amount": 10
@@ -20745,32 +20745,32 @@ class TileDictionarySource {
     {
      "position1": "tp4SideE",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideE",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideB",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideE",
      "position2": "tp2CornerA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2CornerA",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2CornerA",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "isBase": true
@@ -20778,44 +20778,44 @@ class TileDictionarySource {
   {
    "tileId": "-30004",
    "name": "Coalfields",
-   "color": "Fixed",
+   "color": "fixed",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "WhistleStop"
+     "junctionType": "whistleStop"
     }
    ],
    "connections": [
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp2SideD",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "Coalfields"
     }
    ],
@@ -20824,23 +20824,23 @@ class TileDictionarySource {
   {
    "tileId": "-30005",
    "name": "Norfolk",
-   "color": "Fixed",
+   "color": "fixed",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "City"
+     "junctionType": "city"
     }
    ],
    "connections": [
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "isBase": true
@@ -20848,11 +20848,11 @@ class TileDictionarySource {
   {
    "tileId": "1062",
    "name": "NY Coalfields",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "QuadCity",
+     "junctionType": "quadCity",
      "revenue": {
       "position": "tp3CornerC",
       "amount": 80
@@ -20863,28 +20863,28 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "NY"
     }
    ]
@@ -20892,11 +20892,11 @@ class TileDictionarySource {
   {
    "tileId": "2053",
    "name": "B Coalfields",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 50
@@ -20907,23 +20907,23 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "B"
     }
    ]
@@ -20931,11 +20931,11 @@ class TileDictionarySource {
   {
    "tileId": "1061",
    "name": "B Coalfields",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 60
@@ -20946,28 +20946,28 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "B"
     }
    ]
@@ -20975,11 +20975,11 @@ class TileDictionarySource {
   {
    "tileId": "2061",
    "name": "BA Coalfields",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "TripleCity",
+     "junctionType": "tripleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 60
@@ -20990,33 +20990,33 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "B"
     }
    ]
@@ -21024,11 +21024,11 @@ class TileDictionarySource {
   {
    "tileId": "1717",
    "name": "G17",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 20
@@ -21039,45 +21039,45 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "-911",
    "name": "OMCity-1",
-   "color": "OffMap",
+   "color": "offMap",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "City"
+     "junctionType": "city"
     }
    ],
    "connections": [
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "isBase": true
@@ -21085,18 +21085,18 @@ class TileDictionarySource {
   {
    "tileId": "-1911",
    "name": "OM1Slot-1",
-   "color": "OffMap",
+   "color": "offMap",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "City"
+     "junctionType": "city"
     }
    ],
    "connections": [
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "isBase": true
@@ -21104,23 +21104,23 @@ class TileDictionarySource {
   {
    "tileId": "-1912",
    "name": "OM1Slot-2",
-   "color": "OffMap",
+   "color": "offMap",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "City"
+     "junctionType": "city"
     }
    ],
    "connections": [
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "isBase": true
@@ -21128,28 +21128,28 @@ class TileDictionarySource {
   {
    "tileId": "-1913",
    "name": "OM1Slot-3",
-   "color": "OffMap",
+   "color": "offMap",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "City"
+     "junctionType": "city"
     }
    ],
    "connections": [
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "isBase": true
@@ -21157,18 +21157,18 @@ class TileDictionarySource {
   {
    "tileId": "-1921",
    "name": "OM2Slot-1",
-   "color": "OffMap",
+   "color": "offMap",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity"
+     "junctionType": "doubleCity"
     }
    ],
    "connections": [
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "isBase": true
@@ -21176,23 +21176,23 @@ class TileDictionarySource {
   {
    "tileId": "-1922",
    "name": "OM2Slot-2",
-   "color": "OffMap",
+   "color": "offMap",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity"
+     "junctionType": "doubleCity"
     }
    ],
    "connections": [
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "isBase": true
@@ -21200,28 +21200,28 @@ class TileDictionarySource {
   {
    "tileId": "-1923",
    "name": "OM2Slot-3",
-   "color": "OffMap",
+   "color": "offMap",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity"
+     "junctionType": "doubleCity"
     }
    ],
    "connections": [
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "isBase": true
@@ -21229,18 +21229,18 @@ class TileDictionarySource {
   {
    "tileId": "-4001",
    "name": "Port-1",
-   "color": "OffMap",
+   "color": "offMap",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "WhistleStop"
+     "junctionType": "whistleStop"
     }
    ],
    "connections": [
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "isBase": true
@@ -21248,23 +21248,23 @@ class TileDictionarySource {
   {
    "tileId": "-4002",
    "name": "Port-2",
-   "color": "OffMap",
+   "color": "offMap",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "WhistleStop"
+     "junctionType": "whistleStop"
     }
    ],
    "connections": [
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "isBase": true
@@ -21272,28 +21272,28 @@ class TileDictionarySource {
   {
    "tileId": "-4003",
    "name": "Port-3",
-   "color": "OffMap",
+   "color": "offMap",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "WhistleStop"
+     "junctionType": "whistleStop"
     }
    ],
    "connections": [
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "isBase": true
@@ -21301,11 +21301,11 @@ class TileDictionarySource {
   {
    "tileId": "1458",
    "name": "GA458",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerE",
       "amount": 50
@@ -21316,33 +21316,33 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3SideA",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "Macon"
     }
    ]
@@ -21350,33 +21350,33 @@ class TileDictionarySource {
   {
    "tileId": "-5015",
    "name": "GACPSav",
-   "color": "Fixed",
+   "color": "fixed",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity"
+     "junctionType": "doubleCity"
     }
    ],
    "connections": [
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "isBase": true
@@ -21384,11 +21384,11 @@ class TileDictionarySource {
   {
    "tileId": "598",
    "name": "598",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 40
@@ -21399,23 +21399,23 @@ class TileDictionarySource {
     {
      "position1": "tp4SideB",
      "position2": "tpCenter",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "Cha"
     }
    ]
@@ -21423,11 +21423,11 @@ class TileDictionarySource {
   {
    "tileId": "599",
    "name": "599",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 40
@@ -21438,33 +21438,33 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "Nsh"
     }
    ]
@@ -21472,11 +21472,11 @@ class TileDictionarySource {
   {
    "tileId": "600",
    "name": "600",
-   "color": "Gray",
+   "color": "gray",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "TripleCity",
+     "junctionType": "tripleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 60
@@ -21487,38 +21487,38 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "P"
     }
    ]
@@ -21526,19 +21526,19 @@ class TileDictionarySource {
   {
    "tileId": "-30",
    "name": "3 cities",
-   "color": "Ground",
+   "color": "ground",
    "junctions": [
     {
      "position": "tp2CornerA",
-     "junctionType": "City"
+     "junctionType": "city"
     },
     {
      "position": "tp2CornerC",
-     "junctionType": "City"
+     "junctionType": "city"
     },
     {
      "position": "tp2CornerE",
-     "junctionType": "City"
+     "junctionType": "city"
     }
    ],
    "connections": [],
@@ -21547,11 +21547,11 @@ class TileDictionarySource {
   {
    "tileId": "-10001",
    "name": "TNLouisville",
-   "color": "Fixed",
+   "color": "fixed",
    "junctions": [
     {
      "position": "tp1SideF",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 30
@@ -21562,17 +21562,17 @@ class TileDictionarySource {
     {
      "position1": "tp4SideB",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp1SideF",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp1SideF",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "isBase": true
@@ -21580,11 +21580,11 @@ class TileDictionarySource {
   {
    "tileId": "235",
    "name": "235",
-   "color": "Yellow",
+   "color": "yellow",
    "junctions": [
     {
      "position": "tp2SideF",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 20
@@ -21592,7 +21592,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp2CornerD",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 20
@@ -21603,13 +21603,13 @@ class TileDictionarySource {
     {
      "position1": "tp2SideF",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "OO"
     }
    ]
@@ -21617,11 +21617,11 @@ class TileDictionarySource {
   {
    "tileId": "8858",
    "name": "8858",
-   "color": "Yellow",
+   "color": "yellow",
    "junctions": [
     {
      "position": "tp1SideC",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 20
@@ -21629,7 +21629,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp1SideF",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerD",
       "amount": 20
@@ -21640,33 +21640,33 @@ class TileDictionarySource {
     {
      "position1": "tp4SideE",
      "position2": "tp1SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideE",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideD",
      "position2": "tp1SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideD",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "8854",
    "name": "8854",
-   "color": "Yellow",
+   "color": "yellow",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 20
@@ -21674,7 +21674,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp2CornerC",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerC",
       "amount": 20
@@ -21685,33 +21685,33 @@ class TileDictionarySource {
     {
      "position1": "tp4SideC",
      "position2": "tp2CornerC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideC",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideD",
      "position2": "tpCenter",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideD",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "8855",
    "name": "8855",
-   "color": "Yellow",
+   "color": "yellow",
    "junctions": [
     {
      "position": "tp3SideD",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 20
@@ -21719,7 +21719,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp3SideB",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerD",
       "amount": 20
@@ -21730,33 +21730,33 @@ class TileDictionarySource {
     {
      "position1": "tp4SideD",
      "position2": "tp3SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideD",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideB",
      "position2": "tp3SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideB",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "8856",
    "name": "8856",
-   "color": "Yellow",
+   "color": "yellow",
    "junctions": [
     {
      "position": "tpCurve2RightD",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 20
@@ -21764,7 +21764,7 @@ class TileDictionarySource {
     },
     {
      "position": "tpCurve2LeftA",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerD",
       "amount": 20
@@ -21775,33 +21775,33 @@ class TileDictionarySource {
     {
      "position1": "tp4SideD",
      "position2": "tpCurve2RightD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideA",
      "position2": "tpCurve2LeftA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideB",
      "position2": "tpCurve2RightD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCurve2LeftA",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "8857",
    "name": "8857",
-   "color": "Yellow",
+   "color": "yellow",
    "junctions": [
     {
      "position": "tp3SideD",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 20
@@ -21809,7 +21809,7 @@ class TileDictionarySource {
     },
     {
      "position": "tpCurve2RightB",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 20
@@ -21820,33 +21820,33 @@ class TileDictionarySource {
     {
      "position1": "tp4SideD",
      "position2": "tp3SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideF",
      "position2": "tpCurve2RightB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideB",
      "position2": "tpCurve2RightB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideA",
      "position2": "tp3SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "8877",
    "name": "8877",
-   "color": "Yellow",
+   "color": "yellow",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 20
@@ -21857,18 +21857,18 @@ class TileDictionarySource {
     {
      "position1": "tp4SideD",
      "position2": "tpCenter",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerC",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "S"
     }
    ]
@@ -21876,11 +21876,11 @@ class TileDictionarySource {
   {
    "tileId": "8878",
    "name": "8878",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 40
@@ -21891,28 +21891,28 @@ class TileDictionarySource {
     {
      "position1": "tp4SideD",
      "position2": "tpCenter",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideA",
      "position2": "tpCenter",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideF",
      "position2": "tpCenter",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideC",
      "position2": "tpCenter",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "S"
     }
    ]
@@ -21920,11 +21920,11 @@ class TileDictionarySource {
   {
    "tileId": "8860",
    "name": "8860",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCurve2LeftD",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 40
@@ -21932,7 +21932,7 @@ class TileDictionarySource {
     },
     {
      "position": "tpCurve2LeftA",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerD",
       "amount": 40
@@ -21943,28 +21943,28 @@ class TileDictionarySource {
     {
      "position1": "tp4SideD",
      "position2": "tpCurve2LeftD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideF",
      "position2": "tpCurve2LeftD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideA",
      "position2": "tpCurve2LeftA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideC",
      "position2": "tpCurve2LeftA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "OO"
     }
    ]
@@ -21972,11 +21972,11 @@ class TileDictionarySource {
   {
    "tileId": "8861",
    "name": "8861",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tp2CornerE",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 40
@@ -21984,7 +21984,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp2CornerB",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerD",
       "amount": 40
@@ -21995,28 +21995,28 @@ class TileDictionarySource {
     {
      "position1": "tp4SideE",
      "position2": "tp2CornerE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideD",
      "position2": "tp2CornerE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideA",
      "position2": "tp2CornerB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideB",
      "position2": "tp2CornerB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "OO"
     }
    ]
@@ -22024,11 +22024,11 @@ class TileDictionarySource {
   {
    "tileId": "8862",
    "name": "8862",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tp2CornerE",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerB",
       "amount": 40
@@ -22036,7 +22036,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp2CornerA",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerD",
       "amount": 40
@@ -22047,28 +22047,28 @@ class TileDictionarySource {
     {
      "position1": "tp4SideA",
      "position2": "tp2CornerA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideF",
      "position2": "tp2CornerA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideE",
      "position2": "tp2CornerE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideD",
      "position2": "tp2CornerE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "OO"
     }
    ]
@@ -22076,11 +22076,11 @@ class TileDictionarySource {
   {
    "tileId": "8863",
    "name": "8863",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerB",
       "amount": 40
@@ -22088,7 +22088,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp2CornerF",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerE",
       "amount": 40
@@ -22099,28 +22099,28 @@ class TileDictionarySource {
     {
      "position1": "tp4SideA",
      "position2": "tpCenter",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideD",
      "position2": "tpCenter",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideE",
      "position2": "tp2CornerF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2CornerF",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "OO"
     }
    ]
@@ -22128,11 +22128,11 @@ class TileDictionarySource {
   {
    "tileId": "8864",
    "name": "8864",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCurve2LeftD",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 40
@@ -22140,7 +22140,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp2CornerB",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerD",
       "amount": 40
@@ -22151,28 +22151,28 @@ class TileDictionarySource {
     {
      "position1": "tp4SideA",
      "position2": "tp2CornerB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2CornerB",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideD",
      "position2": "tpCurve2LeftD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCurve2LeftD",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "OO"
     }
    ]
@@ -22180,11 +22180,11 @@ class TileDictionarySource {
   {
    "tileId": "8865",
    "name": "8865",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tp2CornerC",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 40
@@ -22192,7 +22192,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp1CornerF",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerD",
       "amount": 40
@@ -22203,28 +22203,28 @@ class TileDictionarySource {
     {
      "position1": "tp4SideB",
      "position2": "tp2CornerC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideF",
      "position2": "tp1CornerF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp1CornerF",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2CornerC",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "OO"
     }
    ]
@@ -22232,11 +22232,11 @@ class TileDictionarySource {
   {
    "tileId": "8866",
    "name": "8866",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 20
@@ -22247,33 +22247,33 @@ class TileDictionarySource {
     {
      "position1": "tp4SideD",
      "position2": "tpCenter",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "887",
    "name": "887",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 20
@@ -22284,33 +22284,33 @@ class TileDictionarySource {
     {
      "position1": "tp4SideA",
      "position2": "tpCenter",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "888",
    "name": "888",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 20
@@ -22321,33 +22321,33 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "8879",
    "name": "8879",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 60
@@ -22358,33 +22358,33 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideE",
      "position2": "tpCenter",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "S"
     }
    ]
@@ -22392,11 +22392,11 @@ class TileDictionarySource {
   {
    "tileId": "8871",
    "name": "8871",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 20
@@ -22407,43 +22407,43 @@ class TileDictionarySource {
     {
      "position1": "tp4SideE",
      "position2": "tpCenter",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "8872",
    "name": "8872",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 50
@@ -22454,28 +22454,28 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "OO"
     }
    ]
@@ -22483,11 +22483,11 @@ class TileDictionarySource {
   {
    "tileId": "8873",
    "name": "8873",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 50
@@ -22498,28 +22498,28 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "OO"
     }
    ]
@@ -22527,11 +22527,11 @@ class TileDictionarySource {
   {
    "tileId": "8874",
    "name": "8874",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 50
@@ -22542,28 +22542,28 @@ class TileDictionarySource {
     {
      "position1": "tp4SideA",
      "position2": "tpCenter",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "OO"
     }
    ]
@@ -22571,11 +22571,11 @@ class TileDictionarySource {
   {
    "tileId": "8887",
    "name": "8887",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [
     {
      "position": "tp3SideE",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tpCenter",
       "amount": 60
@@ -22583,7 +22583,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp3SideD",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tpCenter",
       "amount": 60
@@ -22591,7 +22591,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp3SideC",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tpCenter",
       "amount": 60
@@ -22599,7 +22599,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp3SideB",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tpCenter",
       "amount": 60
@@ -22607,7 +22607,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp3SideA",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tpCenter",
       "amount": 60
@@ -22615,7 +22615,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp3SideF",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tpCenter",
       "amount": 60
@@ -22626,38 +22626,38 @@ class TileDictionarySource {
     {
      "position1": "tp3SideF",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp3SideE",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp3SideD",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp3SideC",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp3SideB",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp3SideA",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "B"
     }
    ]
@@ -22665,11 +22665,11 @@ class TileDictionarySource {
   {
    "tileId": "895",
    "name": "895",
-   "color": "Gray",
+   "color": "gray",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 50
@@ -22680,43 +22680,43 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "455",
    "name": "495",
-   "color": "Gray",
+   "color": "gray",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "TripleCity",
+     "junctionType": "tripleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 50
@@ -22727,43 +22727,43 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "8875",
    "name": "8875",
-   "color": "Gray",
+   "color": "gray",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 60
@@ -22774,38 +22774,38 @@ class TileDictionarySource {
     {
      "position1": "tp4SideA",
      "position2": "tpCenter",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "OO"
     }
    ]
@@ -22813,11 +22813,11 @@ class TileDictionarySource {
   {
    "tileId": "8880",
    "name": "8880",
-   "color": "Gray",
+   "color": "gray",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 70
@@ -22828,38 +22828,38 @@ class TileDictionarySource {
     {
      "position1": "tp4SideA",
      "position2": "tpCenter",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideA",
      "position2": "tpCenter",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideA",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "S"
     }
    ]
@@ -22867,11 +22867,11 @@ class TileDictionarySource {
   {
    "tileId": "8850",
    "name": "8850",
-   "color": "Yellow",
+   "color": "yellow",
    "junctions": [
     {
      "position": "tp2CornerD",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 20
@@ -22882,23 +22882,23 @@ class TileDictionarySource {
     {
      "position1": "tp4SideD",
      "position2": "tp2CornerD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2CornerD",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "8852",
    "name": "8852",
-   "color": "Yellow",
+   "color": "yellow",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 20
@@ -22909,23 +22909,23 @@ class TileDictionarySource {
     {
      "position1": "tp4SideD",
      "position2": "tpCenter",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "8851",
    "name": "8851",
-   "color": "Yellow",
+   "color": "yellow",
    "junctions": [
     {
      "position": "tpCurve2RightD",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 20
@@ -22936,27 +22936,27 @@ class TileDictionarySource {
     {
      "position1": "tp4SideD",
      "position2": "tpCurve2RightD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCurve2RightD",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "-80020",
    "name": "2 cities Initial",
-   "color": "Ground",
+   "color": "ground",
    "junctions": [
     {
      "position": "tp2SideA",
-     "junctionType": "City"
+     "junctionType": "city"
     },
     {
      "position": "tp2SideD",
-     "junctionType": "City"
+     "junctionType": "city"
     }
    ],
    "connections": [],
@@ -22965,11 +22965,11 @@ class TileDictionarySource {
   {
    "tileId": "-80004",
    "name": "Beijing",
-   "color": "Yellow",
+   "color": "yellow",
    "junctions": [
     {
      "position": "tp3SideB",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 20
@@ -22977,7 +22977,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp3SideC",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 20
@@ -22985,7 +22985,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp3SideE",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 20
@@ -22993,7 +22993,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp3SideF",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 20
@@ -23004,28 +23004,28 @@ class TileDictionarySource {
     {
      "position1": "tp3SideE",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp3SideC",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp3SideB",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp3SideF",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tpCenter",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "Beijing"
     }
    ],
@@ -23034,18 +23034,18 @@ class TileDictionarySource {
   {
    "tileId": "-80003",
    "name": "Shanghai",
-   "color": "Ground",
+   "color": "ground",
    "junctions": [
     {
      "position": "tp2CornerA",
-     "junctionType": "City"
+     "junctionType": "city"
     }
    ],
    "connections": [],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "S"
     }
    ],
@@ -23054,15 +23054,15 @@ class TileDictionarySource {
   {
    "tileId": "-80002",
    "name": "2 Medium Cities",
-   "color": "Ground",
+   "color": "ground",
    "junctions": [
     {
      "position": "tp2SideA",
-     "junctionType": "City"
+     "junctionType": "city"
     },
     {
      "position": "tp2SideD",
-     "junctionType": "City"
+     "junctionType": "city"
     }
    ],
    "connections": [],
@@ -23071,11 +23071,11 @@ class TileDictionarySource {
   {
    "tileId": "-80001",
    "name": "Medium City",
-   "color": "Ground",
+   "color": "ground",
    "junctions": [
     {
      "position": "tp2CornerA",
-     "junctionType": "City"
+     "junctionType": "city"
     }
    ],
    "connections": [],
@@ -23084,11 +23084,11 @@ class TileDictionarySource {
   {
    "tileId": "8888",
    "name": "Beijing",
-   "color": "Gray",
+   "color": "gray",
    "junctions": [
     {
      "position": "tp3SideE",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 80
@@ -23096,7 +23096,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp3SideD",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 80
@@ -23104,7 +23104,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp3SideC",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 80
@@ -23112,7 +23112,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp3SideB",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 80
@@ -23120,7 +23120,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp3SideA",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 80
@@ -23128,7 +23128,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp3SideF",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 80
@@ -23139,193 +23139,193 @@ class TileDictionarySource {
     {
      "position1": "tp3SideC",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp3SideB",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp3SideA",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp3SideF",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp3SideE",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp3SideD",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp3SideD",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp3SideD",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp3SideD",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp3SideD",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp3SideD",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp3SideC",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp3SideC",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp3SideC",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp3SideC",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp3SideC",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp3SideC",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp3SideB",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp3SideB",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp3SideB",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp3SideB",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp3SideB",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp3SideA",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp3SideA",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp3SideA",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp3SideA",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp3SideA",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp3SideF",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp3SideF",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp3SideF",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp3SideF",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp3SideF",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp3SideE",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp3SideE",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp3SideE",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp3SideE",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp3SideE",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "B"
     }
    ]
@@ -23333,23 +23333,23 @@ class TileDictionarySource {
   {
    "tileId": "-503",
    "name": "-503",
-   "color": "Fixed",
+   "color": "fixed",
    "junctions": [
     {
      "position": "tp2CornerE",
-     "junctionType": "WhistleStop"
+     "junctionType": "whistleStop"
     }
    ],
    "connections": [
     {
      "position1": "tp4SideD",
      "position2": "tp2CornerE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2CornerE",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "isBase": true
@@ -23357,23 +23357,23 @@ class TileDictionarySource {
   {
    "tileId": "-557",
    "name": "-557",
-   "color": "Fixed",
+   "color": "fixed",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "City"
+     "junctionType": "city"
     }
    ],
    "connections": [
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "isBase": true
@@ -23381,11 +23381,11 @@ class TileDictionarySource {
   {
    "tileId": "-558",
    "name": "-558",
-   "color": "Fixed",
+   "color": "fixed",
    "junctions": [
     {
      "position": "tp1SideF",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerB",
       "amount": 20
@@ -23396,12 +23396,12 @@ class TileDictionarySource {
     {
      "position1": "tp4SideA",
      "position2": "tp1SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp1SideF",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "isBase": true
@@ -23409,11 +23409,11 @@ class TileDictionarySource {
   {
    "tileId": "1481",
    "name": "1481",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 40
@@ -23424,28 +23424,28 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "1482",
    "name": "1482",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "TripleCity",
+     "junctionType": "tripleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 50
@@ -23456,38 +23456,38 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerE",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "S"
     }
    ]
@@ -23495,11 +23495,11 @@ class TileDictionarySource {
   {
    "tileId": "1483",
    "name": "1483",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerB",
       "amount": 50
@@ -23510,28 +23510,28 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerE",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "B"
     }
    ]
@@ -23539,11 +23539,11 @@ class TileDictionarySource {
   {
    "tileId": "1484",
    "name": "1484",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "TripleCity",
+     "junctionType": "tripleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 70
@@ -23554,33 +23554,33 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerE",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "B"
     }
    ]
@@ -23588,11 +23588,11 @@ class TileDictionarySource {
   {
    "tileId": "-10002",
    "name": "-10001",
-   "color": "Yellow",
+   "color": "yellow",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerB",
       "amount": 30
@@ -23603,23 +23603,23 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerE",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "B"
     }
    ],
@@ -23628,11 +23628,11 @@ class TileDictionarySource {
   {
    "tileId": "-10003",
    "name": "-10002",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerB",
       "amount": 30
@@ -23643,28 +23643,28 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerE",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "S"
     }
    ],
@@ -23673,11 +23673,11 @@ class TileDictionarySource {
   {
    "tileId": "-30006",
    "name": "Reading",
-   "color": "Fixed",
+   "color": "fixed",
    "junctions": [
     {
      "position": "tp2CornerA",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerB",
       "amount": 10
@@ -23688,22 +23688,22 @@ class TileDictionarySource {
     {
      "position1": "tp4SideE",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideE",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideB",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideD",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "isBase": true
@@ -23711,11 +23711,11 @@ class TileDictionarySource {
   {
    "tileId": "-30007",
    "name": "Reading intern",
-   "color": "Fixed",
+   "color": "fixed",
    "junctions": [
     {
      "position": "tp2CornerA",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerB",
       "amount": 10
@@ -23726,42 +23726,42 @@ class TileDictionarySource {
     {
      "position1": "tp4SideE",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideE",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideB",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideD",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideE",
      "position2": "tp2CornerA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideD",
      "position2": "tp2CornerA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideB",
      "position2": "tp2CornerA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideC",
      "position2": "tp2CornerA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "isBase": true
@@ -23769,11 +23769,11 @@ class TileDictionarySource {
   {
    "tileId": "-10004",
    "name": "Stockholm",
-   "color": "Yellow",
+   "color": "yellow",
    "junctions": [
     {
      "position": "tp2CornerA",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp2CornerC",
       "amount": 30
@@ -23781,7 +23781,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp2CornerE",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp2CornerC",
       "amount": 30
@@ -23792,18 +23792,18 @@ class TileDictionarySource {
     {
      "position1": "tp2CornerA",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2CornerE",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "Y"
     }
    ],
@@ -23812,11 +23812,11 @@ class TileDictionarySource {
   {
    "tileId": "403",
    "name": "Copenhagen",
-   "color": "Yellow",
+   "color": "yellow",
    "junctions": [
     {
      "position": "tp1SideA",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 30
@@ -23824,7 +23824,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp3SideD",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerE",
       "amount": 10
@@ -23835,18 +23835,18 @@ class TileDictionarySource {
     {
      "position1": "tp1SideA",
      "position2": "tp3SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp3SideD",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp2CornerC",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "COP"
     }
    ]
@@ -23854,11 +23854,11 @@ class TileDictionarySource {
   {
    "tileId": "1121",
    "name": "Copenhagen",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerF",
       "amount": 50
@@ -23869,23 +23869,23 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp2SideA",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "COP"
     }
    ]
@@ -23893,11 +23893,11 @@ class TileDictionarySource {
   {
    "tileId": "1584",
    "name": "Copenhagen",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "TripleCity",
+     "junctionType": "tripleCity",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 60
@@ -23908,38 +23908,38 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerB",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "COP"
     }
    ]
@@ -23947,13 +23947,13 @@ class TileDictionarySource {
   {
    "tileId": "-4007",
    "name": "Ferry",
-   "color": "Fixed",
+   "color": "fixed",
    "junctions": [],
    "connections": [
     {
      "position1": "tp4SideD",
      "position2": "tp4SideE",
-     "connectionType": "Small"
+     "connectionType": "small"
     }
    ],
    "isBase": true
@@ -23961,13 +23961,13 @@ class TileDictionarySource {
   {
    "tileId": "-4008",
    "name": "Ferry",
-   "color": "Fixed",
+   "color": "fixed",
    "junctions": [],
    "connections": [
     {
      "position1": "tp4SideD",
      "position2": "tp4SideF",
-     "connectionType": "Small"
+     "connectionType": "small"
     }
    ],
    "isBase": true
@@ -23975,13 +23975,13 @@ class TileDictionarySource {
   {
    "tileId": "-4009",
    "name": "Ferry",
-   "color": "Fixed",
+   "color": "fixed",
    "junctions": [],
    "connections": [
     {
      "position1": "tp4SideD",
      "position2": "tp4SideA",
-     "connectionType": "Small"
+     "connectionType": "small"
     }
    ],
    "isBase": true
@@ -23989,11 +23989,11 @@ class TileDictionarySource {
   {
    "tileId": "-26001",
    "name": "Paris",
-   "color": "Yellow",
+   "color": "yellow",
    "junctions": [
     {
      "position": "tp3SideA",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tpCenter",
       "amount": 50
@@ -24001,7 +24001,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp3SideB",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tpCenter",
       "amount": 50
@@ -24009,7 +24009,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp3SideC",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tpCenter",
       "amount": 50
@@ -24017,7 +24017,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp3SideD",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tpCenter",
       "amount": 50
@@ -24025,7 +24025,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp3SideE",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tpCenter",
       "amount": 50
@@ -24033,7 +24033,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp3SideF",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tpCenter",
       "amount": 50
@@ -24044,32 +24044,32 @@ class TileDictionarySource {
     {
      "position1": "tp3SideA",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp3SideB",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp3SideC",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp3SideD",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp3SideE",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp3SideF",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "isBase": true
@@ -24077,11 +24077,11 @@ class TileDictionarySource {
   {
    "tileId": "-26002",
    "name": "Nantes/Sstrasbourg",
-   "color": "Fixed",
+   "color": "fixed",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 40
@@ -24092,17 +24092,17 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "isBase": true
@@ -24110,11 +24110,11 @@ class TileDictionarySource {
   {
    "tileId": "-26003",
    "name": "Bordeaux",
-   "color": "Fixed",
+   "color": "fixed",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 40
@@ -24125,17 +24125,17 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "isBase": true
@@ -24143,18 +24143,18 @@ class TileDictionarySource {
   {
    "tileId": "-37001",
    "name": "RGTE",
-   "color": "Fixed",
+   "color": "fixed",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "WhistleStop"
+     "junctionType": "whistleStop"
     }
    ],
    "connections": [
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "isBase": true
@@ -24162,15 +24162,15 @@ class TileDictionarySource {
   {
    "tileId": "-37002",
    "name": "ZKB",
-   "color": "Fixed",
+   "color": "fixed",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "WhistleStop"
+     "junctionType": "whistleStop"
     },
     {
      "position": "tpCurve1LeftE",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerE",
       "amount": 10
@@ -24181,17 +24181,17 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCurve1LeftE",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCurve1LeftE",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "isBase": true
@@ -24199,23 +24199,23 @@ class TileDictionarySource {
   {
    "tileId": "-37003",
    "name": "EHS",
-   "color": "Fixed",
+   "color": "fixed",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "WhistleStop"
+     "junctionType": "whistleStop"
     }
    ],
    "connections": [
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideF",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "isBase": true
@@ -24223,22 +24223,22 @@ class TileDictionarySource {
   {
    "tileId": "-37007",
    "name": "T",
-   "color": "Ground",
+   "color": "ground",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "City"
+     "junctionType": "city"
     },
     {
      "position": "tp1CornerC",
-     "junctionType": "None"
+     "junctionType": "none"
     }
    ],
    "connections": [],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "T"
     }
    ],
@@ -24247,18 +24247,18 @@ class TileDictionarySource {
   {
    "tileId": "-37008",
    "name": "X",
-   "color": "Ground",
+   "color": "ground",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "City"
+     "junctionType": "city"
     }
    ],
    "connections": [],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "X"
     }
    ],
@@ -24267,11 +24267,11 @@ class TileDictionarySource {
   {
    "tileId": "-37009",
    "name": "Bregenz",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 20
@@ -24282,7 +24282,7 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "isBase": true
@@ -24290,11 +24290,11 @@ class TileDictionarySource {
   {
    "tileId": "-37010",
    "name": "BudaPest",
-   "color": "Yellow",
+   "color": "yellow",
    "junctions": [
     {
      "position": "tp1SideF",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp2SideB",
       "amount": 40
@@ -24302,7 +24302,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp2CornerD",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp2SideB",
       "amount": 40
@@ -24313,22 +24313,22 @@ class TileDictionarySource {
     {
      "position1": "tp2CornerD",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2CornerD",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp1SideF",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp1SideF",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "isBase": true
@@ -24336,11 +24336,11 @@ class TileDictionarySource {
   {
    "tileId": "-37011",
    "name": "Marburg",
-   "color": "Yellow",
+   "color": "yellow",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 30
@@ -24351,13 +24351,13 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerC",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "X"
     }
    ],
@@ -24366,11 +24366,11 @@ class TileDictionarySource {
   {
    "tileId": "-37012",
    "name": "Wien",
-   "color": "Yellow",
+   "color": "yellow",
    "junctions": [
     {
      "position": "tp2CornerB",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tpCenter",
       "amount": 40
@@ -24378,7 +24378,7 @@ class TileDictionarySource {
     },
     {
      "position": "tpCurve2LeftF",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tpCenter",
       "amount": 40
@@ -24386,7 +24386,7 @@ class TileDictionarySource {
     },
     {
      "position": "tpCurve2RightE",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tpCenter",
       "amount": 40
@@ -24394,7 +24394,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp2CornerD",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tpCenter",
       "amount": 40
@@ -24405,28 +24405,28 @@ class TileDictionarySource {
     {
      "position1": "tp2CornerB",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCurve2LeftF",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCurve2RightE",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2CornerD",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp2CornerC",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "Wien"
     }
    ],
@@ -24435,11 +24435,11 @@ class TileDictionarySource {
   {
    "tileId": "-37156",
    "name": "-37156",
-   "color": "Yellow",
+   "color": "yellow",
    "junctions": [
     {
      "position": "tpCurve2RightF",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 10
@@ -24447,7 +24447,7 @@ class TileDictionarySource {
     },
     {
      "position": "tpCurve2LeftC",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerC",
       "amount": 10
@@ -24458,22 +24458,22 @@ class TileDictionarySource {
     {
      "position1": "tpCurve2RightF",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCurve2RightF",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCurve2LeftC",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCurve2LeftC",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "isBase": true
@@ -24481,11 +24481,11 @@ class TileDictionarySource {
   {
    "tileId": "-37103",
    "name": "-37103",
-   "color": "Yellow",
+   "color": "yellow",
    "junctions": [
     {
      "position": "tp2CornerA",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerF",
       "amount": 10
@@ -24496,12 +24496,12 @@ class TileDictionarySource {
     {
      "position1": "tp2CornerA",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2CornerA",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "isBase": true
@@ -24509,13 +24509,13 @@ class TileDictionarySource {
   {
    "tileId": "-37109",
    "name": "-37109",
-   "color": "Yellow",
+   "color": "yellow",
    "junctions": [],
    "connections": [
     {
      "position1": "tp4SideE",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "isBase": true
@@ -24523,18 +24523,18 @@ class TileDictionarySource {
   {
    "tileId": "-37123",
    "name": "-37123",
-   "color": "Green",
+   "color": "green",
    "junctions": [],
    "connections": [
     {
      "position1": "tp4SideA",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideA",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "isBase": true
@@ -24542,11 +24542,11 @@ class TileDictionarySource {
   {
    "tileId": "-37158",
    "name": "-37158",
-   "color": "Yellow",
+   "color": "yellow",
    "junctions": [
     {
      "position": "tp1SideA",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp1CornerE",
       "amount": 10
@@ -24557,12 +24557,12 @@ class TileDictionarySource {
     {
      "position1": "tp1SideA",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp1SideA",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "isBase": true
@@ -24570,11 +24570,11 @@ class TileDictionarySource {
   {
    "tileId": "-37206",
    "name": "Fuenfkirchen",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 30
@@ -24585,17 +24585,17 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "isBase": true
@@ -24603,11 +24603,11 @@ class TileDictionarySource {
   {
    "tileId": "-37402",
    "name": "Prag",
-   "color": "Yellow",
+   "color": "yellow",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 20
@@ -24618,18 +24618,18 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "X"
     }
    ],
@@ -24638,23 +24638,23 @@ class TileDictionarySource {
   {
    "tileId": "-42",
    "name": "-42",
-   "color": "Fixed",
+   "color": "fixed",
    "junctions": [],
    "connections": [
     {
      "position1": "tp4SideD",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideD",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideA",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "isBase": true
@@ -24662,18 +24662,18 @@ class TileDictionarySource {
   {
    "tileId": "-28",
    "name": "-28",
-   "color": "Fixed",
+   "color": "fixed",
    "junctions": [],
    "connections": [
     {
      "position1": "tp4SideD",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp4SideE",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "isBase": true
@@ -24681,11 +24681,11 @@ class TileDictionarySource {
   {
    "tileId": "-9700",
    "name": "CH-K1",
-   "color": "Fixed",
+   "color": "fixed",
    "junctions": [
     {
      "position": "tp2CornerE",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tpCenter",
       "amount": 30
@@ -24696,12 +24696,12 @@ class TileDictionarySource {
     {
      "position1": "tp2CornerE",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2CornerE",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "isBase": true
@@ -24709,11 +24709,11 @@ class TileDictionarySource {
   {
    "tileId": "-9701",
    "name": "CH-I9",
-   "color": "Fixed",
+   "color": "fixed",
    "junctions": [
     {
      "position": "tp1SideB",
-     "junctionType": "WhistleStop",
+     "junctionType": "whistleStop",
      "revenue": {
       "position": "tp3CornerB",
       "amount": 30
@@ -24724,12 +24724,12 @@ class TileDictionarySource {
     {
      "position1": "tp1SideB",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp1SideB",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "isBase": true
@@ -24737,11 +24737,11 @@ class TileDictionarySource {
   {
    "tileId": "-9702",
    "name": "CH-Philly",
-   "color": "Yellow",
+   "color": "yellow",
    "junctions": [
     {
      "position": "tp2SideA",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 30
@@ -24749,7 +24749,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp2SideD",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3SideC",
       "amount": 30
@@ -24760,18 +24760,18 @@ class TileDictionarySource {
     {
      "position1": "tp2SideD",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2SideA",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3SideB",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "OO"
     }
    ],
@@ -24780,11 +24780,11 @@ class TileDictionarySource {
   {
    "tileId": "-9703",
    "name": "CH-Baltimore",
-   "color": "Yellow",
+   "color": "yellow",
    "junctions": [
     {
      "position": "tp2SideB",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3SideA",
       "amount": 30
@@ -24792,7 +24792,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp2SideE",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3SideD",
       "amount": 30
@@ -24803,18 +24803,18 @@ class TileDictionarySource {
     {
      "position1": "tp2SideE",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tp2SideB",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerA",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "OO"
     }
    ],
@@ -24823,11 +24823,11 @@ class TileDictionarySource {
   {
    "tileId": "9704",
    "name": "CH-X2",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerE",
       "amount": 40
@@ -24838,33 +24838,33 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3SideA",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "DC"
     }
    ]
@@ -24872,11 +24872,11 @@ class TileDictionarySource {
   {
    "tileId": "9705",
    "name": "CH-X3",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCurve2LeftA",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 40
@@ -24884,7 +24884,7 @@ class TileDictionarySource {
     },
     {
      "position": "tpCurve2LeftD",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3SideE",
       "amount": 40
@@ -24895,28 +24895,28 @@ class TileDictionarySource {
     {
      "position1": "tpCurve2LeftA",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCurve2LeftA",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCurve2LeftD",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCurve2LeftD",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "OO"
     }
    ]
@@ -24924,11 +24924,11 @@ class TileDictionarySource {
   {
    "tileId": "9706",
    "name": "CH-X4",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tp2CornerE",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerD",
       "amount": 20
@@ -24936,7 +24936,7 @@ class TileDictionarySource {
     },
     {
      "position": "tp2CornerA",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerB",
       "amount": 20
@@ -24947,28 +24947,28 @@ class TileDictionarySource {
     {
      "position1": "tpCurve1RightA",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCurve1RightA",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCurve1LeftD",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCurve1LeftD",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp2CornerC",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "OO"
     }
    ]
@@ -24976,11 +24976,11 @@ class TileDictionarySource {
   {
    "tileId": "9707",
    "name": "CH-X5",
-   "color": "Green",
+   "color": "green",
    "junctions": [
     {
      "position": "tpCurve2RightD",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerE",
       "amount": 40
@@ -24988,7 +24988,7 @@ class TileDictionarySource {
     },
     {
      "position": "tpCurve2LeftA",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 40
@@ -24999,30 +24999,30 @@ class TileDictionarySource {
     {
      "position1": "tpCurve2LeftA",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCurve2LeftA",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCurve2RightD",
      "position2": "tp4SideD",
-     "connectionType": "Normal",
+     "connectionType": "normal",
      "layer": 2
     },
     {
      "position1": "tpCurve2RightD",
      "position2": "tp4SideB",
-     "connectionType": "Normal",
+     "connectionType": "normal",
      "layer": 2
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "OO"
     }
    ]
@@ -25030,11 +25030,11 @@ class TileDictionarySource {
   {
    "tileId": "9708",
    "name": "CH-X6",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "TripleCity",
+     "junctionType": "tripleCity",
      "revenue": {
       "position": "tp3CornerB",
       "amount": 70
@@ -25045,38 +25045,38 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerA",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "DC"
     }
    ]
@@ -25084,11 +25084,11 @@ class TileDictionarySource {
   {
    "tileId": "9709",
    "name": "CH-X7",
-   "color": "Brown",
+   "color": "brown",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "DoubleCity",
+     "junctionType": "doubleCity",
      "revenue": {
       "position": "tp3CornerE",
       "amount": 50
@@ -25099,33 +25099,33 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3SideA",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "OO"
     }
    ]
@@ -25133,11 +25133,11 @@ class TileDictionarySource {
   {
    "tileId": "9710",
    "name": "CH-X8",
-   "color": "Gray",
+   "color": "gray",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "QuadCity",
+     "junctionType": "quadCity",
      "revenue": {
       "position": "tp3CornerF",
       "amount": 100
@@ -25148,38 +25148,38 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideA",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerA",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "DC"
     }
    ]
@@ -25187,11 +25187,11 @@ class TileDictionarySource {
   {
    "tileId": "9711",
    "name": "CH-X9",
-   "color": "Gray",
+   "color": "gray",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "TripleCity",
+     "junctionType": "tripleCity",
      "revenue": {
       "position": "tp3CornerF",
       "amount": 70
@@ -25202,33 +25202,33 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3SideA",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "OO"
     }
    ]
@@ -25236,11 +25236,11 @@ class TileDictionarySource {
   {
    "tileId": "915",
    "name": "915",
-   "color": "Gray",
+   "color": "gray",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "TripleCity",
+     "junctionType": "tripleCity",
      "revenue": {
       "position": "tp3SideA",
       "amount": 50
@@ -25251,45 +25251,45 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideC",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideE",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideF",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ]
   },
   {
    "tileId": "-9712",
    "name": "CH-DC",
-   "color": "Ground",
+   "color": "ground",
    "junctions": [
     {
      "position": "tp2CornerC",
-     "junctionType": "City"
+     "junctionType": "city"
     }
    ],
    "connections": [],
    "adornments": [
     {
      "position": "tp2SideE",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "DC"
     }
    ],
@@ -25298,11 +25298,11 @@ class TileDictionarySource {
   {
    "tileId": "9713",
    "name": "CH-X1",
-   "color": "Yellow",
+   "color": "yellow",
    "junctions": [
     {
      "position": "tpCenter",
-     "junctionType": "City",
+     "junctionType": "city",
      "revenue": {
       "position": "tp3CornerA",
       "amount": 30
@@ -25313,18 +25313,18 @@ class TileDictionarySource {
     {
      "position1": "tpCenter",
      "position2": "tp4SideB",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     },
     {
      "position1": "tpCenter",
      "position2": "tp4SideD",
-     "connectionType": "Normal"
+     "connectionType": "normal"
     }
    ],
    "adornments": [
     {
      "position": "tp3CornerF",
-     "adornmentType": "Text",
+     "adornmentType": "text",
      "text": "DC"
     }
    ]

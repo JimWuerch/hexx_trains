@@ -6,7 +6,7 @@ class CompanyRenderInfo {
   int color;
   bool isLightOnDark;
 
-  CompanyRenderInfo(this.name, this.shortName, this.color, this.isLightOnDark);
+  CompanyRenderInfo({this.name, this.shortName, this.color, this.isLightOnDark});
 
   Map<String, dynamic> toJson() => <String, dynamic>{
         'name': name,

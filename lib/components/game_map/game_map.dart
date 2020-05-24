@@ -73,27 +73,28 @@ class GameMap {
 
   factory GameMap.createMap(
       MapData mapData, int size, int margin, TileDictionary tileDictionary, TileManifest tileManifest) {
-    int scale = size;
-    int rows = mapData.height;
-    int cols = mapData.width;
+    var scale = size;
+    var rows = mapData.height;
+    var cols = mapData.width;
     HexOrientation orientation;
     HexLayout layout;
     math.Point<double> offset;
-    if (mapData.orientation == MapOrientation.flat)
-      orientation = HexOrientation.Flat;
-    else
-      orientation = HexOrientation.Pointy;
+    if (mapData.orientation == MapOrientation.flat) {
+      orientation = HexOrientation.flat;
+    } else {
+      orientation = HexOrientation.pointy;
+    }
 
-    var mapCells = List<List<HexTile>>();
+    var mapCells = <List<HexTile>>[];
 
-    if (orientation == HexOrientation.Flat) {
+    if (orientation == HexOrientation.flat) {
       offset = math.Point<double>(
           (scale + margin).toDouble(), math.sqrt(3) * scale / 2.0 + margin);
-      layout = new HexLayout(HexOrientation.Flat, scale, offset);
+      layout = HexLayout(HexOrientation.flat, scale, offset);
     } else {
       offset = math.Point<double>(
           math.sqrt(3) * scale / 2.0 + margin, (scale + margin).toDouble());
-      layout = HexLayout(HexOrientation.Pointy, scale, offset);
+      layout = HexLayout(HexOrientation.pointy, scale, offset);
     }
 
     _generateMap(
@@ -105,8 +106,8 @@ class GameMap {
     for (var t in mapData.mapTiles) {
       var qr = _getQR(
           t.location.x, t.location.y, orientation); //, out int q, out int r);
-      int q = qr.x;
-      int r = qr.y;
+      var q = qr.x;
+      var r = qr.y;
       //var index = _getIndicies(q, r, rows, cols, orientation);
       //Debug.WriteLine($"Got QR {q},{r} xy:{x},{y} loc:{(int)t.Location.X},{(int)t.Location.Y}");
       
@@ -121,7 +122,7 @@ class GameMap {
         ..cost = t.cost
         ..costPosition = t.costPosition;
 
-      if (orientation == HexOrientation.Flat) {
+      if (orientation == HexOrientation.flat) {
         mapCells[t.location.x][t.location.y] = tile;
       } else {
         //Debug.WriteLine($"x:{t.Location.X}, y:{t.Location.Y}");
@@ -134,13 +135,13 @@ class GameMap {
     // to add the bottom and left margins
     mapSize = math.Point<double>(mapSize.x + margin, mapSize.y + margin);
 
-    var barriers = List<Barrier>();
+    var barriers = <Barrier>[];
     for (var barrier in mapData.barriers) {
       var qr = _getQR(barrier.location.x, barrier.location.y, orientation);
       barriers.add(Barrier(location: qr, side: barrier.side));
     }
 
-    var mapText = List<MapText>();
+    var mapText = <MapText>[];
     for (var text in mapData.mapText) {
       var qr = _getQR(text.location.x, text.location.y, orientation);
       mapText.add(MapText(
@@ -170,17 +171,17 @@ class GameMap {
   }
 
   HexTile tileFromPixel(math.Point<double> p) {
-    Hex h = layout.pixelToHex(p);
+    var h = layout.pixelToHex(p);
     return tileAt(h.q, h.r);
   }
 
   math.Point<int> _getIndicies(int q, int r) //, out int x, out int y)
   {
-    int x = 0;
-    int y = 0;
+    var x = 0;
+    var y = 0;
 
-    if (orientation == HexOrientation.Flat) {
-      int qOffset = (q / 2.0).floor();
+    if (orientation == HexOrientation.flat) {
+      var qOffset = (q / 2.0).floor();
       if ((r + qOffset) < 0 || (r + qOffset) >= rows || q < 0 || q >= columns) {
         return null;
       }
@@ -188,7 +189,7 @@ class GameMap {
       y = r + qOffset;
       return math.Point<int>(x, y);
     } else {
-      int rOffset = (r / 2.0).floor();
+      var rOffset = (r / 2.0).floor();
       if (r < 0 || r >= rows || (q + rOffset) < 0 || (q + rOffset) >= columns) {
         return null;
       }
@@ -203,8 +204,8 @@ class GameMap {
   {
     int q;
     int r;
-    if (orientation == HexOrientation.Flat) {
-      int qOffset = -((col / 2.0).floor());
+    if (orientation == HexOrientation.flat) {
+      var qOffset = -((col / 2.0).floor());
       q = col;
       r = row - ((col + qOffset * (col & 1)) ~/ 2);
       return math.Point<int>(q, r);
@@ -230,7 +231,7 @@ class GameMap {
       return null;
     }
 
-    HexTile ret = _mapCells[p.x][p.y];
+    var ret = _mapCells[p.x][p.y];
     tile.setLocation(q, r);
     if (tile.manifestItem != null) {
       tile.manifestItem.quantity--;
@@ -245,8 +246,8 @@ class GameMap {
 
   static math.Point<double> _calcMapSize(
       List<List<HexTile>> mapCells, HexLayout layout) {
-    double maxX = 0;
-    double maxY = 0;
+    var maxX = 0.0;
+    var maxY = 0.0;
     for (var row in mapCells) {
       for (var cell in row) {
         if (cell != null) {
@@ -266,21 +267,21 @@ class GameMap {
       HexOrientation orientation,
       int rows,
       int columns}) {
-    if (orientation == HexOrientation.Flat) {
-      for (int q = 0; q < columns; q++) {
-        mapCells.add(List<HexTile>());
-        int qOffset = (q / 2.0).floor(); // or q>>1
-        for (int r = -qOffset; r < rows - qOffset; r++) {
+    if (orientation == HexOrientation.flat) {
+      for (var q = 0; q < columns; q++) {
+        mapCells.add(<HexTile>[]);
+        var qOffset = (q / 2.0).floor(); // or q>>1
+        for (var r = -qOffset; r < rows - qOffset; r++) {
           //_mapCells[q].Add(new MapCell(q, r, this, null));
           mapCells[q].add(null);
         }
       }
     } else {
       // pointy
-      for (int r = 0; r < rows; r++) {
-        mapCells.add(List<HexTile>());
-        int rOffset = (r / 2.0).floor(); // or r>>1
-        for (int q = -rOffset; q < columns - rOffset; q++) {
+      for (var r = 0; r < rows; r++) {
+        mapCells.add(<HexTile>[]);
+        var rOffset = (r / 2.0).floor(); // or r>>1
+        for (var q = -rOffset; q < columns - rOffset; q++) {
           mapCells[r].add(null);
         }
       }
@@ -295,41 +296,41 @@ class GameMap {
     var right = (((x + rwidth) / layout.size) + 1).toInt() * layout.size;
     var bottom = (((y + rheight) / layout.size) + 1).toInt() * layout.size;
 
-    Hex topLeft =
+    var topLeft =
         layout.pixelToHex(math.Point(left.toDouble(), top.toDouble()));
-    Hex topRight =
+    var topRight =
         layout.pixelToHex(math.Point(right.toDouble(), top.toDouble()));
-    Hex bottomLeft =
+    var bottomLeft =
         layout.pixelToHex(math.Point(left.toDouble(), bottom.toDouble()));
 
-    int width = topRight.q - topLeft.q + 1;
-    int height = bottomLeft.r - topLeft.r + 1;
+    var width = topRight.q - topLeft.q + 1;
+    var height = bottomLeft.r - topLeft.r + 1;
 
-    List<HexTile> ret = new List<HexTile>(width * height);
+    var ret = List<HexTile>(width * height);
 
     //Debug.WriteLine($"tl:{topLeft.q},{topLeft.r} tr:{topRight.q},{topRight.r} bl:{bottomLeft.q},{bottomLeft.r}");
 
-    if (orientation == HexOrientation.Flat) {
-      for (int q = 0; q < width; ++q) {
+    if (orientation == HexOrientation.flat) {
+      for (var q = 0; q < width; ++q) {
         if (q + topLeft.q > columns) break;
-        int qOffset = (q / 2.0).floor();
-        for (int r = 0; r < height; ++r) {
+        var qOffset = (q / 2.0).floor();
+        for (var r = 0; r < height; ++r) {
           if (r - qOffset + topLeft.r > rows) break;
           //Debug.WriteLine($"q{q} r{r} ro{r_offset}");
-          HexTile cell = tileAt(q + topLeft.q, r + topLeft.r - qOffset);
+          var cell = tileAt(q + topLeft.q, r + topLeft.r - qOffset);
           if (cell != null) {
             ret.add(cell);
           }
         }
       }
     } else {
-      for (int r = 0; r < height; ++r) {
+      for (var r = 0; r < height; ++r) {
         if (r + topLeft.r > rows) break;
-        int rOffset = (r / 2.0).floor();
-        for (int q = 0; q < width; ++q) {
+        var rOffset = (r / 2.0).floor();
+        for (var q = 0; q < width; ++q) {
           if (q - rOffset + topLeft.q > columns) break;
           //Debug.WriteLine($"q{q} r{r} ro{r_offset}");
-          HexTile cell = tileAt(q - rOffset + topLeft.q, r + topLeft.r);
+          var cell = tileAt(q - rOffset + topLeft.q, r + topLeft.r);
           if (cell != null) {
             //Debug.WriteLine($"-> {cell.Q},{cell.R}");
             ret.add(cell);

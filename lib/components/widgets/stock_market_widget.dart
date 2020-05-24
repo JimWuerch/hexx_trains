@@ -68,8 +68,8 @@ class _StockMarketWidgetState extends State<StockMarketWidget> with AutomaticKee
                 child: Container(),
               ),
               onTap: () => valueNotifier.value++,
-              onScaleStart: (details) => _onScaleStart(details),
-              onScaleUpdate: (details) => _onScaleUpdate(details),
+              onScaleStart: _onScaleStart,
+              onScaleUpdate: _onScaleUpdate,
               onScaleEnd: (details) => _onScaleEnd(),
               //dragStartBehavior: DragStartBehavior.down,
             ),
@@ -88,9 +88,9 @@ class _StockMarketWidgetState extends State<StockMarketWidget> with AutomaticKee
     if (startOffset == null) return;
     if (details.scale != 1.0) {
       // scale about point
-      double tx = details.localFocalPoint.dx -
+      var tx = details.localFocalPoint.dx -
           details.scale * details.localFocalPoint.dx;
-      double ty = details.localFocalPoint.dy -
+      var ty = details.localFocalPoint.dy -
           details.scale * details.localFocalPoint.dy;
       var scaleMatrix = m64.Matrix3.identity();
       scaleMatrix[Indicies.scaleX] = details.scale;
@@ -113,10 +113,10 @@ class _StockMarketWidgetState extends State<StockMarketWidget> with AutomaticKee
   }
 
   void _onMouseWheelScroll(PointerScrollEvent details) {
-    double scale = 1 - details.scrollDelta.dy / 300.0;
+    var scale = 1 - details.scrollDelta.dy / 300.0;
 
-    double tx = details.localPosition.dx - scale * details.localPosition.dx;
-    double ty = details.localPosition.dy - scale * details.localPosition.dy;
+    var tx = details.localPosition.dx - scale * details.localPosition.dx;
+    var ty = details.localPosition.dy - scale * details.localPosition.dy;
     var scaleMatrix = m64.Matrix3.identity();
     scaleMatrix[Indicies.scaleX] = scale;
     scaleMatrix[Indicies.scaleY] = scale;
@@ -150,7 +150,7 @@ class _StockMarketPainter extends CustomPainter {
       var x = size.width / offset.width;
       var y = size.height / offset.height;
 
-      double scale = math.min(x, y);
+      var scale = math.min(x, y);
       _drawContext.viewMatrix[Indicies.scaleX] = scale;
       _drawContext.viewMatrix[Indicies.scaleY] = scale;
       isFirstPaint = false;

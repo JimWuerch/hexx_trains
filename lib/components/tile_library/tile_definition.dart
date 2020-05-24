@@ -6,8 +6,8 @@ import 'junction.dart';
 import 'tile_colors.dart';
 
 class TileDefinition {
-  static const int NumLevels = 4;
-  static const double LevelMult = 1.0 / NumLevels;
+  static const int numLevels = 4;
+  static const double levelMult = 1.0 / numLevels;
 
   final String tileId;
   final String name;
@@ -51,7 +51,7 @@ class TileDefinition {
   factory TileDefinition.fromJson(Map<String, dynamic> json) {
     var tileId = json['tileId'] as String;
     var name = json['name'] as String;
-    var color = TileColors.values.firstWhere((e) => e.toString() == 'TileColors.' + (json['color'] as String));
+    var color = TileColors.values.firstWhere((e) => e.toString() == 'TileColors.${json['color'] as String}');
     var item = json['junctions'] as List<dynamic>;
     var junctions = item.map<Junction>((dynamic json) => Junction.fromJson(json as Map<String, dynamic>)).toList();
     item = json['connections'] as List<dynamic>;
@@ -77,7 +77,7 @@ class TileDefinition {
   }
 
   Map<String, dynamic> toJson() {
-    Map<String, dynamic> ret = <String, dynamic>{
+    var ret = <String, dynamic>{
       'tileId': tileId,
       'name': name,
       'color': color.toString().stripClassName(),

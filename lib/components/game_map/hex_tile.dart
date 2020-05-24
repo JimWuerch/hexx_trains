@@ -19,13 +19,10 @@ class HexTile {
   Position costPosition;
   TileManifestItem manifestItem;
 
-  HexTile(TileDefinition td, int q, int r, HexLayout layout, TileManifestItem manifestItem) {
-    tileDef = td;
+  HexTile(this.tileDef, int q, int r, this.layout, this.manifestItem) {
     //GameMap = gameMap;
     hex = Hex.fromQR(q, r);
-    this.layout = layout;
     center = layout.hexToPixel(hex);
-    this.manifestItem = manifestItem;
   }
 
   void setLocation(int q, int r) {

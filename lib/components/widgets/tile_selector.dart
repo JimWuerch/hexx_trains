@@ -59,7 +59,7 @@ class _TileSelectorState extends State<TileSelector> {
         SliverFixedExtentList(
           itemExtent: widget.itemExtent,
           delegate: SliverChildBuilderDelegate(
-            (BuildContext context, int index) {
+            (context, index) {
               if (index >= widget.list.length) {
                 return null;
               }
@@ -71,7 +71,7 @@ class _TileSelectorState extends State<TileSelector> {
                 ),
                 onTap: () {
                   setState(() {
-                    _selectedIndex = index;  
+                    _selectedIndex = index;
                   });
                   widget.onSelected(widget.list[index]);
                 },

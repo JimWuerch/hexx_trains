@@ -8,12 +8,12 @@ import 'package:flutter/material.dart';
 import 'package:hexxtrains/components/tile_library/tile_colors.dart';
 
 class DrawingSettings {
-  static const double SQRT3 = 1.73205;
-  static const int DefaultTileSize = 200;
-  static const int DefaultTileMargin = 50;
+  static const double sqrt3 = 1.73205;
+  static const int defaultTileSize = 200;
+  static const int defaultTileMargin = 50;
 
-  int tileSize = DefaultTileSize; // center to corner
-  int tileMargin = DefaultTileMargin;
+  int tileSize = defaultTileSize; // center to corner
+  int tileMargin = defaultTileMargin;
 
   // Tile colors
   Color contrast = Colors.white;
@@ -44,29 +44,29 @@ class DrawingSettings {
   String fontFamily = 'RobotoSlab';
 
   double convertSize(double size, [double scale = 1.0]) {
-    return size / 100.0 * tileSize * SQRT3 / 2.0 * scale;
+    return size / 100.0 * tileSize * sqrt3 / 2.0 * scale;
   }
 
   Color getColor(TileColors color) {
     switch (color) {
-      case TileColors.None:
+      case TileColors.none:
         return Colors.white;
-      case TileColors.Ground:
+      case TileColors.ground:
         return ground;
-      case TileColors.Fixed:
+      case TileColors.fixed:
         return gray;
-      case TileColors.OffMap:
+      case TileColors.offMap:
         return offMap;
-      case TileColors.Yellow:
+      case TileColors.yellow:
         return yellow;
-      case TileColors.Green:
+      case TileColors.green:
         return green;
-      case TileColors.Brown:
+      case TileColors.brown:
         return brown;
-      case TileColors.Gray:
+      case TileColors.gray:
         return gray;
       default:
-        throw new ArgumentError('Unknown color');
+        throw ArgumentError('Unknown color');
     }
   }
 }

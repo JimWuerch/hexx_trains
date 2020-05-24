@@ -16,7 +16,7 @@ void main() {
   });
 
   test('Test hex diagonal', () {
-    equalHex(new Hex(-1, -1, 2), Hex.diagonalNeighbor(Hex(1, -2, 1), 3));
+    equalHex(Hex(-1, -1, 2), Hex.diagonalNeighbor(Hex(1, -2, 1), 3));
   });
 
   test('Test hex distance', () {
@@ -32,42 +32,28 @@ void main() {
   });
 
   test('Test hexRound', () {
-    FractionalHex a = new FractionalHex(0.0, 0.0, 0.0);
-    FractionalHex b = new FractionalHex(1.0, -1.0, 0.0);
-    FractionalHex c = new FractionalHex(0.0, -1.0, 1.0);
+    var a = FractionalHex(0.0, 0.0, 0.0);
+    var b = FractionalHex(1.0, -1.0, 0.0);
+    var c = FractionalHex(0.0, -1.0, 1.0);
     equalHex(
         Hex(5, -10, 5),
-        FractionalHex.hexRound(FractionalHex.hexLerp(
-            FractionalHex(0.0, 0.0, 0.0),
-            FractionalHex(10.0, -20.0, 10.0),
-            0.5)));
-    equalHex(FractionalHex.hexRound(a),
-        FractionalHex.hexRound(FractionalHex.hexLerp(a, b, 0.499)));
-    equalHex(FractionalHex.hexRound(b),
-        FractionalHex.hexRound(FractionalHex.hexLerp(a, b, 0.501)));
+        FractionalHex.hexRound(
+            FractionalHex.hexLerp(FractionalHex(0.0, 0.0, 0.0), FractionalHex(10.0, -20.0, 10.0), 0.5)));
+    equalHex(FractionalHex.hexRound(a), FractionalHex.hexRound(FractionalHex.hexLerp(a, b, 0.499)));
+    equalHex(FractionalHex.hexRound(b), FractionalHex.hexRound(FractionalHex.hexLerp(a, b, 0.501)));
     equalHex(
         FractionalHex.hexRound(a),
         FractionalHex.hexRound(FractionalHex(
-            a.q * 0.4 + b.q * 0.3 + c.q * 0.3,
-            a.r * 0.4 + b.r * 0.3 + c.r * 0.3,
-            a.s * 0.4 + b.s * 0.3 + c.s * 0.3)));
+            a.q * 0.4 + b.q * 0.3 + c.q * 0.3, a.r * 0.4 + b.r * 0.3 + c.r * 0.3, a.s * 0.4 + b.s * 0.3 + c.s * 0.3)));
     equalHex(
         FractionalHex.hexRound(c),
         FractionalHex.hexRound(FractionalHex(
-            a.q * 0.3 + b.q * 0.3 + c.q * 0.4,
-            a.r * 0.3 + b.r * 0.3 + c.r * 0.4,
-            a.s * 0.3 + b.s * 0.3 + c.s * 0.4)));
+            a.q * 0.3 + b.q * 0.3 + c.q * 0.4, a.r * 0.3 + b.r * 0.3 + c.r * 0.4, a.s * 0.3 + b.s * 0.3 + c.s * 0.4)));
   });
 
   test('Test hexLineDraw', () {
-    equalHexArray([
-      Hex(0, 0, 0),
-      Hex(0, -1, 1),
-      Hex(0, -2, 2),
-      Hex(1, -3, 2),
-      Hex(1, -4, 3),
-      Hex(1, -5, 4)
-    ], FractionalHex.hexLineDraw(Hex(0, 0, 0), Hex(1, -5, 4)));
+    equalHexArray([Hex(0, 0, 0), Hex(0, -1, 1), Hex(0, -2, 2), Hex(1, -3, 2), Hex(1, -4, 3), Hex(1, -5, 4)],
+        FractionalHex.hexLineDraw(Hex(0, 0, 0), Hex(1, -5, 4)));
   });
 
   // this test requires HexLayout to allow different x and y scales
@@ -92,7 +78,7 @@ void equalOffsetCoord(OffsetCoord a, OffsetCoord b) {
 
 void equalHexArray(List<Hex> a, List<Hex> b) {
   expect(a.length, equals(b.length));
-  for (int i = 0; i < a.length; i++) {
+  for (var i = 0; i < a.length; i++) {
     equalHex(a[i], b[i]);
   }
 }

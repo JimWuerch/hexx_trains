@@ -1,19 +1,19 @@
 import 'dart:math' as math;
 
 import 'package:flutter/material.dart';
-import 'package:hexxtrains/components/render/render.dart' as tileRender;
+import 'package:hexxtrains/components/render/render.dart' as tile_render;
 import 'package:hexxtrains/components/tile_library/tile_definition.dart';
 import 'package:vector_math/vector_math_64.dart' as m64;
 
 class HexTileWidget extends StatelessWidget {
   final TileDefinition tileDef;
-  final tileRender.TileRenderer renderer;
+  final tile_render.TileRenderer renderer;
   final bool isSelected;
 
   HexTileWidget(
       {@required this.tileDef,
       @required this.renderer, 
-      bool this.isSelected = false}) {
+      this.isSelected = false}) {
     // if ((tile.q != 0) || (tile.r != 0)) {
     //   throw ArgumentError('tile should have q and r equal 0');
     //}
@@ -21,7 +21,7 @@ class HexTileWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    Color background = isSelected ? Theme.of(context).accentColor : Colors.white;
+    var background = isSelected ? Theme.of(context).accentColor : Colors.white;
 
     return CustomPaint(
       painter: _HexPainter(this, background),
@@ -46,12 +46,12 @@ class _HexPainter extends CustomPainter {
 
   @override
   void paint(Canvas canvas, Size size) {
-    double padding = 5;
+    var padding = 5.0;
 
     var extents = context.renderer.layout.extents();
     var x = (size.width - padding * 2) / extents.x;
     var y = (size.height - padding * 2) / extents.y;
-    double scale = math.min(x, y);
+    var scale = math.min(x, y);
 
     viewMatrix = m64.Matrix3.identity();
     viewMatrix[_scaleX] = scale;

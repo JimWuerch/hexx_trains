@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:hexxtrains/components/tile_library/tile_library.dart';
 import 'package:provider/provider.dart';
 
+import 'components/tile_library/tile_library.dart';
 import 'game_data/game_data.dart';
 import 'home.dart';
 
@@ -43,7 +43,7 @@ class _GameAppState extends State<GameApp> {
       ),
       home: MultiProvider(
         providers: [
-          Provider.value(value: this.tileDictionary),
+          Provider.value(value: tileDictionary),
         ],
         child: HomePage(title: 'HeXX Trains'),
       ),

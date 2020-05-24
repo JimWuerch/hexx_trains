@@ -3,7 +3,7 @@ import 'package:hexxtrains/components/common/common.dart';
 import 'position.dart';
 import 'revenue.dart';
 
-enum JunctionTypes { None, WhistleStop, City, DoubleCity, TripleCity, QuadCity }
+enum JunctionTypes { none, whistleStop, city, doubleCity, tripleCity, quadCity }
 
 class Junction {
   final Position position;
@@ -15,10 +15,10 @@ class Junction {
   int layer = 0; // { get; internal set; }
 
   bool get isCity {
-    return junctionType == JunctionTypes.City ||
-        junctionType == JunctionTypes.DoubleCity ||
-        junctionType == JunctionTypes.TripleCity ||
-        junctionType == JunctionTypes.QuadCity;
+    return junctionType == JunctionTypes.city ||
+        junctionType == JunctionTypes.doubleCity ||
+        junctionType == JunctionTypes.tripleCity ||
+        junctionType == JunctionTypes.quadCity;
   }
 
   Junction._({this.position, this.junctionType, this.revenue, this.connections}) {
@@ -42,23 +42,23 @@ class Junction {
 
   int numberOfCities() {
     switch (junctionType) {
-      case JunctionTypes.City:
+      case JunctionTypes.city:
         return 1;
-      case JunctionTypes.DoubleCity:
+      case JunctionTypes.doubleCity:
         return 2;
-      case JunctionTypes.TripleCity:
+      case JunctionTypes.tripleCity:
         return 3;
-      case JunctionTypes.QuadCity:
+      case JunctionTypes.quadCity:
         return 4;
       default:
-        throw new ArgumentError('Unknown number of cities');
+        throw ArgumentError('Unknown number of cities');
     }
   }
 
   factory Junction.fromJson(Map<String, dynamic> json) {
     var position = Position.fromTDPosition(json['position'] as String);
     var junctionType =
-        JunctionTypes.values.firstWhere((e) => e.toString() == 'JunctionTypes.' + (json['junctionType'] as String));
+        JunctionTypes.values.firstWhere((e) => e.toString() == 'JunctionTypes.${json['junctionType'] as String}');
     Revenue revenue;
     if (json['revenue'] != null) {
       revenue = Revenue.fromJson(json['revenue'] as Map<String, dynamic>);
@@ -68,7 +68,7 @@ class Junction {
   }
 
   Map<String, dynamic> toJson() {
-    Map<String, dynamic> ret = <String, dynamic>{
+    var ret = <String, dynamic>{
       'position': position.toTDPosition(),
       'junctionType': junctionType.toString().stripClassName(),
     };

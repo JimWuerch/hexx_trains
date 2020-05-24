@@ -33,7 +33,7 @@ class Terrain {
   factory Terrain.fromJson(Map<String, dynamic> json) {
     var location = MapData.jsonLocationToCoords(json['location'] as String);
     var terrainType =
-        TerrainTypes.values.firstWhere((e) => e.toString() == 'TerrainTypes.' + (json['terrainType'] as String));
+        TerrainTypes.values.firstWhere((e) => e.toString() == 'TerrainTypes.${json['terrainType'] as String}');
     var position = Position.fromTDPosition(json['position'] as String);
 
     return Terrain(location: location, terrainType: terrainType, position: position);

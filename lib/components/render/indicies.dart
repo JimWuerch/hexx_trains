@@ -10,5 +10,5 @@ class Indicies {
   static const int persp1 = 7; //ignore: unused_field
   static const int persp2 = 8;
 
-  static const int Count = 9;
+  static const int count = 9;
 }
