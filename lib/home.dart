@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-
-import 'components/widgets/map_widget.dart';
-import 'components/widgets/stock_market_widget.dart';
+import 'package:provider/provider.dart';
 
 class HomePage extends StatefulWidget {
   HomePage({Key key, this.title}) : super(key: key);
@@ -22,26 +20,9 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin {
-  ValueNotifier<int> valueNotifier;
-  final List<Tab> myTabs = <Tab>[
-    Tab(text: 'Map'),
-    Tab(text: 'Market'),
-  ];
-  TabController _tabController;
-
   _HomePageState();
 
-  @override
-  void initState() {
-    super.initState();
-    _tabController = TabController(vsync: this, length: myTabs.length);
-  }
-
-  @override
-  void dispose() {
-    _tabController.dispose();
-    super.dispose();
-  }
+  int selectedGame = 0;
 
   @override
   Widget build(BuildContext context) {
@@ -51,36 +32,26 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
     // The Flutter framework has been optimized to make rerunning build methods
     // fast, so that you can just rebuild anything that needs updating rather
     // than having to individually change instances of widgets.
-    return Scaffold(
-      appBar: AppBar(
-        // Here we take the value from the MyHomePage object that was created by
-        // the App.build method, and use it to set our appbar title.
-        title: Text(widget.title),
-        bottom: TabBar(
-          controller: _tabController,
-          tabs: myTabs,
+    return MultiProvider(
+      providers: [
+        Provider.value(value: selectedGame),
+      ],
+      child: Scaffold(
+        appBar: AppBar(
+          // Here we take the value from the MyHomePage object that was created by
+          // the App.build method, and use it to set our appbar title.
+          title: Text(widget.title),
         ),
-      ),
-      body: TabBarView(
-        controller: _tabController,
-        physics: NeverScrollableScrollPhysics(),
-        //Column(
-        children: [
-          Column(
-            children: [
-              Expanded(
-                child: MapWidget(),
-              ),
-            ],
+        body: Column(children: <Widget>[
+          Center(
+            child: RaisedButton(
+              onPressed: () {
+                Navigator.pushReplacementNamed(context, '/GamePage', arguments: <String, String>{"gameId": "0"});
+              },
+              child: Text('Press Me'),
+            ),
           ),
-          Column(
-            children: [
-              Expanded(
-                child: StockMarketWidget(),
-              ),
-            ],
-          ),
-        ],
+        ]),
       ),
     );
   }

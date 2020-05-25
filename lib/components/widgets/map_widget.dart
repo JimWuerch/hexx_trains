@@ -4,16 +4,16 @@ import 'dart:ui' as ui;
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:hexxtrains/components/game_map/game_map.dart';
-import 'package:hexxtrains/components/game_map/tile_manifest_loader.dart';
 import 'package:hexxtrains/components/hex/hex.dart';
 import 'package:hexxtrains/components/render/render.dart';
 import 'package:hexxtrains/components/tile_library/tile_library.dart' as tilelib;
 import 'package:hexxtrains/components/widgets/tile_selector.dart';
-import 'package:hexxtrains/game_data/game_data.dart';
 import 'package:hexxtrains/game_data/game_data.dart' as game_data;
+import 'package:hexxtrains/map_render_context.dart';
 import 'package:positioned_tap_detector/positioned_tap_detector.dart';
-import 'package:provider/provider.dart';
 import 'package:vector_math/vector_math_64.dart' as m64;
+
+GlobalKey<_MapWidgetState> mapWidgetStateKey = GlobalKey();
 
 // ignore: unused_element
 class _DebugMap {
@@ -71,58 +71,46 @@ class _DebugMap {
   }
 }
 
-class _MapContext {
-  TileRenderer renderer;
-  m64.Matrix3 viewMatrix;
-  GameMap gameMap;
-  DrawingSettings drawingSettings;
-
-  void resetMatrix(ui.Size size) {
-    var offset = gameMap.mapSize;
-    var x = size.width / offset.x;
-    var y = size.height / offset.y;
-    var scale = math.min(x, y);
-
-    viewMatrix = m64.Matrix3.identity();
-    viewMatrix[Indicies.scaleX] = scale;
-    viewMatrix[Indicies.scaleY] = scale;
-
-    // center it in the view
-    if (x < y) {
-      // constrained in width, center vertically
-      viewMatrix[Indicies.transY] = (size.height - (gameMap.mapSize.y * scale)) / 2;
-    } else {
-      // center horizontally
-      viewMatrix[Indicies.transX] = (size.width - (gameMap.mapSize.x * scale)) / 2;
-    }
+class _RepaintNotifier extends ChangeNotifier {
+  void notify() {
+    notifyListeners();
   }
 }
 
 class MapWidget extends StatefulWidget {
-  final GameMap gameMap;
+  const MapWidget({Key key, @required MapRenderContext mapRenderContext})
+      : mapContext = mapRenderContext,
+        super(key: key);
 
-  const MapWidget({Key key, this.gameMap}) : super(key: key);
+  final MapRenderContext mapContext;
 
   @override
   _MapWidgetState createState() => _MapWidgetState();
 }
 
 class _MapWidgetState extends State<MapWidget> with AutomaticKeepAliveClientMixin {
-  ValueNotifier<int> valueNotifier;
+  //ValueNotifier<int> valueNotifier;
+  _RepaintNotifier repaintNotifier = _RepaintNotifier();
   double startScale;
   Offset startOffset;
   m64.Matrix3 startMatrix;
-  _MapContext mapContext;
+  MapRenderContext mapContext;
   OverlayEntry _tileSelectionOverlay;
   Hex _replacementTarget;
   HexTile _curReplacementCandidate;
   HexTile _originalTile;
 
   _MapWidgetState() {
-    valueNotifier = ValueNotifier<int>(0);
-    valueNotifier.value = 0;
+    // valueNotifier = ValueNotifier<int>(0);
+    // valueNotifier.value = 0;
 
     //drawTilePics();
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    mapContext = widget.mapContext;
   }
 
   @override
@@ -131,16 +119,6 @@ class _MapWidgetState extends State<MapWidget> with AutomaticKeepAliveClientMixi
   @override
   Widget build(BuildContext context) {
     super.build(context);
-    //TODO: broken for now, because we need context for Provider.  Will need different solution
-    mapContext = _MapContext();
-    var manifest = TileManifestLoader.load(GameList.games[0].tileManifest);
-    //var mapData = MapLoader.load(GameList.games[0].map);
-    var mapData = MapData.fromJsonString(GameList.games[0].map);
-
-    mapContext.gameMap =
-        GameMap.createMap(mapData, 200, 0, Provider.of<tilelib.TileDictionary>(context, listen: false), manifest);
-    mapContext.drawingSettings = DrawingSettings();
-    mapContext.renderer = TileRenderer(mapContext.drawingSettings, mapContext.gameMap.layout);
 
     return Listener(
       onPointerSignal: (pointerSignal) {
@@ -153,7 +131,7 @@ class _MapWidgetState extends State<MapWidget> with AutomaticKeepAliveClientMixi
         onTap: (position) => _onTap(position, context),
         child: GestureDetector(
           child: CustomPaint(
-            painter: _MapPainter(repaint: valueNotifier, mapContext: mapContext),
+            painter: _MapPainter(repaint: repaintNotifier, mapContext: mapContext),
             child: Container(),
           ),
           //onTap: () => valueNotifier.value++,
@@ -172,12 +150,12 @@ class _MapWidgetState extends State<MapWidget> with AutomaticKeepAliveClientMixi
     var p = math.Point<double>(position.relative.dx - mapContext.viewMatrix[Indicies.transX],
         position.relative.dy - mapContext.viewMatrix[Indicies.transY]);
     p *= 1 / mapContext.viewMatrix[Indicies.scaleX];
-    var hex = mapContext.gameMap.layout.pixelToHex(p);
+    var hex = mapContext.game.gameMap.layout.pixelToHex(p);
     //print('${v.x},${v.y} ${hex.q},${hex.r}');
     if (_tileSelectionOverlay == null) {
       var list = <tilelib.TileDefinition>[];
 
-      var srcTile = mapContext.gameMap.tileAt(hex.q, hex.r);
+      var srcTile = mapContext.game.gameMap.tileAt(hex.q, hex.r);
       if (srcTile == null) {
         return;
       }
@@ -188,7 +166,7 @@ class _MapWidgetState extends State<MapWidget> with AutomaticKeepAliveClientMixi
             continue;
           }
           //int id = int.tryParse(upgrade.id);
-          var tile = mapContext.gameMap.tileDictionary.getTile(upgrade.id);
+          var tile = mapContext.game.gameMap.tileDictionary.getTile(upgrade.id);
           if (tile != null) {
             //list.add(HexTile(tile, 0, 0, mapContext.gameMap.layout, upgrade));
             list.add(tile);
@@ -221,33 +199,37 @@ class _MapWidgetState extends State<MapWidget> with AutomaticKeepAliveClientMixi
       _tileSelectionOverlay.remove();
       _tileSelectionOverlay = null;
       if (_curReplacementCandidate != null) {
-        mapContext.gameMap.replaceTile(_originalTile, _replacementTarget.q, _replacementTarget.r);
+        mapContext.game.gameMap.replaceTile(_originalTile, _replacementTarget.q, _replacementTarget.r);
         _curReplacementCandidate = null;
         _originalTile = null;
-        valueNotifier.value++;
+        // valueNotifier.value++;
+        repaintNotifier.notify();
       }
     }
   }
 
   void _hexSelected(tilelib.TileDefinition tileDef) {
-    _curReplacementCandidate = HexTile(
-        tileDef, 0, 0, mapContext.gameMap.layout, mapContext.gameMap.tileManifest.getTile(tileDef.tileId.toString()));
+    _curReplacementCandidate = HexTile(tileDef, 0, 0, mapContext.game.gameMap.layout,
+        mapContext.game.gameMap.tileManifest.getTile(tileDef.tileId.toString()));
     print('selecting ${_replacementTarget.q},${_replacementTarget.r} with tile ${tileDef.name}');
     if (_originalTile == null) {
-      _originalTile = mapContext.gameMap.tileAt(_replacementTarget.q, _replacementTarget.r);
+      _originalTile = mapContext.game.gameMap.tileAt(_replacementTarget.q, _replacementTarget.r);
     }
-    mapContext.gameMap.replaceTile(_curReplacementCandidate, _replacementTarget.q, _replacementTarget.r);
-    valueNotifier.value++;
+    mapContext.game.gameMap.replaceTile(_curReplacementCandidate, _replacementTarget.q, _replacementTarget.r);
+    // valueNotifier.value++;
+    repaintNotifier.notify();
   }
 
   void _onRotateLeft() {
     _curReplacementCandidate.rotateLeft();
-    valueNotifier.value++;
+    // valueNotifier.value++;
+    repaintNotifier.notify();
   }
 
   void _onRotateRight() {
     _curReplacementCandidate.rotateRight();
-    valueNotifier.value++;
+    // valueNotifier.value++;
+    repaintNotifier.notify();
   }
 
   void _onTileConfirmed() {
@@ -255,7 +237,8 @@ class _MapWidgetState extends State<MapWidget> with AutomaticKeepAliveClientMixi
     _tileSelectionOverlay = null;
     //mapContext.gameMap.replaceTile(_curReplacementCandidate, _replacementTarget.q, _replacementTarget.r);
     _curReplacementCandidate = null;
-    valueNotifier.value++;
+    // valueNotifier.value++;
+    repaintNotifier.notify();
   }
 
   void _onScaleStart(ScaleStartDetails details) {
@@ -284,7 +267,8 @@ class _MapWidgetState extends State<MapWidget> with AutomaticKeepAliveClientMixi
       mapContext.viewMatrix[Indicies.transY] =
           details.localFocalPoint.dy - startOffset.dy + startMatrix[Indicies.transY];
     }
-    valueNotifier.value++;
+    // valueNotifier.value++;
+    repaintNotifier.notify();
   }
 
   void _onMouseWheelScroll(PointerScrollEvent details) {
@@ -301,14 +285,15 @@ class _MapWidgetState extends State<MapWidget> with AutomaticKeepAliveClientMixi
 
     mapContext.viewMatrix = (mapContext.viewMatrix * scaleMatrix) as m64.Matrix3;
 
-    valueNotifier.value++;
+    // valueNotifier.value++;
+    repaintNotifier.notify();
   }
 
   void _onScaleEnd() {}
 
   void drawTilePics() {
     //renderer.debug = true;
-    for (var row in mapContext.gameMap.map) {
+    for (var row in mapContext.game.gameMap.map) {
       for (var tile in row) {
         if (tile != null) {
           var r = ui.PictureRecorder();
@@ -342,11 +327,16 @@ class _MapWidgetState extends State<MapWidget> with AutomaticKeepAliveClientMixi
 
     //overlayEntry.remove();
   }
+
+  void zoomExtents() {
+    //mapContext.viewMatrix = null;
+    //valueNotifier.value++;
+  }
 }
 
 class _MapPainter extends CustomPainter {
-  _MapContext _mapContext;
-  _MapPainter({Listenable repaint, _MapContext mapContext}) : super(repaint: repaint) {
+  MapRenderContext _mapContext;
+  _MapPainter({Listenable repaint, MapRenderContext mapContext}) : super(repaint: repaint) {
     _mapContext = mapContext;
   }
 
@@ -366,7 +356,7 @@ class _MapPainter extends CustomPainter {
     canvas.scale(_mapContext.viewMatrix[Indicies.scaleX], _mapContext.viewMatrix[Indicies.scaleY]);
     //print('${viewMatrix[Indicies.transX]},${viewMatrix[Indicies.transY]}:${viewMatrix[Indicies.scaleX]}');
 
-    for (var row in _mapContext.gameMap.map) {
+    for (var row in _mapContext.game.gameMap.map) {
       for (var tile in row) {
         if (tile != null) {
           canvas.save();
@@ -387,9 +377,9 @@ class _MapPainter extends CustomPainter {
       }
     }
 
-    for (var text in _mapContext.gameMap.mapText) {
+    for (var text in _mapContext.game.gameMap.mapText) {
       canvas.save();
-      var hex = _mapContext.gameMap.tileAt(text.location.x, text.location.y);
+      var hex = _mapContext.game.gameMap.tileAt(text.location.x, text.location.y);
       if (hex.tileDef.isBase) {
         canvas.translate(hex.center.x, hex.center.y);
         TileRenderer.drawMapText(
@@ -397,27 +387,28 @@ class _MapPainter extends CustomPainter {
             text: text.text,
             position: text.position,
             sizeMultiplier: text.size,
-            drawingSettings: _mapContext.drawingSettings);
+            drawingSettings: _mapContext.game.drawingSettings);
         //canvas.DrawPicture((SKPicture)text.Picture);
       }
       canvas.restore();
     }
 
-    for (var barrier in _mapContext.gameMap.barriers) {
+    for (var barrier in _mapContext.game.gameMap.barriers) {
       canvas.save();
-      var hex = _mapContext.gameMap.tileAt(barrier.location.x, barrier.location.y);
+      var hex = _mapContext.game.gameMap.tileAt(barrier.location.x, barrier.location.y);
       canvas.translate(hex.center.x, hex.center.y);
       _mapContext.renderer.drawBarrier(canvas, barrier.side);
       canvas.restore();
     }
 
-    for (var company in _mapContext.gameMap.companies) {
+    for (var company in _mapContext.game.gameMap.companies) {
       canvas.save();
-      var hex = _mapContext.gameMap.tileAt(company.home.x, company.home.y);
+      var hex = _mapContext.game.gameMap.tileAt(company.home.x, company.home.y);
       var deg = 60.0 * hex.rotation;
       canvas.rotateDegreesOnPoint(deg, hex.center);
       canvas.translate(hex.center.x, hex.center.y);
-      _mapContext.renderer.drawToken(tile: hex, 
+      _mapContext.renderer.drawToken(
+          tile: hex,
           junction: company.junction,
           cityNum: company.homeCity,
           //fill: false,

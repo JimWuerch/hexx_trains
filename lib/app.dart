@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
 
-import 'components/tile_library/tile_library.dart';
-import 'game_data/game_data.dart';
 import 'home.dart';
+import 'routes.dart';
 
 class GameApp extends StatefulWidget {
   // This widget is the root of your application.
@@ -12,13 +10,11 @@ class GameApp extends StatefulWidget {
 }
 
 class _GameAppState extends State<GameApp> {
-  TileDictionary tileDictionary;
+  
 
   @override
   void initState() {
     super.initState();
-
-    tileDictionary = TileDictionary.fromJsonString(TileDictionarySource.src);
   }
 
   @override
@@ -41,12 +37,8 @@ class _GameAppState extends State<GameApp> {
         // closer together (more dense) than on mobile platforms.
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: MultiProvider(
-        providers: [
-          Provider.value(value: tileDictionary),
-        ],
-        child: HomePage(title: 'HeXX Trains'),
-      ),
+      home: HomePage(title: 'HeXX Trains'),
+      routes: routes,
     );
   }
 }
