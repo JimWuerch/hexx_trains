@@ -55,6 +55,6 @@ class Game {
     var manifest = TileManifestLoader.load(GameList.games[0].tileManifest);
     var mapData = MapData.fromJsonString(GameList.games[gameId].map);
 
-    return GameMap.createMap(mapData, DrawingSettings.defaultTileSize, 0, tileDictionary, manifest);
+    return GameMap.createMap(mapData, DrawingSettings.defaultTileSize, DrawingSettings.defaultTileMargin, tileDictionary, manifest);
   }
 }

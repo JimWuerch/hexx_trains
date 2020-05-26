@@ -8,12 +8,10 @@ import 'dart:ui' as ui;
 
 import 'package:flutter/material.dart';
 import 'package:hexxtrains/components/game_map/game_map.dart';
-import 'package:hexxtrains/components/hex/hex_layout.dart';
+import 'package:hexxtrains/components/hex/hex.dart';
 import 'package:hexxtrains/components/render/render.dart';
 import 'package:hexxtrains/components/tile_library/tile_library.dart';
 
-import 'curve_def.dart';
-import 'hex_points.dart';
 
 enum _RenderElement {
   normalRailContrast,
@@ -88,8 +86,6 @@ class TileRenderer {
     _paintDict = <_RenderElement, Paint>{};
     _textStyleDict = <_RenderElement, TextStyle>{};
     _debug = false;
-
-    HexPoints.init(layout);
 
     _initPaintDict();
   }
@@ -304,8 +300,8 @@ class TileRenderer {
     //TODO: do we need to dispose paths?
   }
 
-  static Point<double> _getPoint(Position pos) {
-    var hp = HexPoints.instance;
+  static Point<double> _getPointStatic(Position pos, HexLayout layout) {
+    var hp = layout.hexPoints;
     switch (pos.location) {
       case Locations.center:
         return Point<double>(0, 0);
@@ -321,6 +317,11 @@ class TileRenderer {
 
     throw ArgumentError('Invalid position code');
   }
+
+  Point<double> _getPoint(Position pos) {
+    return _getPointStatic(pos, layout);
+  }
+  
 
   /// Simple straight line from [connection.position1] to [connection.position2]
   void _drawStraightConnection(Connection connection, Paint paint) {
@@ -361,15 +362,15 @@ class TileRenderer {
 
     if (connection.indexDistance() == 2) {
       // gentle curve
-      cp1 = HexPoints.instance.gentleCurveCP[connection.position1.index];
-      cp2 = HexPoints.instance.gentleCurveCP[connection.position2.index];
+      cp1 = layout.hexPoints.gentleCurveCP[connection.position1.index];
+      cp2 = layout.hexPoints.gentleCurveCP[connection.position2.index];
     } else if (connection.indexDistance() == 1) {
       // tight curve
-      cp1 = HexPoints.instance.tightCurveCP[connection.position1.index];
-      cp2 = HexPoints.instance.tightCurveCP[connection.position2.index];
+      cp1 = layout.hexPoints.tightCurveCP[connection.position1.index];
+      cp2 = layout.hexPoints.tightCurveCP[connection.position2.index];
     } else {
-      cp1 = HexPoints.instance.sides[1][connection.position1.index];
-      cp2 = HexPoints.instance.sides[1][connection.position2.index];
+      cp1 = layout.hexPoints.sides[1][connection.position1.index];
+      cp2 = layout.hexPoints.sides[1][connection.position2.index];
     }
 
     var path = Path();
@@ -389,7 +390,7 @@ class TileRenderer {
     Point<double> inputVector;
 
     if (pos.isCurve) {
-      var curvePoint = HexPoints.instance.curvePoints[pos.index];
+      var curvePoint = layout.hexPoints.curvePoints[pos.index];
       CurveDef curveDef;
 
       if (pos.location == Locations.curveLeft) {
@@ -402,7 +403,7 @@ class TileRenderer {
 
       ditCenter = curveDef.end;
     } else if (pos.location == Locations.side) {
-      inputVector = HexPoints.instance.sides[pos.level][pos.index];
+      inputVector = layout.hexPoints.sides[pos.level][pos.index];
       ditCenter = inputVector;
     } else if (pos.location == Locations.center) {
       for (var connection in _hex.tileDef.connections) {
@@ -419,7 +420,7 @@ class TileRenderer {
       }
       ditCenter = Point<double>(0, 0);
     } else if (pos.location == Locations.corner) {
-      var hp = HexPoints.instance;
+      var hp = layout.hexPoints;
       for (var connection in _hex.tileDef.connections) {
         if (!(connection.position1 == pos) && !(connection.position2 == pos)) continue;
 
@@ -588,7 +589,7 @@ class TileRenderer {
     var pathRings = Path();
     var pathRays = Path();
 
-    var hp = HexPoints.instance;
+    var hp = layout.hexPoints;
 
     for (var level = 1; level <= TileDefinition.numLevels; ++level) {
       for (var index = 0; index < 6; index++) {
@@ -623,10 +624,10 @@ class TileRenderer {
 
     var curvePaths = Path();
     for (var index = 0; index < 6; ++index) {
-      HexPoints.instance.curvePoints[index].right[0].addToPath(curvePaths);
-      HexPoints.instance.curvePoints[index].right[1].addToPath(curvePaths);
-      HexPoints.instance.curvePoints[index].left[0].addToPath(curvePaths);
-      HexPoints.instance.curvePoints[index].left[1].addToPath(curvePaths);
+      layout.hexPoints.curvePoints[index].right[0].addToPath(curvePaths);
+      layout.hexPoints.curvePoints[index].right[1].addToPath(curvePaths);
+      layout.hexPoints.curvePoints[index].left[0].addToPath(curvePaths);
+      layout.hexPoints.curvePoints[index].left[1].addToPath(curvePaths);
     }
     _canvas.drawPath(curvePaths, _paintDict[_RenderElement.line]);
     _disposePath(curvePaths);
@@ -672,7 +673,7 @@ class TileRenderer {
     var loc2 = connection.position2.location;
     var indexDistance = Position.indexDistance(connection.position1, connection.position2);
     var indexCompare = Position.compareIndexes(connection.position1, connection.position2);
-    var hp = HexPoints.instance;
+    var hp = layout.hexPoints;
 
     var paint = isContrast ? _paintDict[_RenderElement.normalRailContrast] : _paintDict[_RenderElement.normalRail];
 
@@ -974,7 +975,7 @@ class TileRenderer {
     //if (_hex.tileDef.tileId <= 0) return;
     if (_hex.tileDef.isBase) return;
 
-    var hp = HexPoints.instance;
+    var hp = layout.hexPoints;
     var textStyle = _textStyleDict[_RenderElement.tileNumberText];
 
     // var p = Point<double>(hp.sides[4][3].x + (hp.corners[4][3].x - hp.sides[4][3].x) / 2.0,
@@ -1018,7 +1019,7 @@ class TileRenderer {
   void _drawOutline(Paint paint) {
     var oldCap = paint.strokeCap;
     paint.strokeCap = StrokeCap.round;
-    _canvas.drawPoints(ui.PointMode.polygon, HexPoints.instance.outsideCornerOffsets, paint);
+    _canvas.drawPoints(ui.PointMode.polygon, layout.hexPoints.outsideCornerOffsets.map((e) => ui.Offset(e.x, e.y)).toList(), paint);
     paint.strokeCap = oldCap;
     return;
   }
@@ -1027,9 +1028,9 @@ class TileRenderer {
     var path = Path();
     for (var i = 0; i < 6; ++i) {
       if (i == 0) {
-        path.moveTo(HexPoints.instance.corners[4][i].x, HexPoints.instance.corners[4][i].y);
+        path.moveTo(layout.hexPoints.corners[4][i].x, layout.hexPoints.corners[4][i].y);
       } else {
-        path.lineTo(HexPoints.instance.corners[4][i].x, HexPoints.instance.corners[4][i].y);
+        path.lineTo(layout.hexPoints.corners[4][i].x, layout.hexPoints.corners[4][i].y);
       }
     }
     path.close();
@@ -1125,12 +1126,12 @@ class TileRenderer {
     var deg = junction.position.index * 60;
     if (junction.position.location == Locations.side) {
       if (junction.position.level == 1) {
-        p = HexPoints.instance.level1SideCities[junction.position.index];
+        p = layout.hexPoints.level1SideCities[junction.position.index];
       }
     } else if (junction.position.location == Locations.corner) {
       deg -= 30;
       if (junction.position.level == 1) {
-        p = HexPoints.instance.level1CornerCities[junction.position.index];
+        p = layout.hexPoints.level1CornerCities[junction.position.index];
       }
     } else if (junction.position.isCurve) {
       if (junction.junctionType != JunctionTypes.city) {
@@ -1307,6 +1308,7 @@ class TileRenderer {
       @required String text,
       @required Position position,
       @required double sizeMultiplier,
+      @required HexLayout layout,
       @required DrawingSettings drawingSettings}) {
     if (position == null) {
       throw ArgumentError('position is null');
@@ -1318,7 +1320,7 @@ class TileRenderer {
       throw ArgumentError('drawingSettings is null');
     }
 
-    var point = _getPoint(position);
+    var point = _getPointStatic(position, layout);
 
     var textStyle = TextStyle(
         fontSize: drawingSettings.convertSize(drawingSettings.textSize) * sizeMultiplier,
@@ -1353,6 +1355,7 @@ class TileRenderer {
           text: '\$${_hex.cost.toString()}',
           position: _hex.costPosition,
           sizeMultiplier: 1,
+          layout: layout,
           drawingSettings: drawingSettings); //gameService.DrawingSettings);
       _canvas.restore();
     }
@@ -1363,8 +1366,8 @@ class TileRenderer {
       throw ArgumentError('canvas is null');
     }
 
-    var p0 = HexPoints.instance.corners[4][side];
-    var p1 = HexPoints.instance.corners[4][(side + 1) % 6];
+    var p0 = layout.hexPoints.corners[4][side];
+    var p1 = layout.hexPoints.corners[4][(side + 1) % 6];
     canvas.drawLine(Offset(p0.x, p0.y), Offset(p1.x, p1.y), _paintDict[_RenderElement.barrier]);
   }
 

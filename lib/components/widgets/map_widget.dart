@@ -89,7 +89,6 @@ class MapWidget extends StatefulWidget {
 }
 
 class _MapWidgetState extends State<MapWidget> with AutomaticKeepAliveClientMixin {
-  //ValueNotifier<int> valueNotifier;
   _RepaintNotifier repaintNotifier = _RepaintNotifier();
   double startScale;
   Offset startOffset;
@@ -101,9 +100,6 @@ class _MapWidgetState extends State<MapWidget> with AutomaticKeepAliveClientMixi
   HexTile _originalTile;
 
   _MapWidgetState() {
-    // valueNotifier = ValueNotifier<int>(0);
-    // valueNotifier.value = 0;
-
     //drawTilePics();
   }
 
@@ -127,14 +123,12 @@ class _MapWidgetState extends State<MapWidget> with AutomaticKeepAliveClientMixi
         }
       },
       child: PositionedTapDetector(
-        //controller: _controller,
         onTap: (position) => _onTap(position, context),
         child: GestureDetector(
           child: CustomPaint(
             painter: _MapPainter(repaint: repaintNotifier, mapContext: mapContext),
             child: Container(),
           ),
-          //onTap: () => valueNotifier.value++,
           onScaleStart: _onScaleStart,
           onScaleUpdate: _onScaleUpdate,
           onScaleEnd: (details) => _onScaleEnd(),
@@ -165,10 +159,8 @@ class _MapWidgetState extends State<MapWidget> with AutomaticKeepAliveClientMixi
           if (upgrade.quantity < 1) {
             continue;
           }
-          //int id = int.tryParse(upgrade.id);
           var tile = mapContext.game.gameMap.tileDictionary.getTile(upgrade.id);
           if (tile != null) {
-            //list.add(HexTile(tile, 0, 0, mapContext.gameMap.layout, upgrade));
             list.add(tile);
           }
         }
@@ -202,7 +194,6 @@ class _MapWidgetState extends State<MapWidget> with AutomaticKeepAliveClientMixi
         mapContext.game.gameMap.replaceTile(_originalTile, _replacementTarget.q, _replacementTarget.r);
         _curReplacementCandidate = null;
         _originalTile = null;
-        // valueNotifier.value++;
         repaintNotifier.notify();
       }
     }
@@ -216,19 +207,16 @@ class _MapWidgetState extends State<MapWidget> with AutomaticKeepAliveClientMixi
       _originalTile = mapContext.game.gameMap.tileAt(_replacementTarget.q, _replacementTarget.r);
     }
     mapContext.game.gameMap.replaceTile(_curReplacementCandidate, _replacementTarget.q, _replacementTarget.r);
-    // valueNotifier.value++;
     repaintNotifier.notify();
   }
 
   void _onRotateLeft() {
     _curReplacementCandidate.rotateLeft();
-    // valueNotifier.value++;
     repaintNotifier.notify();
   }
 
   void _onRotateRight() {
     _curReplacementCandidate.rotateRight();
-    // valueNotifier.value++;
     repaintNotifier.notify();
   }
 
@@ -237,7 +225,6 @@ class _MapWidgetState extends State<MapWidget> with AutomaticKeepAliveClientMixi
     _tileSelectionOverlay = null;
     //mapContext.gameMap.replaceTile(_curReplacementCandidate, _replacementTarget.q, _replacementTarget.r);
     _curReplacementCandidate = null;
-    // valueNotifier.value++;
     repaintNotifier.notify();
   }
 
@@ -267,7 +254,6 @@ class _MapWidgetState extends State<MapWidget> with AutomaticKeepAliveClientMixi
       mapContext.viewMatrix[Indicies.transY] =
           details.localFocalPoint.dy - startOffset.dy + startMatrix[Indicies.transY];
     }
-    // valueNotifier.value++;
     repaintNotifier.notify();
   }
 
@@ -285,7 +271,6 @@ class _MapWidgetState extends State<MapWidget> with AutomaticKeepAliveClientMixi
 
     mapContext.viewMatrix = (mapContext.viewMatrix * scaleMatrix) as m64.Matrix3;
 
-    // valueNotifier.value++;
     repaintNotifier.notify();
   }
 
@@ -327,11 +312,6 @@ class _MapWidgetState extends State<MapWidget> with AutomaticKeepAliveClientMixi
 
     //overlayEntry.remove();
   }
-
-  void zoomExtents() {
-    //mapContext.viewMatrix = null;
-    //valueNotifier.value++;
-  }
 }
 
 class _MapPainter extends CustomPainter {
@@ -348,7 +328,7 @@ class _MapPainter extends CustomPainter {
     // if viewMatrix is null, this is the first paint
     // or it's been reset, so stretch to fit the map
     if (_mapContext.viewMatrix == null) {
-      _mapContext.resetMatrix(size);
+      _mapContext.zoomToExtents(size);
     }
 
     canvas.save();
@@ -387,6 +367,7 @@ class _MapPainter extends CustomPainter {
             text: text.text,
             position: text.position,
             sizeMultiplier: text.size,
+            layout: _mapContext.game.gameMap.layout,
             drawingSettings: _mapContext.game.drawingSettings);
         //canvas.DrawPicture((SKPicture)text.Picture);
       }

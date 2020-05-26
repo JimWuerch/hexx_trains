@@ -3,11 +3,8 @@
 // in the LICENSE file.  See the README file for additional requests.
 
 import 'dart:math';
-import 'dart:ui' as ui;
 
-import 'package:hexxtrains/components/game_map/hex_tile.dart';
 import 'package:hexxtrains/components/hex/hex_layout.dart';
-import 'package:hexxtrains/components/tile_library/tile_definition.dart';
 
 import 'curve_def.dart';
 import 'curve_point.dart';
@@ -17,6 +14,8 @@ class HexPoints {
   static const double tightCPScale = 1.1;
   static const double gentleCurvePointLen = .2;
   static const double tightCurvePointLen = .25;
+  static const int numLevels = 4; // needs to match TileDefinition
+  static const double levelMult = 1.0 / numLevels; // needs to match TileDefinition
 
   final HexLayout layout;
   final List<Point<double>> gentleCurveCP;
@@ -25,12 +24,9 @@ class HexPoints {
   final List<List<Point<double>>> sides;
   final List<List<Point<double>>> corners;
   final List<Point<double>> outsideCorners;
-  final List<ui.Offset> outsideCornerOffsets;
+  final List<Point<double>> outsideCornerOffsets;
   final List<Point<double>> level1SideCities;
   final List<Point<double>> level1CornerCities;
-
-  static HexPoints _instance;
-  static HexPoints get instance => _instance;
 
   HexPoints._(
       {this.layout,
@@ -44,7 +40,7 @@ class HexPoints {
       this.level1SideCities,
       this.level1CornerCities});
 
-  factory HexPoints._fromLayout(HexLayout layout) {
+  factory HexPoints.fromLayout(HexLayout layout) {
     var xGentleCurveCP = List.generate(6, (index) => layout.hexSideOffset(index, .25) * gentleCPScale,
         growable: false); //new SKPoint[6];
 
@@ -56,18 +52,18 @@ class HexPoints {
         growable: false); //new CurvePoint[6];
 
     var xSides = List.generate(
-        TileDefinition.numLevels + 1,
+        numLevels + 1,
         (level) => List.generate(6,
-            (index) => level == 0 ? Point<double>(0, 0) : layout.hexSideOffset(index, level * TileDefinition.levelMult),
+            (index) => level == 0 ? Point<double>(0, 0) : layout.hexSideOffset(index, level * levelMult),
             growable: false),
         growable: false); //new SKPoint[TileDefinition.NumLevels+1, 6];
 
     var xCorners = List.generate(
-        TileDefinition.numLevels + 1,
+        numLevels + 1,
         (level) => List.generate(
             6,
             (index) =>
-                level == 0 ? Point<double>(0, 0) : layout.hexCornerOffset(index, level * TileDefinition.levelMult),
+                level == 0 ? Point<double>(0, 0) : layout.hexCornerOffset(index, level * levelMult),
             growable: false),
         growable: false); //new SKPoint[TileDefinition.NumLevels+1, 6];
 
@@ -77,8 +73,8 @@ class HexPoints {
     var xOutsideCornerOffsets = List.generate(
         7,
         (index) => index == 6
-            ? ui.Offset(xCorners[4][0].x, xCorners[4][0].y)
-            : ui.Offset(xCorners[4][index].x, xCorners[4][index].y),
+            ? Point<double>(xCorners[4][0].x, xCorners[4][0].y)
+            : Point<double>(xCorners[4][index].x, xCorners[4][index].y),
         growable: false); //new SKPoint[7];
 
     var xLevel1SideCities =
@@ -100,18 +96,12 @@ class HexPoints {
         level1CornerCities: xLevel1CornerCities);
   }
 
-  static HexPoints init(HexLayout layout) {
-    _instance = HexPoints._fromLayout(layout);
-
-    return _instance;
-  }
-
-  static Point<double> translate(HexTile hex, Point<double> p) {
-    if (hex == null) {
-      throw ArgumentError('hex is null');
-    }
-    return Point<double>(p.x + hex.center.x, p.y + hex.center.y);
-  }
+  // static Point<double> translate(HexTile hex, Point<double> p) {
+  //   if (hex == null) {
+  //     throw ArgumentError('hex is null');
+  //   }
+  //   return Point<double>(p.x + hex.center.x, p.y + hex.center.y);
+  // }
 
   static CurvePoint calcCurvePoints(
       int index, HexLayout layout, List<Point<double>> tightCP, List<Point<double>> gentleCP) {

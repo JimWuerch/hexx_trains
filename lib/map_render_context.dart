@@ -23,12 +23,18 @@ class MapRenderContext extends ChangeNotifier {
     this.game = game;
   }
 
+  /// Set the viewMatrix to null.
+  /// 
+  /// During paint, the matrix will be resized if it's null.
   void requestMatrixReset() {
     viewMatrix = null;
     notifyListeners();
   }
 
-  void resetMatrix(ui.Size size) {
+  /// Reset the viewMatrix such that the map will fit.
+  /// 
+  /// This function doesn't notify listeners as it's likely to be called during painting.
+  void zoomToExtents(ui.Size size) {
     var offset = game.gameMap.mapSize;
     var x = size.width / offset.x;
     var y = size.height / offset.y;
@@ -46,6 +52,5 @@ class MapRenderContext extends ChangeNotifier {
       // center horizontally
       viewMatrix[Indicies.transX] = (size.width - (game.gameMap.mapSize.x * scale)) / 2;
     }
-    notifyListeners();
   }
 }

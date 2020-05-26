@@ -2,10 +2,10 @@
 // Use of this source code is governed by the MIT license that can be found
 // in the LICENSE file.  See the README file for additional requests.
 
-import 'dart:math';
-import 'package:flutter/material.dart';
+//ignore_for_file: avoid_equals_and_hash_code_on_mutable_classes
 
-@immutable
+import 'dart:math';
+
 class CurveDef {
   final Point<double> start;
   final Point<double> end;
@@ -68,25 +68,7 @@ class CurveDef {
     return CurveDef.fromPoints(xa, ya, xb, yb, xc, yc, xd, yd);
   }
 
-  void addToPathOffset(Path path, Point<double> offset) {
-    if (path == null) {
-      throw ArgumentError('path is null');
-    }
-    var p1 = start + offset;
-    path.moveTo(p1.x, p1.y);
-    var p2 = end + offset;
-    var c1 = cp1 + offset;
-    var c2 = cp2 + offset;
-    path.cubicTo(c1.x, c1.y, c2.x, c2.y, p2.x, p2.y);
-  }
-
-  void addToPath(Path path) {
-    if (path == null) {
-      throw ArgumentError('path is null');
-    }
-    path.moveTo(start.x, start.y);
-    path.cubicTo(cp1.x, cp1.y, cp2.x, cp2.y, end.x, end.y);
-  }
+  
 
   @override
   bool operator ==(dynamic other) =>

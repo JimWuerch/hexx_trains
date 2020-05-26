@@ -1,3 +1,5 @@
+import 'dart:math' as math;
+
 import 'package:flutter/material.dart';
 import 'package:hexxtrains/components/hex/hex.dart';
 import 'package:hexxtrains/components/render/render.dart';
@@ -39,6 +41,20 @@ class TileSelector extends StatefulWidget {
 class _TileSelectorState extends State<TileSelector> {
   int _selectedIndex;
   List<HexTileWidget> tileWidgets = [];
+  TileRenderer renderer;
+
+  @override
+  void initState() {
+    super.initState();
+    var size = widget.renderer.layout.size;
+    renderer = TileRenderer(
+        widget.renderer.drawingSettings,
+        HexLayout(
+          HexOrientation.flat,
+          size,
+          math.Point<double>(size.toDouble(), math.sqrt(3) * size / 2.0),
+        ));
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -66,14 +82,18 @@ class _TileSelectorState extends State<TileSelector> {
               return GestureDetector(
                 child: HexTileWidget(
                   tileDef: widget.list[index],
-                  renderer: widget.renderer,
+                  renderer: renderer,
                   isSelected: index == _selectedIndex,
                 ),
                 onTap: () {
-                  setState(() {
-                    _selectedIndex = index;
-                  });
-                  widget.onSelected(widget.list[index]);
+                  if (_selectedIndex == index) {
+                    widget.onRotateRight();
+                  } else {
+                    setState(() {
+                      _selectedIndex = index;
+                    });
+                    widget.onSelected(widget.list[index]);
+                  }
                 },
               );
             },

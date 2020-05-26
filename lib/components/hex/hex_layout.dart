@@ -26,6 +26,8 @@ class HexLayout {
   final int size;
   final Point<double> origin;
   final _Orientation _ourOrientation;
+  HexPoints _hexPoints;
+  HexPoints get hexPoints => _hexPoints;
 
 //  final Matrix3 matrix;
 //  final Matrix3 iMatrix;
@@ -35,7 +37,9 @@ class HexLayout {
   static final _Orientation _flat =
       _Orientation(3.0 / 2.0, 0.0, sqrt(3.0) / 2.0, sqrt(3.0), 2.0 / 3.0, 0.0, -1.0 / 3.0, sqrt(3.0) / 3.0, 1);
 
-  HexLayout._(this.orientation, this.size, this.origin, this._ourOrientation);
+  HexLayout._(this.orientation, this.size, this.origin, this._ourOrientation) {
+    _hexPoints = HexPoints.fromLayout(this);
+  }
 
   factory HexLayout(HexOrientation orientation, int size, Point<double> origin) {
     return HexLayout._(orientation, size, origin, orientation == HexOrientation.flat ? _flat : _pointy);

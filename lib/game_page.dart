@@ -16,7 +16,6 @@ class GamePage extends StatefulWidget {
 }
 
 class _GamePageState extends State<GamePage> with SingleTickerProviderStateMixin {
-  //ValueNotifier<int> valueNotifier;
   final List<Tab> myTabs = <Tab>[
     Tab(text: 'Map'),
     Tab(text: 'Market'),
@@ -56,8 +55,6 @@ class _GamePageState extends State<GamePage> with SingleTickerProviderStateMixin
             ],
                       child: Scaffold(
               appBar: AppBar(
-                // Here we take the value from the MyHomePage object that was created by
-                // the App.build method, and use it to set our appbar title.
                 title: Text(widget.title),
                 bottom: TabBar(
                   controller: _tabController,
@@ -150,38 +147,7 @@ class _GamePageState extends State<GamePage> with SingleTickerProviderStateMixin
         }
         return child;
       },
-      //     child: Scaffold(
-      //   appBar: AppBar(
-      //     // Here we take the value from the MyHomePage object that was created by
-      //     // the App.build method, and use it to set our appbar title.
-      //     title: Text(widget.title),
-      //     bottom: TabBar(
-      //       controller: _tabController,
-      //       tabs: myTabs,
-      //     ),
-      //   ),
-      //   body: TabBarView(
-      //     controller: _tabController,
-      //     physics: NeverScrollableScrollPhysics(),
-      //     //Column(
-      //     children: [
-      //       Column(
-      //         children: [
-      //           Expanded(
-      //             child: MapWidget(),
-      //           ),
-      //         ],
-      //       ),
-      //       Column(
-      //         children: [
-      //           Expanded(
-      //             child: StockMarketWidget(),
-      //           ),
-      //         ],
-      //       ),
-      //     ],
-      //   ),
-      // ),
+      
     );
   }
 
@@ -191,7 +157,6 @@ class _GamePageState extends State<GamePage> with SingleTickerProviderStateMixin
   }
 
   void _zoomExtents(BuildContext context) {
-    //mapWidgetStateKey.currentState.zoomExtents();
     mapRenderContext.requestMatrixReset();
     Navigator.pop(context);
   }

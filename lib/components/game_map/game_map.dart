@@ -127,7 +127,7 @@ class GameMap {
       }
     }
 
-    var mapSize = _calcMapSize(mapCells, layout);
+    var mapSize = _calcMapSize(mapCells, layout, margin);
     // the layout has the left and top margins, so we need
     // to add the bottom and left margins
     mapSize = math.Point<double>(mapSize.x + margin, mapSize.y + margin);
@@ -267,7 +267,7 @@ class GameMap {
     return ret;
   }
 
-  static math.Point<double> _calcMapSize(List<List<HexTile>> mapCells, HexLayout layout) {
+  static math.Point<double> _calcMapSize(List<List<HexTile>> mapCells, HexLayout layout, int margin) {
     var maxX = 0.0;
     var maxY = 0.0;
     for (var row in mapCells) {
@@ -281,7 +281,7 @@ class GameMap {
       }
     }
 
-    return math.Point<double>(maxX, maxY);
+    return math.Point<double>(maxX + margin, maxY + margin);
   }
 
   static void _generateMap({List<List<HexTile>> mapCells, HexOrientation orientation, int rows, int columns}) {

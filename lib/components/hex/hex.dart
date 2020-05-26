@@ -1,7 +1,10 @@
 // This code is derived from the code at https://www.redblobgames.com/grids/hexagons/implementation.html
 
+export 'curve_def.dart';
+export 'curve_def.dart';
 export 'fractional_hex.dart';
 export 'hex_layout.dart';
+export 'hex_points.dart';
 export 'offset_coord.dart';
 
 class Hex {
