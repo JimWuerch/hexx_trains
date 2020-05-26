@@ -730,7 +730,7 @@ class Game1830 extends GameData {
   },
   {
    "location": "H16",
-   "text": "Lancaster",
+   "text": "Lancaster", 
    "position": "tpCenter",
    "size": 1.0
   },
@@ -885,6 +885,78 @@ class Game1830 extends GameData {
     "lightOnDark": true,
     "home": "H12"
   }
+],
+"offmapRevenue": [
+{
+  "location": "A9",
+  "position": "tp3SideE",
+  "amounts": [
+    {
+      "phase": 0,
+      "amount": 30
+    },
+    {
+      "phase": 2,
+      "amount": 50
+    }
+  ]
+},
+{
+  "location": "B24",
+  "position": "tp3SideB",
+  "amounts": [
+    {
+      "phase": 0,
+      "amount": 20
+    },
+    {
+      "phase": 2,
+      "amount": 30
+    }
+  ]
+},
+{
+  "location": "F2",
+  "position": "tp3SideE",
+  "amounts": [
+    {
+      "phase": 0,
+      "amount": 40
+    },
+    {
+      "phase": 2,
+      "amount": 70
+    }
+  ]
+},
+{
+  "location": "J2",
+  "position": "tp3SideE",
+  "amounts": [
+    {
+      "phase": 0,
+      "amount": 30
+    },
+    {
+      "phase": 2,
+      "amount": 60
+    }
+  ]
+},
+{
+  "location": "K13",
+  "position": "tp3SideE",
+  "amounts": [
+    {
+      "phase": 0,
+      "amount": 30
+    },
+    {
+      "phase": 2,
+      "amount": 40
+    }
+  ]
+}
 ]
 }
 ''';

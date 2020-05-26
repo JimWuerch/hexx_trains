@@ -1,5 +1,6 @@
 import 'dart:math' as math;
 
+import 'package:hexxtrains/components/game_map/revenue.dart';
 import 'package:hexxtrains/components/hex/hex.dart';
 import 'package:hexxtrains/components/tile_library/tile_library.dart';
 
@@ -40,7 +41,8 @@ class GameMap {
       this.orientation,
       this.tileDictionary,
       this.tileManifest,
-      this.companies}) {
+      this.companies,
+      this.offmapRevenue}) {
     _mapCells = mapCells;
   }
 
@@ -74,6 +76,7 @@ class GameMap {
   final List<MapText> mapText;
   final List<Terrain> terrains;
   final List<CompanyData> companies;
+  final List<OffmapRevenue> offmapRevenue;
 
   factory GameMap.createMap(
       MapData mapData, int size, int margin, TileDictionary tileDictionary, TileManifest tileManifest) {
@@ -176,6 +179,16 @@ class GameMap {
           homeCity: company.homeCity));
     }
 
+    var offmapRevenue = <OffmapRevenue>[];
+    for (var offmap in mapData.offmapRevenue) {
+      var qr = getQR(offmap.location.x, offmap.location.y, orientation);
+      offmapRevenue.add(OffmapRevenue(
+        amounts: offmap.amounts,
+        location: qr,
+        position: offmap.position
+      ));
+    }
+
     return GameMap._(
         mapCells: mapCells,
         mapSize: mapSize,
@@ -191,7 +204,8 @@ class GameMap {
         orientation: orientation,
         tileDictionary: tileDictionary,
         tileManifest: tileManifest,
-        companies: companies);
+        companies: companies,
+        offmapRevenue: offmapRevenue);
   }
 
   HexTile tileFromPixel(math.Point<double> p) {

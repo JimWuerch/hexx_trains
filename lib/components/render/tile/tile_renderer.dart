@@ -12,7 +12,6 @@ import 'package:hexxtrains/components/hex/hex.dart';
 import 'package:hexxtrains/components/render/render.dart';
 import 'package:hexxtrains/components/tile_library/tile_library.dart';
 
-
 enum _RenderElement {
   normalRailContrast,
   normalRail,
@@ -321,7 +320,6 @@ class TileRenderer {
   Point<double> _getPoint(Position pos) {
     return _getPointStatic(pos, layout);
   }
-  
 
   /// Simple straight line from [connection.position1] to [connection.position2]
   void _drawStraightConnection(Connection connection, Paint paint) {
@@ -1019,7 +1017,8 @@ class TileRenderer {
   void _drawOutline(Paint paint) {
     var oldCap = paint.strokeCap;
     paint.strokeCap = StrokeCap.round;
-    _canvas.drawPoints(ui.PointMode.polygon, layout.hexPoints.outsideCornerOffsets.map((e) => ui.Offset(e.x, e.y)).toList(), paint);
+    _canvas.drawPoints(
+        ui.PointMode.polygon, layout.hexPoints.outsideCornerOffsets.map((e) => ui.Offset(e.x, e.y)).toList(), paint);
     paint.strokeCap = oldCap;
     return;
   }
@@ -1463,5 +1462,26 @@ class TileRenderer {
     _disposePath(rectPath);
     _disposePath(roundRectPath);
     _canvas.restore();
+  }
+
+  void drawOffmapRevenue(OffmapRevenue offmapRevenue) {
+    var styles = <TextStyle>[];
+    var style = TextStyle(
+        fontFamily: 'RobotoSlab',
+        fontSize: drawingSettings.convertSize(drawingSettings.revenueSize),
+        backgroundColor: drawingSettings.yellow,
+        color: Colors.black);
+    styles.add(style);
+    styles.add(style.apply(backgroundColor: drawingSettings.green));
+    styles.add(style.apply(backgroundColor: drawingSettings.brown));
+    styles.add(style.apply(backgroundColor: drawingSettings.gray));
+
+    var size = _measureText('MMM', styles[0]);
+    var p = _getPoint(offmapRevenue.position);
+    var offset = 0.0;
+    for (var revenue in offmapRevenue.amounts) {
+      _drawText(' ${revenue.amount.toString()} ', Point<double>(p.x, p.y + offset), styles[revenue.phase]);
+      offset += size.height;
+    }
   }
 }

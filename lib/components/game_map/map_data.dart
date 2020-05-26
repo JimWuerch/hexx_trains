@@ -25,7 +25,7 @@ class MapData {
   final List<MapText> mapText;
   final List<Terrain> terrains;
   final List<Doodad> doodads;
-  final List<Revenue> offmapRevenue;
+  final List<OffmapRevenue> offmapRevenue;
   final List<CompanyData> companies;
 
   // these are only used during json serialization
@@ -82,7 +82,7 @@ class MapData {
     item = json['doodads'] as List<dynamic>;
     var doodads = item.map<Doodad>((dynamic json) => Doodad.fromJson(json as Map<String, dynamic>)).toList();
     item = json['offmapRevenue'] as List<dynamic>;
-    var offmapRevenue = item.map<Revenue>((dynamic json) => Revenue.fromJson(json as Map<String, dynamic>)).toList();
+    var offmapRevenue = item.map<OffmapRevenue>((dynamic json) => OffmapRevenue.fromJson(json as Map<String, dynamic>)).toList();
     item = json['companies'] as List<dynamic>;
     var companies =
         item.map<CompanyData>((dynamic json) => CompanyData.fromJson(json as Map<String, dynamic>)).toList();
@@ -134,7 +134,7 @@ class MapData {
       List<MapText> mapText,
       List<Terrain> terrains,
       List<Doodad> doodads,
-      List<Revenue> offmapRevenue,
+      List<OffmapRevenue> offmapRevenue,
       List<CompanyData> companies}) {
     var size = _calcMapSize(mapTiles);
     return MapData._(

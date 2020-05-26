@@ -1,36 +1,43 @@
 import 'dart:math' as math;
 
+import 'package:hexxtrains/components/tile_library/position.dart';
+
 import 'map_data.dart';
 
-class RevenueAmount {
+
+class OffmapRevenueAmount {
+  // yellow = 0, green = 1, brown = 2, gray = 3
   int phase = 0;
   int amount = 0;
 
-  RevenueAmount();
+  OffmapRevenueAmount();
 
   Map<String, dynamic> toJson() => <String, dynamic>{'phase': phase, 'amount': amount};
 
-  RevenueAmount.fromJson(Map<String, dynamic> json)
+  OffmapRevenueAmount.fromJson(Map<String, dynamic> json)
       : phase = json['phase'] as int,
         amount = json['amount'] as int;
 }
 
-class Revenue {
+class OffmapRevenue {
   final math.Point<int> location;
-  final List<RevenueAmount> amounts;
+  final List<OffmapRevenueAmount> amounts;
+  final Position position;
 
-  Revenue({this.location, this.amounts});
+  OffmapRevenue({this.location, this.position, this.amounts});
 
   Map<String, dynamic> toJson() => <String, dynamic>{
         'location': MapData.jsonCoordsToLocation(location),
+        'position': position.toTDPosition(),
         'amounts': amounts.map<Map<String, dynamic>>((e) => e.toJson()).toList(),
       };
 
-  factory Revenue.fromJson(Map<String, dynamic> json) {
+  factory OffmapRevenue.fromJson(Map<String, dynamic> json) {
     var location = MapData.jsonLocationToCoords(json['location'] as String);
+    var position = Position.fromTDPosition(json['position'] as String);
     var item = json['amounts'] as List<dynamic>;
     var amounts =
-        item.map<RevenueAmount>((dynamic json) => RevenueAmount.fromJson(json as Map<String, dynamic>)).toList();
-    return Revenue(location: location, amounts: amounts);
+        item.map<OffmapRevenueAmount>((dynamic json) => OffmapRevenueAmount.fromJson(json as Map<String, dynamic>)).toList();
+    return OffmapRevenue(location: location, position: position, amounts: amounts);
   }
 }

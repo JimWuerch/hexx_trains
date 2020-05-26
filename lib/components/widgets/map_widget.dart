@@ -398,6 +398,14 @@ class _MapPainter extends CustomPainter {
       canvas.restore();
     }
 
+    for (var offmap in _mapContext.game.gameMap.offmapRevenue) {
+      canvas.save();
+      var hex = _mapContext.game.gameMap.tileAt(offmap.location.x, offmap.location.y);
+      canvas.translate(hex.center.x, hex.center.y);
+      _mapContext.renderer.drawOffmapRevenue(offmap);
+      canvas.restore();
+    }
+
     canvas.restore();
   }
 

@@ -24,7 +24,7 @@ class MapLoader {
     List<MapText> mapText;
     List<Terrain> terrains;
     List<Doodad> doodads;
-    List<Revenue> offmapRevenue;
+    List<OffmapRevenue> offmapRevenue;
 
     var document = xml.parse(map);
     for (var mapNode in document.children) {
@@ -252,14 +252,14 @@ class MapLoader {
     return doodads;
   }
 
-  static List<Revenue> _parseOffmapRevenue(
+  static List<OffmapRevenue> _parseOffmapRevenue(
       xml.XmlElement revenueElement, bool aRowOdd, bool lettersVertical, bool isPointy) {
-    var revenue = <Revenue>[];
+    var revenue = <OffmapRevenue>[];
     for (var node in revenueElement.children) {
       if (node.nodeType == xml.XmlNodeType.ELEMENT) {
         var element = node as xml.XmlElement;
         math.Point<int> location;
-        var list = <RevenueAmount>[];
+        var list = <OffmapRevenueAmount>[];
 
         if (element.name.local != 'revenue') {
           throw ArgumentError('Unexpected element ${element.name.local} in <offmap_revenue>');
@@ -273,18 +273,18 @@ class MapLoader {
           }
         }
         list = _parseAmount(element);
-        revenue.add(Revenue(amounts: list, location: location));
+        revenue.add(OffmapRevenue(amounts: list, location: location));
       }
     }
     return revenue;
   }
 
-  static List<RevenueAmount> _parseAmount(xml.XmlElement amountElement) {
-    var amounts = <RevenueAmount>[];
+  static List<OffmapRevenueAmount> _parseAmount(xml.XmlElement amountElement) {
+    var amounts = <OffmapRevenueAmount>[];
     for (var node in amountElement.children) {
       if (node.nodeType == xml.XmlNodeType.ELEMENT) {
         var element = node as xml.XmlElement;
-        var amount = RevenueAmount();
+        var amount = OffmapRevenueAmount();
 
         if (element.name.local != 'amount') {
           throw ArgumentError('Unexpected element ${element.name.local} in <revenue>');
