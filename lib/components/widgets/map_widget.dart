@@ -7,13 +7,13 @@ import 'package:hexxtrains/components/game_map/game_map.dart';
 import 'package:hexxtrains/components/hex/hex.dart';
 import 'package:hexxtrains/components/render/render.dart';
 import 'package:hexxtrains/components/tile_library/tile_library.dart' as tilelib;
-import 'package:hexxtrains/components/widgets/tile_selector.dart';
 import 'package:hexxtrains/game_data/game_data.dart' as game_data;
 import 'package:hexxtrains/map_render_context.dart';
 import 'package:positioned_tap_detector/positioned_tap_detector.dart';
 import 'package:vector_math/vector_math_64.dart' as m64;
 
-GlobalKey<_MapWidgetState> mapWidgetStateKey = GlobalKey();
+//GlobalKey<_MapWidgetState> mapWidgetStateKey = GlobalKey();
+typedef OnTapMapCallback = void Function(TapPosition position);
 
 // ignore: unused_element
 class _DebugMap {
@@ -78,11 +78,12 @@ class _RepaintNotifier extends ChangeNotifier {
 }
 
 class MapWidget extends StatefulWidget {
-  const MapWidget({Key key, @required MapRenderContext mapRenderContext})
+  const MapWidget({Key key, @required MapRenderContext mapRenderContext, this.onTapMapCallback})
       : mapContext = mapRenderContext,
         super(key: key);
 
   final MapRenderContext mapContext;
+  final OnTapMapCallback onTapMapCallback;
 
   @override
   _MapWidgetState createState() => _MapWidgetState();
@@ -94,10 +95,6 @@ class _MapWidgetState extends State<MapWidget> with AutomaticKeepAliveClientMixi
   Offset startOffset;
   m64.Matrix3 startMatrix;
   MapRenderContext mapContext;
-  OverlayEntry _tileSelectionOverlay;
-  Hex _replacementTarget;
-  HexTile _curReplacementCandidate;
-  HexTile _originalTile;
 
   _MapWidgetState() {
     //drawTilePics();
@@ -123,7 +120,7 @@ class _MapWidgetState extends State<MapWidget> with AutomaticKeepAliveClientMixi
         }
       },
       child: PositionedTapDetector(
-        onTap: (position) => _onTap(position, context),
+        onTap: (position) => widget.onTapMapCallback(position),
         child: GestureDetector(
           child: CustomPaint(
             painter: _MapPainter(repaint: repaintNotifier, mapContext: mapContext),
@@ -136,96 +133,6 @@ class _MapWidgetState extends State<MapWidget> with AutomaticKeepAliveClientMixi
         ),
       ),
     );
-  }
-
-  void _onTap(TapPosition position, BuildContext context) {
-    var v = m64.Vector2(position.relative.dx, position.relative.dy);
-    v = mapContext.viewMatrix.transform2(v);
-    var p = math.Point<double>(position.relative.dx - mapContext.viewMatrix[Indicies.transX],
-        position.relative.dy - mapContext.viewMatrix[Indicies.transY]);
-    p *= 1 / mapContext.viewMatrix[Indicies.scaleX];
-    var hex = mapContext.game.gameMap.layout.pixelToHex(p);
-    //print('${v.x},${v.y} ${hex.q},${hex.r}');
-    if (_tileSelectionOverlay == null) {
-      var list = <tilelib.TileDefinition>[];
-
-      var srcTile = mapContext.game.gameMap.tileAt(hex.q, hex.r);
-      if (srcTile == null) {
-        return;
-      }
-
-      if (srcTile.manifestItem != null) {
-        for (var upgrade in srcTile.manifestItem.upgrades) {
-          if (upgrade.quantity < 1) {
-            continue;
-          }
-          var tile = mapContext.game.gameMap.tileDictionary.getTile(upgrade.id);
-          if (tile != null) {
-            list.add(tile);
-          }
-        }
-      }
-
-      if (list.length < 1) {
-        // no upgrades left for this tile
-        return;
-      }
-
-      var tileSelector = TileSelector(
-        hex: hex,
-        list: list,
-        renderer: mapContext.renderer,
-        itemExtent: 400 * mapContext.viewMatrix[Indicies.scaleX],
-        onSelected: _hexSelected,
-        onRotateLeft: _onRotateLeft,
-        onRotateRight: _onRotateRight,
-        onConfirm: _onTileConfirmed,
-      );
-      _replacementTarget = hex;
-      _showTileList(
-          context,
-          Rect.fromLTWH(position.relative.dx + 50, position.relative.dy, 400 * mapContext.viewMatrix[Indicies.scaleX],
-              3 * 400 * mapContext.viewMatrix[Indicies.scaleY]),
-          tileSelector);
-    } else {
-      _tileSelectionOverlay.remove();
-      _tileSelectionOverlay = null;
-      if (_curReplacementCandidate != null) {
-        mapContext.game.gameMap.replaceTile(_originalTile, _replacementTarget.q, _replacementTarget.r);
-        _curReplacementCandidate = null;
-        _originalTile = null;
-        repaintNotifier.notify();
-      }
-    }
-  }
-
-  void _hexSelected(tilelib.TileDefinition tileDef) {
-    _curReplacementCandidate = HexTile(tileDef, 0, 0, mapContext.game.gameMap.layout,
-        mapContext.game.gameMap.tileManifest.getTile(tileDef.tileId.toString()));
-    print('selecting ${_replacementTarget.q},${_replacementTarget.r} with tile ${tileDef.name}');
-    if (_originalTile == null) {
-      _originalTile = mapContext.game.gameMap.tileAt(_replacementTarget.q, _replacementTarget.r);
-    }
-    mapContext.game.gameMap.replaceTile(_curReplacementCandidate, _replacementTarget.q, _replacementTarget.r);
-    repaintNotifier.notify();
-  }
-
-  void _onRotateLeft() {
-    _curReplacementCandidate.rotateLeft();
-    repaintNotifier.notify();
-  }
-
-  void _onRotateRight() {
-    _curReplacementCandidate.rotateRight();
-    repaintNotifier.notify();
-  }
-
-  void _onTileConfirmed() {
-    _tileSelectionOverlay.remove();
-    _tileSelectionOverlay = null;
-    //mapContext.gameMap.replaceTile(_curReplacementCandidate, _replacementTarget.q, _replacementTarget.r);
-    _curReplacementCandidate = null;
-    repaintNotifier.notify();
   }
 
   void _onScaleStart(ScaleStartDetails details) {
@@ -291,26 +198,6 @@ class _MapWidgetState extends State<MapWidget> with AutomaticKeepAliveClientMixi
         }
       }
     }
-  }
-
-  void _showTileList(BuildContext context, Rect rect, Widget child) {
-    var overlayState = Overlay.of(context);
-    _tileSelectionOverlay = OverlayEntry(
-      builder: (context) => Positioned(
-        top: rect.top,
-        left: rect.left,
-        width: rect.width,
-        height: rect.height,
-        child: Material(
-          elevation: 4.0,
-          child: child,
-        ),
-      ),
-    );
-
-    overlayState.insert(_tileSelectionOverlay);
-
-    //overlayEntry.remove();
   }
 }
 

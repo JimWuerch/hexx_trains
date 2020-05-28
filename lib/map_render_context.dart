@@ -31,6 +31,11 @@ class MapRenderContext extends ChangeNotifier {
     notifyListeners();
   }
 
+  /// Requests the MapWidget to repaint, due to some map change.
+  void notifyMapChanged() {
+    notifyListeners();
+  }
+
   /// Reset the viewMatrix such that the map will fit.
   /// 
   /// This function doesn't notify listeners as it's likely to be called during painting.
