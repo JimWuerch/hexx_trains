@@ -1,11 +1,11 @@
 import 'dart:math' as math;
 import 'dart:ui' as ui;
-import 'package:flutter/foundation.dart';
-import 'package:vector_math/vector_math_64.dart' as m64;
 
-import 'components/game/game.dart';
-import 'components/render/indicies.dart';
-import 'components/render/tile/tile_renderer.dart';
+import 'package:flutter/foundation.dart';
+import 'package:hexxtrains/components/game/game.dart';
+import 'package:hexxtrains/components/render/indicies.dart';
+import 'package:hexxtrains/components/render/tile/tile_renderer.dart';
+import 'package:vector_math/vector_math_64.dart' as m64;
 
 class MapRenderContext extends ChangeNotifier {
   TileRenderer renderer;

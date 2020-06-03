@@ -1,5 +1,7 @@
 import 'dart:math' as math;
 
+import 'package:hexxtrains/components/change/game_state.dart';
+import 'package:hexxtrains/components/change/map_tile_state.dart';
 import 'package:hexxtrains/components/game_map/revenue.dart';
 import 'package:hexxtrains/components/hex/hex.dart';
 import 'package:hexxtrains/components/tile_library/tile_library.dart';
@@ -13,7 +15,7 @@ import 'terrain.dart';
 import 'tile_manifest.dart';
 
 export 'barrier.dart';
-export 'company_data.dart'; //TODO: move this when it's actually implemented
+export 'company_data.dart'; 
 export 'doodad.dart';
 export 'hex_tile.dart';
 export 'map_data.dart';
@@ -42,8 +44,8 @@ class GameMap {
       this.tileDictionary,
       this.tileManifest,
       this.companies,
-      this.offmapRevenue}) {
-    _mapCells = mapCells;
+      this.offmapRevenue}) : _mapCells = mapCells, _tileWatchers = [] {
+    _tileState = MapTileStateVar(gameMap: this, label: 'mapTileState', onChanged: tileStateChanged);
   }
 
   final int scale;
@@ -77,6 +79,11 @@ class GameMap {
   final List<Terrain> terrains;
   final List<CompanyData> companies;
   final List<OffmapRevenue> offmapRevenue;
+
+  MapTileStateVar _tileState;
+  MapTileStateVar get tileState => _tileState;
+
+  final List<StateVarCallback> _tileWatchers;
 
   factory GameMap.createMap(
       MapData mapData, int size, int margin, TileDictionary tileDictionary, TileManifest tileManifest) {
@@ -367,5 +374,21 @@ class GameMap {
       }
     }
     return ret;
+  }
+
+  void tileStateChanged(GameStateVar changed) {
+      for (var watcher in _tileWatchers) {
+        watcher(changed);
+      }
+  }
+
+  void addTileWatcher(StateVarCallback callback) {
+    if (!_tileWatchers.contains(callback)) {
+      _tileWatchers.add(callback);
+    }
+  }
+
+  void removeTileWatcher(StateVarCallback callback) {
+    _tileWatchers.remove(callback);    
   }
 }

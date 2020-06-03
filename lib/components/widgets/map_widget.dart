@@ -8,7 +8,7 @@ import 'package:hexxtrains/components/hex/hex.dart';
 import 'package:hexxtrains/components/render/render.dart';
 import 'package:hexxtrains/components/tile_library/tile_library.dart' as tilelib;
 import 'package:hexxtrains/game_data/game_data.dart' as game_data;
-import 'package:hexxtrains/map_render_context.dart';
+import 'package:hexxtrains/models/map_render_context.dart';
 import 'package:positioned_tap_detector/positioned_tap_detector.dart';
 import 'package:vector_math/vector_math_64.dart' as m64;
 

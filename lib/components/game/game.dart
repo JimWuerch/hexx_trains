@@ -3,6 +3,7 @@ import 'package:hexxtrains/components/game_map/tile_manifest_loader.dart';
 import 'package:hexxtrains/components/render/drawing_settings.dart';
 import 'package:hexxtrains/components/tile_library/tile_dictionary.dart';
 import 'package:hexxtrains/game_data/game_data.dart';
+import 'package:hexxtrains/components/undo/undo.dart' as undo;
 
 import 'player.dart';
 
@@ -13,13 +14,15 @@ export 'round.dart';
 class Game {
   final List<Player> players = [];
   final TileDictionary tileDictionary;
-  final GameMap gameMap;
+  GameMap _gameMap;
+  GameMap get gameMap => _gameMap;
   final DrawingSettings drawingSettings;
-
+  final undo.ChangeStack changeStack;
+  
   static Game _instance;
   static Game get instance => _instance;
 
-  Game._(this.tileDictionary, this.gameMap, this.drawingSettings);
+  Game._(this.tileDictionary, this.drawingSettings) : changeStack = undo.ChangeStack();
 
   factory Game(int gameId) {
     // we want to explicitly make sure that this object is shared, and
@@ -32,8 +35,10 @@ class Game {
 
     var tileDictionary = TileDictionary.fromJsonString(TileDictionarySource.src);
     var drawingSettings = DrawingSettings();
-    var gameMap = _loadMap(gameId, tileDictionary);
-    _instance =  Game._(tileDictionary, gameMap, drawingSettings);
+    // Must create _instance before doing anything else with the library!
+    _instance =  Game._(tileDictionary, drawingSettings);
+    // now it's safe to load the map.
+    _instance._gameMap = _loadMap(gameId, tileDictionary);
     return _instance;
   }
 
@@ -57,4 +62,5 @@ class Game {
 
     return GameMap.createMap(mapData, DrawingSettings.defaultTileSize, DrawingSettings.defaultTileMargin, tileDictionary, manifest);
   }
+
 }

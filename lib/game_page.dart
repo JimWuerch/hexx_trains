@@ -1,6 +1,6 @@
 import 'dart:math' as math;
 import 'package:flutter/material.dart';
-import 'package:hexxtrains/map_render_context.dart';
+import 'package:hexxtrains/models/map_render_context.dart';
 import 'package:positioned_tap_detector/positioned_tap_detector.dart';
 import 'package:provider/provider.dart';
 import 'package:vector_math/vector_math_64.dart' as m64;
@@ -56,6 +56,7 @@ class _GamePageState extends State<GamePage> with SingleTickerProviderStateMixin
   Widget build(BuildContext context) {
     var settings = ModalRoute.of(context).settings.arguments as Map<String, String>;
     _gameFuture = Game.createAsync(int.parse(settings['gameId']));
+    
 
     return FutureBuilder<Game>(
       future: _gameFuture,
@@ -139,7 +140,7 @@ class _GamePageState extends State<GamePage> with SingleTickerProviderStateMixin
             ),
           );
         } else if (snapshot.hasError) {
-          child = Text('Error building map');
+          child = Text('Error building map ${snapshot.error}');
         } else {
           child = Center(
             child: Column(
@@ -227,7 +228,8 @@ class _GamePageState extends State<GamePage> with SingleTickerProviderStateMixin
       _tileSelectionOverlay.remove();
       _tileSelectionOverlay = null;
       if (_curReplacementCandidate != null) {
-        mapRenderContext.game.gameMap.replaceTile(_originalTile, _replacementTarget.q, _replacementTarget.r);
+        //Game.instance.changeStack.undo();
+        Game.instance.changeStack.discard();
         _curReplacementCandidate = null;
         _originalTile = null;
         mapRenderContext.notifyMapChanged();
@@ -240,10 +242,18 @@ class _GamePageState extends State<GamePage> with SingleTickerProviderStateMixin
     _curReplacementCandidate = HexTile(tileDef, 0, 0, map.layout,
         map.tileManifest.getTile(tileDef.tileId.toString()));
     //print('selecting ${_replacementTarget.q},${_replacementTarget.r} with tile ${tileDef.name}');
-    if (_originalTile == null) {
-      _originalTile = map.tileAt(_replacementTarget.q, _replacementTarget.r);
-    }
-    map.replaceTile(_curReplacementCandidate, _replacementTarget.q, _replacementTarget.r);
+
+    Game.instance.changeStack.discard();
+    Game.instance.changeStack.group(label: 'place_tile');
+    mapRenderContext.game.gameMap.tileState.replaceTile(_replacementTarget.q, _replacementTarget.r, _curReplacementCandidate);
+
+    // if (_originalTile == null) {
+    //   _originalTile = map.tileAt(_replacementTarget.q, _replacementTarget.r);
+    // }
+    // else {
+    //   Game.instance.changeStack.undo();
+    // }
+    // Game.instance.changeStack.add(MapTileChange(q: _replacementTarget.q, r:_replacementTarget.r, tile: _curReplacementCandidate));
     mapRenderContext.notifyMapChanged();
   }
 
@@ -261,6 +271,7 @@ class _GamePageState extends State<GamePage> with SingleTickerProviderStateMixin
     _tileSelectionOverlay.remove();
     _tileSelectionOverlay = null;
     //mapContext.gameMap.replaceTile(_curReplacementCandidate, _replacementTarget.q, _replacementTarget.r);
+    Game.instance.changeStack.commit();
     _curReplacementCandidate = null;
     _originalTile = null;
     mapRenderContext.notifyMapChanged();
