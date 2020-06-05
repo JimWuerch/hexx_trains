@@ -1,7 +1,6 @@
 import 'package:hexxtrains/components/game/game.dart';
 import 'package:hexxtrains/components/game_map/game_map.dart';
-
-import 'rule.dart';
+import 'package:hexxtrains/components/rules/rule.dart';
 
 class PlaceTileRule extends RuleBase {
   static const String _name = 'placeTile';

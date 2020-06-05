@@ -21,7 +21,9 @@ class ChangeStack extends ChangeGroupBase {
 
   void _add(Change change, {String label}) {
     change.execute();
-    change.label = label;
+    if (label != null) {
+      change.label = label;
+    }
 
     _undos.addLast(change);
     _redos.clear();

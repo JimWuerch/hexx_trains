@@ -33,7 +33,7 @@ class _GamePageState extends State<GamePage> with SingleTickerProviderStateMixin
   OverlayEntry _tileSelectionOverlay;
   Hex _replacementTarget;
   HexTile _curReplacementCandidate;
-  HexTile _originalTile;
+  //HexTile _originalTile;
 
 
   Future<Game> _gameFuture;
@@ -231,7 +231,7 @@ class _GamePageState extends State<GamePage> with SingleTickerProviderStateMixin
         //Game.instance.changeStack.undo();
         Game.instance.changeStack.discard();
         _curReplacementCandidate = null;
-        _originalTile = null;
+        //_originalTile = null;
         mapRenderContext.notifyMapChanged();
       }
     }
@@ -273,7 +273,7 @@ class _GamePageState extends State<GamePage> with SingleTickerProviderStateMixin
     //mapContext.gameMap.replaceTile(_curReplacementCandidate, _replacementTarget.q, _replacementTarget.r);
     Game.instance.changeStack.commit();
     _curReplacementCandidate = null;
-    _originalTile = null;
+    //_originalTile = null;
     mapRenderContext.notifyMapChanged();
   }
 

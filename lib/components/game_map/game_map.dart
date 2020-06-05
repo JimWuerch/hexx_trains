@@ -269,6 +269,14 @@ class GameMap {
     return _mapCells[p.x][p.y];
   }
 
+  static String getLocation(int q, int r) {
+    return MapData.jsonCoordsToLocation(math.Point<int>(q, r));
+  }
+  
+  static math.Point<int> getCoords(String location) {
+    return MapData.jsonLocationToCoords(location);
+  }
+
   HexTile replaceTile(HexTile tile, int q, int r) {
     var p = _getIndicies(q, r);
     if (p == null) {
