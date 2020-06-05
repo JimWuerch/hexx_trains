@@ -31,9 +31,7 @@ class Game {
   static Game get instance => _instance;
   static Game get I => _instance;
 
-  Game._(this.gameId, this.tileDictionary, this.drawingSettings) : changeStack = undo.ChangeStack(), _moves = undo.RulesChangeStack() {
-    _createPublicCompanies();
-  }
+  Game._(this.gameId, this.tileDictionary, this.drawingSettings) : changeStack = undo.ChangeStack(), _moves = undo.RulesChangeStack();
 
   factory Game(int gameId) {
     // we want to explicitly make sure that this object is shared, and
@@ -50,6 +48,7 @@ class Game {
     _instance = Game._(gameId, tileDictionary, drawingSettings);
     // now it's safe to load the map.
     _instance._gameMap = _loadMap(gameId, tileDictionary);
+    _instance._createPublicCompanies();
     return _instance;
   }
 
