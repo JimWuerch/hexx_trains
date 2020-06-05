@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:get_it/get_it.dart';
+import 'package:hexxtrains/src/render/drawing_settings.dart';
 
 import 'home.dart';
 import 'routes.dart';
@@ -14,6 +16,7 @@ class _GameAppState extends State<GameApp> {
 
   @override
   void initState() {
+    GetIt.I.registerSingleton<DrawingSettings>(DrawingSettings());
     super.initState();
   }
 

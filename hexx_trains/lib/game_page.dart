@@ -1,18 +1,15 @@
 import 'dart:math' as math;
 import 'package:flutter/material.dart';
-import 'package:hexxtrains/models/map_render_context.dart';
+import 'package:hexxtrains/src/models/map_render_context.dart';
 import 'package:positioned_tap_detector/positioned_tap_detector.dart';
 import 'package:provider/provider.dart';
 import 'package:vector_math/vector_math_64.dart' as m64;
 
-import 'components/game/game.dart';
-import 'components/game_map/game_map.dart';
-import 'components/hex/hex.dart';
-import 'components/render/render.dart';
-import 'components/tile_library/tile_library.dart';
-import 'components/widgets/map_widget.dart';
-import 'components/widgets/stock_market_widget.dart';
-import 'components/widgets/tile_selector.dart';
+import 'package:gamelib/gamelib.dart';
+import 'src/render/render.dart';
+import 'src/widgets/map_widget.dart';
+import 'src/widgets/stock_market_widget.dart';
+import 'src/widgets/tile_selector.dart';
 
 class GamePage extends StatefulWidget {
   GamePage({Key key, this.title}) : super(key: key);

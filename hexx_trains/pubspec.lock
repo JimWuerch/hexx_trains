@@ -116,6 +116,13 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
+  gamelib:
+    dependency: "direct main"
+    description:
+      path: "../gamelib"
+      relative: true
+    source: path
+    version: "0.0.0"
   get_it:
     dependency: "direct main"
     description:
