@@ -1405,8 +1405,8 @@ class TileRenderer {
     rectPath.addRect(Rect.fromLTWH(-1 * radius, -.5 * radius, 2 * radius, radius));
 
     var roundRectPath = Path();
-    Path.combine(PathOperation.union, roundRectPath, circlePath);
-    Path.combine(PathOperation.intersect, roundRectPath, rectPath);
+    // Path.combine(PathOperation.union, roundRectPath, circlePath);
+    // Path.combine(PathOperation.intersect, roundRectPath, rectPath);
     //if (fill) {
     _canvas.drawCircle(point, radius, fillPaint);
     //}
