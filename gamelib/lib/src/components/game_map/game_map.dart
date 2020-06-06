@@ -1,5 +1,6 @@
 import 'dart:math' as math;
 
+import 'package:gamelib/gamelib.dart';
 import 'package:gamelib/src/components/change/game_state.dart';
 import 'package:gamelib/src/components/change/map_tile_state.dart';
 import 'package:gamelib/src/components/game_map/revenue.dart';
@@ -15,7 +16,7 @@ import 'terrain.dart';
 import 'tile_manifest.dart';
 
 export 'barrier.dart';
-export 'company_data.dart'; 
+export 'company_data.dart';
 export 'doodad.dart';
 export 'hex_tile.dart';
 export 'map_data.dart';
@@ -29,7 +30,8 @@ class GameMap {
   List<List<HexTile>> _mapCells;
 
   GameMap._(
-      {List<List<HexTile>> mapCells,
+      {this.game,
+      List<List<HexTile>> mapCells,
       this.mapSize,
       this.barriers,
       this.mapText,
@@ -44,9 +46,16 @@ class GameMap {
       this.tileDictionary,
       this.tileManifest,
       this.companies,
-      this.offmapRevenue}) : _mapCells = mapCells, _tileWatchers = [] {
-    _tileState = MapTileStateVar(gameMap: this, label: 'mapTileState', onChanged: tileStateChanged);
+      this.offmapRevenue})
+      : _mapCells = mapCells,
+        _tileWatchers = [] {
+    _tileState = game != null // stand-alone map testing doesn't need a game
+        ? MapTileStateVar(
+            gameMap: this, label: 'mapTileState', changeStack: game.changeStack, onChanged: tileStateChanged)
+        : null;
   }
+
+  final Game game;
 
   final int scale;
 
@@ -86,7 +95,7 @@ class GameMap {
   final List<StateVarCallback> _tileWatchers;
 
   factory GameMap.createMap(
-      MapData mapData, int size, int margin, TileDictionary tileDictionary, TileManifest tileManifest) {
+      Game game, MapData mapData, int size, int margin, TileDictionary tileDictionary, TileManifest tileManifest) {
     var scale = size;
     var rows = mapData.height;
     var cols = mapData.width;
@@ -189,14 +198,11 @@ class GameMap {
     var offmapRevenue = <OffmapRevenue>[];
     for (var offmap in mapData.offmapRevenue) {
       var qr = getQR(offmap.location.x, offmap.location.y, orientation);
-      offmapRevenue.add(OffmapRevenue(
-        amounts: offmap.amounts,
-        location: qr,
-        position: offmap.position
-      ));
+      offmapRevenue.add(OffmapRevenue(amounts: offmap.amounts, location: qr, position: offmap.position));
     }
 
     return GameMap._(
+        game: game,
         mapCells: mapCells,
         mapSize: mapSize,
         barriers: barriers,
@@ -272,7 +278,7 @@ class GameMap {
   static String getLocation(int q, int r) {
     return MapData.jsonCoordsToLocation(math.Point<int>(q, r));
   }
-  
+
   static math.Point<int> getCoords(String location) {
     return MapData.jsonLocationToCoords(location);
   }
@@ -385,9 +391,9 @@ class GameMap {
   }
 
   void tileStateChanged(GameStateVar changed) {
-      for (var watcher in _tileWatchers) {
-        watcher(changed);
-      }
+    for (var watcher in _tileWatchers) {
+      watcher(changed);
+    }
   }
 
   void addTileWatcher(StateVarCallback callback) {
@@ -397,6 +403,6 @@ class GameMap {
   }
 
   void removeTileWatcher(StateVarCallback callback) {
-    _tileWatchers.remove(callback);    
+    _tileWatchers.remove(callback);
   }
 }

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gamelib/gamelib.dart';
 import 'package:get_it/get_it.dart';
 import 'package:hexxtrains/src/render/drawing_settings.dart';
 
@@ -17,6 +18,8 @@ class _GameAppState extends State<GameApp> {
   @override
   void initState() {
     GetIt.I.registerSingleton<DrawingSettings>(DrawingSettings());
+    //TODO: stick this in a future and use FutureBuilder
+    GetIt.I.registerSingleton<TileDictionary>(TileDictionary.fromJsonString(TileDictionarySource.src));
     super.initState();
   }
 

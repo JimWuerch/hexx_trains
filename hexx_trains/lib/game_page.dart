@@ -1,11 +1,13 @@
 import 'dart:math' as math;
+
 import 'package:flutter/material.dart';
+import 'package:gamelib/gamelib.dart';
+import 'package:get_it/get_it.dart';
 import 'package:hexxtrains/src/models/map_render_context.dart';
 import 'package:positioned_tap_detector/positioned_tap_detector.dart';
 import 'package:provider/provider.dart';
 import 'package:vector_math/vector_math_64.dart' as m64;
 
-import 'package:gamelib/gamelib.dart';
 import 'src/render/render.dart';
 import 'src/widgets/map_widget.dart';
 import 'src/widgets/stock_market_widget.dart';
@@ -31,7 +33,7 @@ class _GamePageState extends State<GamePage> with SingleTickerProviderStateMixin
   Hex _replacementTarget;
   HexTile _curReplacementCandidate;
   //HexTile _originalTile;
-
+  Game _game;
 
   Future<Game> _gameFuture;
 
@@ -46,14 +48,13 @@ class _GamePageState extends State<GamePage> with SingleTickerProviderStateMixin
   void dispose() {
     super.dispose();
     _tabController.dispose();
-    Game.closeGame();
+    _game.dispose();
   }
 
   @override
   Widget build(BuildContext context) {
     var settings = ModalRoute.of(context).settings.arguments as Map<String, String>;
-    _gameFuture = Game.createAsync(int.parse(settings['gameId']));
-    
+    _gameFuture = Game.createAsync(int.parse(settings['gameId']), GetIt.I.get<TileDictionary>());
 
     return FutureBuilder<Game>(
       future: _gameFuture,
@@ -61,6 +62,7 @@ class _GamePageState extends State<GamePage> with SingleTickerProviderStateMixin
         Widget child;
         if (snapshot.hasData) {
           mapRenderContext.game = snapshot.data;
+          _game = snapshot.data;
           child = MultiProvider(
             providers: [ChangeNotifierProvider.value(value: mapRenderContext)],
             child: Scaffold(
@@ -119,7 +121,9 @@ class _GamePageState extends State<GamePage> with SingleTickerProviderStateMixin
                         child: Consumer<MapRenderContext>(
                           builder: (context, value, child) => MapWidget(
                             mapRenderContext: value,
-                            onTapMapCallback: (position) { _onMapTap(context, position); },
+                            onTapMapCallback: (position) {
+                              _onMapTap(context, position);
+                            },
                           ),
                         ),
                       ),
@@ -128,7 +132,7 @@ class _GamePageState extends State<GamePage> with SingleTickerProviderStateMixin
                   Column(
                     children: [
                       Expanded(
-                        child: StockMarketWidget(),
+                        child: StockMarketWidget(_game),
                       ),
                     ],
                   ),
@@ -163,7 +167,7 @@ class _GamePageState extends State<GamePage> with SingleTickerProviderStateMixin
   }
 
   void _closeGame(BuildContext context) {
-    Game.closeGame();
+    _game.dispose();
     Navigator.pushReplacementNamed(context, '/');
   }
 
@@ -173,7 +177,7 @@ class _GamePageState extends State<GamePage> with SingleTickerProviderStateMixin
   }
 
   void _onMapTap(BuildContext context, TapPosition position) {
-        var v = m64.Vector2(position.relative.dx, position.relative.dy);
+    var v = m64.Vector2(position.relative.dx, position.relative.dy);
     v = mapRenderContext.viewMatrix.transform2(v);
     var p = math.Point<double>(position.relative.dx - mapRenderContext.viewMatrix[Indicies.transX],
         position.relative.dy - mapRenderContext.viewMatrix[Indicies.transY]);
@@ -218,7 +222,10 @@ class _GamePageState extends State<GamePage> with SingleTickerProviderStateMixin
       _replacementTarget = hex;
       _showTileList(
           context,
-          Rect.fromLTWH(position.relative.dx + 50, position.relative.dy, 400 * mapRenderContext.viewMatrix[Indicies.scaleX],
+          Rect.fromLTWH(
+              position.relative.dx + 50,
+              position.relative.dy,
+              400 * mapRenderContext.viewMatrix[Indicies.scaleX],
               3 * 400 * mapRenderContext.viewMatrix[Indicies.scaleY]),
           tileSelector);
     } else {
@@ -226,7 +233,7 @@ class _GamePageState extends State<GamePage> with SingleTickerProviderStateMixin
       _tileSelectionOverlay = null;
       if (_curReplacementCandidate != null) {
         //Game.instance.changeStack.undo();
-        Game.instance.changeStack.discard();
+        _game.changeStack.discard();
         _curReplacementCandidate = null;
         //_originalTile = null;
         mapRenderContext.notifyMapChanged();
@@ -236,13 +243,13 @@ class _GamePageState extends State<GamePage> with SingleTickerProviderStateMixin
 
   void _hexSelected(TileDefinition tileDef) {
     var map = mapRenderContext.game.gameMap;
-    _curReplacementCandidate = HexTile(tileDef, 0, 0, map.layout,
-        map.tileManifest.getTile(tileDef.tileId.toString()));
+    _curReplacementCandidate = HexTile(tileDef, 0, 0, map.layout, map.tileManifest.getTile(tileDef.tileId.toString()));
     //print('selecting ${_replacementTarget.q},${_replacementTarget.r} with tile ${tileDef.name}');
 
-    Game.instance.changeStack.discard();
-    Game.instance.changeStack.group(label: 'place_tile');
-    mapRenderContext.game.gameMap.tileState.replaceTile(_replacementTarget.q, _replacementTarget.r, _curReplacementCandidate);
+    _game.changeStack.discard();
+    _game.changeStack.group(label: 'place_tile');
+    mapRenderContext.game.gameMap.tileState
+        .replaceTile(_replacementTarget.q, _replacementTarget.r, _curReplacementCandidate);
 
     // if (_originalTile == null) {
     //   _originalTile = map.tileAt(_replacementTarget.q, _replacementTarget.r);
@@ -268,13 +275,13 @@ class _GamePageState extends State<GamePage> with SingleTickerProviderStateMixin
     _tileSelectionOverlay.remove();
     _tileSelectionOverlay = null;
     //mapContext.gameMap.replaceTile(_curReplacementCandidate, _replacementTarget.q, _replacementTarget.r);
-    Game.instance.changeStack.commit();
+    _game.changeStack.commit();
     _curReplacementCandidate = null;
     //_originalTile = null;
     mapRenderContext.notifyMapChanged();
   }
 
-   void _showTileList(BuildContext context, Rect rect, Widget child) {
+  void _showTileList(BuildContext context, Rect rect, Widget child) {
     var overlayState = Overlay.of(context);
     _tileSelectionOverlay = OverlayEntry(
       builder: (context) => Positioned(

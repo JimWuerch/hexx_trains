@@ -9,6 +9,7 @@ environment:
 
 dependencies:
   xml: ^4.1.0
+  get_it: ^4.0.2
 
 dev_dependencies:
   pedantic: ^1.8.0

@@ -1,16 +1,19 @@
+import 'dart:async';
 import 'dart:convert';
 
-import 'components/error/error.dart';
+import 'package:gamelib/gamelib.dart';
+import 'package:gamelib/src/game/player/player_service.dart';
+
 import 'components/game_map/game_map.dart';
 import 'components/game_map/tile_manifest_loader.dart';
 import 'components/stock_market/stock_market_data.dart';
 import 'components/stock_market/stock_market_loader.dart';
 import 'components/tile_library/tile_dictionary.dart';
 import 'components/undo/undo.dart' as undo;
-import 'game/player.dart';
 import 'game/public_company.dart';
 import 'game_data/game_data.dart';
 
+export 'game/game_service.dart';
 export 'game/phase.dart';
 export 'game/player.dart';
 export 'game/public_company.dart';
@@ -21,25 +24,40 @@ class Game {
   static const int _mapMargin = 50;
 
   final int gameId;
-  final List<Player> players = [];
+  //final List<Player> players = [];
+  PlayerService _playerService;
+  PlayerService get playerService => _playerService;
   final TileDictionary tileDictionary;
   GameMap _gameMap;
   GameMap get gameMap => _gameMap;
   final undo.ChangeStack changeStack;
   final List<PublicCompany> publicCompanies = [];
-  undo.ActionsChangeStack _moves;
+  //undo.ActionsChangeStack _moves;
   StockMarketData _marketData;
   StockMarketData get marketData => _marketData;
+  GameService _gameService;
+  GameService get gameService => _gameService;
 
-  static Game _instance;
-  static Game get instance => _instance;
-  static Game get I => _instance;
+  final _gameEventStreamController = StreamController<GameEvent>.broadcast();
+  Stream<GameEvent> get gameEvents => _gameEventStreamController.stream.asBroadcastStream();
+  StreamSubscription<GameEvent> serverEvents;
 
-  Game._(this.gameId, this.tileDictionary)
-      : changeStack = undo.ChangeStack(),
-        _moves = undo.ActionsChangeStack();
+  // static Game _instance;
+  // static Game get instance => _instance;
+  // static Game get I => _instance;
 
-  factory Game(int gameId) {
+  Game(this.gameId, this.tileDictionary) : changeStack = undo.ChangeStack()
+  //_moves = undo.ActionsChangeStack(),
+  {
+    _gameService = GameService(this);
+    _playerService = PlayerService.createService(this);
+    _gameMap = _loadMap(gameId, tileDictionary);
+    _marketData = _loadStockMarketData(gameId);
+    _createPublicCompanies();
+  }
+
+/*
+  factory Game.xx(int gameId) {
     // we want to explicitly make sure that this object is shared, and
     // needs to be deterministically closed via closeGame. Many
     // builders access the object, and we don't want anyone trying to
@@ -58,30 +76,24 @@ class Game {
     _instance._createPublicCompanies();
     return _instance;
   }
+*/
 
-  static Future<Game> createAsync(int gameId) async {
-    return Game(gameId);
+  static Future<Game> createAsync(int gameId, TileDictionary tileDictionary) async {
+    return Game(gameId, tileDictionary);
   }
 
-  static void closeGame() {
-    _instance = null;
+  void dispose() {
+    _gameEventStreamController.close();
+    if (serverEvents != null) {
+      serverEvents.cancel();
+    }
   }
 
-  Player addPlayer(String name) {
-    var player = LocalPlayer(name);
-    players.add(player);
-    return player;
-  }
-
-  Player getPlayer(String name) {
-    return players.firstWhere((element) => element.name == name);
-  }
-
-  static GameMap _loadMap(int gameId, TileDictionary tileDictionary) {
+  GameMap _loadMap(int gameId, TileDictionary tileDictionary) {
     var manifest = TileManifestLoader.load(GameList.games[0].tileManifest);
     var mapData = MapData.fromJsonString(GameList.games[gameId].map);
 
-    return GameMap.createMap(mapData, _tileSize, _mapMargin, tileDictionary, manifest);
+    return GameMap.createMap(this, mapData, _tileSize, _mapMargin, tileDictionary, manifest);
   }
 
   static StockMarketData _loadStockMarketData(int gameId) {
@@ -101,32 +113,37 @@ class Game {
   Map<String, dynamic> createSave() {
     var ret = <String, dynamic>{
       'gameId': gameId,
-      'players': players.map<String>((e) => e.name).toList(),
-      'moves': _moves.toJson(),
+      //'players': players.map<String>((e) => e.name).toList(),
+      //'moves': _moves.toJson(),
     };
+    ret.addAll(_playerService.toJson());
 
     return ret;
   }
 
-  static void restoreFromSave(String jsonString) {
+  static void restoreFromSave(String jsonString, TileDictionary tileDictionary) {
     var json = jsonDecode(jsonString) as Map<String, dynamic>;
-    if (Game.I != null) {
-      throw InvalidOperationError('Close current game before trying to restore.');
-    }
-
     var gameId = json['gameId'] as int;
 
     // create the game and load the map, and all the static data
-    Game(gameId);
+    var game = Game(gameId, tileDictionary);
 
     // load the players
-    var players = json['players'] as List<String>;
-    for (var player in players) {
-      Game.I.addPlayer(player);
-    }
+    // var players = json['players'] as List<String>;
+    // for (var player in players) {
+    //   game.addPlayer(player);
+    // }
+    game._playerService.loadFromJson(json);
 
     // now replay all the moves
-    var moves = undo.ActionsChangeStack.fromJson(json['moves'] as Map<String, dynamic>);
-    Game.I._moves = moves;
+    // var moves = undo.ActionsChangeStack.fromJson(json['moves'] as Map<String, dynamic>);
+    // Game.I._moves = moves;
+  }
+
+  /// Tell the game engine where to listen to events from the client
+  void subscribeToEvents(Stream<GameEvent> stream) {
+    serverEvents = stream.listen((event) {
+      print('got event ${event.eventType.toString()}');
+    });
   }
 }

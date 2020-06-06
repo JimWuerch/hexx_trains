@@ -8,8 +8,8 @@ library undo;
 import 'dart:async';
 import 'dart:collection';
 
-import 'package:gamelib/src/components/error/error.dart';
-import 'package:gamelib/src/components/action/game_action.dart';
+// import 'package:gamelib/src/components/error/error.dart';
+// import 'package:gamelib/src/components/action/game_action.dart';
 
 part 'src/undo_stack.dart';
 part 'src/changes.dart';

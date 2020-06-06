@@ -14,7 +14,7 @@ void main() {
     print(tile.id);
   }
 
-  var map = GameMap.createMap(mapData, 200, 50, tileDictionary, null);
+  var map = GameMap.createMap(null, mapData, 200, 50, tileDictionary, null);
   for (var row in map.map) {
     for (var tile in row) {
       if (tile != null) {

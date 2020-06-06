@@ -1,4 +1,3 @@
-import 'package:gamelib/src/game.dart';
 import 'package:gamelib/src/components/undo/undo.dart' as undo;
 
 export 'map_tile_state.dart';
@@ -18,7 +17,11 @@ abstract class GameStateBase implements GameState {
   @override
   StateVarCallback onChanged;
 
-  GameStateBase(this._label, undo.ChangeStack changeStack, this.onChanged) : _changeStack = changeStack ?? Game.I.changeStack;
+  GameStateBase(this._label, undo.ChangeStack changeStack, this.onChanged) : _changeStack = changeStack {
+    if (_changeStack == null) {
+      throw ArgumentError('changeStack cannot be null');
+    }
+  }
 
   @override
   undo.ChangeStack get changeStack => _changeStack;

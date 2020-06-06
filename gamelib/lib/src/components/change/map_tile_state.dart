@@ -15,12 +15,12 @@ class MapTileChange extends Change {
 
   @override
   void execute() {
-    Game.instance.gameMap.replaceTile(tile, q, r);
+    gameMap.replaceTile(tile, q, r);
   }
 
   @override
   void undo() {
-    Game.instance.gameMap.replaceTile(originalTile, q, r);
+    gameMap.replaceTile(originalTile, q, r);
   }
 }
 

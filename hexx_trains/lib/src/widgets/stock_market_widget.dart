@@ -17,6 +17,10 @@ class _DrawContext {
 }
 
 class StockMarketWidget extends StatefulWidget {
+  final Game game;
+
+  StockMarketWidget(this.game);
+
   @override
   _StockMarketWidgetState createState() => _StockMarketWidgetState();
 }
@@ -28,10 +32,14 @@ class _StockMarketWidgetState extends State<StockMarketWidget> with AutomaticKee
   m64.Matrix3 startMatrix;
   _DrawContext _drawContext;
 
-  _StockMarketWidgetState() {
+  _StockMarketWidgetState();
+
+  @override
+  void initState() {
+    super.initState();
     _drawContext = _DrawContext();
 
-    _drawContext.marketData = Game.I.marketData;
+    _drawContext.marketData = widget.game.marketData;
 
     _drawContext.drawingSettings = DrawingSettings();
     _drawContext.renderer = StockMarketRenderer(_drawContext.marketData, _drawContext.drawingSettings);

@@ -1,11 +1,17 @@
 import 'package:gamelib/src/game.dart';
 
-class LocalPlayer implements Player {
-
-  final String _name;
+class LocalPlayer extends Player {
 
   @override
-  String get name => _name;
+  PlayerType get playerType => PlayerType.local;
 
-  LocalPlayer(String name) : _name = name;
+  LocalPlayer(String name) : super(name);
+
+  @override
+  Map<String, dynamic> toJson() {
+    // we don't add anything not in the base class
+    return super.toJson();
+  }
+
+  LocalPlayer.fromJson(Map<String, dynamic> json) : super.fromJson(json);
 }
