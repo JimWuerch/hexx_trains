@@ -9,8 +9,8 @@ class ChangeStack extends ChangeGroupBase {
 
   int max;
 
-  bool get canRedo => _redos.isNotEmpty;
-  bool get canUndo => _undos.isNotEmpty;
+  bool get canRedo => _redos.isNotEmpty && !isGrouping;
+  bool get canUndo => _undos.isNotEmpty && !isGrouping;
 
   String get redoLabel => canRedo ? _redos.first.label : '';
   String get undoLabel => canUndo ? _undos.last.label : '';
@@ -20,10 +20,13 @@ class ChangeStack extends ChangeGroupBase {
   }
 
   @override
-  void _add(Change change, {String label}) {
-    change.execute();
+  void _add(Change change, {String label, bool doExecute = true}) {
     if (label != null) {
       change.label = label;
+    }
+
+    if (doExecute) {
+      change.execute();
     }
 
     _undos.addLast(change);
@@ -36,8 +39,17 @@ class ChangeStack extends ChangeGroupBase {
     _streamController.add(this);
   }
 
+  // @override
+  // void _add(Change change, {String label}) {
+  //   _doAdd(change, true);
+  // }
+
   @override
   void clear() {
+    if (isGrouping) {
+      _openGroup.clear();
+      _openGroup = null;
+    }
     _undos.clear();
     _redos.clear();
     _streamController.add(null);

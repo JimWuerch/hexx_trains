@@ -30,7 +30,7 @@ abstract class ChangeGroupBase {
     }
   }
 
-  void _add(Change change);
+  void _add(Change change, {String label, bool doExecute});
 
   void clear();
 
@@ -40,7 +40,7 @@ abstract class ChangeGroupBase {
 
   void commit() {
     if (isGrouping) {
-      _add(_openGroup);
+      _add(_openGroup, label: _openGroup.label, doExecute: false);
       _openGroup = null;
     }
   }
@@ -97,9 +97,11 @@ class _ChangeGroup extends ChangeGroupBase implements Change {
   final List<Change> _changes = [];
 
   @override
-  void _add(Change change) {
+  void _add(Change change, {String label, bool doExecute = true}) {
     _changes.add(change);
-    change.execute();
+    if (doExecute) {
+      change.execute();
+    }
   }
 
   @override

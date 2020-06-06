@@ -27,7 +27,7 @@ class Game {
   GameMap get gameMap => _gameMap;
   final undo.ChangeStack changeStack;
   final List<PublicCompany> publicCompanies = [];
-  undo.RulesChangeStack _moves;
+  undo.ActionsChangeStack _moves;
   StockMarketData _marketData;
   StockMarketData get marketData => _marketData;
 
@@ -37,7 +37,7 @@ class Game {
 
   Game._(this.gameId, this.tileDictionary)
       : changeStack = undo.ChangeStack(),
-        _moves = undo.RulesChangeStack();
+        _moves = undo.ActionsChangeStack();
 
   factory Game(int gameId) {
     // we want to explicitly make sure that this object is shared, and
@@ -126,7 +126,7 @@ class Game {
     }
 
     // now replay all the moves
-    var moves = undo.RulesChangeStack.fromJson(json['moves'] as Map<String, dynamic>);
+    var moves = undo.ActionsChangeStack.fromJson(json['moves'] as Map<String, dynamic>);
     Game.I._moves = moves;
   }
 }

@@ -27,8 +27,8 @@ class MapTileChange extends Change {
 class MapTileStateVar extends GameStateBase {
   final GameMap gameMap;
 
-  MapTileStateVar({String label, this.gameMap, StateVarCallback onChanged})
-      : super(label, Game.instance.changeStack, onChanged) {
+  MapTileStateVar({String label, this.gameMap, StateVarCallback onChanged, ChangeStack changeStack})
+      : super(label, changeStack, onChanged) {
     checkNotNull(gameMap, 'gameMap');
   }
 

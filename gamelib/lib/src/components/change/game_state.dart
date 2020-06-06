@@ -18,7 +18,7 @@ abstract class GameStateBase implements GameState {
   @override
   StateVarCallback onChanged;
 
-  GameStateBase(this._label, this._changeStack, this.onChanged);
+  GameStateBase(this._label, undo.ChangeStack changeStack, this.onChanged) : _changeStack = changeStack ?? Game.I.changeStack;
 
   @override
   undo.ChangeStack get changeStack => _changeStack;
@@ -30,9 +30,9 @@ abstract class GameStateBase implements GameState {
 class GameStateVar<T> extends GameStateBase {
   T _value;
 
-  GameStateVar(String name, T startValue, [StateVarCallback onChanged])
+  GameStateVar(String name, T startValue, {StateVarCallback onChanged, undo.ChangeStack changeStack})
       : _value = startValue,
-        super(name, Game.instance.changeStack, onChanged);
+        super(name, changeStack, onChanged);
 
   T get value => _value;
   set value(T newValue) {

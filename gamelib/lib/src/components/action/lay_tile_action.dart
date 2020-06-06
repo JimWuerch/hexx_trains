@@ -1,15 +1,13 @@
-import 'package:gamelib/src/game.dart';
-import 'package:gamelib/src/components/game_map/game_map.dart';
-import 'package:gamelib/src/components/rules/rule.dart';
+import 'package:gamelib/gamelib.dart';
 
-class PlaceTileRule extends RuleBase {
+class LayTileAction extends GameActionBase {
   static const String _name = 'placeTile';
   final PublicCompany company;
   final int q;
   final int r;
   final HexTile selected;
 
-  PlaceTileRule(Player owner, this.company, this.q, this.r, this.selected) : super(owner, _name) {
+  LayTileAction(Player owner, this.company, this.q, this.r, this.selected) : super(owner, _name) {
     label = 'PlaceTileRule($q,$r)';
   }
 
@@ -35,13 +33,13 @@ class PlaceTileRule extends RuleBase {
     return ret;
   }
 
-  PlaceTileRule._jsonHelper(this.company, this.q, this.r, this.selected, Map<String, dynamic> json)
+  LayTileAction._jsonHelper(this.company, this.q, this.r, this.selected, Map<String, dynamic> json)
       : super.fromJson(json);
 
-  factory PlaceTileRule.fromJson(Map<String, dynamic> json) {
+  factory LayTileAction.fromJson(Map<String, dynamic> json) {
     var company = Game.instance.getPublicCompany(json['company'] as String);
     var coords = GameMap.getCoords(json['location'] as String);
     var selected = HexTile.fromJson(json['selected'] as Map<String, dynamic>);
-    return PlaceTileRule._jsonHelper(company, coords.x, coords.y, selected, json);
+    return LayTileAction._jsonHelper(company, coords.x, coords.y, selected, json);
   }
 }
