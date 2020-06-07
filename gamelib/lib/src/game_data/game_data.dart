@@ -1,4 +1,5 @@
 import 'game_1830.dart';
+import 'game_18chesapeake.dart';
 
 export 'tile_dictionary_source.dart';
 
@@ -17,6 +18,7 @@ abstract class GameData {
 //ignore: avoid_classes_with_only_static_members
 class GameList {
    static List<GameData> games = [
+     Game18Chesapeake(),
      Game1830(),
    ];
 }

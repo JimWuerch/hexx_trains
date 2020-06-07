@@ -6,6 +6,7 @@ import 'package:get_it/get_it.dart';
 import 'package:hexxtrains/src/models/map_render_context.dart';
 import 'package:positioned_tap_detector/positioned_tap_detector.dart';
 import 'package:provider/provider.dart';
+import 'package:server/server.dart';
 import 'package:vector_math/vector_math_64.dart' as m64;
 
 import 'src/render/render.dart';
@@ -36,6 +37,7 @@ class _GamePageState extends State<GamePage> with SingleTickerProviderStateMixin
   Game _game;
 
   Future<Game> _gameFuture;
+  GameServer _server;
 
   @override
   void initState() {
@@ -55,6 +57,7 @@ class _GamePageState extends State<GamePage> with SingleTickerProviderStateMixin
   Widget build(BuildContext context) {
     var settings = ModalRoute.of(context).settings.arguments as Map<String, String>;
     _gameFuture = Game.createAsync(int.parse(settings['gameId']), GetIt.I.get<TileDictionary>());
+    _server = GameServer(int.parse(settings['gameId']));
 
     return FutureBuilder<Game>(
       future: _gameFuture,

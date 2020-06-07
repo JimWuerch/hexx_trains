@@ -258,6 +258,7 @@ class GameMap {
       var qOffset = -((col / 2.0).floor());
       q = col;
       r = row - ((col + qOffset * (col & 1)) ~/ 2);
+      r = row - col ~/ 2;
       return math.Point<int>(q, r);
     } else {
       q = col - row ~/ 2;

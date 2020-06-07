@@ -1,0 +1,675 @@
+{
+    "orientation": "flat",
+    "aRowOdd": true,
+    "lettersVertical": false,
+    "width": 12,
+    "height": 8,
+    "mapTiles": [
+        {
+            "location": "E1",
+            "id": "-8",
+            "rotation": 2
+        },
+        {
+            "location": "G1",
+            "id": "-28",
+            "rotation": 5
+        },
+        {
+            "location": "K1",
+            "id": "-9700"
+        },
+        {
+            "location": "B2",
+            "id": "-901",
+            "rotation": 1,
+            "arrows": "2"
+        },
+        {
+            "location": "D2",
+            "id": "-10",
+            "cost": 80,
+            "costPosition": "tp3CornerD"
+        },
+        {
+            "location": "F2",
+            "id": "-10"
+        },
+        {
+            "location": "H2",
+            "id": "0"
+        },
+        {
+            "location": "J2",
+            "id": "-10"
+        },
+        {
+            "location": "L2",
+            "id": "-902",
+            "rotation": 2,
+            "arrows": "34"
+        },
+        {
+            "location": "A3",
+            "id": "-911"
+        },
+        {
+            "location": "C3",
+            "id": "0"
+        },
+        {
+            "location": "E3",
+            "id": "-10"
+        },
+        {
+            "location": "G3",
+            "id": "-1",
+            "cost": 40,
+            "costPosition": "tp3SideD"
+        },
+        {
+            "location": "I3",
+            "id": "0"
+        },
+        {
+            "location": "K3",
+            "id": "-2",
+            "rotation": 1
+        },
+        {
+            "location": "B4",
+            "id": "-2",
+            "rotation": 2
+        },
+        {
+            "location": "D4",
+            "id": "0",
+            "cost": 80,
+            "costPosition": "tp3CornerD"
+        },
+        {
+            "location": "F4",
+            "id": "0"
+        },
+        {
+            "location": "H4",
+            "id": "-10",
+            "cost": 40,
+            "costPosition": "tp3CornerD"
+        },
+        {
+            "location": "J4",
+            "id": "-9702"
+        },
+        {
+            "location": "L4",
+            "id": "0"
+        },
+        {
+            "location": "C5",
+            "id": "-10"
+        },
+        {
+            "location": "E5",
+            "id": "0",
+            "cost": 80,
+            "costPosition": "tp3CornerD"
+        },
+        {
+            "location": "G5",
+            "id": "0"
+        },
+        {
+            "location": "I5",
+            "id": "-1",
+            "rotation": 5,
+            "cost": 40,
+            "costPosition": "tp3SideD"
+        },
+        {
+            "location": "K5",
+            "id": "-2",
+            "rotation": 3
+        },
+        {
+            "location": "B6",
+            "id": "0"
+        },
+        {
+            "location": "D6",
+            "id": "0",
+            "cost": 80,
+            "costPosition": "tp3CornerD"
+        },
+        {
+            "location": "F6",
+            "id": "0"
+        },
+        {
+            "location": "H6",
+            "id": "-9703",
+            "cost": 40,
+            "costPosition": "tp3CornerB"
+        },
+        {
+            "location": "J6",
+            "id": "-10",
+            "rotation": 3,
+            "cost": 40,
+            "costPosition": "tp3CornerD"
+        },
+        {
+            "location": "A7",
+            "id": "-902",
+            "arrows": "23"
+        },
+        {
+            "location": "C7",
+            "id": "0"
+        },
+        {
+            "location": "E7",
+            "id": "0"
+        },
+        {
+            "location": "G7",
+            "id": "0"
+        },
+        {
+            "location": "I7",
+            "id": "0"
+        },
+        {
+            "location": "K7",
+            "id": "-7",
+            "rotation": 4
+        },
+        {
+            "location": "B8",
+            "id": "0"
+        },
+        {
+            "location": "D8",
+            "id": "-10",
+            "cost": 80,
+            "costPosition": "tp3CornerD"
+        },
+        {
+            "location": "F8",
+            "id": "-9712"
+        },
+        {
+            "location": "J8",
+            "id": "0"
+        },
+        {
+            "location": "C9",
+            "id": "0"
+        },
+        {
+            "location": "E9",
+            "id": "0"
+        },
+        {
+            "location": "G9",
+            "id": "0",
+            "cost": 40,
+            "costPosition": "tp3CornerD"
+        },
+        {
+            "location": "I9",
+            "id": "-9701"
+        },
+        {
+            "location": "B10",
+            "id": "0"
+        },
+        {
+            "location": "D10",
+            "id": "0",
+            "cost": 80,
+            "costPosition": "tp3CornerD"
+        },
+        {
+            "location": "F10",
+            "id": "0",
+            "cost": 40,
+            "costPosition": "tp3CornerD"
+        },
+        {
+            "location": "J10",
+            "id": "0"
+        },
+        {
+            "location": "C11",
+            "id": "0"
+        },
+        {
+            "location": "E11",
+            "id": "-1",
+            "rotation": 3
+        },
+        {
+            "location": "G11",
+            "id": "0",
+            "cost": 40,
+            "costPosition": "tp3CornerD"
+        },
+        {
+            "location": "B12",
+            "id": "0",
+            "cost": 80,
+            "costPosition": "tp3CornerD"
+        },
+        {
+            "location": "D12",
+            "id": "-10",
+            "rotation": 3
+        },
+        {
+            "location": "F12",
+            "id": "0"
+        },
+        {
+            "location": "H12",
+            "id": "0",
+            "cost": 40,
+            "costPosition": "tp3CornerD"
+        },
+        {
+            "location": "A13",
+            "id": "-901",
+            "rotation": 5,
+            "arrows": "2"
+        },
+        {
+            "location": "C13",
+            "id": "-10",
+            "cost": 80,
+            "costPosition": "tp3CornerD"
+        },
+        {
+            "location": "E13",
+            "id": "0"
+        },
+        {
+            "location": "G13",
+            "id": "-10"
+        },
+        {
+            "location": "B14",
+            "id": "-902",
+            "rotation": 5,
+            "arrows": "12"
+        },
+        {
+            "location": "F14",
+            "id": "-7",
+            "rotation": 5
+        },
+        {
+            "location": "H14",
+            "id": "-901",
+            "rotation": 3,
+            "arrows": "6"
+        }
+    ],
+    "barriers": [],
+    "mapText": [
+        {
+            "location": "A3",
+            "text": "     Pittsburgh",
+            "position": "tp2SideA",
+            "size": 1.0
+        },
+        {
+            "location": "D2",
+            "text": "Berlin",
+            "position": "tpCenter",
+            "size": 1.0
+        },
+        {
+            "location": "F2",
+            "text": "Harrisburg",
+            "position": "tpCenter",
+            "size": 1.0
+        },
+        {
+            "location": "J2",
+            "text": "Allentown",
+            "position": "tpCenter",
+            "size": 1.0
+        },
+        {
+            "location": "L2",
+            "text": "New York",
+            "position": "tp2CornerA",
+            "size": 1.0
+        },
+        {
+            "location": "K1",
+            "text": "Eaton",
+            "position": "tp2CornerD",
+            "size": 1.0
+        },
+        {
+            "location": "E3",
+            "text": "Hagerstown",
+            "position": "tpCenter",
+            "size": 1.0
+        },
+        {
+            "location": "G3",
+            "text": "Columbia",
+            "position": "tp1SideA",
+            "size": 1.0
+        },
+        {
+            "location": "K3",
+            "text": "Trenton",
+            "position": "tp2CornerF",
+            "size": 1.0
+        },
+        {
+            "location": "K3",
+            "text": "Amboy",
+            "position": "tp2CornerD",
+            "size": 1.0
+        },
+        {
+            "location": "B4",
+            "text": "Charleroi",
+            "position": "tp2CornerA",
+            "size": 1.0
+        },
+        {
+            "location": "B4",
+            "text": "Conellsville",
+            "position": "tp1SideD",
+            "size": 1.0
+        },
+        {
+            "location": "C5",
+            "text": "Green Spring",
+            "position": "tpCenter",
+            "size": 1.0
+        },
+        {
+            "location": "C13",
+            "text": "Lynchburg",
+            "position": "tpCenter",
+            "size": 1.0
+        },
+        {
+            "location": "D8",
+            "text": "Leesburg",
+            "position": "tpCenter",
+            "size": 1.0
+        },
+        {
+            "location": "D12",
+            "text": "Charlottesville",
+            "position": "tpCenter",
+            "size": 1.0
+        },
+        {
+            "location": "E11",
+            "text": "Fredericksville",
+            "position": "tp1SideD",
+            "size": 1.0
+        },
+        {
+            "location": "F8",
+            "text": "Washington DC",
+            "position": "tp2SideA",
+            "size": 1.0
+        },
+        {
+            "location": "G13",
+            "text": "Richmond",
+            "position": "tpCenter",
+            "size": 1.0
+        },
+        {
+            "location": "H4",
+            "text": "Strasburg",
+            "position": "tpCenter",
+            "size": 1.0
+        },
+        {
+            "location": "H6",
+            "text": "Baltimore",
+            "position": "tp2SideF",
+            "size": 1.0
+        },
+        {
+            "location": "H14",
+            "text": "Norfolk",
+            "position": "tp2SideD",
+            "size": 1.0
+        },
+        {
+            "location": "I5",
+            "text": "Wilmington",
+            "position": "tp1CornerF",
+            "size": 1.0
+        },
+        {
+            "location": "I9",
+            "text": "Delmarva",
+            "position": "tp2CornerF",
+            "size": 1.0
+        },
+        {
+            "location": "I9",
+            "text": "Peninsula",
+            "position": "tp2SideE",
+            "size": 1.0
+        },
+        {
+            "location": "J4",
+            "text": "Philadelphia",
+            "position": "tpCenter",
+            "size": 1.0
+        },
+        {
+            "location": "J6",
+            "text": "Camden",
+            "position": "tpCenter",
+            "size": 1.0
+        },
+        {
+            "location": "K5",
+            "text": "Princeton",
+            "position": "tp1SideA",
+            "size": 1.0
+        },
+        {
+            "location": "K5",
+            "text": "Burlington",
+            "position": "tp2SideD",
+            "size": 1.0
+        }
+    ],
+    "terrains": [],
+    "doodads": [],
+    "offmapRevenue": [
+        {
+            "location": "A3",
+            "position": "tp3SideF",
+            "amounts": [
+                {
+                    "phase": 0,
+                    "amount": 40
+                },
+                {
+                    "phase": 1,
+                    "amount": 50
+                },
+                {
+                    "phase": 2,
+                    "amount": 60
+                },
+                {
+                    "phase": 3,
+                    "amount": 80
+                }
+            ]
+        },
+        {
+            "location": "L2",
+            "position": "tp3CornerB",
+            "amounts": [
+                {
+                    "phase": 0,
+                    "amount": 40
+                },
+                {
+                    "phase": 1,
+                    "amount": 60
+                },
+                {
+                    "phase": 2,
+                    "amount": 80
+                },
+                {
+                    "phase": 3,
+                    "amount": 100
+                }
+            ]
+        },
+        {
+            "location": "A7",
+            "position": "tp3CornerA",
+            "amounts": [
+                {
+                    "phase": 0,
+                    "amount": 40
+                },
+                {
+                    "phase": 1,
+                    "amount": 60
+                },
+                {
+                    "phase": 2,
+                    "amount": 80
+                },
+                {
+                    "phase": 3,
+                    "amount": 100
+                }
+            ]
+        },
+        {
+            "location": "B14",
+            "position": "tp3CornerA",
+            "amounts": [
+                {
+                    "phase": 0,
+                    "amount": 40
+                },
+                {
+                    "phase": 1,
+                    "amount": 50
+                },
+                {
+                    "phase": 2,
+                    "amount": 60
+                },
+                {
+                    "phase": 3,
+                    "amount": 80
+                }
+            ]
+        },
+        {
+            "location": "H14",
+            "position": "tp3CornerB",
+            "amounts": [
+                {
+                    "phase": 0,
+                    "amount": 30
+                },
+                {
+                    "phase": 1,
+                    "amount": 40
+                },
+                {
+                    "phase": 2,
+                    "amount": 50
+                },
+                {
+                    "phase": 3,
+                    "amount": 60
+                }
+            ]
+        }
+    ],
+    "companies": [
+        {
+            "id": "B&O",
+            "name": "Baltimore & Ohio",
+            "color": 255,
+            "background": 0,
+            "lightOnDark": true,
+            "home": "H6",
+            "junction": 1
+        },
+        {
+            "id": "PRR",
+            "name": "Pensylvania",
+            "color": 3046706,
+            "background": 0,
+            "lightOnDark": true,
+            "home": "F2"
+        },
+        {
+            "id": "C&A",
+            "name": "Camden & Amboy",
+            "color": 16750592,
+            "background": 0,
+            "lightOnDark": true,
+            "home": "J6"
+        },
+        {
+            "id": "C&O",
+            "name": "Chesapeake & Ohio",
+            "color": 9489145,
+            "background": 0,
+            "lightOnDark": true,
+            "home": "G13"
+        },
+        {
+            "id": "LV",
+            "name": "Lehigh Valley",
+            "color": 16772696,
+            "background": 0,
+            "lightOnDark": true,
+            "home": "J2"
+        },
+        {
+            "id": "N&W",
+            "name": "Norfolk & Western",
+            "color": 8916559,
+            "background": 0,
+            "lightOnDark": true,
+            "home": "C13"
+        },
+        {
+            "id": "P&LE",
+            "name": "Pittsburgh & Lake Erie",
+            "color": 0,
+            "background": 0,
+            "lightOnDark": true,
+            "home": "A3"
+        },
+        {
+            "id": "SRR",
+            "name": "Strasburg",
+            "color": 12000284,
+            "background": 0,
+            "lightOnDark": true,
+            "home": "H4"
+        }
+    ]
+}

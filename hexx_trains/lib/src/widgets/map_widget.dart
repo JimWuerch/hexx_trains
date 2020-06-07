@@ -206,7 +206,6 @@ class _MapWidgetState extends State<MapWidget> with AutomaticKeepAliveClientMixi
 
 }
 
-
 class _MapPainter extends CustomPainter {
   MapRenderContext _mapContext;
   DrawingSettings _drawingSettings;
@@ -238,17 +237,22 @@ class _MapPainter extends CustomPainter {
           canvas.save();
           // Pictures disabled
           //if (tile.picture == null) {
-            //_mapContext.renderer.debug = true;
-            var deg = 60.0 * tile.rotation;
-            canvas.rotateDegreesOnPoint(deg, tile.center);
-            canvas.translate(tile.center.x, tile.center.y);
-            _mapContext.renderer.renderTile(canvas, tile.tileDef, tile.rotation, tile.cost, tile.costPosition);
+          //_mapContext.renderer.debug = true;
+          var deg = 60.0 * tile.rotation;
+          canvas.rotateDegreesOnPoint(deg, tile.center);
+          canvas.translate(tile.center.x, tile.center.y);
+          _mapContext.renderer.renderTile(canvas, tile.tileDef, tile.rotation, tile.cost, tile.costPosition);
           // } else {
           //   canvas.translate(tile.center.x, tile.center.y);
           //   canvas.drawPicture(tile.picture);
           // }
-          // tileRender.TileRenderer.drawMapText(canvas, tile, '${tile.q}:${tile.r}',
-          //     tilelib.Position(index: 0, level: 0, location: tilelib.Locations.Center), 2, _mapContext.drawingSettings);
+          // TileRenderer.drawMapText(
+          //     canvas: canvas,
+          //     text: '${tile.q}:${tile.r}',
+          //     position: Position(index: 0, level: 0, location: Locations.center),
+          //     sizeMultiplier: 1.0,
+          //     layout: _mapContext.game.gameMap.layout,
+          //     drawingSettings: _drawingSettings);
           canvas.restore();
         }
       }

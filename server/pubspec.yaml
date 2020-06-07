@@ -8,7 +8,9 @@ environment:
   sdk: '>=2.7.0 <3.0.0'
 
 dependencies:
-#  path: ^1.6.0
+  gamelib:
+    path: ..\gamelib
+  get_it: ^4.0.2
 
 dev_dependencies:
   pedantic: ^1.8.0

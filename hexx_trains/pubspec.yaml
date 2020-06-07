@@ -36,6 +36,8 @@ dependencies:
   get_it: ^4.0.2
   gamelib:
     path: ..\gamelib
+  server:
+    path: ..\server
   font_awesome_flutter: ^8.8.1
   
 dev_dependencies:

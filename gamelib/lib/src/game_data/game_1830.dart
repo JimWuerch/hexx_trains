@@ -803,21 +803,6 @@ class Game1830 extends GameData {
   }
  ],
  "doodads": [],
- "offmapRevenue": [
-  {
-   "location": "A9",
-   "amounts": [
-    {
-     "phase": 0,
-     "amount": 30
-    },
-    {
-     "phase": 5,
-     "amount": 50
-    }
-   ]
-  }
- ],
  "companies": [
   {
     "id": "B&O",
