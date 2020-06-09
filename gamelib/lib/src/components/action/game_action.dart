@@ -1,7 +1,11 @@
+import 'package:gamelib/src/components/action/game_state_action.dart';
 import 'package:gamelib/src/components/error/error.dart';
 import 'package:gamelib/src/game.dart';
 
 import 'lay_tile_action.dart';
+
+export 'game_state_action.dart';
+export 'lay_tile_action.dart';
 
 abstract class GameAction {
   String get name;
@@ -13,7 +17,7 @@ abstract class GameAction {
 
 abstract class GameActionBase implements GameAction {
   final Player _owner;
-  final String _name;
+  //final String _name;
 
   @override
   bool isDone = false;
@@ -22,11 +26,10 @@ abstract class GameActionBase implements GameAction {
   Player get owner => _owner;
 
   @override
-  String get name => _name;
+  String get name;// => _name;
 
-  GameActionBase(Player owner, String name)
-      : _owner = owner,
-        _name = name;
+  GameActionBase(Player owner)
+      : _owner = owner;
 
   @override
   Map<String, dynamic> toJson() => <String, dynamic>{
@@ -35,14 +38,16 @@ abstract class GameActionBase implements GameAction {
       };
 
   GameActionBase.fromJson(Game game, Map<String, dynamic> json)
-      : _owner = game.playerService.getPlayer(json['owner'] as String),
-        _name = json['name'] as String;
+      : _owner = game.playerService.getPlayer(json['owner'] as String);
+        //_name = json['name'] as String;
 }
 
 GameAction actionFromJson(Game game, Map<String, dynamic> json) {
   switch (json['name'] as String) {
-    case 'placeTile':
+    case LayTileAction.actionName:
       return LayTileAction.fromJson(game, json);
+      case GameStateAction.actionName:
+      return GameStateAction.fromJson(game, json);
     default:
       throw InvalidOperationError('Unknown rule name: ${json['name'] as String}');
   }

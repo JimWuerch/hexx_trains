@@ -246,13 +246,13 @@ class _MapPainter extends CustomPainter {
           //   canvas.translate(tile.center.x, tile.center.y);
           //   canvas.drawPicture(tile.picture);
           // }
-          // TileRenderer.drawMapText(
-          //     canvas: canvas,
-          //     text: '${tile.q}:${tile.r}',
-          //     position: Position(index: 0, level: 0, location: Locations.center),
-          //     sizeMultiplier: 1.0,
-          //     layout: _mapContext.game.gameMap.layout,
-          //     drawingSettings: _drawingSettings);
+          TileRenderer.drawMapText(
+              canvas: canvas,
+              text: '${tile.q}:${tile.r}',
+              position: Position(index: 0, level: 0, location: Locations.center),
+              sizeMultiplier: 1.0,
+              layout: _mapContext.game.gameMap.layout,
+              drawingSettings: _drawingSettings);
           canvas.restore();
         }
       }
@@ -304,6 +304,14 @@ class _MapPainter extends CustomPainter {
       var hex = _mapContext.game.gameMap.tileAt(offmap.location.x, offmap.location.y);
       canvas.translate(hex.center.x, hex.center.y);
       _mapContext.renderer.drawOffmapRevenue(offmap);
+      canvas.restore();
+    }
+
+    for (var highlight in _mapContext.availableUpgrades) {
+      canvas.save();
+      var hex = _mapContext.game.gameMap.tileAt(highlight.q, highlight.r);
+      canvas.translate(hex.center.x, hex.center.y);
+      _mapContext.renderer.drawHighlight();
       canvas.restore();
     }
 

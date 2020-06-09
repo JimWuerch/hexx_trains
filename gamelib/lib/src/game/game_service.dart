@@ -14,18 +14,19 @@ class GameService {
   }
 
   void doStuff() {
-    currentRound.CreateAvailableActions();
-
+    currentRound.createAvailableActions();
   }
 
-  bool ApplyAction(GameAction action) {
-    return currentRound.ApplyAction(action);
+  bool applyAction(GameAction action) {
+    return currentRound.applyAction(action);
   }
 
   void startGame() {
     currentRound = operatingRound;
 
     currentPlayer = game.playerService.addPlayer('Bob');
-    
+    if (game.isServer) {
+      currentRound.start();
+    }
   }
 }

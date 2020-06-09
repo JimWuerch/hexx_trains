@@ -10,13 +10,13 @@ abstract class RoundBase implements Round {
   @override
   String get name => _name;
 
-  @override
-  bool ApplyAction(GameAction action) {
-    return true;
-  }
+  // @override
+  // bool ApplyAction(GameAction action) {
+  //   return true;
+  // }
 
-  @override
-  bool CreateAvailableActions() {
-    return false;
-  }
+  // @override
+  // bool CreateAvailableActions() {
+  //   return false;
+  // }
 }

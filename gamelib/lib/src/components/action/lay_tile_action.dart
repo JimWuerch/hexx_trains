@@ -1,16 +1,19 @@
 import 'package:gamelib/gamelib.dart';
 
 class LayTileAction extends GameActionBase {
-  static const String _name = 'placeTile';
+  static const String actionName = 'placeTile';
   final PublicCompany company;
   final int q;
   final int r;
   final HexTile selected;
 
-  LayTileAction(Player owner, this.company, this.q, this.r, this.selected) : super(owner, _name);
+  LayTileAction(Player owner, this.company, this.q, this.r, this.selected) : super(owner);
 
   @override
   String get message => '$owner placed tile ${selected.tileDef.tileId} at ${GameMap.getLocation(q, r)}';
+
+  @override
+  String get name => actionName;
 
   @override
   Map<String, dynamic> toJson() {

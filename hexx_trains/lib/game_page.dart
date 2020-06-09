@@ -37,7 +37,7 @@ class _GamePageState extends State<GamePage> with SingleTickerProviderStateMixin
   Game _game;
 
   Future<Game> _gameFuture;
-  GameServer _server;
+  GameServer server;
 
   @override
   void initState() {
@@ -57,8 +57,10 @@ class _GamePageState extends State<GamePage> with SingleTickerProviderStateMixin
   Widget build(BuildContext context) {
     var settings = ModalRoute.of(context).settings.arguments as Map<String, String>;
     _gameFuture = Game.createAsync(int.parse(settings['gameId']), GetIt.I.get<TileDictionary>());
-    _server = GameServer(int.parse(settings['gameId']));
-
+    server = GameServer(int.parse(settings['gameId']));
+    server.clientCallback = mapRenderContext.handleAction;
+    mapRenderContext.server = server;
+    server.doGame();
     return FutureBuilder<Game>(
       future: _gameFuture,
       builder: (context, snapshot) {
@@ -188,6 +190,9 @@ class _GamePageState extends State<GamePage> with SingleTickerProviderStateMixin
     var hex = mapRenderContext.game.gameMap.layout.pixelToHex(p);
     //print('${v.x},${v.y} ${hex.q},${hex.r}');
     if (_tileSelectionOverlay == null) {
+     var upgrades =  mapRenderContext.matchingUpgrades(hex.q, hex.r);
+      if (upgrades.isEmpty) return;
+
       var list = <TileDefinition>[];
 
       var srcTile = mapRenderContext.game.gameMap.tileAt(hex.q, hex.r);
@@ -195,17 +200,27 @@ class _GamePageState extends State<GamePage> with SingleTickerProviderStateMixin
         return;
       }
 
-      if (srcTile.manifestItem != null) {
-        for (var upgrade in srcTile.manifestItem.upgrades) {
-          if (upgrade.quantity < 1) {
-            continue;
-          }
-          var tile = mapRenderContext.game.gameMap.tileDictionary.getTile(upgrade.id);
+      for (var upgrade in upgrades) {
+        // if (upgrade.manifestItem.quantity < 1) {
+        //     continue;
+        //   }
+          var tile = upgrade.tileDef;
           if (tile != null) {
             list.add(tile);
           }
-        }
       }
+
+      // if (srcTile.manifestItem != null) {
+      //   for (var upgrade in srcTile.manifestItem.upgrades) {
+      //     if (upgrade.quantity < 1) {
+      //       continue;
+      //     }
+      //     var tile = mapRenderContext.game.gameMap.tileDictionary.getTile(upgrade.id);
+      //     if (tile != null) {
+      //       list.add(tile);
+      //     }
+      //   }
+      // }
 
       if (list.length < 1) {
         // no upgrades left for this tile
@@ -278,7 +293,11 @@ class _GamePageState extends State<GamePage> with SingleTickerProviderStateMixin
     _tileSelectionOverlay.remove();
     _tileSelectionOverlay = null;
     //mapContext.gameMap.replaceTile(_curReplacementCandidate, _replacementTarget.q, _replacementTarget.r);
-    _game.changeStack.commit();
+    if (mapRenderContext.commitTileLay(_curReplacementCandidate)) {
+      _game.changeStack.commit();
+    } else {
+      _game.changeStack.discard();
+    }
     _curReplacementCandidate = null;
     //_originalTile = null;
     mapRenderContext.notifyMapChanged();

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gamelib/gamelib.dart';
 import 'package:provider/provider.dart';
 
 class HomePage extends StatefulWidget {
@@ -43,12 +44,34 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
           title: Text(widget.title),
         ),
         body: Column(children: <Widget>[
+          Row(children: <Widget>[
+            Text('Selected game: '),
+            Text('${GameList.games[selectedGame].name}'),
+          ],),
+          SizedBox(
+            width: 400,
+            height: 400,
+            child: ListView.builder(
+              itemCount: GameList.games.length,
+              itemBuilder: (context, index) {
+                return ListTile(
+                  dense: true,
+                  title: Text('${GameList.games[index].name}'),
+                  onTap: () {
+                    setState(() {
+                      selectedGame = index;
+                    });
+                  },
+                );
+              },
+            ),
+          ),
           Center(
             child: RaisedButton(
               onPressed: () {
-                Navigator.pushReplacementNamed(context, '/GamePage', arguments: <String, String>{"gameId": "0"});
+                Navigator.pushReplacementNamed(context, '/GamePage', arguments: <String, String>{"gameId": selectedGame.toString()});
               },
-              child: Text('Press Me'),
+              child: Text('Start Game'),
             ),
           ),
         ]),

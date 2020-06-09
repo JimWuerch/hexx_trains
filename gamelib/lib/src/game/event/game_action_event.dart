@@ -4,19 +4,18 @@ class GameActionEvent extends GameEvent {
   @override
   GameEventType get eventType => GameEventType.action;
 
-  @override
-  String get description => action.message;
-
   final GameAction action;
 
-  GameActionEvent(this.action) : super();
+  GameActionEvent(this.action) : super(action.message);
 
   @override
-  Map<String, dynamic> toJson() => <String, dynamic>{
-        'action': action.toJson(),
-      };
+  Map<String, dynamic> toJson() {
+    var ret = super.toJson();
+    ret['action'] = action.toJson();
+    return ret;
+  }
 
   GameActionEvent.fromJson(Game game, Map<String, dynamic> json)
-      : action = actionFromJson(game, json['action']),
+      : action = actionFromJson(game, json['action'] as Map<String, dynamic>),
         super.fromJson(json);
 }

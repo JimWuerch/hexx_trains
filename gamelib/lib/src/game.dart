@@ -37,16 +37,17 @@ class Game {
   StockMarketData get marketData => _marketData;
   GameService _gameService;
   GameService get gameService => _gameService;
+  final bool isServer;
 
-  final _gameEventStreamController = StreamController<GameEvent>.broadcast();
-  Stream<GameEvent> get gameEvents => _gameEventStreamController.stream.asBroadcastStream();
-  StreamSubscription<GameEvent> serverEvents;
+  final gameActionsStreamController = StreamController<GameAction>.broadcast();
+  Stream<GameAction> get gameActionsStream => gameActionsStreamController.stream.asBroadcastStream();
+  StreamSubscription<GameAction> serverActions;
 
   // static Game _instance;
   // static Game get instance => _instance;
   // static Game get I => _instance;
 
-  Game(this.gameId, this.tileDictionary) : changeStack = undo.ChangeStack()
+  Game(this.gameId, this.tileDictionary, {this.isServer=false}) : changeStack = undo.ChangeStack()
   //_moves = undo.ActionsChangeStack(),
   {
     _gameService = GameService(this);
@@ -83,9 +84,9 @@ class Game {
   }
 
   void dispose() {
-    _gameEventStreamController.close();
-    if (serverEvents != null) {
-      serverEvents.cancel();
+    gameActionsStreamController.close();
+    if (serverActions != null) {
+      serverActions.cancel();
     }
   }
 
@@ -141,9 +142,10 @@ class Game {
   }
 
   /// Tell the game engine where to listen to events from the client
-  void subscribeToEvents(Stream<GameEvent> stream) {
-    serverEvents = stream.listen((event) {
-      print('got event ${event.eventType.toString()}');
+  void subscribeToEvents(Stream<GameAction> stream) {
+    serverActions = stream.listen((action) {
+      print('got action ${action.name}');
+      gameService.applyAction(action);
     });
   }
 }

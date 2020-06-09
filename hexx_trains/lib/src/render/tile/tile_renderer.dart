@@ -1482,4 +1482,15 @@ class TileRenderer {
       offset += size.height;
     }
   }
+
+  void drawHighlight() {
+
+    var paint = Paint()
+      ..style = PaintingStyle.stroke
+      ..color = drawingSettings.orange
+      ..strokeWidth = drawingSettings.convertSize(drawingSettings.lineSize, 4)
+      ..isAntiAlias = true;
+
+    _drawOutline(paint);
+  }
 }

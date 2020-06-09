@@ -175,13 +175,13 @@ void testPropertyChanges() {
 
     test('should invoke execute closure', () {
       var value = false;
-      stack.add(Change.property(value, () => value = true, (old) => value = old));
+      stack.add(Change.property(value, () => value = true, (old) => value = old as bool));
       expect(value, isTrue);
     });
 
     test('should invoke undo closure', () {
       var value = false;
-      stack.add(Change.property(value, () => value = true, (old) => value = old));
+      stack.add(Change.property(value, () => value = true, (old) => value = old as bool));
       stack.undo();
       expect(value, isFalse);
     });
