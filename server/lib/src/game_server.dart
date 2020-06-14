@@ -14,11 +14,24 @@ class GameServer {
   StreamSubscription<GameAction> gameActions;
   ClientCalback clientCallback;
 
-  GameServer(this.gameId) {
+  GameServer(this.clientCallback);
+
+  Game openGame(int gameId) {
     game = Game(gameId, GetIt.I.get<TileDictionary>(), isServer: true);
     game.subscribeToEvents(serverActions);
-    game.gameActionsStream.listen(_handleGameEvent);
-    
+    gameActions = game.gameActionsStream.listen(_handleGameEvent);
+    var save = game.createSave();
+    game.gameActionsStreamController.add(LoadGameAction(game, save));
+    return game;
+  }
+
+  void closeGame() {
+    if (game == null) return;
+
+    gameActions.cancel();
+    _serverActionsStreamController.close();
+    game.dispose();
+    game = null;    
   }
 
   void _handleGameEvent(GameAction action) {

@@ -2,6 +2,7 @@ import 'dart:math' as math;
 
 import 'package:flutter/painting.dart' as painting;
 import 'package:gamelib/gamelib.dart';
+import 'package:hexxtrains/src/render/view_matrix.dart';
 
 extension CanvasExtensions on painting.Canvas {
   void rotateDegrees(double degrees) {
@@ -22,6 +23,11 @@ extension CanvasExtensions on painting.Canvas {
 
   void clear(painting.Color color) {
     drawColor(color, painting.BlendMode.src);
+  }
+
+  void applyViewMatrix(ViewMatrix mat) {
+    translate(mat.transX, mat.transY);
+    scale(mat.scaleX, mat.scaleY);
   }
 }
 

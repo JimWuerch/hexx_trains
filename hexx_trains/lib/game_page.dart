@@ -6,8 +6,6 @@ import 'package:get_it/get_it.dart';
 import 'package:hexxtrains/src/models/map_render_context.dart';
 import 'package:positioned_tap_detector/positioned_tap_detector.dart';
 import 'package:provider/provider.dart';
-import 'package:server/server.dart';
-import 'package:vector_math/vector_math_64.dart' as m64;
 
 import 'src/render/render.dart';
 import 'src/widgets/map_widget.dart';
@@ -29,21 +27,21 @@ class _GamePageState extends State<GamePage> with SingleTickerProviderStateMixin
     Tab(text: 'Market'),
   ];
   TabController _tabController;
-  MapRenderContext mapRenderContext;
+  MapViewModel mapRenderContext;
   OverlayEntry _tileSelectionOverlay;
   Hex _replacementTarget;
   HexTile _curReplacementCandidate;
   //HexTile _originalTile;
   Game _game;
+  bool testMode = true;
 
   Future<Game> _gameFuture;
-  GameServer server;
 
   @override
   void initState() {
     super.initState();
     _tabController = TabController(vsync: this, length: myTabs.length);
-    mapRenderContext = MapRenderContext();
+    mapRenderContext = MapViewModel();
   }
 
   @override
@@ -57,10 +55,6 @@ class _GamePageState extends State<GamePage> with SingleTickerProviderStateMixin
   Widget build(BuildContext context) {
     var settings = ModalRoute.of(context).settings.arguments as Map<String, String>;
     _gameFuture = Game.createAsync(int.parse(settings['gameId']), GetIt.I.get<TileDictionary>());
-    server = GameServer(int.parse(settings['gameId']));
-    server.clientCallback = mapRenderContext.handleAction;
-    mapRenderContext.server = server;
-    server.doGame();
     return FutureBuilder<Game>(
       future: _gameFuture,
       builder: (context, snapshot) {
@@ -123,7 +117,7 @@ class _GamePageState extends State<GamePage> with SingleTickerProviderStateMixin
                   Column(
                     children: [
                       Expanded(
-                        child: Consumer<MapRenderContext>(
+                        child: Consumer<MapViewModel>(
                           builder: (context, value, child) => MapWidget(
                             mapRenderContext: value,
                             onTapMapCallback: (position) {
@@ -182,69 +176,75 @@ class _GamePageState extends State<GamePage> with SingleTickerProviderStateMixin
   }
 
   void _onMapTap(BuildContext context, TapPosition position) {
-    var v = m64.Vector2(position.relative.dx, position.relative.dy);
-    v = mapRenderContext.viewMatrix.transform2(v);
-    var p = math.Point<double>(position.relative.dx - mapRenderContext.viewMatrix[Indicies.transX],
-        position.relative.dy - mapRenderContext.viewMatrix[Indicies.transY]);
-    p *= 1 / mapRenderContext.viewMatrix[Indicies.scaleX];
+    var p = mapRenderContext.screenToMap(math.Point(position.relative.dx, position.relative.dy));
     var hex = mapRenderContext.game.gameMap.layout.pixelToHex(p);
     //print('${v.x},${v.y} ${hex.q},${hex.r}');
     if (_tileSelectionOverlay == null) {
-     var upgrades =  mapRenderContext.matchingUpgrades(hex.q, hex.r);
-      if (upgrades.isEmpty) return;
-
       var list = <TileDefinition>[];
-
       var srcTile = mapRenderContext.game.gameMap.tileAt(hex.q, hex.r);
       if (srcTile == null) {
         return;
       }
 
-      for (var upgrade in upgrades) {
-        // if (upgrade.manifestItem.quantity < 1) {
-        //     continue;
-        //   }
+      if (testMode) {
+        if (srcTile.manifestItem != null) {
+          for (var upgrade in srcTile.manifestItem.upgrades) {
+            if (upgrade.quantity < 1) {
+              continue;
+            }
+            var tile = mapRenderContext.game.gameMap.tileDictionary.getTile(upgrade.id);
+            if (tile != null) {
+              list.add(tile);
+            }
+          }
+        }
+      } else {
+        var upgrades = mapRenderContext.matchingUpgrades(hex.q, hex.r);
+        if (upgrades.isEmpty) return;
+
+        for (var upgrade in upgrades) {
+          // if (upgrade.manifestItem.quantity < 1) {
+          //     continue;
+          //   }
           var tile = upgrade.tileDef;
           if (tile != null) {
             list.add(tile);
           }
+        }
       }
-
-      // if (srcTile.manifestItem != null) {
-      //   for (var upgrade in srcTile.manifestItem.upgrades) {
-      //     if (upgrade.quantity < 1) {
-      //       continue;
-      //     }
-      //     var tile = mapRenderContext.game.gameMap.tileDictionary.getTile(upgrade.id);
-      //     if (tile != null) {
-      //       list.add(tile);
-      //     }
-      //   }
-      // }
-
       if (list.length < 1) {
         // no upgrades left for this tile
         return;
       }
-
+      var listTileWidth = 125.0;
       var tileSelector = TileSelector(
         hex: hex,
         list: list,
-        renderer: mapRenderContext.renderer,
-        itemExtent: 400 * mapRenderContext.viewMatrix[Indicies.scaleX],
+        itemExtent: listTileWidth,
         onSelected: _hexSelected,
         onRotateLeft: _onRotateLeft,
         onRotateRight: _onRotateRight,
         onConfirm: _onTileConfirmed,
       );
       _replacementTarget = hex;
+      var center = mapRenderContext.game.gameMap.layout.hexToPixel(hex);
+      // we want to position just beyond the ring of hexes around the selected hex
+      double xOffset;
+      if (mapRenderContext.game.gameMap.layout.orientation == HexOrientation.pointy) {
+        xOffset = mapRenderContext.game.gameMap.layout.extents().x * 1.5;
+      } else {
+        xOffset = mapRenderContext.game.gameMap.layout.extents().x * 1.25;
+      }
+      var listHeight = 3 * listTileWidth + 75; // 3 hexes high + the header
+      center += math.Point<double>(xOffset, -listHeight / 2.0);
+      var p2 = mapRenderContext.mapToScreen(center);
       _showTileList(
           context,
           Rect.fromLTWH(
-              position.relative.dx + 50,
-              position.relative.dy,
-              400 * mapRenderContext.viewMatrix[Indicies.scaleX],
-              3 * 400 * mapRenderContext.viewMatrix[Indicies.scaleY]),
+              p2.x,
+              p2.y,
+              125,
+              listHeight),
           tileSelector);
     } else {
       _tileSelectionOverlay.remove();
@@ -293,10 +293,14 @@ class _GamePageState extends State<GamePage> with SingleTickerProviderStateMixin
     _tileSelectionOverlay.remove();
     _tileSelectionOverlay = null;
     //mapContext.gameMap.replaceTile(_curReplacementCandidate, _replacementTarget.q, _replacementTarget.r);
-    if (mapRenderContext.commitTileLay(_curReplacementCandidate)) {
+    if (testMode) {
       _game.changeStack.commit();
     } else {
-      _game.changeStack.discard();
+      if (mapRenderContext.commitTileLay(_curReplacementCandidate)) {
+        _game.changeStack.commit();
+      } else {
+        _game.changeStack.discard();
+      }
     }
     _curReplacementCandidate = null;
     //_originalTile = null;

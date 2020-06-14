@@ -1,9 +1,17 @@
+import 'dart:async';
+import 'dart:convert';
+
 import 'package:flutter/material.dart';
 import 'package:gamelib/gamelib.dart';
+import 'package:get_it/get_it.dart';
+import 'package:hexxtrains/client.dart';
 import 'package:provider/provider.dart';
 
 class HomePage extends StatefulWidget {
-  HomePage({Key key, this.title}) : super(key: key);
+  HomePage({Key key, this.title}) : super(key: key) {
+    var client = GetIt.I.get<Client>() as LocalClient;
+    _clientActions = client.inbound.listen(_handleActions);
+  }
 
   // This widget is the home page of your application. It is stateful, meaning
   // that it has a State object (defined below) that contains fields that affect
@@ -15,9 +23,23 @@ class HomePage extends StatefulWidget {
   // always marked "final".
 
   final String title;
+  StreamSubscription _clientActions;
 
   @override
   _HomePageState createState() => _HomePageState();
+
+  void _handleActions(GameAction action) {
+    switch(action.name) {
+      case LoadGameAction.actionName:
+        var loadGameAction = action as LoadGameAction;
+        var game = Game.restoreFromSave(jsonEncode(loadGameAction.game), GetIt.I.get<TileDictionary>());
+        GetIt.I.registerSingleton<Game>(game);
+    }
+  }
+
+  void dispose() {
+    _clientActions.cancel();
+  }
 }
 
 class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin {

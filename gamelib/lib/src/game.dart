@@ -38,6 +38,7 @@ class Game {
   GameService _gameService;
   GameService get gameService => _gameService;
   final bool isServer;
+  String gameName = 'some random game';
 
   final gameActionsStreamController = StreamController<GameAction>.broadcast();
   Stream<GameAction> get gameActionsStream => gameActionsStreamController.stream.asBroadcastStream();
@@ -114,6 +115,7 @@ class Game {
   Map<String, dynamic> createSave() {
     var ret = <String, dynamic>{
       'gameId': gameId,
+      'gameName': gameName,
       //'players': players.map<String>((e) => e.name).toList(),
       //'moves': _moves.toJson(),
     };
@@ -122,12 +124,14 @@ class Game {
     return ret;
   }
 
-  static void restoreFromSave(String jsonString, TileDictionary tileDictionary) {
+  factory Game.restoreFromSave(String jsonString, TileDictionary tileDictionary) {
     var json = jsonDecode(jsonString) as Map<String, dynamic>;
     var gameId = json['gameId'] as int;
+    var gameName = json['gameName'] as String;
 
     // create the game and load the map, and all the static data
     var game = Game(gameId, tileDictionary);
+    game.gameName = gameName;
 
     // load the players
     // var players = json['players'] as List<String>;
@@ -139,6 +143,8 @@ class Game {
     // now replay all the moves
     // var moves = undo.ActionsChangeStack.fromJson(json['moves'] as Map<String, dynamic>);
     // Game.I._moves = moves;
+
+    return game;
   }
 
   /// Tell the game engine where to listen to events from the client

@@ -6,11 +6,8 @@ import 'package:flutter/material.dart';
 import 'package:gamelib/gamelib.dart';
 import 'package:get_it/get_it.dart';
 import 'package:hexxtrains/src/render/render.dart';
-//import 'package:hexxtrains/components/tile_library/tile_library.dart' as tilelib;
-//import 'package:hexxtrains/game_data/game_data.dart' as game_data;
 import 'package:hexxtrains/src/models/map_render_context.dart';
 import 'package:positioned_tap_detector/positioned_tap_detector.dart';
-import 'package:vector_math/vector_math_64.dart' as m64;
 
 //GlobalKey<_MapWidgetState> mapWidgetStateKey = GlobalKey();
 typedef OnTapMapCallback = void Function(TapPosition position);
@@ -21,7 +18,6 @@ class _DebugMap {
   TileDictionary tileDictionary;
   HexLayout hexLayout;
   DrawingSettings drawingSettings;
-  m64.Matrix3 viewMatrix = m64.Matrix3.identity();
   List<HexTile> tiles;
 
   _DebugMap() {
@@ -78,11 +74,11 @@ class _RepaintNotifier extends ChangeNotifier {
 }
 
 class MapWidget extends StatefulWidget {
-  const MapWidget({Key key, @required MapRenderContext mapRenderContext, this.onTapMapCallback})
+  const MapWidget({Key key, @required MapViewModel mapRenderContext, this.onTapMapCallback})
       : mapContext = mapRenderContext,
         super(key: key);
 
-  final MapRenderContext mapContext;
+  final MapViewModel mapContext;
   final OnTapMapCallback onTapMapCallback;
 
   @override
@@ -93,8 +89,8 @@ class _MapWidgetState extends State<MapWidget> with AutomaticKeepAliveClientMixi
   _RepaintNotifier repaintNotifier = _RepaintNotifier();
   double startScale;
   Offset startOffset;
-  m64.Matrix3 startMatrix;
-  MapRenderContext mapContext;
+  ViewMatrix startMatrix;
+  MapViewModel mapContext;
 
   _MapWidgetState() {
     //drawTilePics();
@@ -144,39 +140,20 @@ class _MapWidgetState extends State<MapWidget> with AutomaticKeepAliveClientMixi
     if (startOffset == null) return;
     if (details.scale != 1.0) {
       // scale about point
-      var tx = details.localFocalPoint.dx - details.scale * details.localFocalPoint.dx;
-      var ty = details.localFocalPoint.dy - details.scale * details.localFocalPoint.dy;
-      var scaleMatrix = m64.Matrix3.identity();
-      scaleMatrix[Indicies.scaleX] = details.scale;
-      scaleMatrix[Indicies.scaleY] = details.scale;
-      scaleMatrix[Indicies.transX] = tx;
-      scaleMatrix[Indicies.transY] = ty;
-      scaleMatrix[Indicies.persp2] = 1;
-
-      mapContext.viewMatrix = (startMatrix * scaleMatrix) as m64.Matrix3;
+      var scaleMatrix = ViewMatrix.scale(details.scale, math.Point<double>(details.localFocalPoint.dx, details.localFocalPoint.dy));
+      mapContext.viewMatrix.postConcat(scaleMatrix);
     } else if (details.localFocalPoint != startOffset) {
       // translate
-      mapContext.viewMatrix[Indicies.transX] =
-          details.localFocalPoint.dx - startOffset.dx + startMatrix[Indicies.transX];
-      mapContext.viewMatrix[Indicies.transY] =
-          details.localFocalPoint.dy - startOffset.dy + startMatrix[Indicies.transY];
+      mapContext.viewMatrix.transX = details.localFocalPoint.dx - startOffset.dx + startMatrix.transX;
+      mapContext.viewMatrix.transY = details.localFocalPoint.dy - startOffset.dy + startMatrix.transY;
     }
     repaintNotifier.notify();
   }
 
   void _onMouseWheelScroll(PointerScrollEvent details) {
     var scale = 1 - details.scrollDelta.dy / 300.0;
-
-    var tx = details.localPosition.dx - scale * details.localPosition.dx;
-    var ty = details.localPosition.dy - scale * details.localPosition.dy;
-    var scaleMatrix = m64.Matrix3.identity();
-    scaleMatrix[Indicies.scaleX] = scale;
-    scaleMatrix[Indicies.scaleY] = scale;
-    scaleMatrix[Indicies.transX] = tx;
-    scaleMatrix[Indicies.transY] = ty;
-    scaleMatrix[Indicies.persp2] = 1;
-
-    mapContext.viewMatrix = (mapContext.viewMatrix * scaleMatrix) as m64.Matrix3;
+    var scaleMatrix = ViewMatrix.scale(scale, math.Point<double>(details.localPosition.dx, details.localPosition.dy));
+    mapContext.viewMatrix.postConcat(scaleMatrix);
 
     repaintNotifier.notify();
   }
@@ -207,9 +184,9 @@ class _MapWidgetState extends State<MapWidget> with AutomaticKeepAliveClientMixi
 }
 
 class _MapPainter extends CustomPainter {
-  MapRenderContext _mapContext;
+  MapViewModel _mapContext;
   DrawingSettings _drawingSettings;
-  _MapPainter({Listenable repaint, MapRenderContext mapContext}) : super(repaint: repaint) {
+  _MapPainter({Listenable repaint, MapViewModel mapContext}) : super(repaint: repaint) {
     _mapContext = mapContext;
     // we don't want to look this up every frame
     _drawingSettings = GetIt.I<DrawingSettings>();
@@ -227,8 +204,9 @@ class _MapPainter extends CustomPainter {
     }
 
     canvas.save();
-    canvas.translate(_mapContext.viewMatrix[Indicies.transX], _mapContext.viewMatrix[Indicies.transY]);
-    canvas.scale(_mapContext.viewMatrix[Indicies.scaleX], _mapContext.viewMatrix[Indicies.scaleY]);
+    //canvas.translate(_mapContext.viewMatrix[Indicies.transX], _mapContext.viewMatrix[Indicies.transY]);
+    //canvas.scale(_mapContext.viewMatrix[Indicies.scaleX], _mapContext.viewMatrix[Indicies.scaleY]);
+    canvas.applyViewMatrix(_mapContext.viewMatrix);
     //print('${viewMatrix[Indicies.transX]},${viewMatrix[Indicies.transY]}:${viewMatrix[Indicies.scaleX]}');
 
     for (var row in _mapContext.game.gameMap.map) {
@@ -246,13 +224,13 @@ class _MapPainter extends CustomPainter {
           //   canvas.translate(tile.center.x, tile.center.y);
           //   canvas.drawPicture(tile.picture);
           // }
-          TileRenderer.drawMapText(
-              canvas: canvas,
-              text: '${tile.q}:${tile.r}',
-              position: Position(index: 0, level: 0, location: Locations.center),
-              sizeMultiplier: 1.0,
-              layout: _mapContext.game.gameMap.layout,
-              drawingSettings: _drawingSettings);
+          // TileRenderer.drawMapText(
+          //     canvas: canvas,
+          //     text: '${tile.q}:${tile.r}',
+          //     position: Position(index: 0, level: 0, location: Locations.center),
+          //     sizeMultiplier: 1.0,
+          //     layout: _mapContext.game.gameMap.layout,
+          //     drawingSettings: _drawingSettings);
           canvas.restore();
         }
       }

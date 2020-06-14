@@ -2,6 +2,7 @@ import 'dart:math' as math;
 
 import 'package:flutter/material.dart';
 import 'package:gamelib/gamelib.dart';
+import 'package:get_it/get_it.dart';
 import 'package:hexxtrains/src/render/render.dart';
 
 import 'hex_tile_widget.dart';
@@ -14,7 +15,7 @@ typedef OnConfirmCallback = void Function();
 class TileSelector extends StatefulWidget {
   final double itemExtent;
   final List<TileDefinition> list;
-  final TileRenderer renderer;
+  //final TileRenderer renderer;
   final Hex hex;
   final OnSelectedCallback onSelected;
   final OnRotateLeftCallback onRotateLeft;
@@ -26,7 +27,7 @@ class TileSelector extends StatefulWidget {
     @required this.itemExtent,
     @required this.list,
     @required this.hex,
-    @required this.renderer,
+    //@required this.renderer,
     this.onSelected,
     this.onRotateLeft,
     this.onRotateRight,
@@ -45,9 +46,9 @@ class _TileSelectorState extends State<TileSelector> {
   @override
   void initState() {
     super.initState();
-    var size = widget.renderer.layout.size;
+    var size = 200; //widget.itemExtent.toInt();//widget.renderer.layout.size;
     renderer = TileRenderer(
-        widget.renderer.drawingSettings,
+        GetIt.I.get<DrawingSettings>(), //widget.renderer.drawingSettings,
         HexLayout(
           HexOrientation.flat,
           size,

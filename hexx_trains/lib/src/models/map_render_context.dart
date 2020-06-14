@@ -4,16 +4,14 @@ import 'dart:ui' as ui;
 import 'package:flutter/foundation.dart';
 import 'package:gamelib/gamelib.dart';
 import 'package:get_it/get_it.dart';
-import 'package:hexxtrains/src/render/indicies.dart';
 import 'package:hexxtrains/src/render/render.dart';
 import 'package:server/server.dart';
-import 'package:vector_math/vector_math_64.dart' as m64;
 
-class MapRenderContext extends ChangeNotifier {
+class MapViewModel extends ChangeNotifier {
   List<LayTileAction> availableUpgrades = [];
   List<int> highlightTiles;
   TileRenderer renderer;
-  m64.Matrix3 viewMatrix;
+  ViewMatrix viewMatrix;
   GameServer server;
   Game _game;
   Game get game => _game;
@@ -24,8 +22,21 @@ class MapRenderContext extends ChangeNotifier {
     }
   }
 
-  MapRenderContext({Game game}) {
+  MapViewModel({Game game}) {
     this.game = game;
+  }
+
+  math.Point<double> screenToMap(math.Point<double> screen) {
+    var o = viewMatrix.getTranslate();
+    var p = screen - o;
+    p *= 1 / viewMatrix.scale;
+
+    return p;
+  }
+
+  math.Point<double> mapToScreen(math.Point<double> map) {
+    var p = map * viewMatrix.scale;
+    return p + viewMatrix.getTranslate();
   }
 
   void handleAction(GameAction action) {
@@ -61,7 +72,7 @@ class MapRenderContext extends ChangeNotifier {
 
     return false;
   }
-  
+
   List<HexTile> matchingUpgrades(int q, int r) {
     var ret = <HexTile>[];
     for (var tile in availableUpgrades) {
@@ -105,17 +116,15 @@ class MapRenderContext extends ChangeNotifier {
     var y = size.height / offset.y;
     var scale = math.min(x, y);
 
-    viewMatrix = m64.Matrix3.identity();
-    viewMatrix[Indicies.scaleX] = scale;
-    viewMatrix[Indicies.scaleY] = scale;
+    viewMatrix = ViewMatrix.scale(scale);
 
     // center it in the view
     if (x < y) {
       // constrained in width, center vertically
-      viewMatrix[Indicies.transY] = (size.height - (game.gameMap.mapSize.y * scale)) / 2;
+      viewMatrix.transY = (size.height - (game.gameMap.mapSize.y * scale)) / 2;
     } else {
       // center horizontally
-      viewMatrix[Indicies.transX] = (size.width - (game.gameMap.mapSize.x * scale)) / 2;
+      viewMatrix.transX = (size.width - (game.gameMap.mapSize.x * scale)) / 2;
     }
   }
 }

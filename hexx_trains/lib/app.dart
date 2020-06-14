@@ -1,8 +1,11 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:gamelib/gamelib.dart';
 import 'package:get_it/get_it.dart';
 import 'package:hexxtrains/src/render/drawing_settings.dart';
 
+import 'client.dart';
 import 'home.dart';
 import 'routes.dart';
 
@@ -13,13 +16,13 @@ class GameApp extends StatefulWidget {
 }
 
 class _GameAppState extends State<GameApp> {
-  
 
   @override
   void initState() {
     GetIt.I.registerSingleton<DrawingSettings>(DrawingSettings());
     //TODO: stick this in a future and use FutureBuilder
     GetIt.I.registerSingleton<TileDictionary>(TileDictionary.fromJsonString(TileDictionarySource.src));
+    GetIt.I.registerSingleton<Client>(LocalClient());
     super.initState();
   }
 
