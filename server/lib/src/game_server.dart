@@ -20,8 +20,8 @@ class GameServer {
     game = Game(gameId, GetIt.I.get<TileDictionary>(), isServer: true);
     game.subscribeToEvents(serverActions);
     gameActions = game.gameActionsStream.listen(_handleGameEvent);
-    var save = game.createSave();
-    game.gameActionsStreamController.add(LoadGameAction(game, save));
+//    var save = game.createSave();
+//    game.gameActionsStreamController.add(LoadGameAction(game, save));
     return game;
   }
 
@@ -31,7 +31,7 @@ class GameServer {
     gameActions.cancel();
     _serverActionsStreamController.close();
     game.dispose();
-    game = null;    
+    game = null;
   }
 
   void _handleGameEvent(GameAction action) {
@@ -51,5 +51,21 @@ class GameServer {
 
   bool doAction(GameAction action) {
     return game.gameService.applyAction(action);
+  }
+
+  GameModel handleRequest(GameModel model) {
+    //TODO: add validator
+    // validateRequest(model);
+
+    switch (model.modelType) {
+      case GameModelType.createGameRequest:
+        var request = model as CreateGameRequest;
+        openGame(request.gameId);
+        return CreateGameResponse(null, 'create game', game.gameId, game.guid,
+            game.playerService.players.map<String>((e) => e.name).toList());
+
+      default:
+        return null;
+    }
   }
 }

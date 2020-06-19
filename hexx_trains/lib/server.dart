@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:gamelib/gamelib.dart';
+import 'package:get_it/get_it.dart';
 import 'package:server/server.dart';
 
 abstract class Server {
@@ -31,9 +32,14 @@ class LocalServer extends Server {
     _streamController.add(action);
   }
 
-  void openGame(int gameId) {
-    server.openGame(gameId);
-  }
+  Game createGame(int gameId) {
+    var response = server.handleRequest(CreateGameRequest('bob', gameId));
+    if (response is CreateGameResponse) {
+      return Game(response.gameId, GetIt.I.get<TileDictionary>());
+    } else {
+      return null;
+    }
+  } 
 
   void closeGame() {
     server.closeGame();

@@ -5,6 +5,7 @@ import 'package:server/server.dart';
 abstract class Client {
   Stream<GameAction> get inbound;
   void postAction(GameAction action);
+  Future<Game> createGame(int gameId);
 }
 
 class LocalClient extends Client {
@@ -19,8 +20,8 @@ class LocalClient extends Client {
     server.postAction(action);
   }
 
-  void startGame(int id) {
-    server.openGame(id);
-    server.startGame();
+  @override
+  Future<Game> createGame(int id) async {
+    return server.createGame(id);
   }
 }

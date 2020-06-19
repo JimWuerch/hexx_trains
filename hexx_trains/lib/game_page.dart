@@ -3,6 +3,7 @@ import 'dart:math' as math;
 import 'package:flutter/material.dart';
 import 'package:gamelib/gamelib.dart';
 import 'package:get_it/get_it.dart';
+import 'package:hexxtrains/client.dart';
 import 'package:hexxtrains/src/models/map_render_context.dart';
 import 'package:positioned_tap_detector/positioned_tap_detector.dart';
 import 'package:provider/provider.dart';
@@ -54,7 +55,8 @@ class _GamePageState extends State<GamePage> with SingleTickerProviderStateMixin
   @override
   Widget build(BuildContext context) {
     var settings = ModalRoute.of(context).settings.arguments as Map<String, String>;
-    _gameFuture = Game.createAsync(int.parse(settings['gameId']), GetIt.I.get<TileDictionary>());
+    //_gameFuture = Game.createAsync(int.parse(settings['gameId']), GetIt.I.get<TileDictionary>());
+    _gameFuture = GetIt.I.get<Client>().createGame(int.parse(settings['gameId']));
     return FutureBuilder<Game>(
       future: _gameFuture,
       builder: (context, snapshot) {

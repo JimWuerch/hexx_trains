@@ -39,6 +39,7 @@ class Game {
   GameService get gameService => _gameService;
   final bool isServer;
   String gameName = 'some random game';
+  String guid;
 
   final gameActionsStreamController = StreamController<GameAction>.broadcast();
   Stream<GameAction> get gameActionsStream => gameActionsStreamController.stream.asBroadcastStream();
@@ -48,7 +49,7 @@ class Game {
   // static Game get instance => _instance;
   // static Game get I => _instance;
 
-  Game(this.gameId, this.tileDictionary, {this.isServer=false}) : changeStack = undo.ChangeStack()
+  Game(this.gameId, this.tileDictionary, {this.guid, this.isServer=false}) : changeStack = undo.ChangeStack()
   //_moves = undo.ActionsChangeStack(),
   {
     _gameService = GameService(this);

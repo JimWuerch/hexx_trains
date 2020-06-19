@@ -18,7 +18,7 @@ abstract class GameData {
 //ignore: avoid_classes_with_only_static_members
 class GameList {
    static List<GameData> games = [
-     Game18Chesapeake(),
+     //Game18Chesapeake(),
      Game1830(),
    ];
 }

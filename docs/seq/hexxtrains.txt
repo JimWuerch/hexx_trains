@@ -1,0 +1,19 @@
+title HeXXTrains
+
+participant Server
+participant Client
+
+participant Local Proxy
+
+Server<-Client:Request game start
+Server->Client:Game Start info
+Client->Local Proxy:Apply game start
+Server<-Client:Get current game state
+
+Server->Client:Current game state
+Client->Local Proxy:Apply current game state
+Local Proxy<-Client:Get available actions
+Local Proxy->Client:Available action list
+Server<-Client:request action
+Server->Client:Apply Action
+Client->Local Proxy:Apply action
