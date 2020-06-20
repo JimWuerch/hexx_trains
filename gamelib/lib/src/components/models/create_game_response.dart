@@ -3,12 +3,11 @@ import 'package:gamelib/gamelib.dart';
 import 'game_model.dart';
 
 class CreateGameResponse extends GameModel {
-  final int gameId;
-  final String guid;
+  final int gameIndex;
   final List<String> players;
 
-  CreateGameResponse(String owner, String desc, this.gameId, this.guid, this.players)
-      : super(owner, 'createGame response');
+  CreateGameResponse(Game game, String owner, String desc, this.gameIndex, this.players)
+      : super(game.gameId, owner, 'createGame response');
 
   @override
   GameModelType get modelType => GameModelType.createGameResponse;
@@ -16,15 +15,13 @@ class CreateGameResponse extends GameModel {
   @override
   Map<String, dynamic> toJson() {
     var ret = super.toJson();
-    ret['gameId'] = gameId;
-    ret['guid'] = guid;
+    ret['gameIndex'] = gameIndex;
     ret['players'] = players;
     return ret;
   }
 
-  CreateGameResponse.fromJson(Game game, Map<String, dynamic> json)
-      : gameId = json['gameId'] as int,
-        guid = json['guid'] as String,
+  CreateGameResponse.fromJson(Map<String, dynamic> json)
+      : gameIndex = json['gameIndex'] as int,
         players = listFromJson<String>(json),
         super.fromJson(json);
 }

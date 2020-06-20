@@ -30,7 +30,7 @@ class LayTileAction extends GameActionBase {
   factory LayTileAction.fromJson(Game game, Map<String, dynamic> json) {
     var company = game.getPublicCompany(json['company'] as String);
     var coords = GameMap.getCoords(json['location'] as String);
-    var selected = HexTile.fromJson(game.gameMap, json['selected'] as Map<String, dynamic>);
+    var selected = HexTile.fromJson(game, json['selected'] as Map<String, dynamic>);
     return LayTileAction._jsonHelper(company, coords.x, coords.y, selected, game, json);
   }
 }

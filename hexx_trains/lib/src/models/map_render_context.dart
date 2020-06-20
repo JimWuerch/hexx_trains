@@ -4,15 +4,16 @@ import 'dart:ui' as ui;
 import 'package:flutter/foundation.dart';
 import 'package:gamelib/gamelib.dart';
 import 'package:get_it/get_it.dart';
+import 'package:hexxtrains/client.dart';
 import 'package:hexxtrains/src/render/render.dart';
-import 'package:server/server.dart';
 
 class MapViewModel extends ChangeNotifier {
   List<LayTileAction> availableUpgrades = [];
   List<int> highlightTiles;
   TileRenderer renderer;
   ViewMatrix viewMatrix;
-  GameServer server;
+  //GameServer server;
+  Client client;
   Game _game;
   Game get game => _game;
   set game(Game g) {
@@ -45,7 +46,7 @@ class MapViewModel extends ChangeNotifier {
         print('Got ${action.message}');
         var gameStateAction = action as GameStateAction;
         if (gameStateAction.state == GameStateActionType.operatingRoundStart) {
-          server.doAction(action);
+          //client.postAction(action);
         }
         break;
       case LayTileAction.actionName:
@@ -87,7 +88,8 @@ class MapViewModel extends ChangeNotifier {
     for (var highlight in availableUpgrades) {
       if (highlight.q == tile.q && highlight.r == tile.r) {
         availableUpgrades.clear();
-        return server.doAction(LayTileAction(highlight.owner, highlight.company, tile.q, tile.r, tile));
+        client.postAction(LayTileAction(highlight.owner, highlight.company, tile.q, tile.r, tile));
+        return true;
       }
     }
 

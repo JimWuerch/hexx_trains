@@ -6,7 +6,7 @@ class ActionRequest extends GameModel {
 
   final GameAction action;
 
-  ActionRequest(String owner, this.action) : super(owner, action.message);
+  ActionRequest(Game game, String owner, this.action) : super(game.gameId, owner, action.message);
 
   @override
   Map<String, dynamic> toJson() {

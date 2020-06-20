@@ -1,8 +1,8 @@
 import 'dart:math' as math;
 
+import 'package:gamelib/gamelib.dart';
 import 'package:gamelib/src/components/hex/hex.dart';
 import 'package:gamelib/src/components/tile_library/tile_library.dart';
-import 'package:get_it/get_it.dart';
 
 import 'game_map.dart';
 import 'tile_manifest.dart';
@@ -25,8 +25,8 @@ class HexTile {
     center = layout.hexToPixel(hex);
   }
 
-  factory HexTile.fromManifest(int q, int r, HexLayout layout, TileManifestItem item) {
-    return HexTile(GetIt.I.get<TileDictionary>().getTile(item.id), q, r, layout, item);
+  factory HexTile.fromManifest(Game game, int q, int r, HexLayout layout, TileManifestItem item) {
+    return HexTile(game.tileDictionary.getTile(item.id), q, r, layout, item);
   }
 
   void setLocation(int q, int r) {
@@ -48,11 +48,11 @@ class HexTile {
         'rotation': rotation,
       };
 
-  factory HexTile.fromJson(GameMap gameMap, Map<String, dynamic> json) {
-    var tileDef = GetIt.I.get<TileDictionary>().getTile(json['tiledef'] as String);
+  factory HexTile.fromJson(Game game, Map<String, dynamic> json) {
+    var tileDef = game.tileDictionary.getTile(json['tiledef'] as String);
     var coords = GameMap.getCoords(json['location'] as String);
     var rotation = json['rotation'] as int;
-    var manifestItem = gameMap.tileManifest.getTile(tileDef.tileId);
-    return HexTile(tileDef, coords.x, coords.y, gameMap.layout, manifestItem, rotation);
+    var manifestItem = game.gameMap.tileManifest.getTile(tileDef.tileId);
+    return HexTile(tileDef, coords.x, coords.y, game.gameMap.layout, manifestItem, rotation);
   }
 }

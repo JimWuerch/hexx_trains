@@ -48,7 +48,7 @@ class OperatingRound extends RoundBase {
       for (var item in tile.manifestItem.upgrades) {
         if (item.quantity > 0) {
           var action = LayTileAction(gameService.currentPlayer, operatingCompany, tile.q, tile.r,
-              HexTile.fromManifest(tile.q, tile.r, gameService.game.gameMap.layout, item));
+              HexTile.fromManifest(gameService.game, tile.q, tile.r, gameService.game.gameMap.layout, item));
           actions.add(action);
           if (gameService.game.isServer) {
             gameService.game.gameActionsStreamController.add(action);

@@ -3,6 +3,7 @@ import 'dart:convert';
 
 import 'package:gamelib/gamelib.dart';
 import 'package:gamelib/src/game/player/player_service.dart';
+import 'package:uuid/uuid.dart';
 
 import 'components/game_map/game_map.dart';
 import 'components/game_map/tile_manifest_loader.dart';
@@ -23,7 +24,7 @@ class Game {
   static const int _tileSize = 200;
   static const int _mapMargin = 50;
 
-  final int gameId;
+  final int gameIndex;
   //final List<Player> players = [];
   PlayerService _playerService;
   PlayerService get playerService => _playerService;
@@ -39,7 +40,7 @@ class Game {
   GameService get gameService => _gameService;
   final bool isServer;
   String gameName = 'some random game';
-  String guid;
+  String gameId;
 
   final gameActionsStreamController = StreamController<GameAction>.broadcast();
   Stream<GameAction> get gameActionsStream => gameActionsStreamController.stream.asBroadcastStream();
@@ -49,13 +50,17 @@ class Game {
   // static Game get instance => _instance;
   // static Game get I => _instance;
 
-  Game(this.gameId, this.tileDictionary, {this.guid, this.isServer=false}) : changeStack = undo.ChangeStack()
+  Game(this.gameIndex, this.tileDictionary, {this.gameId, this.isServer=false}) : changeStack = undo.ChangeStack()
   //_moves = undo.ActionsChangeStack(),
   {
+    if (gameId == null) {
+      var uuidGen = Uuid();
+      gameId = uuidGen.v4();
+    }
     _gameService = GameService(this);
     _playerService = PlayerService.createService(this);
-    _gameMap = _loadMap(gameId, tileDictionary);
-    _marketData = _loadStockMarketData(gameId);
+    _gameMap = _loadMap(gameIndex, tileDictionary);
+    _marketData = _loadStockMarketData(gameIndex);
     _createPublicCompanies();
   }
 
@@ -115,7 +120,7 @@ class Game {
 
   Map<String, dynamic> createSave() {
     var ret = <String, dynamic>{
-      'gameId': gameId,
+      'gameId': gameIndex,
       'gameName': gameName,
       //'players': players.map<String>((e) => e.name).toList(),
       //'moves': _moves.toJson(),

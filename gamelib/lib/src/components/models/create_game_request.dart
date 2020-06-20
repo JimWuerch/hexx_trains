@@ -7,18 +7,18 @@ class CreateGameRequest extends GameModel {
   GameModelType get modelType => GameModelType.createGameRequest;
 
   //final GameAction action;
-  final int gameId;
+  final int gameIndex;
 
-  CreateGameRequest(String ownerId, this.gameId) : super(ownerId, 'createGame request');
+  CreateGameRequest(String ownerId, this.gameIndex) : super('create', ownerId, 'createGame request');
 
   @override
   Map<String, dynamic> toJson() {
     var ret = super.toJson();
-    ret['gameId'] = gameId;
+    ret['gameIndex'] = gameId;
     return ret;
   }
 
-  CreateGameRequest.fromJson(Game game, Map<String, dynamic> json)
-      : gameId = json['gameId'] as int,
+  CreateGameRequest.fromJson(Map<String, dynamic> json)
+      : gameIndex = json['gameIndex'] as int,
         super.fromJson(json);
 }
