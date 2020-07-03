@@ -13,7 +13,7 @@ class PlayerService {
   }
 
   Player addPlayer(String name) {
-    var player = LocalPlayer(name);
+    var player = LocalPlayer(game, name, game.getUuid());
     players.add(player);
     return player;
   }

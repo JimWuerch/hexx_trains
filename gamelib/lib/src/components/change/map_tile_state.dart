@@ -25,14 +25,10 @@ class MapTileChange extends Change {
 }
 
 class MapTileStateVar extends GameStateBase {
-  final GameMap gameMap;
-
-  MapTileStateVar({String label, this.gameMap, StateVarCallback onChanged, ChangeStack changeStack})
-      : super(label, changeStack, onChanged) {
-    checkNotNull(gameMap, 'gameMap');
-  }
+  MapTileStateVar(Game game, String label, StateVarCallback onChanged)
+      : super(game, label, onChanged);
 
   void replaceTile(int q, int r, HexTile tile) {
-    super.changeStack.add(MapTileChange(q: q, r: r, gameMap: gameMap, tile: tile));
+    super.game.changeStack.add(MapTileChange(q: q, r: r, gameMap: super.game.gameMap, tile: tile));
   }
 }

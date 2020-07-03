@@ -13,7 +13,7 @@ class GameServer {
   // Stream<GameAction> get serverActions => _serverActionsStreamController.stream.asBroadcastStream();
   // StreamSubscription<GameAction> gameActions;
   ClientCalback clientCallback;
-  GameStore games;
+  GameStore games = GameStore();
   TileDictionary tileDictionary;
   GameTransport gameTransport;
 

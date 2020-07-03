@@ -41,6 +41,7 @@ class Game {
   final bool isServer;
   String gameName = 'some random game';
   String gameId;
+  Uuid uuidGen;
 
   final gameActionsStreamController = StreamController<GameAction>.broadcast();
   Stream<GameAction> get gameActionsStream => gameActionsStreamController.stream.asBroadcastStream();
@@ -53,15 +54,19 @@ class Game {
   Game(this.gameIndex, this.tileDictionary, {this.gameId, this.isServer=false}) : changeStack = undo.ChangeStack()
   //_moves = undo.ActionsChangeStack(),
   {
+    uuidGen = Uuid();
     if (gameId == null) {
-      var uuidGen = Uuid();
-      gameId = uuidGen.v4();
+      gameId = getUuid();
     }
     _gameService = GameService(this);
     _playerService = PlayerService.createService(this);
     _gameMap = _loadMap(gameIndex, tileDictionary);
     _marketData = _loadStockMarketData(gameIndex);
     _createPublicCompanies();
+  }
+
+  String getUuid() {
+    return uuidGen.v4();
   }
 
 /*

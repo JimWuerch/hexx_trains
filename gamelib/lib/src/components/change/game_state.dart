@@ -1,3 +1,4 @@
+import 'package:gamelib/gamelib.dart';
 import 'package:gamelib/src/components/undo/undo.dart' as undo;
 
 export 'map_tile_state.dart';
@@ -6,25 +7,21 @@ typedef StateVarCallback = void Function(GameStateVar);
 
 abstract class GameState {
   String get label;
-  undo.ChangeStack get changeStack;
   StateVarCallback onChanged;
+  Game get game;
 }
 
 abstract class GameStateBase implements GameState {
   final String _label;
-  final undo.ChangeStack _changeStack;
+  final Game _game;
 
   @override
   StateVarCallback onChanged;
 
-  GameStateBase(this._label, undo.ChangeStack changeStack, this.onChanged) : _changeStack = changeStack {
-    if (_changeStack == null) {
-      throw ArgumentError('changeStack cannot be null');
-    }
-  }
+  GameStateBase(this._game, this._label, this.onChanged);
 
   @override
-  undo.ChangeStack get changeStack => _changeStack;
+  Game get game => _game;
 
   @override
   String get label => _label;
@@ -32,14 +29,20 @@ abstract class GameStateBase implements GameState {
 
 class GameStateVar<T> extends GameStateBase {
   T _value;
+  final ChangeStack _changeStack; // used for unit testing only
 
-  GameStateVar(String name, T startValue, {StateVarCallback onChanged, undo.ChangeStack changeStack})
+  GameStateVar(Game game, String name, T startValue, {StateVarCallback onChanged, ChangeStack changeStack})
       : _value = startValue,
-        super(name, changeStack, onChanged);
+        _changeStack = changeStack,
+        super(game, name, onChanged);
 
   T get value => _value;
   set value(T newValue) {
-    _changeStack.add(undo.Change.property(_value, () => _change(newValue), (oldValue) => _change(oldValue as T)));
+    if (_changeStack == null) {
+      game.changeStack.add(undo.Change.property(_value, () => _change(newValue), (oldValue) => _change(oldValue as T)));
+    } else {
+      _changeStack.add(undo.Change.property(_value, () => _change(newValue), (oldValue) => _change(oldValue as T)));
+    }
   }
 
   void _change(T newValue) {
@@ -52,6 +55,3 @@ class GameStateVar<T> extends GameStateBase {
     return _value.toString();
   }
 }
-
-
-

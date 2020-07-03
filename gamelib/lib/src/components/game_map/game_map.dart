@@ -50,8 +50,7 @@ class GameMap {
       : _mapCells = mapCells,
         _tileWatchers = [] {
     _tileState = game != null // stand-alone map testing doesn't need a game
-        ? MapTileStateVar(
-            gameMap: this, label: 'mapTileState', changeStack: game.changeStack, onChanged: tileStateChanged)
+        ? MapTileStateVar(game, 'mapTileState', tileStateChanged)
         : null;
   }
 

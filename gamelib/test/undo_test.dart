@@ -1,5 +1,4 @@
 import 'package:gamelib/gamelib.dart';
-import 'package:gamelib/src/components/change/game_state.dart';
 import 'package:mockito/mockito.dart';
 import 'package:test/test.dart';
 
@@ -8,8 +7,8 @@ class UndoTest {
   GameStateVar<int> intVar;
 
   UndoTest(ChangeStack stack) {
-    stringVar = GameStateVar('stringVar', 'foo', changeStack: stack);
-    intVar = GameStateVar('intVar', 0, changeStack: stack);
+    stringVar = GameStateVar(null, 'stringVar', 'foo', changeStack: stack);
+    intVar = GameStateVar(null, 'intVar', 0, changeStack: stack);
   }
 
   void dump() {

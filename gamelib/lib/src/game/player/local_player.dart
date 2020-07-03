@@ -5,7 +5,7 @@ class LocalPlayer extends Player {
   @override
   PlayerType get playerType => PlayerType.local;
 
-  LocalPlayer(String name) : super(name);
+  LocalPlayer(Game game, String name, String playerId) : super(game, name, playerId);
 
   @override
   Map<String, dynamic> toJson() {
