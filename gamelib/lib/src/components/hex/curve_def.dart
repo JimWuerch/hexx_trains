@@ -12,12 +12,16 @@ class CurveDef {
   final Point<double> cp1;
   final Point<double> cp2;
 
-  CurveDef({Point<double> p1, this.cp1, this.cp2, Point<double> p2})
+  CurveDef(
+      {required Point<double> p1,
+      required this.cp1,
+      required this.cp2,
+      required Point<double> p2})
       : start = p1,
         end = p2;
 
-  factory CurveDef.fromPoints(
-      double px1, double py1, double pcp1x, double pcp1y, double pcp2x, double pcp2y, double px2, double py2) {
+  factory CurveDef.fromPoints(double px1, double py1, double pcp1x,
+      double pcp1y, double pcp2x, double pcp2y, double px2, double py2) {
     var p1 = Point<double>(px1, py1);
     var c1 = Point<double>(pcp1x, pcp1y);
     var c2 = Point<double>(pcp2x, pcp2y);
@@ -26,13 +30,13 @@ class CurveDef {
     return CurveDef(p1: p1, cp1: c1, p2: p2, cp2: c2);
   }
 
-  factory CurveDef.fromPartial(
-      Point<double> start, Point<double> cp1, Point<double> cp2, Point<double> end, double t0, double t1) {
+  factory CurveDef.fromPartial(Point<double> start, Point<double> cp1,
+      Point<double> cp2, Point<double> end, double t0, double t1) {
     return calcPartialCurve(start, cp1, cp2, end, t0, t1);
   }
 
-  static CurveDef calcPartialCurve(
-      Point<double> start, Point<double> cp1, Point<double> cp2, Point<double> end, double t0, double t1) {
+  static CurveDef calcPartialCurve(Point<double> start, Point<double> cp1,
+      Point<double> cp2, Point<double> end, double t0, double t1) {
     var x1 = start.x;
     var y1 = start.y;
     var bx1 = cp1.x;
@@ -68,13 +72,16 @@ class CurveDef {
     return CurveDef.fromPoints(xa, ya, xb, yb, xc, yc, xd, yd);
   }
 
-  
-
   @override
   bool operator ==(dynamic other) =>
       identical(this, other) ||
-      (other is CurveDef && start == other.start && cp1 == other.cp1 && cp2 == other.cp2 && end == other.end);
+      (other is CurveDef &&
+          start == other.start &&
+          cp1 == other.cp1 &&
+          cp2 == other.cp2 &&
+          end == other.end);
 
   @override
-  int get hashCode => start.hashCode ^ cp1.hashCode ^ cp2.hashCode ^ end.hashCode;
+  int get hashCode =>
+      start.hashCode ^ cp1.hashCode ^ cp2.hashCode ^ end.hashCode;
 }

@@ -1,11 +1,22 @@
 import 'package:gamelib/gamelib.dart';
 import 'package:gamelib/src/game/round/round_base.dart';
 
-enum OperatingRoundState { start, privates, corpStart, layTile, layToken, operate, payDividend, buyTrain, corpEnd, end }
+enum OperatingRoundState {
+  start,
+  privates,
+  corpStart,
+  layTile,
+  layToken,
+  operate,
+  payDividend,
+  buyTrain,
+  corpEnd,
+  end
+}
 
 class OperatingRound extends RoundBase {
-  PublicCompany operatingCompany;
-  OperatingRoundState currentState;
+  PublicCompany? operatingCompany;
+  OperatingRoundState currentState = OperatingRoundState.start;
 
   OperatingRound(GameService gameService) : super('OR', gameService);
 
@@ -24,7 +35,8 @@ class OperatingRound extends RoundBase {
         break;
       case LayTileAction.actionName:
         var layTileAction = action as LayTileAction;
-        gameService.game.gameMap.tileState.replaceTile(layTileAction.q, layTileAction.r, layTileAction.selected);
+        gameService.game.gameMap.tileState!.replaceTile(
+            layTileAction.q, layTileAction.r, layTileAction.selected);
         action.isDone = true;
         break;
       default:
@@ -43,12 +55,17 @@ class OperatingRound extends RoundBase {
   bool createAvailableActions() {
     if (currentState == OperatingRoundState.layTile) {
       operatingCompany = gameService.game.publicCompanies[0];
-      var tile = gameService.game.gameMap.tileAt(4, 1);
+      var tile = gameService.game.gameMap.tileAt(4, 1)!;
       var actions = <GameAction>[];
-      for (var item in tile.manifestItem.upgrades) {
+      for (var item in tile.manifestItem!.upgrades!) {
         if (item.quantity > 0) {
-          var action = LayTileAction(gameService.currentPlayer, operatingCompany, tile.q, tile.r,
-              HexTile.fromManifest(gameService.game, tile.q, tile.r, gameService.game.gameMap.layout, item));
+          var action = LayTileAction(
+              gameService.currentPlayer!,
+              operatingCompany!,
+              tile.q,
+              tile.r,
+              HexTile.fromManifest(gameService.game, tile.q, tile.r,
+                  gameService.game.gameMap.layout, item));
           actions.add(action);
           if (gameService.game.isServer) {
             gameService.game.gameActionsStreamController.add(action);
@@ -66,6 +83,7 @@ class OperatingRound extends RoundBase {
   void start() {
     operatingCompany = null;
     currentState = OperatingRoundState.start;
-    gameService.game.gameActionsStreamController.add(GameStateAction(GameStateActionType.operatingRoundStart));
+    gameService.game.gameActionsStreamController
+        .add(GameStateAction(GameStateActionType.operatingRoundStart));
   }
 }

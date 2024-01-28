@@ -11,8 +11,8 @@ class HexTileWidget extends StatelessWidget {
   final bool isSelected;
 
   HexTileWidget(
-      {@required this.tileDef,
-      @required this.renderer, 
+      {required this.tileDef,
+      required this.renderer,
       this.isSelected = false}) {
     // if ((tile.q != 0) || (tile.r != 0)) {
     //   throw ArgumentError('tile should have q and r equal 0');
@@ -21,7 +21,8 @@ class HexTileWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    var background = isSelected ? Theme.of(context).accentColor : Colors.white;
+    var background =
+        isSelected ? Theme.of(context).colorScheme.secondary : Colors.white;
 
     return CustomPaint(
       painter: _HexPainter(this, background),
@@ -42,7 +43,8 @@ class _HexPainter extends CustomPainter {
   static const int _scaleY = 4;
   static const int _transY = 5;
 
-  _HexPainter(this.context, this.background);
+  _HexPainter(this.context, this.background)
+      : viewMatrix = m64.Matrix3.identity();
 
   @override
   void paint(Canvas canvas, Size size) {
@@ -59,20 +61,24 @@ class _HexPainter extends CustomPainter {
     // center it in the view
     if (x < y) {
       // constrained in width, center vertically
-      viewMatrix[_transY] = ((size.height - padding * 2) - (extents.y * scale)) / 2;
+      viewMatrix[_transY] =
+          ((size.height - padding * 2) - (extents.y * scale)) / 2;
     } else {
       // center horizontally
-      viewMatrix[_transX] = ((size.width - padding * 2) - (extents.x * scale)) / 2;
+      viewMatrix[_transX] =
+          ((size.width - padding * 2) - (extents.x * scale)) / 2;
     }
 
     canvas.clipRect(Rect.fromLTWH(0, 0, size.width, size.height));
     canvas.clear(background);
     canvas.save();
-    canvas.translate(viewMatrix[_transX] + padding, viewMatrix[_transY] + padding);
+    canvas.translate(
+        viewMatrix[_transX] + padding, viewMatrix[_transY] + padding);
     canvas.scale(viewMatrix[_scaleX], viewMatrix[_scaleY]);
 //    if (context.tile.picture == null) {
-      canvas.translate(context.renderer.layout.origin.x, context.renderer.layout.origin.y);
-      context.renderer.renderTile(canvas, context.tileDef);
+    canvas.translate(
+        context.renderer.layout.origin.x, context.renderer.layout.origin.y);
+    context.renderer.renderTile(canvas, context.tileDef);
     // } else {
     //   canvas.translate(context.tile.center.x, context.tile.center.y);
     //   canvas.drawPicture(context.tile.picture);

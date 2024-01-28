@@ -1,5 +1,5 @@
 abstract class GameException implements Exception {
-  String message;
+  String? message;
 
   GameException([this.message]);
 

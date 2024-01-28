@@ -26,37 +26,42 @@ class Game {
 
   final int gameIndex;
   //final List<Player> players = [];
-  PlayerService _playerService;
+  late PlayerService _playerService;
   PlayerService get playerService => _playerService;
   final TileDictionary tileDictionary;
-  GameMap _gameMap;
+  late GameMap _gameMap;
   GameMap get gameMap => _gameMap;
   final undo.ChangeStack changeStack;
   final List<PublicCompany> publicCompanies = [];
   //undo.ActionsChangeStack _moves;
-  StockMarketData _marketData;
+  late StockMarketData _marketData;
   StockMarketData get marketData => _marketData;
-  GameService _gameService;
+  late GameService _gameService;
   GameService get gameService => _gameService;
   final bool isServer;
   String gameName = 'some random game';
-  String gameId;
-  Uuid uuidGen;
+  late String gameId;
+  late Uuid uuidGen;
 
   final gameActionsStreamController = StreamController<GameAction>.broadcast();
-  Stream<GameAction> get gameActionsStream => gameActionsStreamController.stream.asBroadcastStream();
-  StreamSubscription<GameAction> serverActions;
+  Stream<GameAction> get gameActionsStream =>
+      gameActionsStreamController.stream.asBroadcastStream();
+  StreamSubscription<GameAction>? serverActions;
 
   // static Game _instance;
   // static Game get instance => _instance;
   // static Game get I => _instance;
 
-  Game(this.gameIndex, this.tileDictionary, {this.gameId, this.isServer=false}) : changeStack = undo.ChangeStack()
+  Game(this.gameIndex, this.tileDictionary,
+      {String? gameId, this.isServer = false})
+      : changeStack = undo.ChangeStack()
   //_moves = undo.ActionsChangeStack(),
   {
     uuidGen = Uuid();
     if (gameId == null) {
-      gameId = getUuid();
+      this.gameId = getUuid();
+    } else {
+      this.gameId = gameId;
     }
     _gameService = GameService(this);
     _playerService = PlayerService.createService(this);
@@ -91,14 +96,15 @@ class Game {
   }
 */
 
-  static Future<Game> createAsync(int gameId, TileDictionary tileDictionary) async {
+  static Future<Game> createAsync(
+      int gameId, TileDictionary tileDictionary) async {
     return Game(gameId, tileDictionary);
   }
 
   void dispose() {
     gameActionsStreamController.close();
     if (serverActions != null) {
-      serverActions.cancel();
+      serverActions!.cancel();
     }
   }
 
@@ -106,7 +112,8 @@ class Game {
     var manifest = TileManifestLoader.load(GameList.games[0].tileManifest);
     var mapData = MapData.fromJsonString(GameList.games[gameId].map);
 
-    return GameMap.createMap(this, mapData, _tileSize, _mapMargin, tileDictionary, manifest);
+    return GameMap.createMap(
+        this, mapData, _tileSize, _mapMargin, tileDictionary, manifest);
   }
 
   static StockMarketData _loadStockMarketData(int gameId) {
@@ -119,7 +126,7 @@ class Game {
     }
   }
 
-  PublicCompany getPublicCompany(String id) {
+  PublicCompany getPublicCompany(String? id) {
     return publicCompanies.firstWhere((element) => element.id == id);
   }
 
@@ -135,7 +142,8 @@ class Game {
     return ret;
   }
 
-  factory Game.restoreFromSave(String jsonString, TileDictionary tileDictionary) {
+  factory Game.restoreFromSave(
+      String jsonString, TileDictionary tileDictionary) {
     var json = jsonDecode(jsonString) as Map<String, dynamic>;
     var gameId = json['gameId'] as int;
     var gameName = json['gameName'] as String;

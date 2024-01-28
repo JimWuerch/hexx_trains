@@ -8,7 +8,7 @@ enum JunctionTypes { none, whistleStop, city, doubleCity, tripleCity, quadCity }
 class Junction {
   final Position position;
   final JunctionTypes junctionType;
-  final Revenue revenue;
+  final Revenue? revenue;
 
 // These two are set by the TileDefinition
   int connections = 0; // { get; internal se
@@ -21,20 +21,31 @@ class Junction {
         junctionType == JunctionTypes.quadCity;
   }
 
-  Junction._({this.position, this.junctionType, this.revenue, this.connections}) {
+  Junction._(
+      {required this.position,
+      required this.junctionType,
+      this.revenue,
+      this.connections = 0}) {
     layer = 0;
-    connections = 0;
   }
 
-  factory Junction({Position position, JunctionTypes junctionType, Revenue revenue, int connections = 0}) {
-    return Junction._(position: position, junctionType: junctionType, revenue: revenue, connections: connections);
+  factory Junction(
+      {required Position position,
+      required JunctionTypes junctionType,
+      Revenue? revenue,
+      int connections = 0}) {
+    return Junction._(
+        position: position,
+        junctionType: junctionType,
+        revenue: revenue,
+        connections: connections);
   }
 
   factory Junction.clone(Junction j) {
     var j2 = Junction._(
         position: Position.clone(j.position),
         junctionType: j.junctionType,
-        revenue: Revenue.clone(j.revenue),
+        revenue: j.revenue != null ? Revenue.clone(j.revenue!) : null,
         connections: j.connections);
     j2.layer = j.layer;
     return j2;
@@ -57,14 +68,18 @@ class Junction {
 
   factory Junction.fromJson(Map<String, dynamic> json) {
     var position = Position.fromTDPosition(json['position'] as String);
-    var junctionType =
-        JunctionTypes.values.firstWhere((e) => e.toString() == 'JunctionTypes.${json['junctionType'] as String}');
-    Revenue revenue;
+    var junctionType = JunctionTypes.values.firstWhere((e) =>
+        e.toString() == 'JunctionTypes.${json['junctionType'] as String}');
+    Revenue? revenue;
     if (json['revenue'] != null) {
       revenue = Revenue.fromJson(json['revenue'] as Map<String, dynamic>);
     }
 
-    return Junction._(position: position, junctionType: junctionType, revenue: revenue);
+    return Junction._(
+        position: position,
+        junctionType: junctionType,
+        revenue: revenue,
+        connections: 0);
   }
 
   Map<String, dynamic> toJson() {
@@ -74,7 +89,7 @@ class Junction {
     };
 
     if (revenue != null) {
-      ret['revenue'] = revenue.toJson();
+      ret['revenue'] = revenue!.toJson();
     }
     return ret;
   }

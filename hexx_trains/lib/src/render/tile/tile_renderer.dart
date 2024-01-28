@@ -31,13 +31,23 @@ enum _RenderElement {
   adornmentText
 }
 
-enum _TextPos { center, topLeft, topRight, bottomLeft, bottomRight, centerLeft, centerRight, centerBottom, centerTop }
+enum _TextPos {
+  center,
+  topLeft,
+  topRight,
+  bottomLeft,
+  bottomRight,
+  centerLeft,
+  centerRight,
+  centerBottom,
+  centerTop
+}
 
 class _RenderHex {
   final TileDefinition tileDef;
   final int rotation;
   final int cost;
-  final Position costPosition;
+  final Position? costPosition;
 
   _RenderHex(this.tileDef, this.rotation, this.cost, this.costPosition);
 }
@@ -45,11 +55,11 @@ class _RenderHex {
 /// Handles all the skia rendering for a tile and text
 class TileRenderer {
   static const double sqrt3 = 1.73205;
-  Map<_RenderElement, Paint> _paintDict;
-  Map<_RenderElement, TextStyle> _textStyleDict;
+  final Map<_RenderElement, Paint> _paintDict;
+  final Map<_RenderElement, TextStyle> _textStyleDict;
   final DrawingSettings drawingSettings;
-  Canvas _canvas;
-  _RenderHex _hex;
+  late Canvas _canvas;
+  late _RenderHex _hex;
   final HexLayout layout;
 
   bool _debug;
@@ -72,18 +82,17 @@ class TileRenderer {
 
   void _updateDebugMode() {
     if (_debug) {
-      _paintDict[_RenderElement.normalRail].strokeWidth = 1;
+      _paintDict[_RenderElement.normalRail]!.strokeWidth = 1;
     } else {
-      _paintDict[_RenderElement.normalRail].strokeWidth =
+      _paintDict[_RenderElement.normalRail]!.strokeWidth =
           drawingSettings.convertSize(drawingSettings.railWidth).toDouble();
     }
   }
 
-  TileRenderer(this.drawingSettings, this.layout) {
-    _paintDict = <_RenderElement, Paint>{};
-    _textStyleDict = <_RenderElement, TextStyle>{};
-    _debug = false;
-
+  TileRenderer(this.drawingSettings, this.layout)
+      : _paintDict = {},
+        _textStyleDict = {},
+        _debug = false {
     _initPaintDict();
   }
 
@@ -95,7 +104,9 @@ class TileRenderer {
       ..strokeWidth = 1
       ..isAntiAlias = true;
     _textStyleDict[_RenderElement.line] = TextStyle(
-        color: Colors.blue.shade400, fontSize: 10); //_drawingSettings.convertSize(_drawingSettings.textSize));
+        color: Colors.blue.shade400,
+        fontSize:
+            10); //_drawingSettings.convertSize(_drawingSettings.textSize));
 
     // Outline
     _paintDict[_RenderElement.outline] = Paint()
@@ -115,8 +126,8 @@ class TileRenderer {
     _paintDict[_RenderElement.normalRailContrast] = Paint()
       ..style = PaintingStyle.stroke
       ..color = drawingSettings.contrast
-      ..strokeWidth =
-          _paintDict[_RenderElement.normalRail].strokeWidth + 2 * _paintDict[_RenderElement.outline].strokeWidth
+      ..strokeWidth = _paintDict[_RenderElement.normalRail]!.strokeWidth +
+          2 * _paintDict[_RenderElement.outline]!.strokeWidth
       ..isAntiAlias = true;
 
     // WhistleStop
@@ -131,7 +142,8 @@ class TileRenderer {
     _paintDict[_RenderElement.whistleStopContrast] = Paint()
       ..style = PaintingStyle.stroke
       ..color = drawingSettings.contrast
-      ..strokeWidth = drawingSettings.convertSize(drawingSettings.barDitSize, 1.2)
+      ..strokeWidth =
+          drawingSettings.convertSize(drawingSettings.barDitSize, 1.2)
       ..isAntiAlias = true
       ..strokeCap = StrokeCap.square;
 
@@ -193,7 +205,7 @@ class TileRenderer {
 
     _paintDict[_RenderElement.junctionRevenueContrast] = Paint()
       ..style = PaintingStyle.fill
-      ..color = _paintDict[_RenderElement.normalRailContrast].color;
+      ..color = _paintDict[_RenderElement.normalRailContrast]!.color;
 
     _paintDict[_RenderElement.adornmentText] = Paint()
       //TextSize = drawingSettings.ConvertSize(drawingSettings.TextSize),
@@ -212,11 +224,7 @@ class TileRenderer {
   /// Rendering expects to render the center of the tile at 0,0.  Scale and translate the canvas
   /// before calling.
   void renderTile(Canvas canvas, TileDefinition tileDefinition,
-      [int rotation = 0, int cost = 0, Position costPosition]) {
-    if (canvas == null) throw ArgumentError('canvas is null');
-    if (tileDefinition == null) throw ArgumentError('tileDefinition is null');
-    //if (hexLayout == null) throw ArgumentError('hexLayout is null');
-
+      [int rotation = 0, int cost = 0, Position? costPosition]) {
     _canvas = canvas;
     _hex = _RenderHex(tileDefinition, rotation, cost, costPosition);
 
@@ -226,8 +234,8 @@ class TileRenderer {
 
     // sort the connections by layer
     var maxLayer = -1;
-    List<Connection> curLayer;
-    List<Connection> prevLayer;
+    List<Connection>? curLayer;
+    List<Connection>? prevLayer;
     var layers = SplayTreeMap<int, List<Connection>>();
     for (var connection in _hex.tileDef.connections) {
       if (!layers.containsKey(connection.layer)) {
@@ -235,16 +243,18 @@ class TileRenderer {
           layers[index] = <Connection>[];
         }
       }
-      layers[connection.layer].add(connection);
+      layers[connection.layer]!.add(connection);
       maxLayer = max(maxLayer, connection.layer);
     }
 
     for (var junction in _hex.tileDef.junctions) {
-      if (junction.junctionType != JunctionTypes.whistleStop) _drawJunction(junction, true);
+      if (junction.junctionType != JunctionTypes.whistleStop) {
+        _drawJunction(junction, true);
+      }
     }
 
     for (var layerNumber = 0; layerNumber <= maxLayer; ++layerNumber) {
-      curLayer = layers[layerNumber];
+      curLayer = layers[layerNumber]!;
 
       for (var connection in curLayer) {
         _drawConnection(connection, true);
@@ -268,7 +278,8 @@ class TileRenderer {
 
     if (curLayer != null) {
       for (var junction in _hex.tileDef.junctions) {
-        if (junction.layer == maxLayer && junction.junctionType == JunctionTypes.whistleStop) {
+        if (junction.layer == maxLayer &&
+            junction.junctionType == JunctionTypes.whistleStop) {
           _drawJunction(junction, true);
         }
       }
@@ -279,7 +290,8 @@ class TileRenderer {
     }
 
     for (var junction in _hex.tileDef.junctions) {
-      if (junction.junctionType == JunctionTypes.whistleStop && junction.connections > 2) {
+      if (junction.junctionType == JunctionTypes.whistleStop &&
+          junction.connections > 2) {
         // need to re-draw contrast for round dits
         _drawJunction(junction, true);
       }
@@ -288,7 +300,7 @@ class TileRenderer {
 
     _drawAdornments();
     _drawTileCost();
-    _drawOutline(_paintDict[_RenderElement.outline]);
+    _drawOutline(_paintDict[_RenderElement.outline]!);
     _drawInnerLevels();
     canvas.restore();
   }
@@ -312,7 +324,7 @@ class TileRenderer {
         return hp.curvePoints[pos.index].right[pos.level].end;
     }
 
-    throw ArgumentError('Invalid position code');
+    //throw ArgumentError('Invalid position code');
   }
 
   Point<double> _getPoint(Position pos) {
@@ -382,8 +394,8 @@ class TileRenderer {
   }
 
   void _drawBarDit(Position pos, Paint paint) {
-    Point<double> ditCenter;
-    Point<double> inputVector;
+    Point<double>? ditCenter;
+    Point<double>? inputVector;
 
     if (pos.isCurve) {
       var curvePoint = layout.hexPoints.curvePoints[pos.index];
@@ -418,7 +430,9 @@ class TileRenderer {
     } else if (pos.location == Locations.corner) {
       var hp = layout.hexPoints;
       for (var connection in _hex.tileDef.connections) {
-        if (!(connection.position1 == pos) && !(connection.position2 == pos)) continue;
+        if (!(connection.position1 == pos) && !(connection.position2 == pos)) {
+          continue;
+        }
 
         var level1 = connection.position1.level; //ignore: unused_local_variable
         var index1 = connection.position1.index;
@@ -426,8 +440,10 @@ class TileRenderer {
         var level2 = connection.position2.level; //ignore: unused_local_variable
         var index2 = connection.position2.index;
         var loc2 = connection.position2.location;
-        var indexDistance = Position.indexDistance(connection.position1, connection.position2);
-        var indexCompare = Position.compareIndexes(connection.position1, connection.position2);
+        var indexDistance =
+            Position.indexDistance(connection.position1, connection.position2);
+        var indexCompare =
+            Position.compareIndexes(connection.position1, connection.position2);
 
         if (loc1 != Locations.corner && loc2 == Locations.corner) {
           // flip the connection around
@@ -440,7 +456,8 @@ class TileRenderer {
           indexCompare = -indexCompare;
         }
         // is it a tight curve?
-        if ((indexDistance == 1 && indexCompare == 1) || (indexDistance == 0 && indexCompare == -1)) {
+        if ((indexDistance == 1 && indexCompare == 1) ||
+            (indexDistance == 0 && indexCompare == -1)) {
           // side indices < corner indices
           if (indexDistance == 0) {
             // curve to left, set the other side
@@ -449,14 +466,20 @@ class TileRenderer {
 
           // use the tight curve control points, and get half the curve
           var cd = CurveDef.fromPartial(
-              hp.sides[4][index1], hp.tightCurveCP[index1], hp.tightCurveCP[index2], hp.sides[4][index2], 0.5, 1);
+              hp.sides[4][index1],
+              hp.tightCurveCP[index1],
+              hp.tightCurveCP[index2],
+              hp.sides[4][index2],
+              0.5,
+              1);
           inputVector = cd.cp1 - cd.start;
           ditCenter = cd.start;
           break;
         }
       }
       if (inputVector == null) {
-        throw ArgumentError('Don\'t know how to render corner dit not on level 2 tight curve');
+        throw ArgumentError(
+            'Don\'t know how to render corner dit not on level 2 tight curve');
       }
     } else {
       throw ArgumentError('Invalid dit location ${pos.location}');
@@ -467,14 +490,20 @@ class TileRenderer {
     if (pos.level == 1 && pos.location == Locations.side) {
       ditPointPre = _normalizePoint(inputVector);
     } else {
-      ditPointPre = _normalizePoint(Point<double>(inputVector.y, -inputVector.x));
+      ditPointPre =
+          _normalizePoint(Point<double>(inputVector.y, -inputVector.x));
     }
     // size to half the width, because we will reflect the vector for the other half
-    var ditPoint = Point<double>(ditPointPre.x * drawingSettings.convertSize(drawingSettings.barDitSize) / 2.0,
-        ditPointPre.y * drawingSettings.convertSize(drawingSettings.barDitSize) / 2.0);
+    var ditPoint = Point<double>(
+        ditPointPre.x *
+            drawingSettings.convertSize(drawingSettings.barDitSize) /
+            2.0,
+        ditPointPre.y *
+            drawingSettings.convertSize(drawingSettings.barDitSize) /
+            2.0);
 
     var path = Path();
-    var p1 = ditCenter + ditPoint;
+    var p1 = ditCenter! + ditPoint;
     var p2 = ditCenter - ditPoint;
     path.moveTo(p1.x, p1.y);
     path.lineTo(p2.x, p2.y);
@@ -488,18 +517,20 @@ class TileRenderer {
     double radius;
     Paint paint;
     if (isContrast) {
-      radius = drawingSettings.convertSize(drawingSettings.roundDitSize, drawingSettings.contrastScale);
-      paint = _paintDict[_RenderElement.roundWhistleStopContrast];
+      radius = drawingSettings.convertSize(
+          drawingSettings.roundDitSize, drawingSettings.contrastScale);
+      paint = _paintDict[_RenderElement.roundWhistleStopContrast]!;
     } else {
       radius = drawingSettings.convertSize(drawingSettings.roundDitSize);
-      paint = _paintDict[_RenderElement.roundWhistleStop];
+      paint = _paintDict[_RenderElement.roundWhistleStop]!;
     }
     var center = _getPoint(position);
     _canvas.drawCircle(Offset(center.x, center.y), radius, paint);
   }
 
   /// Draw [text] at [p] where [textPos] specifies where on the bounding box [p] resides.
-  void _drawText(String text, Point<double> p, TextStyle textStyle, [_TextPos textPos = _TextPos.center]) {
+  void _drawText(String text, Point<double> p, TextStyle textStyle,
+      [_TextPos textPos = _TextPos.center]) {
     var textPainter = TextPainter(textDirection: TextDirection.ltr);
     textPainter.text = TextSpan(text: text, style: textStyle);
     textPainter.layout(
@@ -547,9 +578,11 @@ class TileRenderer {
     textPainter.paint(_canvas, Offset(p.x - xOffset, p.y - yOffset));
 
     if (debug && textPainter.width > 10 && textPainter.height > 10) {
-      _canvas.drawRect(Rect.fromLTWH(p.x - xOffset, p.y - yOffset, textPainter.width, textPainter.height),
-          _paintDict[_RenderElement.line]);
-      _canvas.drawCircle(Offset(p.x, p.y), 5, _paintDict[_RenderElement.line]);
+      _canvas.drawRect(
+          Rect.fromLTWH(p.x - xOffset, p.y - yOffset, textPainter.width,
+              textPainter.height),
+          _paintDict[_RenderElement.line]!);
+      _canvas.drawCircle(Offset(p.x, p.y), 5, _paintDict[_RenderElement.line]!);
     }
   }
 
@@ -569,7 +602,7 @@ class TileRenderer {
     var path = Path();
     path.moveTo(p.x, p.y);
     path.lineTo(cp.x, cp.y);
-    var paint = _paintDict[_RenderElement.line];
+    var paint = _paintDict[_RenderElement.line]!;
     _canvas.drawPath(path, paint);
     var oldStyle = paint.style;
     paint.style = PaintingStyle.fill;
@@ -605,12 +638,14 @@ class TileRenderer {
       pathRings.close();
     }
 
-    _canvas.drawPath(pathRings, _paintDict[_RenderElement.line]);
-    _canvas.drawPath(pathRays, _paintDict[_RenderElement.line]);
+    _canvas.drawPath(pathRings, _paintDict[_RenderElement.line]!);
+    _canvas.drawPath(pathRays, _paintDict[_RenderElement.line]!);
 
     for (var index = 0; index < 6; index++) {
-      _drawText(index.toString(), hp.corners[3][index], _textStyleDict[_RenderElement.line], _TextPos.topLeft);
-      _drawText(index.toString(), hp.sides[3][index], _textStyleDict[_RenderElement.line], _TextPos.topLeft);
+      _drawText(index.toString(), hp.corners[3][index],
+          _textStyleDict[_RenderElement.line]!, _TextPos.topLeft);
+      _drawText(index.toString(), hp.sides[3][index],
+          _textStyleDict[_RenderElement.line]!, _TextPos.topLeft);
 //    _canvas.drawText(index.ToString(System.Globalization.CultureInfo.InvariantCulture), hp.Corners[3, index], paintDict[RenderElement.Line]);
 //    _canvas.drawText(index.ToString(System.Globalization.CultureInfo.InvariantCulture), hp.Sides[3, index], paintDict[RenderElement.Line]);
     }
@@ -625,7 +660,7 @@ class TileRenderer {
       layout.hexPoints.curvePoints[index].left[0].addToPath(curvePaths);
       layout.hexPoints.curvePoints[index].left[1].addToPath(curvePaths);
     }
-    _canvas.drawPath(curvePaths, _paintDict[_RenderElement.line]);
+    _canvas.drawPath(curvePaths, _paintDict[_RenderElement.line]!);
     _disposePath(curvePaths);
   }
 
@@ -644,7 +679,8 @@ class TileRenderer {
   // See Rob Spencer's article for description of this function
   // http://scaledinnovation.com/analytics/splines/aboutSplines.html
   //ignore: unused_element
-  List<Point<double>> _getControlPoints(Point<double> p0, Point<double> p1, Point<double> p2, double t) {
+  List<Point<double>> _getControlPoints(
+      Point<double> p0, Point<double> p1, Point<double> p2, double t) {
     var d01 = sqrt(pow(p1.x - p0.x, 2) + pow(p1.y - p0.y, 2));
     var d12 = sqrt(pow(p2.x - p1.x, 2) + pow(p2.y - p1.y, 2));
     var fa = t * d01 / (d01 + d12); // scaling factor for triangle Ta
@@ -667,11 +703,15 @@ class TileRenderer {
     var level2 = connection.position2.level;
     var index2 = connection.position2.index;
     var loc2 = connection.position2.location;
-    var indexDistance = Position.indexDistance(connection.position1, connection.position2);
-    var indexCompare = Position.compareIndexes(connection.position1, connection.position2);
+    var indexDistance =
+        Position.indexDistance(connection.position1, connection.position2);
+    var indexCompare =
+        Position.compareIndexes(connection.position1, connection.position2);
     var hp = layout.hexPoints;
 
-    var paint = isContrast ? _paintDict[_RenderElement.normalRailContrast] : _paintDict[_RenderElement.normalRail];
+    var paint = isContrast
+        ? _paintDict[_RenderElement.normalRailContrast]!
+        : _paintDict[_RenderElement.normalRail]!;
 
     // simple straight connections
     if ((loc1 == Locations.side && loc2 == Locations.side) &&
@@ -765,7 +805,8 @@ class TileRenderer {
       // corner to level 4 side
       if (level1 == 2 && level2 == 4) {
         // is it a tight curve?
-        if ((indexDistance == 1 && indexCompare == 1) || (indexDistance == 0 && indexCompare == -1)) {
+        if ((indexDistance == 1 && indexCompare == 1) ||
+            (indexDistance == 0 && indexCompare == -1)) {
           // side indices < corner indices
           if (indexDistance == 0) {
             // curve to left, set the other side
@@ -774,7 +815,12 @@ class TileRenderer {
 
           // use the tight curve control points, and get half the curve
           var cd = CurveDef.fromPartial(
-              hp.sides[4][index1], hp.tightCurveCP[index1], hp.tightCurveCP[index2], hp.sides[4][index2], 0.5, 1);
+              hp.sides[4][index1],
+              hp.tightCurveCP[index1],
+              hp.tightCurveCP[index2],
+              hp.sides[4][index2],
+              0.5,
+              1);
 
           _drawCurve(cd, paint);
         } else {
@@ -814,7 +860,8 @@ class TileRenderer {
       // gentle curve from lvl4 side to lvl1 corner
       else if (level1 == 1 && level2 == 4) {
         var t = .415;
-        if ((indexDistance == 0 && indexCompare == -1) || (indexDistance == 1 && indexCompare == 1)) {
+        if ((indexDistance == 0 && indexCompare == -1) ||
+            (indexDistance == 1 && indexCompare == 1)) {
           // short side
           t = 1 - t;
         }
@@ -827,7 +874,12 @@ class TileRenderer {
         }
 
         var cd = CurveDef.fromPartial(
-            hp.sides[4][index1], hp.gentleCurveCP[index1], hp.gentleCurveCP[index2], hp.sides[4][index2], t, 1);
+            hp.sides[4][index1],
+            hp.gentleCurveCP[index1],
+            hp.gentleCurveCP[index2],
+            hp.sides[4][index2],
+            t,
+            1);
         _drawCurve(cd, paint);
       } else {
         // not handled
@@ -835,9 +887,17 @@ class TileRenderer {
       }
     }
     // gentle curve to the midpoint
-    else if ((loc1 == Locations.side && level1 == 1 && loc2 == Locations.side && level2 == 4) ||
-        (loc2 == Locations.side && level2 == 1 && loc1 == Locations.side && level1 == 4) &&
-            Position.indexDistance(connection.position1, connection.position2) == 1) {
+    else if ((loc1 == Locations.side &&
+            level1 == 1 &&
+            loc2 == Locations.side &&
+            level2 == 4) ||
+        (loc2 == Locations.side &&
+                level2 == 1 &&
+                loc1 == Locations.side &&
+                level1 == 4) &&
+            Position.indexDistance(
+                    connection.position1, connection.position2) ==
+                1) {
       if (level1 != 1) {
         // flip the connection
         level1 = connection.position2.level;
@@ -856,11 +916,17 @@ class TileRenderer {
       }
 
       var cd = CurveDef.fromPartial(
-          hp.sides[4][index1], hp.gentleCurveCP[index1], hp.gentleCurveCP[index2], hp.sides[4][index2], .5, 1);
+          hp.sides[4][index1],
+          hp.gentleCurveCP[index1],
+          hp.gentleCurveCP[index2],
+          hp.sides[4][index2],
+          .5,
+          1);
       _drawCurve(cd, paint);
     } else if (loc1 == Locations.side &&
         loc2 == Locations.side &&
-        (level1 == TileDefinition.numLevels || level2 == TileDefinition.numLevels) &&
+        (level1 == TileDefinition.numLevels ||
+            level2 == TileDefinition.numLevels) &&
         (level1 == 2 || level2 == 2)) {
       // outside side to middle side.  Draw straight line to corner, then tight curve to the side
       Position pos1, pos2;
@@ -885,7 +951,8 @@ class TileRenderer {
       if (indexCompare == -1) {
         index1 = (index1 + 1) % 6;
       }
-      var cornerPos = Position(location: Locations.corner, level: level1, index: index1);
+      var cornerPos =
+          Position(location: Locations.corner, level: level1, index: index1);
       _drawStraightConnection(
           Connection(
               position1: pos1,
@@ -909,7 +976,9 @@ class TileRenderer {
 
     if (connection.position1.level != 4 || connection.position2.level != 4) {
       // check to see if there's a junction at the non-edge end
-      var pos = connection.position1.level != 4 ? connection.position1 : connection.position2;
+      var pos = connection.position1.level != 4
+          ? connection.position1
+          : connection.position2;
       var connected = false;
       for (var junction in _hex.tileDef.junctions) {
         if (junction.position == pos) {
@@ -937,7 +1006,9 @@ class TileRenderer {
   }
 
   void _drawJunction(Junction junction, bool isContrast) {
-    var ditPaint = isContrast ? _paintDict[_RenderElement.whistleStopContrast] : _paintDict[_RenderElement.whistleStop];
+    var ditPaint = isContrast
+        ? _paintDict[_RenderElement.whistleStopContrast]!
+        : _paintDict[_RenderElement.whistleStop]!;
     switch (junction.junctionType) {
       case JunctionTypes.whistleStop:
         if (junction.connections == 1 || junction.connections == 2) {
@@ -972,33 +1043,35 @@ class TileRenderer {
     if (_hex.tileDef.isBase) return;
 
     var hp = layout.hexPoints;
-    var textStyle = _textStyleDict[_RenderElement.tileNumberText];
+    var textStyle = _textStyleDict[_RenderElement.tileNumberText]!;
 
     // var p = Point<double>(hp.sides[4][3].x + (hp.corners[4][3].x - hp.sides[4][3].x) / 2.0,
     //     hp.sides[3][3].y + (hp.sides[4][3].y - hp.sides[3][3].y) / 2.0);
-    var p = Point<double>(hp.corners[3][3].x, hp.corners[3][3].y - (hp.corners[3][3].y - hp.corners[4][3].y) / 2.0);
+    var p = Point<double>(hp.corners[3][3].x,
+        hp.corners[3][3].y - (hp.corners[3][3].y - hp.corners[4][3].y) / 2.0);
 
     _canvas.save();
     var deg = layout.orientation == HexOrientation.pointy ? 30.0 : 0.0;
     _canvas.rotateDegreesOnPoint(deg, p);
-    _drawText(_hex.tileDef.tileId.toString(), p, textStyle, _TextPos.centerRight);
+    _drawText(
+        _hex.tileDef.tileId.toString(), p, textStyle, _TextPos.centerRight);
     _canvas.restore();
   }
 
   void _drawJunctionRevenue(Junction junction) {
-    if (junction.revenue.amount <= 0) {
+    if (junction.revenue == null || junction.revenue!.amount <= 0) {
       return;
     }
 
-    var textStyle = _textStyleDict[_RenderElement.junctionRevenueText];
-    var outline = _paintDict[_RenderElement.outline];
-    var contrast = _paintDict[_RenderElement.junctionRevenueContrast];
+    var textStyle = _textStyleDict[_RenderElement.junctionRevenueText]!;
+    var outline = _paintDict[_RenderElement.outline]!;
+    var contrast = _paintDict[_RenderElement.junctionRevenueContrast]!;
 
-    var amount = junction.revenue.amount.toString();
-    var p = _getPoint(junction.revenue.position);
+    var amount = junction.revenue!.amount.toString();
+    var p = _getPoint(junction.revenue!.position);
 
     var radius = drawingSettings.convertSize(drawingSettings.revenueSize);
-    if (junction.revenue.amount < 100) {
+    if (junction.revenue!.amount < 100) {
       radius *= .8;
     }
     _canvas.drawCircle(Offset(p.x, p.y), radius, contrast);
@@ -1016,7 +1089,11 @@ class TileRenderer {
     var oldCap = paint.strokeCap;
     paint.strokeCap = StrokeCap.round;
     _canvas.drawPoints(
-        ui.PointMode.polygon, layout.hexPoints.outsideCornerOffsets.map((e) => ui.Offset(e.x, e.y)).toList(), paint);
+        ui.PointMode.polygon,
+        layout.hexPoints.outsideCornerOffsets
+            .map((e) => ui.Offset(e.x, e.y))
+            .toList(),
+        paint);
     paint.strokeCap = oldCap;
     return;
   }
@@ -1025,16 +1102,18 @@ class TileRenderer {
     var path = Path();
     for (var i = 0; i < 6; ++i) {
       if (i == 0) {
-        path.moveTo(layout.hexPoints.corners[4][i].x, layout.hexPoints.corners[4][i].y);
+        path.moveTo(
+            layout.hexPoints.corners[4][i].x, layout.hexPoints.corners[4][i].y);
       } else {
-        path.lineTo(layout.hexPoints.corners[4][i].x, layout.hexPoints.corners[4][i].y);
+        path.lineTo(
+            layout.hexPoints.corners[4][i].x, layout.hexPoints.corners[4][i].y);
       }
     }
     path.close();
     if (_hex.tileDef.clipTile) {
       _canvas.clipPath(path);
     }
-    var paint = _paintDict[_RenderElement.yellowBackground];
+    var paint = _paintDict[_RenderElement.yellowBackground]!;
     var oldColor = paint.color;
     paint.color = drawingSettings.getColor(_hex.tileDef.color);
     _canvas.drawPath(path, paint);
@@ -1048,7 +1127,7 @@ class TileRenderer {
 
     var path = Path();
 
-    var cityFill = _paintDict[_RenderElement.normalRailContrast];
+    var cityFill = _paintDict[_RenderElement.normalRailContrast]!;
     var oldStyle = cityFill.style;
     var oldStrokeWidth = cityFill.strokeWidth;
     cityFill.style = PaintingStyle.fill;
@@ -1068,29 +1147,34 @@ class TileRenderer {
           var r = Rect.fromLTWH(-radius, -radius, 2.0 * radius, 2.0 * radius);
           //SKRect r = SKRect.Create(new SKPoint(-radius, -radius), new SKSize(2f * radius, 2f * radius));
           _canvas.drawRect(r, cityFill);
-          _canvas.drawRect(r, _paintDict[_RenderElement.outline]);
+          _canvas.drawRect(r, _paintDict[_RenderElement.outline]!);
         }
         break;
       case JunctionTypes.tripleCity:
         cityCircles = 3;
         path.moveTo(-radius, -(radius / sqrt3 + radius));
         path.lineTo(radius, -(radius / sqrt3 + radius));
-        path.lineTo(radius * (0.5 * sqrt3 + 1.0), -(radius / sqrt3 - 0.5 * radius));
-        path.lineTo(0.5 * sqrt3 * radius, -(-2.0 * radius / sqrt3 - 0.5 * radius));
-        path.lineTo(-0.5 * sqrt3 * radius, -(-2.0 * radius / sqrt3 - 0.5 * radius));
-        path.lineTo(-radius * (0.5 * sqrt3 + 1.0), -(radius / sqrt3 - 0.5 * radius));
+        path.lineTo(
+            radius * (0.5 * sqrt3 + 1.0), -(radius / sqrt3 - 0.5 * radius));
+        path.lineTo(
+            0.5 * sqrt3 * radius, -(-2.0 * radius / sqrt3 - 0.5 * radius));
+        path.lineTo(
+            -0.5 * sqrt3 * radius, -(-2.0 * radius / sqrt3 - 0.5 * radius));
+        path.lineTo(
+            -radius * (0.5 * sqrt3 + 1.0), -(radius / sqrt3 - 0.5 * radius));
         path.close();
         _canvas.drawPath(path, cityFill);
-        _canvas.drawPath(path, _paintDict[_RenderElement.outline]);
+        _canvas.drawPath(path, _paintDict[_RenderElement.outline]!);
         break;
       case JunctionTypes.quadCity:
         {
           cityCircles = 4;
-          var r = Rect.fromLTWH(-2.0 * radius, -2.0 * radius, 4.0 * radius, 4.0 * radius);
+          var r = Rect.fromLTWH(
+              -2.0 * radius, -2.0 * radius, 4.0 * radius, 4.0 * radius);
           var rr = RRect.fromRectAndRadius(r, Radius.circular(1.1 * radius));
           _canvas.drawRRect(rr, cityFill);
           rr = RRect.fromRectAndRadius(r, Radius.circular(radius));
-          _canvas.drawRRect(rr, _paintDict[_RenderElement.outline]);
+          _canvas.drawRRect(rr, _paintDict[_RenderElement.outline]!);
         }
         break;
       default:
@@ -1104,8 +1188,8 @@ class TileRenderer {
 
     for (var i = 0; i < cityCircles; i++) {
       var p = _cityOffset(cityCircles, i);
-      _canvas.drawCircle(p, radius, _paintDict[_RenderElement.city]);
-      _canvas.drawCircle(p, radius, _paintDict[_RenderElement.outline]);
+      _canvas.drawCircle(p, radius, _paintDict[_RenderElement.city]!);
+      _canvas.drawCircle(p, radius, _paintDict[_RenderElement.outline]!);
     }
     _canvas.restore();
   }
@@ -1160,7 +1244,6 @@ class TileRenderer {
           default:
             throw ArgumentError('Invalid city number');
         }
-        break; // to make linter happy
       case 3:
         switch (cityNum) {
           case 0:
@@ -1172,7 +1255,6 @@ class TileRenderer {
           default:
             throw ArgumentError('Invalid city number');
         }
-        break; // to make linter happy
       case 4:
         switch (cityNum) {
           case 0:
@@ -1186,7 +1268,6 @@ class TileRenderer {
           default:
             throw ArgumentError('Invalid city number');
         }
-        break; // to make linter happy
       default:
         throw ArgumentError('Invalid city number');
     }
@@ -1197,61 +1278,74 @@ class TileRenderer {
 
     var path = Path();
 
-    var contrastPaint = _paintDict[_RenderElement.normalRailContrast];
+    var contrastPaint = _paintDict[_RenderElement.normalRailContrast]!;
     var oldStyle = contrastPaint.style;
     contrastPaint.style = PaintingStyle.fill;
 
-    var lineContrast = _paintDict[_RenderElement.outline];
+    var lineContrast = _paintDict[_RenderElement.outline]!;
     var oldContrastColor = lineContrast.color;
     var oldContrastStyle = lineContrast.style;
     var oldContrastStrokeWidth = lineContrast.strokeWidth;
     lineContrast.color = Colors.white;
     // because flutter doesn't have StrokeAndFill, we will have to fill then stroke ourselves
     lineContrast.style = PaintingStyle.fill;
-    lineContrast.strokeWidth = 3 * _paintDict[_RenderElement.outline].strokeWidth;
+    lineContrast.strokeWidth =
+        3 * _paintDict[_RenderElement.outline]!.strokeWidth;
 
     _canvas.save();
     _setCityMatrix(junction);
 
     switch (junction.junctionType) {
       case JunctionTypes.city:
-        _canvas.drawCircle(Offset(0, 0), radius * 1.1, _paintDict[_RenderElement.city]);
+        _canvas.drawCircle(
+            Offset(0, 0), radius * 1.1, _paintDict[_RenderElement.city]!);
         break;
       case JunctionTypes.doubleCity:
         {
-          var r = Rect.fromLTWH(-2.0 * radius * 1.05, -radius * 1.1, 4.0 * radius * 1.05, 2.0 * radius * 1.1);
-          var r2 = Rect.fromLTWH(-2.0 * radius, -radius, 4.0 * radius, 2.0 * radius);
+          var r = Rect.fromLTWH(-2.0 * radius * 1.05, -radius * 1.1,
+              4.0 * radius * 1.05, 2.0 * radius * 1.1);
+          var r2 =
+              Rect.fromLTWH(-2.0 * radius, -radius, 4.0 * radius, 2.0 * radius);
           var rr1 = RRect.fromRectAndRadius(r, Radius.circular(radius * 1.1));
           var rr2 = RRect.fromRectAndRadius(r2, Radius.circular(radius));
           _canvas.drawRRect(rr1, contrastPaint);
-          _canvas.drawRRect(rr2, _paintDict[_RenderElement.outline]);
+          _canvas.drawRRect(rr2, _paintDict[_RenderElement.outline]!);
         }
         break;
       case JunctionTypes.tripleCity:
         path.moveTo(-radius, -(radius / sqrt3 + radius));
         path.lineTo(radius, -(radius / sqrt3 + radius));
-        path.lineTo(radius * (0.5 * sqrt3 + 1.0), -(radius / sqrt3 - 0.5 * radius));
-        path.lineTo(0.5 * sqrt3 * radius, -(-2.0 * radius / sqrt3 - 0.5 * radius));
-        path.lineTo(-0.5 * sqrt3 * radius, -(-2.0 * radius / sqrt3 - 0.5 * radius));
-        path.lineTo(-radius * (0.5 * sqrt3 + 1.0), -(radius / sqrt3 - 0.5 * radius));
+        path.lineTo(
+            radius * (0.5 * sqrt3 + 1.0), -(radius / sqrt3 - 0.5 * radius));
+        path.lineTo(
+            0.5 * sqrt3 * radius, -(-2.0 * radius / sqrt3 - 0.5 * radius));
+        path.lineTo(
+            -0.5 * sqrt3 * radius, -(-2.0 * radius / sqrt3 - 0.5 * radius));
+        path.lineTo(
+            -radius * (0.5 * sqrt3 + 1.0), -(radius / sqrt3 - 0.5 * radius));
         path.close();
         _canvas.drawPath(path, lineContrast);
         lineContrast.style = PaintingStyle.stroke;
         _canvas.drawPath(path, lineContrast);
         lineContrast.style = PaintingStyle.fill;
 
-        _canvas.drawCircle(_cityOffset(3, 0), radius * 1.1, _paintDict[_RenderElement.city]);
-        _canvas.drawCircle(_cityOffset(3, 1), radius * 1.1, _paintDict[_RenderElement.city]);
-        _canvas.drawCircle(_cityOffset(3, 2), radius * 1.1, _paintDict[_RenderElement.city]);
+        _canvas.drawCircle(
+            _cityOffset(3, 0), radius * 1.1, _paintDict[_RenderElement.city]!);
+        _canvas.drawCircle(
+            _cityOffset(3, 1), radius * 1.1, _paintDict[_RenderElement.city]!);
+        _canvas.drawCircle(
+            _cityOffset(3, 2), radius * 1.1, _paintDict[_RenderElement.city]!);
         break;
       case JunctionTypes.quadCity:
         {
-          var r = Rect.fromLTWH(-2.0 * radius * 1.05, -2.0 * radius * 1.05, 4.0 * radius * 1.05, 4.0 * radius * 1.05);
-          var r2 = Rect.fromLTWH(-2.0 * radius, -2.0 * radius, 4.0 * radius, 4.0 * radius);
+          var r = Rect.fromLTWH(-2.0 * radius * 1.05, -2.0 * radius * 1.05,
+              4.0 * radius * 1.05, 4.0 * radius * 1.05);
+          var r2 = Rect.fromLTWH(
+              -2.0 * radius, -2.0 * radius, 4.0 * radius, 4.0 * radius);
           var rr1 = RRect.fromRectAndRadius(r, Radius.circular(radius * 1.1));
           var rr2 = RRect.fromRectAndRadius(r2, Radius.circular(radius));
           _canvas.drawRRect(rr1, contrastPaint);
-          _canvas.drawRRect(rr2, _paintDict[_RenderElement.outline]);
+          _canvas.drawRRect(rr2, _paintDict[_RenderElement.outline]!);
         }
         break;
       default:
@@ -1275,16 +1369,16 @@ class TileRenderer {
         case AdornmentTypes.text:
           {
             var a = adornment as TextAdornment;
-            if (a.text?.isEmpty ?? true) continue;
+            if (a.text.isEmpty) continue;
             TextStyle textStyle;
             if (a.text.length > 2) {
-              textStyle = _textStyleDict[_RenderElement.adornmentText];
+              textStyle = _textStyleDict[_RenderElement.adornmentText]!;
             } else {
-              var srcTextStyle = _textStyleDict[_RenderElement.adornmentText];
+              var srcTextStyle = _textStyleDict[_RenderElement.adornmentText]!;
               textStyle = TextStyle(
                   color: srcTextStyle.color,
                   fontFamily: srcTextStyle.fontFamily,
-                  fontSize: srcTextStyle.fontSize * 1.5,
+                  fontSize: srcTextStyle.fontSize! * 1.5,
                   fontWeight: srcTextStyle.fontWeight);
             }
             var p = _getPoint(a.position);
@@ -1301,26 +1395,17 @@ class TileRenderer {
 
   /// Draw [text] at [position]. [sizeMultiplier] is used to scale the text based on [drawingSettings.textSize]
   static void drawMapText(
-      {@required Canvas canvas,
-      @required String text,
-      @required Position position,
-      @required double sizeMultiplier,
-      @required HexLayout layout,
-      @required DrawingSettings drawingSettings}) {
-    if (position == null) {
-      throw ArgumentError('position is null');
-    }
-    if (canvas == null) {
-      throw ArgumentError('canvas is null');
-    }
-    if (drawingSettings == null) {
-      throw ArgumentError('drawingSettings is null');
-    }
-
+      {required Canvas canvas,
+      required String text,
+      required Position position,
+      required double sizeMultiplier,
+      required HexLayout layout,
+      required DrawingSettings drawingSettings}) {
     var point = _getPointStatic(position, layout);
 
     var textStyle = TextStyle(
-        fontSize: drawingSettings.convertSize(drawingSettings.textSize) * sizeMultiplier,
+        fontSize: drawingSettings.convertSize(drawingSettings.textSize) *
+            sizeMultiplier,
         color: Colors.black,
         fontFamily: 'RobotoSlab',
         fontWeight: FontWeight.bold);
@@ -1338,7 +1423,10 @@ class TileRenderer {
 //    canvas.translate(point.x, point.y);
 //    canvas.rotate(-deg * pi / 180.0);
 
-    textPainter.paint(canvas, Offset(point.x - textBounds.width / 2.0, point.y - textBounds.height / 2.0));
+    textPainter.paint(
+        canvas,
+        Offset(point.x - textBounds.width / 2.0,
+            point.y - textBounds.height / 2.0));
 
     canvas.restore();
   }
@@ -1350,7 +1438,7 @@ class TileRenderer {
       drawMapText(
           canvas: _canvas,
           text: '\$${_hex.cost.toString()}',
-          position: _hex.costPosition,
+          position: _hex.costPosition!,
           sizeMultiplier: 1,
           layout: layout,
           drawingSettings: drawingSettings); //gameService.DrawingSettings);
@@ -1359,36 +1447,27 @@ class TileRenderer {
   }
 
   void drawBarrier(Canvas canvas, int side) {
-    if (canvas == null) {
-      throw ArgumentError('canvas is null');
-    }
-
     var p0 = layout.hexPoints.corners[4][side];
     var p1 = layout.hexPoints.corners[4][(side + 1) % 6];
-    canvas.drawLine(Offset(p0.x, p0.y), Offset(p1.x, p1.y), _paintDict[_RenderElement.barrier]);
+    canvas.drawLine(Offset(p0.x, p0.y), Offset(p1.x, p1.y),
+        _paintDict[_RenderElement.barrier]!);
   }
 
   void drawToken(
-      {@required HexTile tile,
-      @required int junction,
-      @required int cityNum,
+      {required HexTile tile,
+      required int junction,
+      required int cityNum,
       //@required bool fill,
-      @required CompanyData companyInfo,
+      required CompanyData companyInfo,
       bool home = false}) {
-    if (junction == null) {
-      throw ArgumentError('junction is null');
-    }
-    if (companyInfo == null) {
-      throw ArgumentError('companyInfo is null');
-    }
-
     var fill = !home;
     var radius = drawingSettings.convertSize(drawingSettings.cityRadius);
     _canvas.save();
     //_setCityMatrix(junction);
     var p = _getPoint(tile.tileDef.junctions[junction].position);
     _canvas.translate(p.x, p.y);
-    var point = _cityOffset(tile.tileDef.junctions[junction].numberOfCities(), cityNum);
+    var point =
+        _cityOffset(tile.tileDef.junctions[junction].numberOfCities(), cityNum);
 
     var alpha = 0xFF << 24;
     //if (home) alpha = 0x7F << 24;
@@ -1402,7 +1481,8 @@ class TileRenderer {
     var circlePath = Path();
     circlePath.addOval(Rect.fromCircle(center: Offset(0, 0), radius: radius));
     var rectPath = Path();
-    rectPath.addRect(Rect.fromLTWH(-1 * radius, -.5 * radius, 2 * radius, radius));
+    rectPath
+        .addRect(Rect.fromLTWH(-1 * radius, -.5 * radius, 2 * radius, radius));
 
     var roundRectPath = Path();
     // Path.combine(PathOperation.union, roundRectPath, circlePath);
@@ -1434,7 +1514,8 @@ class TileRenderer {
       color: textColor,
       fontFamily: 'RobotoSlab',
       fontWeight: FontWeight.bold,
-      fontSize: drawingSettings.convertSize(drawingSettings.textSize) * fontSizeMult,
+      fontSize:
+          drawingSettings.convertSize(drawingSettings.textSize) * fontSizeMult,
     );
 
 //  Paint textPaint = new SKPaint()
@@ -1475,16 +1556,16 @@ class TileRenderer {
     styles.add(style.apply(backgroundColor: drawingSettings.gray));
 
     var size = _measureText('MMM', styles[0]);
-    var p = _getPoint(offmapRevenue.position);
+    var p = _getPoint(offmapRevenue.position!);
     var offset = 0.0;
     for (var revenue in offmapRevenue.amounts) {
-      _drawText(' ${revenue.amount.toString()} ', Point<double>(p.x, p.y + offset), styles[revenue.phase]);
+      _drawText(' ${revenue.amount.toString()} ',
+          Point<double>(p.x, p.y + offset), styles[revenue.phase]);
       offset += size.height;
     }
   }
 
   void drawHighlight() {
-
     var paint = Paint()
       ..style = PaintingStyle.stroke
       ..color = drawingSettings.orange

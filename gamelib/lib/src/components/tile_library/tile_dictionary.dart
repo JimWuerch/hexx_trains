@@ -3,7 +3,7 @@ import 'dart:convert';
 import 'tile_definition.dart';
 
 class TileDictionary {
-  final Map<String, TileDefinition> _tiles = <String, TileDefinition>{};
+  final Map<String?, TileDefinition> _tiles = <String?, TileDefinition>{};
   Map<String, TileDefinition> get tiles => Map.unmodifiable(_tiles);
 
   TileDictionary();
@@ -25,7 +25,7 @@ class TileDictionary {
     tiles.remove(tileId);
   }
 
-  TileDefinition getTile(String id) {
+  TileDefinition? getTile(String id) {
     return tiles[id];
   }
 
@@ -36,7 +36,8 @@ class TileDictionary {
       throw ArgumentError('TileDef $oldId not found in the TileDictionary');
     }
     if (_tiles.containsKey(newId)) {
-      throw ArgumentError('Can\'t replace existing tile $newId in the TileDictionary');
+      throw ArgumentError(
+          'Can\'t replace existing tile $newId in the TileDictionary');
     }
 
     _tiles.remove(oldId);
@@ -45,7 +46,7 @@ class TileDictionary {
 
   void applyClipList(Iterable<int> list) {
     for (var item in list) {
-      tiles[item].clipTile = true;
+      tiles[item]!.clipTile = true;
     }
   }
 
@@ -56,7 +57,8 @@ class TileDictionary {
   }
 
   // Serialize as a list, re-create the map on deserialize
-  Map<String, dynamic> toJson() => <String, dynamic>{'tiles': _tiles.values.toList()};
+  Map<String, dynamic> toJson() =>
+      <String, dynamic>{'tiles': _tiles.values.toList()};
 
   TileDictionary.fromJson(Map<String, dynamic> json) {
     var list = json['tiles'] as List<dynamic>;

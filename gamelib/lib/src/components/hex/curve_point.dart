@@ -8,7 +8,7 @@ class CurvePoint {
   final List<CurveDef> left;
   final List<CurveDef> right;
 
-  CurvePoint._({this.left, this.right});
+  CurvePoint._({required this.left, required this.right});
 
   factory CurvePoint(CurveDef l1, CurveDef l2, CurveDef r1, CurveDef r2) {
     var l = <CurveDef>[];

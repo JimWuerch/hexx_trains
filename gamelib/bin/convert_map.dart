@@ -14,8 +14,8 @@ Future<void> main(List<String> args) async {var parser = ArgParser();
     _printUsage(parser);
     return;
   }
-  var input = results['input'] as String;
-  var output = results['output'] as String;
+  var input = results['input'] as String?;
+  var output = results['output'] as String?;
 
   if (input == null) {
     print('Input file is required.');

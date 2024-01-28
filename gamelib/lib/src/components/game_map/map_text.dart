@@ -11,7 +11,11 @@ class MapText {
   final double size;
   dynamic picture;
 
-  MapText({this.location, this.text, this.position, this.size});
+  MapText(
+      {required this.location,
+      required this.text,
+      required this.position,
+      required this.size});
 
   Map<String, dynamic> toJson() => <String, dynamic>{
         'location': MapData.jsonCoordsToLocation(location),

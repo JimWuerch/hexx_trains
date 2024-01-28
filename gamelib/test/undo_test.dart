@@ -3,8 +3,8 @@ import 'package:mockito/mockito.dart';
 import 'package:test/test.dart';
 
 class UndoTest {
-  GameStateVar<String> stringVar;
-  GameStateVar<int> intVar;
+  late GameStateVar<String> stringVar;
+  late GameStateVar<int> intVar;
 
   UndoTest(ChangeStack stack) {
     stringVar = GameStateVar(null, 'stringVar', 'foo', changeStack: stack);
@@ -27,7 +27,7 @@ class ChangeMock extends Mock implements Change {}
 
 void testUndoStack() {
   group('Undo stack', () {
-    ChangeStack stack;
+    late ChangeStack stack;
 
     setUp(() {
       stack = ChangeStack();
@@ -143,7 +143,7 @@ void testUndoStack() {
 
 void testInlineChanges() {
   group('Inline change', () {
-    ChangeStack stack;
+    late ChangeStack stack;
 
     setUp(() {
       stack = ChangeStack();
@@ -166,7 +166,7 @@ void testInlineChanges() {
 
 void testPropertyChanges() {
   group('Property change', () {
-    ChangeStack stack;
+    late ChangeStack stack;
 
     setUp(() {
       stack = ChangeStack();
@@ -189,7 +189,7 @@ void testPropertyChanges() {
 
 void testGroup() {
   group('Group ChangeStack', () {
-    ChangeStack stack;
+    late ChangeStack stack;
 
     setUp(() {
       stack = ChangeStack();

@@ -5,16 +5,16 @@ class GameStore {
   // later use sembast
   Map<String, Game> games;
 
-  GameStore() {
-    games = <String, Game>{};
+  GameStore() : games = <String, Game>{} {
+    //games = <String, Game>{};
   }
 
-  Game find(String gameId) {
+  Game? find(String gameId) {
     return games[gameId];
   }
 
   void store(Game game) {
-    games[game.gameId] = game;
+    games[game.gameId!] = game;
   }
 
   void delete(String gameId) {

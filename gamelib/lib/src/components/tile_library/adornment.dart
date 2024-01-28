@@ -10,7 +10,7 @@ class Adornment {
   final Position position;
   final AdornmentTypes adornmentType;
 
-  Adornment({this.position, this.adornmentType});
+  Adornment({required this.position, required this.adornmentType});
 
   factory Adornment.from(Position position) {
     return Adornment(position: position, adornmentType: AdornmentTypes.base);
@@ -24,13 +24,14 @@ class Adornment {
   /// This is called from subclasses during deserializing to deserialize our members
   Adornment.jsonFinish(Map<String, dynamic> json)
       : position = Position.fromTDPosition(json['position'] as String),
-        adornmentType = AdornmentTypes.values
-            .firstWhere((e) => e.toString() == 'AdornmentTypes.${json['adornmentType'] as String}');
+        adornmentType = AdornmentTypes.values.firstWhere((e) =>
+            e.toString() ==
+            'AdornmentTypes.${json['adornmentType'] as String?}');
 
   factory Adornment.fromJson(Map<String, dynamic> json) {
-    Adornment ret;
-    var adornmentType =
-        AdornmentTypes.values.firstWhere((e) => e.toString() == 'AdornmentTypes.${json['adornmentType'] as String}');
+    late Adornment ret;
+    var adornmentType = AdornmentTypes.values.firstWhere((e) =>
+        e.toString() == 'AdornmentTypes.${json['adornmentType'] as String?}');
 
     switch (adornmentType) {
       case AdornmentTypes.base:

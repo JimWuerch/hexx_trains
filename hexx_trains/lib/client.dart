@@ -1,11 +1,10 @@
 import 'package:gamelib/gamelib.dart';
 import 'package:hexxtrains/server.dart';
-import 'package:server/server.dart';
 
 abstract class Client {
   Stream<GameAction> get inbound;
   void postAction(GameAction action);
-  Future<Game> createGame(int gameId);
+  Future<Game?> createGame(int gameId);
 }
 
 class LocalClient extends Client {
@@ -21,7 +20,7 @@ class LocalClient extends Client {
   }
 
   @override
-  Future<Game> createGame(int id) async {
+  Future<Game?> createGame(int id) async {
     return server.createGame(id);
   }
 }

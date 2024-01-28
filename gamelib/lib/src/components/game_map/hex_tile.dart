@@ -1,32 +1,29 @@
 import 'dart:math' as math;
 
 import 'package:gamelib/gamelib.dart';
-import 'package:gamelib/src/components/hex/hex.dart';
-import 'package:gamelib/src/components/tile_library/tile_library.dart';
-
-import 'game_map.dart';
-import 'tile_manifest.dart';
 
 class HexTile {
   TileDefinition tileDef;
-  Hex hex;
+  late Hex hex;
   HexLayout layout;
-  math.Point<double> center;
+  late math.Point<double> center;
   int get q => hex.q;
   int get r => hex.r;
   int rotation = 0;
   int cost = 0;
-  Position costPosition;
-  TileManifestItem manifestItem;
+  Position? costPosition;
+  TileManifestItem? manifestItem;
 
-  HexTile(this.tileDef, int q, int r, this.layout, this.manifestItem, [this.rotation = 0]) {
+  HexTile(this.tileDef, int q, int r, this.layout, this.manifestItem,
+      [this.rotation = 0]) {
     //GameMap = gameMap;
     hex = Hex.fromQR(q, r);
     center = layout.hexToPixel(hex);
   }
 
-  factory HexTile.fromManifest(Game game, int q, int r, HexLayout layout, TileManifestItem item) {
-    return HexTile(game.tileDictionary.getTile(item.id), q, r, layout, item);
+  factory HexTile.fromManifest(
+      Game game, int q, int r, HexLayout layout, TileManifestItem item) {
+    return HexTile(game.tileDictionary.getTile(item.id)!, q, r, layout, item);
   }
 
   void setLocation(int q, int r) {
@@ -49,10 +46,11 @@ class HexTile {
       };
 
   factory HexTile.fromJson(Game game, Map<String, dynamic> json) {
-    var tileDef = game.tileDictionary.getTile(json['tiledef'] as String);
+    var tileDef = game.tileDictionary.getTile(json['tiledef'] as String)!;
     var coords = GameMap.getCoords(json['location'] as String);
     var rotation = json['rotation'] as int;
-    var manifestItem = game.gameMap.tileManifest.getTile(tileDef.tileId);
-    return HexTile(tileDef, coords.x, coords.y, game.gameMap.layout, manifestItem, rotation);
+    var manifestItem = game.gameMap.tileManifest?.getTile(tileDef.tileId);
+    return HexTile(tileDef, coords.x, coords.y, game.gameMap.layout,
+        manifestItem, rotation);
   }
 }

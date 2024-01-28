@@ -3,7 +3,7 @@ part of undo;
 abstract class Change {
   Change();
 
-  factory Change.property(Object oldValue, void Function() execute, void Function(Object oldValue) undo) {
+  factory Change.property(Object? oldValue, void Function() execute, void Function(Object oldValue) undo) {
     return _PropertyChange(oldValue, execute, undo);
   }
 
@@ -11,7 +11,7 @@ abstract class Change {
     return _InlineChange(execute, undo);
   }
 
-  String label;
+  String? label;
 
   void execute();
 
@@ -19,35 +19,35 @@ abstract class Change {
 }
 
 abstract class ChangeGroupBase {
-  _ChangeGroup _openGroup;
+  _ChangeGroup? _openGroup;
   bool get isGrouping => _openGroup != null;
 
   void add(Change change) {
     if (isGrouping) {
-      _openGroup.add(change);
+      _openGroup!.add(change);
     } else {
       _add(change);
     }
   }
 
-  void _add(Change change, {String label, bool doExecute});
+  void _add(Change? change, {String? label, bool? doExecute});
 
   void clear();
 
-  void group({String label}) {
+  void group({String? label}) {
     _openGroup = _ChangeGroup()..label = label;
   }
 
   void commit() {
     if (isGrouping) {
-      _add(_openGroup, label: _openGroup.label, doExecute: false);
+      _add(_openGroup, label: _openGroup!.label, doExecute: false);
       _openGroup = null;
     }
   }
 
   void discard() {
     if (isGrouping) {
-      _openGroup.undo();
+      _openGroup!.undo();
       _openGroup = null;
     }
   }
@@ -56,7 +56,7 @@ abstract class ChangeGroupBase {
 }
 
 class _PropertyChange extends Change {
-  final Object _oldValue;
+  final Object? _oldValue;
   final Function _execute;
   final Function _undo;
 
@@ -92,15 +92,15 @@ class _InlineChange extends Change {
 
 class _ChangeGroup extends ChangeGroupBase implements Change {
   @override
-  String label;
+  String? label;
 
-  final List<Change> _changes = [];
+  final List<Change?> _changes = [];
 
   @override
-  void _add(Change change, {String label, bool doExecute = true}) {
+  void _add(Change? change, {String? label, bool? doExecute = true}) {
     _changes.add(change);
-    if (doExecute) {
-      change.execute();
+    if (doExecute!) {
+      change!.execute();
     }
   }
 
@@ -112,7 +112,7 @@ class _ChangeGroup extends ChangeGroupBase implements Change {
   @override
   void execute() {
     for (var c in _changes) {
-      c.execute();
+      c!.execute();
     }
     //_changes.forEach((c) => c.execute());
   }
@@ -120,7 +120,7 @@ class _ChangeGroup extends ChangeGroupBase implements Change {
   @override
   void undo() {
     for (var c in _changes.reversed) {
-      c.undo();
+      c!.undo();
     }
     //_changes.reversed.forEach((c) => c.undo());
   }

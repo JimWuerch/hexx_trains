@@ -25,19 +25,19 @@ class StockMarketCell {
   bool get hasBarrier => barriers != BarrierSides.none;
 
   StockMarketCell(
-      {this.row,
-      this.column,
-      this.value,
-      this.color,
-      this.isGoUp,
-      this.isGoDown,
-      this.isTop,
-      this.isBottom,
-      this.barriers,
-      this.isCloseOnEntry,
-      this.isStarting,
-      this.isLeft,
-      this.isRight});
+      {this.row = 1,
+      this.column = 1,
+      this.value = 1,
+      this.color = CellColors.brown,
+      this.isGoUp = false,
+      this.isGoDown = false,
+      this.isTop = false,
+      this.isBottom = false,
+      this.barriers = 0,
+      this.isCloseOnEntry = false,
+      this.isStarting = false,
+      this.isLeft = false,
+      this.isRight = false});
 
   static CellColors convertColor(String color) {
     color = color.toLowerCase();

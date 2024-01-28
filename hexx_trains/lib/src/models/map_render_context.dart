@@ -9,35 +9,35 @@ import 'package:hexxtrains/src/render/render.dart';
 
 class MapViewModel extends ChangeNotifier {
   List<LayTileAction> availableUpgrades = [];
-  List<int> highlightTiles;
-  TileRenderer renderer;
-  ViewMatrix viewMatrix;
+  late List<int> highlightTiles;
+  TileRenderer? renderer;
+  ViewMatrix? viewMatrix;
   //GameServer server;
-  Client client;
-  Game _game;
-  Game get game => _game;
-  set game(Game g) {
+  Client? client;
+  Game? _game;
+  Game? get game => _game;
+  set game(Game? g) {
     _game = g;
     if (_game != null) {
-      renderer = TileRenderer(GetIt.I<DrawingSettings>(), game.gameMap.layout);
+      renderer = TileRenderer(GetIt.I<DrawingSettings>(), game!.gameMap.layout);
     }
   }
 
-  MapViewModel({Game game}) {
+  MapViewModel({Game? game}) : _game = game {
     this.game = game;
   }
 
   math.Point<double> screenToMap(math.Point<double> screen) {
-    var o = viewMatrix.getTranslate();
+    var o = viewMatrix!.getTranslate();
     var p = screen - o;
-    p *= 1 / viewMatrix.scale;
+    p *= 1 / viewMatrix!.scale;
 
     return p;
   }
 
   math.Point<double> mapToScreen(math.Point<double> map) {
-    var p = map * viewMatrix.scale;
-    return p + viewMatrix.getTranslate();
+    var p = map * viewMatrix!.scale;
+    return p + viewMatrix!.getTranslate();
   }
 
   void handleAction(GameAction action) {
@@ -51,7 +51,8 @@ class MapViewModel extends ChangeNotifier {
         break;
       case LayTileAction.actionName:
         var layTileAction = action as LayTileAction;
-        print('layTile action (${layTileAction.q},${layTileAction.r}) ${layTileAction.selected.tileDef.tileId}');
+        print(
+            'layTile action (${layTileAction.q},${layTileAction.r}) ${layTileAction.selected.tileDef.tileId}');
         availableUpgrades.add(action as LayTileAction);
         //highlightTiles.add(layTileAction.q << 8 | layTileAction.r);
         notifyListeners();
@@ -88,7 +89,8 @@ class MapViewModel extends ChangeNotifier {
     for (var highlight in availableUpgrades) {
       if (highlight.q == tile.q && highlight.r == tile.r) {
         availableUpgrades.clear();
-        client.postAction(LayTileAction(highlight.owner, highlight.company, tile.q, tile.r, tile));
+        client!.postAction(LayTileAction(
+            highlight.owner!, highlight.company, tile.q, tile.r, tile));
         return true;
       }
     }
@@ -113,7 +115,7 @@ class MapViewModel extends ChangeNotifier {
   ///
   /// This function doesn't notify listeners as it's likely to be called during painting.
   void zoomToExtents(ui.Size size) {
-    var offset = game.gameMap.mapSize;
+    var offset = game!.gameMap.mapSize;
     var x = size.width / offset.x;
     var y = size.height / offset.y;
     var scale = math.min(x, y);
@@ -123,10 +125,11 @@ class MapViewModel extends ChangeNotifier {
     // center it in the view
     if (x < y) {
       // constrained in width, center vertically
-      viewMatrix.transY = (size.height - (game.gameMap.mapSize.y * scale)) / 2;
+      viewMatrix!.transY =
+          (size.height - (game!.gameMap.mapSize.y * scale)) / 2;
     } else {
       // center horizontally
-      viewMatrix.transX = (size.width - (game.gameMap.mapSize.x * scale)) / 2;
+      viewMatrix!.transX = (size.width - (game!.gameMap.mapSize.x * scale)) / 2;
     }
   }
 }

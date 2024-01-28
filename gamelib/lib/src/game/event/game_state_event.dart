@@ -28,7 +28,7 @@ class GameStateEvent extends GameEvent {
 
   @override
   factory GameStateEvent.fromJson(Map<String, dynamic> json) {
-    var state = GameStateEventType.values.firstWhere((e) => e.toString() == 'GameStateEvent.${json['state'] as String}');
+    var state = GameStateEventType.values.firstWhere((e) => e.toString() == 'GameStateEvent.${json['state'] as String?}');
     return GameStateEvent._jsonHelper(state, json);
   }
 }

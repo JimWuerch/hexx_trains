@@ -2,8 +2,8 @@ import 'package:gamelib/gamelib.dart';
 import 'package:gamelib/src/game/owned_object.dart';
 
 class Purse extends OwnedObject {
-  GameStateVar<int> _amount;
-  GameStateVar<int> _reservedAmount;
+  late GameStateVar<int> _amount;
+  late GameStateVar<int> _reservedAmount;
   final Game _game;
 
   Purse(Game game, Owner owner, {int startingAmount = 0})

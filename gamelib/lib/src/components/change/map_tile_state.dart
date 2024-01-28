@@ -9,7 +9,12 @@ class MapTileChange extends Change {
   final HexTile originalTile;
   final GameMap gameMap;
 
-  MapTileChange({this.q, this.r, this.gameMap, this.tile}) : originalTile = gameMap.tileAt(q, r) {
+  MapTileChange(
+      {required this.q,
+      required this.r,
+      required this.gameMap,
+      required this.tile})
+      : originalTile = gameMap.tileAt(q, r)! {
     label = 'Replace tile at ($q, $r) with tile ${tile.tileDef.tileId}';
   }
 
@@ -29,6 +34,7 @@ class MapTileStateVar extends GameStateBase {
       : super(game, label, onChanged);
 
   void replaceTile(int q, int r, HexTile tile) {
-    super.game.changeStack.add(MapTileChange(q: q, r: r, gameMap: super.game.gameMap, tile: tile));
+    super.game!.changeStack.add(
+        MapTileChange(q: q, r: r, gameMap: super.game!.gameMap, tile: tile));
   }
 }

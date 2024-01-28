@@ -3,7 +3,7 @@ import 'package:gamelib/gamelib.dart';
 import 'game_model.dart';
 
 class CreateGameResponse extends GameModel {
-  final int gameIndex;
+  final int? gameIndex;
   final List<String> players;
 
   CreateGameResponse(Game game, String owner, String desc, this.gameIndex, this.players)
@@ -21,7 +21,7 @@ class CreateGameResponse extends GameModel {
   }
 
   CreateGameResponse.fromJson(Map<String, dynamic> json)
-      : gameIndex = json['gameIndex'] as int,
+      : gameIndex = json['gameIndex'] as int?,
         players = listFromJson<String>(json),
         super.fromJson(json);
 }

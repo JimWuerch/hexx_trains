@@ -1,3 +1,5 @@
+// ignore_for_file: avoid_classes_with_only_static_members
+
 import 'dart:convert';
 
 import 'tile_manifest.dart';
@@ -17,7 +19,7 @@ class TileManifestLoader {
       }
       tmp[id] = TileManifestItem(
           id: id,
-          replacesId: jsonItem['replacesId'] as String,
+          replacesId: jsonItem['replacesId'] as String?,
           quantity: jsonItem['qty'] as int,
           upgrades: <TileManifestItem>[]);
     }
@@ -32,7 +34,7 @@ class TileManifestLoader {
         if (!tmp.containsKey(upgId)) {
           throw ArgumentError('Unknown id $upgId listed as upgrad for $id');
         }
-        item.upgrades.add(tmp[upgId]);
+        item!.upgrades!.add(tmp[upgId]!);
       }
     }
 

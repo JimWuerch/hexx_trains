@@ -33,9 +33,6 @@ extension CanvasExtensions on painting.Canvas {
 
 extension CurveDefExtensions on CurveDef {
   void addToPathOffset(painting.Path path, math.Point<double> offset) {
-    if (path == null) {
-      throw ArgumentError('path is null');
-    }
     var p1 = start + offset;
     path.moveTo(p1.x, p1.y);
     var p2 = end + offset;
@@ -45,9 +42,6 @@ extension CurveDefExtensions on CurveDef {
   }
 
   void addToPath(painting.Path path) {
-    if (path == null) {
-      throw ArgumentError('path is null');
-    }
     path.moveTo(start.x, start.y);
     path.cubicTo(cp1.x, cp1.y, cp2.x, cp2.y, end.x, end.y);
   }

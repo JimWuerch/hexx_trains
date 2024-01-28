@@ -4,17 +4,21 @@ export 'stock_market_cell.dart';
 
 class StockMarketData {
   final List<StockMarketCell> cells;
-  final List<List<StockMarketCell>> market2D;
+  final List<List<StockMarketCell?>> market2D;
   final List<StockMarketCell> starting;
   final int rows;
   final int columns;
 
   StockMarketData._(
-      {this.cells, this.market2D, this.starting, this.rows, this.columns});
+      {required this.cells,
+      required this.market2D,
+      required this.starting,
+      this.rows = 1,
+      this.columns = 1});
 
   factory StockMarketData.fromCells(List<StockMarketCell> cells) {
-    var rows = 0;
-    var columns = 0;
+    int rows = 0;
+    int columns = 0;
     var starting = <StockMarketCell>[];
 
     // first get the size
@@ -28,16 +32,15 @@ class StockMarketData {
     columns++;
 
     // Create all the empty cells
-    var market2D = List<List<StockMarketCell>>(rows);
-    for (var row = 0; row < rows; ++row) {
-      var cur = List<StockMarketCell>(columns);
-      market2D[row] = cur;
-      // Market2D.Add(cur);
-      // for (int col = 0; col < Columns; ++col)
-      // {
-      //     cur.Add(null);
-      // }
-    }
+    //List<List<StockMarketCell>> market2D = List<List<StockMarketCell>>(rows);
+    List<List<StockMarketCell?>> market2D =
+        List<List<StockMarketCell?>>.generate(
+            rows, (a) => List<StockMarketCell?>.filled(columns, null),
+            growable: false);
+    // for (var row = 0; row < rows; ++row) {
+    //   var cur = List<StockMarketCell?>.filled(columns, null);
+    //   market2D[row] = cur;
+    // }
 
     // now we can just assign values
     for (var cell in cells) {
@@ -55,7 +58,7 @@ class StockMarketData {
         columns: columns);
   }
 
-  StockMarketCell getAt(int col, int row) {
+  StockMarketCell? getAt(int col, int row) {
     return market2D[row][col];
   }
 }

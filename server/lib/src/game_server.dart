@@ -8,14 +8,14 @@ typedef ClientCalback = void Function(GameAction);
 /// This is just a local server for now, it will run inside the client
 class GameServer {
   //Game game;
-  int gameId;
+  int? gameId;
   // final _serverActionsStreamController = StreamController<GameAction>.broadcast();
   // Stream<GameAction> get serverActions => _serverActionsStreamController.stream.asBroadcastStream();
   // StreamSubscription<GameAction> gameActions;
   ClientCalback clientCallback;
   GameStore games = GameStore();
   TileDictionary tileDictionary;
-  GameTransport gameTransport;
+  GameTransport? gameTransport;
 
   GameServer(this.clientCallback, this.tileDictionary);
 
@@ -25,7 +25,7 @@ class GameServer {
     return game;
   }
 
-  void closeGame(String gameId) {
+  void closeGame(String? gameId) {
     if (gameId == null) return;
     var game = games.find(gameId);
     if (game == null) return;
@@ -53,23 +53,27 @@ class GameServer {
 
   bool doAction(String gameId, GameAction action) {
     var game = games.find(gameId);
-    return game.gameService.applyAction(action);
+    return game!.gameService!.applyAction(action);
   }
 
-  GameModel handleRequest(GameModel model) {
+  GameModel? handleRequest(GameModel model) {
     //TODO: add validator
     // validateRequest(model);
 
     switch (model.modelType) {
       case GameModelType.createGameRequest:
         var request = model as CreateGameRequest;
-        var game = createGame(request.gameIndex);
-        return CreateGameResponse(game, model.ownerId, 'create game', game.gameIndex,
-            game.playerService.players.map<String>((e) => e.name).toList());
+        var game = createGame(request.gameIndex!);
+        return CreateGameResponse(
+            game,
+            model.ownerId!,
+            'create game',
+            game.gameIndex,
+            game.playerService!.players.map<String>((e) => e.name!).toList());
 
       case GameModelType.actionRequest:
         var request = model as ActionRequest;
-        doAction(request.gameId, request.action);
+        doAction(request.gameId!, request.action);
         return null;
 
       default:

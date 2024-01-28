@@ -13,17 +13,22 @@ class Position {
   final int level;
   final int index;
 
-  bool get isCurve => location == Locations.curveLeft || location == Locations.curveRight;
+  bool get isCurve =>
+      location == Locations.curveLeft || location == Locations.curveRight;
 
-  Position._({this.location, this.level, this.index});
+  Position._(
+      {required this.location, required this.level, required this.index});
 
   // This is meant to convert from TileDesigner co-ords
-  factory Position({Locations location, int level, int index}) {
+  factory Position(
+      {required Locations location, required int level, required int index}) {
     if (location == Locations.side || location == Locations.corner) {
       if (level > 4 || level < 1) {
-        throw ArgumentError('Level must be between 1 and 4 for corners and sides');
+        throw ArgumentError(
+            'Level must be between 1 and 4 for corners and sides');
       }
-    } else if (location == Locations.curveLeft || location == Locations.curveRight) {
+    } else if (location == Locations.curveLeft ||
+        location == Locations.curveRight) {
       if (level != 0 && level != 1) {
         throw ArgumentError('Level must be 0 and 1 for curves');
       }
@@ -55,7 +60,8 @@ class Position {
     // first strip off the "tp"
     if (pos.startsWith('tp')) pos = pos.substring(2);
 
-    if (pos.startsWith('center')) return Position(location: Locations.center, level: 0, index: 0);
+    if (pos.startsWith('center'))
+      return Position(location: Locations.center, level: 0, index: 0);
 
     // "1CornerA"
     if (pos.isDigit(0)) {
@@ -89,7 +95,10 @@ class Position {
         throw ArgumentError('Unknown position $pos');
       }
       var index = pos[pos.length - 1].codeUnitAt(0) - 'a'.codeUnitAt(0);
-      return Position(location: isLeft ? Locations.curveLeft : Locations.curveRight, level: level, index: index);
+      return Position(
+          location: isLeft ? Locations.curveLeft : Locations.curveRight,
+          level: level,
+          index: index);
     }
 
     // if we get here something is hosed
@@ -101,19 +110,14 @@ class Position {
     switch (location) {
       case Locations.center:
         return 'tpCenter';
-        break;
       case Locations.side:
         return 'tp${level}Side${point[index]}';
-        break;
       case Locations.corner:
         return 'tp${level}Corner${point[index]}';
-        break;
       case Locations.curveRight:
-        return 'tpCurve${level+1}Right${point[index]}';
-        break;
+        return 'tpCurve${level + 1}Right${point[index]}';
       case Locations.curveLeft:
-        return 'tpCurve${level+1}Left${point[index]}';
-        break;
+        return 'tpCurve${level + 1}Left${point[index]}';
       default:
         throw InvalidOperationError('Missing handler for Locations enum');
     }
@@ -171,8 +175,11 @@ class Position {
   bool operator ==(dynamic other) {
     if (identical(this, other)) return true;
     if (!(other is Position)) return false;
-    if (location == Locations.center && other.location == Locations.center) return true;
-    return (location == other.location && level == other.level && index == other.index);
+    if (location == Locations.center && other.location == Locations.center)
+      return true;
+    return (location == other.location &&
+        level == other.level &&
+        index == other.index);
   }
 
   @override

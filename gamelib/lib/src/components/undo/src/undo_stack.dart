@@ -1,38 +1,38 @@
 part of undo;
 
 class ChangeStack extends ChangeGroupBase {
-  final _streamController = StreamController<ChangeStack>.broadcast();
-  Stream<ChangeStack> get stream => _streamController.stream.asBroadcastStream();
+  final _streamController = StreamController<ChangeStack?>.broadcast();
+  Stream<ChangeStack?> get stream => _streamController.stream.asBroadcastStream();
 
-  final Queue<Change> _undos = ListQueue();
+  final Queue<Change?> _undos = ListQueue();
   final Queue<Change> _redos = ListQueue();
 
-  int max;
+  int? max;
 
   bool get canRedo => _redos.isNotEmpty && !isGrouping;
   bool get canUndo => _undos.isNotEmpty && !isGrouping;
 
-  String get redoLabel => canRedo ? _redos.first.label : '';
-  String get undoLabel => canUndo ? _undos.last.label : '';
+  String? get redoLabel => canRedo ? _redos.first.label : '';
+  String? get undoLabel => canUndo ? _undos.last!.label : '';
 
   ChangeStack({this.max}) {
     _streamController.add(this);
   }
 
   @override
-  void _add(Change change, {String label, bool doExecute = true}) {
+  void _add(Change? change, {String? label, bool? doExecute = true}) {
     if (label != null) {
-      change.label = label;
+      change!.label = label;
     }
 
-    if (doExecute) {
-      change.execute();
+    if (doExecute!) {
+      change!.execute();
     }
 
     _undos.addLast(change);
     _redos.clear();
 
-    if (max != null && _undos.length > max) {
+    if (max != null && _undos.length > max!) {
       _undos.removeFirst();
     }
 
@@ -47,7 +47,7 @@ class ChangeStack extends ChangeGroupBase {
   @override
   void clear() {
     if (isGrouping) {
-      _openGroup.clear();
+      _openGroup!.clear();
       _openGroup = null;
     }
     _undos.clear();
@@ -67,7 +67,7 @@ class ChangeStack extends ChangeGroupBase {
   @override
   void undo() {
     if (canUndo) {
-      var change = _undos.removeLast();
+      var change = _undos.removeLast()!;
       change.undo();
       _redos.addFirst(change);
       _streamController.add(this);

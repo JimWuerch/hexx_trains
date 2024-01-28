@@ -7,10 +7,12 @@ class LayTileAction extends GameActionBase {
   final int r;
   final HexTile selected;
 
-  LayTileAction(Player owner, this.company, this.q, this.r, this.selected) : super(owner);
+  LayTileAction(Player owner, this.company, this.q, this.r, this.selected)
+      : super(owner);
 
   @override
-  String get message => '$owner placed tile ${selected.tileDef.tileId} at ${GameMap.getLocation(q, r)}';
+  String get message =>
+      '$owner placed tile ${selected.tileDef.tileId} at ${GameMap.getLocation(q, r)}';
 
   @override
   String get name => actionName;
@@ -24,13 +26,16 @@ class LayTileAction extends GameActionBase {
     return ret;
   }
 
-  LayTileAction._jsonHelper(this.company, this.q, this.r, this.selected, Game game, Map<String, dynamic> json)
+  LayTileAction._jsonHelper(this.company, this.q, this.r, this.selected,
+      Game game, Map<String, dynamic> json)
       : super.fromJson(game, json);
 
   factory LayTileAction.fromJson(Game game, Map<String, dynamic> json) {
-    var company = game.getPublicCompany(json['company'] as String);
+    var company = game.getPublicCompany(json['company'] as String?);
     var coords = GameMap.getCoords(json['location'] as String);
-    var selected = HexTile.fromJson(game, json['selected'] as Map<String, dynamic>);
-    return LayTileAction._jsonHelper(company, coords.x, coords.y, selected, game, json);
+    var selected =
+        HexTile.fromJson(game, json['selected'] as Map<String, dynamic>);
+    return LayTileAction._jsonHelper(
+        company, coords.x, coords.y, selected, game, json);
   }
 }

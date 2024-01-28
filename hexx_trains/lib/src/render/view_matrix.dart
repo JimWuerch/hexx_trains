@@ -35,19 +35,21 @@ class ViewMatrix {
   set skewY(double value) => values[_skewY] = value;
 
   /// Construct a ViewMatrix and set to identity
-  ViewMatrix() : values = List<double>(_count) {
+  ViewMatrix() : values = List<double>.filled(_count, 0.0) {
     setIdentity();
   }
 
   ViewMatrix.zero() : values = List.filled(_count, 0);
 
-  factory ViewMatrix.copy(ViewMatrix other) => ViewMatrix.zero()..setFrom(other);
+  factory ViewMatrix.copy(ViewMatrix other) =>
+      ViewMatrix.zero()..setFrom(other);
 
   /// Does the same thing as the default constructor
   ViewMatrix.identity() : this();
 
   /// Create a scale matrix to scale about [p]
-  ViewMatrix.scale(double scale, [Point<double> p]) : values = List.filled(_count, 0) {
+  ViewMatrix.scale(double scale, [Point<double>? p])
+      : values = List.filled(_count, 0) {
     this.scale = scale;
     if (p != null) {
       transX = p.x - scale * p.x;
@@ -68,7 +70,8 @@ class ViewMatrix {
   }
 
   /// Create a copy
-  ViewMatrix clone() => ViewMatrix.copy(this); //ignore: use_to_and_as_if_applicable
+  ViewMatrix clone() =>
+      ViewMatrix.copy(this); //ignore: use_to_and_as_if_applicable
 
   /// Add [p] to the current translation
   void applyTranslate(Point<double> p) {
@@ -154,13 +157,15 @@ class ViewMatrix {
 
   /// Scale then translate [p]
   Point<double> transform(Point<double> p) {
-    return Point<double>(p.x * scaleX + skewX * p.y + transX, skewY * p.x + p.y * scaleY + transY);
+    return Point<double>(p.x * scaleX + skewX * p.y + transX,
+        skewY * p.x + p.y * scaleY + transY);
   }
 
   /// Un-translate then un-scale [p]
   Point<double> unTransform(Point<double> p) {
     //return Point<double>((p.x - transX) / scale, (p.y - transY) / scale);
-    var x = (scaleY * p.x - skewX * p.y + skewX * transY + transX * scaleY) / (scaleX * scaleY - skewX * skewY);
+    var x = (scaleY * p.x - skewX * p.y + skewX * transY + transX * scaleY) /
+        (scaleX * scaleY - skewX * skewY);
     var y = (p.y - skewY * x - transY) / scaleY;
     return Point<double>(x, y);
   }

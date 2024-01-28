@@ -1,7 +1,7 @@
 import 'package:gamelib/gamelib.dart';
 
 class PlayerService {
-  List<Player> players;
+  late List<Player> players;
   Game game;
 
   PlayerService._(this.game) {
@@ -18,7 +18,7 @@ class PlayerService {
     return player;
   }
 
-  Player getPlayer(String name) {
+  Player getPlayer(String? name) {
     return players.firstWhere((element) => element.name == name);
   }
 

@@ -6,7 +6,7 @@ import 'tile_library.dart';
 // This class will load a .18t file created by 18xx Tile Designer by Marco Rocci
 // http://www.rails18xx.it/index.html
 class TileDesignerLoader {
-  TileDictionary _tileDictionary;
+  TileDictionary? _tileDictionary;
 
   TileDesignerLoader();
 
@@ -23,7 +23,7 @@ class TileDesignerLoader {
       }
     }
 
-    return _tileDictionary;
+    return _tileDictionary!;
   }
 
   // handle the <tiles> element
@@ -33,10 +33,11 @@ class TileDesignerLoader {
         var tile = tileNode as xml.XmlElement;
         if (tile.name.local == 'tile') {
           var tileDef = parseTile(tile);
-          if (_tileDictionary.tiles.containsKey(tileDef.tileId)) {
-            print('Skipping tile ${tileDef.tileId}, already in the TileDictionary.');
+          if (_tileDictionary!.tiles.containsKey(tileDef.tileId)) {
+            print(
+                'Skipping tile ${tileDef.tileId}, already in the TileDictionary.');
           } else {
-            _tileDictionary.add(parseTile(tile));
+            _tileDictionary!.add(parseTile(tile));
           }
         }
       }
@@ -63,10 +64,10 @@ class TileDesignerLoader {
         } else if (element.name.local == 'connections') {
           parseConnections(element, connections);
         } else if (element.name.local == 'ID') {
-          tileId = element.text;
-          if (tileId == null) {
-            throw InvalidOperationError('Invalid value ${element.text} for ID');
-          }
+          tileId = element.value!;
+          // if (tileId == null) {
+          //   throw InvalidOperationError('Invalid value ${element.text} for ID');
+          // }
           var tmp = int.tryParse(tileId);
           isBase = tmp != null && tmp < 1;
         } else if (element.name.local == 'shape') {
@@ -111,8 +112,8 @@ class TileDesignerLoader {
       }
     }
 
-    adornments
-        .add(TextAdornment(position: Position.fromTDPosition(positionName), text: value));
+    adornments.add(TextAdornment(
+        position: Position.fromTDPosition(positionName), text: value));
   }
 
   void parseJunctions(xml.XmlElement e, List<Junction> junctions) {
@@ -166,9 +167,9 @@ class TileDesignerLoader {
   }
 
   Junction parseJunction(xml.XmlElement e) {
-    String type;
-    String position;
-    Revenue revenue;
+    String? type;
+    String? position;
+    Revenue? revenue;
 
     if (e.name.local != 'junction') {
       throw ArgumentError('Invalid node');
@@ -192,14 +193,14 @@ class TileDesignerLoader {
     }
 
     return Junction(
-        position: Position.fromTDPosition(position),
-        junctionType: parseJunctionType(type),
+        position: Position.fromTDPosition(position!),
+        junctionType: parseJunctionType(type!),
         revenue: revenue);
   }
 
   Connection parseConnection(xml.XmlElement e) {
-    Position pos1;
-    Position pos2;
+    Position? pos1;
+    Position? pos2;
     var conType = ConnectionTypes.none;
     var layer = 0;
 
@@ -225,15 +226,15 @@ class TileDesignerLoader {
     }
 
     return Connection(
-        position1: pos1,
-        position2: pos2,
+        position1: pos1!,
+        position2: pos2!,
         connectionType: conType,
         layer: layer);
   }
 
   Revenue parseRevenue(xml.XmlElement e) {
     var value = 0;
-    String position;
+    String? position;
 
     if (e.name.local != 'revenue') {
       throw ArgumentError('Invalid node');
@@ -259,7 +260,7 @@ class TileDesignerLoader {
     return Revenue(position: Position.fromTDPosition(position), amount: value);
   }
 
-  JunctionTypes parseJunctionType(String type) {
+  JunctionTypes parseJunctionType(String? type) {
     if (type == 'jtNone') {
       return JunctionTypes.none;
     } else if (type == 'jtWhistlestop') {

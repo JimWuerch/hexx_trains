@@ -10,7 +10,11 @@ class Connection {
   final ConnectionTypes connectionType;
   final int layer;
 
-  Connection({this.position1, this.position2, this.connectionType, this.layer}) {
+  Connection(
+      {required this.position1,
+      required this.position2,
+      required this.connectionType,
+      required this.layer}) {
     if (position1 == position2) {
       throw ArgumentError('position1 and position 2 can\'t be the same');
     }
@@ -51,10 +55,14 @@ class Connection {
   factory Connection.fromJson(Map<String, dynamic> json) {
     var position1 = Position.fromTDPosition(json['position1'] as String);
     var position2 = Position.fromTDPosition(json['position2'] as String);
-    var connectionType =
-        ConnectionTypes.values.firstWhere((e) => e.toString() == 'ConnectionTypes.${json['connectionType'] as String}');
-    var layer = json['layer'] as int ?? 0;
+    var connectionType = ConnectionTypes.values.firstWhere((e) =>
+        e.toString() == 'ConnectionTypes.${json['connectionType'] as String}');
+    var layer = json['layer'] as int? ?? 0;
 
-    return Connection(position1: position1, position2: position2, connectionType: connectionType, layer: layer);
+    return Connection(
+        position1: position1,
+        position2: position2,
+        connectionType: connectionType,
+        layer: layer);
   }
 }

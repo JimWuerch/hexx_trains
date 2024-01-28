@@ -8,7 +8,7 @@ import 'package:hexxtrains/client.dart';
 import 'package:provider/provider.dart';
 
 class HomePage extends StatefulWidget {
-  HomePage({Key key, this.title}) : super(key: key) {
+  HomePage({Key? key, required this.title}) : super(key: key) {
     var client = GetIt.I.get<Client>() as LocalClient;
     _clientActions = client.inbound.listen(_handleActions);
   }
@@ -23,16 +23,17 @@ class HomePage extends StatefulWidget {
   // always marked "final".
 
   final String title;
-  StreamSubscription _clientActions;
+  late StreamSubscription _clientActions;
 
   @override
   _HomePageState createState() => _HomePageState();
 
   void _handleActions(GameAction action) {
-    switch(action.name) {
+    switch (action.name) {
       case LoadGameAction.actionName:
         var loadGameAction = action as LoadGameAction;
-        var game = Game.restoreFromSave(jsonEncode(loadGameAction.game), GetIt.I.get<TileDictionary>());
+        var game = Game.restoreFromSave(
+            jsonEncode(loadGameAction.game), GetIt.I.get<TileDictionary>());
         GetIt.I.registerSingleton<Game>(game);
     }
   }
@@ -42,7 +43,8 @@ class HomePage extends StatefulWidget {
   }
 }
 
-class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin {
+class _HomePageState extends State<HomePage>
+    with SingleTickerProviderStateMixin {
   _HomePageState();
 
   int selectedGame = 0;
@@ -66,10 +68,12 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
           title: Text(widget.title),
         ),
         body: Column(children: <Widget>[
-          Row(children: <Widget>[
-            Text('Selected game: '),
-            Text('${GameList.games[selectedGame].name}'),
-          ],),
+          Row(
+            children: <Widget>[
+              Text('Selected game: '),
+              Text('${GameList.games[selectedGame].name}'),
+            ],
+          ),
           SizedBox(
             width: 400,
             height: 400,
@@ -89,9 +93,12 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
             ),
           ),
           Center(
-            child: RaisedButton(
+            child: ElevatedButton(
               onPressed: () {
-                Navigator.pushReplacementNamed(context, '/GamePage', arguments: <String, String>{"gameId": selectedGame.toString()});
+                Navigator.pushReplacementNamed(context, '/GamePage',
+                    arguments: <String, String>{
+                      "gameId": selectedGame.toString()
+                    });
               },
               child: Text('Start Game'),
             ),

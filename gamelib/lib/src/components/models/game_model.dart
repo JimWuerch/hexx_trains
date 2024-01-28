@@ -11,16 +11,16 @@ enum GameModelType { createGameRequest, createGameResponse, actionRequest, actio
 enum ResponseCode { ok, error, failedValidation }
 
 abstract class GameModel {
-  final String _gameId;
-  String get gameId => _gameId;
-  final String _description;
-  String get description => _description;
-  final String _ownerId;
-  String get ownerId => _ownerId;
+  final String? _gameId;
+  String? get gameId => _gameId;
+  final String? _description;
+  String? get description => _description;
+  final String? _ownerId;
+  String? get ownerId => _ownerId;
 
   GameModelType get modelType;
 
-  GameModel(String gameId, String owner, String desc)
+  GameModel(String? gameId, String? owner, String? desc)
       : _gameId = gameId,
         _description = desc,
         _ownerId = owner;
@@ -33,15 +33,15 @@ abstract class GameModel {
       };
 
   GameModel.fromJson(Map<String, dynamic> json)
-      : this(json['gameId'] as String, json['owner'] as String, json['desc'] as String);
+      : this(json['gameId'] as String?, json['owner'] as String?, json['desc'] as String?);
 }
 
-String gameIdFromJson(Map<String, dynamic> json) {
-  return json['gameId'] as String;
+String? gameIdFromJson(Map<String, dynamic> json) {
+  return json['gameId'] as String?;
 }
 
 GameModel gameModelFromJson(Game game, Map<String, dynamic> json) {
-  var type = json['type'] as String;
+  var type = json['type'] as String?;
   switch (type) {
     case 'createGameRequest':
       return CreateGameRequest.fromJson(json);

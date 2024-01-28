@@ -7,31 +7,32 @@ import 'package:gamelib/gamelib.dart';
 import 'package:get_it/get_it.dart';
 import 'package:hexxtrains/src/render/render.dart';
 import 'package:hexxtrains/src/models/map_render_context.dart';
-import 'package:positioned_tap_detector/positioned_tap_detector.dart';
+import 'package:positioned_tap_detector_2/positioned_tap_detector_2.dart';
 
 //GlobalKey<_MapWidgetState> mapWidgetStateKey = GlobalKey();
 typedef OnTapMapCallback = void Function(TapPosition position);
 
 // ignore: unused_element
 class _DebugMap {
-  TileRenderer renderer;
-  TileDictionary tileDictionary;
-  HexLayout hexLayout;
-  DrawingSettings drawingSettings;
-  List<HexTile> tiles;
+  late TileRenderer renderer;
+  late TileDictionary tileDictionary;
+  late HexLayout hexLayout;
+  late DrawingSettings drawingSettings;
+  late List<HexTile> tiles;
 
   _DebugMap() {
     var loader = TileDesignerLoader();
     tileDictionary = loader.loadTileDictionary(TileDictionarySource.src);
-    hexLayout = HexLayout(HexOrientation.pointy, 200, math.Point<double>(200, 200));
+    hexLayout =
+        HexLayout(HexOrientation.pointy, 200, math.Point<double>(200, 200));
   }
 
   void loadTiles() {
     tiles = [
-      HexTile(tileDictionary.getTile('8'), 0, 0, hexLayout, null),
-      HexTile(tileDictionary.getTile('9'), 1, 0, hexLayout, null),
-      HexTile(tileDictionary.getTile('6'), 0, 1, hexLayout, null),
-      HexTile(tileDictionary.getTile('200'), 1, 1, hexLayout, null),
+      HexTile(tileDictionary.getTile('8')!, 0, 0, hexLayout, null),
+      HexTile(tileDictionary.getTile('9')!, 1, 0, hexLayout, null),
+      HexTile(tileDictionary.getTile('6')!, 0, 1, hexLayout, null),
+      HexTile(tileDictionary.getTile('200')!, 1, 1, hexLayout, null),
     ];
   }
 
@@ -74,23 +75,25 @@ class _RepaintNotifier extends ChangeNotifier {
 }
 
 class MapWidget extends StatefulWidget {
-  const MapWidget({Key key, @required MapViewModel mapRenderContext, this.onTapMapCallback})
+  const MapWidget(
+      {Key? key, required MapViewModel mapRenderContext, this.onTapMapCallback})
       : mapContext = mapRenderContext,
         super(key: key);
 
   final MapViewModel mapContext;
-  final OnTapMapCallback onTapMapCallback;
+  final OnTapMapCallback? onTapMapCallback;
 
   @override
   _MapWidgetState createState() => _MapWidgetState();
 }
 
-class _MapWidgetState extends State<MapWidget> with AutomaticKeepAliveClientMixin {
+class _MapWidgetState extends State<MapWidget>
+    with AutomaticKeepAliveClientMixin {
   _RepaintNotifier repaintNotifier = _RepaintNotifier();
-  double startScale;
-  Offset startOffset;
-  ViewMatrix startMatrix;
-  MapViewModel mapContext;
+  double? startScale;
+  Offset? startOffset;
+  ViewMatrix? startMatrix;
+  late MapViewModel mapContext;
 
   _MapWidgetState() {
     //drawTilePics();
@@ -115,11 +118,14 @@ class _MapWidgetState extends State<MapWidget> with AutomaticKeepAliveClientMixi
           _onMouseWheelScroll(pointerSignal);
         }
       },
-      child: PositionedTapDetector(
-        onTap: (position) => widget.onTapMapCallback(position),
+      child: PositionedTapDetector2(
+        onTap: widget.onTapMapCallback == null
+            ? null
+            : (position) => widget.onTapMapCallback!(position),
         child: GestureDetector(
           child: CustomPaint(
-            painter: _MapPainter(repaint: repaintNotifier, mapContext: mapContext),
+            painter:
+                _MapPainter(repaint: repaintNotifier, mapContext: mapContext),
             child: Container(),
           ),
           onScaleStart: _onScaleStart,
@@ -133,27 +139,33 @@ class _MapWidgetState extends State<MapWidget> with AutomaticKeepAliveClientMixi
 
   void _onScaleStart(ScaleStartDetails details) {
     startOffset = details.localFocalPoint;
-    startMatrix = mapContext.viewMatrix.clone();
+    startMatrix = mapContext.viewMatrix!.clone();
   }
 
   void _onScaleUpdate(ScaleUpdateDetails details) {
     if (startOffset == null) return;
     if (details.scale != 1.0) {
       // scale about point
-      var scaleMatrix = ViewMatrix.scale(details.scale, math.Point<double>(details.localFocalPoint.dx, details.localFocalPoint.dy));
-      mapContext.viewMatrix.postConcat(scaleMatrix);
+      var scaleMatrix = ViewMatrix.scale(
+          details.scale,
+          math.Point<double>(
+              details.localFocalPoint.dx, details.localFocalPoint.dy));
+      mapContext.viewMatrix!.postConcat(scaleMatrix);
     } else if (details.localFocalPoint != startOffset) {
       // translate
-      mapContext.viewMatrix.transX = details.localFocalPoint.dx - startOffset.dx + startMatrix.transX;
-      mapContext.viewMatrix.transY = details.localFocalPoint.dy - startOffset.dy + startMatrix.transY;
+      mapContext.viewMatrix!.transX =
+          details.localFocalPoint.dx - startOffset!.dx + startMatrix!.transX;
+      mapContext.viewMatrix!.transY =
+          details.localFocalPoint.dy - startOffset!.dy + startMatrix!.transY;
     }
     repaintNotifier.notify();
   }
 
   void _onMouseWheelScroll(PointerScrollEvent details) {
     var scale = 1 - details.scrollDelta.dy / 300.0;
-    var scaleMatrix = ViewMatrix.scale(scale, math.Point<double>(details.localPosition.dx, details.localPosition.dy));
-    mapContext.viewMatrix.postConcat(scaleMatrix);
+    var scaleMatrix = ViewMatrix.scale(scale,
+        math.Point<double>(details.localPosition.dx, details.localPosition.dy));
+    mapContext.viewMatrix!.postConcat(scaleMatrix);
 
     repaintNotifier.notify();
   }
@@ -180,14 +192,14 @@ class _MapWidgetState extends State<MapWidget> with AutomaticKeepAliveClientMixi
     }
   }
 */
-
 }
 
 class _MapPainter extends CustomPainter {
   MapViewModel _mapContext;
-  DrawingSettings _drawingSettings;
-  _MapPainter({Listenable repaint, MapViewModel mapContext}) : super(repaint: repaint) {
-    _mapContext = mapContext;
+  late DrawingSettings _drawingSettings;
+  _MapPainter({Listenable? repaint, required MapViewModel mapContext})
+      : _mapContext = mapContext,
+        super(repaint: repaint) {
     // we don't want to look this up every frame
     _drawingSettings = GetIt.I<DrawingSettings>();
   }
@@ -206,10 +218,10 @@ class _MapPainter extends CustomPainter {
     canvas.save();
     //canvas.translate(_mapContext.viewMatrix[Indicies.transX], _mapContext.viewMatrix[Indicies.transY]);
     //canvas.scale(_mapContext.viewMatrix[Indicies.scaleX], _mapContext.viewMatrix[Indicies.scaleY]);
-    canvas.applyViewMatrix(_mapContext.viewMatrix);
+    canvas.applyViewMatrix(_mapContext.viewMatrix!);
     //print('${viewMatrix[Indicies.transX]},${viewMatrix[Indicies.transY]}:${viewMatrix[Indicies.scaleX]}');
 
-    for (var row in _mapContext.game.gameMap.map) {
+    for (var row in _mapContext.game!.gameMap.map) {
       for (var tile in row) {
         if (tile != null) {
           canvas.save();
@@ -219,7 +231,8 @@ class _MapPainter extends CustomPainter {
           var deg = 60.0 * tile.rotation;
           canvas.rotateDegreesOnPoint(deg, tile.center);
           canvas.translate(tile.center.x, tile.center.y);
-          _mapContext.renderer.renderTile(canvas, tile.tileDef, tile.rotation, tile.cost, tile.costPosition);
+          _mapContext.renderer!.renderTile(canvas, tile.tileDef, tile.rotation,
+              tile.cost, tile.costPosition);
           // } else {
           //   canvas.translate(tile.center.x, tile.center.y);
           //   canvas.drawPicture(tile.picture);
@@ -236,9 +249,10 @@ class _MapPainter extends CustomPainter {
       }
     }
 
-    for (var text in _mapContext.game.gameMap.mapText) {
+    for (var text in _mapContext.game!.gameMap.mapText) {
       canvas.save();
-      var hex = _mapContext.game.gameMap.tileAt(text.location.x, text.location.y);
+      var hex =
+          _mapContext.game!.gameMap.tileAt(text.location.x, text.location.y)!;
       if (hex.tileDef.isBase) {
         canvas.translate(hex.center.x, hex.center.y);
         TileRenderer.drawMapText(
@@ -246,28 +260,30 @@ class _MapPainter extends CustomPainter {
             text: text.text,
             position: text.position,
             sizeMultiplier: text.size,
-            layout: _mapContext.game.gameMap.layout,
+            layout: _mapContext.game!.gameMap.layout,
             drawingSettings: _drawingSettings);
         //canvas.DrawPicture((SKPicture)text.Picture);
       }
       canvas.restore();
     }
 
-    for (var barrier in _mapContext.game.gameMap.barriers) {
+    for (var barrier in _mapContext.game!.gameMap.barriers) {
       canvas.save();
-      var hex = _mapContext.game.gameMap.tileAt(barrier.location.x, barrier.location.y);
+      var hex = _mapContext.game!.gameMap
+          .tileAt(barrier.location.x, barrier.location.y)!;
       canvas.translate(hex.center.x, hex.center.y);
-      _mapContext.renderer.drawBarrier(canvas, barrier.side);
+      _mapContext.renderer!.drawBarrier(canvas, barrier.side);
       canvas.restore();
     }
 
-    for (var company in _mapContext.game.gameMap.companies) {
+    for (var company in _mapContext.game!.gameMap.companies) {
       canvas.save();
-      var hex = _mapContext.game.gameMap.tileAt(company.home.x, company.home.y);
+      var hex =
+          _mapContext.game!.gameMap.tileAt(company.home.x, company.home.y)!;
       var deg = 60.0 * hex.rotation;
       canvas.rotateDegreesOnPoint(deg, hex.center);
       canvas.translate(hex.center.x, hex.center.y);
-      _mapContext.renderer.drawToken(
+      _mapContext.renderer!.drawToken(
           tile: hex,
           junction: company.junction,
           cityNum: company.homeCity,
@@ -277,19 +293,20 @@ class _MapPainter extends CustomPainter {
       canvas.restore();
     }
 
-    for (var offmap in _mapContext.game.gameMap.offmapRevenue) {
+    for (var offmap in _mapContext.game!.gameMap.offmapRevenue) {
       canvas.save();
-      var hex = _mapContext.game.gameMap.tileAt(offmap.location.x, offmap.location.y);
+      var hex = _mapContext.game!.gameMap
+          .tileAt(offmap.location.x, offmap.location.y)!;
       canvas.translate(hex.center.x, hex.center.y);
-      _mapContext.renderer.drawOffmapRevenue(offmap);
+      _mapContext.renderer!.drawOffmapRevenue(offmap);
       canvas.restore();
     }
 
     for (var highlight in _mapContext.availableUpgrades) {
       canvas.save();
-      var hex = _mapContext.game.gameMap.tileAt(highlight.q, highlight.r);
+      var hex = _mapContext.game!.gameMap.tileAt(highlight.q, highlight.r)!;
       canvas.translate(hex.center.x, hex.center.y);
-      _mapContext.renderer.drawHighlight();
+      _mapContext.renderer!.drawHighlight();
       canvas.restore();
     }
 

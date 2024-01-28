@@ -8,10 +8,10 @@ import 'package:hexxtrains/src/render/render.dart';
 import 'package:vector_math/vector_math_64.dart' as m64;
 
 class _DrawContext {
-  StockMarketRenderer renderer;
-  DrawingSettings drawingSettings;
+  StockMarketRenderer? renderer;
+  late DrawingSettings drawingSettings;
   m64.Matrix3 viewMatrix = m64.Matrix3.identity();
-  StockMarketData marketData;
+  late StockMarketData marketData;
 
   _DrawContext();
 }
@@ -25,12 +25,13 @@ class StockMarketWidget extends StatefulWidget {
   _StockMarketWidgetState createState() => _StockMarketWidgetState();
 }
 
-class _StockMarketWidgetState extends State<StockMarketWidget> with AutomaticKeepAliveClientMixin {
-  ValueNotifier<int> valueNotifier;
-  double startScale;
-  Offset startOffset;
-  m64.Matrix3 startMatrix;
-  _DrawContext _drawContext;
+class _StockMarketWidgetState extends State<StockMarketWidget>
+    with AutomaticKeepAliveClientMixin {
+  late ValueNotifier<int> valueNotifier;
+  double? startScale;
+  Offset? startOffset;
+  m64.Matrix3? startMatrix;
+  late _DrawContext _drawContext;
 
   _StockMarketWidgetState();
 
@@ -42,7 +43,8 @@ class _StockMarketWidgetState extends State<StockMarketWidget> with AutomaticKee
     _drawContext.marketData = widget.game.marketData;
 
     _drawContext.drawingSettings = DrawingSettings();
-    _drawContext.renderer = StockMarketRenderer(_drawContext.marketData, _drawContext.drawingSettings);
+    _drawContext.renderer = StockMarketRenderer(
+        _drawContext.marketData, _drawContext.drawingSettings);
     valueNotifier = ValueNotifier<int>(0);
     valueNotifier.value = 0;
   }
@@ -66,7 +68,8 @@ class _StockMarketWidgetState extends State<StockMarketWidget> with AutomaticKee
       },
       child: GestureDetector(
         child: CustomPaint(
-          painter: _StockMarketPainter(drawContext: _drawContext, repaint: valueNotifier),
+          painter: _StockMarketPainter(
+              drawContext: _drawContext, repaint: valueNotifier),
           child: Container(),
         ),
         onTap: () => valueNotifier.value++,
@@ -90,8 +93,10 @@ class _StockMarketWidgetState extends State<StockMarketWidget> with AutomaticKee
     if (startOffset == null) return;
     if (details.scale != 1.0) {
       // scale about point
-      var tx = details.localFocalPoint.dx - details.scale * details.localFocalPoint.dx;
-      var ty = details.localFocalPoint.dy - details.scale * details.localFocalPoint.dy;
+      var tx = details.localFocalPoint.dx -
+          details.scale * details.localFocalPoint.dx;
+      var ty = details.localFocalPoint.dy -
+          details.scale * details.localFocalPoint.dy;
       var scaleMatrix = m64.Matrix3.identity();
       scaleMatrix[Indicies.scaleX] = details.scale;
       scaleMatrix[Indicies.scaleY] = details.scale;
@@ -99,13 +104,15 @@ class _StockMarketWidgetState extends State<StockMarketWidget> with AutomaticKee
       scaleMatrix[Indicies.transY] = ty;
       scaleMatrix[Indicies.persp2] = 1;
 
-      _drawContext.viewMatrix = (startMatrix * scaleMatrix) as m64.Matrix3;
+      _drawContext.viewMatrix = (startMatrix! * scaleMatrix) as m64.Matrix3;
     } else if (details.localFocalPoint != startOffset) {
       // translate
-      _drawContext.viewMatrix[Indicies.transX] =
-          details.localFocalPoint.dx - startOffset.dx + startMatrix[Indicies.transX];
-      _drawContext.viewMatrix[Indicies.transY] =
-          details.localFocalPoint.dy - startOffset.dy + startMatrix[Indicies.transY];
+      _drawContext.viewMatrix[Indicies.transX] = details.localFocalPoint.dx -
+          startOffset!.dx +
+          startMatrix![Indicies.transX];
+      _drawContext.viewMatrix[Indicies.transY] = details.localFocalPoint.dy -
+          startOffset!.dy +
+          startMatrix![Indicies.transY];
     }
     valueNotifier.value++;
   }
@@ -122,7 +129,8 @@ class _StockMarketWidgetState extends State<StockMarketWidget> with AutomaticKee
     scaleMatrix[Indicies.transY] = ty;
     scaleMatrix[Indicies.persp2] = 1;
 
-    _drawContext.viewMatrix = (_drawContext.viewMatrix * scaleMatrix) as m64.Matrix3;
+    _drawContext.viewMatrix =
+        (_drawContext.viewMatrix * scaleMatrix) as m64.Matrix3;
 
     valueNotifier.value++;
   }
@@ -131,11 +139,11 @@ class _StockMarketWidgetState extends State<StockMarketWidget> with AutomaticKee
 }
 
 class _StockMarketPainter extends CustomPainter {
-  _DrawContext _drawContext;
+  final _DrawContext _drawContext;
   bool isFirstPaint = true;
-  _StockMarketPainter({_DrawContext drawContext, Listenable repaint}) : super(repaint: repaint) {
-    _drawContext = drawContext;
-  }
+  _StockMarketPainter({required _DrawContext drawContext, Listenable? repaint})
+      : _drawContext = drawContext,
+        super(repaint: repaint);
 
   @override
   void paint(painting.Canvas canvas, painting.Size size) {
@@ -143,7 +151,7 @@ class _StockMarketPainter extends CustomPainter {
     canvas.clear(Colors.black);
 
     if (isFirstPaint) {
-      var offset = _drawContext.renderer.getSize();
+      var offset = _drawContext.renderer!.getSize();
       var x = size.width / offset.width;
       var y = size.height / offset.height;
 
@@ -154,9 +162,11 @@ class _StockMarketPainter extends CustomPainter {
     }
 
     canvas.save();
-    canvas.translate(_drawContext.viewMatrix[Indicies.transX], _drawContext.viewMatrix[Indicies.transY]);
-    canvas.scale(_drawContext.viewMatrix[Indicies.scaleX], _drawContext.viewMatrix[Indicies.scaleY]);
-    _drawContext.renderer.renderMarket(canvas);
+    canvas.translate(_drawContext.viewMatrix[Indicies.transX],
+        _drawContext.viewMatrix[Indicies.transY]);
+    canvas.scale(_drawContext.viewMatrix[Indicies.scaleX],
+        _drawContext.viewMatrix[Indicies.scaleY]);
+    _drawContext.renderer!.renderMarket(canvas);
     canvas.restore();
   }
 

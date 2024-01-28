@@ -18,7 +18,8 @@ class _Orientation {
   final double b3;
   final double startAngle;
 
-  _Orientation(this.f0, this.f1, this.f2, this.f3, this.b0, this.b1, this.b2, this.b3, this.startAngle);
+  _Orientation(this.f0, this.f1, this.f2, this.f3, this.b0, this.b1, this.b2,
+      this.b3, this.startAngle);
 }
 
 class HexLayout {
@@ -26,23 +27,33 @@ class HexLayout {
   final int size;
   final Point<double> origin;
   final _Orientation _ourOrientation;
-  HexPoints _hexPoints;
+  late HexPoints _hexPoints;
   HexPoints get hexPoints => _hexPoints;
 
 //  final Matrix3 matrix;
 //  final Matrix3 iMatrix;
 //  final double startAngle;
-  static final _Orientation _pointy =
-      _Orientation(sqrt(3.0), sqrt(3.0) / 2.0, 0.0, 3.0 / 2.0, sqrt(3.0) / 3.0, -1.0 / 3.0, 0.0, 2.0 / 3.0, 0.5);
-  static final _Orientation _flat =
-      _Orientation(3.0 / 2.0, 0.0, sqrt(3.0) / 2.0, sqrt(3.0), 2.0 / 3.0, 0.0, -1.0 / 3.0, sqrt(3.0) / 3.0, 1);
+  static final _Orientation _pointy = _Orientation(sqrt(3.0), sqrt(3.0) / 2.0,
+      0.0, 3.0 / 2.0, sqrt(3.0) / 3.0, -1.0 / 3.0, 0.0, 2.0 / 3.0, 0.5);
+  static final _Orientation _flat = _Orientation(
+      3.0 / 2.0,
+      0.0,
+      sqrt(3.0) / 2.0,
+      sqrt(3.0),
+      2.0 / 3.0,
+      0.0,
+      -1.0 / 3.0,
+      sqrt(3.0) / 3.0,
+      1);
 
   HexLayout._(this.orientation, this.size, this.origin, this._ourOrientation) {
     _hexPoints = HexPoints.fromLayout(this);
   }
 
-  factory HexLayout(HexOrientation orientation, int size, Point<double> origin) {
-    return HexLayout._(orientation, size, origin, orientation == HexOrientation.flat ? _flat : _pointy);
+  factory HexLayout(
+      HexOrientation orientation, int size, Point<double> origin) {
+    return HexLayout._(orientation, size, origin,
+        orientation == HexOrientation.flat ? _flat : _pointy);
 //    Matrix3 m;
 //    double sa;
 //    if (orientation == HexOrientation.Flat) {
@@ -96,7 +107,8 @@ class HexLayout {
 
   Point<double> hexCornerOffset(int corner, [double divisor = 1.0]) {
     var angle = -2.0 * pi * (_ourOrientation.startAngle - corner + 1) / 6.0;
-    return Point<double>(size * divisor * cos(angle), size * divisor * sin(angle));
+    return Point<double>(
+        size * divisor * cos(angle), size * divisor * sin(angle));
   }
 
   List<Point<double>> polygonCorners(Hex h, [double divisor = 1.0]) {

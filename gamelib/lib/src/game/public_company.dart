@@ -1,5 +1,5 @@
 class PublicCompany {
-  final String id;
+  final String? id;
 
   PublicCompany(this.id);
 }

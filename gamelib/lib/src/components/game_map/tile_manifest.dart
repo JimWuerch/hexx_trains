@@ -2,15 +2,20 @@ import 'package:gamelib/src/components/tile_library/tile_dictionary.dart';
 
 class TileManifestItem {
   final String id;
-  final String replacesId; // if this exists, replace replacesId with id in the TileDictionary
+  final String?
+      replacesId; // if this exists, replace replacesId with id in the TileDictionary
   int quantity;
-  final List<TileManifestItem> upgrades;
+  final List<TileManifestItem>? upgrades;
 
-  TileManifestItem({this.id, this.replacesId, this.quantity, this.upgrades});
+  TileManifestItem(
+      {required this.id,
+      this.replacesId,
+      required this.quantity,
+      this.upgrades});
 }
 
 class TileManifest {
-  final Map<String, TileManifestItem> manifest = {};
+  final Map<String?, TileManifestItem> manifest = {};
 
   TileManifest(List<TileManifestItem> data) {
     for (var tile in data) {
@@ -21,7 +26,7 @@ class TileManifest {
     }
   }
 
-  TileManifestItem getTile(String id) {
+  TileManifestItem? getTile(String? id) {
     if (!manifest.containsKey(id)) {
       return null;
     }
@@ -49,8 +54,8 @@ class TileManifest {
   void replaceTileDefs(TileDictionary tileDictionary) {
     for (var item in manifest.values) {
       if (item.replacesId != null) {
-        if (tileDictionary.getTile(item.replacesId) != null) {
-          tileDictionary.replace(item.replacesId, item.id);
+        if (tileDictionary.getTile(item.replacesId!) != null) {
+          tileDictionary.replace(item.replacesId!, item.id);
         }
       }
     }

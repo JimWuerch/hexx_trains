@@ -4,7 +4,8 @@ import 'position.dart';
 class TextAdornment extends Adornment {
   final String text;
 
-  TextAdornment({Position position, this.text}) : super(position: position, adornmentType: AdornmentTypes.text);
+  TextAdornment({required Position position, required this.text})
+      : super(position: position, adornmentType: AdornmentTypes.text);
 
   @override
   Map<String, dynamic> toJson() {

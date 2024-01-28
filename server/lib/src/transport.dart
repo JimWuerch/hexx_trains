@@ -16,7 +16,7 @@ class LocalServerTransport implements GameTransport {
 
   @override
   Future<GameModel> sendRequest(GameModel model) async {
-    return server.handleRequest(model);
+    return server.handleRequest(model)!;
   }
 
   @override
@@ -46,7 +46,8 @@ class HttpClientTransport implements GameTransport {
   @override
   Future<GameModel> sendRequest(GameModel model) async {
     // send request over http and get reply
-    return null;
+    throw UnimplementedError();
+    //return null;
   }
 
   @override

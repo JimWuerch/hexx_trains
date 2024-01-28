@@ -13,7 +13,7 @@ class GameStateAction extends GameActionBase {
   static const String actionName = 'gameState';
   final GameStateActionType state;
 
-  GameStateAction(this.state, [Player owner]) : super(owner);
+  GameStateAction(this.state, [Player? owner]) : super(owner);
 
   //TODO: expand this into english text
   @override
@@ -34,7 +34,7 @@ class GameStateAction extends GameActionBase {
   @override
   factory GameStateAction.fromJson(Game game, Map<String, dynamic> json) {
     var state =
-        GameStateActionType.values.firstWhere((e) => e.toString() == 'GameStateEvent.${json['state'] as String}');
+        GameStateActionType.values.firstWhere((e) => e.toString() == 'GameStateEvent.${json['state'] as String?}');
     return GameStateAction._jsonHelper(state, game, json);
   }
 }

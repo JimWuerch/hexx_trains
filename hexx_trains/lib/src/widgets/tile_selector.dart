@@ -23,15 +23,15 @@ class TileSelector extends StatefulWidget {
   final OnConfirmCallback onConfirm;
 
   const TileSelector({
-    Key key,
-    @required this.itemExtent,
-    @required this.list,
-    @required this.hex,
+    Key? key,
+    required this.itemExtent,
+    required this.list,
+    required this.hex,
     //@required this.renderer,
-    this.onSelected,
-    this.onRotateLeft,
-    this.onRotateRight,
-    this.onConfirm,
+    required this.onSelected,
+    required this.onRotateLeft,
+    required this.onRotateRight,
+    required this.onConfirm,
   }) : super(key: key);
 
   @override
@@ -39,9 +39,9 @@ class TileSelector extends StatefulWidget {
 }
 
 class _TileSelectorState extends State<TileSelector> {
-  int _selectedIndex;
+  int _selectedIndex = -1;
   List<HexTileWidget> tileWidgets = [];
-  TileRenderer renderer;
+  late TileRenderer renderer;
 
   @override
   void initState() {
@@ -68,8 +68,10 @@ class _TileSelectorState extends State<TileSelector> {
               icon: const Icon(Icons.undo),
               onPressed: widget.onRotateLeft,
             ),
-            IconButton(icon: const Icon(Icons.redo), onPressed: widget.onRotateRight),
-            IconButton(icon: const Icon(Icons.check), onPressed: widget.onConfirm),
+            IconButton(
+                icon: const Icon(Icons.redo), onPressed: widget.onRotateRight),
+            IconButton(
+                icon: const Icon(Icons.check), onPressed: widget.onConfirm),
           ],
         ),
         SliverFixedExtentList(

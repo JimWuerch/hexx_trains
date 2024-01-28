@@ -4,7 +4,7 @@ class Revenue {
   final Position position;
   final int amount;
 
-  Revenue({this.position, this.amount});
+  Revenue({required this.position, required this.amount});
 
   factory Revenue.clone(Revenue r) {
     return Revenue(position: r.position, amount: r.amount);
@@ -14,8 +14,6 @@ class Revenue {
       : position = Position.fromTDPosition(json['position'] as String),
         amount = json['amount'] as int;
 
-  Map<String, dynamic> toJson() => <String, dynamic> {
-    'position': position.toTDPosition(),
-    'amount': amount
-  };
+  Map<String, dynamic> toJson() =>
+      <String, dynamic>{'position': position.toTDPosition(), 'amount': amount};
 }

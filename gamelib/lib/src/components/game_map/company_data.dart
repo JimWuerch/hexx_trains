@@ -12,7 +12,15 @@ class CompanyData {
   final int junction; // index into junctions[] of the tile
   final int homeCity; // which city on the junction if more than 1
 
-  CompanyData({this.id, this.name, this.color, this.background, this.isLightOnDark, this.home, this.junction, this.homeCity});
+  CompanyData(
+      {required this.id,
+      required this.name,
+      required this.color,
+      required this.background,
+      required this.isLightOnDark,
+      required this.home,
+      required this.junction,
+      required this.homeCity});
 
   Map<String, dynamic> toJson() => <String, dynamic>{
         'id': id,
@@ -32,9 +40,9 @@ class CompanyData {
     var background = json['background'] as int;
     var isLightOnDark = json['lightOnDark'] as bool;
     var home = MapData.jsonLocationToCoords(json['home'] as String);
-    var junction = json['junction'] as int;
+    var junction = json['junction'] as int?;
     junction ??= 0;
-    var homeCity = json['homeCity'] as int;
+    var homeCity = json['homeCity'] as int?;
     homeCity ??= 0;
 
     return CompanyData(

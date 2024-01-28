@@ -10,7 +10,7 @@ class Doodad {
   final math.Point<int> location;
   final DoodadTypes doodadType;
 
-  Doodad({this.location, this.doodadType});
+  Doodad({required this.location, required this.doodadType});
 
   static DoodadTypes toDoodadType(String d) {
     if (d == DoodadTypes.privateRR.toString()) {
@@ -27,6 +27,6 @@ class Doodad {
 
   Doodad.fromJson(Map<String, dynamic> json)
       : location = MapData.jsonLocationToCoords(json['location'] as String),
-        doodadType =
-            DoodadTypes.values.firstWhere((e) => e.toString() == 'DoodadTypes.${json['doodadType'] as String}');
+        doodadType = DoodadTypes.values.firstWhere((e) =>
+            e.toString() == 'DoodadTypes.${json['doodadType'] as String}');
 }
